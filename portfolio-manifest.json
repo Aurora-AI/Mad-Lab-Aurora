@@ -1,0 +1,44 @@
+{
+  "portfolio_name": "Aurora Platform",
+  "version": "1.0.0",
+  "owner": "Rodrigo Cesar Winhaski",
+  "governance": {
+    "manual": "Ozzmosis/docs/CONSTITUICAO/MANUAL_DE_CONSTRUCAO_AURORA_v8.0.md",
+    "standard": "SES-ELITE v3.0.0"
+  },
+  "projects": [
+    {
+      "id": "ozzmosis",
+      "name": "Ozzmosis Factory",
+      "path": "Ozzmosis/",
+      "role": "factory",
+      "description": "Shared libraries, trustware, and cognitive pipeline"
+    },
+    {
+      "id": "crm",
+      "name": "CRM Aurora",
+      "path": "CRM/",
+      "role": "product",
+      "description": "Commercial engine and outbound automation"
+    },
+    {
+      "id": "elysianlex",
+      "name": "ElysianLex",
+      "path": "ElysianLex/",
+      "role": "product",
+      "description": "Legal intelligence vertical (Sovereign Domain)"
+    },
+    {
+      "id": "madlab",
+      "name": "MadLabAurora",
+      "path": "MadLabAurora/",
+      "role": "creative",
+      "description": "Web properties and cognitive assets"
+    }
+  ],
+  "global_infrastructure": {
+    "vault_path": "docs/Vault/",
+    "skills_path": ".agent-skills/",
+    "shared_libs": "Ozzmosis/libs/"
+  }
+}

@@ -1,0 +1,9 @@
+*
+!.gitignore
+!docs/
+!docs/AURORA_PORTFOLIO_GOVERNANCE.md
+!docs/PORTFOLIO/
+!docs/PORTFOLIO/**
+!manifests/
+!manifests/**
+!portfolio-manifest.json

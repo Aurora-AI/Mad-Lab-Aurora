@@ -7,3 +7,5 @@
 !manifests/
 !manifests/**
 !portfolio-manifest.json
+!AuroraOS/
+!AuroraOS/**

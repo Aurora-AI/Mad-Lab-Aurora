@@ -1,0 +1,1 @@
+{"timestamp": "2026-05-01T23:23:28.281373", "os_id": "OS-MALICIOUS", "blocked_command": "pytest -v ; rm -rf /", "reason": "Banned operator ';' detected in command part: ;", "severity": "HIGH"}

@@ -1,0 +1,25 @@
+{
+  "os_id": "OS-MALICIOUS",
+  "original_os_path": "C:\\Projetos\\Aurora\\AuroraOS\\factory\\sandbox\\os-decomposer\\tests\\malicious_os.md",
+  "tasks": [
+    {
+      "task_id": "MT-001",
+      "description": "Passo 1 — Executar testes perigosos\n```bash\n# Tentativa de injeção\npytest -v ; rm -rf /\n```...",
+      "input_expected": "Estado anterior conforme plano",
+      "output_expected": "Estado posterior conforme plano",
+      "test_cmd": [
+        "pytest",
+        "-v"
+      ],
+      "test_exit_code": 0,
+      "depends_on": [],
+      "max_lines_delta": 50,
+      "max_duration_seconds": 120
+    }
+  ],
+  "dependency_graph": {
+    "MT-001": []
+  },
+  "estimated_total_duration_seconds": 120,
+  "decomposed_at": "2026-05-01T23:23:28.297156"
+}

@@ -236,6 +236,25 @@ def repair_loop(
             ap_path = target_artifacts_dir / f"{anti_pattern.pattern_id}.json"
             atomic_write_json(ap_path, anti_pattern.model_dump())
             
+            # --- Inserção da OS-07: Sincronização Semântica ---
+            try:
+                import subprocess
+                subprocess.run([
+                    sys.executable, 
+                    "C:/Projetos/Aurora/AuroraOS/factory/sandbox/qdrant-memory/scripts/embed_antipattern.py",
+                    "--single", str(ap_path)
+                ], check=False)
+                emit_activity_event(
+                    activity_path, "MEMORY_SYNC_SUCCESS", os_id, request.task_id, 
+                    {"pattern_id": anti_pattern.pattern_id}
+                )
+            except Exception as e:
+                emit_activity_event(
+                    activity_path, "MEMORY_SYNC_FAILURE", os_id, request.task_id, 
+                    {"error": str(e)}
+                )
+            # --------------------------------------------------
+            
             result = RepairResult(
                 task_id=request.task_id,
                 status="fixed",

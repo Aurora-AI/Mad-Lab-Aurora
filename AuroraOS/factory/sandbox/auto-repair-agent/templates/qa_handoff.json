@@ -1,0 +1,18 @@
+{
+  "task_id": "{{task_id}}",
+  "os_id": "{{os_id}}",
+  "repair_result": {
+    "task_id": "{{task_id}}",
+    "status": "fixed",
+    "sandbox_mode": "{{sandbox_mode}}",
+    "total_attempts": {{total_attempts}},
+    "attempts": [],
+    "patch_diff": "{{patch_diff}}",
+    "anti_pattern_id": null,
+    "escalation_reason": null
+  },
+  "original_requirement": "{{original_requirement}}",
+  "test_cmd": "{{test_cmd}}",
+  "test_output": "{{test_output}}",
+  "patch_diff": "{{patch_diff}}"
+}

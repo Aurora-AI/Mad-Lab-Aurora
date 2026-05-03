@@ -9,3 +9,17 @@
 !portfolio-manifest.json
 !AuroraOS/
 !AuroraOS/**
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+node_modules/
+.env
+.DS_Store
+Thumbs.db
+*.db
+*.sqlite3
+*.log
+master.key

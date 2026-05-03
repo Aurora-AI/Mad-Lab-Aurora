@@ -1,0 +1,32 @@
+{
+  "agent_id": "ceo-agent-v1",
+  "name": "CEO Agent",
+  "version": "1.0.0",
+  "domain": "SOVEREIGN",
+  "project_id": "CEO-SOVEREIGN",
+  "capabilities": [
+    "STRATEGIC_PLANNING",
+    "BACKLOG_PRIORITIZATION",
+    "INTEGRITY_AUDIT"
+  ],
+  "runtime": {
+    "language": "python",
+    "entrypoint": "CRM/apps/crm-core/src/agents/ceo/main.py"
+  },
+  "trustware": {
+    "isolation_level": "STRICT",
+    "vault_access": [
+      "docs/Vault/Raw/",
+      "docs/Vault/Projects/CEO-SOVEREIGN/"
+    ],
+    "message_bus_allowed_topics": [
+      "strategy/*",
+      "integrity/*",
+      "ops/backlog"
+    ]
+  },
+  "constitution": "Ozzmosis/docs/Vault/Raw/CEO-AGENT-STRATEGIC-ALIGNMENT.md",
+  "spec_canonical_path": "AuroraOS/factory/ceo-agent/ceo-agent.json",
+  "output_vault_internal": "AuroraOS/factory/ceo-agent/vault/",
+  "output_vault_projects": "AuroraOS/projects/"
+}

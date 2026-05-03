@@ -1,0 +1,3 @@
+{"timestamp": "2026-05-02T00:46:55.984542+00:00", "event_type": "REPAIR_STARTED", "os_id": "OS-003", "actor": "auto-repair-agent", "task_id": "TEST-004", "metadata": {"sandbox_mode": "memory"}}
+{"timestamp": "2026-05-02T00:46:55.985618+00:00", "event_type": "REPAIR_ATTEMPT", "os_id": "OS-003", "actor": "auto-repair-agent", "task_id": "TEST-004", "metadata": {"attempt": 1, "hypothesis": "Hip\u00f3tese 1"}}
+{"timestamp": "2026-05-02T00:46:55.991382+00:00", "event_type": "REPAIR_ESCALATED", "os_id": "OS-003", "actor": "auto-repair-agent", "task_id": "TEST-004", "metadata": {"reason": "Esgotou todas as hip\u00f3teses dispon\u00edveis."}}

@@ -1,0 +1,39 @@
+{
+  "task_id": "TEST-004",
+  "sandbox_mode": "memory",
+  "completed_attempts": [
+    {
+      "attempt_number": 1,
+      "status": "timeout",
+      "duration_seconds": 15.0,
+      "stdout": "",
+      "stderr": "timeout occurred",
+      "patch_diff": "patch1",
+      "hypothesis": "Hip\u00f3tese 1",
+      "metrics": {}
+    }
+  ],
+  "current_attempt": 1,
+  "is_terminal": true,
+  "final_result": {
+    "task_id": "TEST-004",
+    "status": "escalated",
+    "sandbox_mode": "memory",
+    "total_attempts": 1,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "status": "timeout",
+        "duration_seconds": 15.0,
+        "stdout": "",
+        "stderr": "timeout occurred",
+        "patch_diff": "patch1",
+        "hypothesis": "Hip\u00f3tese 1",
+        "metrics": {}
+      }
+    ],
+    "patch_diff": "Nenhum patch gerado",
+    "anti_pattern_id": null,
+    "escalation_reason": "Esgotou todas as hip\u00f3teses dispon\u00edveis."
+  }
+}

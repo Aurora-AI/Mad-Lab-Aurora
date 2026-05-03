@@ -18,15 +18,15 @@ ENV_PATH = Path("C:/Projetos/Aurora/ElysianLex/.env")
 load_dotenv(ENV_PATH)
 
 # Configs
-QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
+QDRANT_URL = os.getenv("QDRANT_URL", "http://127.0.0.1:6333")
 COLLECTION_NAME = "reflexion_ki"
 VAULT_REFLEXION_PATH = Path("C:/Projetos/Aurora/Ozzmosis/docs/Vault/Reflexion/KIs")
 ANTI_PATTERNS_FILE = Path("C:/Projetos/Aurora/Ozzmosis/docs/Vault/Reflexion/anti-patterns.md")
 
-# Default Embedding Size for reflexion_ki
-VECTOR_SIZE = 768
+# Default Embedding Size for reflexion_ki (MiniLM-L6-v2)
+VECTOR_SIZE = 384
 
-def get_embedding(text: str, model_name="all-mpnet-base-v2"):
+def get_embedding(text: str, model_name="all-MiniLM-L6-v2"):
     """
     Get embedding for text.
     """
@@ -78,7 +78,7 @@ def main():
 
     logger.info("Starting OS-07 Memory Migration...")
     
-    client = QdrantClient(url=QDRANT_URL)
+    client = QdrantClient(url=QDRANT_URL, timeout=120)
     
     # Ensure collection
     collections = client.get_collections().collections

@@ -9,6 +9,7 @@
 !portfolio-manifest.json
 !AuroraOS/
 !AuroraOS/**
+!aurora_vault.py
 __pycache__/
 *.pyc
 *.pyo

@@ -253,6 +253,8 @@ def dispatch_loop(config: DispatcherConfig, state: StateStore, dead_letter_dir: 
     except KeyboardInterrupt:
         logger.info("Encerrando Dispatcher graciosamente.")
 
+from db_health_check import verify_db_integrity
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--watch-dir", type=str, required=True, help="Diretório para monitorar")
@@ -272,7 +274,13 @@ if __name__ == "__main__":
         activity_log_path=Path("legacy_activity.jsonl")
     )
     
-    state = StateStore(Path(args.db_path))
+    db_path = Path(args.db_path)
+    logger.info(f"Executando Health Check em {db_path}...")
+    if not verify_db_integrity(db_path):
+        logger.error("Falha no Health Check inicial. Abortando inicialização do Dispatcher.")
+        sys.exit(1)
+        
+    state = StateStore(db_path)
     dead_letter_dir = Path(args.dead_letter)
     
     dispatch_loop(config, state, dead_letter_dir)

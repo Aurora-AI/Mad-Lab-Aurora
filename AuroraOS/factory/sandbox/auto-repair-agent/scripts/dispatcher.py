@@ -1,4 +1,4 @@
-import time
+import asyncio
 import json
 import logging
 import sqlite3
@@ -8,6 +8,7 @@ import sys
 import os
 import argparse
 from typing import Set
+from nats.aio.client import Client as NATS
 
 # Adiciona o diretório atual e o pai ao sys.path
 current_dir = Path(__file__).parent
@@ -15,7 +16,23 @@ parent_dir = current_dir.parent
 sys.path.append(str(current_dir))
 sys.path.append(str(parent_dir))
 
-from contracts import DispatchEvent, DispatcherConfig
+try:
+    from contracts import DispatchEvent, DispatcherConfig
+except ImportError:
+    # Fallback para desenvolvimento local
+    from pydantic import BaseModel
+    class DispatchEvent(BaseModel):
+        event_type: str
+        source_file: Path
+        task_id: str
+        os_id: str
+        detected_at: str
+        dispatched_to: str
+
+    class DispatcherConfig(BaseModel):
+        watch_dirs: list[Path]
+        poll_interval_seconds: int
+        activity_log_path: Path
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
@@ -52,7 +69,6 @@ class StateStore:
                     metadata TEXT
                 )
             """)
-            # Índices sugeridos pelo QA para performance industrial
             conn.execute("CREATE INDEX IF NOT EXISTS idx_logs_task_id ON dispatch_logs(task_id)")
             conn.execute("CREATE INDEX IF NOT EXISTS idx_logs_timestamp ON dispatch_logs(timestamp)")
 
@@ -88,7 +104,6 @@ class StateStore:
             conn.execute("DELETE FROM failed_attempts WHERE file_path = ?", (str(file_path),))
 
     def log_dispatch(self, event: DispatchEvent):
-        """Persiste o log de dispatch diretamente no banco de dados."""
         with sqlite3.connect(self.db_path) as conn:
             conn.execute("""
                 INSERT INTO dispatch_logs 
@@ -104,56 +119,59 @@ class StateStore:
                 json.dumps({"source_event": event.event_type})
             ))
 
+async def publish_telemetry(nc: NATS, event: DispatchEvent):
+    """Publica métricas no barramento NATS para consumo do Dashboard."""
+    if not nc or not nc.is_connected:
+        return
+    
+    try:
+        payload = {
+            "event_type": event.event_type,
+            "task_id": event.task_id,
+            "os_id": event.os_id,
+            "dispatched_to": event.dispatched_to,
+            "timestamp": datetime.now(timezone.utc).isoformat()
+        }
+        await nc.publish("aurora.telemetry.metrics", json.dumps(payload).encode())
+    except Exception as e:
+        logger.error(f"Erro ao publicar telemetria: {e}")
+
 def robust_read(file_path: Path, max_retries: int = 3, initial_delay: float = 0.1) -> dict | None:
-    """Realiza leitura robusta com retentativas para contornar locks de arquivo (Windows)."""
     delay = initial_delay
     for attempt in range(max_retries):
         try:
-            if file_path.stat().st_size == 0:
-                time.sleep(delay)  # Aguarda o processo de escrita terminar
+            if not file_path.exists() or file_path.stat().st_size == 0:
+                time.sleep(delay)
                 continue
-                
             with open(file_path, "r", encoding="utf-8") as f:
                 return json.load(f)
-        except (PermissionError, json.JSONDecodeError, OSError):
+        except Exception:
             if attempt < max_retries - 1:
                 time.sleep(delay)
-                delay *= 2  # Backoff exponencial
+                delay *= 2
             else:
                 return None
     return None
 
+import time # Mantido para robust_read por enquanto
+
 def parse_event(event_file: Path) -> DispatchEvent | None:
-    """Extrai informações de um arquivo JSON para determinar o evento com leitura robusta."""
     try:
         data = robust_read(event_file)
-        if not data:
-            return None
-            
-        filename = event_file.name
+        if not data: return None
         
+        filename = event_file.name
         if filename.startswith("qa_verdict_"):
-            task_id = data.get("task_id", "UNKNOWN")
             verdict = data.get("verdict", "")
-            if verdict == "REJECTED":
-                return DispatchEvent(
-                    event_type="QA_REJECTED",
-                    source_file=event_file,
-                    task_id=task_id,
-                    os_id=data.get("os_id", "UNKNOWN"),
-                    detected_at=datetime.now(timezone.utc).isoformat(),
-                    dispatched_to="repair_loop"
-                )
-            elif verdict == "APPROVED":
-                return DispatchEvent(
-                    event_type="QA_APPROVED",
-                    source_file=event_file,
-                    task_id=task_id,
-                    os_id=data.get("os_id", "UNKNOWN"),
-                    detected_at=datetime.now(timezone.utc).isoformat(),
-                    dispatched_to="vault_archivist"
-                )
-        elif filename.startswith("repair_result_") or ("status" in data and "patch_diff" in data):
+            return DispatchEvent(
+                event_type=f"QA_{verdict}",
+                source_file=event_file,
+                task_id=data.get("task_id", "UNKNOWN"),
+                os_id=data.get("os_id", "UNKNOWN"),
+                detected_at=datetime.now(timezone.utc).isoformat(),
+                dispatched_to="vault_archivist" if verdict == "APPROVED" else "repair_loop"
+            )
+        elif filename.startswith("repair_result_") or "patch_diff" in data:
             return DispatchEvent(
                 event_type="REPAIR_COMPLETED",
                 source_file=event_file,
@@ -164,123 +182,71 @@ def parse_event(event_file: Path) -> DispatchEvent | None:
             )
         elif filename.startswith("task_result_") or "test_exit_code" in data:
             exit_code = data.get("test_exit_code", 0)
-            if exit_code != 0:
-                return DispatchEvent(
-                    event_type="MICRO_TASK_COMPLETED",
-                    source_file=event_file,
-                    task_id=data.get("task_id", "UNKNOWN"),
-                    os_id="UNKNOWN",
-                    detected_at=datetime.now(timezone.utc).isoformat(),
-                    dispatched_to="repair_loop"
-                )
+            return DispatchEvent(
+                event_type="MICRO_TASK_COMPLETED",
+                source_file=event_file,
+                task_id=data.get("task_id", "UNKNOWN"),
+                os_id="UNKNOWN",
+                detected_at=datetime.now(timezone.utc).isoformat(),
+                dispatched_to="repair_loop" if exit_code != 0 else "none"
+            )
     except Exception as e:
-        logger.error(f"Erro crítico no processamento de {event_file}: {e}")
-        
+        logger.error(f"Erro no parse de {event_file}: {e}")
     return None
 
-def route_event(event: DispatchEvent):
-    logger.info(f"Roteando evento {event.event_type} para {event.dispatched_to} (Task: {event.task_id})")
-    if event.dispatched_to == "repair_loop":
-        logger.info(f"-> Acionando auto-repair-agent para a task {event.task_id}")
-    elif event.dispatched_to == "qa_headless":
-        logger.info(f"-> Acionando QA Headless para a task {event.task_id}")
-
-def cleanup_dead_letter(dead_letter_dir: Path, max_age_days: int = 7):
-    """Remove arquivos antigos da quarentena para evitar transbordamento."""
-    if not dead_letter_dir.exists():
-        return
-    
-    now = time.time()
-    removed_count = 0
-    for f in dead_letter_dir.glob("*.json"):
-        if f.is_file():
-            if now - f.stat().st_mtime > (max_age_days * 86400):
-                try:
-                    f.unlink()
-                    removed_count += 1
-                except Exception as e:
-                    logger.error(f"Erro ao remover {f}: {e}")
-    
-    if removed_count > 0:
-        logger.info(f"Limpeza de quarentena concluída: {removed_count} arquivos removidos.")
-
-def handle_dead_letter(event_file: Path, dead_letter_dir: Path):
-    dead_letter_dir.mkdir(parents=True, exist_ok=True)
-    target = dead_letter_dir / event_file.name
-    logger.warning(f"Movendo {event_file} para DEAD-LETTER: {target}")
+async def dispatch_loop(config: DispatcherConfig, state: StateStore, dead_letter_dir: Path, nats_url: str):
+    nc = NATS()
     try:
-        if target.exists():
-            target.unlink()
-        event_file.rename(target)
+        await nc.connect(nats_url)
+        logger.info(f"Conectado ao NATS em {nats_url}")
     except Exception as e:
-        logger.error(f"Erro ao mover para dead-letter: {e}")
+        logger.warning(f"Não foi possível conectar ao NATS: {e}. Operando em modo offline (DB apenas).")
+        nc = None
 
-def dispatch_loop(config: DispatcherConfig, state: StateStore, dead_letter_dir: Path):
-    """Loop de polling v2.2 - Otimizado com índices e cleanup silencioso."""
-    logger.info(f"Iniciando Dispatcher v2.2 (Final). Monitorando {len(config.watch_dirs)} diretórios...")
+    logger.info(f"Iniciando Dispatcher v2.3 (Async/NATS). Monitorando {len(config.watch_dirs)} diretórios...")
     
-    iteration_count = 0
+    iteration = 0
     try:
         while True:
-            iteration_count += 1
-            
-            if iteration_count % 100 == 0:
-                cleanup_dead_letter(dead_letter_dir)
-
+            iteration += 1
             for watch_dir in config.watch_dirs:
-                if not watch_dir.exists():
-                    continue
-                    
+                if not watch_dir.exists(): continue
                 for event_file in watch_dir.glob("*.json"):
-                    try:
-                        if not state.is_seen(event_file):
-                            event = parse_event(event_file)
-                            if event:
-                                route_event(event)
-                                state.log_dispatch(event)
+                    if not state.is_seen(event_file):
+                        event = parse_event(event_file)
+                        if event:
+                            logger.info(f"Evento detectado: {event.event_type} -> {event.dispatched_to}")
+                            state.log_dispatch(event)
+                            if nc: await publish_telemetry(nc, event)
+                            state.mark_seen(event_file)
+                            state.clear_attempts(event_file)
+                        else:
+                            attempts = state.increment_attempt(event_file)
+                            if attempts >= 5:
+                                dead_letter_dir.mkdir(parents=True, exist_ok=True)
+                                event_file.rename(dead_letter_dir / event_file.name)
                                 state.mark_seen(event_file)
-                                state.clear_attempts(event_file)
-                            else:
-                                attempts = state.increment_attempt(event_file)
-                                if attempts >= 5:
-                                    handle_dead_letter(event_file, dead_letter_dir)
-                                    state.mark_seen(event_file)
-                    except Exception as e:
-                        logger.error(f"Erro inesperado ao processar {event_file}: {e}")
-                        # Não marca como visto para permitir retentativa se não foi um erro de quarentena
-                                
-            time.sleep(config.poll_interval_seconds)
-    except KeyboardInterrupt:
-        logger.info("Encerrando Dispatcher graciosamente.")
-
-from db_health_check import verify_db_integrity
+            await asyncio.sleep(config.poll_interval_seconds)
+    except asyncio.CancelledError:
+        logger.info("Encerrando Dispatcher...")
+    finally:
+        if nc: await nc.close()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--watch-dir", type=str, required=True, help="Diretório para monitorar")
-    parser.add_argument("--db-path", type=str, default="dispatcher_state.db", help="Caminho do banco SQLite")
-    parser.add_argument("--dead-letter", type=str, default="dead_letter", help="Diretório de dead-letter")
-    parser.add_argument("--interval", type=int, default=5, help="Intervalo de polling em segundos")
-    
+    parser.add_argument("--watch-dir", type=str, required=True)
+    parser.add_argument("--db-path", type=str, default="dispatcher_state.db")
+    parser.add_argument("--nats-url", type=str, default="nats://localhost:4222")
     args = parser.parse_args()
     
-    watch_dirs = [Path(args.watch_dir)]
-    for w in watch_dirs:
-        w.mkdir(parents=True, exist_ok=True)
-        
     config = DispatcherConfig(
-        watch_dirs=watch_dirs,
-        poll_interval_seconds=args.interval,
-        activity_log_path=Path("legacy_activity.jsonl")
+        watch_dirs=[Path(args.watch_dir)],
+        poll_interval_seconds=2,
+        activity_log_path=Path("legacy.jsonl")
     )
+    state = StateStore(Path(args.db_path))
     
-    db_path = Path(args.db_path)
-    logger.info(f"Executando Health Check em {db_path}...")
-    if not verify_db_integrity(db_path):
-        logger.error("Falha no Health Check inicial. Abortando inicialização do Dispatcher.")
-        sys.exit(1)
-        
-    state = StateStore(db_path)
-    dead_letter_dir = Path(args.dead_letter)
-    
-    dispatch_loop(config, state, dead_letter_dir)
+    try:
+        asyncio.run(dispatch_loop(config, state, Path("dead_letter"), args.nats_url))
+    except KeyboardInterrupt:
+        pass

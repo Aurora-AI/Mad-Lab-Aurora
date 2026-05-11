@@ -78,6 +78,7 @@ class ActivityEvent(BaseModel):
         "REPAIR_ATTEMPT",
         "REPAIR_COMPLETED",
         "REPAIR_ESCALATED",
+        "SOVEREIGNTY_ALERT",
     ]
     os_id: str
     task_id: str
@@ -136,3 +137,25 @@ class DispatcherConfig(BaseModel):
     poll_interval_seconds: int = 5
     max_concurrent_dispatches: int = 1  # v0 é serial
     activity_log_path: Path
+
+
+class RecurrenceAlert(BaseModel):
+    """Alerta de recorrência detectado."""
+    pattern_id: str
+    category: str  # ex: "CI"
+    domains: list[str]
+    occurrences: int
+    threshold: int = 3
+    first_seen: str  # ISO timestamp
+    last_seen: str
+
+
+class SovereigntyReport(BaseModel):
+    """Relatório de supervisão emitido ao Comandante."""
+    report_id: str  # ex: "SOV-20260501-001"
+    generated_at: str
+    alerts: list[RecurrenceAlert]
+    total_repairs_last_30d: int
+    repair_success_rate: float  # 0.0-1.0
+    suggested_actions: list[str]  # ex: "Refatorar trustware/risk_schema.py"
+    severity: Literal["INFO", "WARNING", "CRITICAL"]

@@ -11,7 +11,7 @@
   ],
   "runtime": {
     "language": "python",
-    "entrypoint": "CRM/apps/crm-core/src/agents/ceo/main.py"
+    "entrypoint": "Ozzmosis/apps/aurora-governance/main.py"
   },
   "trustware": {
     "isolation_level": "STRICT",

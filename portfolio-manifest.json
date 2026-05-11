@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "owner": "Rodrigo Cesar Winhaski",
   "governance": {
-    "manual": "Ozzmosis/docs/CONSTITUICAO/MANUAL_DE_CONSTRUCAO_AURORA_v8.0.md",
-    "standard": "SES-ELITE v3.0.0"
+    "manual": "Ozzmosis/docs/CONSTITUICAO/MANUAL_DE_CONSTRUCAO_AURORA_v9.0.md",
+    "standard": "SES-ELITE v3.0.0",
+    "version": "9.0"
   },
   "projects": [
     {
@@ -34,6 +35,14 @@
       "path": "MadLabAurora/",
       "role": "creative",
       "description": "Web properties and cognitive assets"
+    },
+    {
+      "id": "exrs",
+      "name": "EXRS — Aurora Controler",
+      "path": "AuroraControler/",
+      "local_path": "C:/Projetos/Aurora Controler",
+      "role": "product",
+      "description": "Deterministic spreadsheet-to-software engine (Excel Compiler)"
     }
   ],
   "global_infrastructure": {

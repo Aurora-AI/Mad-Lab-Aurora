@@ -9,14 +9,13 @@ def setup():
     
     # Verifica se já existe
     collections = client.get_collections().collections
+    print(f"Recriando coleção '{collection_name}' (3072d, Cosine)...")
     if any(c.name == collection_name for c in collections):
-        print(f"Coleção '{collection_name}' já existe. Ignorando criação.")
-        return
-
-    print(f"Criando coleção '{collection_name}' (768d, Cosine)...")
+        client.delete_collection(collection_name)
+        
     client.create_collection(
         collection_name=collection_name,
-        vectors_config=VectorParams(size=768, distance=Distance.COSINE),
+        vectors_config=VectorParams(size=3072, distance=Distance.COSINE),
     )
     print("Sucesso: Memória vetorial inicializada.")
 

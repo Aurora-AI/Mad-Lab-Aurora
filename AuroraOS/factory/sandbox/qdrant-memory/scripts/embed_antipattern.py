@@ -13,9 +13,25 @@ from qdrant_client.http import models
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# Load .env
-ENV_PATH = Path("C:/Projetos/Aurora/ElysianLex/.env")
-load_dotenv(ENV_PATH)
+def find_project_root(current_path: Path, target_file: str = "aurora_vault.py") -> Path:
+    """Recursively searches for the project root containing the target file."""
+    for parent in current_path.parents:
+        if (parent / target_file).exists():
+            return parent
+    return current_path # Fallback
+
+# Load .env - Robust discovery
+PROJECT_ROOT = find_project_root(Path(__file__).resolve())
+ENV_PATH = PROJECT_ROOT / "ElysianLex" / ".env"
+
+if ENV_PATH.exists():
+    logger.info(f"Loading .env from {ENV_PATH}")
+    load_dotenv(ENV_PATH)
+else:
+    logger.warning("Project-level .env not found, using system environment.")
+    load_dotenv()
+
+from embedding_util import get_gemini_embedding
 
 # Configs
 QDRANT_URL = os.getenv("QDRANT_URL", "http://127.0.0.1:6333")
@@ -23,19 +39,11 @@ COLLECTION_NAME = "reflexion_ki"
 VAULT_REFLEXION_PATH = Path("C:/Projetos/Aurora/Ozzmosis/docs/Vault/Reflexion/KIs")
 ANTI_PATTERNS_FILE = Path("C:/Projetos/Aurora/Ozzmosis/docs/Vault/Reflexion/anti-patterns.md")
 
-# Default Embedding Size for reflexion_ki (MiniLM-L6-v2)
-VECTOR_SIZE = 384
+# Standard Embedding Size for text-embedding-004
+VECTOR_SIZE = 3072
 
-def get_embedding(text: str, model_name="all-MiniLM-L6-v2"):
-    """
-    Get embedding for text.
-    """
-    from sentence_transformers import SentenceTransformer
-    if not hasattr(get_embedding, "_model"):
-        logger.info(f"Loading embedding model: {model_name}")
-        get_embedding._model = SentenceTransformer(model_name)
-    
-    return get_embedding._model.encode(text).tolist()
+def get_embedding(text: str):
+    return get_gemini_embedding(text)
 
 def parse_anti_patterns():
     """
@@ -149,6 +157,33 @@ def main():
         if points:
             client.upsert(collection_name=COLLECTION_NAME, points=points)
             logger.info(f"Successfully ingested {len(points)} patterns into {COLLECTION_NAME}.")
+        
+        # Ingest independent KIs from the KIs directory
+        ki_files = list(VAULT_REFLEXION_PATH.glob("*.md"))
+        logger.info(f"Scanning {len(ki_files)} KIs for supplementary ingestion...")
+        ki_points = []
+        for ki_file in ki_files:
+            try:
+                content = ki_file.read_text(encoding="utf-8")
+                # Avoid re-ingesting things already in points if possible, 
+                # but for simplicity we'll just ingest them all as 'ki_document'
+                logger.info(f"Ingesting KI: {ki_file.name}")
+                vector = get_embedding(content[:5000]) # Limit context
+                ki_points.append(models.PointStruct(
+                    id=hash(ki_file.name) % (2**63),
+                    vector=vector,
+                    payload={
+                        "filename": ki_file.name,
+                        "type": "ki_document",
+                        "ingested_at": datetime.now().isoformat()
+                    }
+                ))
+            except Exception as e:
+                logger.error(f"Error ingesting KI {ki_file.name}: {e}")
+        
+        if ki_points:
+            client.upsert(collection_name=COLLECTION_NAME, points=ki_points)
+            logger.info(f"Successfully ingested {len(ki_points)} KIs.")
         else:
             logger.warning("No patterns found to ingest.")
 

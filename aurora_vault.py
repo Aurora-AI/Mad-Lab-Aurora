@@ -7,7 +7,10 @@ from dataclasses import dataclass
 from functools import lru_cache
 from pathlib import Path
 from typing import Iterable, Sequence
-import tomllib
+try:
+    import tomllib
+except ImportError:
+    import tomli as tomllib
 import base64
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
@@ -76,7 +79,11 @@ def _decrypt_protected_key(payload: str) -> str:
         f = Fernet(key)
         return f.decrypt(encrypted_data).decode()
     except Exception as exc:
-        raise AuroraVaultConfigurationError(f"Failed to decrypt Master Key: {str(exc)}") from exc
+        msg = str(exc)
+        # Se for erro de token inválido (senha errada), fornece feedback claro
+        if "InvalidToken" in type(exc).__name__:
+            msg = "Senha incorreta ou chave corrompida."
+        raise AuroraVaultConfigurationError(f"Failed to decrypt Master Key: {msg}") from exc
 
 
 def _read_master_key_from_file(path_value: str | None) -> str:

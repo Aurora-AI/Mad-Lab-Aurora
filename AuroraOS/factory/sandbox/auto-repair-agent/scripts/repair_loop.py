@@ -240,7 +240,7 @@ def repair_loop(
             try:
                 import subprocess
                 subprocess.run([
-                    sys.executable, 
+                    "C:/Projetos/Aurora/AuroraOS/factory/sandbox/qdrant-memory/.venv/Scripts/python.exe", 
                     "C:/Projetos/Aurora/AuroraOS/factory/sandbox/qdrant-memory/scripts/embed_antipattern.py",
                     "--single", str(ap_path)
                 ], check=False)

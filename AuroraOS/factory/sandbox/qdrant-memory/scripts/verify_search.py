@@ -17,11 +17,11 @@ def test_search(query: str):
     
     vector = model.encode(query).tolist()
     
-    results = client.query(
+    results = client.query_points(
         collection_name=COLLECTION_NAME,
-        query_vector=vector,
+        query=vector,
         limit=3
-    )
+    ).points
     
     print("\n--- Search Results ---")
     for i, res in enumerate(results):

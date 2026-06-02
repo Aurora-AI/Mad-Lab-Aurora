@@ -4,7 +4,7 @@ import * as React from "react";
 import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { cn } from "@/lib/utils";
+import { cn } from "./lib/utils";
 
 /**
  * ID: heroes-davincho-001

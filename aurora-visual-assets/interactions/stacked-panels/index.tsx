@@ -3,7 +3,7 @@
 import * as React from "react";
 import { useRef, useCallback } from "react";
 import { motion, useSpring } from "framer-motion";
-import { cn } from "@/lib/utils";
+import { cn } from "./lib/utils";
 
 /**
  * ID: interactions-stacked-panels-001

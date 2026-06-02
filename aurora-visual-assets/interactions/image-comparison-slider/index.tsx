@@ -1,5 +1,5 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
-import { cn } from "@/lib/utils";
+import { cn } from "./lib/utils";
 
 /**
  * ImageComparison (Vanilla React Implementation)

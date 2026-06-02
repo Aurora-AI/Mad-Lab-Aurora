@@ -4,7 +4,7 @@ import * as React from "react";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { cn } from "@/lib/utils";
+import { cn } from "./lib/utils";
 
 // Register ScrollTrigger safely for React
 if (typeof window !== "undefined") {

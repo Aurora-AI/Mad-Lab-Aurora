@@ -1,0 +1,16 @@
+{
+  "health_ok": true,
+  "unauthorized_status": 401,
+  "unauthorized_code": "unauthorized",
+  "returncode": 0,
+  "run_id": "run_brief_e2e_001",
+  "final_stage": "distribution",
+  "completed_stages": [
+    "brief",
+    "research",
+    "architecture",
+    "review",
+    "distribution"
+  ],
+  "status": "ok"
+}

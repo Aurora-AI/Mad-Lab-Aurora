@@ -1,0 +1,40 @@
+{
+  "id": "research_apo_manifesto_001",
+  "briefId": "brief_apo_manifesto_001",
+  "fontes": [
+    "docs/Vault/entrevista_rodrigo_apo.md",
+    "docs/Vault/estudo_estrategia_apo.md"
+  ],
+  "concorrentes": [
+    "MBO",
+    "SLII",
+    "RevOps"
+  ],
+  "lacunas": [
+    "gestores confundem numero com causa",
+    "metodos tradicionais nao integram diagnostico humano e estrutural",
+    "faltam playbooks objetivos para transferir a inteligencia do fundador"
+  ],
+  "linguagemDoMercado": [
+    "performance comercial",
+    "accountability",
+    "diagnostico de causa-raiz",
+    "escala previsivel",
+    "seguranca psicologica com exigencia"
+  ],
+  "objecoes": [
+    "o modelo parece subjetivo demais",
+    "sem scorecard o metodo pode ficar personalista",
+    "gestores acostumados a meta podem rejeitar leitura sistemica"
+  ],
+  "riscos": [
+    "romantizar intuicao sem operacionalizacao",
+    "prometer transformacao cultural instantanea",
+    "reduzir APO a tecnica de lideranca sem camada estrutural"
+  ],
+  "insights": [
+    "o diferencial real esta em tratar o gestor como arquitetura de alocacao, nao cobrador",
+    "o caso da melhor vendedora demitida fornece prova forte de tese sistemica",
+    "a esteira natural de valor comeca no manifesto e sobe para diagnostico e implementacao"
+  ]
+}

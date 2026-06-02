@@ -1,0 +1,19 @@
+{
+  "id": "distribution_e2e_010",
+  "briefId": "brief_e2e_001",
+  "title": "Consorcio com criterio patrimonial",
+  "subtitle": "Como tomar a decisao com mais clareza e menos ruida comercial",
+  "promise": "Entender o instrumento antes de comprometer capital",
+  "cta": "Solicitar diagnostico patrimonial",
+  "landingCopy": "Uma leitura objetiva para decidir com mais criterio, seguranca e visibilidade patrimonial.",
+  "emailSequence": [
+    "email_abertura",
+    "email_objecoes",
+    "email_cta"
+  ],
+  "socialDerivatives": [
+    "carrossel_clareza_patrimonial",
+    "post_objecoes",
+    "post_cta"
+  ]
+}

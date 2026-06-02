@@ -1,0 +1,20 @@
+{
+  "os_id": "OS-002",
+  "project": "Aurora Cognitive Assets",
+  "name": "Oceano Azul: Arbitragem Digital nas Filipinas",
+  "thesis": "O custo de atenção subprecificado (Low CPM) em mercados de fronteira, somado ao Índice de Aspiração, cria a maior janela de ROI para infoprodutos globais.",
+  "target_market": {
+    "country": "Philippines",
+    "avg_cpm": "$3.50",
+    "dominant_platform": "Meta (Reels) + WhatsApp",
+    "primary_language": "English (Primary Instruction)"
+  },
+  "strategy_pillars": [
+    "Estratégia da Ponte (Low Ticket Entry)",
+    "Conversational Commerce (WhatsApp Funnel)",
+    "Mobile-Only Infrastructure (Digital Leapfrogging)"
+  ],
+  "monetization_model": "Micro-Subscription (USD Settlement via Stripe)",
+  "source_file": "c:/Aurora/Expansão para Mercados de Fronteira Digital.md",
+  "timestamp": "2026-04-02T17:56:00-03:00"
+}

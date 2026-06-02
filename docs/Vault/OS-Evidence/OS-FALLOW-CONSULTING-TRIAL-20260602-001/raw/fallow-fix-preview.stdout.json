@@ -1,0 +1,184 @@
+{
+  "dry_run": true,
+  "fixes": [
+    {
+      "type": "remove_export",
+      "path": "ElysianCorp\\src\\components\\hero\\ScrambleBackground.tsx",
+      "line": 47,
+      "name": "ScrambleBackground"
+    },
+    {
+      "type": "remove_export",
+      "path": "ElysianCorp\\src\\components\\fx\\ScramblePortrait.tsx",
+      "line": 13,
+      "name": "ScramblePortrait"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-visual-assets\\interactions\\spotlight-card\\index.tsx",
+      "line": 189,
+      "name": "GlowCard"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-web\\src\\components\\sections\\BlackBoxRevealed.tsx",
+      "line": 4,
+      "name": "BlackBoxRevealed"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-web\\src\\lib\\arc\\telemetry.ts",
+      "line": 59,
+      "name": "telemetry"
+    },
+    {
+      "type": "remove_export",
+      "path": "ElysianCorp\\src\\components\\hero\\IndustrialGrid.tsx",
+      "line": 4,
+      "name": "IndustrialGrid"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-visual-assets\\typography\\vapour-text\\index.tsx",
+      "line": 63,
+      "name": "default"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-visual-assets\\typography\\vapour-text\\index.tsx",
+      "line": 5,
+      "name": "Tag"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-web\\src\\components\\sections\\RealityValidation.tsx",
+      "line": 8,
+      "name": "RealityValidation"
+    },
+    {
+      "type": "remove_export",
+      "path": "ElysianCorp\\src\\components\\fx\\IdentityFragmenter.tsx",
+      "line": 15,
+      "name": "IdentityFragmenter"
+    },
+    {
+      "type": "remove_export",
+      "path": "integrations\\open-design\\skills\\hyperframes\\scripts\\package-loader.mjs",
+      "line": 48,
+      "name": "hyperframesPackageSpec"
+    },
+    {
+      "type": "remove_export",
+      "path": "integrations\\open-design\\skills\\hyperframes\\scripts\\package-loader.mjs",
+      "line": 14,
+      "name": "importPackagesOrBootstrap"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-web\\src\\components\\sections\\TheGateway.tsx",
+      "line": 3,
+      "name": "TheGateway"
+    },
+    {
+      "type": "remove_export",
+      "path": "ElysianCorp\\src\\components\\ui\\background-paths.tsx",
+      "line": 52,
+      "name": "BackgroundPaths"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-web\\src\\components\\sections\\FounderDensity.tsx",
+      "line": 3,
+      "name": "FounderDensity"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-web\\src\\components\\ui\\AuroraHeroScene.tsx",
+      "line": 97,
+      "name": "AuroraHeroScene"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-web\\src\\components\\hero\\materials\\useEdgePreservingMaterial.ts",
+      "line": 4,
+      "name": "useEdgePreservingMaterial"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-web\\src\\components\\sections\\ArchitecturalProtocol.tsx",
+      "line": 29,
+      "name": "ArchitecturalProtocol"
+    },
+    {
+      "type": "remove_export",
+      "path": "ElysianCorp\\src\\lib\\animations.ts",
+      "line": 8,
+      "name": "initAnimationCore"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-visual-assets\\interactions\\image-comparison-slider\\index.tsx",
+      "line": 9,
+      "name": "ImageComparison"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-visual-assets\\backgrounds\\shader-lines\\index.tsx",
+      "line": 15,
+      "name": "ShaderAnimation"
+    },
+    {
+      "type": "remove_export",
+      "path": "ElysianCorp\\src\\components\\hero\\HeroContent.tsx",
+      "line": 5,
+      "name": "HeroContent"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-visual-assets\\backgrounds\\paper-shaders\\index.tsx",
+      "line": 97,
+      "name": "EnergyRing"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-visual-assets\\backgrounds\\paper-shaders\\index.tsx",
+      "line": 54,
+      "name": "ShaderPlane"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-web\\src\\components\\hero\\PuzzleGroup.tsx",
+      "line": 10,
+      "name": "default"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-web\\src\\components\\sections\\SovereignHero.tsx",
+      "line": 4,
+      "name": "SovereignHero"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-web\\src\\components\\elysian\\ElysianScene.tsx",
+      "line": 99,
+      "name": "ElysianScene"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-web\\src\\components\\ui\\EthicalAnchor.tsx",
+      "line": 5,
+      "name": "EthicalAnchor"
+    },
+    {
+      "type": "remove_export",
+      "path": "aurora-visual-assets\\typography\\layered-text\\index.tsx",
+      "line": 20,
+      "name": "LayeredText"
+    }
+  ],
+  "total_fixed": 0,
+  "skipped": 0,
+  "skipped_content_changed": 0,
+  "skipped_mixed_line_endings": 0,
+  "skipped_low_confidence_exports": 0
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@aurora/background-paths",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "dependencies": {
+    "next": "latest",
+    "framer-motion": "latest",
+    "@radix-ui/react-slot": "latest",
+    "class-variance-authority": "latest",
+    "clsx": "latest",
+    "tailwind-merge": "latest"
+  },
+  "aurora": {
+    "type": "background",
+    "patterns": ["P014", "P015"],
+    "status": "production"
+  }
+}

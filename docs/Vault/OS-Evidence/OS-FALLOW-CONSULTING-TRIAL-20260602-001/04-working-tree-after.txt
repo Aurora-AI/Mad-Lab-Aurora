@@ -1,0 +1,4 @@
+GitRepo: not_present
+WorkspaceRoot: C:\Projetos\MadLabAurora
+Note: git status --porcelain is unavailable because the workspace root does not contain a .git directory.
+Observation: only OS evidence artifacts were created under docs\Vault\OS-Evidence\OS-FALLOW-CONSULTING-TRIAL-20260602-001\.

@@ -1,0 +1,835 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - link "Liveblocks" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - img [ref=e8]
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - button "Product" [ref=e15] [cursor=pointer]:
+              - text: Product
+              - img
+          - listitem [ref=e16]:
+            - button "Resources" [ref=e17] [cursor=pointer]:
+              - text: Resources
+              - img
+          - listitem [ref=e18]:
+            - link "Docs" [ref=e19] [cursor=pointer]:
+              - /url: /docs
+          - listitem [ref=e20]:
+            - link "Pricing" [ref=e21] [cursor=pointer]:
+              - /url: /pricing
+      - generic [ref=e23]:
+        - link "Sign in" [ref=e24] [cursor=pointer]:
+          - /url: /auth/login
+          - generic [ref=e25]: Sign in
+        - link "Get started" [ref=e26] [cursor=pointer]:
+          - /url: /auth/signup
+          - generic [ref=e27]: Get started
+  - main [ref=e28]:
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - link "Recap The Age of Agent-Ready Software" [ref=e31] [cursor=pointer]:
+          - /url: /blog/unveil-week-recap-realtime-collaboration-for-humans-and-agents
+          - generic [ref=e32]:
+            - generic [ref=e33]: Recap
+            - paragraph [ref=e34]: The Age of Agent-Ready Software
+          - img [ref=e36]
+        - heading "Realtime infrastructure for multiplayer apps and agents" [level=1] [ref=e38]
+        - paragraph [ref=e39]: Liveblocks provides the infrastructure to handle concurrent edits on shared data, so people and AI agents can collaborate without breaking your app.
+        - generic [ref=e40]:
+          - link "Get started for free" [ref=e41] [cursor=pointer]:
+            - /url: /auth/signup
+            - generic [ref=e42]: Get started for free
+          - link "Contact sales" [ref=e43] [cursor=pointer]:
+            - /url: /contact/sales
+            - generic [ref=e44]:
+              - text: Contact sales
+              - img [ref=e45]
+      - generic [ref=e48]:
+        - img "Your app with Liveblocks" [ref=e50]
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - img "Background"
+          - generic [ref=e60]:
+            - list [ref=e66]:
+              - listitem [ref=e67]:
+                - button "Document" [ref=e68] [cursor=pointer]:
+                  - img [ref=e69]
+                  - text: Document
+              - listitem [ref=e72]:
+                - button "Workflow" [ref=e73] [cursor=pointer]:
+                  - img [ref=e74]
+                  - text: Workflow
+              - listitem [ref=e76]:
+                - button "Sheet" [ref=e77] [cursor=pointer]:
+                  - img [ref=e78]
+                  - text: Sheet
+              - listitem [ref=e80]:
+                - button "Dashboard" [ref=e81] [cursor=pointer]:
+                  - img [ref=e82]
+                  - text: Dashboard
+            - generic [ref=e84]:
+              - img "Document with Liveblocks" [ref=e86]
+              - img "Document without Liveblocks" [ref=e88]
+          - generic:
+            - img
+            - img
+    - generic [ref=e91]:
+      - generic [ref=e92]: Trusted by leading engineering, product, and design teams
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - img [ref=e97]
+          - img [ref=e100]
+          - img [ref=e105]
+          - img [ref=e116]
+          - img [ref=e120]
+          - img [ref=e127]
+          - img [ref=e133]
+          - img [ref=e138]
+          - img [ref=e153]
+          - img [ref=e158]
+        - link "Meet our customers" [ref=e162] [cursor=pointer]:
+          - /url: /customers
+          - generic [ref=e163]:
+            - text: Meet our customers
+            - img [ref=e164]
+    - generic [ref=e166]:
+      - heading "Unlock the secret sauce behind world‑class products. In just a few lines of code." [level=2] [ref=e168]
+      - region [ref=e170]:
+        - generic [ref=e172]:
+          - group [ref=e173]:
+            - generic [ref=e174]:
+              - generic [ref=e175]:
+                - text: Annotations
+                - generic [ref=e176]: like Google Docs
+              - img "Annotations like Google Docs" [ref=e177]
+          - group [ref=e178]:
+            - generic [ref=e179]:
+              - generic [ref=e180]:
+                - text: Inbox
+                - generic [ref=e181]: like Linear
+              - img "Inbox like Linear" [ref=e182]
+          - group [ref=e183]:
+            - generic [ref=e184]:
+              - generic [ref=e185]:
+                - text: AI copilots
+                - generic [ref=e186]: like Notion
+              - img "AI copilots like Notion" [ref=e187]
+          - group [ref=e188]:
+            - generic [ref=e189]:
+              - generic [ref=e190]:
+                - text: Co-editing
+                - generic [ref=e191]: like Google Docs
+              - img "Co-editing like Google Docs" [ref=e192]
+          - group [ref=e193]:
+            - generic [ref=e194]:
+              - generic [ref=e195]:
+                - text: Multiplayer
+                - generic [ref=e196]: like Figma
+              - img "Multiplayer like Figma" [ref=e197]
+          - group [ref=e198]:
+            - generic [ref=e199]:
+              - generic [ref=e200]:
+                - text: Comments
+                - generic [ref=e201]: like Notion
+              - img "Comments like Notion" [ref=e202]
+          - group [ref=e203]:
+            - generic [ref=e204]:
+              - generic [ref=e205]:
+                - text: 3D tools
+                - generic [ref=e206]: like Spline
+              - img "3D tools like Spline" [ref=e207]
+          - group [ref=e208]:
+            - generic [ref=e209]:
+              - generic [ref=e210]:
+                - text: Whiteboard
+                - generic [ref=e211]: like Miro
+              - img "Whiteboard like Miro" [ref=e212]
+          - group [ref=e213]:
+            - generic [ref=e214]:
+              - generic [ref=e215]:
+                - text: Spreadsheets
+                - generic [ref=e216]: like Google Sheets
+              - img "Spreadsheets like Google Sheets" [ref=e217]
+          - group [ref=e218]:
+            - generic [ref=e219]:
+              - generic [ref=e220]:
+                - text: Creative tools
+                - generic [ref=e221]: like Canva
+              - img "Creative tools like Canva" [ref=e222]
+          - group [ref=e223]:
+            - generic [ref=e224]:
+              - generic [ref=e225]:
+                - text: AI companion
+                - generic [ref=e226]: like Microsoft Copilot
+              - img "AI companion like Microsoft Copilot" [ref=e227]
+    - generic [ref=e228]:
+      - generic [ref=e232]:
+        - heading "Realtime infrastructure for collaborative AI." [level=2] [ref=e233]
+        - paragraph [ref=e234]:
+          - text: When people and AI agents work on the same data,
+          - strong [ref=e235]: concurrency becomes the problem
+          - text: . Liveblocks keeps everything in sync so
+          - strong [ref=e236]: updates stay consistent
+          - text: .
+      - generic [ref=e240]:
+        - generic [ref=e241]:
+          - heading "Realtime sync is the foundation of collaborative AI." [level=3] [ref=e243]
+          - list [ref=e244]:
+            - listitem [ref=e245]:
+              - link "Presence Presence Online users, cursors, selections" [ref=e246] [cursor=pointer]:
+                - /url: /realtime-infrastructure?primitive=presence
+                - img "Presence" [ref=e248]
+                - generic [ref=e249]:
+                  - heading "Presence" [level=4] [ref=e250]
+                  - paragraph [ref=e251]: Online users, cursors, selections
+            - listitem [ref=e252]:
+              - link "Broadcast Broadcast Temporary event signals" [ref=e253] [cursor=pointer]:
+                - /url: /realtime-infrastructure?primitive=broadcast
+                - img "Broadcast" [ref=e255]
+                - generic [ref=e256]:
+                  - heading "Broadcast" [level=4] [ref=e257]
+                  - paragraph [ref=e258]: Temporary event signals
+            - listitem [ref=e259]:
+              - link "Storage Storage Synced conflict-free data" [ref=e260] [cursor=pointer]:
+                - /url: /realtime-infrastructure?primitive=storage
+                - img "Storage" [ref=e262]
+                - generic [ref=e263]:
+                  - heading "Storage" [level=4] [ref=e264]
+                  - paragraph [ref=e265]: Synced conflict-free data
+            - listitem [ref=e266]:
+              - link "Feeds Feeds Beta Messages and activity logs" [ref=e267] [cursor=pointer]:
+                - /url: /realtime-infrastructure?primitive=feeds
+                - img "Feeds" [ref=e269]
+                - generic [ref=e270]:
+                  - heading "Feeds Beta" [level=4] [ref=e271]:
+                    - text: Feeds
+                    - generic [ref=e272]: Beta
+                  - paragraph [ref=e273]: Messages and activity logs
+            - listitem [ref=e274]:
+              - link "Threads Threads Contextual conversations" [ref=e275] [cursor=pointer]:
+                - /url: /realtime-infrastructure?primitive=threads
+                - img "Threads" [ref=e277]
+                - generic [ref=e278]:
+                  - heading "Threads" [level=4] [ref=e279]
+                  - paragraph [ref=e280]: Contextual conversations
+        - generic [ref=e281]:
+          - generic [ref=e282]:
+            - heading "Persistent shared data" [level=3] [ref=e283]:
+              - generic [ref=e284]: Persistent shared data
+            - paragraph [ref=e285]: Data is stored and synced across sessions. No backend to manage.
+          - generic:
+            - img "Illustration of persisted data store":
+              - generic:
+                - img
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - generic:
+                    - img
+                - generic:
+                  - generic: Storage
+                  - generic: Yjs
+        - generic [ref=e287]:
+          - heading "Global edge network" [level=3] [ref=e288]:
+            - generic [ref=e289]: Global edge network
+          - paragraph [ref=e290]: Realtime rooms runs close to your users. Low latency everywhere.
+        - generic [ref=e291]:
+          - img [ref=e292]
+          - generic [ref=e295]:
+            - heading "Conflict resolution" [level=3] [ref=e296]:
+              - generic [ref=e297]: Conflict resolution
+            - paragraph [ref=e298]: Concurrent edits are merged automatically. Powered by CRDTs.
+        - generic [ref=e299]:
+          - img [ref=e300]
+          - generic [ref=e302]:
+            - heading "Realtime collaboration" [level=3] [ref=e303]:
+              - generic [ref=e304]: Realtime collaboration
+            - paragraph [ref=e305]: See changes instantly with synced data, presence, and events.
+        - generic [ref=e306]:
+          - img [ref=e307]
+          - generic [ref=e310]:
+            - heading "Offline support" [level=3] [ref=e311]:
+              - generic [ref=e312]: Offline support
+            - paragraph [ref=e313]: Keep working offline. Changes sync automatically when reconnected.
+        - generic [ref=e314]:
+          - img [ref=e315]
+          - generic [ref=e317]:
+            - heading "Multiplayer undo/redo" [level=3] [ref=e318]:
+              - generic [ref=e319]: Multiplayer undo/redo
+            - paragraph [ref=e320]: Each user maintains their own history, even in shared environments.
+    - generic [ref=e321]:
+      - generic [ref=e325]:
+        - heading "Collaboration features, ready to ship." [level=2] [ref=e326]
+        - paragraph [ref=e327]:
+          - text: Liveblocks enables faster growth through ready‑made, fully customizable features—helping your team
+          - strong [ref=e328]: drive engagement
+          - text: and
+          - strong [ref=e329]: unlock new revenue
+          - text: .
+      - generic [ref=e333]:
+        - generic [ref=e334]:
+          - heading "Collaborative features your users already expect." [level=3] [ref=e336]
+          - list [ref=e337]:
+            - listitem [ref=e338]:
+              - link "Multiplayer Multiplayer Realtime collaboration" [ref=e339] [cursor=pointer]:
+                - /url: /multiplayer
+                - img "Multiplayer" [ref=e341]
+                - generic [ref=e342]:
+                  - heading "Multiplayer" [level=4] [ref=e343]
+                  - paragraph [ref=e344]: Realtime collaboration
+            - listitem [ref=e345]:
+              - link "Comments Comments Contextual commenting" [ref=e346] [cursor=pointer]:
+                - /url: /comments
+                - img "Comments" [ref=e348]
+                - generic [ref=e349]:
+                  - heading "Comments" [level=4] [ref=e350]
+                  - paragraph [ref=e351]: Contextual commenting
+            - listitem [ref=e352]:
+              - link "Notifications Notifications Smart alerts for your app" [ref=e353] [cursor=pointer]:
+                - /url: /notifications
+                - img "Notifications" [ref=e355]
+                - generic [ref=e356]:
+                  - heading "Notifications" [level=4] [ref=e357]
+                  - paragraph [ref=e358]: Smart alerts for your app
+            - listitem [ref=e359]:
+              - link "AI Copilots AI Copilots Individual AI assistants" [ref=e360] [cursor=pointer]:
+                - /url: /ai-copilots
+                - img "AI Copilots" [ref=e362]
+                - generic [ref=e363]:
+                  - heading "AI Copilots" [level=4] [ref=e364]
+                  - paragraph [ref=e365]: Individual AI assistants
+        - generic [ref=e366]:
+          - img [ref=e367]
+          - generic [ref=e369]:
+            - heading "Keep your users engaged" [level=3] [ref=e370]:
+              - generic [ref=e371]: Keep your users engaged
+            - paragraph [ref=e372]: Collaborative products keep your users active, invested, and coming back.
+        - generic [ref=e373]:
+          - img [ref=e374]
+          - generic [ref=e376]:
+            - heading "Onboard users faster, drive adoption" [level=3] [ref=e377]:
+              - generic [ref=e378]: Onboard users faster, drive adoption
+            - paragraph [ref=e379]: AI copilots help your users succeed from day one—shortening time to value.
+        - generic [ref=e380]:
+          - img [ref=e381]
+          - generic [ref=e383]:
+            - heading "Unlock new revenue opportunities" [level=3] [ref=e384]:
+              - generic [ref=e385]: Unlock new revenue opportunities
+            - paragraph [ref=e386]: Monetize collaboration and AI with premium or usage-based plans.
+        - generic [ref=e387]:
+          - img [ref=e388]
+          - generic [ref=e391]:
+            - heading "Ship faster, stay focused" [level=3] [ref=e392]:
+              - generic [ref=e393]: Ship faster, stay focused
+            - paragraph [ref=e394]: Skip months of engineering work. Liveblocks handles it all for you.
+        - generic [ref=e396]:
+          - heading "Magic happens when humans and AI collaborate." [level=4] [ref=e397]: Magic happens when humans and AI collaborate.
+          - generic [ref=e398]:
+            - img [ref=e399]
+            - generic [ref=e401]:
+              - img [ref=e402]
+              - text: AI
+          - generic [ref=e405]:
+            - img [ref=e406]
+            - generic [ref=e408]: Human
+    - generic [ref=e409]:
+      - generic [ref=e412]:
+        - generic [ref=e413]:
+          - heading "First‑class developer experience." [level=2] [ref=e414]
+          - paragraph [ref=e415]:
+            - text: Every API is carefully crafted to provide
+            - emphasis [ref=e416]: the best developer experience
+            - text: . Avoid hiring and ship faster with our
+            - emphasis [ref=e417]: React pre-built components
+            - text: and
+            - emphasis [ref=e418]: SDKs
+            - text: .
+        - generic [ref=e419]:
+          - link "Read the docs" [ref=e420] [cursor=pointer]:
+            - /url: /docs
+            - generic [ref=e421]: Read the docs
+          - link "Browse examples" [ref=e422] [cursor=pointer]:
+            - /url: /examples
+            - generic [ref=e423]:
+              - text: Browse examples
+              - img [ref=e424]
+      - generic [ref=e429]:
+        - generic [ref=e430]:
+          - generic [ref=e434]:
+            - generic [ref=e435]:
+              - generic [ref=e436]:
+                - generic [ref=e437]:
+                  - generic [ref=e438]:
+                    - generic [ref=e439]:
+                      - img "Alicia" [ref=e440]
+                      - generic: AH
+                    - generic [ref=e441]:
+                      - generic [ref=e442]: Alicia
+                      - generic [ref=e443]: 4h ago
+                  - generic [ref=e444]:
+                    - button "Resolve thread" [ref=e445]
+                    - button "Add reaction" [ref=e448]
+                - generic [ref=e454]:
+                  - paragraph [ref=e456]:
+                    - generic [ref=e457]: "@Marc"
+                    - text: Can I make it look like my brand?
+                  - button "Add reaction" [ref=e459]
+              - generic [ref=e465]:
+                - generic [ref=e466]:
+                  - generic [ref=e467]:
+                    - generic [ref=e468]:
+                      - img "Marc" [ref=e469]
+                      - generic: MS
+                    - generic [ref=e470]:
+                      - generic [ref=e471]: Marc
+                      - generic [ref=e472]: 4h ago
+                  - button "Add reaction" [ref=e474]
+                - generic [ref=e480]:
+                  - paragraph [ref=e482]:
+                    - generic [ref=e483]: "@Alicia"
+                    - text: Yes! Try updating
+                    - code [ref=e484]: "--lb-radius"
+                    - text: and
+                    - code [ref=e485]: "--lb-accent"
+                    - text: for example.
+                  - generic [ref=e486]:
+                    - button "3 reactions, react with 🔥" [ref=e487]:
+                      - img "🔥" [ref=e488]
+                      - generic [ref=e489]: "3"
+                    - button "1 reactions, react with 👍" [ref=e490]:
+                      - img "👍" [ref=e491]
+                      - generic [ref=e492]: "1"
+                    - button "Add reaction" [ref=e493]
+            - generic [ref=e499]:
+              - textbox "Composer editor" [ref=e500]:
+                - paragraph [ref=e501]:
+                  - generic [ref=e503]:
+                    - generic: Reply to thread…
+              - generic [ref=e505]:
+                - generic [ref=e506]:
+                  - button "Mention someone" [ref=e507]
+                  - button "Add emoji" [ref=e510]
+                  - button "Attach files" [ref=e515]
+                - button "Reply" [ref=e518]
+          - generic [ref=e520]:
+            - combobox [ref=e521] [cursor=pointer]:
+              - img [ref=e522]
+            - combobox [ref=e524]
+          - button "Change appearance" [ref=e525] [cursor=pointer]:
+            - generic [ref=e526]:
+              - img [ref=e527]
+              - generic [ref=e530]: Change appearance
+        - code [ref=e539]:
+          - generic [ref=e542]:
+            - generic [ref=e543]: import
+            - generic [ref=e545]: "{"
+            - generic [ref=e546]: useThreads
+            - generic [ref=e547]: "}"
+            - generic [ref=e549]: from
+            - generic [ref=e551]: "\"@liveblocks/react\""
+            - generic [ref=e552]: ;
+          - generic [ref=e555]:
+            - generic [ref=e556]: import
+            - generic [ref=e558]: "{"
+            - generic [ref=e560]: Thread
+            - generic [ref=e562]: "}"
+            - generic [ref=e564]: from
+            - generic [ref=e566]: "\"@liveblocks/react-ui\""
+            - generic [ref=e567]: ;
+          - generic [ref=e573]:
+            - generic [ref=e574]: function
+            - generic [ref=e576]: CommentThreads
+            - generic [ref=e577]: (
+            - generic [ref=e578]: )
+            - generic [ref=e580]: "{"
+          - generic [ref=e583]:
+            - generic [ref=e585]: const
+            - generic [ref=e587]: "{"
+            - generic [ref=e588]: threads
+            - generic [ref=e589]: "}"
+            - generic [ref=e591]: =
+            - generic [ref=e593]: useThreads
+            - generic [ref=e594]: (
+            - generic [ref=e595]: )
+            - generic [ref=e596]: ;
+          - generic [ref=e602]:
+            - generic [ref=e604]: return
+            - generic [ref=e606]: (
+          - generic [ref=e609]:
+            - generic [ref=e611]: <
+            - generic [ref=e612]: ">"
+          - generic [ref=e615]:
+            - generic [ref=e617]: "{"
+            - generic [ref=e618]: threads
+            - generic [ref=e619]: .
+            - generic [ref=e620]: map
+            - generic [ref=e621]: (
+            - generic [ref=e622]: (
+            - generic [ref=e623]: thread
+            - generic [ref=e624]: )
+            - generic [ref=e626]: =>
+            - generic [ref=e628]: (
+          - generic [ref=e631]:
+            - generic [ref=e633]: <
+            - generic [ref=e634]: Thread
+            - generic [ref=e635]: key
+            - generic [ref=e636]: =
+            - generic [ref=e637]: "{"
+            - generic [ref=e638]: thread
+            - generic [ref=e639]: .
+            - generic [ref=e640]: id
+            - generic [ref=e641]: "}"
+            - generic [ref=e642]: thread
+            - generic [ref=e643]: =
+            - generic [ref=e644]: "{"
+            - generic [ref=e645]: thread
+            - generic [ref=e646]: "}"
+            - generic [ref=e647]: className
+            - generic [ref=e648]: =
+            - generic [ref=e649]: "\"thread\""
+            - generic [ref=e651]: /
+            - generic [ref=e652]: ">"
+          - generic [ref=e655]:
+            - generic [ref=e657]: )
+            - generic [ref=e658]: )
+            - generic [ref=e659]: "}"
+          - generic [ref=e662]:
+            - generic [ref=e664]: <
+            - generic [ref=e665]: /
+            - generic [ref=e666]: ">"
+          - generic [ref=e669]:
+            - generic [ref=e671]: )
+            - generic [ref=e672]: ;
+          - generic [ref=e676]: "}"
+    - generic [ref=e677]:
+      - generic [ref=e681]:
+        - heading "A platform you can trust at scale." [level=2] [ref=e682]
+        - paragraph [ref=e683]:
+          - text: Behind every Liveblocks feature is a
+          - strong [ref=e684]: battle-tested platform
+          - text: built for scale, reliability, and security—trusted by teams shipping to millions of users.
+      - generic [ref=e688]:
+        - generic [ref=e689]:
+          - generic [ref=e690]:
+            - link "Visit Magic Patterns website" [ref=e692] [cursor=pointer]:
+              - /url: https://magicpatterns.io
+              - img [ref=e693]
+            - generic [ref=e697]:
+              - button "Previous" [ref=e698] [cursor=pointer]:
+                - generic [ref=e699]:
+                  - generic [ref=e700]: Previous
+                  - img [ref=e701]
+              - button "Next" [ref=e703] [cursor=pointer]:
+                - generic [ref=e704]:
+                  - generic [ref=e705]: Next
+                  - img [ref=e706]
+          - figure [ref=e708]:
+            - blockquote [ref=e709]:
+              - paragraph [ref=e711]:
+                - generic [ref=e712]: “
+                - emphasis [ref=e713]: Liveblocks is a game-changing developer tool.
+                - text: It abstracts away realtime infrastructure we never want to think about.”
+              - generic [ref=e715]:
+                - img "Teddy Ni" [ref=e716]
+                - generic [ref=e717]:
+                  - generic [ref=e718]: Teddy Ni
+                  - generic [ref=e719]: Co-founder & CTO at Magic Patterns
+        - generic [ref=e720]:
+          - img [ref=e721]
+          - generic [ref=e723]:
+            - heading "Effortless scaling" [level=3] [ref=e724]:
+              - generic [ref=e725]: Effortless scaling
+            - paragraph [ref=e726]: Built to handle any traffic on your collaborative experiences.
+        - generic [ref=e727]:
+          - img [ref=e728]
+          - generic [ref=e731]:
+            - heading "Minimal configuration" [level=3] [ref=e732]:
+              - generic [ref=e733]: Minimal configuration
+            - paragraph [ref=e734]: Scale to millions of users. No complex configuration required.
+        - generic [ref=e735]:
+          - img [ref=e736]
+          - generic [ref=e738]:
+            - heading "No maintenance required" [level=3] [ref=e739]:
+              - generic [ref=e740]: No maintenance required
+            - paragraph [ref=e741]: Spend time building, not maintaining infrastructure.
+        - generic [ref=e742]:
+          - img [ref=e743]
+          - generic [ref=e746]:
+            - heading "Enterprise‑ready security" [level=3] [ref=e747]:
+              - generic [ref=e748]: Enterprise‑ready security
+            - paragraph [ref=e749]: Best-in-class security practices to keep your integration safe.
+        - generic [ref=e751]:
+          - generic [ref=e752]: 99.99% Uptime
+          - generic [ref=e753]:
+            - generic [ref=e754]:
+              - img "SOC 2 Badge" [ref=e755]
+              - generic [ref=e756]:
+                - text: SOC 2
+                - button "Learn more" [ref=e757] [cursor=pointer]:
+                  - generic [ref=e758]: Learn more
+                  - img [ref=e759]
+            - generic [ref=e761]:
+              - img "HIPAA Badge" [ref=e762]
+              - generic [ref=e763]:
+                - text: HIPAA
+                - button "Learn more" [ref=e764] [cursor=pointer]:
+                  - generic [ref=e765]: Learn more
+                  - img [ref=e766]
+    - generic [ref=e771]:
+      - heading "Turn your product into the space where people and AI collaborate" [level=2] [ref=e772]:
+        - generic [ref=e773]: Turn your product into the space where people and AI collaborate
+      - generic [ref=e774]:
+        - link "Get started for free" [ref=e775] [cursor=pointer]:
+          - /url: /auth/signup
+          - generic [ref=e776]: Get started for free
+        - link "Contact sales" [ref=e777] [cursor=pointer]:
+          - /url: /contact/sales
+          - generic [ref=e778]:
+            - text: Contact sales
+            - img [ref=e779]
+  - contentinfo [ref=e781]:
+    - navigation "secondary" [ref=e784]:
+      - list [ref=e785]:
+        - listitem [ref=e786]:
+          - generic [ref=e787]:
+            - generic [ref=e788]: Realtime Infrastructure
+            - list [ref=e789]:
+              - listitem [ref=e790]:
+                - link "Presence" [ref=e791] [cursor=pointer]:
+                  - /url: /realtime-infrastructure?primitive=presence
+              - listitem [ref=e792]:
+                - link "Broadcast" [ref=e793] [cursor=pointer]:
+                  - /url: /realtime-infrastructure?primitive=broadcast
+              - listitem [ref=e794]:
+                - link "Storage" [ref=e795] [cursor=pointer]:
+                  - /url: /realtime-infrastructure?primitive=storage
+              - listitem [ref=e796]:
+                - link "Feeds Beta" [ref=e797] [cursor=pointer]:
+                  - /url: /realtime-infrastructure?primitive=feeds
+                  - text: Feeds
+                  - generic [ref=e798]: Beta
+              - listitem [ref=e799]:
+                - link "Threads" [ref=e800] [cursor=pointer]:
+                  - /url: /realtime-infrastructure?primitive=threads
+          - generic [ref=e801]:
+            - generic [ref=e802]: Collaborative features
+            - list [ref=e803]:
+              - listitem [ref=e804]:
+                - link "Multiplayer" [ref=e805] [cursor=pointer]:
+                  - /url: /multiplayer
+              - listitem [ref=e806]:
+                - link "Comments" [ref=e807] [cursor=pointer]:
+                  - /url: /comments
+              - listitem [ref=e808]:
+                - link "Notifications" [ref=e809] [cursor=pointer]:
+                  - /url: /notifications
+              - listitem [ref=e810]:
+                - link "AI Copilots" [ref=e811] [cursor=pointer]:
+                  - /url: /ai-copilots
+          - generic [ref=e812]:
+            - generic [ref=e813]: Solutions
+            - list [ref=e814]:
+              - listitem [ref=e815]:
+                - link "People platforms" [ref=e816] [cursor=pointer]:
+                  - /url: /solutions/people-platforms
+              - listitem [ref=e817]:
+                - link "Sales tools" [ref=e818] [cursor=pointer]:
+                  - /url: /solutions/sales-tools
+              - listitem [ref=e819]:
+                - link "Startups" [ref=e820] [cursor=pointer]:
+                  - /url: /startups
+          - generic [ref=e821]:
+            - generic [ref=e822]: Use cases
+            - list [ref=e823]:
+              - listitem [ref=e824]:
+                - link "Multiplayer forms" [ref=e825] [cursor=pointer]:
+                  - /url: /use-cases/collaborative-form
+              - listitem [ref=e826]:
+                - link "Multiplayer text editor" [ref=e827] [cursor=pointer]:
+                  - /url: /use-cases/collaborative-text-editor
+              - listitem [ref=e828]:
+                - link "Multiplayer creative tools" [ref=e829] [cursor=pointer]:
+                  - /url: /use-cases/collaborative-creative-tool
+              - listitem [ref=e830]:
+                - link "Multiplayer whiteboard" [ref=e831] [cursor=pointer]:
+                  - /url: /use-cases/collaborative-whiteboard
+              - listitem [ref=e832]:
+                - link "Comments" [ref=e833] [cursor=pointer]:
+                  - /url: /use-cases/comments
+              - listitem [ref=e834]:
+                - link "Sharing and permissions" [ref=e835] [cursor=pointer]:
+                  - /url: /use-cases/sharing-and-permissions
+              - listitem [ref=e836]:
+                - link "Document browsing" [ref=e837] [cursor=pointer]:
+                  - /url: /use-cases/document-browsing
+        - listitem [ref=e838]:
+          - generic [ref=e839]:
+            - generic [ref=e840]: Resources
+            - list [ref=e841]:
+              - listitem [ref=e842]:
+                - link "Documentation" [ref=e843] [cursor=pointer]:
+                  - /url: /docs
+              - listitem [ref=e844]:
+                - link "Examples" [ref=e845] [cursor=pointer]:
+                  - /url: /examples
+              - listitem [ref=e846]:
+                - link "Showcase" [ref=e847] [cursor=pointer]:
+                  - /url: /showcase
+              - listitem [ref=e848]:
+                - link "DevTools" [ref=e849] [cursor=pointer]:
+                  - /url: /devtools
+              - listitem [ref=e850]:
+                - link "React components" [ref=e851] [cursor=pointer]:
+                  - /url: /docs/api-reference/liveblocks-react-ui
+              - listitem [ref=e852]:
+                - link "Next.js Starter Kit" [ref=e853] [cursor=pointer]:
+                  - /url: /nextjs-starter-kit
+              - listitem [ref=e854]:
+                - link "Tutorial" [ref=e855] [cursor=pointer]:
+                  - /url: /docs/tutorial/react/getting-started
+              - listitem [ref=e856]:
+                - link "Guides" [ref=e857] [cursor=pointer]:
+                  - /url: /docs/guides
+              - listitem [ref=e858]:
+                - link "Release notes" [ref=e859] [cursor=pointer]:
+                  - /url: https://github.com/liveblocks/liveblocks/releases
+                  - text: Release notes
+                  - img [ref=e860]
+          - generic [ref=e862]:
+            - generic [ref=e863]: Technologies
+            - list [ref=e864]:
+              - listitem [ref=e865]:
+                - link "Next.js" [ref=e866] [cursor=pointer]:
+                  - /url: /technology/collaborative-nextjs-application
+              - listitem [ref=e867]:
+                - link "React" [ref=e868] [cursor=pointer]:
+                  - /url: /technology/collaborative-react-application
+              - listitem [ref=e869]:
+                - link "JavaScript" [ref=e870] [cursor=pointer]:
+                  - /url: /technology/collaborative-javascript-application
+              - listitem [ref=e871]:
+                - link "Redux" [ref=e872] [cursor=pointer]:
+                  - /url: /technology/shared-collaborative-redux-state
+              - listitem [ref=e873]:
+                - link "Zustand" [ref=e874] [cursor=pointer]:
+                  - /url: /technology/shared-collaborative-zustand-state
+              - listitem [ref=e875]:
+                - link "Yjs" [ref=e876] [cursor=pointer]:
+                  - /url: /technology/hosting-platform-for-yjs
+              - listitem [ref=e877]:
+                - link "Tiptap" [ref=e878] [cursor=pointer]:
+                  - /url: /technology/collaborative-tiptap-editor
+              - listitem [ref=e879]:
+                - link "BlockNote" [ref=e880] [cursor=pointer]:
+                  - /url: /technology/collaborative-blocknote-editor
+              - listitem [ref=e881]:
+                - link "Slate" [ref=e882] [cursor=pointer]:
+                  - /url: /technology/collaborative-slate-editor
+              - listitem [ref=e883]:
+                - link "Lexical" [ref=e884] [cursor=pointer]:
+                  - /url: /technology/collaborative-lexical-editor
+              - listitem [ref=e885]:
+                - link "Quill" [ref=e886] [cursor=pointer]:
+                  - /url: /technology/collaborative-quill-editor
+              - listitem [ref=e887]:
+                - link "Monaco" [ref=e888] [cursor=pointer]:
+                  - /url: /technology/collaborative-monaco-editor
+              - listitem [ref=e889]:
+                - link "CodeMirror" [ref=e890] [cursor=pointer]:
+                  - /url: /technology/collaborative-codemirror-editor
+        - listitem [ref=e891]:
+          - generic [ref=e892]:
+            - generic [ref=e893]: Company
+            - list [ref=e894]:
+              - listitem [ref=e895]:
+                - link "Pricing" [ref=e896] [cursor=pointer]:
+                  - /url: /pricing
+              - listitem [ref=e897]:
+                - link "Blog" [ref=e898] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=e899]:
+                - link "Customers" [ref=e900] [cursor=pointer]:
+                  - /url: /customers
+              - listitem [ref=e901]:
+                - link "Changelog" [ref=e902] [cursor=pointer]:
+                  - /url: /changelog
+              - listitem [ref=e903]:
+                - link "About" [ref=e904] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e905]:
+                - link "Contact us" [ref=e906] [cursor=pointer]:
+                  - /url: /contact
+              - listitem [ref=e907]:
+                - link "Careers" [ref=e908] [cursor=pointer]:
+                  - /url: https://join.team/liveblocks
+                  - text: Careers
+                  - img [ref=e909]
+              - listitem [ref=e911]:
+                - link "Terms of service" [ref=e912] [cursor=pointer]:
+                  - /url: /terms
+              - listitem [ref=e913]:
+                - link "Privacy policy" [ref=e914] [cursor=pointer]:
+                  - /url: /privacy
+              - listitem [ref=e915]:
+                - link "DPA" [ref=e916] [cursor=pointer]:
+                  - /url: /dpa
+              - listitem [ref=e917]:
+                - link "Security" [ref=e918] [cursor=pointer]:
+                  - /url: /security
+              - listitem [ref=e919]:
+                - link "Trust center" [ref=e920] [cursor=pointer]:
+                  - /url: https://liveblocks.safebase.us
+                  - text: Trust center
+                  - img [ref=e921]
+              - listitem [ref=e923]:
+                - link "Subprocessors" [ref=e924] [cursor=pointer]:
+                  - /url: /subprocessors
+        - listitem [ref=e925]:
+          - generic [ref=e926]:
+            - generic [ref=e927]:
+              - link "Homepage" [ref=e928] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e929]: Homepage
+                - img [ref=e930]
+              - link "System status" [ref=e934] [cursor=pointer]:
+                - /url: https://liveblocks.statuspage.io
+                - text: System status
+                - img [ref=e936]
+            - list [ref=e938]:
+              - listitem [ref=e939]:
+                - link "GitHub" [ref=e940] [cursor=pointer]:
+                  - /url: https://github.com/liveblocks/liveblocks
+                  - img [ref=e941]
+                  - generic [ref=e943]: Github
+              - listitem [ref=e944]:
+                - link "Discord" [ref=e945] [cursor=pointer]:
+                  - /url: https://discord.gg/d49NwshZXm
+                  - img [ref=e946]
+                  - generic [ref=e948]: Discord
+              - listitem [ref=e949]:
+                - link "X" [ref=e950] [cursor=pointer]:
+                  - /url: https://x.com/liveblocks
+                  - img [ref=e951]
+                  - generic [ref=e953]: X
+              - listitem [ref=e954]:
+                - link "LinkedIn" [ref=e955] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/liveblocks
+                  - img [ref=e956]
+                  - generic [ref=e958]: LinkedIn
+              - listitem [ref=e959]:
+                - link "YouTube" [ref=e960] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCDXT5skWxzOorIQrWG5OT2w
+                  - img [ref=e961]
+                  - generic [ref=e963]: YouTube
+            - generic [ref=e964]:
+              - button "Learn more SOC 2" [ref=e965] [cursor=pointer]:
+                - generic [ref=e966]: Learn more
+                - img "SOC 2" [ref=e967]
+              - button "Learn more HIPAA" [ref=e968] [cursor=pointer]:
+                - generic [ref=e969]: Learn more
+                - img "HIPAA" [ref=e970]
+          - generic [ref=e971]: © 2026 Liveblocks Inc.

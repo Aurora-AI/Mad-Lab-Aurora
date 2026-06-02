@@ -1,0 +1,2280 @@
+[
+  {
+    "skill": "agent-forge",
+    "score": {
+      "score": 50,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 0,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (4 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (2 de 3 | 66.7%) (0)",
+            "Falta de integridade perfeita (existem 2 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "agent-red-team-sales",
+    "score": {
+      "score": 55,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (9 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (4 de 5 | 80.0%) (0)",
+            "Falta de integridade perfeita (existem 4 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "agent-reflexion-code",
+    "score": {
+      "score": 55,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Presen\u00e7a de exemplos pr\u00e1ticos de acionamento (+5)"
+          ]
+        },
+        "output-structure": {
+          "score": 0,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (4 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (4 de 5 | 80.0%) (0)",
+            "Falta de integridade perfeita (existem 4 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "agente-awwwards",
+    "score": {
+      "score": 65,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Gatilho presente no frontmatter ou se\u00e7\u00e3o dedicada (+5)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Presen\u00e7a de exemplos pr\u00e1ticos de acionamento (+5)"
+          ]
+        },
+        "output-structure": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (4 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (2 de 3 | 66.7%) (0)",
+            "Falta de integridade perfeita (existem 2 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "bibliotecario",
+    "score": {
+      "score": 60,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Gatilho presente no frontmatter ou se\u00e7\u00e3o dedicada (+5)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (4 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (5 de 7 | 71.4%) (0)",
+            "Falta de integridade perfeita (existem 5 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "ceo-business-partner",
+    "score": {
+      "score": 65,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Presen\u00e7a de exemplos pr\u00e1ticos de acionamento (+5)"
+          ]
+        },
+        "output-structure": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Presen\u00e7a de template ou bloco de exemplo de sa\u00edda (+5)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (11 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (2 de 12 | 16.7%) (0)",
+            "Falta de integridade perfeita (existem 2 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.75
+  },
+  {
+    "skill": "ceo-copy",
+    "score": {
+      "score": 70,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Gatilho presente no frontmatter ou se\u00e7\u00e3o dedicada (+5)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Presen\u00e7a de exemplos pr\u00e1ticos de acionamento (+5)"
+          ]
+        },
+        "output-structure": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Presen\u00e7a de template ou bloco de exemplo de sa\u00edda (+5)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (23 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (5 de 10 | 50.0%) (0)",
+            "Falta de integridade perfeita (existem 5 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "validated",
+    "pass_rate": 0.75
+  },
+  {
+    "skill": "ceo-design",
+    "score": {
+      "score": 70,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Gatilho presente no frontmatter ou se\u00e7\u00e3o dedicada (+5)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Presen\u00e7a de exemplos pr\u00e1ticos de acionamento (+5)"
+          ]
+        },
+        "output-structure": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (2 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Alta integridade f\u00edsica de refer\u00eancias (1 quebradas de 7) (+5)",
+            "Falta de integridade perfeita (existem 1 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "ceo-effects",
+    "score": {
+      "score": 65,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Gatilho presente no frontmatter ou se\u00e7\u00e3o dedicada (+5)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Presen\u00e7a de exemplos pr\u00e1ticos de acionamento (+5)"
+          ]
+        },
+        "output-structure": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (5 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (1 de 5 | 20.0%) (0)",
+            "Falta de integridade perfeita (existem 1 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "ceo-marketing",
+    "score": {
+      "score": 65,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Presen\u00e7a de exemplos pr\u00e1ticos de acionamento (+5)"
+          ]
+        },
+        "output-structure": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Presen\u00e7a de template ou bloco de exemplo de sa\u00edda (+5)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (12 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (5 de 10 | 50.0%) (0)",
+            "Falta de integridade perfeita (existem 5 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.75
+  },
+  {
+    "skill": "ceo-product-owner",
+    "score": {
+      "score": 65,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Presen\u00e7a de exemplos pr\u00e1ticos de acionamento (+5)"
+          ]
+        },
+        "output-structure": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Presen\u00e7a de template ou bloco de exemplo de sa\u00edda (+5)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (13 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (5 de 10 | 50.0%) (0)",
+            "Falta de integridade perfeita (existem 5 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.75
+  },
+  {
+    "skill": "ceo-web",
+    "score": {
+      "score": 65,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Gatilho presente no frontmatter ou se\u00e7\u00e3o dedicada (+5)",
+            "Gatilhos especificam condi\u00e7\u00f5es ou palavras-chave claras (+5)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (10 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (2 de 3 | 66.7%) (0)",
+            "Falta de integridade perfeita (existem 2 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "cientista",
+    "score": {
+      "score": 50,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 0,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (4 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (5 de 6 | 83.3%) (0)",
+            "Falta de integridade perfeita (existem 5 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "design-library-manager",
+    "score": {
+      "score": 55,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Gatilho presente no frontmatter ou se\u00e7\u00e3o dedicada (+5)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 0,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (4 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (2 de 3 | 66.7%) (0)",
+            "Falta de integridade perfeita (existem 2 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "design-md",
+    "score": {
+      "score": 55,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (8 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (3 de 4 | 75.0%) (0)",
+            "Falta de integridade perfeita (existem 3 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "design-taste-frontend",
+    "score": {
+      "score": 45,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 0,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (16 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe de caminhos ausente ou inv\u00e1lida (0)",
+            "Nenhuma refer\u00eancia para validar fisicamente (0/10)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "devil-advocate-auditor",
+    "score": {
+      "score": 55,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Presen\u00e7a de exemplos pr\u00e1ticos de acionamento (+5)"
+          ]
+        },
+        "output-structure": {
+          "score": 0,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (7 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (4 de 5 | 80.0%) (0)",
+            "Falta de integridade perfeita (existem 4 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "emil-design-eng",
+    "score": {
+      "score": 55,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Presen\u00e7a de template ou bloco de exemplo de sa\u00edda (+5)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (11 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (2 de 3 | 66.7%) (0)",
+            "Falta de integridade perfeita (existem 2 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.75
+  },
+  {
+    "skill": "find-skills",
+    "score": {
+      "score": 50,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 0,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (6 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (2 de 3 | 66.7%) (0)",
+            "Falta de integridade perfeita (existem 2 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "full-output-enforcement",
+    "score": {
+      "score": 55,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (11 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (2 de 3 | 66.7%) (0)",
+            "Falta de integridade perfeita (existem 2 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "gpt-taste",
+    "score": {
+      "score": 50,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 0,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (10 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (2 de 3 | 66.7%) (0)",
+            "Falta de integridade perfeita (existem 2 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "gsap-expert",
+    "score": {
+      "score": 55,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Gatilho presente no frontmatter ou se\u00e7\u00e3o dedicada (+5)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 0,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (5 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (2 de 3 | 66.7%) (0)",
+            "Falta de integridade perfeita (existem 2 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "high-end-visual-design",
+    "score": {
+      "score": 55,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (15 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (2 de 3 | 66.7%) (0)",
+            "Falta de integridade perfeita (existem 2 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "image-taste-frontend",
+    "score": {
+      "score": 50,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Gatilho presente no frontmatter ou se\u00e7\u00e3o dedicada (+5)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 0,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (15 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe de caminhos ausente ou inv\u00e1lida (0)",
+            "Nenhuma refer\u00eancia para validar fisicamente (0/10)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "industrial-brutalist-ui",
+    "score": {
+      "score": 50,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 0,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (4 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (2 de 3 | 66.7%) (0)",
+            "Falta de integridade perfeita (existem 2 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "ingestor",
+    "score": {
+      "score": 60,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Gatilho presente no frontmatter ou se\u00e7\u00e3o dedicada (+5)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (4 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (4 de 5 | 80.0%) (0)",
+            "Falta de integridade perfeita (existem 4 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "landing-page-architect",
+    "score": {
+      "score": 60,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Presen\u00e7a de exemplos pr\u00e1ticos de acionamento (+5)"
+          ]
+        },
+        "output-structure": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Presen\u00e7a de template ou bloco de exemplo de sa\u00edda (+5)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (6 encontrados) (+5)",
+            "Sem descri\u00e7\u00e3o de quando selecionar cada modo (0)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (3 de 3 | 100.0%) (0)",
+            "Falta de integridade perfeita (existem 3 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.75
+  },
+  {
+    "skill": "loop-balance-analyzer",
+    "score": {
+      "score": 65,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Presen\u00e7a de exemplos pr\u00e1ticos de acionamento (+5)"
+          ]
+        },
+        "output-structure": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Presen\u00e7a de template ou bloco de exemplo de sa\u00edda (+5)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (24 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (5 de 6 | 83.3%) (0)",
+            "Falta de integridade perfeita (existem 5 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.75
+  },
+  {
+    "skill": "master-skill",
+    "score": {
+      "score": 50,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 0,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (5 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (3 de 4 | 75.0%) (0)",
+            "Falta de integridade perfeita (existem 3 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "minimalist-ui",
+    "score": {
+      "score": 50,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 0,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (6 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (2 de 3 | 66.7%) (0)",
+            "Falta de integridade perfeita (existem 2 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "product-integrity-engineer",
+    "score": {
+      "score": 75,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Gatilho presente no frontmatter ou se\u00e7\u00e3o dedicada (+5)",
+            "Gatilhos especificam condi\u00e7\u00f5es ou palavras-chave claras (+5)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Presen\u00e7a de exemplos pr\u00e1ticos de acionamento (+5)"
+          ]
+        },
+        "output-structure": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Presen\u00e7a de template ou bloco de exemplo de sa\u00edda (+5)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (12 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (5 de 7 | 71.4%) (0)",
+            "Falta de integridade perfeita (existem 5 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "validated",
+    "pass_rate": 1.0
+  },
+  {
+    "skill": "qa-review",
+    "score": {
+      "score": 70,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Gatilho presente no frontmatter ou se\u00e7\u00e3o dedicada (+5)",
+            "Gatilhos especificam condi\u00e7\u00f5es ou palavras-chave claras (+5)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Presen\u00e7a de exemplos pr\u00e1ticos de acionamento (+5)"
+          ]
+        },
+        "output-structure": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Presen\u00e7a de template ou bloco de exemplo de sa\u00edda (+5)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Falta de regras absolutas declaradas (0)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (4 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (4 de 7 | 57.1%) (0)",
+            "Falta de integridade perfeita (existem 4 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "validated",
+    "pass_rate": 1.0
+  },
+  {
+    "skill": "redesign-existing-projects",
+    "score": {
+      "score": 50,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 0,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (7 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (2 de 3 | 66.7%) (0)",
+            "Falta de integridade perfeita (existem 2 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "refinar-cognicao",
+    "score": {
+      "score": 55,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (6 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (3 de 4 | 75.0%) (0)",
+            "Falta de integridade perfeita (existem 3 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "site-builder",
+    "score": {
+      "score": 50,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Gatilho presente no frontmatter ou se\u00e7\u00e3o dedicada (+5)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 0,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (3 encontrados) (+5)",
+            "Sem descri\u00e7\u00e3o de quando selecionar cada modo (0)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (5 de 6 | 83.3%) (0)",
+            "Falta de integridade perfeita (existem 5 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "stitch-design",
+    "score": {
+      "score": 50,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 0,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (5 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (3 de 3 | 100.0%) (0)",
+            "Falta de integridade perfeita (existem 3 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "stitch-design-taste",
+    "score": {
+      "score": 50,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de gatilho formal (0)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 0,
+          "max": 20,
+          "details": [
+            "Aus\u00eancia de se\u00e7\u00e3o de output/sa\u00edda (0)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (4 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (2 de 3 | 66.7%) (0)",
+            "Falta de integridade perfeita (existem 2 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  },
+  {
+    "skill": "taste-design",
+    "score": {
+      "score": 60,
+      "rubrics": {
+        "trigger-clarity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Gatilho presente no frontmatter ou se\u00e7\u00e3o dedicada (+5)",
+            "Gatilhos n\u00e3o parecem conter palavras-chave espec\u00edficas (0)",
+            "Nenhuma linguagem vaga detectada nos gatilhos (+5)",
+            "Aus\u00eancia de exemplos pr\u00e1ticos de acionamento (0)"
+          ]
+        },
+        "output-structure": {
+          "score": 5,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o expl\u00edcita de output/sa\u00edda documentada (+5)",
+            "Formato do output n\u00e3o explicitado (0)",
+            "Aus\u00eancia de bloco de exemplo ou template de sa\u00edda (0)",
+            "Falta de instru\u00e7\u00f5es contra placeholders no output (0)"
+          ]
+        },
+        "anti-hallucination": {
+          "score": 15,
+          "max": 20,
+          "details": [
+            "Presen\u00e7a de restri\u00e7\u00f5es de proibi\u00e7\u00e3o expl\u00edcitas (+5)",
+            "Instru\u00e7\u00e3o de varredura f\u00edsica ativa de contratos (+5)",
+            "Falta de regras de erro ou indisponibilidade expl\u00edcita (0)",
+            "Especifica\u00e7\u00e3o de invariantes/regras absolutas (+5)"
+          ]
+        },
+        "mode-coverage": {
+          "score": 20,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a modos de opera\u00e7\u00e3o encontrada (+5)",
+            "M\u00faltiplos modos de opera\u00e7\u00e3o detectados (10 encontrados) (+5)",
+            "Crit\u00e9rios de sele\u00e7\u00e3o de modo descritos (+5)",
+            "Varia\u00e7\u00e3o de output/estrutura entre os modos suportada (+5)"
+          ]
+        },
+        "reference-integrity": {
+          "score": 10,
+          "max": 20,
+          "details": [
+            "Se\u00e7\u00e3o dedicada a refer\u00eancias/suporte encontrada (+5)",
+            "Sintaxe adequada de caminhos de arquivos (+5)",
+            "Muitas refer\u00eancias quebradas (2 de 4 | 50.0%) (0)",
+            "Falta de integridade perfeita (existem 2 refer\u00eancias ausentes) (0)"
+          ]
+        }
+      }
+    },
+    "certification": "draft",
+    "pass_rate": 0.5
+  }
+]

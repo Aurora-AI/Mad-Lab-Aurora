@@ -1,0 +1,16 @@
+{
+  "id": "brief_apo_manifesto_001",
+  "tema": "APO: o gestor como infraestrutura de performance",
+  "icp": "CEOs, diretores comerciais e gestores de operacoes que precisam escalar sem depender de heroismo individual",
+  "dorCentral": "A operacao comercial cresce com ruido, personalismo e leitura errada das causas, o que trava escala e deteriora cultura",
+  "promessaCentral": "Transformar a percepcao do gestor em um criterio pratico para diagnosticar anomalias, intervir com precisao e estruturar performance sistemica",
+  "formato": "ebook",
+  "objetivoDeNegocio": "gerar demanda qualificada para diagnostico APO e consultoria de implementacao",
+  "canal": "landing-page",
+  "restricoes": [
+    "nao prometer crescimento automatico",
+    "nao tratar intuicao do fundador como unica fonte de verdade",
+    "nao vender APO como atalho motivacional"
+  ],
+  "status": "approved"
+}

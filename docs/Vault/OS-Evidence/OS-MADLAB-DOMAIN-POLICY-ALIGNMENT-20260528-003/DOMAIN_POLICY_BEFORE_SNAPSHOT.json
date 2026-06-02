@@ -1,0 +1,31 @@
+{
+  "domain": "madlab",
+  "policy_name": "Mad Lab Domain Sovereignty Policy",
+  "policy_version": "1.0.0",
+  "governance": {
+    "boundary": "creative-arm",
+    "can_consume": [
+      "observability.get_trace_summary",
+      "observability.osqa.list_qa_artifacts_by_os",
+      "alvaro-contracts",
+      "reflexion-code-triaging"
+    ],
+    "prohibited_actions": [
+      "create_local_mcp_gateway",
+      "replicate_alvaro_runtime",
+      "duplicate_global_qdrant_instance",
+      "execute_autonomous_production_self_healing"
+    ],
+    "local_only": [
+      "madlab.design_system_lint",
+      "madlab.visual_performance_harness",
+      "madlab.hydration_integrity_check",
+      "madlab.motion_regression_check",
+      "candidate_knowledge_indicators_local"
+    ],
+    "global_promotion_path": {
+      "process": "candidate_ki -> bibliotecario_sanitization -> qa_review_gate -> manual_approval -> global_vault_promotion",
+      "auto_promotion": false
+    }
+  }
+}

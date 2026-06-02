@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "name": "aurora-web",
+  "classification": "creative-site",
+  "site_type": "institutional-brand-site",
+  "root_path": "C:\\Aurora\\MadLabAurora\\aurora-web",
+  "owner_group": "MadLabAurora",
+  "runtime": "vite-react",
+  "purpose": "institutional presence, brand storytelling and creative web experiments for Aurora",
+  "repository_root": "C:\\Aurora\\aurora-agents",
+  "project_root": "C:\\Aurora\\MadLabAurora\\aurora-web",
+  "installed_skills": {
+    "ceo-web": {
+      "version": "1.0.0",
+      "status": "production",
+      "installed_at": "2026-04-11T20:16:22+00:00",
+      "installed_path": "C:\\Aurora\\MadLabAurora\\aurora-web\\.aurora\\skills\\ceo-web",
+      "source_path": "C:\\Aurora\\aurora-agents\\ceo-web"
+    },
+    "ceo-design": {
+      "version": "1.0.0",
+      "status": "production",
+      "installed_at": "2026-04-11T20:16:22+00:00",
+      "installed_path": "C:\\Aurora\\MadLabAurora\\aurora-web\\.aurora\\skills\\ceo-design",
+      "source_path": "C:\\Aurora\\aurora-agents\\ceo-design"
+    },
+    "ceo-copy": {
+      "version": "1.0.0",
+      "status": "production",
+      "installed_at": "2026-04-11T20:16:22+00:00",
+      "installed_path": "C:\\Aurora\\MadLabAurora\\aurora-web\\.aurora\\skills\\ceo-copy",
+      "source_path": "C:\\Aurora\\aurora-agents\\ceo-copy"
+    }
+  },
+  "updated_at": "2026-04-11T20:16:22+00:00"
+}

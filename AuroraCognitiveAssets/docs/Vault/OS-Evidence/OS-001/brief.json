@@ -1,0 +1,28 @@
+{
+  "os_id": "OS-001",
+  "project": "Aurora Cognitive Assets",
+  "name": "Arquitetura de Performance Orquestrada (APO) — The Framework",
+  "thesis": "Performance não é resultado de esforço individual. É resultado de orquestração correta de contexto, capacidade e direção.",
+  "target_audience": "Founders, CEOs e Gerentes de Alta Performance",
+  "core_axioms": [
+    "Performance individual nunca pode comprometer o sistema.",
+    "Números são sintomas, não verdades.",
+    "O papel do gestor é ser a infraestrutura de performance da equipe."
+  ],
+  "pillars": [
+    {
+      "name": "Leitura de Realidade",
+      "description": "Análise de anomalias e contexto antes da tomada de decisão."
+    },
+    {
+      "name": "Leitura Humana",
+      "description": "Entendimento do momento pessoal e alinhamento de propósito (10 anos)."
+    },
+    {
+      "name": "Intervenção Preditiva",
+      "description": "Ação técnica, estrutural ou comportamental baseada no filtro APO."
+    }
+  ],
+  "source_file": "docs/Vault/entrevista_rodrigo_apo.md",
+  "timestamp": "2026-04-02T17:53:00-03:00"
+}

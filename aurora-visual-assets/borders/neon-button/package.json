@@ -1,0 +1,15 @@
+{
+  "name": "@aurora/neon-button",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "dependencies": {
+    "class-variance-authority": "latest",
+    "clsx": "latest",
+    "tailwind-merge": "latest"
+  },
+  "aurora": {
+    "type": "border",
+    "patterns": ["P022"],
+    "status": "production"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@aurora/spiral-animation",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "dependencies": {
+    "gsap": "latest"
+  },
+  "aurora": {
+    "type": "background",
+    "patterns": ["P018", "P019"],
+    "status": "production"
+  }
+}

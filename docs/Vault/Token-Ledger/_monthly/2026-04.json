@@ -1,0 +1,51 @@
+{
+  "month": "2026-04",
+  "generated_at": "2026-04-18T16:44:00-03:00",
+  "total_tokens": 59400,
+  "total_cost_usd": 0.236,
+  "total_cost_brl": 1.65,
+  "budget_alert": false,
+  "by_agent": {
+    "claude-code": {
+      "tokens": 12700,
+      "cost_usd": 0.11,
+      "os_count": 1
+    },
+    "antigravity": {
+      "tokens": 46700,
+      "cost_usd": 0.126,
+      "os_count": 1
+    }
+  },
+  "by_model": {
+    "claude-sonnet-4-6": {
+      "tokens": 12700,
+      "cost_usd": 0.11
+    },
+    "gemini-1.5-pro": {
+      "tokens": 46700,
+      "cost_usd": 0.126
+    }
+  },
+  "by_os": [
+    {
+      "os_id": "OS-CLAUDECODE-AURORA-VISUAL-ASSETS-20260418-004",
+      "total_tokens": 12700,
+      "total_cost_usd": 0.11,
+      "steps": 1,
+      "note": "entry retroativa — tokens estimados"
+    },
+    {
+      "os_id": "OS-ANTIGRAVITY-AURORA-AGENTS-SKILLS-20260418-005",
+      "total_tokens": 46700,
+      "total_cost_usd": 0.126,
+      "steps": 1,
+      "note": "entry retroativa — tokens estimados"
+    }
+  ],
+  "top_cost_steps": [],
+  "optimization_notes": [
+    "Ledger iniciado em 2026-04-18. Dados anteriores são estimativas retroativas.",
+    "A partir de OS-006, rastreamento é prospectivo e por step."
+  ]
+}

@@ -1,0 +1,2 @@
+fallow 2.86.0
+verified: yes (sentinel C:\Users\rodri\AppData\Local\npm-cache\_npx\e6d07818f0a04ee4\node_modules\@fallow-cli\win32-x64-msvc\.fallow-verified)

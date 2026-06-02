@@ -1,0 +1,16 @@
+{
+  "name": "@aurora/team-marquee",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "dependencies": {
+    "next": "latest",
+    "lucide-react": "latest",
+    "clsx": "latest",
+    "tailwind-merge": "latest"
+  },
+  "aurora": {
+    "type": "interaction",
+    "patterns": ["P008", "P009"],
+    "status": "production"
+  }
+}

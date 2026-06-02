@@ -1,0 +1,21 @@
+{
+  "hash": "6f1a8e2d4b",
+  "title": "Hyperplexed Motion Logic — Stateful Interaction",
+  "agent_source": "ceo-effects",
+  "category": "Motion Physics",
+  "tags": [
+    "drag",
+    "inertia",
+    "parallax",
+    "state-retention",
+    "math-lerp"
+  ],
+  "delta_value": "High (+25% deterministic drag fidelity)",
+  "impacted_skills": [
+    "ceo-effects",
+    "design-library",
+    "agent-reflexion-code"
+  ],
+  "ingestion_date": "2026-04-14",
+  "blueprint_reference": "GRAVITY-DRAG"
+}

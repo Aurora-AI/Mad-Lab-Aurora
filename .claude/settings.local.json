@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__2e726bc7-e2f0-4815-8f48-148888d3d4fe__create_file",
+      "Bash(cat)",
+      "Read(//tmp/**)"
+    ]
+  }
+}

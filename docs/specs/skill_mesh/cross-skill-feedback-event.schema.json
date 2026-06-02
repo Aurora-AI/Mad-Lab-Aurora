@@ -1,0 +1,164 @@
+---
+name: cross-skill-feedback-event
+version: 1.0.0
+status: production
+description: Schema de evento de feedback cruzado entre skills do ecossistema MadLab Aurora.
+---
+
+# Cross-Skill Feedback Event Schema
+
+> Evento gerado quando uma skill detecta falha recorrente ou contradição
+> que deve ser corrigida em outra skill do ecossistema.
+>
+> **Append-only:** Nunca deletar eventos históricos.
+> **Persistência:** `docs/Vault/OS-Evidence/{OS-ID}/cross-skill-feedback/`
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CrossSkillFeedbackEvent",
+  "version": "1.0.0",
+  "type": "object",
+  "required": [
+    "event_id",
+    "timestamp",
+    "source_skill",
+    "target_skill",
+    "issue_type",
+    "severity",
+    "description",
+    "evidence",
+    "recommended_action"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "ID único do evento. Formato: CSF-{YYYY-MM-DD}-{SEQ}",
+      "example": "CSF-2026-05-30-001"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp do momento de geração"
+    },
+    "source_skill": {
+      "type": "string",
+      "description": "Nome da skill que gerou o evento",
+      "enum": [
+        "qa-review",
+        "ceo-design",
+        "ceo-effects",
+        "ceo-web",
+        "ceo-copy",
+        "ceo-critique-theater",
+        "ceo-discovery-specialist",
+        "engenheiro-reverso",
+        "agent-reflexion-cost",
+        "agent-thread-recorder",
+        "taste-design",
+        "design-md"
+      ]
+    },
+    "target_skill": {
+      "type": "string",
+      "description": "Nome da skill que precisa ser atualizada com base no feedback"
+    },
+    "issue_type": {
+      "type": "string",
+      "description": "Categoria do problema detectado",
+      "enum": [
+        "CONTRADICTION",
+        "MISSING_RULE",
+        "OUTDATED_REFERENCE",
+        "ANTI_PATTERN",
+        "SCOPE_OVERLAP",
+        "PATH_ERROR",
+        "CONTRACT_VIOLATION"
+      ]
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["CRITICO", "ALTO", "MEDIO", "BAIXO"],
+      "description": "Nível de impacto operacional"
+    },
+    "description": {
+      "type": "string",
+      "description": "Descrição clara do problema detectado. Máximo 500 chars."
+    },
+    "evidence": {
+      "type": "object",
+      "description": "Evidência concreta do problema",
+      "properties": {
+        "os_id": {
+          "type": "string",
+          "description": "ID da OS onde o problema foi detectado"
+        },
+        "artifact_path": {
+          "type": "string",
+          "description": "Path do artefato onde o problema ocorreu"
+        },
+        "snippet": {
+          "type": "string",
+          "description": "Trecho de código ou texto que evidencia o problema"
+        }
+      }
+    },
+    "recommended_action": {
+      "type": "string",
+      "description": "Ação concreta e acionável para resolver o problema na target_skill"
+    },
+    "resolution": {
+      "type": "object",
+      "description": "Preenchido quando o problema é resolvido",
+      "properties": {
+        "resolved_at": { "type": "string", "format": "date-time" },
+        "resolved_by": { "type": "string" },
+        "action_taken": { "type": "string" }
+      }
+    }
+  }
+}
+```
+
+## Exemplos de Eventos Válidos
+
+### Exemplo 1 — PATH_ERROR detectado pelo qa-review
+```json
+{
+  "event_id": "CSF-2026-05-30-001",
+  "timestamp": "2026-05-30T13:00:00Z",
+  "source_skill": "qa-review",
+  "target_skill": "agent-reflexion-cost",
+  "issue_type": "PATH_ERROR",
+  "severity": "ALTO",
+  "description": "O skill agent-reflexion-cost referencia C:\\Projetos\\Aurora\\MadLabAurora\\ que não existe. O path correto é C:\\Projetos\\MadLabAurora\\",
+  "evidence": {
+    "os_id": "SPRINT1-REMEDIATION-001",
+    "artifact_path": ".aurora/skills/agent-reflexion-cost/SKILL.md",
+    "snippet": "C:\\Projetos\\Aurora\\MadLabAurora\\docs\\Vault\\Token-Ledger\\"
+  },
+  "recommended_action": "Corrigir path em SKILL.md para C:\\Projetos\\MadLabAurora\\docs\\Vault\\Token-Ledger\\",
+  "resolution": {
+    "resolved_at": "2026-05-30T13:38:00Z",
+    "resolved_by": "antigravity-sprint1",
+    "action_taken": "Path corrigido via multi_replace_file_content"
+  }
+}
+```
+
+### Exemplo 2 — MISSING_RULE detectado pelo ceo-design
+```json
+{
+  "event_id": "CSF-2026-05-30-002",
+  "timestamp": "2026-05-30T13:00:00Z",
+  "source_skill": "ceo-design",
+  "target_skill": "ceo-effects",
+  "issue_type": "MISSING_RULE",
+  "severity": "MEDIO",
+  "description": "O CEO-Effects não documenta explicitamente o fallback para prefers-reduced-motion. Todo efeito precisa de fallback CSS. Esta regra está no DNA mas não no SKILL.md.",
+  "evidence": {
+    "artifact_path": ".aurora/skills/ceo-effects/SKILL.md"
+  },
+  "recommended_action": "Adicionar seção de Acessibilidade com regra explícita de prefers-reduced-motion em todo efeito"
+}
+```

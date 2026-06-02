@@ -1,0 +1,9 @@
+Cloning into 'C:\Projetos\MadLabAurora\checkouts\Mad-Lab-Aurora'...
+Updating files:  94% (433/460)
+Updating files:  95% (437/460)
+Updating files:  96% (442/460)
+Updating files:  97% (447/460)
+Updating files:  98% (451/460)
+Updating files:  99% (456/460)
+Updating files: 100% (460/460)
+Updating files: 100% (460/460), done.

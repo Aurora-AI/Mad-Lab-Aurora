@@ -1,0 +1,16 @@
+{
+  "name": "@aurora/hero-davincho",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "dependencies": {
+    "next": "latest",
+    "framer-motion": "latest",
+    "clsx": "latest",
+    "tailwind-merge": "latest"
+  },
+  "aurora": {
+    "type": "hero",
+    "patterns": ["P010", "P011"],
+    "status": "production"
+  }
+}

@@ -1,0 +1,1571 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - link [ref=e5] [cursor=pointer]:
+      - /url: /
+      - img [ref=e6]
+    - navigation [ref=e8]:
+      - link "Index" [ref=e9] [cursor=pointer]:
+        - /url: /
+      - link "Info" [ref=e10] [cursor=pointer]:
+        - /url: /info
+  - button "Subscribe" [ref=e12] [cursor=pointer]:
+    - text: Subscribe
+    - img [ref=e13]
+  - application [ref=e15]:
+    - generic:
+      - article [ref=e17]:
+        - generic [ref=e18]: Locomotive
+        - link [ref=e19] [cursor=pointer]:
+          - /url: https://locomotive.ca/en?ref=godly
+          - img [ref=e20]
+        - link [ref=e22] [cursor=pointer]:
+          - /url: /website/locomotive-958
+          - generic [ref=e23]:
+            - generic:
+              - img
+            - img [ref=e26]
+      - article [ref=e29]:
+        - generic [ref=e30]: Mike Matas
+        - link [ref=e31] [cursor=pointer]:
+          - /url: https://mikematas.com?ref=godly
+          - img [ref=e32]
+        - link [ref=e34] [cursor=pointer]:
+          - /url: /website/mike-matas-959
+          - generic [ref=e35]:
+            - generic:
+              - img
+            - img [ref=e38]
+      - article [ref=e41]:
+        - generic [ref=e42]: "Evervault: Customers"
+        - link [ref=e43] [cursor=pointer]:
+          - /url: https://evervault.com/customers?ref=godly
+          - img [ref=e44]
+        - link [ref=e46] [cursor=pointer]:
+          - /url: /website/evervault-customers-960
+          - generic [ref=e47]:
+            - generic:
+              - img
+            - img [ref=e50]
+      - article [ref=e53]:
+        - generic [ref=e54]: Stripe Sessions
+        - link [ref=e55] [cursor=pointer]:
+          - /url: https://stripe.com/sessions?ref=godly
+          - img [ref=e56]
+        - link [ref=e58] [cursor=pointer]:
+          - /url: /website/stripe-sessions-961
+          - generic [ref=e59]:
+            - generic:
+              - img
+            - img [ref=e62]
+      - article [ref=e65]:
+        - generic [ref=e66]: Mixpanel
+        - link [ref=e67] [cursor=pointer]:
+          - /url: https://mixpanel.com?ref=godly
+          - img [ref=e68]
+        - link [ref=e70] [cursor=pointer]:
+          - /url: /website/mixpanel-962
+          - generic [ref=e71]:
+            - generic:
+              - img
+            - img [ref=e74]
+      - article [ref=e77]:
+        - generic [ref=e78]: Traffic Productions
+        - link [ref=e79] [cursor=pointer]:
+          - /url: https://www.traffic.productions?ref=godly
+          - img [ref=e80]
+        - link [ref=e82] [cursor=pointer]:
+          - /url: /website/traffic-productions-963
+          - generic [ref=e83]:
+            - generic:
+              - img
+            - img [ref=e86]
+      - article [ref=e89]:
+        - generic [ref=e90]: SILENCIO
+        - link [ref=e91] [cursor=pointer]:
+          - /url: https://silencio.es?ref=godly
+          - img [ref=e92]
+        - link [ref=e94] [cursor=pointer]:
+          - /url: /website/silencio-964
+          - generic [ref=e95]:
+            - generic:
+              - img
+            - img [ref=e98]
+      - article [ref=e101]:
+        - generic [ref=e102]: Haptic
+        - link [ref=e103] [cursor=pointer]:
+          - /url: https://haptic.app?ref=godly
+          - img [ref=e104]
+        - link [ref=e106] [cursor=pointer]:
+          - /url: /website/haptic-965
+          - generic [ref=e107]:
+            - generic:
+              - img
+            - img [ref=e110]
+      - article [ref=e113]:
+        - generic [ref=e114]: herding.app
+        - link [ref=e115] [cursor=pointer]:
+          - /url: https://www.herdi.ng?ref=godly
+          - img [ref=e116]
+        - link [ref=e118] [cursor=pointer]:
+          - /url: /website/herding-app-966
+          - generic [ref=e119]:
+            - generic:
+              - img
+            - img [ref=e122]
+      - article [ref=e125]:
+        - generic [ref=e126]: Twingate
+        - link [ref=e127] [cursor=pointer]:
+          - /url: https://www.twingate.com?ref=godly
+          - img [ref=e128]
+        - link [ref=e130] [cursor=pointer]:
+          - /url: /website/twingate-957
+          - generic [ref=e131]:
+            - generic:
+              - img
+            - img [ref=e134]
+      - article [ref=e137]:
+        - generic [ref=e138]: Christopher Ireland
+        - link [ref=e139] [cursor=pointer]:
+          - /url: https://christopherireland.net?ref=godly
+          - img [ref=e140]
+        - link [ref=e142] [cursor=pointer]:
+          - /url: /website/christopher-ireland-986
+          - generic [ref=e143]:
+            - generic:
+              - img
+            - img [ref=e146]
+      - article [ref=e149]:
+        - generic [ref=e150]: Opal Camera Inc.
+        - link [ref=e151] [cursor=pointer]:
+          - /url: https://opalcamera.com?ref=godly
+          - img [ref=e152]
+        - link [ref=e154] [cursor=pointer]:
+          - /url: /website/opal-camera-inc-987
+          - generic [ref=e155]:
+            - generic:
+              - img
+            - img [ref=e158]
+      - article [ref=e161]:
+        - generic [ref=e162]: Atlas
+        - link [ref=e163] [cursor=pointer]:
+          - /url: https://atlascard.com?ref=godly
+          - img [ref=e164]
+        - link [ref=e166] [cursor=pointer]:
+          - /url: /website/atlas-988
+          - generic [ref=e167]:
+            - generic:
+              - img
+            - img [ref=e170]
+      - article [ref=e173]:
+        - generic [ref=e174]: Lusion
+        - link [ref=e175] [cursor=pointer]:
+          - /url: https://lusion.co?ref=godly
+          - img [ref=e176]
+        - link [ref=e178] [cursor=pointer]:
+          - /url: /website/lusion-989
+          - generic [ref=e179]:
+            - generic:
+              - img
+            - img [ref=e182]
+      - article [ref=e185]:
+        - generic [ref=e186]: Pedro Duarte
+        - link [ref=e187] [cursor=pointer]:
+          - /url: https://ped.ro?ref=godly
+          - img [ref=e188]
+        - link [ref=e190] [cursor=pointer]:
+          - /url: /website/pedro-duarte-990
+          - generic [ref=e191]:
+            - generic:
+              - img
+            - img [ref=e194]
+      - article [ref=e197]:
+        - generic [ref=e198]: AuthKit
+        - link [ref=e199] [cursor=pointer]:
+          - /url: https://authkit.com?ref=godly
+          - img [ref=e200]
+        - link [ref=e202] [cursor=pointer]:
+          - /url: /website/authkit-991
+          - generic [ref=e203]:
+            - generic:
+              - img
+            - img [ref=e206]
+      - article [ref=e209]:
+        - generic [ref=e210]: Amie
+        - link [ref=e211] [cursor=pointer]:
+          - /url: https://amie.so?ref=godly
+          - img [ref=e212]
+        - link [ref=e214] [cursor=pointer]:
+          - /url: /website/amie-992
+          - generic [ref=e215]:
+            - generic:
+              - img
+            - img [ref=e218]
+      - article [ref=e221]:
+        - generic [ref=e222]: JP
+        - link [ref=e223] [cursor=pointer]:
+          - /url: https://www.jp.works?ref=godly
+          - img [ref=e224]
+        - link [ref=e226] [cursor=pointer]:
+          - /url: /website/jp-967
+          - generic [ref=e227]:
+            - generic:
+              - img
+            - img [ref=e230]
+      - article [ref=e233]:
+        - generic [ref=e234]: "099"
+        - link [ref=e235] [cursor=pointer]:
+          - /url: https://099.supply?ref=godly
+          - img [ref=e236]
+        - link [ref=e238] [cursor=pointer]:
+          - /url: /website/099-956
+          - generic [ref=e239]:
+            - generic:
+              - img
+            - img [ref=e242]
+      - article [ref=e245]:
+        - generic [ref=e246]: Spring/Summer
+        - link [ref=e247] [cursor=pointer]:
+          - /url: https://springsummer.dk?ref=godly
+          - img [ref=e248]
+        - link [ref=e250] [cursor=pointer]:
+          - /url: /website/spring-summer-985
+          - generic [ref=e251]:
+            - generic:
+              - img
+            - img [ref=e254]
+      - article [ref=e257]:
+        - generic [ref=e258]: Bigpicture Company
+        - link [ref=e259] [cursor=pointer]:
+          - /url: https://www.bpco.kr?ref=godly
+          - img [ref=e260]
+        - link [ref=e262] [cursor=pointer]:
+          - /url: /website/bigpicture-company-1005
+          - generic [ref=e263]:
+            - generic:
+              - img
+            - img [ref=e266]
+      - article [ref=e269]:
+        - generic [ref=e270]: KidSuper World
+        - link [ref=e271] [cursor=pointer]:
+          - /url: https://kidsuper.world?ref=godly
+          - img [ref=e272]
+        - link [ref=e274] [cursor=pointer]:
+          - /url: /website/kidsuper-world-1006
+          - generic [ref=e275]:
+            - generic:
+              - img
+            - img [ref=e278]
+      - article [ref=e281]:
+        - generic [ref=e282]: Shuttle
+        - link [ref=e283] [cursor=pointer]:
+          - /url: https://shuttle.zip?ref=godly
+          - img [ref=e284]
+        - link [ref=e286] [cursor=pointer]:
+          - /url: /website/shuttle-1007
+          - generic [ref=e287]:
+            - generic:
+              - img
+            - img [ref=e290]
+      - article [ref=e293]:
+        - generic [ref=e294]: SavoirFaire
+        - link [ref=e295] [cursor=pointer]:
+          - /url: https://savoirfaire.nyc?ref=godly
+          - img [ref=e296]
+        - link [ref=e298] [cursor=pointer]:
+          - /url: /website/savoirfaire-1008
+          - generic [ref=e299]:
+            - generic:
+              - img
+            - img [ref=e302]
+      - article [ref=e305]:
+        - generic [ref=e306]: Duties
+        - link [ref=e307] [cursor=pointer]:
+          - /url: https://www.duties.xyz?ref=godly
+          - img [ref=e308]
+        - link [ref=e310] [cursor=pointer]:
+          - /url: /website/duties-1009
+          - generic [ref=e311]:
+            - generic:
+              - img
+      - article [ref=e314]:
+        - generic [ref=e315]: Status
+        - link [ref=e316] [cursor=pointer]:
+          - /url: https://status.app?ref=godly
+          - img [ref=e317]
+        - link [ref=e319] [cursor=pointer]:
+          - /url: /website/status-993
+          - generic [ref=e320]:
+            - generic:
+              - img
+            - img [ref=e323]
+      - article [ref=e326]:
+        - generic [ref=e327]: Reflect
+        - link [ref=e328] [cursor=pointer]:
+          - /url: https://reflect.app/home?ref=godly
+          - img [ref=e329]
+        - link [ref=e331] [cursor=pointer]:
+          - /url: /website/reflect-968
+          - generic [ref=e332]:
+            - generic:
+              - img
+            - img [ref=e335]
+      - article [ref=e338]:
+        - generic [ref=e339]: SuperHi Plus
+        - link [ref=e340] [cursor=pointer]:
+          - /url: https://superhi.plus?ref=godly
+          - img [ref=e341]
+        - link [ref=e343] [cursor=pointer]:
+          - /url: /website/superhi-plus-955
+          - generic [ref=e344]:
+            - generic:
+              - img
+            - img [ref=e347]
+      - article [ref=e350]:
+        - generic [ref=e351]: AndAgain
+        - link [ref=e352] [cursor=pointer]:
+          - /url: https://andagain.uk?ref=godly
+          - img [ref=e353]
+        - link [ref=e355] [cursor=pointer]:
+          - /url: /website/andagain-984
+          - generic [ref=e356]:
+            - generic:
+              - img
+            - img [ref=e359]
+      - article [ref=e362]:
+        - generic [ref=e363]: Max Yinger
+        - link [ref=e364] [cursor=pointer]:
+          - /url: https://yinger.dev?ref=godly
+          - img [ref=e365]
+        - link [ref=e367] [cursor=pointer]:
+          - /url: /website/max-yinger-1004
+          - generic [ref=e368]:
+            - generic:
+              - img
+            - img [ref=e371]
+      - article [ref=e374]:
+        - generic [ref=e375]: UNVEIL®
+        - link [ref=e376] [cursor=pointer]:
+          - /url: https://unveil.fr?ref=godly
+          - img [ref=e377]
+        - link [ref=e379] [cursor=pointer]:
+          - /url: /website/unveil-1016
+          - generic [ref=e380]:
+            - generic:
+              - img
+            - img [ref=e383]
+      - article [ref=e386]:
+        - generic [ref=e387]: Kons
+        - link [ref=e388] [cursor=pointer]:
+          - /url: https://kons.fyi?ref=godly
+          - img [ref=e389]
+        - link [ref=e391] [cursor=pointer]:
+          - /url: /website/kons-1017
+          - generic [ref=e392]:
+            - generic:
+              - img
+            - img [ref=e395]
+      - article [ref=e398]:
+        - generic [ref=e399]: Roasted
+        - link [ref=e400] [cursor=pointer]:
+          - /url: https://roasted.design?ref=godly
+          - img [ref=e401]
+        - link [ref=e403] [cursor=pointer]:
+          - /url: /website/roasted-1018
+          - generic [ref=e404]:
+            - generic:
+              - img
+            - img [ref=e407]
+      - article [ref=e410]:
+        - generic [ref=e411]: SuperHi
+        - link [ref=e412] [cursor=pointer]:
+          - /url: https://superhi.com?ref=godly
+          - img [ref=e413]
+        - link [ref=e415] [cursor=pointer]:
+          - /url: /website/superhi-1010
+          - generic [ref=e416]:
+            - generic:
+              - img
+            - img [ref=e419]
+      - article [ref=e422]:
+        - generic [ref=e423]: Lovi
+        - link [ref=e424] [cursor=pointer]:
+          - /url: https://lovi.care?ref=godly
+          - img [ref=e425]
+        - link [ref=e427] [cursor=pointer]:
+          - /url: /website/lovi-994
+          - generic [ref=e428]:
+            - generic:
+              - img
+            - img [ref=e431]
+      - article [ref=e434]:
+        - generic [ref=e435]: Pam
+        - link [ref=e436] [cursor=pointer]:
+          - /url: https://thisispam.com?ref=godly
+          - img [ref=e437]
+        - link [ref=e439] [cursor=pointer]:
+          - /url: /website/pam-969
+          - generic [ref=e440]:
+            - generic:
+              - img
+      - article [ref=e443]:
+        - generic [ref=e444]: Field Day Sound
+        - link [ref=e445] [cursor=pointer]:
+          - /url: https://www.fielddaysound.tv?ref=godly
+          - img [ref=e446]
+        - link [ref=e448] [cursor=pointer]:
+          - /url: /website/field-day-sound-954
+          - generic [ref=e449]:
+            - generic:
+              - img
+            - img [ref=e452]
+      - article [ref=e455]:
+        - generic [ref=e456]: Endless
+        - link [ref=e457] [cursor=pointer]:
+          - /url: https://endless.design?ref=godly
+          - img [ref=e458]
+        - link [ref=e460] [cursor=pointer]:
+          - /url: /website/endless-982
+          - generic [ref=e461]:
+            - generic:
+              - img
+            - img [ref=e464]
+      - article [ref=e467]:
+        - generic [ref=e468]: Tatem
+        - link [ref=e469] [cursor=pointer]:
+          - /url: https://tatem.com?ref=godly
+          - img [ref=e470]
+        - link [ref=e472] [cursor=pointer]:
+          - /url: /website/tatem-1003
+          - generic [ref=e473]:
+            - generic:
+              - img
+            - img [ref=e476]
+      - article [ref=e479]:
+        - generic [ref=e480]: Superpower
+        - link [ref=e481] [cursor=pointer]:
+          - /url: https://superpower.com?ref=godly
+          - img [ref=e482]
+        - link [ref=e484] [cursor=pointer]:
+          - /url: /website/superpower-1015
+          - generic [ref=e485]:
+            - generic:
+              - img
+            - img [ref=e488]
+      - generic [ref=e491]:
+        - img [ref=e492]
+        - heading "Astronomically good web design inspiration" [level=1] [ref=e494]
+        - generic [ref=e495]:
+          - button "Subscribe" [ref=e496] [cursor=pointer]:
+            - text: Subscribe
+            - img [ref=e497]
+          - link "Get design" [ref=e499] [cursor=pointer]:
+            - /url: https://endless.design?ref=godly
+            - img [ref=e500]
+            - text: Get design
+        - paragraph [ref=e502]: 150 people subscribed today
+      - article [ref=e504]:
+        - generic [ref=e505]: Sponsor
+        - generic [ref=e506]: Visitors
+        - link [ref=e507] [cursor=pointer]:
+          - /url: https://visitors.now?ref=godly
+          - img [ref=e508]
+        - link [ref=e510] [cursor=pointer]:
+          - /url: https://visitors.now?ref=godly
+      - article [ref=e514]:
+        - generic [ref=e515]: Daniel Sun
+        - link [ref=e516] [cursor=pointer]:
+          - /url: https://danielsun.space?ref=godly
+          - img [ref=e517]
+        - link [ref=e519] [cursor=pointer]:
+          - /url: /website/daniel-sun-1011
+          - generic [ref=e520]:
+            - generic:
+              - img
+            - img [ref=e523]
+      - article [ref=e526]:
+        - generic [ref=e527]: Height
+        - link [ref=e528] [cursor=pointer]:
+          - /url: https://height.app?ref=godly
+          - img [ref=e529]
+        - link [ref=e531] [cursor=pointer]:
+          - /url: /website/height-995
+          - generic [ref=e532]:
+            - generic:
+              - img
+            - img [ref=e535]
+      - article [ref=e538]:
+        - generic [ref=e539]: Dul Zorigoo
+        - link [ref=e540] [cursor=pointer]:
+          - /url: https://dzrgo.com?ref=godly
+          - img [ref=e541]
+        - link [ref=e543] [cursor=pointer]:
+          - /url: /website/dul-zorigoo-970
+          - generic [ref=e544]:
+            - generic:
+              - img
+      - article [ref=e547]:
+        - generic [ref=e548]: Concrete Club Studio
+        - link [ref=e549] [cursor=pointer]:
+          - /url: https://concreteclub.studio?ref=godly
+          - img [ref=e550]
+        - link [ref=e552] [cursor=pointer]:
+          - /url: /website/concrete-club-studio-953
+          - generic [ref=e553]:
+            - generic:
+              - img
+            - img [ref=e556]
+      - article [ref=e559]:
+        - generic [ref=e560]: 10x Designers
+        - link [ref=e561] [cursor=pointer]:
+          - /url: https://10xdesigners.co?ref=godly
+          - img [ref=e562]
+        - link [ref=e564] [cursor=pointer]:
+          - /url: /website/10x-designers-981
+          - generic [ref=e565]:
+            - generic:
+              - img
+            - img [ref=e568]
+      - article [ref=e571]:
+        - generic [ref=e572]: Desktop.fm
+        - link [ref=e573] [cursor=pointer]:
+          - /url: https://desktop.fm?ref=godly
+          - img [ref=e574]
+        - link [ref=e576] [cursor=pointer]:
+          - /url: /website/desktop-fm-1002
+          - generic [ref=e577]:
+            - generic:
+              - img
+            - img [ref=e580]
+      - article [ref=e583]:
+        - generic [ref=e584]: Augen
+        - link [ref=e585] [cursor=pointer]:
+          - /url: https://augen.pro?ref=godly
+          - img [ref=e586]
+        - link [ref=e588] [cursor=pointer]:
+          - /url: /website/augen-1014
+          - generic [ref=e589]:
+            - generic:
+              - img
+            - img [ref=e592]
+      - article [ref=e595]:
+        - generic [ref=e596]: Notion
+        - link [ref=e597] [cursor=pointer]:
+          - /url: https://notion.so?ref=godly
+          - img [ref=e598]
+        - link [ref=e600] [cursor=pointer]:
+          - /url: /website/notion-1013
+          - generic [ref=e601]:
+            - generic:
+              - img
+            - img [ref=e604]
+      - article [ref=e607]:
+        - generic [ref=e608]: Limitless
+        - link [ref=e609] [cursor=pointer]:
+          - /url: https://limitless.ai?ref=godly
+          - img [ref=e610]
+        - link [ref=e612] [cursor=pointer]:
+          - /url: /website/limitless-1012
+          - generic [ref=e613]:
+            - generic:
+              - img
+            - img [ref=e616]
+      - article [ref=e619]:
+        - generic [ref=e620]: Logan Liffick
+        - link [ref=e621] [cursor=pointer]:
+          - /url: https://loganliffick.com?ref=godly
+          - img [ref=e622]
+        - link [ref=e624] [cursor=pointer]:
+          - /url: /website/logan-liffick-996
+          - generic [ref=e625]:
+            - generic:
+              - img
+            - img [ref=e628]
+      - article [ref=e631]:
+        - generic [ref=e632]: Diagram
+        - link [ref=e633] [cursor=pointer]:
+          - /url: https://diagram.com?ref=godly
+          - img [ref=e634]
+        - link [ref=e636] [cursor=pointer]:
+          - /url: /website/diagram-971
+          - generic [ref=e637]:
+            - generic:
+              - img
+            - img [ref=e640]
+      - article [ref=e643]:
+        - generic [ref=e644]: Chester
+        - link [ref=e645] [cursor=pointer]:
+          - /url: https://chester.how?ref=godly
+          - img [ref=e646]
+        - link [ref=e648] [cursor=pointer]:
+          - /url: /website/chester-939
+          - generic [ref=e649]:
+            - generic:
+              - img
+            - img [ref=e652]
+      - article [ref=e655]:
+        - generic [ref=e656]: Swag
+        - link [ref=e657] [cursor=pointer]:
+          - /url: https://swagapp.com?ref=godly
+          - img [ref=e658]
+        - link [ref=e660] [cursor=pointer]:
+          - /url: /website/swag-952
+          - generic [ref=e661]:
+            - generic:
+              - img
+            - img [ref=e664]
+      - article [ref=e667]:
+        - generic [ref=e668]: Phantom
+        - link [ref=e669] [cursor=pointer]:
+          - /url: https://phantom.app?ref=godly
+          - img [ref=e670]
+        - link [ref=e672] [cursor=pointer]:
+          - /url: /website/phantom-980
+          - generic [ref=e673]:
+            - generic:
+              - img
+            - img [ref=e676]
+      - article [ref=e679]:
+        - generic [ref=e680]: reboot
+        - link [ref=e681] [cursor=pointer]:
+          - /url: https://reboot.studio?ref=godly
+          - img [ref=e682]
+        - link [ref=e684] [cursor=pointer]:
+          - /url: /website/reboot-1001
+          - generic [ref=e685]:
+            - generic:
+              - img
+            - img [ref=e688]
+      - article [ref=e691]:
+        - generic [ref=e692]: Metalab
+        - link [ref=e693] [cursor=pointer]:
+          - /url: https://metalab.com?ref=godly
+          - img [ref=e694]
+        - link [ref=e696] [cursor=pointer]:
+          - /url: /website/metalab-1000
+          - generic [ref=e697]:
+            - generic:
+              - img
+            - img [ref=e700]
+      - article [ref=e703]:
+        - generic [ref=e704]: Vercel Ship
+        - link [ref=e705] [cursor=pointer]:
+          - /url: https://vercel.com/ship?ref=godly
+          - img [ref=e706]
+        - link [ref=e708] [cursor=pointer]:
+          - /url: /website/vercel-ship-999
+          - generic [ref=e709]:
+            - generic:
+              - img
+            - img [ref=e712]
+      - article [ref=e715]:
+        - generic [ref=e716]: Acctual
+        - link [ref=e717] [cursor=pointer]:
+          - /url: https://acctual.com?ref=godly
+          - img [ref=e718]
+        - link [ref=e720] [cursor=pointer]:
+          - /url: /website/acctual-998
+          - generic [ref=e721]:
+            - generic:
+              - img
+            - img [ref=e724]
+      - article [ref=e727]:
+        - generic [ref=e728]: Raw Materials
+        - link [ref=e729] [cursor=pointer]:
+          - /url: https://therawmaterials.com?ref=godly
+          - img [ref=e730]
+        - link [ref=e732] [cursor=pointer]:
+          - /url: /website/raw-materials-997
+          - generic [ref=e733]:
+            - generic:
+              - img
+            - img [ref=e736]
+      - article [ref=e739]:
+        - generic [ref=e740]: Sammy
+        - link [ref=e741] [cursor=pointer]:
+          - /url: https://www.usesammy.com?ref=godly
+          - img [ref=e742]
+        - link [ref=e744] [cursor=pointer]:
+          - /url: /website/sammy-972
+          - generic [ref=e745]:
+            - generic:
+              - img
+            - img [ref=e748]
+      - article [ref=e751]:
+        - generic [ref=e752]: Skiff
+        - link [ref=e753] [cursor=pointer]:
+          - /url: https://skiff.com?ref=godly
+          - img [ref=e754]
+        - link [ref=e756] [cursor=pointer]:
+          - /url: /website/skiff-940
+          - generic [ref=e757]:
+            - generic:
+              - img
+            - img [ref=e760]
+      - article [ref=e763]:
+        - generic [ref=e764]: Wise Design
+        - link [ref=e765] [cursor=pointer]:
+          - /url: https://wise.design?ref=godly
+          - img [ref=e766]
+        - link [ref=e768] [cursor=pointer]:
+          - /url: /website/wise-design-951
+          - generic [ref=e769]:
+            - generic:
+              - img
+            - img [ref=e772]
+      - article [ref=e775]:
+        - generic [ref=e776]: Threads
+        - link [ref=e777] [cursor=pointer]:
+          - /url: https://threads.net?ref=godly
+          - img [ref=e778]
+        - link [ref=e780] [cursor=pointer]:
+          - /url: /website/threads-979
+          - generic [ref=e781]:
+            - generic:
+              - img
+            - img [ref=e784]
+      - article [ref=e787]:
+        - generic [ref=e788]: Cosmos
+        - link [ref=e789] [cursor=pointer]:
+          - /url: https://cosmos.so?ref=godly
+          - img [ref=e790]
+        - link [ref=e792] [cursor=pointer]:
+          - /url: /website/cosmos-978
+          - generic [ref=e793]:
+            - generic:
+              - img
+            - img [ref=e796]
+      - article [ref=e799]:
+        - generic [ref=e800]: Paste
+        - link [ref=e801] [cursor=pointer]:
+          - /url: https://pasteapp.io/new?ref=godly
+          - img [ref=e802]
+        - link [ref=e804] [cursor=pointer]:
+          - /url: /website/paste-977
+          - generic [ref=e805]:
+            - generic:
+              - img
+            - img [ref=e808]
+      - article [ref=e811]:
+        - generic [ref=e812]: ChainZoku
+        - link [ref=e813] [cursor=pointer]:
+          - /url: https://chainzoku.io?ref=godly
+          - img [ref=e814]
+        - link [ref=e816] [cursor=pointer]:
+          - /url: /website/chainzoku-976
+          - generic [ref=e817]:
+            - generic:
+              - img
+            - img [ref=e820]
+      - article [ref=e823]:
+        - generic [ref=e824]: Umbrel
+        - link [ref=e825] [cursor=pointer]:
+          - /url: https://umbrel.com?ref=godly
+          - img [ref=e826]
+        - link [ref=e828] [cursor=pointer]:
+          - /url: /website/umbrel-975
+          - generic [ref=e829]:
+            - generic:
+              - img
+            - img [ref=e832]
+      - article [ref=e835]:
+        - generic [ref=e836]: Family
+        - link [ref=e837] [cursor=pointer]:
+          - /url: https://family.co?ref=godly
+          - img [ref=e838]
+        - link [ref=e840] [cursor=pointer]:
+          - /url: /website/family-974
+          - generic [ref=e841]:
+            - generic:
+              - img
+            - img [ref=e844]
+      - article [ref=e847]:
+        - generic [ref=e848]: Samara
+        - link [ref=e849] [cursor=pointer]:
+          - /url: https://www.samara.com?ref=godly
+          - img [ref=e850]
+        - link [ref=e852] [cursor=pointer]:
+          - /url: /website/samara-973
+          - generic [ref=e853]:
+            - generic:
+              - img
+            - img [ref=e856]
+      - article [ref=e859]:
+        - generic [ref=e860]: Liveblocks
+        - link [ref=e861] [cursor=pointer]:
+          - /url: https://liveblocks.io?ref=godly
+          - img [ref=e862]
+        - link [ref=e864] [cursor=pointer]:
+          - /url: /website/liveblocks-941
+          - generic [ref=e865]:
+            - generic:
+              - img
+            - img [ref=e868]
+      - article [ref=e871]:
+        - generic [ref=e872]: Chronicle
+        - link [ref=e873] [cursor=pointer]:
+          - /url: https://chroniclehq.com?ref=godly
+          - img [ref=e874]
+        - link [ref=e876] [cursor=pointer]:
+          - /url: /website/chronicle-950
+          - generic [ref=e877]:
+            - generic:
+              - img
+            - img [ref=e880]
+      - article [ref=e883]:
+        - generic [ref=e884]: OFFICE
+        - link [ref=e885] [cursor=pointer]:
+          - /url: https://offficestud.io?ref=godly
+          - img [ref=e886]
+        - link [ref=e888] [cursor=pointer]:
+          - /url: /website/office-949
+          - generic [ref=e889]:
+            - generic:
+              - img
+            - img [ref=e892]
+      - article [ref=e895]:
+        - generic [ref=e896]: Stryds
+        - link [ref=e897] [cursor=pointer]:
+          - /url: https://stryds.com?ref=godly
+          - img [ref=e898]
+        - link [ref=e900] [cursor=pointer]:
+          - /url: /website/stryds-948
+          - generic [ref=e901]:
+            - generic:
+              - img
+            - img [ref=e904]
+      - article [ref=e907]:
+        - generic [ref=e908]: Roman Tesliuk
+        - link [ref=e909] [cursor=pointer]:
+          - /url: https://www.pixelwrld.co/roman?ref=godly
+          - img [ref=e910]
+        - link [ref=e912] [cursor=pointer]:
+          - /url: /website/roman-tesliuk-947
+          - generic [ref=e913]:
+            - generic:
+              - img
+            - img [ref=e916]
+      - article [ref=e919]:
+        - generic [ref=e920]: Carl Beaverson
+        - link [ref=e921] [cursor=pointer]:
+          - /url: https://carlbeaverson.com?ref=godly
+          - img [ref=e922]
+        - link [ref=e924] [cursor=pointer]:
+          - /url: /website/carl-beaverson-946
+          - generic [ref=e925]:
+            - generic:
+              - img
+      - article [ref=e928]:
+        - generic [ref=e929]: Lorenzo Dal Dosso
+        - link [ref=e930] [cursor=pointer]:
+          - /url: https://www.lorenzodaldosso.it?ref=godly
+          - img [ref=e931]
+        - link [ref=e933] [cursor=pointer]:
+          - /url: /website/lorenzo-dal-dosso-945
+          - generic [ref=e934]:
+            - generic:
+              - img
+            - img [ref=e937]
+      - article [ref=e940]:
+        - generic [ref=e941]: Haus Otto
+        - link [ref=e942] [cursor=pointer]:
+          - /url: https://www.hausotto.com?ref=godly
+          - img [ref=e943]
+        - link [ref=e945] [cursor=pointer]:
+          - /url: /website/haus-otto-944
+          - generic [ref=e946]:
+            - generic:
+              - img
+            - img [ref=e949]
+      - article [ref=e952]:
+        - generic [ref=e953]: Two Create Studio
+        - link [ref=e954] [cursor=pointer]:
+          - /url: https://www.twocreate.com?ref=godly
+          - img [ref=e955]
+        - link [ref=e957] [cursor=pointer]:
+          - /url: /website/two-create-studio-943
+          - generic [ref=e958]:
+            - generic:
+              - img
+            - img [ref=e961]
+      - article [ref=e964]:
+        - generic [ref=e965]: Genius
+        - link [ref=e966] [cursor=pointer]:
+          - /url: https://genius.design?ref=godly
+          - img [ref=e967]
+        - link [ref=e969] [cursor=pointer]:
+          - /url: /website/genius-942
+          - generic [ref=e970]:
+            - generic:
+              - img
+            - img [ref=e973]
+      - article [ref=e976]:
+        - generic [ref=e977]: Sponsor
+        - generic [ref=e978]: Visitors
+        - link [ref=e979] [cursor=pointer]:
+          - /url: https://visitors.now?ref=godly
+          - img [ref=e980]
+        - link [ref=e982] [cursor=pointer]:
+          - /url: https://visitors.now?ref=godly
+      - article [ref=e986]:
+        - generic [ref=e987]: Healthy Together
+        - link [ref=e988] [cursor=pointer]:
+          - /url: https://www.healthytogether.co?ref=godly
+          - img [ref=e989]
+        - link [ref=e991] [cursor=pointer]:
+          - /url: /website/healthy-together-924
+          - generic [ref=e992]:
+            - generic:
+              - img
+            - img [ref=e995]
+      - article [ref=e998]:
+        - generic [ref=e999]: Sketch
+        - link [ref=e1000] [cursor=pointer]:
+          - /url: https://sketch.com?ref=godly
+          - img [ref=e1001]
+        - link [ref=e1003] [cursor=pointer]:
+          - /url: /website/sketch-925
+          - generic [ref=e1004]:
+            - generic:
+              - img
+            - img [ref=e1007]
+      - article [ref=e1010]:
+        - generic [ref=e1011]: Philipp Antoni
+        - link [ref=e1012] [cursor=pointer]:
+          - /url: https://phlntn.com?ref=godly
+          - img [ref=e1013]
+        - link [ref=e1015] [cursor=pointer]:
+          - /url: /website/philipp-antoni-926
+          - generic [ref=e1016]:
+            - generic:
+              - img
+            - img [ref=e1019]
+      - article [ref=e1022]:
+        - generic [ref=e1023]: Evervault
+        - link [ref=e1024] [cursor=pointer]:
+          - /url: https://evervault.com?ref=godly
+          - img [ref=e1025]
+        - link [ref=e1027] [cursor=pointer]:
+          - /url: /website/evervault-927
+          - generic [ref=e1028]:
+            - generic:
+              - img
+            - img [ref=e1031]
+      - article [ref=e1034]:
+        - generic [ref=e1035]: Campsite
+        - link [ref=e1036] [cursor=pointer]:
+          - /url: https://www.campsite.design?ref=godly
+          - img [ref=e1037]
+        - link [ref=e1039] [cursor=pointer]:
+          - /url: /website/campsite-928
+          - generic [ref=e1040]:
+            - generic:
+              - img
+      - article [ref=e1043]:
+        - generic [ref=e1044]: Crosswire
+        - link [ref=e1045] [cursor=pointer]:
+          - /url: https://crosswire.io?ref=godly
+          - img [ref=e1046]
+        - link [ref=e1048] [cursor=pointer]:
+          - /url: /website/crosswire-929
+          - generic [ref=e1049]:
+            - generic:
+              - img
+            - img [ref=e1052]
+      - article [ref=e1055]:
+        - generic [ref=e1056]: Maëlan Le Meur
+        - link [ref=e1057] [cursor=pointer]:
+          - /url: https://maelanlemeur.com?ref=godly
+          - img [ref=e1058]
+        - link [ref=e1060] [cursor=pointer]:
+          - /url: /website/maelan-le-meur-930
+          - generic [ref=e1061]:
+            - generic:
+              - img
+            - img [ref=e1064]
+      - article [ref=e1067]:
+        - generic [ref=e1068]: OHM
+        - link [ref=e1069] [cursor=pointer]:
+          - /url: https://ohm.studio?ref=godly
+          - img [ref=e1070]
+        - link [ref=e1072] [cursor=pointer]:
+          - /url: /website/ohm-931
+          - generic [ref=e1073]:
+            - generic:
+              - img
+            - img [ref=e1076]
+      - article [ref=e1079]:
+        - generic [ref=e1080]: Bankn
+        - link [ref=e1081] [cursor=pointer]:
+          - /url: https://bankn.tech?ref=godly
+          - img [ref=e1082]
+        - link [ref=e1084] [cursor=pointer]:
+          - /url: /website/bankn-932
+          - generic [ref=e1085]:
+            - generic:
+              - img
+            - img [ref=e1088]
+      - article [ref=e1091]:
+        - generic [ref=e1092]: Aino
+        - link [ref=e1093] [cursor=pointer]:
+          - /url: https://aino.agency?ref=godly
+          - img [ref=e1094]
+        - link [ref=e1096] [cursor=pointer]:
+          - /url: /website/aino-933
+          - generic [ref=e1097]:
+            - generic:
+              - img
+            - img [ref=e1100]
+      - article [ref=e1103]:
+        - generic [ref=e1104]: EPIC Agency
+        - link [ref=e1105] [cursor=pointer]:
+          - /url: https://www.epic.net?ref=godly
+          - img [ref=e1106]
+        - link [ref=e1108] [cursor=pointer]:
+          - /url: /website/epic-agency-934
+          - generic [ref=e1109]:
+            - generic:
+              - img
+            - img [ref=e1112]
+      - article [ref=e1115]:
+        - generic [ref=e1116]: GitHub
+        - link [ref=e1117] [cursor=pointer]:
+          - /url: https://github.com?ref=godly
+          - img [ref=e1118]
+        - link [ref=e1120] [cursor=pointer]:
+          - /url: /website/github-895
+          - generic [ref=e1121]:
+            - generic:
+              - img
+            - img [ref=e1124]
+      - article [ref=e1127]:
+        - generic [ref=e1128]: Linear 2022 Release
+        - link [ref=e1129] [cursor=pointer]:
+          - /url: https://linear.app/releases/2022?ref=godly
+          - img [ref=e1130]
+        - link [ref=e1132] [cursor=pointer]:
+          - /url: /website/linear-2022-release-881
+          - generic [ref=e1133]:
+            - generic:
+              - img
+            - img [ref=e1136]
+      - article [ref=e1139]:
+        - generic [ref=e1140]: Flying Papers
+        - link [ref=e1141] [cursor=pointer]:
+          - /url: https://www.flyingpapers.com?ref=godly
+          - img [ref=e1142]
+        - link [ref=e1144] [cursor=pointer]:
+          - /url: /website/flying-papers-923
+          - generic [ref=e1145]:
+            - generic:
+              - img
+            - img [ref=e1148]
+      - article [ref=e1151]:
+        - generic [ref=e1152]: Sponsor
+        - generic [ref=e1153]: Visitors
+        - link [ref=e1154] [cursor=pointer]:
+          - /url: https://visitors.now?ref=godly
+          - img [ref=e1155]
+        - link [ref=e1157] [cursor=pointer]:
+          - /url: https://visitors.now?ref=godly
+      - article [ref=e1161]:
+        - generic [ref=e1162]: Notion AI
+        - link [ref=e1163] [cursor=pointer]:
+          - /url: https://www.notion.so/product/ai?ref=godly
+          - img [ref=e1164]
+        - link [ref=e1166] [cursor=pointer]:
+          - /url: /website/notion-ai-896
+          - generic [ref=e1167]:
+            - generic:
+              - img
+            - img [ref=e1170]
+      - article [ref=e1173]:
+        - generic [ref=e1174]: Kaleido Grafik
+        - link [ref=e1175] [cursor=pointer]:
+          - /url: https://kaleidografik.com?ref=godly
+          - img [ref=e1176]
+        - link [ref=e1178] [cursor=pointer]:
+          - /url: /website/kaleido-grafik-880
+          - generic [ref=e1179]:
+            - generic:
+              - img
+            - img [ref=e1182]
+      - article [ref=e1185]:
+        - generic [ref=e1186]: Terminal
+        - link [ref=e1187] [cursor=pointer]:
+          - /url: https://terminal27.com?ref=godly
+          - img [ref=e1188]
+        - link [ref=e1190] [cursor=pointer]:
+          - /url: /website/terminal-922
+          - generic [ref=e1191]:
+            - generic:
+              - img
+            - img [ref=e1194]
+      - article [ref=e1197]:
+        - generic [ref=e1198]: Eco
+        - link [ref=e1199] [cursor=pointer]:
+          - /url: https://eco.com?ref=godly
+          - img [ref=e1200]
+        - link [ref=e1202] [cursor=pointer]:
+          - /url: /website/eco-935
+          - generic [ref=e1203]:
+            - generic:
+              - img
+            - img [ref=e1206]
+      - article [ref=e1209]:
+        - generic [ref=e1210]: Magician
+        - link [ref=e1211] [cursor=pointer]:
+          - /url: https://magician.design?ref=godly
+          - img [ref=e1212]
+        - link [ref=e1214] [cursor=pointer]:
+          - /url: /website/magician-897
+          - generic [ref=e1215]:
+            - generic:
+              - img
+      - article [ref=e1218]:
+        - generic [ref=e1219]: Maison Margiela
+        - link [ref=e1220] [cursor=pointer]:
+          - /url: https://www.maisonmargiela.com?ref=godly
+          - img [ref=e1221]
+        - link [ref=e1223] [cursor=pointer]:
+          - /url: /website/maison-margiela-879
+          - generic [ref=e1224]:
+            - generic:
+              - img
+            - img [ref=e1227]
+      - article [ref=e1230]:
+        - generic [ref=e1231]: HLE
+        - link [ref=e1232] [cursor=pointer]:
+          - /url: https://hle.io?ref=godly
+          - img [ref=e1233]
+        - link [ref=e1235] [cursor=pointer]:
+          - /url: /website/hle-921
+          - generic [ref=e1236]:
+            - generic:
+              - img
+            - img [ref=e1239]
+      - article [ref=e1242]:
+        - generic [ref=e1243]: "Linear: Change"
+        - link [ref=e1244] [cursor=pointer]:
+          - /url: https://linear.app/change?ref=godly
+          - img [ref=e1245]
+        - link [ref=e1247] [cursor=pointer]:
+          - /url: /website/linear-change-936
+          - generic [ref=e1248]:
+            - generic:
+              - img
+            - img [ref=e1251]
+      - article [ref=e1254]:
+        - generic [ref=e1255]: Liam
+        - link [ref=e1256] [cursor=pointer]:
+          - /url: https://liam.is?ref=godly
+          - img [ref=e1257]
+        - link [ref=e1259] [cursor=pointer]:
+          - /url: /website/liam-898
+          - generic [ref=e1260]:
+            - generic:
+              - img
+            - img [ref=e1263]
+      - article [ref=e1266]:
+        - generic [ref=e1267]: Linus Rogge
+        - link [ref=e1268] [cursor=pointer]:
+          - /url: https://linusrogge.com?ref=godly
+          - img [ref=e1269]
+        - link [ref=e1271] [cursor=pointer]:
+          - /url: /website/linus-rogge-878
+          - generic [ref=e1272]:
+            - generic:
+              - img
+      - article [ref=e1275]:
+        - generic [ref=e1276]: Maciej Zadykowicz
+        - link [ref=e1277] [cursor=pointer]:
+          - /url: https://www.maciej.co?ref=godly
+          - img [ref=e1278]
+        - link [ref=e1280] [cursor=pointer]:
+          - /url: /website/maciej-zadykowicz-920
+          - generic [ref=e1281]:
+            - generic:
+              - img
+      - article [ref=e1284]:
+        - generic [ref=e1285]: Wope
+        - link [ref=e1286] [cursor=pointer]:
+          - /url: https://wope.com?ref=godly
+          - img [ref=e1287]
+        - link [ref=e1289] [cursor=pointer]:
+          - /url: /website/wope-937
+          - generic [ref=e1290]:
+            - generic:
+              - img
+            - img [ref=e1293]
+      - article [ref=e1296]:
+        - generic [ref=e1297]: Yung Studio
+        - link [ref=e1298] [cursor=pointer]:
+          - /url: https://www.yung.studio?ref=godly
+          - img [ref=e1299]
+        - link [ref=e1301] [cursor=pointer]:
+          - /url: /website/yung-studio-899
+          - generic [ref=e1302]:
+            - generic:
+              - img
+            - img [ref=e1305]
+      - article [ref=e1308]:
+        - generic [ref=e1309]: Frame.io
+        - link [ref=e1310] [cursor=pointer]:
+          - /url: https://frame.io?ref=godly
+          - img [ref=e1311]
+        - link [ref=e1313] [cursor=pointer]:
+          - /url: /website/frame.io-877
+          - generic [ref=e1314]:
+            - generic:
+              - img
+            - img [ref=e1317]
+      - article [ref=e1320]:
+        - generic [ref=e1321]: Andreas Antonsson
+        - link [ref=e1322] [cursor=pointer]:
+          - /url: https://www.andreasantonsson.dev?ref=godly
+          - img [ref=e1323]
+        - link [ref=e1325] [cursor=pointer]:
+          - /url: /website/andreas-antonsson-919
+          - generic [ref=e1326]:
+            - generic:
+              - img
+            - img [ref=e1329]
+      - article [ref=e1332]:
+        - generic [ref=e1333]: "Compound: Membership"
+        - link [ref=e1334] [cursor=pointer]:
+          - /url: https://withcompound.com/membership?ref=godly
+          - img [ref=e1335]
+        - link [ref=e1337] [cursor=pointer]:
+          - /url: /website/compound-membership-938
+          - generic [ref=e1338]:
+            - generic:
+              - img
+            - img [ref=e1341]
+      - article [ref=e1344]:
+        - generic [ref=e1345]: Railway
+        - link [ref=e1346] [cursor=pointer]:
+          - /url: https://railway.app?ref=godly
+          - img [ref=e1347]
+        - link [ref=e1349] [cursor=pointer]:
+          - /url: /website/railway-900
+          - generic [ref=e1350]:
+            - generic:
+              - img
+            - img [ref=e1353]
+      - article [ref=e1356]:
+        - generic [ref=e1357]: Dub
+        - link [ref=e1358] [cursor=pointer]:
+          - /url: https://dub.sh?ref=godly
+          - img [ref=e1359]
+        - link [ref=e1361] [cursor=pointer]:
+          - /url: /website/dub-876
+          - generic [ref=e1362]:
+            - generic:
+              - img
+            - img [ref=e1365]
+      - article [ref=e1368]:
+        - generic [ref=e1369]: Unseen Studio
+        - link [ref=e1370] [cursor=pointer]:
+          - /url: https://unseen.co?ref=godly
+          - img [ref=e1371]
+        - link [ref=e1373] [cursor=pointer]:
+          - /url: /website/unseen-studio-918
+          - generic [ref=e1374]:
+            - generic:
+              - img
+            - img [ref=e1377]
+      - article [ref=e1380]:
+        - generic [ref=e1381]: Motto
+        - link [ref=e1382] [cursor=pointer]:
+          - /url: https://wearemotto.com?ref=godly
+          - img [ref=e1383]
+        - link [ref=e1385] [cursor=pointer]:
+          - /url: /website/motto-901
+          - generic [ref=e1386]:
+            - generic:
+              - img
+            - img [ref=e1389]
+      - article [ref=e1392]:
+        - generic [ref=e1393]: Huy Phan
+        - link [ref=e1394] [cursor=pointer]:
+          - /url: https://huyml.co?ref=godly
+          - img [ref=e1395]
+        - link [ref=e1397] [cursor=pointer]:
+          - /url: /website/huy-phan-854
+          - generic [ref=e1398]:
+            - generic:
+              - img
+            - img [ref=e1401]
+      - article [ref=e1404]:
+        - generic [ref=e1405]: 19–86
+        - link [ref=e1406] [cursor=pointer]:
+          - /url: https://19-86.fr?ref=godly
+          - img [ref=e1407]
+        - link [ref=e1409] [cursor=pointer]:
+          - /url: /website/19-86-875
+          - generic [ref=e1410]:
+            - generic:
+              - img
+      - article [ref=e1413]:
+        - generic [ref=e1414]: Resend
+        - link [ref=e1415] [cursor=pointer]:
+          - /url: https://resend.com?ref=godly
+          - img [ref=e1416]
+        - link [ref=e1418] [cursor=pointer]:
+          - /url: /website/resend-917
+          - generic [ref=e1419]:
+            - generic:
+              - img
+            - img [ref=e1422]
+      - article [ref=e1425]:
+        - generic [ref=e1426]: Nathan Smith
+        - link [ref=e1427] [cursor=pointer]:
+          - /url: https://www.nathansmith.design?ref=godly
+          - img [ref=e1428]
+        - link [ref=e1430] [cursor=pointer]:
+          - /url: /website/nathan-smith-902
+          - generic [ref=e1431]:
+            - generic:
+              - img
+            - img [ref=e1434]
+      - article [ref=e1437]:
+        - generic [ref=e1438]: Next.js Conf
+        - link [ref=e1439] [cursor=pointer]:
+          - /url: https://nextjs.org/conf?ref=godly
+          - img [ref=e1440]
+        - link [ref=e1442] [cursor=pointer]:
+          - /url: /website/next.js-conf-855
+          - generic [ref=e1443]:
+            - generic:
+              - img
+            - img [ref=e1446]
+      - article [ref=e1449]:
+        - generic [ref=e1450]: Yuga
+        - link [ref=e1451] [cursor=pointer]:
+          - /url: https://yuga.com?ref=godly
+          - img [ref=e1452]
+        - link [ref=e1454] [cursor=pointer]:
+          - /url: /website/yuga-874
+          - generic [ref=e1455]:
+            - generic:
+              - img
+            - img [ref=e1458]
+      - article [ref=e1461]:
+        - generic [ref=e1462]: Pipe
+        - link [ref=e1463] [cursor=pointer]:
+          - /url: https://pipe.com?ref=godly
+          - img [ref=e1464]
+        - link [ref=e1466] [cursor=pointer]:
+          - /url: /website/pipe-916
+          - generic [ref=e1467]:
+            - generic:
+              - img
+            - img [ref=e1470]
+      - article [ref=e1473]:
+        - generic [ref=e1474]: Fey
+        - link [ref=e1475] [cursor=pointer]:
+          - /url: https://www.feyapp.com?ref=godly
+          - img [ref=e1476]
+        - link [ref=e1478] [cursor=pointer]:
+          - /url: /website/fey-903
+          - generic [ref=e1479]:
+            - generic:
+              - img
+            - img [ref=e1482]
+      - article [ref=e1485]:
+        - generic [ref=e1486]: Elva Design Group
+        - link [ref=e1487] [cursor=pointer]:
+          - /url: https://www.helloelva.com?ref=godly
+          - img [ref=e1488]
+        - link [ref=e1490] [cursor=pointer]:
+          - /url: /website/elva-design-group-856
+          - generic [ref=e1491]:
+            - generic:
+              - img
+            - img [ref=e1494]
+      - article [ref=e1497]:
+        - generic [ref=e1498]: Build in Amsterdam
+        - link [ref=e1499] [cursor=pointer]:
+          - /url: https://www.buildinamsterdam.com?ref=godly
+          - img [ref=e1500]
+        - link [ref=e1502] [cursor=pointer]:
+          - /url: /website/build-in-amsterdam-873
+          - generic [ref=e1503]:
+            - generic:
+              - img
+            - img [ref=e1506]
+      - article [ref=e1509]:
+        - generic [ref=e1510]: Sleeve 2
+        - link [ref=e1511] [cursor=pointer]:
+          - /url: https://replay.software/sleeve?ref=godly
+          - img [ref=e1512]
+        - link [ref=e1514] [cursor=pointer]:
+          - /url: /website/sleeve-2-915
+          - generic [ref=e1515]:
+            - generic:
+              - img
+            - img [ref=e1518]
+      - article [ref=e1521]:
+        - generic [ref=e1522]: Fora
+        - link [ref=e1523] [cursor=pointer]:
+          - /url: https://www.fora-concept.com?ref=godly
+          - img [ref=e1524]
+        - link [ref=e1526] [cursor=pointer]:
+          - /url: /website/fora-904
+          - generic [ref=e1527]:
+            - generic:
+              - img
+            - img [ref=e1530]
+      - article [ref=e1533]:
+        - generic [ref=e1534]: B/D® JAMS
+        - link [ref=e1535] [cursor=pointer]:
+          - /url: https://jams.basicagency.com?ref=godly
+          - img [ref=e1536]
+        - link [ref=e1538] [cursor=pointer]:
+          - /url: /website/bd-jams-857
+          - generic [ref=e1539]:
+            - generic:
+              - img
+            - img [ref=e1542]
+      - article [ref=e1545]:
+        - generic [ref=e1546]: entire studios
+        - link [ref=e1547] [cursor=pointer]:
+          - /url: https://www.entirestudios.com?ref=godly
+          - img [ref=e1548]
+        - link [ref=e1550] [cursor=pointer]:
+          - /url: /website/entire-studios-872
+          - generic [ref=e1551]:
+            - generic:
+              - img
+            - img [ref=e1554]
+      - article [ref=e1557]:
+        - generic [ref=e1558]: School
+        - link [ref=e1559] [cursor=pointer]:
+          - /url: https://schoooool.com?ref=godly
+          - img [ref=e1560]
+        - link [ref=e1562] [cursor=pointer]:
+          - /url: /website/school-914
+          - generic [ref=e1563]:
+            - generic:
+              - img
+            - img [ref=e1566]
+      - article [ref=e1569]:
+        - generic [ref=e1570]: Sponsor
+        - generic [ref=e1571]: Visitors
+        - link [ref=e1572] [cursor=pointer]:
+          - /url: https://visitors.now?ref=godly
+          - img [ref=e1573]
+        - link [ref=e1575] [cursor=pointer]:
+          - /url: https://visitors.now?ref=godly
+      - article [ref=e1579]:
+        - generic [ref=e1580]: Co Projects
+        - link [ref=e1581] [cursor=pointer]:
+          - /url: https://co-projects.xyz?ref=godly
+          - img [ref=e1582]
+        - link [ref=e1584] [cursor=pointer]:
+          - /url: /website/co-projects-913
+          - generic [ref=e1585]:
+            - generic:
+              - img
+            - img [ref=e1588]
+      - article [ref=e1591]:
+        - generic [ref=e1592]: 247Studio
+        - link [ref=e1593] [cursor=pointer]:
+          - /url: https://www.247studio.co?ref=godly
+          - img [ref=e1594]
+        - link [ref=e1596] [cursor=pointer]:
+          - /url: /website/247studio-912
+          - generic [ref=e1597]:
+            - generic:
+              - img
+            - img [ref=e1600]
+      - article [ref=e1603]:
+        - generic [ref=e1604]: Los Feliz Engineering
+        - link [ref=e1605] [cursor=pointer]:
+          - /url: https://lfe.org?ref=godly
+          - img [ref=e1606]
+        - link [ref=e1608] [cursor=pointer]:
+          - /url: /website/los-feliz-engineering-911
+          - generic [ref=e1609]:
+            - generic:
+              - img
+            - img [ref=e1612]
+      - article [ref=e1615]:
+        - generic [ref=e1616]: BASEMENT FOUNDRY
+        - link [ref=e1617] [cursor=pointer]:
+          - /url: https://foundry.basement.studio?ref=godly
+          - img [ref=e1618]
+        - link [ref=e1620] [cursor=pointer]:
+          - /url: /website/basement-foundry-910
+          - generic [ref=e1621]:
+            - generic:
+              - img
+            - img [ref=e1624]
+      - article [ref=e1627]:
+        - generic [ref=e1628]: INK
+        - link [ref=e1629] [cursor=pointer]:
+          - /url: https://www.weareink.co.uk?ref=godly
+          - img [ref=e1630]
+        - link [ref=e1632] [cursor=pointer]:
+          - /url: /website/ink-909
+          - generic [ref=e1633]:
+            - generic:
+              - img
+            - img [ref=e1636]
+      - article [ref=e1639]:
+        - generic [ref=e1640]: Threads
+        - link [ref=e1641] [cursor=pointer]:
+          - /url: https://threads.com?ref=godly
+          - img [ref=e1642]
+        - link [ref=e1644] [cursor=pointer]:
+          - /url: /website/threads-908
+          - generic [ref=e1645]:
+            - generic:
+              - img
+            - img [ref=e1648]
+      - article [ref=e1651]:
+        - generic [ref=e1652]: Nate Smith
+        - link [ref=e1653] [cursor=pointer]:
+          - /url: https://natesmith.framer.website/scroll-transform-exploration?ref=godly
+          - img [ref=e1654]
+        - link [ref=e1656] [cursor=pointer]:
+          - /url: /website/nate-smith-907
+          - generic [ref=e1657]:
+            - generic:
+              - img
+            - img [ref=e1660]
+      - article [ref=e1663]:
+        - generic [ref=e1664]: Framer
+        - link [ref=e1665] [cursor=pointer]:
+          - /url: https://www.framer.com?via=rejiggle?ref=godly
+          - img [ref=e1666]
+        - link [ref=e1668] [cursor=pointer]:
+          - /url: /website/framer-906
+          - generic [ref=e1669]:
+            - generic:
+              - img
+            - img [ref=e1672]
+      - article [ref=e1675]:
+        - generic [ref=e1676]: Amie - Calendar
+        - link [ref=e1677] [cursor=pointer]:
+          - /url: https://amie.so/calendar?ref=godly
+          - img [ref=e1678]
+        - link [ref=e1680] [cursor=pointer]:
+          - /url: /website/amie-calendar-905
+          - generic [ref=e1681]:
+            - generic:
+              - img
+            - img [ref=e1684]
+      - article [ref=e1687]:
+        - generic [ref=e1688]: iPhone 14
+        - link [ref=e1689] [cursor=pointer]:
+          - /url: https://www.apple.com/iphone-14?ref=godly
+          - img [ref=e1690]
+        - link [ref=e1692] [cursor=pointer]:
+          - /url: /website/iphone-14-858
+          - generic [ref=e1693]:
+            - generic:
+              - img
+            - img [ref=e1696]
+  - button "F" [ref=e1698] [cursor=pointer]:
+    - img [ref=e1699]
+    - generic [ref=e1700]: F

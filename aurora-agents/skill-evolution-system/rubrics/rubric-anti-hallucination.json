@@ -1,0 +1,23 @@
+{
+  "name": "anti-hallucination",
+  "description": "Avalia se a skill previne ativamente a alucinação de APIs, CLI tools ou contratos que não tenham existência física comprovada.",
+  "max_points": 20,
+  "criteria": [
+    {
+      "condition": "Cláusula explícita proibindo assumir utilitários, scripts ou contratos inexistentes por mera dedução lógica",
+      "points": 5
+    },
+    {
+      "condition": "Instrução obrigatória de realizar varredura física ativa (ex: 'antes de propor, verifique a existência real do arquivo/API')",
+      "points": 5
+    },
+    {
+      "condition": "Exigência de registrar falha explícita se uma dependência/ferramenta esperada não estiver disponível",
+      "points": 5
+    },
+    {
+      "condition": "Uso de restrições negativas explícitas (ex: 'NÃO assuma X', 'Fica terminantemente proibido Y')",
+      "points": 5
+    }
+  ]
+}

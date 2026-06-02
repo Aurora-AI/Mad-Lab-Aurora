@@ -1,0 +1,31 @@
+{
+  "asset_id": "webgl-scroll-sync-001",
+  "name": "WebGL Scroll Sync",
+  "version": "1.0.0",
+  "author": "Lusion Ltd",
+  "ingested_at": "2026-04-19T15:15:00Z",
+  "patterns": ["P046", "P047", "P048", "P049", "P050", "P051", "P052"],
+  "files": [
+    {
+      "path": "main.js",
+      "purpose": "Core sync logic and Three.js setup"
+    },
+    {
+      "path": "img.vert",
+      "purpose": "DOM-to-NDC Shader Mapping"
+    },
+    {
+      "path": "img.frag",
+      "purpose": "Scroll Glitch/Blur Effect"
+    },
+    {
+      "path": "anatomy.md",
+      "purpose": "Technical analysis and CEO verdicts"
+    }
+  ],
+  "status": "VIGENTE",
+  "governance": {
+    "decision_matrix_hash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+    "approved_by": "Comandante (Auto-approved via Policy)"
+  }
+}

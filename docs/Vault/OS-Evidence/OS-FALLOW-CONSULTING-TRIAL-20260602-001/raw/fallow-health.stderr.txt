@@ -1,0 +1,2 @@
+   0.161780300s  WARN node_modules directory not found. Run `npm install` / `pnpm install` first for accurate results.
+note: hotspot analysis skipped: no git repository found at project root

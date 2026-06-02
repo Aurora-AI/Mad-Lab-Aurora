@@ -1,0 +1,8 @@
+JSON validation started: 2026-06-02T11:59:18.7399364-03:00
+VALID_JSON: C:\Projetos\MadLabAurora\docs\Vault\OS-Evidence\OS-FALLOW-CONSULTING-TRIAL-20260602-001\raw\fallow-full.stdout.json
+VALID_JSON: C:\Projetos\MadLabAurora\docs\Vault\OS-Evidence\OS-FALLOW-CONSULTING-TRIAL-20260602-001\raw\fallow-audit.stdout.json
+VALID_JSON: C:\Projetos\MadLabAurora\docs\Vault\OS-Evidence\OS-FALLOW-CONSULTING-TRIAL-20260602-001\raw\fallow-dead-code.stdout.json
+VALID_JSON: C:\Projetos\MadLabAurora\docs\Vault\OS-Evidence\OS-FALLOW-CONSULTING-TRIAL-20260602-001\raw\fallow-dupes.stdout.json
+VALID_JSON: C:\Projetos\MadLabAurora\docs\Vault\OS-Evidence\OS-FALLOW-CONSULTING-TRIAL-20260602-001\raw\fallow-health.stdout.json
+VALID_JSON: C:\Projetos\MadLabAurora\docs\Vault\OS-Evidence\OS-FALLOW-CONSULTING-TRIAL-20260602-001\raw\fallow-fix-preview.stdout.json
+JSON validation ended: 2026-06-02T11:59:19.4226360-03:00

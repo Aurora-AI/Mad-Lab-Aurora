@@ -1,0 +1,17 @@
+{
+  "command": "fallow audit",
+  "exit_code": "exit_code=2",
+  "input_file": "fallow-audit.stdout.json",
+  "generated_at": "2026-06-02T11:59:19.1360841-03:00",
+  "parseable_json": true,
+  "top_level_keys": [
+    "error",
+    "message",
+    "exit_code"
+  ],
+  "verdict": "error",
+  "issue_count_hint": null,
+  "notes": [
+    "could not detect base branch. Use --base <ref> to specify the comparison target (e.g., --base main)"
+  ]
+}

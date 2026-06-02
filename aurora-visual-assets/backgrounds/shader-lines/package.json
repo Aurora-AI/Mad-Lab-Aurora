@@ -1,0 +1,13 @@
+{
+  "name": "@aurora-visual/shader-lines",
+  "version": "1.0.0",
+  "description": "Procedural shader lines with mosaic distortion and temporal flow.",
+  "origin": "external",
+  "author": "External (Curated by Aurora)",
+  "aurora_status": "external_curated",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "three": "^0.89.0"
+  },
+  "notes": "Uses Three.js r89 via CDN for dynamic injection. Avoids heavy local bundling."
+}

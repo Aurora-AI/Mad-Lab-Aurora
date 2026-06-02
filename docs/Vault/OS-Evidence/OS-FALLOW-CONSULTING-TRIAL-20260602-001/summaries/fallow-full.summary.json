@@ -1,0 +1,21 @@
+{
+  "command": "fallow full",
+  "exit_code": "exit_code=0",
+  "input_file": "fallow-full.stdout.json",
+  "generated_at": "2026-06-02T11:59:18.7764749-03:00",
+  "parseable_json": true,
+  "top_level_keys": [
+    "kind",
+    "schema_version",
+    "version",
+    "elapsed_ms",
+    "check",
+    "dupes",
+    "health"
+  ],
+  "verdict": null,
+  "issue_count_hint": 289,
+  "notes": [
+    "nested check.summary.total_issues=289"
+  ]
+}

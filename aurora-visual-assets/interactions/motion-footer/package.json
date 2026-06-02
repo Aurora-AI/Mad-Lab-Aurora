@@ -1,0 +1,16 @@
+{
+  "name": "@aurora/motion-footer",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "lucide-react": "latest",
+    "clsx": "latest",
+    "tailwind-merge": "latest"
+  },
+  "aurora": {
+    "type": "interaction",
+    "patterns": ["P006", "P007"],
+    "status": "production"
+  }
+}

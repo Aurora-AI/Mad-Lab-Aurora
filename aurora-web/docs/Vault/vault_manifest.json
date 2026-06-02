@@ -1,0 +1,28 @@
+{
+  "manifest_version": "1.1.0",
+  "project": "MadLabAurora",
+  "last_ingestion": "2026-04-16T13:14:20-03:00",
+  "vault_status": "synced",
+  "active_indices": {
+    "qdrant": "aurora-cognitive-patterns",
+    "neo4j": "aurora-tech-graph"
+  },
+  "new_entries": [
+    {
+      "id": "8a9c4b12",
+      "title": "WebGL Sovereign Reveal Pattern",
+      "path": "docs/Vault/Raw/pattern-webgl-sovereign-reveal.md",
+      "classification": "Material Cognitivo",
+      "domain_enrichment": [
+        "effects.webgl.orientation",
+        "effects.shaders.zone_logic",
+        "web_build.nlu_ui"
+      ],
+      "impacted_skills": [
+        "ceo-effects",
+        "site-builder",
+        "stitch-design"
+      ]
+    }
+  ]
+}

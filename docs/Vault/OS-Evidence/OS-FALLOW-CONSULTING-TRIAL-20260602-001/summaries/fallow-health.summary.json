@@ -1,0 +1,24 @@
+{
+  "command": "fallow health",
+  "exit_code": "exit_code=0",
+  "input_file": "fallow-health.stdout.json",
+  "generated_at": "2026-06-02T11:59:19.3551164-03:00",
+  "parseable_json": true,
+  "top_level_keys": [
+    "kind",
+    "schema_version",
+    "version",
+    "elapsed_ms",
+    "findings",
+    "summary",
+    "vital_signs",
+    "health_score",
+    "file_scores",
+    "large_functions",
+    "targets",
+    "target_thresholds"
+  ],
+  "verdict": "C",
+  "issue_count_hint": 0,
+  "notes": []
+}

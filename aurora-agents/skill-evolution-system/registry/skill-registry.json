@@ -1,0 +1,110 @@
+{
+  "last_updated": "2026-05-30",
+  "skills": {
+    "agent-reflexion-cost": {
+      "version": "1.0.0",
+      "status": "active",
+      "score": 85,
+      "certification": "certified",
+      "last_checked": "2026-05-30"
+    },
+    "agent-thread-recorder": {
+      "version": "1.0.0",
+      "status": "active",
+      "score": 85,
+      "certification": "certified",
+      "last_checked": "2026-05-30"
+    },
+    "ceo-business-partner": {
+      "version": "1.0.0",
+      "status": "scaffolding",
+      "score": 50,
+      "certification": "draft",
+      "last_checked": "2026-05-30"
+    },
+    "ceo-copy": {
+      "version": "1.0.0",
+      "status": "scaffolding",
+      "score": 50,
+      "certification": "draft",
+      "last_checked": "2026-05-30"
+    },
+    "ceo-critique-theater": {
+      "version": "3.0.0",
+      "status": "active",
+      "score": 90,
+      "certification": "certified",
+      "last_checked": "2026-05-30"
+    },
+    "ceo-design": {
+      "version": "1.1.0",
+      "status": "active",
+      "score": 95,
+      "certification": "certified",
+      "last_checked": "2026-05-30"
+    },
+    "ceo-discovery-specialist": {
+      "version": "3.0.0",
+      "status": "active",
+      "score": 90,
+      "certification": "certified",
+      "last_checked": "2026-05-30"
+    },
+    "ceo-effects": {
+      "version": "1.0.0",
+      "status": "active",
+      "score": 95,
+      "certification": "certified",
+      "last_checked": "2026-05-30"
+    },
+    "ceo-marketing": {
+      "version": "1.0.0",
+      "status": "scaffolding",
+      "score": 50,
+      "certification": "draft",
+      "last_checked": "2026-05-30"
+    },
+    "ceo-product-owner": {
+      "version": "1.0.0",
+      "status": "scaffolding",
+      "score": 50,
+      "certification": "draft",
+      "last_checked": "2026-05-30"
+    },
+    "ceo-web": {
+      "version": "1.0.0",
+      "status": "active",
+      "score": 92,
+      "certification": "certified",
+      "last_checked": "2026-05-30"
+    },
+    "design-md": {
+      "version": "1.0.0",
+      "status": "active",
+      "score": 80,
+      "certification": "validated",
+      "last_checked": "2026-05-30"
+    },
+    "engenheiro-reverso": {
+      "version": "2.0.0",
+      "status": "active",
+      "score": 88,
+      "certification": "certified",
+      "last_checked": "2026-05-30"
+    },
+    "qa-review": {
+      "version": "1.0.0",
+      "status": "active",
+      "score": 90,
+      "certification": "certified",
+      "last_checked": "2026-05-30"
+    },
+    "taste-design": {
+      "version": "1.0.0",
+      "status": "active",
+      "score": 80,
+      "certification": "validated",
+      "last_checked": "2026-05-30"
+    }
+  }
+}

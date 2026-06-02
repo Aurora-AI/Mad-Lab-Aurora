@@ -1,0 +1,41 @@
+{
+  "entities": {
+    "users": {
+      "title": "User",
+      "description": "User profile and settings",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "Firebase Auth UID" },
+        "email": { "type": "string", "description": "User email" },
+        "displayName": { "type": "string", "description": "User display name" },
+        "photoURL": { "type": "string", "description": "User photo URL" },
+        "role": { "type": "string", "enum": ["admin", "client"], "description": "User role" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Account creation timestamp" }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "leads": {
+      "title": "Lead",
+      "description": "Access requests and leads",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "description": "Contact email" },
+        "name": { "type": "string", "description": "Contact name" },
+        "company": { "type": "string", "description": "Company name" },
+        "status": { "type": "string", "enum": ["pending", "contacted", "qualified"], "description": "Lead status" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Request timestamp" }
+      },
+      "required": ["email", "status"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "users",
+      "description": "User profiles"
+    },
+    "/leads/{leadId}": {
+      "schema": "leads",
+      "description": "Access requests"
+    }
+  }
+}

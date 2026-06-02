@@ -1,0 +1,13 @@
+{
+  "name": "@aurora/particle-text",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "dependencies": {
+    "react": "latest"
+  },
+  "aurora": {
+    "type": "interaction",
+    "patterns": ["P020", "P021"],
+    "status": "production"
+  }
+}

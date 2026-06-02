@@ -1,0 +1,111 @@
+# QA Conformity & Verification Report
+
+- **Sandbox Run ID:** SR-C26E2
+- **Status:** PASSED
+- **Total Findings:** 101
+
+## Findings Matrix
+
+| Severity | Code | Redacted Message | Recommended Action |
+| --- | --- | --- | --- |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |
+| P3 | PUBLIC_DOMAIN | Public URL schema referenced in file. | Check if remote domain calls conform to network bounds. |

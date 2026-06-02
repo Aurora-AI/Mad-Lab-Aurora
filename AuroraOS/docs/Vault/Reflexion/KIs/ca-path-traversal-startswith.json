@@ -1,0 +1,11 @@
+{
+  "pattern_id": "ca-path-traversal-startswith",
+  "category": "CA",
+  "product": "AuroraOS",
+  "first_seen": "2026-06-01T21:29:20Z",
+  "occurrences": 1,
+  "description": "Uso do método .startswith() de strings para validar se um caminho está contido em um diretório, o que permite bypasses se o diretório malicioso tiver o mesmo prefixo de nome.",
+  "root_cause": "Tratar paths absolutos como strings comuns em vez de utilizar as garantias hierárquicas da biblioteca pathlib.",
+  "prevention_rule": "Sempre utilize resolved.is_relative_to(base_dir) do pathlib para validação de boundary/sandbox, nunca str(path).startswith().",
+  "example_fix": "if not resolved.is_relative_to(self.staging_dir): raise SecurityException()"
+}

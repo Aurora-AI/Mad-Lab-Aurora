@@ -1,0 +1,59 @@
+{
+  "synthesis_id": "DS-079D448B",
+  "synthesized_at": "2026-06-02T06:31:53.150294",
+  "governance_mode": "transmute",
+  "semantic_tokens": [
+    {
+      "name": "color-base-surface",
+      "value": "#0A0A0C",
+      "rationale": "Mapeado pela cor dominante original (49.21%). Ajustado para padrão Aurora."
+    }
+  ],
+  "typography_scale": {
+    "heading-1": "1.359rem",
+    "heading-2": "1.0rem",
+    "heading-3": "1.0rem",
+    "heading-4": "0.906rem",
+    "body": "0.906rem"
+  },
+  "do_not_copy_rules": [
+    {
+      "blocked_original_value": "#45474D",
+      "violation_type": "Identity Theft (Brand Color)",
+      "aurora_transmutation": "#0A0A0C"
+    },
+    {
+      "blocked_original_value": "Google Symbols, sans-serif",
+      "violation_type": "Typography Exact Copy",
+      "aurora_transmutation": "var(--aurora-font-sans)"
+    },
+    {
+      "blocked_original_value": "Times New Roman, sans-serif",
+      "violation_type": "Typography Exact Copy",
+      "aurora_transmutation": "var(--aurora-font-sans)"
+    },
+    {
+      "blocked_original_value": "Google Sans Flex, Google Sans, sans-serif",
+      "violation_type": "Typography Exact Copy",
+      "aurora_transmutation": "var(--aurora-font-sans)"
+    },
+    {
+      "blocked_original_value": "Google Sans Flex, Google Sans, sans-serif",
+      "violation_type": "Typography Exact Copy",
+      "aurora_transmutation": "var(--aurora-font-sans)"
+    },
+    {
+      "blocked_original_value": "Google Sans Flex, sans-serif",
+      "violation_type": "Typography Exact Copy",
+      "aurora_transmutation": "var(--aurora-font-sans)"
+    }
+  ],
+  "a11y_tree": [
+    {
+      "role": "main",
+      "aria_label_present": false,
+      "contrast_ratio": 4.5
+    }
+  ],
+  "is_safe_for_production": true
+}

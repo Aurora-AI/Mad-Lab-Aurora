@@ -1,0 +1,26 @@
+{
+  "twenty.rest.leads.list": {
+    "adapter_ref": "twenty.rest.leads.list",
+    "method": "GET",
+    "path": "/api/twenty/leads",
+    "response_schema": "LeadListResponse",
+    "scope": "crm:read",
+    "tenant_required": true
+  },
+  "chronos.metrics.dashboard": {
+    "adapter_ref": "chronos.metrics.dashboard",
+    "method": "GET",
+    "path": "/api/chronos/v1/metrics",
+    "response_schema": "DashboardMetricsSchema",
+    "scope": "analytics:read",
+    "tenant_required": true
+  },
+  "antigravity.workspace.status": {
+    "adapter_ref": "antigravity.workspace.status",
+    "method": "GET",
+    "path": "/api/antigravity/v1/workspace",
+    "response_schema": "WorkspaceStatusSchema",
+    "scope": "workspace:read",
+    "tenant_required": true
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "spec_id": "SPEC-6B408598",
+  "derived_from_draft_id": "DS-96451282",
+  "theme_config": {
+    "colors": {
+      "base-surface": "#FFFFFF",
+      "text-primary": "#000000",
+      "text-secondary": "#45474D",
+      "action-primary": "#000000",
+      "accent": "#B7BFD9"
+    },
+    "fontFamily": {
+      "sans": [
+        "Inter",
+        "system-ui",
+        "sans-serif"
+      ],
+      "heading": [
+        "Inter",
+        "system-ui",
+        "sans-serif"
+      ]
+    },
+    "fontSize": {
+      "heading-1": "clamp(1.155rem, 1.495vw, 1.767rem)",
+      "heading-2": "clamp(0.85rem, 1.1vw, 1.3rem)",
+      "heading-3": "clamp(0.85rem, 1.1vw, 1.3rem)",
+      "heading-4": "clamp(0.77rem, 0.997vw, 1.178rem)",
+      "body": "clamp(0.77rem, 0.997vw, 1.178rem)"
+    }
+  },
+  "component_registry": [
+    {
+      "component_name": "AuroraContainer",
+      "required_variants": [
+        "default"
+      ],
+      "is_core_library": true
+    }
+  ],
+  "component_alerts": [],
+  "debt_tracking": {
+    "target_os": "OS-006",
+    "pending_injectors": [
+      "motion"
+    ],
+    "resolution_status": "PARTIALLY_RESOLVED"
+  },
+  "ready_for_factory": true
+}

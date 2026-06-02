@@ -1,0 +1,17 @@
+{
+  "report_id": "perceptual-746dfa30",
+  "render_bundle_id": "bundle-da9b8afa",
+  "screenshot_path": "output_synthesis\\percep_sandbox_1780392714\\6_rendered_screenshot.png",
+  "perceptual_score": {
+    "structural_similarity_score": 100.0,
+    "contrast_score": 34.11764705882353,
+    "visual_density_score": 25.98859529159514,
+    "layout_integrity_score": 100.0,
+    "overlap_score": 100.0,
+    "viewport_fit_score": 100.0,
+    "final_score": 100.0
+  },
+  "findings": [],
+  "decision": "approved",
+  "blocked_reasons": []
+}

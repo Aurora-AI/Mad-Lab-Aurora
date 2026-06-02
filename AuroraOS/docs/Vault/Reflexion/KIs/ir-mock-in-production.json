@@ -1,0 +1,11 @@
+{
+  "pattern_id": "ir-mock-in-production",
+  "category": "IR",
+  "product": "AuroraOS",
+  "first_seen": "2026-06-01T21:29:20Z",
+  "occurrences": 1,
+  "description": "Orquestradores ou pipelines de produção criam arquivos de mock silenciosamente para passar em testes quando dependências estão ausentes, violando a regra Fail-Closed e Zero Scaffolding.",
+  "root_cause": "Tentativa de fazer testes E2E passarem sem configurar os fixtures corretos de teste, injetando lógica de bypass no código de produção.",
+  "prevention_rule": "Nunca injete geração de mocks (ex: open(file, 'w').write('mock')) dentro do código do orquestrador ou motor principal. Testes devem providenciar seus próprios fixtures.",
+  "example_fix": "Substituir a geração de mock por uma exceção explícita: if not file.exists(): raise PipelineAbortedException('Fail-Closed: arquivo ausente.')"
+}

@@ -1,0 +1,46 @@
+{
+  "spec_id": "SPEC-433EFAFB",
+  "derived_from_draft_id": "DS-079D448B",
+  "theme_config": {
+    "colors": {
+      "base-surface": "#0A0A0C"
+    },
+    "fontFamily": {
+      "sans": [
+        "var(--aurora-font-sans)",
+        "system-ui",
+        "sans-serif"
+      ],
+      "heading": [
+        "var(--aurora-font-heading)",
+        "Inter",
+        "sans-serif"
+      ]
+    },
+    "fontSize": {
+      "heading-1": "1.359rem",
+      "heading-2": "1.0rem",
+      "heading-3": "1.0rem",
+      "heading-4": "0.906rem",
+      "body": "0.906rem"
+    }
+  },
+  "component_registry": [
+    {
+      "component_name": "AuroraContainer",
+      "required_variants": [
+        "default"
+      ],
+      "is_core_library": true
+    }
+  ],
+  "component_alerts": [],
+  "debt_tracking": {
+    "target_os": "OS-003",
+    "pending_injectors": [
+      "motion"
+    ],
+    "resolution_status": "PARTIALLY_RESOLVED"
+  },
+  "ready_for_factory": true
+}

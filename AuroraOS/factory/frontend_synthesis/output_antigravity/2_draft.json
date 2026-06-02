@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "DS-96451282",
+  "synthesized_at": "2026-06-01T13:00:07.554571",
+  "governance_mode": "clone",
+  "semantic_tokens": [
+    {
+      "name": "color-base-surface",
+      "value": "#FFFFFF",
+      "rationale": "Definido como fundo branco puro para o paradigma Luz Monumental."
+    },
+    {
+      "name": "color-text-primary",
+      "value": "#000000",
+      "rationale": "Definido como texto preto puro para alto contraste sob Luz Monumental."
+    },
+    {
+      "name": "color-text-secondary",
+      "value": "#45474D",
+      "rationale": "Definido a partir da cor de maior contraste secundário da extração."
+    },
+    {
+      "name": "color-action-primary",
+      "value": "#000000",
+      "rationale": "Replicado como preto para botões ou elementos de ação."
+    },
+    {
+      "name": "color-accent",
+      "value": "#B7BFD9",
+      "rationale": "Cor de destaque secundário preservada da extração."
+    }
+  ],
+  "typography_scale": {
+    "heading-1": "clamp(1.155rem, 1.495vw, 1.767rem)",
+    "heading-2": "clamp(0.85rem, 1.1vw, 1.3rem)",
+    "heading-3": "clamp(0.85rem, 1.1vw, 1.3rem)",
+    "heading-4": "clamp(0.77rem, 0.997vw, 1.178rem)",
+    "body": "clamp(0.77rem, 0.997vw, 1.178rem)"
+  },
+  "do_not_copy_rules": [],
+  "a11y_tree": [
+    {
+      "role": "main",
+      "aria_label_present": false,
+      "contrast_ratio": 4.5
+    }
+  ],
+  "is_safe_for_production": true
+}

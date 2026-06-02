@@ -1,0 +1,970 @@
+{
+  "design_systems": [
+    {
+      "slug": "agentic",
+      "name": "Design System Inspired by Agentic",
+      "category": "Themed & Unique",
+      "description": "Conversational AI-first interface with minimal controls, clear outcomes, and delegated task flows for agentic workflows.",
+      "path": "open-design\\design-systems\\agentic\\DESIGN.md"
+    },
+    {
+      "slug": "airbnb",
+      "name": "Design System Inspired by Airbnb",
+      "category": "E-Commerce & Retail",
+      "description": "Travel marketplace. Warm coral accent, photography-driven, rounded UI.",
+      "path": "open-design\\design-systems\\airbnb\\DESIGN.md"
+    },
+    {
+      "slug": "airtable",
+      "name": "Design System Inspired by Airtable",
+      "category": "Design & Creative",
+      "description": "Spreadsheet-database hybrid. Colorful, friendly, structured data aesthetic.",
+      "path": "open-design\\design-systems\\airtable\\DESIGN.md"
+    },
+    {
+      "slug": "ant",
+      "name": "Design System Inspired by Ant",
+      "category": "Professional & Corporate",
+      "description": "Structured, enterprise-focused design system emphasizing clarity, consistency, and efficiency for data-dense web applications.",
+      "path": "open-design\\design-systems\\ant\\DESIGN.md"
+    },
+    {
+      "slug": "apple",
+      "name": "Design System Inspired by Apple",
+      "category": "Media & Consumer",
+      "description": "Consumer electronics. Premium white space, SF Pro, cinematic imagery.",
+      "path": "open-design\\design-systems\\apple\\DESIGN.md"
+    },
+    {
+      "slug": "application",
+      "name": "Design System Inspired by Application",
+      "category": "Professional & Corporate",
+      "description": "App dashboard with purple-themed aesthetic, top-bar navigation, card-based layouts, and developer-first workflows.",
+      "path": "open-design\\design-systems\\application\\DESIGN.md"
+    },
+    {
+      "slug": "arc",
+      "name": "Design System Inspired by Arc Browser",
+      "category": "Productivity & SaaS",
+      "description": "\"The browser that browses for you.\" Translucent surfaces, gradient warmth, sidebar-first layout.",
+      "path": "open-design\\design-systems\\arc\\DESIGN.md"
+    },
+    {
+      "slug": "artistic",
+      "name": "Design System Inspired by Artistic",
+      "category": "Creative & Artistic",
+      "description": "High-contrast, expressive style with creative typography and bold color choices for visually striking interfaces.",
+      "path": "open-design\\design-systems\\artistic\\DESIGN.md"
+    },
+    {
+      "slug": "atelier-zero",
+      "name": "Atelier Zero",
+      "category": "Editorial · Studio",
+      "description": "Apartamento, IDEA) translated into a working website.",
+      "path": "open-design\\design-systems\\atelier-zero\\DESIGN.md"
+    },
+    {
+      "slug": "bento",
+      "name": "Design System Inspired by Bento",
+      "category": "Layout & Structure",
+      "description": "Modular grid layout with card-like blocks, clear hierarchy, soft spacing, and subtle visual contrast for organized, scannable interfaces.",
+      "path": "open-design\\design-systems\\bento\\DESIGN.md"
+    },
+    {
+      "slug": "binance",
+      "name": "Design System Inspired by Binance.US",
+      "category": "Fintech & Crypto",
+      "description": "Crypto exchange. Bold yellow accent on monochrome, trading-floor urgency.",
+      "path": "open-design\\design-systems\\binance\\DESIGN.md"
+    },
+    {
+      "slug": "bmw",
+      "name": "Design System Inspired by BMW",
+      "category": "Automotive",
+      "description": "Luxury automotive. Dark premium surfaces, precise German engineering aesthetic.",
+      "path": "open-design\\design-systems\\bmw\\DESIGN.md"
+    },
+    {
+      "slug": "bold",
+      "name": "Design System Inspired by Bold",
+      "category": "Bold & Expressive",
+      "description": "Strong visual presence with heavyweight typography, high-contrast colors, and commanding layouts.",
+      "path": "open-design\\design-systems\\bold\\DESIGN.md"
+    },
+    {
+      "slug": "brutalism",
+      "name": "Design System Inspired by Brutalism",
+      "category": "Bold & Expressive",
+      "description": "Raw, anti-design aesthetic inspired by concrete architecture with unadorned elements, jarring layouts, and functional minimalism.",
+      "path": "open-design\\design-systems\\brutalism\\DESIGN.md"
+    },
+    {
+      "slug": "bugatti",
+      "name": "Design System Inspired by Bugatti",
+      "category": "Automotive",
+      "description": "Hypercar brand. Cinema-black canvas, monochrome austerity, monumental display type.",
+      "path": "open-design\\design-systems\\bugatti\\DESIGN.md"
+    },
+    {
+      "slug": "cafe",
+      "name": "Design System Inspired by Cafe",
+      "category": "Creative & Artistic",
+      "description": "Cozy cafe-inspired interface with warm tones, soft typography, and clean layouts for a relaxed browsing experience.",
+      "path": "open-design\\design-systems\\cafe\\DESIGN.md"
+    },
+    {
+      "slug": "cal",
+      "name": "Design System Inspired by Cal.com",
+      "category": "Productivity & SaaS",
+      "description": "Open-source scheduling. Clean neutral UI, developer-oriented simplicity.",
+      "path": "open-design\\design-systems\\cal\\DESIGN.md"
+    },
+    {
+      "slug": "canva",
+      "name": "Design System Inspired by Canva",
+      "category": "Design & Creative",
+      "description": "Visual creation platform. Vivid purple-blue gradient, generous spacing, friendly geometry.",
+      "path": "open-design\\design-systems\\canva\\DESIGN.md"
+    },
+    {
+      "slug": "claude",
+      "name": "Design System Inspired by Claude (Anthropic)",
+      "category": "AI & LLM",
+      "description": "Anthropic's AI assistant. Warm terracotta accent, clean editorial layout.",
+      "path": "open-design\\design-systems\\claude\\DESIGN.md"
+    },
+    {
+      "slug": "clay",
+      "name": "Design System Inspired by Clay",
+      "category": "Design & Creative",
+      "description": "Creative agency. Organic shapes, soft gradients, art-directed layout.",
+      "path": "open-design\\design-systems\\clay\\DESIGN.md"
+    },
+    {
+      "slug": "claymorphism",
+      "name": "Design System Inspired by Claymorphism",
+      "category": "Morphism & Effects",
+      "description": "Soft, rounded 3D-like shapes mimicking malleable clay with playful, puffy elements and colorful surfaces.",
+      "path": "open-design\\design-systems\\claymorphism\\DESIGN.md"
+    },
+    {
+      "slug": "clean",
+      "name": "Design System Inspired by Clean",
+      "category": "Modern & Minimal",
+      "description": "Simplicity-focused design with ample whitespace, legible typography, and a limited color palette to reduce visual clutter.",
+      "path": "open-design\\design-systems\\clean\\DESIGN.md"
+    },
+    {
+      "slug": "clickhouse",
+      "name": "Design System Inspired by ClickHouse",
+      "category": "Backend & Data",
+      "description": "Fast analytics database. Yellow-accented, technical documentation style.",
+      "path": "open-design\\design-systems\\clickhouse\\DESIGN.md"
+    },
+    {
+      "slug": "cohere",
+      "name": "Design System Inspired by Cohere",
+      "category": "AI & LLM",
+      "description": "Enterprise AI platform. Vibrant gradients, data-rich dashboard aesthetic.",
+      "path": "open-design\\design-systems\\cohere\\DESIGN.md"
+    },
+    {
+      "slug": "coinbase",
+      "name": "Design System Inspired by Coinbase",
+      "category": "Fintech & Crypto",
+      "description": "Crypto exchange. Clean blue identity, trust-focused, institutional feel.",
+      "path": "open-design\\design-systems\\coinbase\\DESIGN.md"
+    },
+    {
+      "slug": "colorful",
+      "name": "Design System Inspired by Colorful",
+      "category": "Bold & Expressive",
+      "description": "Vibrant, high-contrast palettes and gradients for engaging, memorable, and modern user experiences.",
+      "path": "open-design\\design-systems\\colorful\\DESIGN.md"
+    },
+    {
+      "slug": "composio",
+      "name": "Design System Inspired by Composio",
+      "category": "Backend & Data",
+      "description": "Tool integration platform. Modern dark with colorful integration icons.",
+      "path": "open-design\\design-systems\\composio\\DESIGN.md"
+    },
+    {
+      "slug": "contemporary",
+      "name": "Design System Inspired by Contemporary",
+      "category": "Modern & Minimal",
+      "description": "Current-era minimalist design with bento grids, dark mode support, and high-performance accessible layouts.",
+      "path": "open-design\\design-systems\\contemporary\\DESIGN.md"
+    },
+    {
+      "slug": "corporate",
+      "name": "Design System Inspired by Corporate",
+      "category": "Professional & Corporate",
+      "description": "Professional, brand-aligned design with structured grids, minimalist layouts, and consistent enterprise patterns.",
+      "path": "open-design\\design-systems\\corporate\\DESIGN.md"
+    },
+    {
+      "slug": "cosmic",
+      "name": "Design System Inspired by Cosmic",
+      "category": "Creative & Artistic",
+      "description": "Futuristic sci-fi aesthetic with dark themes, vibrant neon accents, and immersive spatial elements.",
+      "path": "open-design\\design-systems\\cosmic\\DESIGN.md"
+    },
+    {
+      "slug": "creative",
+      "name": "Design System Inspired by Creative",
+      "category": "Creative & Artistic",
+      "description": "Playful, character-driven design with expressive typography and bold graphics for landing pages and creative projects.",
+      "path": "open-design\\design-systems\\creative\\DESIGN.md"
+    },
+    {
+      "slug": "cursor",
+      "name": "Design System Inspired by Cursor",
+      "category": "Developer Tools",
+      "description": "AI-first code editor. Sleek dark interface, gradient accents.",
+      "path": "open-design\\design-systems\\cursor\\DESIGN.md"
+    },
+    {
+      "slug": "dashboard",
+      "name": "Design System Inspired by Dashboard",
+      "category": "Professional & Corporate",
+      "description": "Dark-themed cloud-platform aesthetic with modular grids, glass-like panels, and strong data hierarchy for productivity dashboards.",
+      "path": "open-design\\design-systems\\dashboard\\DESIGN.md"
+    },
+    {
+      "slug": "default",
+      "name": "Neutral Modern",
+      "category": "Starter",
+      "description": "specific mood — good for B2B tools, dashboards, and utility pages.",
+      "path": "open-design\\design-systems\\default\\DESIGN.md"
+    },
+    {
+      "slug": "discord",
+      "name": "Design System Inspired by Discord",
+      "category": "Productivity & SaaS",
+      "description": "Voice / chat platform. Deep blurple, dark-first surfaces, playful accent moments.",
+      "path": "open-design\\design-systems\\discord\\DESIGN.md"
+    },
+    {
+      "slug": "dithered",
+      "name": "Design System Inspired by Dithered",
+      "category": "Retro & Nostalgic",
+      "description": "Dot-pattern rendering technique that simulates shades with a limited palette for nostalgic, retro, high-contrast visuals.",
+      "path": "open-design\\design-systems\\dithered\\DESIGN.md"
+    },
+    {
+      "slug": "doodle",
+      "name": "Design System Inspired by Doodle",
+      "category": "Creative & Artistic",
+      "description": "Hand-drawn, sketch-like style with doodles, handwritten fonts, and imperfect lines for a playful, informal feel.",
+      "path": "open-design\\design-systems\\doodle\\DESIGN.md"
+    },
+    {
+      "slug": "dramatic",
+      "name": "Design System Inspired by Dramatic",
+      "category": "Bold & Expressive",
+      "description": "High-contrast, theatrical design with bold layouts, immersive visuals, and unconventional compositions that command attention.",
+      "path": "open-design\\design-systems\\dramatic\\DESIGN.md"
+    },
+    {
+      "slug": "duolingo",
+      "name": "Design System Inspired by Duolingo",
+      "category": "Productivity & SaaS",
+      "description": "Language-learning platform. Bright owl green, chunky shadows, gamified joy.",
+      "path": "open-design\\design-systems\\duolingo\\DESIGN.md"
+    },
+    {
+      "slug": "editorial",
+      "name": "Design System Inspired by Editorial",
+      "category": "Creative & Artistic",
+      "description": "Magazine-inspired editorial layout with refined serif typography, structured grids, and elegant reading experiences.",
+      "path": "open-design\\design-systems\\editorial\\DESIGN.md"
+    },
+    {
+      "slug": "elegant",
+      "name": "Design System Inspired by Elegant",
+      "category": "Professional & Corporate",
+      "description": "Graceful, refined aesthetic with delicate typography, minimal palettes, and polished layouts that exude sophistication.",
+      "path": "open-design\\design-systems\\elegant\\DESIGN.md"
+    },
+    {
+      "slug": "elevenlabs",
+      "name": "Design System Inspired by ElevenLabs",
+      "category": "AI & LLM",
+      "description": "AI voice platform. Dark cinematic UI, audio-waveform aesthetics.",
+      "path": "open-design\\design-systems\\elevenlabs\\DESIGN.md"
+    },
+    {
+      "slug": "energetic",
+      "name": "Design System Inspired by Energetic",
+      "category": "Bold & Expressive",
+      "description": "Dynamic, vibrant style with thick borders, geometric shapes, high-contrast colors, and expressive typography conveying motion and vitality.",
+      "path": "open-design\\design-systems\\energetic\\DESIGN.md"
+    },
+    {
+      "slug": "enterprise",
+      "name": "Design System Inspired by Enterprise",
+      "category": "Professional & Corporate",
+      "description": "Clean, high-contrast enterprise design for data-driven workflows with intuitive drag-and-drop patterns and structured layouts.",
+      "path": "open-design\\design-systems\\enterprise\\DESIGN.md"
+    },
+    {
+      "slug": "expo",
+      "name": "Design System Inspired by Expo",
+      "category": "Developer Tools",
+      "description": "React Native platform. Dark theme, tight letter-spacing, code-centric.",
+      "path": "open-design\\design-systems\\expo\\DESIGN.md"
+    },
+    {
+      "slug": "expressive",
+      "name": "Design System Inspired by Expressive",
+      "category": "Bold & Expressive",
+      "description": "Vibrant, personality-driven design with bold colors, playful graphics, and dynamic layouts that balance creativity with structure.",
+      "path": "open-design\\design-systems\\expressive\\DESIGN.md"
+    },
+    {
+      "slug": "fantasy",
+      "name": "Design System Inspired by Fantasy",
+      "category": "Creative & Artistic",
+      "description": "Game-inspired fantasy aesthetic with bold, premium visuals, rich color palettes, and immersive thematic elements.",
+      "path": "open-design\\design-systems\\fantasy\\DESIGN.md"
+    },
+    {
+      "slug": "ferrari",
+      "name": "Design System Inspired by Ferrari",
+      "category": "Automotive",
+      "description": "Luxury automotive. Chiaroscuro editorial, Ferrari Red accents, cinematic black.",
+      "path": "open-design\\design-systems\\ferrari\\DESIGN.md"
+    },
+    {
+      "slug": "figma",
+      "name": "Design System Inspired by Figma",
+      "category": "Design & Creative",
+      "description": "Collaborative design tool. Vibrant multi-color, playful yet professional.",
+      "path": "open-design\\design-systems\\figma\\DESIGN.md"
+    },
+    {
+      "slug": "flat",
+      "name": "Design System Inspired by Flat",
+      "category": "Modern & Minimal",
+      "description": "Two-dimensional minimalist style with vibrant colors, clean typography, and no 3D effects for fast, user-friendly interfaces.",
+      "path": "open-design\\design-systems\\flat\\DESIGN.md"
+    },
+    {
+      "slug": "framer",
+      "name": "Design System Inspired by Framer",
+      "category": "Design & Creative",
+      "description": "Website builder. Bold black and blue, motion-first, design-forward.",
+      "path": "open-design\\design-systems\\framer\\DESIGN.md"
+    },
+    {
+      "slug": "friendly",
+      "name": "Design System Inspired by Friendly",
+      "category": "Creative & Artistic",
+      "description": "Approachable, intuitive design with rounded elements, ample whitespace, and soft pastel color palettes.",
+      "path": "open-design\\design-systems\\friendly\\DESIGN.md"
+    },
+    {
+      "slug": "futuristic",
+      "name": "Design System Inspired by Futuristic",
+      "category": "Themed & Unique",
+      "description": "Forward-looking design with tech-inspired typography, modern layouts, and a sleek, innovation-driven aesthetic.",
+      "path": "open-design\\design-systems\\futuristic\\DESIGN.md"
+    },
+    {
+      "slug": "github",
+      "name": "Design System Inspired by GitHub",
+      "category": "Developer Tools",
+      "description": "Code-forward platform. Functional density, blue-on-white precision, Primer foundations.",
+      "path": "open-design\\design-systems\\github\\DESIGN.md"
+    },
+    {
+      "slug": "glassmorphism",
+      "name": "Design System Inspired by Glassmorphism",
+      "category": "Morphism & Effects",
+      "description": "Frosted glass effect with translucent layers, subtle blur, and luminous borders for depth and modern elegance.",
+      "path": "open-design\\design-systems\\glassmorphism\\DESIGN.md"
+    },
+    {
+      "slug": "gradient",
+      "name": "Design System Inspired by Gradient",
+      "category": "Morphism & Effects",
+      "description": "Smooth color transitions and gradient-rich surfaces for modern, playful interfaces with visual depth.",
+      "path": "open-design\\design-systems\\gradient\\DESIGN.md"
+    },
+    {
+      "slug": "hashicorp",
+      "name": "Design System Inspired by HashiCorp",
+      "category": "Backend & Data",
+      "description": "Infrastructure automation. Enterprise-clean, black and white.",
+      "path": "open-design\\design-systems\\hashicorp\\DESIGN.md"
+    },
+    {
+      "slug": "huggingface",
+      "name": "Design System Inspired by Hugging Face",
+      "category": "AI & LLM",
+      "description": "ML community hub. Sunny yellow accent, monospace identity, cheerful and dense.",
+      "path": "open-design\\design-systems\\huggingface\\DESIGN.md"
+    },
+    {
+      "slug": "ibm",
+      "name": "Design System Inspired by IBM",
+      "category": "Media & Consumer",
+      "description": "Enterprise technology. Carbon design system, structured blue palette.",
+      "path": "open-design\\design-systems\\ibm\\DESIGN.md"
+    },
+    {
+      "slug": "intercom",
+      "name": "Design System Inspired by Intercom",
+      "category": "Productivity & SaaS",
+      "description": "Customer messaging. Friendly blue palette, conversational UI patterns.",
+      "path": "open-design\\design-systems\\intercom\\DESIGN.md"
+    },
+    {
+      "slug": "kami",
+      "name": "Design System Inspired by kami (紙 / 纸)",
+      "category": "Editorial & Print",
+      "description": "Editorial paper system: warm parchment canvas, ink-blue accent, serif-led hierarchy. Built for resumes, one-pagers, white papers, portfolios, slide decks — anything that should feel like high-quality print rather than UI. Multilingual by design (EN · zh-CN · ja).",
+      "path": "open-design\\design-systems\\kami\\DESIGN.md"
+    },
+    {
+      "slug": "kraken",
+      "name": "Design System Inspired by Kraken",
+      "category": "Fintech & Crypto",
+      "description": "Crypto trading. Purple-accented dark UI, data-dense dashboards.",
+      "path": "open-design\\design-systems\\kraken\\DESIGN.md"
+    },
+    {
+      "slug": "lamborghini",
+      "name": "Design System Inspired by Lamborghini",
+      "category": "Automotive",
+      "description": "Supercar brand. True black surfaces, gold accents, dramatic uppercase typography.",
+      "path": "open-design\\design-systems\\lamborghini\\DESIGN.md"
+    },
+    {
+      "slug": "levels",
+      "name": "Design System Inspired by Levels",
+      "category": "Layout & Structure",
+      "description": "Conversion-focused design that removes friction and guides users toward action through clarity, trust, and speed.",
+      "path": "open-design\\design-systems\\levels\\DESIGN.md"
+    },
+    {
+      "slug": "linear-app",
+      "name": "Design System Inspired by Linear",
+      "category": "Productivity & SaaS",
+      "description": "Project management. Ultra-minimal, precise, purple accent.",
+      "path": "open-design\\design-systems\\linear-app\\DESIGN.md"
+    },
+    {
+      "slug": "lingo",
+      "name": "Design System Inspired by Lingo",
+      "category": "Creative & Artistic",
+      "description": "Playful, minimal design with bright colors, rounded shapes, tactile 3D borders, and friendly illustrations for approachable interfaces.",
+      "path": "open-design\\design-systems\\lingo\\DESIGN.md"
+    },
+    {
+      "slug": "lovable",
+      "name": "Design System Inspired by Lovable",
+      "category": "Developer Tools",
+      "description": "AI full-stack builder. Playful gradients, friendly dev aesthetic.",
+      "path": "open-design\\design-systems\\lovable\\DESIGN.md"
+    },
+    {
+      "slug": "luxury",
+      "name": "Design System Inspired by Luxury",
+      "category": "Professional & Corporate",
+      "description": "High-end dark aesthetic with bold headings, monochromatic palette, and premium feel for luxury brand experiences.",
+      "path": "open-design\\design-systems\\luxury\\DESIGN.md"
+    },
+    {
+      "slug": "mastercard",
+      "name": "Design System Inspired by Mastercard",
+      "category": "Fintech & Crypto",
+      "description": "Global payments network. Warm cream canvas, orbital pill shapes, editorial warmth.",
+      "path": "open-design\\design-systems\\mastercard\\DESIGN.md"
+    },
+    {
+      "slug": "material",
+      "name": "Design System Inspired by Material",
+      "category": "Professional & Corporate",
+      "description": "Google's Material Design with layered surfaces, dynamic theming, built-in motion, and responsive cross-platform patterns.",
+      "path": "open-design\\design-systems\\material\\DESIGN.md"
+    },
+    {
+      "slug": "meta",
+      "name": "Design System Inspired by Meta (Store)",
+      "category": "E-Commerce & Retail",
+      "description": "Tech retail store. Photography-first, binary light/dark surfaces, Meta Blue CTAs.",
+      "path": "open-design\\design-systems\\meta\\DESIGN.md"
+    },
+    {
+      "slug": "minimal",
+      "name": "Design System Inspired by Minimal",
+      "category": "Modern & Minimal",
+      "description": "Stripped-back design emphasizing whitespace, clean typography, and restrained color for maximum clarity and focus.",
+      "path": "open-design\\design-systems\\minimal\\DESIGN.md"
+    },
+    {
+      "slug": "minimax",
+      "name": "Design System Inspired by MiniMax",
+      "category": "AI & LLM",
+      "description": "AI model provider. Bold dark interface with neon accents.",
+      "path": "open-design\\design-systems\\minimax\\DESIGN.md"
+    },
+    {
+      "slug": "mintlify",
+      "name": "Design System Inspired by Mintlify",
+      "category": "Productivity & SaaS",
+      "description": "Documentation platform. Clean, green-accented, reading-optimized.",
+      "path": "open-design\\design-systems\\mintlify\\DESIGN.md"
+    },
+    {
+      "slug": "miro",
+      "name": "Design System Inspired by Miro",
+      "category": "Design & Creative",
+      "description": "Visual collaboration. Bright yellow accent, infinite canvas aesthetic.",
+      "path": "open-design\\design-systems\\miro\\DESIGN.md"
+    },
+    {
+      "slug": "mistral-ai",
+      "name": "Design System Inspired by Mistral AI",
+      "category": "AI & LLM",
+      "description": "Open-weight LLM provider. French-engineered minimalism, purple-toned.",
+      "path": "open-design\\design-systems\\mistral-ai\\DESIGN.md"
+    },
+    {
+      "slug": "modern",
+      "name": "Design System Inspired by Modern",
+      "category": "Modern & Minimal",
+      "description": "Contemporary editorial style with serif typography, minimal palettes, and clean layouts for polished digital products.",
+      "path": "open-design\\design-systems\\modern\\DESIGN.md"
+    },
+    {
+      "slug": "mongodb",
+      "name": "Design System Inspired by MongoDB",
+      "category": "Backend & Data",
+      "description": "Document database. Green leaf branding, developer documentation focus.",
+      "path": "open-design\\design-systems\\mongodb\\DESIGN.md"
+    },
+    {
+      "slug": "mono",
+      "name": "Design System Inspired by Mono",
+      "category": "Modern & Minimal",
+      "description": "Monospace-driven, matrix-inspired design with high-contrast elements, compact density, and a hacker-chic aesthetic.",
+      "path": "open-design\\design-systems\\mono\\DESIGN.md"
+    },
+    {
+      "slug": "neobrutalism",
+      "name": "Design System Inspired by Neobrutalism",
+      "category": "Bold & Expressive",
+      "description": "Modern take on brutalism with bold borders, vivid accent colors, and raw, high-contrast layouts on warm surfaces.",
+      "path": "open-design\\design-systems\\neobrutalism\\DESIGN.md"
+    },
+    {
+      "slug": "neon",
+      "name": "Design System Inspired by Neon",
+      "category": "Morphism & Effects",
+      "description": "Electric neon glow effects with high-contrast color pairings for bold, attention-grabbing interfaces.",
+      "path": "open-design\\design-systems\\neon\\DESIGN.md"
+    },
+    {
+      "slug": "neumorphism",
+      "name": "Design System Inspired by Neumorphism",
+      "category": "Morphism & Effects",
+      "description": "Soft, extruded UI elements with inner and outer shadows on monochromatic surfaces for a tactile, embedded look.",
+      "path": "open-design\\design-systems\\neumorphism\\DESIGN.md"
+    },
+    {
+      "slug": "nike",
+      "name": "Design System Inspired by Nike",
+      "category": "E-Commerce & Retail",
+      "description": "Athletic retail. Monochrome UI, massive uppercase type, full-bleed photography.",
+      "path": "open-design\\design-systems\\nike\\DESIGN.md"
+    },
+    {
+      "slug": "notion",
+      "name": "Design System Inspired by Notion",
+      "category": "Productivity & SaaS",
+      "description": "All-in-one workspace. Warm minimalism, serif headings, soft surfaces.",
+      "path": "open-design\\design-systems\\notion\\DESIGN.md"
+    },
+    {
+      "slug": "nvidia",
+      "name": "Design System Inspired by NVIDIA",
+      "category": "Media & Consumer",
+      "description": "GPU computing. Green-black energy, technical power aesthetic.",
+      "path": "open-design\\design-systems\\nvidia\\DESIGN.md"
+    },
+    {
+      "slug": "ollama",
+      "name": "Design System Inspired by Ollama",
+      "category": "AI & LLM",
+      "description": "Run LLMs locally. Terminal-first, monochrome simplicity.",
+      "path": "open-design\\design-systems\\ollama\\DESIGN.md"
+    },
+    {
+      "slug": "openai",
+      "name": "Design System Inspired by OpenAI",
+      "category": "AI & LLM",
+      "description": "Calm, near-monochrome system anchored in deep teal-black with generous white space and editorial typography.",
+      "path": "open-design\\design-systems\\openai\\DESIGN.md"
+    },
+    {
+      "slug": "opencode-ai",
+      "name": "Design System Inspired by OpenCode",
+      "category": "AI & LLM",
+      "description": "AI coding platform. Developer-centric dark theme.",
+      "path": "open-design\\design-systems\\opencode-ai\\DESIGN.md"
+    },
+    {
+      "slug": "pacman",
+      "name": "Design System Inspired by Pacman",
+      "category": "Themed & Unique",
+      "description": "Retro arcade-inspired design with pixel fonts, dotted borders, playful high-contrast colors, and 8-bit game aesthetics.",
+      "path": "open-design\\design-systems\\pacman\\DESIGN.md"
+    },
+    {
+      "slug": "paper",
+      "name": "Design System Inspired by Paper",
+      "category": "Retro & Nostalgic",
+      "description": "Paper-textured, print-inspired design with minimal colors, clean serif/sans typography, and tactile surface qualities.",
+      "path": "open-design\\design-systems\\paper\\DESIGN.md"
+    },
+    {
+      "slug": "perspective",
+      "name": "Design System Inspired by Perspective",
+      "category": "Layout & Structure",
+      "description": "Spatial depth design with isometric views, vanishing points, and layered elements that guide attention through 3D-like realism.",
+      "path": "open-design\\design-systems\\perspective\\DESIGN.md"
+    },
+    {
+      "slug": "pinterest",
+      "name": "Design System Inspired by Pinterest",
+      "category": "Media & Consumer",
+      "description": "Visual discovery. Red accent, masonry grid, image-first.",
+      "path": "open-design\\design-systems\\pinterest\\DESIGN.md"
+    },
+    {
+      "slug": "playstation",
+      "name": "Design System Inspired by PlayStation",
+      "category": "Media & Consumer",
+      "description": "Gaming console retail. Three-surface channel layout, quiet-authority display type, cyan hover-scale.",
+      "path": "open-design\\design-systems\\playstation\\DESIGN.md"
+    },
+    {
+      "slug": "posthog",
+      "name": "Design System Inspired by PostHog",
+      "category": "Backend & Data",
+      "description": "Product analytics. Playful hedgehog branding, developer-friendly dark UI.",
+      "path": "open-design\\design-systems\\posthog\\DESIGN.md"
+    },
+    {
+      "slug": "premium",
+      "name": "Design System Inspired by Premium",
+      "category": "Professional & Corporate",
+      "description": "Apple-inspired premium aesthetic with precise spacing, modern typography, and a refined, polished visual language.",
+      "path": "open-design\\design-systems\\premium\\DESIGN.md"
+    },
+    {
+      "slug": "professional",
+      "name": "Design System Inspired by Professional",
+      "category": "Professional & Corporate",
+      "description": "Polished, business-ready design with modern typography, structured layouts, and a trustworthy visual identity.",
+      "path": "open-design\\design-systems\\professional\\DESIGN.md"
+    },
+    {
+      "slug": "publication",
+      "name": "Design System Inspired by Publication",
+      "category": "Creative & Artistic",
+      "description": "Print-inspired visual language for books, magazines, and reports with editorial grids and expressive typography.",
+      "path": "open-design\\design-systems\\publication\\DESIGN.md"
+    },
+    {
+      "slug": "raycast",
+      "name": "Design System Inspired by Raycast",
+      "category": "Developer Tools",
+      "description": "Productivity launcher. Sleek dark chrome, vibrant gradient accents.",
+      "path": "open-design\\design-systems\\raycast\\DESIGN.md"
+    },
+    {
+      "slug": "refined",
+      "name": "Design System Inspired by Refined",
+      "category": "Modern & Minimal",
+      "description": "Carefully curated, modern minimal style with elegant serif typography and understated, sophisticated palettes.",
+      "path": "open-design\\design-systems\\refined\\DESIGN.md"
+    },
+    {
+      "slug": "renault",
+      "name": "Design System Inspired by Renault",
+      "category": "Automotive",
+      "description": "French automotive. Vibrant aurora gradients, NouvelR typography, bold energy.",
+      "path": "open-design\\design-systems\\renault\\DESIGN.md"
+    },
+    {
+      "slug": "replicate",
+      "name": "Design System Inspired by Replicate",
+      "category": "AI & LLM",
+      "description": "Run ML models via API. Clean white canvas, code-forward.",
+      "path": "open-design\\design-systems\\replicate\\DESIGN.md"
+    },
+    {
+      "slug": "resend",
+      "name": "Design System Inspired by Resend",
+      "category": "Productivity & SaaS",
+      "description": "Email API. Minimal dark theme, monospace accents.",
+      "path": "open-design\\design-systems\\resend\\DESIGN.md"
+    },
+    {
+      "slug": "retro",
+      "name": "Design System Inspired by Retro",
+      "category": "Retro & Nostalgic",
+      "description": "Throwback design with vintage-inspired typography, high-contrast retro palettes, and nostalgic visual elements.",
+      "path": "open-design\\design-systems\\retro\\DESIGN.md"
+    },
+    {
+      "slug": "revolut",
+      "name": "Design System Inspired by Revolut",
+      "category": "Fintech & Crypto",
+      "description": "Digital banking. Sleek dark interface, gradient cards, fintech precision.",
+      "path": "open-design\\design-systems\\revolut\\DESIGN.md"
+    },
+    {
+      "slug": "runwayml",
+      "name": "Design System Inspired by Runway",
+      "category": "AI & LLM",
+      "description": "AI video generation. Cinematic dark UI, media-rich layout.",
+      "path": "open-design\\design-systems\\runwayml\\DESIGN.md"
+    },
+    {
+      "slug": "sanity",
+      "name": "Design System Inspired by Sanity",
+      "category": "Backend & Data",
+      "description": "Headless CMS. Red accent, content-first editorial layout.",
+      "path": "open-design\\design-systems\\sanity\\DESIGN.md"
+    },
+    {
+      "slug": "sentry",
+      "name": "Design System Inspired by Sentry",
+      "category": "Backend & Data",
+      "description": "Error monitoring. Dark dashboard, data-dense, pink-purple accent.",
+      "path": "open-design\\design-systems\\sentry\\DESIGN.md"
+    },
+    {
+      "slug": "shadcn",
+      "name": "Design System Inspired by Shadcn",
+      "category": "Modern & Minimal",
+      "description": "Shadcn/ui-inspired design with minimal, clean components, monochrome palette, and utility-first patterns.",
+      "path": "open-design\\design-systems\\shadcn\\DESIGN.md"
+    },
+    {
+      "slug": "shopify",
+      "name": "Design System Inspired by Shopify",
+      "category": "E-Commerce & Retail",
+      "description": "E-commerce platform. Dark-first cinematic, neon green accent, ultra-light type.",
+      "path": "open-design\\design-systems\\shopify\\DESIGN.md"
+    },
+    {
+      "slug": "simple",
+      "name": "Design System Inspired by Simple",
+      "category": "Modern & Minimal",
+      "description": "Straightforward, no-frills design with clean typography, neutral colors, and intuitive layouts that stay out of the way.",
+      "path": "open-design\\design-systems\\simple\\DESIGN.md"
+    },
+    {
+      "slug": "skeumorphism",
+      "name": "Design System Inspired by Skeumorphism",
+      "category": "Morphism & Effects",
+      "description": "Real-world mimicry with textured surfaces, 3D effects, and familiar physical metaphors for intuitive digital interfaces.",
+      "path": "open-design\\design-systems\\skeumorphism\\DESIGN.md"
+    },
+    {
+      "slug": "sleek",
+      "name": "Design System Inspired by Sleek",
+      "category": "Modern & Minimal",
+      "description": "Modern minimalist aesthetic with clean lines, intentional color palette, subtle interactions, and consistent spacing.",
+      "path": "open-design\\design-systems\\sleek\\DESIGN.md"
+    },
+    {
+      "slug": "spacex",
+      "name": "Design System Inspired by SpaceX",
+      "category": "Media & Consumer",
+      "description": "Space technology. Stark black and white, full-bleed imagery, futuristic.",
+      "path": "open-design\\design-systems\\spacex\\DESIGN.md"
+    },
+    {
+      "slug": "spacious",
+      "name": "Design System Inspired by Spacious",
+      "category": "Layout & Structure",
+      "description": "Generous whitespace, consistent padding, and grid-based layouts for clean, readable, and breathing interfaces.",
+      "path": "open-design\\design-systems\\spacious\\DESIGN.md"
+    },
+    {
+      "slug": "spotify",
+      "name": "Design System Inspired by Spotify",
+      "category": "Media & Consumer",
+      "description": "Music streaming. Vibrant green on dark, bold type, album-art-driven.",
+      "path": "open-design\\design-systems\\spotify\\DESIGN.md"
+    },
+    {
+      "slug": "starbucks",
+      "name": "Design System Inspired by Starbucks",
+      "category": "E-Commerce & Retail",
+      "description": "Global coffee retail brand. Four-tier green system, warm cream canvas, full-pill buttons.",
+      "path": "open-design\\design-systems\\starbucks\\DESIGN.md"
+    },
+    {
+      "slug": "storytelling",
+      "name": "Design System Inspired by Storytelling",
+      "category": "Creative & Artistic",
+      "description": "Narrative-driven design using visuals, copy, and interaction to guide users through engaging, emotionally resonant journeys.",
+      "path": "open-design\\design-systems\\storytelling\\DESIGN.md"
+    },
+    {
+      "slug": "stripe",
+      "name": "Design System Inspired by Stripe",
+      "category": "Fintech & Crypto",
+      "description": "Payment infrastructure. Signature purple gradients, weight-300 elegance.",
+      "path": "open-design\\design-systems\\stripe\\DESIGN.md"
+    },
+    {
+      "slug": "supabase",
+      "name": "Design System Inspired by Supabase",
+      "category": "Backend & Data",
+      "description": "Open-source Firebase alternative. Dark emerald theme, code-first.",
+      "path": "open-design\\design-systems\\supabase\\DESIGN.md"
+    },
+    {
+      "slug": "superhuman",
+      "name": "Design System Inspired by Superhuman",
+      "category": "Developer Tools",
+      "description": "Fast email client. Premium dark UI, keyboard-first, purple glow.",
+      "path": "open-design\\design-systems\\superhuman\\DESIGN.md"
+    },
+    {
+      "slug": "tesla",
+      "name": "Design System Inspired by Tesla",
+      "category": "Automotive",
+      "description": "Electric automotive. Radical subtraction, full-viewport photography, near-zero UI.",
+      "path": "open-design\\design-systems\\tesla\\DESIGN.md"
+    },
+    {
+      "slug": "tetris",
+      "name": "Design System Inspired by Tetris",
+      "category": "Themed & Unique",
+      "description": "Classic block-game inspired design with playful colors, bold display fonts, and compact, high-energy layouts.",
+      "path": "open-design\\design-systems\\tetris\\DESIGN.md"
+    },
+    {
+      "slug": "theverge",
+      "name": "Design System Inspired by The Verge",
+      "category": "Media & Consumer",
+      "description": "Tech editorial media. Acid-mint and ultraviolet accents, Manuka display, rave-flyer story tiles.",
+      "path": "open-design\\design-systems\\theverge\\DESIGN.md"
+    },
+    {
+      "slug": "together-ai",
+      "name": "Design System Inspired by Together AI",
+      "category": "AI & LLM",
+      "description": "Open-source AI infrastructure. Technical, blueprint-style design.",
+      "path": "open-design\\design-systems\\together-ai\\DESIGN.md"
+    },
+    {
+      "slug": "uber",
+      "name": "Design System Inspired by Uber",
+      "category": "Media & Consumer",
+      "description": "Mobility platform. Bold black and white, tight type, urban energy.",
+      "path": "open-design\\design-systems\\uber\\DESIGN.md"
+    },
+    {
+      "slug": "vercel",
+      "name": "Design System Inspired by Vercel",
+      "category": "Developer Tools",
+      "description": "Frontend deployment. Black and white precision, Geist font.",
+      "path": "open-design\\design-systems\\vercel\\DESIGN.md"
+    },
+    {
+      "slug": "vibrant",
+      "name": "Design System Inspired by Vibrant",
+      "category": "Bold & Expressive",
+      "description": "Lively, colorful design with bold playful typography, warm accents, and dynamic visual energy.",
+      "path": "open-design\\design-systems\\vibrant\\DESIGN.md"
+    },
+    {
+      "slug": "vintage",
+      "name": "Design System Inspired by Vintage",
+      "category": "Retro & Nostalgic",
+      "description": "1950s-1990s nostalgia with skeuomorphic touches, grainy textures, retro color palettes, and pixel-style typography.",
+      "path": "open-design\\design-systems\\vintage\\DESIGN.md"
+    },
+    {
+      "slug": "vodafone",
+      "name": "Design System Inspired by Vodafone",
+      "category": "Media & Consumer",
+      "description": "Global telecom brand. Monumental uppercase display, Vodafone Red chapter bands.",
+      "path": "open-design\\design-systems\\vodafone\\DESIGN.md"
+    },
+    {
+      "slug": "voltagent",
+      "name": "Design System Inspired by VoltAgent",
+      "category": "AI & LLM",
+      "description": "AI agent framework. Void-black canvas, emerald accent, terminal-native.",
+      "path": "open-design\\design-systems\\voltagent\\DESIGN.md"
+    },
+    {
+      "slug": "warm-editorial",
+      "name": "Warm Editorial",
+      "category": "Starter",
+      "description": "good for long-form, editorial, and brand-led marketing pages.",
+      "path": "open-design\\design-systems\\warm-editorial\\DESIGN.md"
+    },
+    {
+      "slug": "warp",
+      "name": "Design System Inspired by Warp",
+      "category": "Developer Tools",
+      "description": "Modern terminal. Dark IDE-like interface, block-based command UI.",
+      "path": "open-design\\design-systems\\warp\\DESIGN.md"
+    },
+    {
+      "slug": "webflow",
+      "name": "Design System Inspired by Webflow",
+      "category": "Design & Creative",
+      "description": "Visual web builder. Blue-accented, polished marketing site aesthetic.",
+      "path": "open-design\\design-systems\\webflow\\DESIGN.md"
+    },
+    {
+      "slug": "wired",
+      "name": "Design System Inspired by WIRED",
+      "category": "Media & Consumer",
+      "description": "Tech magazine. Paper-white broadsheet density, custom serif display, mono kickers, ink-blue links.",
+      "path": "open-design\\design-systems\\wired\\DESIGN.md"
+    },
+    {
+      "slug": "wise",
+      "name": "Design System Inspired by Wise",
+      "category": "Fintech & Crypto",
+      "description": "Money transfer. Bright green accent, friendly and clear.",
+      "path": "open-design\\design-systems\\wise\\DESIGN.md"
+    },
+    {
+      "slug": "x-ai",
+      "name": "Design System Inspired by xAI",
+      "category": "AI & LLM",
+      "description": "Elon Musk's AI lab. Stark monochrome, futuristic minimalism.",
+      "path": "open-design\\design-systems\\x-ai\\DESIGN.md"
+    },
+    {
+      "slug": "xiaohongshu",
+      "name": "Design System Inspired by Xiaohongshu",
+      "category": "Media & Consumer",
+      "description": "Lifestyle UGC social platform. Singular brand red, generous radius, content-first.",
+      "path": "open-design\\design-systems\\xiaohongshu\\DESIGN.md"
+    },
+    {
+      "slug": "zapier",
+      "name": "Design System Inspired by Zapier",
+      "category": "Productivity & SaaS",
+      "description": "Automation platform. Warm orange, friendly illustration-driven.",
+      "path": "open-design\\design-systems\\zapier\\DESIGN.md"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+ERRO: o usuário que fez logon não tem privilégios administrativos.

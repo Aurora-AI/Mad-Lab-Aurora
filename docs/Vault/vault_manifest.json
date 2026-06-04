@@ -1,0 +1,121 @@
+[
+  {
+    "vault_section": "Threads",
+    "path": "docs/Vault/Threads/",
+    "description": "Transcrições estruturadas de sessões operacionais. Append-only.",
+    "schema": "docs/Vault/Threads/_schema/thread.schema.json",
+    "created_at": "2026-04-18",
+    "created_by": "OS-ANTIGRAVITY-AURORA-VAULT-20260418-007",
+    "policy": "append-only",
+    "indexable": true
+  },
+  {
+    "vault_section": "Token-Ledger",
+    "path": "docs/Vault/Token-Ledger/",
+    "description": "Rastreamento granular de custos e tokens de IA por OS.",
+    "schema": "docs/Vault/Token-Ledger/_schema/entry.schema.json",
+    "created_at": "2026-04-18",
+    "created_by": "OS-ANTIGRAVITY-AURORA-VAULT-20260418-006",
+    "policy": "append-only",
+    "indexable": true
+  },
+  {
+    "vault_section": "Raw",
+    "path": "docs/Vault/Raw/",
+    "description": "Dados brutos de ingestão (benchmarks, curadorias, documentos externos). Inclui specs do Critique Theater, protocolo Open-Design e escolas visuais.",
+    "created_at": "2026-04-20",
+    "created_by": "OS-ANTIGRAVITY-AURORA-INGESTION-20260420-001",
+    "policy": "append-only",
+    "indexable": true,
+    "key_documents": [
+      "critique_theater_spec.md",
+      "protocolo_descoberta_open_design.md",
+      "escolas_visuais_open_design.md"
+    ]
+  },
+  {
+    "vault_section": "Processed",
+    "path": "docs/Vault/Processed/",
+    "description": "Metadados e matrizes de decisão resultantes do pipeline de ingestão.",
+    "created_at": "2026-04-24",
+    "created_by": "OS-ANTIGRAVITY-AURORA-INGESTION-20260424-001",
+    "policy": "immutable",
+    "indexable": true
+  },
+  {
+    "vault_section": "OS-Evidence",
+    "path": "docs/Vault/OS-Evidence/",
+    "description": "Evidências de OSes executadas. Append-only. 15+ OSes registradas com evidências reais.",
+    "created_at": "2026-04-18",
+    "created_by": "OS-AURORA-VISUAL-ASSETS-20260418-004",
+    "policy": "append-only",
+    "indexable": true,
+    "os_count": 15,
+    "key_os": [
+      "OS-MADLAB-CONSUMER-BRIDGE-20260527-001",
+      "OS-MADLAB-DOC-STACK-PREPARATION-20260528-001",
+      "OS-MADLAB-MANUAL-DA-AGENCIA-REWRITE-20260528-002",
+      "OS-MADLAB-DOMAIN-POLICY-ALIGNMENT-20260528-003",
+      "OS-MADLAB-VISUAL-DEBT-TRIAGE-20260527-003",
+      "OS-MADLAB-VISUAL-QUALITY-GATES-20260527-002"
+    ]
+  },
+  {
+    "vault_section": "KIs",
+    "path": "docs/Vault/KIs/",
+    "description": "Knowledge Items aprovados e candidatos. Pipeline: candidates/ → aprovação manual → approved/",
+    "created_at": "2026-05-30",
+    "created_by": "antigravity-sprint3",
+    "policy": "append-only",
+    "indexable": true,
+    "sub_sections": {
+      "approved": {
+        "count": 4,
+        "items": [
+          "KI-MADLAB-001-regra-do-silencio.md",
+          "KI-MADLAB-002-dark-editorial-postura-nao-paleta.md",
+          "KI-MADLAB-003-threejs-r128-capsule-geometry.md",
+          "KI-MADLAB-004-prevenir-layout-shift-ao-sincronizar-canvas-webgl.md"
+        ]
+      },
+      "candidates": {
+        "count": 0,
+        "note": "Candidatos documentados em .aurora/skills/*/references/evolution-delta.md de cada skill"
+      }
+    }
+  },
+  {
+    "vault_section": "Decisions",
+    "path": "docs/Vault/Decisions/",
+    "description": "Decisões arquiteturais formais do MadLab Aurora.",
+    "created_at": "2026-05-27",
+    "created_by": "OS-MADLAB-CONSUMER-BRIDGE-20260527-001",
+    "policy": "append-only",
+    "indexable": true,
+    "key_decisions": [
+      "DEC-MADLAB-AGENTIC-MESH-001.md — Integração MadLab com Ozzmosis (aprovada)"
+    ]
+  },
+  {
+    "vault_section": "DesignLibrary",
+    "path": "docs/Vault/DesignLibrary/",
+    "description": "Biblioteca de padrões técnicos WebGL (P046-P052) e repertório S-Tier de ferramentas.",
+    "created_at": "2026-04-19",
+    "created_by": "OS-ANTIGRAVITY-AURORA-VISUAL-ASSETS-20260419-011",
+    "policy": "append-only",
+    "indexable": true
+  },
+  {
+    "vault_section": "specs/skill_mesh",
+    "path": "docs/specs/skill_mesh/",
+    "description": "Schemas e protocolos do Skill Mesh — cross-skill feedback e resolução de conflitos.",
+    "created_at": "2026-05-30",
+    "created_by": "antigravity-sprint2",
+    "policy": "append-only",
+    "indexable": true,
+    "key_documents": [
+      "conflict-and-feedback-protocol.md",
+      "cross-skill-feedback-event.schema.json"
+    ]
+  }
+]

@@ -1,0 +1,278 @@
+- generic [ref=e2]:
+  - region "Notifications alt+T"
+  - link "Skip to content →":
+    - /url: "#skip-nav"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - navigation "Main" [ref=e5]:
+        - list "Site navigation" [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Navigate to home" [ref=e11]:
+              - /url: /homepage
+              - img "Linear" [ref=e12]
+          - generic [ref=e14]:
+            - generic [ref=e15]:
+              - listitem [ref=e16]:
+                - link "Product" [ref=e17]:
+                  - /url: /homepage
+              - listitem [ref=e18]:
+                - link "Resources" [ref=e19]:
+                  - /url: /about
+              - listitem [ref=e20]:
+                - link "Customers" [ref=e21]:
+                  - /url: /customers
+              - listitem [ref=e22]:
+                - link "Pricing" [ref=e23]:
+                  - /url: /pricing
+              - listitem [ref=e24]:
+                - link "Now" [ref=e25]:
+                  - /url: /now
+              - listitem [ref=e26]:
+                - link "Contact" [ref=e27]:
+                  - /url: /contact
+            - generic [ref=e29]:
+              - listitem [ref=e30]:
+                - link "Log in" [ref=e32]:
+                  - /url: /login
+              - listitem [ref=e33]:
+                - link "Sign up" [ref=e34]:
+                  - /url: /signup
+    - main [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e38]:
+          - heading "Last Year You Said Next Year" [level=1] [ref=e39]:
+            - text: Last Year
+            - text: You Said
+            - text: Next Year
+          - heading "It’s time to push back against the forces of stagnation. It’s time for change." [level=2] [ref=e40]
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - generic [ref=e43]:
+              - heading "Chapter I" [level=2] [ref=e44]
+              - paragraph [ref=e45]: Change is a curious thing.
+              - paragraph [ref=e46]: Some people will tell you that change is impossible. That it should be resisted. That it goes against human nature.
+              - paragraph [ref=e47]: But change isn’t optional. It happens all the time.
+              - paragraph [ref=e48]: Day by day. Minute by minute. Second by second. Tirelessly replacing old with new.
+              - paragraph [ref=e49]: In an oxymoronic sense, change is the only constant we have in life.
+              - paragraph [ref=e50]: Change is the delta between today and tomorrow. It’s the discrepancy between who we are and who we want to be. The diff between the status quo and the future we desire.
+              - paragraph [ref=e51]: Without change everything would remain the same. Ambitions would remain dreams and dreams would remain fantasies.
+              - paragraph [ref=e52]: Change is inevitable, but it doesn’t happen automatically. There’s a voice of resistance that’s trying to hold it back.
+            - figure:
+              - generic:
+                - generic: Change
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: Change
+                    - generic: Change
+                    - generic: Change
+          - generic [ref=e53]:
+            - generic [ref=e54]:
+              - heading "Chapter II" [level=2] [ref=e55]
+              - paragraph [ref=e56]: That voice of resistance is always there.
+              - paragraph [ref=e57]: It appears right after you wake up, commanding the muscles in your hand to hit the snooze button. It shows up late at night, trying to keep you from setting the alarm in the first place. It’s constantly in your head, continuously telling you that the status quo is good enough.
+              - paragraph [ref=e58]: “Just do it tomorrow,” it whispers.
+              - paragraph [ref=e59]: But tomorrow never comes.
+              - paragraph [ref=e60]: What comes is stagnation. A futureless future that’s stuck in the past.
+              - paragraph [ref=e61]: The voice of resistance is not just talking to you. Stagnation also happens on a collective level. It happens when change is systematically held back by the inertia of our own shared beliefs. When we become trapped in a dictatorless dystopia worshiping an imaginary “truth”.
+              - paragraph [ref=e62]: We call this truth “the standard”, “the norm”, or “common sense”. We treat it like a law of physics that can’t be changed or broken. But the reality is that this truth is just a disguised version of the decaying status quo. It’s a made-up concept designed for a world that no longer exists. A cargo cult.
+              - paragraph [ref=e63]: Breaking out of this prison of stagnation requires technological progress. It requires tools that allow us to communicate, collaborate and co-create.
+              - paragraph [ref=e64]: In the world of today, most of these tools appear in the form of software, built upon a shared language we call code. They are spreadsheets, messaging clients, version control systems, text editors, and issue trackers.
+              - paragraph [ref=e65]: These tools enable us to work together as teams, movements, states, and companies. They allow us to escape stagnation and collectively push for change.
+              - paragraph [ref=e66]: But what happens when our tools for change become the things that hold us back?
+            - figure:
+              - generic:
+                - generic: Stagnation
+                - generic: Stagnation
+                - generic: Stagnation
+          - generic [ref=e67]:
+            - generic [ref=e68]:
+              - heading "Chapter III" [level=2] [ref=e69]
+              - paragraph [ref=e70]: Reflect on the current state of your work and you’ll realize that things are not as they used to be.
+              - paragraph [ref=e71]: Where did all these meetings come from?
+              - paragraph [ref=e72]: When did everything become so incredibly slow?
+              - paragraph [ref=e73]: What happened to shipping things fast and frequently?
+              - paragraph [ref=e74]: Why does your issue tracker require you to fill 37 different drop-down menus?
+              - paragraph [ref=e75]: What you are witnessing are the forces of stagnation. Slowly pouring sand in the gears of your once so nimble team. Steadily slowing you down to the point where you are unable to move.
+              - paragraph [ref=e76]: The stasis of your team is a direct result of the stasis of your tools. Stagnation is invisible but you can feel its presence in the form of bloated user interfaces, loading spinners, and endless UX papercuts.
+              - paragraph [ref=e77]: With decaying tools comes a decaying spirit. Complacency slowly creeps in. Ambition gradually fades away. What’s left is a quiet acceptance of the emptiness of your once so sparkling existence. Why choose change when the voice of resistance offers you a thousand paths of least resistance?
+              - paragraph [ref=e78]: But stagnation never stops. It doesn’t magically disappear. Life doesn’t get better by chance. It only gets better by change. To rejuvenate your team you must rejuvenate your tools. To leave the status quo behind you must change your tools for change.
+            - figure:
+              - generic:
+                - generic:
+                  - text: Tools for
+                  - text: Change
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - heading "Chapter IV" [level=2] [ref=e81]
+              - paragraph [ref=e82]: Change is a curious thing.
+              - paragraph [ref=e83]: Some people will tell you change is impossible. That it should be resisted. That it goes against human nature.
+              - paragraph [ref=e84]: But change is inevitable. It’s the only certainty in life.
+              - paragraph [ref=e85]: Change is the island of hope in the ocean of complacency. It’s your protection against the rising sea levels of stagnation. A lighthouse that’s guiding you to a better future.
+              - paragraph [ref=e86]: The future it points to is one where you are free from the chores and chains of your old legacy tools. A future where your team is rejuvenated and ready to create truly magical things again.
+              - paragraph [ref=e87]: That future is not an inconceivable dream, but simply a matter of time and choice. All it needs is a final gentle push.
+              - paragraph [ref=e88]: The island of hope is right in front of you.
+              - paragraph [ref=e89]: You have felt its shores before.
+              - paragraph [ref=e90]: Last year you said next year.
+              - paragraph [ref=e91]: It’s time for change.
+            - figure:
+              - generic:
+                - generic: Change
+                - generic: Change
+                - generic: Change
+                - generic: Change
+                - generic: Change
+                - generic: Change
+        - generic [ref=e92]:
+          - heading "Push back against stagnation" [level=2] [ref=e93]
+          - generic [ref=e94]:
+            - link "Sign Up" [ref=e95]:
+              - /url: /signup
+              - generic [ref=e96]: Sign Up
+            - link "Talk to Sales" [ref=e97]:
+              - /url: /contact/sales
+              - generic [ref=e98]: Talk to Sales
+            - button "Share pitch deck" [ref=e99]:
+              - generic [ref=e100]: Share pitch deck
+            - button "Download posters" [ref=e101]:
+              - generic [ref=e102]: Download posters
+            - button "Download “All Hands” slide" [ref=e103]:
+              - generic [ref=e104]: Download “All Hands” slide
+          - heading "Change has never been easier" [level=2] [ref=e106]
+          - generic [ref=e107]:
+            - link "Import issues" [ref=e108]:
+              - /url: /docs/import-issues
+              - generic [ref=e109]: Import issues
+            - link "Discover Jira Sync (new)" [ref=e110]:
+              - /url: /changelog/2023-12-20-jira-sync
+              - generic [ref=e111]: Discover Jira Sync (new)
+            - link "Discover GitHub Issues Sync (new)" [ref=e112]:
+              - /url: /changelog/2023-12-14-github-issues-sync
+              - generic [ref=e113]: Discover GitHub Issues Sync (new)
+    - contentinfo [ref=e114]:
+      - generic [ref=e116]:
+        - link "Linear Logo" [ref=e118]:
+          - /url: /
+          - img "Linear Logo" [ref=e119]
+        - generic [ref=e121]:
+          - heading "Product" [level=3] [ref=e122]
+          - list [ref=e123]:
+            - listitem [ref=e124]:
+              - link "Intake" [ref=e125]:
+                - /url: /intake
+            - listitem [ref=e126]:
+              - link "Plan" [ref=e127]:
+                - /url: /plan
+            - listitem [ref=e128]:
+              - link "Build" [ref=e129]:
+                - /url: /build
+            - listitem [ref=e130]:
+              - link "Diffs" [ref=e131]:
+                - /url: /diffs
+            - listitem [ref=e132]:
+              - link "Monitor" [ref=e133]:
+                - /url: /monitor
+            - listitem [ref=e134]:
+              - link "Pricing" [ref=e135]:
+                - /url: /pricing
+            - listitem [ref=e136]:
+              - link "Security" [ref=e137]:
+                - /url: /security
+        - generic [ref=e138]:
+          - heading "Features" [level=3] [ref=e139]
+          - list [ref=e140]:
+            - listitem [ref=e141]:
+              - link "Asks" [ref=e142]:
+                - /url: /asks
+            - listitem [ref=e143]:
+              - link "Agents" [ref=e144]:
+                - /url: /agents
+            - listitem [ref=e145]:
+              - link "Customer Requests" [ref=e146]:
+                - /url: /customer-requests
+            - listitem [ref=e147]:
+              - link "Insights" [ref=e148]:
+                - /url: /insights
+            - listitem [ref=e149]:
+              - link "Mobile" [ref=e150]:
+                - /url: /mobile
+            - listitem [ref=e151]:
+              - link "Integrations" [ref=e152]:
+                - /url: /integrations
+            - listitem [ref=e153]:
+              - link "Changelog" [ref=e154]:
+                - /url: /changelog
+        - generic [ref=e155]:
+          - heading "Company" [level=3] [ref=e156]
+          - list [ref=e157]:
+            - listitem [ref=e158]:
+              - link "About" [ref=e159]:
+                - /url: /about
+            - listitem [ref=e160]:
+              - link "Customers" [ref=e161]:
+                - /url: /customers
+            - listitem [ref=e162]:
+              - link "Careers" [ref=e163]:
+                - /url: /careers
+            - listitem [ref=e164]:
+              - link "Blog" [ref=e165]:
+                - /url: /blog
+            - listitem [ref=e166]:
+              - link "Method" [ref=e167]:
+                - /url: /method
+            - listitem [ref=e168]:
+              - link "Quality" [ref=e169]:
+                - /url: /quality
+            - listitem [ref=e170]:
+              - link "Brand" [ref=e171]:
+                - /url: /brand
+        - generic [ref=e172]:
+          - heading "Resources" [level=3] [ref=e173]
+          - list [ref=e174]:
+            - listitem [ref=e175]:
+              - link "Switch" [ref=e176]:
+                - /url: /switch
+            - listitem [ref=e177]:
+              - link "Download" [ref=e178]:
+                - /url: /download
+            - listitem [ref=e179]:
+              - link "Documentation" [ref=e180]:
+                - /url: /docs
+                - generic [ref=e181]: Documentation
+            - listitem [ref=e182]:
+              - link "Developers" [ref=e183]:
+                - /url: /developers
+            - listitem [ref=e184]:
+              - link "Status" [ref=e185]:
+                - /url: https://linearstatus.com
+            - listitem [ref=e186]:
+              - link "Enterprise" [ref=e187]:
+                - /url: /enterprise
+            - listitem [ref=e188]:
+              - link "Startups" [ref=e189]:
+                - /url: /startups
+        - generic [ref=e190]:
+          - heading "Connect" [level=3] [ref=e191]
+          - list [ref=e192]:
+            - listitem [ref=e193]:
+              - link "Contact us" [ref=e194]:
+                - /url: /contact
+            - listitem [ref=e195]:
+              - link "Community" [ref=e196]:
+                - /url: https://linear.app/join-slack
+            - listitem [ref=e197]:
+              - link "X (Twitter)" [ref=e198]:
+                - /url: https://x.com/linear
+            - listitem [ref=e199]:
+              - link "GitHub" [ref=e200]:
+                - /url: https://github.com/linear
+            - listitem [ref=e201]:
+              - link "YouTube" [ref=e202]:
+                - /url: https://www.youtube.com/@linear
+        - generic [ref=e204]:
+          - link "Privacy" [ref=e205]:
+            - /url: /privacy
+          - link "Terms" [ref=e206]:
+            - /url: /terms
+          - link "DPA" [ref=e207]:
+            - /url: /dpa

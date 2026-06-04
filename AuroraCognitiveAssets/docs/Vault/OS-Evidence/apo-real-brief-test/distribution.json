@@ -1,0 +1,19 @@
+{
+  "id": "distribution_apo_manifesto_001",
+  "briefId": "brief_apo_manifesto_001",
+  "title": "APO: O Gestor Como Infraestrutura de Performance",
+  "subtitle": "Um manifesto pratico para diagnosticar anomalias, intervir com precisao e escalar sem heroismo individual",
+  "promise": "Substituir cobranca reativa por criterio sistemico de performance comercial",
+  "cta": "Solicitar diagnostico APO",
+  "landingCopy": "Entenda por que metas, pressao e heroismo individual nao sustentam escala. Descubra o modelo APO para ler a realidade da operacao, intervir no ponto certo e estruturar crescimento com mais clareza, disciplina e transferencia de inteligencia.",
+  "emailSequence": [
+    "email_manifesto_apo_abertura",
+    "email_top_performer_toxico",
+    "email_diagnostico_apo_cta"
+  ],
+  "socialDerivatives": [
+    "carrossel_gestor_infraestrutura",
+    "post_falso_top_performer",
+    "post_fim_da_era_da_cobranca"
+  ]
+}

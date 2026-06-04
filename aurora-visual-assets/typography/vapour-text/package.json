@@ -1,0 +1,12 @@
+{
+  "name": "@aurora-visual/vapour-text",
+  "version": "1.0.0",
+  "description": "Cinematic text vaporization effect using Canvas particle physics.",
+  "origin": "external",
+  "author": "External (Curated by Aurora)",
+  "aurora_status": "external_curated",
+  "peerDependencies": {
+    "react": "^18.0.0"
+  },
+  "notes": "SEO-friendly using hidden mirroring. Optimized for high-DPI displays."
+}

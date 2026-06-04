@@ -1,0 +1,15 @@
+{
+  "name": "@aurora-visual/hero-futuristic",
+  "version": "1.0.0",
+  "description": "Hero futuristic com Three.js WebGPU, depth map parallax e scan line effect",
+  "origin": "https://21st.dev/r/reapollo/hero-futuristic",
+  "author": "David Hakobyan (@reapollo)",
+  "aurora_status": "external_curated",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "three": ">=0.170.0",
+    "@react-three/fiber": ">=9.0.0",
+    "@react-three/drei": ">=10.0.0"
+  },
+  "notes": "Requer suporte WebGPU no browser (Chrome 113+). Não funciona em Safari sem flag."
+}

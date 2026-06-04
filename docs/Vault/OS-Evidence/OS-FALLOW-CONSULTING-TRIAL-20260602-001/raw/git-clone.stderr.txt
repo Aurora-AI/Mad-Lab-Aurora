@@ -1,0 +1,2 @@
+fatal: destination path 'C:\Projetos\MadLabAurora\checkouts\Elysiancorpfront' already exists and is not an empty directory.
+failed to run git: exit status 128

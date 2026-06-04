@@ -1,0 +1,23 @@
+{
+  "environment": "dev",
+  "tokens": [
+    {
+      "name": "consumer-full",
+      "keyId": "dev-internal-e2e-v4",
+      "token_sha256": "14ebe5e721e18fabe69c4324789032ba00628bc38ebce1b42ade90cf0223b421",
+      "scopes": [
+        "pipeline:read",
+        "pipeline:write"
+      ],
+      "consumers": [
+        "AuroraCognitiveAssets"
+      ],
+      "environments": [
+        "dev"
+      ],
+      "status": "active",
+      "notBefore": "2026-03-31T12:00:00.000Z",
+      "expiresAt": "2026-04-30T00:00:00.000Z"
+    }
+  ]
+}

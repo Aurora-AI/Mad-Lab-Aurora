@@ -1,0 +1,450 @@
+<!DOCTYPE html><!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Tue Apr 07 2026 08:07:07 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="hi.slater.app" data-wf-page="64f5a7b8ed2f9de345751c8c" data-wf-site="64edbdb775dd65c346efad5f"><head><meta charset="utf-8"/><title>Home | Slater | AI Custom Code Tool For Webflow Projects</title><meta content="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" name="description"/><meta content="Home | Slater | AI Custom Code Tool For Webflow Projects" property="og:title"/><meta content="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" property="og:description"/><meta content="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6511f4a4bf0d4b2cffccddf4_Option%202%20(1).webp" property="og:image"/><meta content="Home | Slater | AI Custom Code Tool For Webflow Projects" property="twitter:title"/><meta content="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" property="twitter:description"/><meta content="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6511f4a4bf0d4b2cffccddf4_Option%202%20(1).webp" property="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="google71ab8a1f0009b1df.html" name="google-site-verification"/><meta content="Webflow" name="generator"/><link href="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/css/slater-lp-new.webflow.shared.93b72728a.css" rel="stylesheet" type="text/css" integrity="sha384-k7cnKKlpyQ4G1C7m/cIN68IQCp3DnEbaibghXLsb5IqiFwnKMeQGOYvlbo+dyv2X" crossorigin="anonymous"/><style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="a7eea655-91ac-9d68-d2ba-d7add7a7f92c"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="a7eea655-91ac-9d68-d2ba-d7add7a7f92d"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="a7eea655-91ac-9d68-d2ba-d7add7a7f92b"] {opacity:0;}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="a7eea655-91ac-9d68-d2ba-d7add7a7f92c"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="a7eea655-91ac-9d68-d2ba-d7add7a7f92d"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="a7eea655-91ac-9d68-d2ba-d7add7a7f92b"] {opacity:0;}}</style><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Manrope:300,400,500,600,700","Manrope:300,400,500,600,700","PT Mono:300,400,500,600,700"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/64edbdb775dd65c346efadb5_Slater-favicon-32x32.png" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/64edbdb775dd65c346efadb6_webclip-ea.png" rel="apple-touch-icon"/><style>
+  * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+}
+  
+  /* ===========================================
+   Slater.app - Smaller Heading Sizes
+   =========================================== */
+
+:root {
+  --size-body: clamp(16px, 0.6vw + 14px, 18px);
+  --lh-body: 1.65;
+  --lh-head: 1.18;
+}
+
+/* Body */
+body {
+  font-size: var(--size-body);
+  line-height: var(--lh-body);
+}
+
+.w-container {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: var(--lh-head);
+    letter-spacing: -0.01em;
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+    text-wrap: balance;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: clamp(1.75rem, 1.5vw + 1rem, 2.25rem);
+  }
+
+  /* ~28â€“36px */
+  h2 {
+    font-size: clamp(1.375rem, 1.3vw + 0.9rem, 1.75rem);
+  }
+
+  /* ~22â€“28px */
+  h3 {
+    font-size: clamp(1.25rem, 1.1vw + 0.8rem, 1.5rem);
+  }
+
+  /* ~20â€“24px */
+  h4 {
+    font-size: clamp(1.125rem, 1vw + 0.7rem, 1.3125rem);
+  }
+
+  /* ~18â€“21px */
+  h5 {
+    font-size: clamp(1rem, 0.8vw + 0.65rem, 1.125rem);
+  }
+
+  /* ~16â€“18px */
+  h6 {
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Paragraphs */
+.w-richtext p,
+p {
+  font-size: var(--size-body);
+  line-height: var(--lh-body);
+  margin-bottom: 0.875rem;
+}
+
+/* Lists */
+.w-richtext ul,
+.w-richtext ol {
+  margin: 0 0 1rem 1.25rem;
+}
+
+/* Navbar */
+.navbar2_link {
+  font-size: 0.95rem;
+}
+
+.login-link,
+.button_new {
+  font-size: 0.9375rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  :root {
+    --size-body: 16.5px;
+  }
+
+  h1 {
+    font-size: 1.875rem;
+  }
+
+  /* ~30px */
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  /* ~24px */
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  /* ~20px */
+}
+
+</style>
+
+
+
+<!-- You can remove this v1 -->
+<meta name="facebook-domain-verification" content="mlk59ybu44651lzcbhhxjfl8vfae8q" /></head><body class="body"><div class="page-wrapper"><div class="global-styles w-embed"><style>
+
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+ 
+.margin-0 {
+  margin: 0rem !important;
+}
+  
+.padding-0 {
+  padding: 0rem !important;
+}
+
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+  
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+  
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+  
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+  
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+/* Apply "..." at 100% width */
+.truncate-width { 
+		width: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+/* Removes native scrollbar */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; 
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.w-richtext ul,
+.w-richtext ol {
+	margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+</style></div><div class="alert-bar"><div class="navbar2_container hidden"><div class="align-center"><a data-w-id="036c7896-90b8-1a88-c134-bff26277b770" href="https://slater-lp-new.webflow.io/resources/create-a-game-join-the-slater-challenge-and-learn-coding-the-fun-way" class="navbar2_dropdown-link w-inline-block"><div data-w-id="036c7896-90b8-1a88-c134-bff26277b771" class="slater_dude"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/64f8a6015e009783e4880c99_Slater%20Symbol%20(1).svg" loading="lazy" alt="" class="object-contain"/></div><div>Game On! Enter the Slater Challenge and Win!</div></a></div></div></div><div data-animation="default" class="navbar2_component w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="851bcef2-5fd3-6dc4-db57-47115cce8e9c" role="banner" data-duration="400"><div class="navbar2_container"><a href="/" aria-current="page" class="navbar2_logo-link w-nav-brand w--current"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/64ef8dc27238ce3db912317a_Slater%20Symbol.svg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="navbar2_logo"/></a><nav role="navigation" id="w-node-c01ff4dc-5459-25ac-4338-4b5bcb363040-5cce8e9c" class="navbar2_menu is-page-height-tablet w-nav-menu"><a href="/about" class="navbar2_link w-nav-link">About</a><a href="/features" class="navbar2_link w-nav-link">Features</a><a href="/blog" class="navbar2_link w-nav-link">Blog</a><a href="https://slater.app/community_library" class="navbar2_link w-nav-link">Community Library</a><a href="/events" class="navbar2_link hidden w-nav-link">Events</a><a href="/pricing" class="navbar2_link w-nav-link">Pricing</a><a href="/slater-challenge" class="navbar2_link hidden w-nav-link">Slater Challenge</a><div class="w-embed"><button id="aeo-search-btn" class="btn btn-secondary aeo-search-btn" type="button" aria-haspopup="dialog" aria-controls="aeo-site-search-overlay">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+    </svg>
+</button></div><div class="w-layout-vflex align-items-center flex-gap-1-75 nav-hide"><a href="http://slater.app/users/sign_in" target="_blank" class="login-link tablet">log in »</a><a href="https://slater.ck.page/profile" target="_blank" class="button is-navbar2-button tablet w-button">start a free trial »</a></div></nav><div id="w-node-c01ff4dc-5459-25ac-4338-4b5bcb363052-5cce8e9c" class="navbar2_button-wrapper"><a href="https://slater.app/users/sign_in" class="navbar2_link">Log in</a><div class="navbar2_menu-button w-nav-button"><div class="menu-icon2"><div data-w-id="c01ff4dc-5459-25ac-4338-4b5bcb363059" class="menu-icon2_line-top"></div><div data-w-id="c01ff4dc-5459-25ac-4338-4b5bcb36305a" class="menu-icon2_line-middle"><div class="menu-icon_line-middle-inner"></div></div><div data-w-id="c01ff4dc-5459-25ac-4338-4b5bcb36305c" class="menu-icon2_line-bottom"></div></div></div><a href="https://slater.app/users/sign_up" class="button_new is-nav w-button">Start a free trial</a></div></div></div><div class="main-wrapper"><header class="section_header72"><div class="padding-global"><div class="container-large"><div class="padding-section-large"><div class="header72_component"><div class="margin-bottom margin-xxlarge"><div class="container-medium2"><div class="w-layout-vflex flex-gap-1-88"><div class="slater-headline_wrap"><h1 class="text-inline">The scripting layer for Webflow powered by AI</h1><div class="slater-headline_icon hide w-embed"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_64_501)">
+<path d="M17.2993 1.13115C11.4071 -1.64832 4.37417 0.870882 1.59279 6.75556C-1.18859 12.6402 1.33219 19.6642 7.22602 22.442C13.1182 25.2199 20.1512 22.7023 22.9325 16.816C25.7139 10.9313 23.1931 3.90734 17.2993 1.12951V1.13115ZM18.3636 13.5587C18.3079 13.5783 13.7083 15.1938 13.4214 15.2871C12.6675 15.5327 12.184 15.4524 11.7169 15.3739C11.353 15.3133 10.9777 15.2511 10.4958 15.3493C9.64519 15.5261 9.05679 15.9042 8.74374 16.4772C5.4264 13.863 6.27377 11.3111 6.43439 10.9117C6.7753 10.9248 8.30285 10.9166 8.87814 9.78548L10.8072 5.70467C11.0039 5.28889 11.5022 5.11047 11.9201 5.3069C12.3381 5.50333 12.5151 6.00095 12.3184 6.41836L11.4596 8.23696C11.4432 8.2697 11.4497 8.30899 11.4743 8.33681C11.4989 8.36464 11.5382 8.37283 11.5726 8.36137L14.1213 7.44797C14.3311 7.37268 14.5589 7.38413 14.7605 7.47907C14.9621 7.57402 15.1145 7.74262 15.1899 7.95214C15.3342 8.35482 15.1539 8.79679 14.7703 8.98339L13.9803 9.26658C13.9328 9.28295 13.9082 9.33533 13.9263 9.3828C13.9443 9.43027 13.9951 9.45482 14.0426 9.43682L14.8326 9.15363C15.2473 9.05378 15.6685 9.28131 15.8127 9.68399C15.957 10.0867 15.7767 10.5286 15.3932 10.7152L14.6032 10.9984C14.5556 11.0148 14.531 11.0672 14.5491 11.1146C14.5655 11.1621 14.6179 11.1867 14.6654 11.1687L15.4554 10.8855C15.8701 10.7856 16.2913 11.0132 16.4356 11.4158C16.5749 11.8021 16.4061 12.2376 16.0438 12.4324L15.2555 12.7139C15.2079 12.7303 15.1834 12.7827 15.2014 12.8301C15.2194 12.8776 15.2702 12.9021 15.3178 12.8841L16.1127 12.5993L17.8031 11.9889C18.2374 11.8334 18.716 12.0593 18.8717 12.4931C19.0274 12.9268 18.8012 13.4048 18.3685 13.5603L18.3636 13.5587Z" fill="#1D1E1B"/>
+</g>
+<defs>
+<clipPath id="clip0_64_501">
+<rect width="24" height="24" fill="white" transform="translate(0.460938)"/>
+</clipPath>
+</defs>
+</svg></div></div><div><p class="heading-style-h4">Turn no-code...into know-code</p></div><div><a href="https://slater.app/users/sign_up" target="_blank" class="button_new w-button">Start a free trial</a></div></div></div></div><div><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/66588f8d13c8a2c177b59001_screencapture-slater-app-projects-wes-editor2-2024-05-30-08_38_42.png" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="image"/></div><a href="#" class="header72_lightbox w-inline-block w-lightbox"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/64edbdb775dd65c346efade6_image.webp" loading="eager" alt="" class="header72_lightbox-image"/><div class="lightbox-play-icon"><div class="icon-embed-large w-embed"><svg width="100%" height="100%" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.33301 32C5.33301 17.2724 17.2721 5.33334 31.9997 5.33334C39.0721 5.33334 45.8549 8.14286 50.8559 13.1438C55.8568 18.1448 58.6663 24.9276 58.6663 32C58.6663 46.7276 46.7273 58.6667 31.9997 58.6667C17.2721 58.6667 5.33301 46.7276 5.33301 32ZM27.1198 43.4134L42.6664 33.7067C43.2482 33.3341 43.6001 32.6909 43.6001 32C43.6001 31.3092 43.2482 30.6659 42.6664 30.2934L27.0664 20.5867C26.452 20.1993 25.6758 20.1755 25.0388 20.5244C24.4018 20.8734 24.004 21.5403 23.9998 22.2667V41.7334C23.9912 42.4774 24.3963 43.1647 25.0514 43.5174C25.7065 43.8702 26.5033 43.8301 27.1198 43.4134Z" fill="CurrentColor"/>
+</svg></div></div><div class="video-overlay-layer"></div><script type="application/json" class="w-json">{
+  "items": [
+    {
+      "url": "https://www.youtube.com/watch?v=DDiKWgzAhGU?autoplay=1",
+      "originalUrl": "https://www.youtube.com/watch?v=DDiKWgzAhGU?autoplay=1",
+      "width": 940,
+      "height": 528,
+      "thumbnailUrl": "https://i.ytimg.com/vi/DDiKWgzAhGU/hqdefault.jpg",
+      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FDDiKWgzAhGU%3Fautoplay%3D1%26feature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDDiKWgzAhGU&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDDiKWgzAhGU%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&autoplay=1&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+      "type": "video"
+    }
+  ],
+  "group": ""
+}</script></a></div></div></div></div></header><section class="section_below-hero"><div class="padding-global"><div class="container-large"><div class="padding-section-large padding-top-0"><div class="below-hero_content"><div class="container-medium2"><div class="max-width-740"><div class="text-size-xlarge">We love Webflow. But we don’t love adding custom code in Webflow. That’s why we made Slater — a code editor that harnesses the power of AI so you can take your projects to the next level.</div></div></div></div></div></div></div></section><section class="section_testimonial18"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/64edbdb775dd65c346efadff_Stamp.svg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="below-hero_slater-stamp"/><div class="padding-global"><div class="container-large"><div class="padding-section-xlarge"><div class="margin-bot_huge"><div class="container-medium2"><div class="max-width-740"><h2 class="font-size_4 font-family_manrope">We are building Slater with feedback from the best Webflow devs in the world</h2></div></div></div><div class="testimonial18_collection w-dyn-list"><div role="list" class="testimonial18_component w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/CoreyGMoen/status/1687524694591754269" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>Used to be a big advocated to GitHub Copilot and have since moved to @Slater_App for the vast majority of custom code needs due to ease of use and speed of development! 🚀</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f9fefe995b979ae7f265d3_corey2.jpeg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>@CoreyGMoen</p></div><div>Corey Moen</div></div></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/yaroshidi/status/1697807825181835632" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>I created this GSAP animation using @Slater_App AI on @webflow, it took me less than 10 minutes and I didn&#x27;t even have to leave the Webflow project tab!</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f9fdd88ebc015005623082_yar.jpeg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>@yaroshidi</p></div><div>Yar Al Roshidi</div></div></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/yayasview/status/1699516161745133901" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>Just had my first hands-on experience with @Slater_App and oh boy… This changes everything.</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f9fcbc735f4cb1b0ab61d5_yaya.jpeg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>@yayasview</p></div><div>Yaya</div></div></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/vianneypercq/status/1674049815653629952" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>Testing @Slater_App connected to a @webflow project. What a comfort to be able to code javascript with an AI as assistant and without having to publish all the time!</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f5be98f6f2d9b891ed7cf0_vianney.jpeg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" sizes="100vw" srcset="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f5be98f6f2d9b891ed7cf0_vianney-p-500.jpeg 500w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f5be98f6f2d9b891ed7cf0_vianney.jpeg 600w" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>@vianneypercq</p></div><div>Vianney Percq</div></div></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/DuncanHamra/status/1697405435320672642" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>Beat me to it! @FinlaysonConnor, checkout Slater when you get sec. It&#x27;s great.</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f5be336a5bfc55e5173224_duncan.jpeg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>@DuncanHamra</p></div><div>Duncan Hamra</div></div></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/masterflowmaker/status/1687398617890295808" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>Got recent access to Slater and can&#x27;t recommend it enough. One of the best tools for Webflow Best features
+- Work on your JS without the need to constantly publish your #webflow project
+- AI
+- Save to dev or production
+- Built by webflow professionals for webflow professionals Thanks Jared Malan Witt Langstaff Edgar Allan</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f5be2c9d914de177fd9a30_matias.jpeg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>masterflowmaker</p></div><div>Matías Pitters</div></div></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/rolandtheo_/status/1672252187223773184" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>Just had a super cool Slater Session with @JackRedley1 &amp; @CoreyGMoen!! Now I just want to create content about Slater for French-Speaking Webflow Users</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f5bd8a5154a0229adaf379_theo.jpeg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>@rolandtheo_</p></div><div>Théo R.</div></div></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/josh__mann/status/1673804198704566273" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>Spent the day making use of @Slater_App - Would highly recommend if, like me, you’re a designer masquerading as a developer in #webflow</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f5bdfeed2f9de3458e7daf_josh.jpeg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>@josh__mann</p></div><div>Josh Mann</div></div></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/melydelmar06/status/1679936412177580056" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>In awe watching the Slater app demo by @JackRedley1 for @EdgarAllanCo. Definitely trying this product when I’m back home, and congrats to the team!</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f5be065dfc1a16ce6806c4_melissa123.jpeg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>@melydelmar06</p></div><div>Melissa Mendez</div></div></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/josiahduenes/status/1675868015429124097" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>Super excited to show what we can do with this awesome tool!</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f5be1eee069c80be5cc841_josh12.jpeg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>@josiahduenes</p></div><div>Josiah Dueñes</div></div></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/felixdigitalco/status/1693036241665532172" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>You gotta try @Slater_App, all in one app</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f5bdf57df87403e5d49b4f_felix.png" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>@felixdigitalco</p></div><div>Félix Gonzalo</div></div></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/memberstack/status/1683712020086943744" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>We&#x27;re working on a new pricing page and are loving it</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f5bde84d54783a3395c44d_memberstack.jpeg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>@memberstack</p></div><div>Memberstack</div></div></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/jeffamcavoy/status/1683856231448948752" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>I ❤️ @Slater_App</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f5bde23070b0fe993ef5a4_jeff.jpeg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>@jeffamcavoy</p></div><div>Jeff McAvoy</div></div></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/arrr_morgan/status/1692622082608107589" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>You are a Webflow designer with none-to-medium knowledge of JavaScript, and you want your projects to go beyond the native limitations. Meet your new best friend: @Slater_App a kind (and patient) AI who&#x27;ll help you get those scripts DONE.</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f5bd612dd6541f255cf70c_andrea.jpeg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>@arrr_morgan</p></div><div>Andrea Morgan</div></div></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/tobinthe2nd" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>@Slater_App is the best web development tool since @webflow. I&#x27;ve had so much fun recently.</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f5bdc289fc94d2ac26d8cb_ailin%20tobim.jpeg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>@tobinthe2nd</p></div><div>Ailín Tobin</div></div></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/lenxism/status/1692550993685234161" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>@Slater_App Y&#x27;all never let me down!</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f5bdb16e20f190beba10dd_leo.jpeg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>@lenxism</p></div><div>Leo</div></div></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/superchrgdesign/status/1689014575335616512" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>Yep, tried both today and they work like a charm. Grateful to learn this all in a matter of hours through Twitter :)</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f5bda782e4558a2ef6739a_supercharge.jpeg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>superchrgdesign</p></div><div>Khrystyna</div></div></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="https://twitter.com/danielmigizi/status/1696814805389119502" target="_blank" class="testimonial_item w-inline-block"><div class="testimonial_content"><div>@webflow Apps introduced me to @Slater_App yesterday which looks incredibly powerful. I&#x27;ve been using Replit for my projects but I love how slater integrates right into your webflow project.</div></div><div class="margin-top margin-small"><div class="testimonial_author-details"><div class="testimonial_author-image"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/64f5bd9609cfeef5f1276048_daniel.jpeg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="u_fit-cover"/></div><div class="testimonial_author-name"><div class="w-embed"><p>@danielmigizi</p></div><div>Daniel at Startup Skin</div></div></div></div></a></div></div></div></div></div></div></section><section class="section_features"><div class="padding-global"><div class="container-large"><div class="padding-section-medium"><div class="features_headline"><div class="div-block"><div class="margin-bottom margin-xlarge margin-mobile-2"><h2 class="h2_home-features">Features like Collaboration, code explainers and more</h2></div></div><div class="div-block-2"><div class="margin-bottom margin-xlarge"><div class="text-size-xlarge">Whether you&#x27;re part of a team or an individual, Slater helps you supercharge your website seamlessly.</div></div><div><a href="/features" class="button is-teal w-inline-block"><div>check out features</div></a></div></div></div></div></div></div><div class="features-background"><div class="padding-global"><div class="container-large"><div class="w-layout-grid layout348_component"><div id="w-node-a7eea655-91ac-9d68-d2ba-d7add7a7f92f-45751c8c" class="layout348_content-wrapper"><div data-w-id="a7eea655-91ac-9d68-d2ba-d7add7a7f930" class="layout348_content"><div class="margin-bottom margin-large margin-mobile-1"><div class="font-family_manrope"><h3 class="heading-style-h4">Painless custom code for Webflow Websites</h3></div></div><div class="margin-bottom margin-large margin-mobile-1"><p class="text-size-medium">Whether you’re part of a team or you&#x27;re an individual, Slater helps you supercharge your website with custom code seamlessly.</p></div><a href="http://slater.app/users/sign_up" class="login_new w-button">Lets Do This »</a><div class="layout348_mobile-image-wrapper"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6503253e80f7a9c8ebcd5c7a_Webflow.png" loading="lazy" srcset="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6503253e80f7a9c8ebcd5c7a_Webflow-p-500.png 500w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6503253e80f7a9c8ebcd5c7a_Webflow-p-800.png 800w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6503253e80f7a9c8ebcd5c7a_Webflow.png 1637w" sizes="100vw" alt="" class="layout348_mobile-image"/></div><div style="opacity:0" class="background-holder"><div class="background-layer background-color-1"></div></div></div><div data-w-id="a7eea655-91ac-9d68-d2ba-d7add7a7f945" class="layout348_content"><div class="margin-bottom margin-large margin-mobile-1"><div class="font-family_manrope"><h3 class="heading-style-h4">Let AI do the heavy lifting</h3></div></div><div class="margin-bottom margin-large margin-mobile-1"><p class="text-size-medium">Write a prompt, hit enter, and let AI do the heavy lifting. Having an AI tool built into Webflow allows you to quickly and easily generate the exact code you need for your project.</p></div><a href="http://slater.app/users/sign_up" class="login_new w-button">Lets Do This »</a><div class="layout348_mobile-image-wrapper"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6503253e2206813b62c4e8a4_Ai.png" loading="lazy" srcset="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6503253e2206813b62c4e8a4_Ai-p-500.png 500w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6503253e2206813b62c4e8a4_Ai-p-800.png 800w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6503253e2206813b62c4e8a4_Ai.png 1408w" sizes="100vw" alt="" class="layout348_mobile-image"/></div><div style="opacity:0" class="background-holder"><div class="background-layer background-color-2"></div></div></div><div data-w-id="a7eea655-91ac-9d68-d2ba-d7add7a7f95a" class="layout348_content"><div class="margin-bottom margin-large margin-mobile-1"><div class="font-family_manrope"><h3 class="heading-style-h4">Reduce development time by working with your team</h3></div></div><div class="margin-bottom margin-large margin-mobile-1"><p class="text-size-medium">Develop faster without being restricted. Work with multiple people on the same project at the same time. Write code for different pages in the same file.</p></div><a href="https://slater.ck.page/profile" class="login_new w-button">Lets Do This »</a><div class="layout348_mobile-image-wrapper"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6503253e44eb1d346f2f5571_Collab.png" loading="lazy" srcset="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6503253e44eb1d346f2f5571_Collab-p-500.png 500w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6503253e44eb1d346f2f5571_Collab-p-800.png 800w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6503253e44eb1d346f2f5571_Collab.png 1556w" sizes="239.9453125px" alt="" class="layout348_mobile-image"/></div><div style="opacity:0" class="background-holder"><div class="background-layer background-color-3"></div></div></div></div><div class="layout348_desktop-image-wrapper"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/659d672aeb689f5014d9ca54_Frame%20370.png" loading="lazy" width="529" data-w-id="a7eea655-91ac-9d68-d2ba-d7add7a7f92b" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" srcset="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/659d672aeb689f5014d9ca54_Frame%20370-p-500.png 500w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/659d672aeb689f5014d9ca54_Frame%20370-p-800.png 800w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/659d672aeb689f5014d9ca54_Frame%20370-p-1080.png 1080w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/659d672aeb689f5014d9ca54_Frame%20370.png 1492w" sizes="(max-width: 767px) 100vw, 529px" class="layout348_image is-image1"/><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/659d674a49b77b9733eeeae7_Panel.png" loading="lazy" width="529" data-w-id="a7eea655-91ac-9d68-d2ba-d7add7a7f92c" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" srcset="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/659d674a49b77b9733eeeae7_Panel-p-500.png 500w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/659d674a49b77b9733eeeae7_Panel-p-800.png 800w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/659d674a49b77b9733eeeae7_Panel-p-1080.png 1080w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/659d674a49b77b9733eeeae7_Panel.png 1348w" sizes="(max-width: 767px) 100vw, 529px" class="layout348_image is-image2"/><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6503253e44eb1d346f2f5571_Collab.png" loading="lazy" width="529" data-w-id="a7eea655-91ac-9d68-d2ba-d7add7a7f92d" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" srcset="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6503253e44eb1d346f2f5571_Collab-p-500.png 500w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6503253e44eb1d346f2f5571_Collab-p-800.png 800w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/6503253e44eb1d346f2f5571_Collab.png 1556w" sizes="(max-width: 767px) 100vw, 529px" class="layout348_image is-image3"/></div></div></div></div></div></section><section class="section_cta38"><div class="padding-global"><div class="container-large"><div class="padding-section-medium"><div class="margin-bottom margin-xlarge"><div class="max-width-xlarge"><h2 class="heading-style-h3_new">Resources</h2><a fs-cmssort-element="trigger" fs-cmssort-type="date" href="#" class="leon w-button">Button Text</a></div></div><div class="cta38_collection w-dyn-list"><div fs-cmssort-element="list" fs-cmscombine-element="list" role="list" class="cta38_component w-dyn-items"><div role="listitem" class="cta38_link-block w-dyn-item"><div class="cta38_left"><div class="cta38_left-cl1"><div class="margin-bottom margin-small hide-tablet"><div class="font-family_manrope"><div fs-cmssort-type="date" class="text-size-medium">September 13, 2024</div></div></div><div class="margin-bottom margin-small"><div style="background-color:rgba(126, 234, 142, 0.5)" class="cta38_tag is-green"><div>Article</div></div></div><div class="margin-bottom margin-small"><div class="font-family_manrope heading-style-h6"><div class="text-size-medium">Jared Malan</div></div></div></div><div class="cta38_left-cl2"><div class="margin-bottom margin-small"><a href="/resources/javascript-101-css-js" class="text-decoration-none w-inline-block"><h3 class="cta38_link-text">Javascript 101: CSS &amp; JS</h3></a></div></div><div class="cta38_left-spacer"></div><div class="cta38_left-cl3"><div class="margin-bottom margin-small"><div class="max-width-480"><div class="text-size-medium w-dyn-bind-empty"></div></div></div><a href="/resources/javascript-101-css-js" target="_blank" class="login_new">Read More »</a></div></div><div class="cta38_link-image-wrapper pointer-events-off"><img loading="eager" alt="" src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e809a1e5801d9a7ef6f37c_js-101-css-js.webp" sizes="100vw" srcset="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e809a1e5801d9a7ef6f37c_js-101-css-js-p-500.webp 500w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e809a1e5801d9a7ef6f37c_js-101-css-js-p-800.webp 800w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e809a1e5801d9a7ef6f37c_js-101-css-js-p-1080.webp 1080w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e809a1e5801d9a7ef6f37c_js-101-css-js-p-1600.webp 1600w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e809a1e5801d9a7ef6f37c_js-101-css-js.webp 1792w" class="cta38_link-image"/></div></div><div role="listitem" class="cta38_link-block w-dyn-item"><div class="cta38_left"><div class="cta38_left-cl1"><div class="margin-bottom margin-small hide-tablet"><div class="font-family_manrope"><div fs-cmssort-type="date" class="text-size-medium">September 13, 2024</div></div></div><div class="margin-bottom margin-small"><div style="background-color:rgba(126, 234, 142, 0.5)" class="cta38_tag is-green"><div>Article</div></div></div><div class="margin-bottom margin-small"><div class="font-family_manrope heading-style-h6"><div class="text-size-medium">Jared Malan</div></div></div></div><div class="cta38_left-cl2"><div class="margin-bottom margin-small"><a href="/resources/slater-css" class="text-decoration-none w-inline-block"><h3 class="cta38_link-text">Slater &amp; CSS</h3></a></div></div><div class="cta38_left-spacer"></div><div class="cta38_left-cl3"><div class="margin-bottom margin-small"><div class="max-width-480"><div class="text-size-medium w-dyn-bind-empty"></div></div></div><a href="/resources/slater-css" target="_blank" class="login_new">Read More »</a></div></div><div class="cta38_link-image-wrapper pointer-events-off"><img loading="eager" alt="" src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e80bb6a7314bb7b987f086_slater-css.png" sizes="100vw" srcset="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e80bb6a7314bb7b987f086_slater-css-p-500.png 500w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e80bb6a7314bb7b987f086_slater-css-p-800.png 800w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e80bb6a7314bb7b987f086_slater-css-p-1080.png 1080w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e80bb6a7314bb7b987f086_slater-css-p-1600.png 1600w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e80bb6a7314bb7b987f086_slater-css.png 1954w" class="cta38_link-image"/></div></div><div role="listitem" class="cta38_link-block w-dyn-item"><div class="cta38_left"><div class="cta38_left-cl1"><div class="margin-bottom margin-small hide-tablet"><div class="font-family_manrope"><div fs-cmssort-type="date" class="text-size-medium">September 6, 2024</div></div></div><div class="margin-bottom margin-small"><div style="background-color:rgba(126, 234, 142, 0.5)" class="cta38_tag is-green"><div>Article</div></div></div><div class="margin-bottom margin-small"><div class="font-family_manrope heading-style-h6"><div class="text-size-medium">Jared Malan</div></div></div></div><div class="cta38_left-cl2"><div class="margin-bottom margin-small"><a href="/resources/javascript-101-localstorage" class="text-decoration-none w-inline-block"><h3 class="cta38_link-text">Javascript 101: Localstorage</h3></a></div></div><div class="cta38_left-spacer"></div><div class="cta38_left-cl3"><div class="margin-bottom margin-small"><div class="max-width-480"><div class="text-size-medium w-dyn-bind-empty"></div></div></div><a href="/resources/javascript-101-localstorage" target="_blank" class="login_new">Read More »</a></div></div><div class="cta38_link-image-wrapper pointer-events-off"><img loading="eager" alt="" src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e8096eec2c6c7d33b976d0_js-101-Localstorage.webp" sizes="100vw" srcset="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e8096eec2c6c7d33b976d0_js-101-Localstorage-p-500.webp 500w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e8096eec2c6c7d33b976d0_js-101-Localstorage-p-800.webp 800w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e8096eec2c6c7d33b976d0_js-101-Localstorage-p-1080.webp 1080w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e8096eec2c6c7d33b976d0_js-101-Localstorage-p-1600.webp 1600w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e8096eec2c6c7d33b976d0_js-101-Localstorage.webp 1792w" class="cta38_link-image"/></div></div><div role="listitem" class="cta38_link-block w-dyn-item"><div class="cta38_left"><div class="cta38_left-cl1"><div class="margin-bottom margin-small hide-tablet"><div class="font-family_manrope"><div fs-cmssort-type="date" class="text-size-medium">September 6, 2024</div></div></div><div class="margin-bottom margin-small"><div style="background-color:rgba(126, 234, 142, 0.5)" class="cta38_tag is-green"><div>Article</div></div></div><div class="margin-bottom margin-small"><div class="font-family_manrope heading-style-h6"><div class="text-size-medium">Jared Malan</div></div></div></div><div class="cta38_left-cl2"><div class="margin-bottom margin-small"><a href="/resources/project-access-controls" class="text-decoration-none w-inline-block"><h3 class="cta38_link-text">Project Access Controls</h3></a></div></div><div class="cta38_left-spacer"></div><div class="cta38_left-cl3"><div class="margin-bottom margin-small"><div class="max-width-480"><div class="text-size-medium w-dyn-bind-empty"></div></div></div><a href="/resources/project-access-controls" target="_blank" class="login_new">Read More »</a></div></div><div class="cta38_link-image-wrapper pointer-events-off"><img loading="eager" alt="" src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e80aa131f5ccda47da6fe6_Project%20Access%20Controls.webp" sizes="100vw" srcset="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e80aa131f5ccda47da6fe6_Project%20Access%20Controls-p-500.webp 500w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e80aa131f5ccda47da6fe6_Project%20Access%20Controls-p-800.webp 800w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e80aa131f5ccda47da6fe6_Project%20Access%20Controls-p-1080.webp 1080w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e80aa131f5ccda47da6fe6_Project%20Access%20Controls-p-1600.webp 1600w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66e80aa131f5ccda47da6fe6_Project%20Access%20Controls.webp 1792w" class="cta38_link-image"/></div></div><div role="listitem" class="cta38_link-block w-dyn-item"><div class="cta38_left"><div class="cta38_left-cl1"><div class="margin-bottom margin-small hide-tablet"><div class="font-family_manrope"><div fs-cmssort-type="date" class="text-size-medium">August 16, 2024</div></div></div><div class="margin-bottom margin-small"><div style="background-color:rgba(126, 234, 142, 0.5)" class="cta38_tag is-green"><div>Article</div></div></div><div class="margin-bottom margin-small"><div class="font-family_manrope heading-style-h6"><div class="text-size-medium">Jared Malan</div></div></div></div><div class="cta38_left-cl2"><div class="margin-bottom margin-small"><a href="/resources/javascript-101-work-with-the-openai-api" class="text-decoration-none w-inline-block"><h3 class="cta38_link-text">Javascript 101: Work with the OpenAI API</h3></a></div></div><div class="cta38_left-spacer"></div><div class="cta38_left-cl3"><div class="margin-bottom margin-small"><div class="max-width-480"><div class="text-size-medium w-dyn-bind-empty"></div></div></div><a href="/resources/javascript-101-work-with-the-openai-api" target="_blank" class="login_new">Read More »</a></div></div><div class="cta38_link-image-wrapper pointer-events-off"><img loading="eager" alt="" src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66c48eacfe49b376ad541cd4_js-101-openai.webp" sizes="100vw" srcset="https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66c48eacfe49b376ad541cd4_js-101-openai-p-500.webp 500w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66c48eacfe49b376ad541cd4_js-101-openai-p-800.webp 800w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66c48eacfe49b376ad541cd4_js-101-openai-p-1080.webp 1080w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66c48eacfe49b376ad541cd4_js-101-openai-p-1600.webp 1600w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad63/66c48eacfe49b376ad541cd4_js-101-openai.webp 1792w" class="cta38_link-image"/></div></div></div></div><div class="cta38_hover-css w-embed"><style>
+
+/* Prevents hover states from being used on Tablet & Mobile */
+@media only screen and (min-width: 992px) {
+
+/* Makes all text inside component black. 
+Change the color of the text here, instead of on Webflow for this to work */
+.cta38_component a {
+	
+}
+
+/* Makes all text inside component grey on hover.
+Change the color of the text here, instead of on Webflow for this to work */
+.cta38_component:hover a {
+
+}
+
+/* Makes text inside link block black on hover.
+Change the color of the text here, instead of on Webflow for this to work */
+.cta38_component:hover a:hover {
+
+}
+
+}
+
+</style></div><div class="margin-top margin-xlarge hide"><a href="/blog" target="_blank" class="button is-green w-button">See All Articles</a></div></div></div></div></section><section class="section_slater-fan"><div class="background-image-wrapper"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/64f6466b526b19a081d93d89_tyler-nix-6mze64HRU2Q-unsplash%201%20(4)-min%20(1).png" loading="lazy" sizes="240px" srcset="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/64f6466b526b19a081d93d89_tyler-nix-6mze64HRU2Q-unsplash%201%20(4)-min%20(1)-p-500.png 500w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/64f6466b526b19a081d93d89_tyler-nix-6mze64HRU2Q-unsplash%201%20(4)-min%20(1)-p-800.png 800w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/64f6466b526b19a081d93d89_tyler-nix-6mze64HRU2Q-unsplash%201%20(4)-min%20(1)-p-1080.png 1080w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/64f6466b526b19a081d93d89_tyler-nix-6mze64HRU2Q-unsplash%201%20(4)-min%20(1)-p-1600.png 1600w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/64f6466b526b19a081d93d89_tyler-nix-6mze64HRU2Q-unsplash%201%20(4)-min%20(1)-p-2000.png 2000w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/64f6466b526b19a081d93d89_tyler-nix-6mze64HRU2Q-unsplash%201%20(4)-min%20(1)-p-2600.png 2600w, https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/64f6466b526b19a081d93d89_tyler-nix-6mze64HRU2Q-unsplash%201%20(4)-min%20(1).png 2880w" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!" class="object-cover"/><div class="background-overlay"></div></div><div class="padding-global z-index-2"><div class="container-medium2"><h2 class="slater_super-heading">Instead of just writing code - It’s time to prompt</h2></div></div></section></div><footer class="footer4_component"><div class="padding-global"><div class="container-large"><div class="padding-vertical padding-xxlarge"><div class="padding-bottom padding-xxlarge"><div class="w-layout-grid footer_top-wrapper"><div id="w-node-_2453b9a9-f636-e3cc-6f90-d7843b48e0b0-a9ff3ace" class="footer8_left-wrapper"><div id="w-node-_2453b9a9-f636-e3cc-6f90-d7843b48e0b1-a9ff3ace" class="margin-bottom margin-small"><img src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/64edbdb775dd65c346efae03_SlaterSymbol.svg" loading="lazy" alt="Slater is an modern coding environment with an inbuilt AI tool. Get custom code quickly with no character limits. Sign up today!"/></div><div class="margin-bottom margin-small"><div class="font-family_manrope text-weight-semibold"><div class="text-size-huge">Try it out for yourself</div></div></div><div class="margin-bottom margin-small"><div class="font-family_manrope"><div class="text-size-medium">Try Slater for free today!</div></div></div><a href="http://slater.app/users/sign_up" target="_blank" class="button_new w-button">Start a free trial</a></div><div id="w-node-_2453b9a9-f636-e3cc-6f90-d7843b48e0c6-a9ff3ace" class="footer8_right-wrapper"><a href="https://twitter.com/slater_App/" target="_blank" class="footer_twitter-link w-inline-block"><div class="w-embed"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.9737 7.20764C20.5093 7.82716 19.9479 8.36757 19.3112 8.808C19.3112 8.96983 19.3112 9.13166 19.3112 9.30249C19.3163 12.2413 18.1424 15.0593 16.0527 17.1247C13.9629 19.1901 11.1321 20.3301 8.19491 20.2891C6.49685 20.2948 4.82053 19.9071 3.29728 19.1563C3.21514 19.1204 3.16217 19.0392 3.16248 18.9495V18.8506C3.16248 18.7215 3.26709 18.6169 3.39613 18.6169C5.06528 18.5618 6.67488 17.9831 7.9972 16.9626C6.48639 16.9321 5.12705 16.0371 4.50146 14.6609C4.46987 14.5858 4.4797 14.4995 4.52743 14.4334C4.57515 14.3673 4.65386 14.3309 4.73511 14.3373C5.19428 14.3834 5.65804 14.3407 6.10106 14.2114C4.43325 13.8652 3.18007 12.4806 3.00072 10.7859C2.99435 10.7046 3.03078 10.6259 3.09686 10.5781C3.16293 10.5304 3.2491 10.5205 3.32424 10.5522C3.7718 10.7497 4.25495 10.8537 4.7441 10.8578C3.2827 9.8987 2.65147 8.07429 3.20741 6.41646C3.2648 6.25537 3.40267 6.13636 3.57036 6.10318C3.73804 6.06999 3.91082 6.12752 4.02518 6.25463C5.99725 8.35349 8.7069 9.6042 11.5828 9.74303C11.5092 9.44909 11.473 9.147 11.475 8.84396C11.5019 7.25496 12.4851 5.83945 13.9643 5.26011C15.4434 4.68078 17.1258 5.05227 18.2239 6.20068C18.9723 6.05809 19.6959 5.80669 20.3716 5.45445C20.4211 5.42355 20.4839 5.42355 20.5334 5.45445C20.5643 5.50397 20.5643 5.56676 20.5334 5.61628C20.2061 6.36576 19.6532 6.99436 18.9518 7.41443C19.566 7.3432 20.1694 7.19831 20.7491 6.98288C20.7979 6.94966 20.862 6.94966 20.9108 6.98288C20.9517 7.00158 20.9823 7.03735 20.9944 7.08066C21.0065 7.12397 20.9989 7.17042 20.9737 7.20764Z" fill="currentColor"/>
+</svg></div><div>Twitter</div></a></div></div></div><div class="line-divider is-white"></div><div class="padding-top padding-medium"><div class="footer8_bottom-wrapper"><div class="footer_credit-text">© 2023 Slater.app / A product by Edgar Allan</div><div class="w-layout-grid footer8_legal-list"><a href="/privacy" class="footer8_legal-link">Privacy Policy</a><a href="/terms" class="footer8_legal-link">Terms of Service</a><a href="#" class="footer8_legal-link hide">Cookies Settings</a></div></div></div></div></div></div></footer></div><div class="w-embed"><div id="aeo-site-search-overlay" class="aeo-search-overlay" role="dialog" aria-modal="true" aria-label="Site Search">
+    <div class="aeo-search-backdrop" data-close="true"></div>
+    <div class="aeo-search-panel">
+        <div class="aeo-search-header">
+            <input id="aeo-overlay-input" class="aeo-search-input" type="text" name="q" placeholder="Search this site…" autocomplete="off" />
+            <button class="aeo-search-close" type="button" title="Close" data-close="true">✕</button>
+        </div>
+        <div class="aeo-search-body">
+            <div id="aeo-ai-summary" class="aeo-ai-summary">
+                <p id="aeo-ai-summary-text"></p>
+            </div>
+            <div id="aeo-groups"></div>
+            <div id="aeo-status" class="aeo-loading" style="display:none;">Searching…</div>
+        </div>
+    </div>
+</div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64edbdb775dd65c346efad5f" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/js/webflow.schunk.36b8fb49256177c8.js" type="text/javascript" integrity="sha384-4abIlA5/v7XaW1HMXKBgnUuhnjBYJ/Z9C1OSg4OhmVw9O3QeHJ/qJqFBERCDPv7G" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/js/webflow.schunk.a406927d2113fe6c.js" type="text/javascript" integrity="sha384-1H/df7FVYnc0v6/UHw5takbjplCbM67A/pf+gY5dg4s+eEsJWVnlQJrdTw686hrz" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/64edbdb775dd65c346efad5f/js/webflow.e053e6b8.a4be74a0c850fba2.js" type="text/javascript" integrity="sha384-HJEGly8SsnvD4rKjDuRYmJHm67Etjxy2Nc149Y/a8UdxXgYZz/RMOxLy6bJ3teXl" crossorigin="anonymous"></script><script>
+    window.aeoSettings = {
+        organization_id: 7,
+        organization_sub: "ai",
+        organization_domain: "slater.app",
+        analytics: {
+          enabled: false
+        },
+        chat: {
+            enabled: true,
+            button_text: "Ask Slater AI",
+            button_color: "#000",
+            button_text_color: "#fff",
+            intro_text: "Hello, welcome to Slater.app's AI. How can I help you today?",
+            // css_path: "https://aeo.press/example.css"
+        },
+        button: {
+            enabled: true,
+            subdomain: "ai",
+            button_selector: ".ai-btns"
+        },
+        analytics: {
+            enabled: false
+        },
+        site_search: {
+            enabled: true,
+            button_text: "Chat with Slater.app's AI",
+            form_selector: "#aeo-site-search",
+            input_selector: "#aeo-site-search input[name='q']",
+            results_selector: "#aeo-site-search-results"
+        }
+    }
+</script>
+<script src="https://aeo.press/embed.js"></script>
+
+<script>
+  window.markerConfig = {
+    project: '64f0890fe0d1d9f360be12d7', 
+    source: 'snippet'
+  };
+</script>
+
+
+<!--🤙 JS: Slater.app/1234-->
+<script>let v="1.0";document.addEventListener("DOMContentLoaded", function() {function loadslaterlpnew11(e){let t=document.createElement("script");t.setAttribute("src",e),t.setAttribute("type","module"),document.body.appendChild(t),t.addEventListener("load",()=>{console.log("Slater loaded Slater LP New 1.1 (Slater.app/1234) 🤙")}),t.addEventListener("error",e=>{console.log("Error loading file",e)})}let src=window.location.host.includes("webflow.io")?"https://slater.app/1234.js":"https://assets.slater.app/slater/1234.js?v="+v;loadslaterlpnew11(src);})</script>
+</body></html>

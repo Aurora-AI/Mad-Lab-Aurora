@@ -1,0 +1,2 @@
+   0.025956000s  WARN node_modules directory not found. Run `npm install` / `pnpm install` first for accurate results.
+   0.339619300s  WARN Broken tsconfig chain: Tsconfig not found astro/tsconfigs/strict. Falling back to resolver-less resolution for affected files. Relative and bare imports still work, but tsconfig path aliases from missing inherited configs will not. Fix the extends/references chain to restore full alias support.

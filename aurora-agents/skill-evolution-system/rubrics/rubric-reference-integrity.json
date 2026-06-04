@@ -1,0 +1,23 @@
+{
+  "name": "reference-integrity",
+  "description": "Avalia se a skill possui referências de arquivos/caminhos válidos e se todos os paths listados existem fisicamente no repositório.",
+  "max_points": 20,
+  "criteria": [
+    {
+      "condition": "Presença de uma seção dedicada de referências ou arquivos de suporte (ex: 'references/', caminhos no frontmatter)",
+      "points": 5
+    },
+    {
+      "condition": "Uso de links ou caminhos absolutos/relativos corretos no formato markdown do GitHub (file:// ou path relativo)",
+      "points": 5
+    },
+    {
+      "condition": "Menos de 15% de referências quebradas (arquivos referenciados mas que não existem)",
+      "points": 5
+    },
+    {
+      "condition": "Zero referências quebradas (100% de caminhos de suporte existem de fato no filesystem)",
+      "points": 5
+    }
+  ]
+}

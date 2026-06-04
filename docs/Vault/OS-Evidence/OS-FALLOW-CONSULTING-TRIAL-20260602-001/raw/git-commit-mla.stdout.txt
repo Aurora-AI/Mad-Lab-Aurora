@@ -1,0 +1,868 @@
+[backup/workspace-snapshot-20260602 1ff36fd] Backup workspace snapshot for Fallow trial 2026-06-02
+ 866 files changed, 113989 insertions(+), 29 deletions(-)
+ create mode 100644 "Refer\303\252ncias/Brand ID/Captura de tela 2026-04-24 111256.png"
+ create mode 100644 "Refer\303\252ncias/Brand ID/Captura de tela 2026-04-24 111543.png"
+ create mode 100644 "Refer\303\252ncias/Brand ID/Captura de tela 2026-04-24 111646.png"
+ create mode 100644 "Refer\303\252ncias/Brand ID/Captura de tela 2026-04-24 111726.png"
+ create mode 100644 "Refer\303\252ncias/Brand ID/Captura de tela 2026-04-24 111759.png"
+ create mode 100644 "Refer\303\252ncias/Brand ID/Captura de tela 2026-04-24 111848.png"
+ create mode 100644 "Refer\303\252ncias/Brand ID/Captura de tela 2026-04-24 111926.png"
+ create mode 100644 "Refer\303\252ncias/Brand ID/Captura de tela 2026-04-24 112019.png"
+ create mode 100644 "Refer\303\252ncias/Brand ID/Captura de tela 2026-04-24 112057.png"
+ create mode 100644 "Refer\303\252ncias/Sites/Aino \342\200\224 Design & Technology Agency.html"
+ create mode 100644 "Refer\303\252ncias/Sites/Aino \342\200\224 Design & Technology Agency_files/B9YXQFU2.css"
+ create mode 100644 "Refer\303\252ncias/Sites/Aino \342\200\224 Design & Technology Agency_files/De3TwHWn.css"
+ create mode 100644 "Refer\303\252ncias/Sites/Aino \342\200\224 Design & Technology Agency_files/Rectangle20126-2yUuzWmUMJyPjNzKkdXxHJivWYeiZR.png"
+ create mode 100644 "Refer\303\252ncias/Sites/Aino \342\200\224 Design & Technology Agency_files/aino-agency.svg"
+ create mode 100644 "Refer\303\252ncias/Sites/Aino \342\200\224 Design & Technology Agency_files/beyondstart-IrWWwTogRTfj5AdE8McUkezvBt6KJk.png"
+ create mode 100644 "Refer\303\252ncias/Sites/Aino \342\200\224 Design & Technology Agency_files/gulled-trENkQwmVFMc301YhadcmLt8aGMmhQ.png"
+ create mode 100644 "Refer\303\252ncias/Sites/Aino \342\200\224 Design & Technology Agency_files/mob_nav-wTPAfmJewv9zQ73JGv5jvhKKJm2YEU.png"
+ create mode 100644 "Refer\303\252ncias/Sites/Aino \342\200\224 Design & Technology Agency_files/molo_hero-xA3c2EqfWcnF0ZH8QkeA0KiknytXqd.png"
+ create mode 100644 "Refer\303\252ncias/Sites/Aino \342\200\224 Design & Technology Agency_files/nudie-EfpCiKCFxlzQvbMmwruoVhZleMYCvp.jpg"
+ create mode 100644 "Refer\303\252ncias/Sites/Aino \342\200\224 Design & Technology Agency_files/sandisk_disc-NJCqE5wIGx5InoLEnhbck3lGKDmqJq-lz4KYW8qrySBTVgKhAppfeJEi06zmt.jpg"
+ create mode 100644 "Refer\303\252ncias/Sites/Aino \342\200\224 Design & Technology Agency_files/script.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Aino \342\200\224 Design & Technology Agency_files/socksss-VDU4pPXZJCDUn852K3u2gPDe1TkNC4.png"
+ create mode 100644 "Refer\303\252ncias/Sites/Aino \342\200\224 Design & Technology Agency_files/sweet-6wcnGH0jVWvqRjvG1vMZCxfXURkaWM.png"
+ create mode 100644 "Refer\303\252ncias/Sites/Aino \342\200\224 Design & Technology Agency_files/tinted-lYQ8201vhIw1dhE4C4mWOklP3MRSIC.png"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio.html"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/5353853.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/6e3d775.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/6f3a20d.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/827657e.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/a4c5813.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/b3e170f.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/b6072a7.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/d5d162b.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/e36d691.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/e3cea04.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/filters_quality(1)"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/filters_quality(2)"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/filters_quality(3)"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/filters_quality(4)"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/filters_quality(5)"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/filters_quality(6)"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/filters_quality(7)"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/filters_quality(90)"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/manifest.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/payload(1).js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/payload(2).js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/payload(3).js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/payload(4).js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/payload.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Exo Ape - Global Digital Design Studio_files/state.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Fontes/6202897e46dbe92de95fcbf5_2S_Lay Grotesk_Specimen_A4_1.2.pdf"
+ create mode 100644 "Refer\303\252ncias/Sites/Lusion - Award Winning 3D and Interactive Web Studio.html"
+ create mode 100644 "Refer\303\252ncias/Sites/Lusion - Award Winning 3D and Interactive Web Studio_files/1529299672-f98fa04e999fec05f09d355d7c11a516b04709848a9c2920a3a5d7dadd1a81a6-d"
+ create mode 100644 "Refer\303\252ncias/Sites/Lusion - Award Winning 3D and Interactive Web Studio_files/761102167.html"
+ create mode 100644 "Refer\303\252ncias/Sites/Lusion - Award Winning 3D and Interactive Web Studio_files/about.CoHfjWIV.css"
+ create mode 100644 "Refer\303\252ncias/Sites/Lusion - Award Winning 3D and Interactive Web Studio_files/cast_framework.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Lusion - Award Winning 3D and Interactive Web Studio_files/cast_sender(1).js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Lusion - Award Winning 3D and Interactive Web Studio_files/cast_sender.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Lusion - Award Winning 3D and Interactive Web Studio_files/hoisted.DhbpsfII.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/Lusion - Award Winning 3D and Interactive Web Studio_files/js"
+ create mode 100644 "Refer\303\252ncias/Sites/Lusion - Award Winning 3D and Interactive Web Studio_files/player.css"
+ create mode 100644 "Refer\303\252ncias/Sites/Lusion - Award Winning 3D and Interactive Web Studio_files/vuid.min.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code.html"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/55685.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/55686.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/55687.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/55688.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/55689.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/55690.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/55691.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/55692.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/55693.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/55694.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/55695.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/55710.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/55711.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/55783.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/55798.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/55858.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/56292.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/56828.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/57407.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/57410.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/57998.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/69bc62b3ecedfdc6f9ffca94_ticket-right.svg"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/69bc62b433e4be59746f0623_cbd1f70a68e51e0cc7cf2b6ec4cebb81_ticket-left.svg"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/C+H-compressed_Webpifier.webp"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/CustomEase.min.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/Draggable.min.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/Flip.min.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/InertiaPlugin.min.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/MFK-main-compressed_Webpifier.webp"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/Observer.min.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/ScrollTrigger.min.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/SplitText.min.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/article-img-presence.webp"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/barba.umd.min.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/buyt-case__thumb.webp"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/gsap.min.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/hls.js@1.6.11"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/howler.min.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/jquery-3.5.1.min.dc5e7f18c8.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/lenis.min.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/prop-case__thumb-s.webp"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/rk-case__thumb (1).webp"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/rk-demo.webflow.shared.d4bb13093.min.css"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/rk-front-card.webp"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/rk-process.webp"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/script.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/ta-thumb (1).webp"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/unicornStudio.umd.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/webflow.9edeed2a.28e163a94efe8379.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/webflow.schunk.2a1b808b6bbfdc56.js.download"
+ create mode 100644 "Refer\303\252ncias/Sites/R\342\200\224K Design & Code_files/webflow.schunk.36b8fb49256177c8.js.download"
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/.editorconfig
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/.gitignore
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/.npmrc
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/.prettierrc.json
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/LICENSE
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/README.md
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/package.json
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/public/favicon.ico
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/public/fonts/Boldonse-Regular.woff2
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/public/images/0.webp
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/public/images/1.webp
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/public/images/2.webp
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/public/images/3.webp
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/public/images/4.webp
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/public/images/5.webp
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/public/images/6.webp
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/public/images/7.webp
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/public/images/android-chrome-192x192.png
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/public/images/android-chrome-512x512.png
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/public/images/apple-touch-icon.png
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/public/images/cover.png
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/public/images/favicon-16x16.png
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/public/images/favicon-32x32.png
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/public/site.webmanifest
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/src/css/reset.css
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/src/css/style.css
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/src/index.html
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/src/js/main.js
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/src/shaders/img.frag
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/src/shaders/img.vert
+ create mode 100644 WebGL-Scroll-Sync-main/WebGL-Scroll-Sync-main/vite.config.js
+ create mode 100644 integrations/open-design/assets/frames/README.md
+ create mode 100644 integrations/open-design/assets/frames/android-pixel.html
+ create mode 100644 integrations/open-design/assets/frames/browser-chrome.html
+ create mode 100644 integrations/open-design/assets/frames/ipad-pro.html
+ create mode 100644 integrations/open-design/assets/frames/iphone-15-pro.html
+ create mode 100644 integrations/open-design/assets/frames/macbook.html
+ create mode 100644 integrations/open-design/catalog_design_systems.json
+ create mode 100644 integrations/open-design/design-systems/README.md
+ create mode 100644 integrations/open-design/design-systems/agentic/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/airbnb/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/airtable/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/ant/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/apple/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/application/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/arc/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/artistic/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/atelier-zero/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/bento/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/binance/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/bmw/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/bold/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/brutalism/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/bugatti/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/cafe/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/cal/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/canva/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/claude/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/clay/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/claymorphism/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/clean/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/clickhouse/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/cohere/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/coinbase/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/colorful/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/composio/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/contemporary/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/corporate/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/cosmic/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/creative/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/cursor/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/dashboard/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/default/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/discord/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/dithered/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/doodle/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/dramatic/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/duolingo/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/editorial/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/elegant/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/elevenlabs/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/energetic/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/enterprise/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/expo/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/expressive/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/fantasy/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/ferrari/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/figma/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/flat/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/framer/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/friendly/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/futuristic/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/github/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/glassmorphism/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/gradient/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/hashicorp/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/huggingface/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/ibm/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/intercom/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/kami/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/kraken/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/lamborghini/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/levels/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/linear-app/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/lingo/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/lovable/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/luxury/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/mastercard/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/material/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/meta/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/minimal/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/minimax/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/mintlify/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/miro/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/mistral-ai/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/modern/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/mongodb/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/mono/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/neobrutalism/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/neon/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/neumorphism/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/nike/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/notion/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/nvidia/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/ollama/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/openai/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/opencode-ai/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/pacman/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/paper/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/perspective/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/pinterest/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/playstation/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/posthog/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/premium/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/professional/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/publication/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/raycast/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/refined/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/renault/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/replicate/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/resend/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/retro/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/revolut/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/runwayml/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/sanity/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/sentry/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/shadcn/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/shopify/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/simple/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/skeumorphism/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/sleek/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/spacex/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/spacious/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/spotify/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/starbucks/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/storytelling/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/stripe/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/supabase/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/superhuman/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/tesla/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/tetris/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/theverge/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/together-ai/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/uber/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/vercel/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/vibrant/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/vintage/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/vodafone/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/voltagent/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/warm-editorial/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/warp/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/webflow/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/wired/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/wise/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/x-ai/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/xiaohongshu/DESIGN.md
+ create mode 100644 integrations/open-design/design-systems/zapier/DESIGN.md
+ create mode 100644 integrations/open-design/prompt-templates/image/3d-stone-staircase-evolution-infographic.json
+ create mode 100644 integrations/open-design/prompt-templates/image/anime-martial-arts-battle-illustration.json
+ create mode 100644 integrations/open-design/prompt-templates/image/e-commerce-live-stream-ui-mockup.json
+ create mode 100644 integrations/open-design/prompt-templates/image/game-screenshot-anime-fighting-game-captain-ryuuga-vs-kaze-renshin.json
+ create mode 100644 integrations/open-design/prompt-templates/image/game-screenshot-three-kingdoms-guanyu-slaying-yanliang.json
+ create mode 100644 integrations/open-design/prompt-templates/image/game-screenshot-three-kingdoms-lyubu-yuanmen-archery.json
+ create mode 100644 integrations/open-design/prompt-templates/image/game-screenshot-three-kingdoms-zhaoyun-cradle-escape.json
+ create mode 100644 integrations/open-design/prompt-templates/image/game-ui-ancient-china-open-world-mmo-hud.json
+ create mode 100644 integrations/open-design/prompt-templates/image/illustrated-city-food-map.json
+ create mode 100644 integrations/open-design/prompt-templates/image/illustration-crayon-kid-drawing-rework.json
+ create mode 100644 integrations/open-design/prompt-templates/image/infographic-otaku-dance-choreography-breakdown-gokurakujodo-16-panels.json
+ create mode 100644 integrations/open-design/prompt-templates/image/momotaro-explainer-slide-in-hybrid-style.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-anime-girl-to-cinematic-photo.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-casual-fashion-grid-photoshoot.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-cinematic-south-asian-male-portrait-with-vultures.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-cyberpunk-anime-portrait-with-neon-face-text.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-elegant-fantasy-girl-in-violet-garden.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-ethereal-blue-haired-fantasy-portrait.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-glamorous-woman-in-black-portrait.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-hyper-realistic-selfie-texture-prompts.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-lavender-fantasy-mage-portrait.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-monochrome-studio-portrait.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-old-photo-restoration-to-dslr-portrait.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-poetic-woman-in-garden-portrait.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-professional-identity-portrait-wallpaper.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-realistically-imperfect-ai-selfie.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-signed-marker-portrait-on-shikishi.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-snow-rabbit-empress-portrait.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-snow-rabbit-mask-hanfu-portrait.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-snowy-rabbit-hanfu-portrait.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-snowy-rabbit-spirit-portrait.json
+ create mode 100644 integrations/open-design/prompt-templates/image/profile-avatar-song-dynasty-hanfu-portrait.json
+ create mode 100644 integrations/open-design/prompt-templates/image/social-media-post-anime-pokemon-shop-outfit-teaser-poster.json
+ create mode 100644 integrations/open-design/prompt-templates/image/social-media-post-cinematic-elevator-scene.json
+ create mode 100644 integrations/open-design/prompt-templates/image/social-media-post-confused-elf-girl-at-pastel-desk.json
+ create mode 100644 integrations/open-design/prompt-templates/image/social-media-post-editorial-fashion-photography.json
+ create mode 100644 integrations/open-design/prompt-templates/image/social-media-post-fashion-editorial-collage.json
+ create mode 100644 integrations/open-design/prompt-templates/image/social-media-post-psg-transfer-announcement-poster.json
+ create mode 100644 integrations/open-design/prompt-templates/image/social-media-post-sensational-girl-dance-storyboard-8-shots.json
+ create mode 100644 integrations/open-design/prompt-templates/image/social-media-post-showa-day-retro-culture-magazine-cover.json
+ create mode 100644 integrations/open-design/prompt-templates/image/social-media-post-social-media-fashion-outfit-generation.json
+ create mode 100644 integrations/open-design/prompt-templates/image/social-media-post-travel-snapshot-collage-prompt.json
+ create mode 100644 integrations/open-design/prompt-templates/image/social-media-post-vintage-sign-painter-sketch.json
+ create mode 100644 integrations/open-design/prompt-templates/image/vr-headset-exploded-view-poster.json
+ create mode 100644 integrations/open-design/prompt-templates/video/3d-animated-boy-building-lego.json
+ create mode 100644 integrations/open-design/prompt-templates/video/a-decade-of-refinement-glow-up.json
+ create mode 100644 integrations/open-design/prompt-templates/video/ancient-guardian-dragon-rescue.json
+ create mode 100644 integrations/open-design/prompt-templates/video/ancient-indian-kingdom-fpv-video.json
+ create mode 100644 integrations/open-design/prompt-templates/video/animation-transfer-and-camera-tracking-prompt.json
+ create mode 100644 integrations/open-design/prompt-templates/video/beat-synced-outfit-transformation-dance.json
+ create mode 100644 integrations/open-design/prompt-templates/video/character-intro-motion-graphics-sequence.json
+ create mode 100644 integrations/open-design/prompt-templates/video/cinematic-birthday-celebration-sequence.json
+ create mode 100644 integrations/open-design/prompt-templates/video/cinematic-dragon-interaction-flight.json
+ create mode 100644 integrations/open-design/prompt-templates/video/cinematic-east-asian-woman-hand-dance.json
+ create mode 100644 integrations/open-design/prompt-templates/video/cinematic-emotional-face-close-up.json
+ create mode 100644 integrations/open-design/prompt-templates/video/cinematic-marine-biologist-exploration.json
+ create mode 100644 integrations/open-design/prompt-templates/video/cinematic-music-podcast-and-guitar-technique.json
+ create mode 100644 integrations/open-design/prompt-templates/video/cinematic-route-navigation-guide.json
+ create mode 100644 integrations/open-design/prompt-templates/video/cinematic-street-racing-sequence-for-seedance-2.json
+ create mode 100644 integrations/open-design/prompt-templates/video/cinematic-vampire-alley-fight-sequence.json
+ create mode 100644 integrations/open-design/prompt-templates/video/crimson-horizon-sci-fi-cinematic-sequence.json
+ create mode 100644 integrations/open-design/prompt-templates/video/cyberpunk-game-trailer-script.json
+ create mode 100644 integrations/open-design/prompt-templates/video/forbidden-city-cat-satire.json
+ create mode 100644 integrations/open-design/prompt-templates/video/hollywood-haute-couture-fantasy-video-prompt.json
+ create mode 100644 integrations/open-design/prompt-templates/video/hunched-character-animation.json
+ create mode 100644 integrations/open-design/prompt-templates/video/hyperframes-app-showcase-three-phones.json
+ create mode 100644 integrations/open-design/prompt-templates/video/hyperframes-brand-sizzle-reel.json
+ create mode 100644 integrations/open-design/prompt-templates/video/hyperframes-data-bar-chart-race.json
+ create mode 100644 integrations/open-design/prompt-templates/video/hyperframes-flight-map-route.json
+ create mode 100644 integrations/open-design/prompt-templates/video/hyperframes-logo-outro-cinematic.json
+ create mode 100644 integrations/open-design/prompt-templates/video/hyperframes-money-counter-hype.json
+ create mode 100644 integrations/open-design/prompt-templates/video/hyperframes-product-reveal-minimal.json
+ create mode 100644 integrations/open-design/prompt-templates/video/hyperframes-saas-product-promo-30s.json
+ create mode 100644 integrations/open-design/prompt-templates/video/hyperframes-social-overlay-stack.json
+ create mode 100644 integrations/open-design/prompt-templates/video/hyperframes-tiktok-karaoke-talking-head.json
+ create mode 100644 integrations/open-design/prompt-templates/video/hyperframes-website-to-video-promo.json
+ create mode 100644 integrations/open-design/prompt-templates/video/live-action-anime-adaptation-water-vs-thunder-breathing-duel.json
+ create mode 100644 integrations/open-design/prompt-templates/video/luxury-supercar-cinematic-narrative.json
+ create mode 100644 integrations/open-design/prompt-templates/video/magical-academy-storyboard-sequence.json
+ create mode 100644 integrations/open-design/prompt-templates/video/modern-rural-aesthetics-healing-short-film-video-prompt.json
+ create mode 100644 integrations/open-design/prompt-templates/video/nightclub-flyer-atmospheric-animation.json
+ create mode 100644 integrations/open-design/prompt-templates/video/retro-hk-wuxia-film-aesthetic.json
+ create mode 100644 integrations/open-design/prompt-templates/video/seedance-2-0-15-second-cinematic-japanese-romance-short-film.json
+ create mode 100644 integrations/open-design/prompt-templates/video/seedance-2-0-80-year-old-rapper-mv.json
+ create mode 100644 integrations/open-design/prompt-templates/video/sequence-and-movement-instruction-for-martial-arts-video.json
+ create mode 100644 integrations/open-design/prompt-templates/video/soul-switching-mirror-magic-sequence.json
+ create mode 100644 integrations/open-design/prompt-templates/video/toaster-rocket-jumpscare.json
+ create mode 100644 integrations/open-design/prompt-templates/video/traditional-dance-performance.json
+ create mode 100644 integrations/open-design/prompt-templates/video/video-seedance-three-kingdoms-guanyu-slaying-yanliang.json
+ create mode 100644 integrations/open-design/prompt-templates/video/video-seedance-three-kingdoms-lyubu-yuanmen-archery.json
+ create mode 100644 integrations/open-design/prompt-templates/video/video-seedance-three-kingdoms-zhaoyun-cradle-escape.json
+ create mode 100644 integrations/open-design/prompt-templates/video/vintage-disney-style-pirate-crocodile-animation.json
+ create mode 100644 integrations/open-design/prompt-templates/video/viral-k-pop-dance-choreography.json
+ create mode 100644 integrations/open-design/prompt-templates/video/wasteland-factory-chase.json
+ create mode 100644 integrations/open-design/skills/audio-jingle/SKILL.md
+ create mode 100644 integrations/open-design/skills/audio-jingle/example.html
+ create mode 100644 integrations/open-design/skills/blog-post/SKILL.md
+ create mode 100644 integrations/open-design/skills/blog-post/example.html
+ create mode 100644 integrations/open-design/skills/critique/SKILL.md
+ create mode 100644 integrations/open-design/skills/critique/example.html
+ create mode 100644 integrations/open-design/skills/dashboard/SKILL.md
+ create mode 100644 integrations/open-design/skills/dashboard/example.html
+ create mode 100644 integrations/open-design/skills/dating-web/SKILL.md
+ create mode 100644 integrations/open-design/skills/dating-web/example.html
+ create mode 100644 integrations/open-design/skills/design-brief/SKILL.md
+ create mode 100644 integrations/open-design/skills/digital-eguide/SKILL.md
+ create mode 100644 integrations/open-design/skills/digital-eguide/example.html
+ create mode 100644 integrations/open-design/skills/docs-page/SKILL.md
+ create mode 100644 integrations/open-design/skills/docs-page/example.html
+ create mode 100644 integrations/open-design/skills/email-marketing/SKILL.md
+ create mode 100644 integrations/open-design/skills/email-marketing/example.html
+ create mode 100644 integrations/open-design/skills/eng-runbook/SKILL.md
+ create mode 100644 integrations/open-design/skills/eng-runbook/example.html
+ create mode 100644 integrations/open-design/skills/finance-report/SKILL.md
+ create mode 100644 integrations/open-design/skills/finance-report/example.html
+ create mode 100644 integrations/open-design/skills/gamified-app/SKILL.md
+ create mode 100644 integrations/open-design/skills/gamified-app/example.html
+ create mode 100644 integrations/open-design/skills/guizang-ppt/LICENSE
+ create mode 100644 integrations/open-design/skills/guizang-ppt/README.en.md
+ create mode 100644 integrations/open-design/skills/guizang-ppt/README.md
+ create mode 100644 integrations/open-design/skills/guizang-ppt/README.pt-BR.md
+ create mode 100644 integrations/open-design/skills/guizang-ppt/SKILL.md
+ create mode 100644 integrations/open-design/skills/guizang-ppt/assets/example-slides.html
+ create mode 100644 integrations/open-design/skills/guizang-ppt/assets/template.html
+ create mode 100644 integrations/open-design/skills/guizang-ppt/references/checklist.md
+ create mode 100644 integrations/open-design/skills/guizang-ppt/references/components.md
+ create mode 100644 integrations/open-design/skills/guizang-ppt/references/layouts.md
+ create mode 100644 integrations/open-design/skills/guizang-ppt/references/styles.md
+ create mode 100644 integrations/open-design/skills/guizang-ppt/references/themes.md
+ create mode 100644 integrations/open-design/skills/hatch-pet/LICENSE.txt
+ create mode 100644 integrations/open-design/skills/hatch-pet/README.md
+ create mode 100644 integrations/open-design/skills/hatch-pet/SKILL.md
+ create mode 100644 integrations/open-design/skills/hatch-pet/agents/openai.yaml
+ create mode 100644 integrations/open-design/skills/hatch-pet/references/animation-rows.md
+ create mode 100644 integrations/open-design/skills/hatch-pet/references/codex-pet-contract.md
+ create mode 100644 integrations/open-design/skills/hatch-pet/references/qa-rubric.md
+ create mode 100644 integrations/open-design/skills/hatch-pet/scripts/compose_atlas.py
+ create mode 100644 integrations/open-design/skills/hatch-pet/scripts/derive_running_left_from_running_right.py
+ create mode 100644 integrations/open-design/skills/hatch-pet/scripts/extract_strip_frames.py
+ create mode 100644 integrations/open-design/skills/hatch-pet/scripts/finalize_pet_run.py
+ create mode 100644 integrations/open-design/skills/hatch-pet/scripts/generate_pet_images.py
+ create mode 100644 integrations/open-design/skills/hatch-pet/scripts/inspect_frames.py
+ create mode 100644 integrations/open-design/skills/hatch-pet/scripts/make_contact_sheet.py
+ create mode 100644 integrations/open-design/skills/hatch-pet/scripts/package_custom_pet.py
+ create mode 100644 integrations/open-design/skills/hatch-pet/scripts/pet_job_status.py
+ create mode 100644 integrations/open-design/skills/hatch-pet/scripts/prepare_pet_run.py
+ create mode 100644 integrations/open-design/skills/hatch-pet/scripts/queue_pet_repairs.py
+ create mode 100644 integrations/open-design/skills/hatch-pet/scripts/record_imagegen_result.py
+ create mode 100644 integrations/open-design/skills/hatch-pet/scripts/render_animation_videos.py
+ create mode 100644 integrations/open-design/skills/hatch-pet/scripts/render_animation_videos.sh
+ create mode 100644 integrations/open-design/skills/hatch-pet/scripts/validate_atlas.py
+ create mode 100644 integrations/open-design/skills/hr-onboarding/SKILL.md
+ create mode 100644 integrations/open-design/skills/hr-onboarding/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt-course-module/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt-course-module/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt-dir-key-nav-minimal/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt-dir-key-nav-minimal/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt-graphify-dark-graph/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt-graphify-dark-graph/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt-hermes-cyber-terminal/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt-hermes-cyber-terminal/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt-knowledge-arch-blueprint/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt-knowledge-arch-blueprint/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt-obsidian-claude-gradient/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt-obsidian-claude-gradient/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt-pitch-deck/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt-pitch-deck/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt-presenter-mode-reveal/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt-presenter-mode-reveal/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt-product-launch/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt-product-launch/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt-taste-brutalist/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt-taste-brutalist/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt-taste-editorial/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt-taste-editorial/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt-tech-sharing/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt-tech-sharing/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt-testing-safety-alert/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt-testing-safety-alert/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt-weekly-report/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt-weekly-report/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt-xhs-pastel-card/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt-xhs-pastel-card/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt-xhs-post/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt-xhs-post/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt-xhs-white-editorial/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt-xhs-white-editorial/example.html
+ create mode 100644 integrations/open-design/skills/html-ppt/.clawscan-allow
+ create mode 100644 integrations/open-design/skills/html-ppt/LICENSE
+ create mode 100644 integrations/open-design/skills/html-ppt/README.md
+ create mode 100644 integrations/open-design/skills/html-ppt/README.pt-BR.md
+ create mode 100644 integrations/open-design/skills/html-ppt/README.zh-CN.md
+ create mode 100644 integrations/open-design/skills/html-ppt/SKILL.md
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/animations.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx-runtime.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/_util.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/chain-react.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/confetti-cannon.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/constellation.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/counter-explosion.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/data-stream.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/firework.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/galaxy-swirl.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/gradient-blob.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/knowledge-graph.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/letter-explode.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/magnetic-field.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/matrix-rain.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/neural-net.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/orbit-ring.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/particle-burst.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/shockwave.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/sparkle-trail.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/starfield.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/typewriter-multi.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/animations/fx/word-cascade.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/base.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/fonts.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/runtime.js
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/academic-paper.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/arctic-cool.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/aurora.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/bauhaus.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/blueprint.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/catppuccin-latte.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/catppuccin-mocha.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/corporate-clean.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/cyberpunk-neon.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/dracula.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/editorial-serif.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/engineering-whiteprint.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/glassmorphism.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/gruvbox-dark.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/japanese-minimal.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/magazine-bold.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/memphis-pop.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/midcentury.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/minimal-white.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/neo-brutalism.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/news-broadcast.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/nord.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/pitch-deck-vc.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/rainbow-gradient.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/retro-tv.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/rose-pine.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/sharp-mono.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/soft-pastel.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/solarized-light.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/sunset-warm.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/swiss-grid.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/terminal-green.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/tokyo-night.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/vaporwave.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/xiaohongshu-white.css
+ create mode 100644 integrations/open-design/skills/html-ppt/assets/themes/y2k-chrome.css
+ create mode 100644 integrations/open-design/skills/html-ppt/docs/readme/_theme-cell.html
+ create mode 100644 integrations/open-design/skills/html-ppt/docs/readme/animations.png
+ create mode 100644 integrations/open-design/skills/html-ppt/docs/readme/hero.gif
+ create mode 100644 integrations/open-design/skills/html-ppt/docs/readme/layouts-live.gif
+ create mode 100644 integrations/open-design/skills/html-ppt/docs/readme/layouts.png
+ create mode 100644 integrations/open-design/skills/html-ppt/docs/readme/montage-animations.html
+ create mode 100644 integrations/open-design/skills/html-ppt/docs/readme/montage-layouts.html
+ create mode 100644 integrations/open-design/skills/html-ppt/docs/readme/montage-templates.html
+ create mode 100644 integrations/open-design/skills/html-ppt/docs/readme/montage-themes.html
+ create mode 100644 integrations/open-design/skills/html-ppt/docs/readme/presenter-mode.png
+ create mode 100644 integrations/open-design/skills/html-ppt/docs/readme/templates.png
+ create mode 100644 integrations/open-design/skills/html-ppt/docs/readme/themes.png
+ create mode 100644 integrations/open-design/skills/html-ppt/examples/demo-deck/index.html
+ create mode 100644 integrations/open-design/skills/html-ppt/references/animations.md
+ create mode 100644 integrations/open-design/skills/html-ppt/references/authoring-guide.md
+ create mode 100644 integrations/open-design/skills/html-ppt/references/full-decks.md
+ create mode 100644 integrations/open-design/skills/html-ppt/references/layouts.md
+ create mode 100644 integrations/open-design/skills/html-ppt/references/presenter-mode.md
+ create mode 100644 integrations/open-design/skills/html-ppt/references/themes.md
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/new-deck.sh
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/render.sh
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_01.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_02.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_03.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_04.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_05.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_06.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_07.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_08.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_09.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_10.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_11.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_12.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_13.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_14.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_15.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_16.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_17.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_18.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_19.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/animation-showcase/animation-showcase_20.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_01.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_02.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_03.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_04.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_05.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_06.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_07.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_08.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_09.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_10.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_11.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_12.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_13.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_14.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_15.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_16.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_17.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_18.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_19.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_20.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_21.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_22.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_23.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_24.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_25.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_26.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_27.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_28.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_29.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_30.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_31.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_32.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_33.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_34.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_35.png
+ create mode 100644 integrations/open-design/skills/html-ppt/scripts/verify-output/theme-showcase/theme-showcase_36.png
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/animation-showcase.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/deck.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks-index.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/course-module/README.md
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/course-module/index.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/course-module/style.css
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/dir-key-nav-minimal/README.md
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/dir-key-nav-minimal/index.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/dir-key-nav-minimal/style.css
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/graphify-dark-graph/README.md
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/graphify-dark-graph/index.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/graphify-dark-graph/style.css
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/hermes-cyber-terminal/README.md
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/hermes-cyber-terminal/index.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/hermes-cyber-terminal/style.css
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/knowledge-arch-blueprint/README.md
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/knowledge-arch-blueprint/index.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/knowledge-arch-blueprint/style.css
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/obsidian-claude-gradient/README.md
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/obsidian-claude-gradient/index.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/obsidian-claude-gradient/style.css
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/pitch-deck/README.md
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/pitch-deck/index.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/pitch-deck/style.css
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/presenter-mode-reveal/README.md
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/presenter-mode-reveal/index.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/presenter-mode-reveal/style.css
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/product-launch/README.md
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/product-launch/index.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/product-launch/style.css
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/tech-sharing/README.md
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/tech-sharing/index.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/tech-sharing/style.css
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/testing-safety-alert/README.md
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/testing-safety-alert/index.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/testing-safety-alert/style.css
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/weekly-report/README.md
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/weekly-report/index.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/weekly-report/style.css
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/xhs-pastel-card/README.md
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/xhs-pastel-card/index.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/xhs-pastel-card/style.css
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/xhs-post/README.md
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/xhs-post/index.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/xhs-post/style.css
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/xhs-white-editorial/README.md
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/xhs-white-editorial/index.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/full-decks/xhs-white-editorial/style.css
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/layout-showcase.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/arch-diagram.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/big-quote.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/bullets.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/chart-bar.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/chart-line.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/chart-pie.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/chart-radar.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/code.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/comparison.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/cover.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/cta.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/diff.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/flow-diagram.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/gantt.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/image-grid.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/image-hero.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/kpi-grid.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/mindmap.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/process-steps.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/pros-cons.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/roadmap.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/section-divider.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/stat-highlight.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/table.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/terminal.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/thanks.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/three-column.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/timeline.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/toc.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/todo-checklist.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/single-page/two-column.html
+ create mode 100644 integrations/open-design/skills/html-ppt/templates/theme-showcase.html
+ create mode 100644 integrations/open-design/skills/hyperframes/SKILL.md
+ create mode 100644 integrations/open-design/skills/hyperframes/data-in-motion.md
+ create mode 100644 integrations/open-design/skills/hyperframes/house-style.md
+ create mode 100644 integrations/open-design/skills/hyperframes/palettes/bold-energetic.md
+ create mode 100644 integrations/open-design/skills/hyperframes/palettes/clean-corporate.md
+ create mode 100644 integrations/open-design/skills/hyperframes/palettes/dark-premium.md
+ create mode 100644 integrations/open-design/skills/hyperframes/palettes/jewel-rich.md
+ create mode 100644 integrations/open-design/skills/hyperframes/palettes/monochrome.md
+ create mode 100644 integrations/open-design/skills/hyperframes/palettes/nature-earth.md
+ create mode 100644 integrations/open-design/skills/hyperframes/palettes/neon-electric.md
+ create mode 100644 integrations/open-design/skills/hyperframes/palettes/pastel-soft.md
+ create mode 100644 integrations/open-design/skills/hyperframes/palettes/warm-editorial.md
+ create mode 100644 integrations/open-design/skills/hyperframes/patterns.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/audio-reactive.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/captions.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/css-patterns.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/dynamic-techniques.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/motion-principles.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/transcript-guide.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/transitions.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/transitions/catalog.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/transitions/css-3d.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/transitions/css-blur.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/transitions/css-cover.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/transitions/css-destruction.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/transitions/css-dissolve.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/transitions/css-distortion.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/transitions/css-grid.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/transitions/css-light.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/transitions/css-mechanical.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/transitions/css-other.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/transitions/css-push.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/transitions/css-radial.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/transitions/css-scale.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/tts.md
+ create mode 100644 integrations/open-design/skills/hyperframes/references/typography.md
+ create mode 100644 integrations/open-design/skills/hyperframes/scripts/animation-map.mjs
+ create mode 100644 integrations/open-design/skills/hyperframes/scripts/contrast-report.mjs
+ create mode 100644 integrations/open-design/skills/hyperframes/scripts/package-loader.mjs
+ create mode 100644 integrations/open-design/skills/hyperframes/visual-styles.md
+ create mode 100644 integrations/open-design/skills/image-poster/SKILL.md
+ create mode 100644 integrations/open-design/skills/image-poster/example.html
+ create mode 100644 integrations/open-design/skills/invoice/SKILL.md
+ create mode 100644 integrations/open-design/skills/invoice/example.html
+ create mode 100644 integrations/open-design/skills/kami-deck/README.md
+ create mode 100644 integrations/open-design/skills/kami-deck/SKILL.md
+ create mode 100644 integrations/open-design/skills/kami-deck/example.html
+ create mode 100644 integrations/open-design/skills/kami-landing/README.md
+ create mode 100644 integrations/open-design/skills/kami-landing/SKILL.md
+ create mode 100644 integrations/open-design/skills/kami-landing/example.html
+ create mode 100644 integrations/open-design/skills/kanban-board/SKILL.md
+ create mode 100644 integrations/open-design/skills/kanban-board/example.html
+ create mode 100644 integrations/open-design/skills/live-artifact/SKILL.md
+ create mode 100644 integrations/open-design/skills/live-artifact/references/artifact-schema.md
+ create mode 100644 integrations/open-design/skills/live-artifact/references/connector-policy.md
+ create mode 100644 integrations/open-design/skills/live-artifact/references/refresh-contract.md
+ create mode 100644 integrations/open-design/skills/magazine-poster/SKILL.md
+ create mode 100644 integrations/open-design/skills/magazine-poster/example.html
+ create mode 100644 integrations/open-design/skills/meeting-notes/SKILL.md
+ create mode 100644 integrations/open-design/skills/meeting-notes/example.html
+ create mode 100644 integrations/open-design/skills/mobile-app/SKILL.md
+ create mode 100644 integrations/open-design/skills/mobile-app/assets/template.html
+ create mode 100644 integrations/open-design/skills/mobile-app/example.html
+ create mode 100644 integrations/open-design/skills/mobile-app/references/checklist.md
+ create mode 100644 integrations/open-design/skills/mobile-app/references/layouts.md
+ create mode 100644 integrations/open-design/skills/mobile-onboarding/SKILL.md
+ create mode 100644 integrations/open-design/skills/mobile-onboarding/example.html
+ create mode 100644 integrations/open-design/skills/motion-frames/SKILL.md
+ create mode 100644 integrations/open-design/skills/motion-frames/example.html
+ create mode 100644 integrations/open-design/skills/open-design-landing-deck/README.md
+ create mode 100644 integrations/open-design/skills/open-design-landing-deck/SKILL.md
+ create mode 100644 integrations/open-design/skills/open-design-landing-deck/example.html
+ create mode 100644 integrations/open-design/skills/open-design-landing-deck/inputs.example.json
+ create mode 100644 integrations/open-design/skills/open-design-landing-deck/schema.ts
+ create mode 100644 integrations/open-design/skills/open-design-landing-deck/scripts/compose.ts
+ create mode 100644 integrations/open-design/skills/open-design-landing/README.md
+ create mode 100644 integrations/open-design/skills/open-design-landing/SKILL.md
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/about.png
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/capabilities.png
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/cta.png
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/hero.png
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/image-manifest.json
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/imagegen-prompts.md
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/lab-1.png
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/lab-2.png
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/lab-3.png
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/lab-4.png
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/lab-5.png
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/method-1.png
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/method-2.png
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/method-3.png
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/method-4.png
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/testimonial.png
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/work-1.png
+ create mode 100644 integrations/open-design/skills/open-design-landing/assets/work-2.png
+ create mode 100644 integrations/open-design/skills/open-design-landing/example.html
+ create mode 100644 integrations/open-design/skills/open-design-landing/inputs.example.json
+ create mode 100644 integrations/open-design/skills/open-design-landing/schema.ts
+ create mode 100644 integrations/open-design/skills/open-design-landing/scripts/compose.ts
+ create mode 100644 integrations/open-design/skills/open-design-landing/scripts/imagegen.ts
+ create mode 100644 integrations/open-design/skills/open-design-landing/scripts/placeholder.ts
+ create mode 100644 integrations/open-design/skills/open-design-landing/styles.css
+ create mode 100644 integrations/open-design/skills/pm-spec/SKILL.md
+ create mode 100644 integrations/open-design/skills/pm-spec/example.html
+ create mode 100644 integrations/open-design/skills/pptx-html-fidelity-audit/SKILL.md
+ create mode 100644 integrations/open-design/skills/pptx-html-fidelity-audit/references/audit-table-template.md
+ create mode 100644 integrations/open-design/skills/pptx-html-fidelity-audit/references/font-discipline.md
+ create mode 100644 integrations/open-design/skills/pptx-html-fidelity-audit/references/layout-discipline.md
+ create mode 100644 integrations/open-design/skills/pptx-html-fidelity-audit/scripts/.gitignore
+ create mode 100644 integrations/open-design/skills/pptx-html-fidelity-audit/scripts/extract_pptx.py
+ create mode 100644 integrations/open-design/skills/pptx-html-fidelity-audit/scripts/verify_layout.py
+ create mode 100644 integrations/open-design/skills/pricing-page/SKILL.md
+ create mode 100644 integrations/open-design/skills/pricing-page/example.html
+ create mode 100644 integrations/open-design/skills/replit-deck/SKILL.md
+ create mode 100644 integrations/open-design/skills/replit-deck/assets/template.html
+ create mode 100644 integrations/open-design/skills/replit-deck/examples/README.md
+ create mode 100644 integrations/open-design/skills/replit-deck/examples/example-atlas.html
+ create mode 100644 integrations/open-design/skills/replit-deck/examples/example-bluehouse.html
+ create mode 100644 integrations/open-design/skills/replit-deck/examples/example-helix.html
+ create mode 100644 integrations/open-design/skills/replit-deck/examples/example-holm.html
+ create mode 100644 integrations/open-design/skills/replit-deck/references/checklist.md
+ create mode 100644 integrations/open-design/skills/replit-deck/references/components.md
+ create mode 100644 integrations/open-design/skills/replit-deck/references/layouts.md
+ create mode 100644 integrations/open-design/skills/replit-deck/references/themes.md
+ create mode 100644 integrations/open-design/skills/saas-landing/SKILL.md
+ create mode 100644 integrations/open-design/skills/saas-landing/example.html
+ create mode 100644 integrations/open-design/skills/simple-deck/SKILL.md
+ create mode 100644 integrations/open-design/skills/simple-deck/assets/template.html
+ create mode 100644 integrations/open-design/skills/simple-deck/example.html
+ create mode 100644 integrations/open-design/skills/simple-deck/references/checklist.md
+ create mode 100644 integrations/open-design/skills/simple-deck/references/layouts.md
+ create mode 100644 integrations/open-design/skills/social-carousel/SKILL.md
+ create mode 100644 integrations/open-design/skills/social-carousel/example.html
+ create mode 100644 integrations/open-design/skills/sprite-animation/SKILL.md
+ create mode 100644 integrations/open-design/skills/sprite-animation/example.html
+ create mode 100644 integrations/open-design/skills/team-okrs/SKILL.md
+ create mode 100644 integrations/open-design/skills/team-okrs/example.html
+ create mode 100644 integrations/open-design/skills/tweaks/SKILL.md
+ create mode 100644 integrations/open-design/skills/tweaks/assets/wrap.html
+ create mode 100644 integrations/open-design/skills/tweaks/example.html
+ create mode 100644 integrations/open-design/skills/video-shortform/SKILL.md
+ create mode 100644 integrations/open-design/skills/video-shortform/example.html
+ create mode 100644 integrations/open-design/skills/web-prototype-taste-brutalist/SKILL.md
+ create mode 100644 integrations/open-design/skills/web-prototype-taste-brutalist/example.html
+ create mode 100644 integrations/open-design/skills/web-prototype-taste-editorial/SKILL.md
+ create mode 100644 integrations/open-design/skills/web-prototype-taste-editorial/example.html
+ create mode 100644 integrations/open-design/skills/web-prototype-taste-soft/SKILL.md
+ create mode 100644 integrations/open-design/skills/web-prototype-taste-soft/example.html
+ create mode 100644 integrations/open-design/skills/web-prototype/SKILL.md
+ create mode 100644 integrations/open-design/skills/web-prototype/assets/template.html
+ create mode 100644 integrations/open-design/skills/web-prototype/example.html
+ create mode 100644 integrations/open-design/skills/web-prototype/references/checklist.md
+ create mode 100644 integrations/open-design/skills/web-prototype/references/layouts.md
+ create mode 100644 integrations/open-design/skills/weekly-update/SKILL.md
+ create mode 100644 integrations/open-design/skills/weekly-update/example.html
+ create mode 100644 integrations/open-design/skills/wireframe-sketch/SKILL.md
+ create mode 100644 integrations/open-design/skills/wireframe-sketch/example.html
+ create mode 100644 integrations/open-design/tokens_open_design.json
+ create mode 100644 scripts/design-system-lint.ps1
+ create mode 100644 scripts/hydration-integrity-check.js
+ delete mode 100644 scripts/trustware-check.md
+ create mode 100644 scripts/validate-configs.ps1

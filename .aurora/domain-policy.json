@@ -1,0 +1,41 @@
+{
+  "domain": "madlab",
+  "policy_name": "Mad Lab Domain Sovereignty Policy",
+  "policy_version": "1.1.0",
+  "constitution_ref": "docs/brand/MANUAL_DA_AGENCIA.md",
+  "constitution_version": "3.0.0",
+  "governance": {
+    "boundary": "creative-arm",
+    "quality_gates_ref": {
+      "design": "docs/brand/MANUAL_DA_AGENCIA.md#51-o-gate-de-design-ceo-design",
+      "effects": "docs/brand/MANUAL_DA_AGENCIA.md#52-o-gate-de-efeitos-ceo-effects",
+      "web": "docs/brand/MANUAL_DA_AGENCIA.md#53-o-gate-de-arquitetura-espacial-ceo-web",
+      "copy": "docs/brand/MANUAL_DA_AGENCIA.md#54-o-gate-de-escrita-ceo-copy"
+    },
+    "can_consume": [
+      "observability.get_trace_summary",
+      "observability.osqa.list_qa_artifacts_by_os",
+      "alvaro-contracts",
+      "reflexion-code-triaging"
+    ],
+    "prohibited_actions": [
+      "create_local_mcp_gateway",
+      "replicate_alvaro_runtime",
+      "duplicate_global_qdrant_instance",
+      "execute_autonomous_production_self_healing",
+      "bypass_visual_quality_gates",
+      "auto_promote_knowledge_to_global_vault"
+    ],
+    "local_only": [
+      "madlab.design_system_lint",
+      "madlab.visual_performance_harness",
+      "madlab.hydration_integrity_check",
+      "madlab.motion_regression_check",
+      "candidate_knowledge_indicators_local"
+    ],
+    "global_promotion_path": {
+      "process": "candidate_ki -> bibliotecario_sanitization -> qa_review_gate -> manual_approval -> global_vault_promotion",
+      "auto_promotion": false
+    }
+  }
+}

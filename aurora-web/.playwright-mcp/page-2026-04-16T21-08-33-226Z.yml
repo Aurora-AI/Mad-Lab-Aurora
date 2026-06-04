@@ -1,0 +1,77 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - main [ref=e3]
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - text: ↳
+        - generic [ref=e23]: Typefaces
+        - list [ref=e24]:
+          - listitem [ref=e25]:
+            - link "Basement Grotesque" [ref=e26]:
+              - /url: /fonts/grotesque
+            - generic [ref=e27]: "10"
+          - listitem [ref=e28]:
+            - link "Adhesion" [ref=e29]:
+              - /url: /fonts/adhesion
+          - listitem [ref=e30]:
+            - link "B-Mecha" [ref=e31]:
+              - /url: /fonts/b-mecha
+          - listitem [ref=e32]:
+            - link "Blob" [ref=e33]:
+              - /url: /fonts/blob
+          - listitem [ref=e34]:
+            - link "Bunker" [ref=e35]:
+              - /url: /fonts/bunker
+            - generic [ref=e36]: "3"
+          - listitem [ref=e37]:
+            - link "Caniche" [ref=e38]:
+              - /url: /fonts/caniche
+          - listitem [ref=e39]:
+            - link "Carpenter" [ref=e40]:
+              - /url: /fonts/carpenter
+          - listitem [ref=e41]:
+            - link "Curia" [ref=e42]:
+              - /url: /fonts/curia
+          - listitem [ref=e43]:
+            - link "FFFLAUTA" [ref=e44]:
+              - /url: /fonts/ffflauta
+            - generic [ref=e45]: "4"
+          - listitem [ref=e46]:
+            - link "Trovador" [ref=e47]:
+              - /url: /fonts/trovador
+          - listitem [ref=e48]:
+            - link "Xer0" [ref=e49]:
+              - /url: /fonts/xer0
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - text: ↳
+          - list [ref=e52]:
+            - listitem [ref=e53]: Legal
+            - listitem [ref=e54]:
+              - link "EULA" [ref=e55]:
+                - /url: /eula
+        - generic [ref=e56]:
+          - text: ↳
+          - list [ref=e57]:
+            - listitem [ref=e58]: Social
+            - listitem [ref=e59]:
+              - link "Twitter" [ref=e60]:
+                - /url: https://twitter.com/basementstudio
+            - listitem [ref=e61]:
+              - link "Twitch" [ref=e62]:
+                - /url: https://twitch.com/basementdotstudio
+            - listitem [ref=e63]:
+              - link "Instagram" [ref=e64]:
+                - /url: https://instagram.com/basementdotstudio
+            - listitem [ref=e65]:
+              - link "Github" [ref=e66]:
+                - /url: https://github.com/basementstudio
+        - generic [ref=e67]:
+          - text: ↳
+          - generic [ref=e68]: support
+          - link "foundry@basement.studio" [ref=e69]:
+            - /url: mailto:foundry@basement.studio
+      - generic [ref=e70]:
+        - button "default theme" [ref=e71]
+        - button "light theme" [ref=e72]
+  - alert [ref=e73]

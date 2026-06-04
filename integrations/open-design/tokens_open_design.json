@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "library": "Open-Design",
+  "schools": {
+    "Monocle": {
+      "mood": "Editorial, Premium, Atemporal",
+      "tokens": {
+        "background": "#f1efea",
+        "text": "#0a0a0b",
+        "surface": "#e8e5de",
+        "primary_font": "Playfair Display",
+        "secondary_font": "Inter Tight"
+      }
+    },
+    "Indigo Porcelain": {
+      "mood": "Racional, Técnico, Profundo",
+      "tokens": {
+        "background": "#f1f3f5",
+        "text": "#0a1f3d",
+        "surface": "#e4e8ec",
+        "primary_font": "Space Grotesk",
+        "secondary_font": "JetBrains Mono"
+      }
+    },
+    "Forest Ink": {
+      "mood": "Orgânico, Calmo, Humano",
+      "tokens": {
+        "background": "#f5f1e8",
+        "text": "#1a2e1f",
+        "surface": "#ece7da",
+        "primary_font": "Georgia",
+        "secondary_font": "DM Sans"
+      }
+    },
+    "Kraft Paper": {
+      "mood": "Nostálgico, Tátil, Independente",
+      "tokens": {
+        "background": "#eedfc7",
+        "text": "#2a1e13",
+        "surface": "#e0d0b6",
+        "primary_font": "Courier Prime",
+        "secondary_font": "Lora"
+      }
+    },
+    "Dune": {
+      "mood": "Minimalista, Escultural, Neutro",
+      "tokens": {
+        "background": "#f0e6d2",
+        "text": "#1f1a14",
+        "surface": "#e3d7bf",
+        "primary_font": "Clash Display",
+        "secondary_font": "Inter"
+      }
+    }
+  },
+  "rules": {
+    "immutability": "Do not mix tokens between schools",
+    "accent_policy": "Single accent color per school",
+    "typography_policy": "Maintain school-specific tracking and weights"
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "run": {
+    "runId": "run_brief_apo_manifesto_001",
+    "currentStage": "distribution",
+    "completedStages": [
+      "brief",
+      "research",
+      "architecture",
+      "review",
+      "distribution"
+    ],
+    "briefId": "brief_apo_manifesto_001",
+    "updatedAt": "2026-03-31T12:24:01.504Z"
+  },
+  "artifacts": {
+    "brief": {
+      "storedAt": "2026-03-31T12:24:01.310Z",
+      "payload": {
+        "id": "brief_apo_manifesto_001",
+        "tema": "APO: o gestor como infraestrutura de performance",
+        "icp": "CEOs, diretores comerciais e gestores de operacoes que precisam escalar sem depender de heroismo individual",
+        "dorCentral": "A operacao comercial cresce com ruido, personalismo e leitura errada das causas, o que trava escala e deteriora cultura",
+        "promessaCentral": "Transformar a percepcao do gestor em um criterio pratico para diagnosticar anomalias, intervir com precisao e estruturar performance sistemica",
+        "formato": "ebook",
+        "objetivoDeNegocio": "gerar demanda qualificada para diagnostico APO e consultoria de implementacao",
+        "canal": "landing-page",
+        "restricoes": [
+          "nao prometer crescimento automatico",
+          "nao tratar intuicao do fundador como unica fonte de verdade",
+          "nao vender APO como atalho motivacional"
+        ],
+        "status": "approved"
+      }
+    },
+    "research": {
+      "storedAt": "2026-03-31T12:24:01.382Z",
+      "payload": {
+        "id": "research_apo_manifesto_001",
+        "briefId": "brief_apo_manifesto_001",
+        "fontes": [
+          "docs/Vault/entrevista_rodrigo_apo.md",
+          "docs/Vault/estudo_estrategia_apo.md"
+        ],
+        "concorrentes": [
+          "MBO",
+          "SLII",
+          "RevOps"
+        ],
+        "lacunas": [
+          "gestores confundem numero com causa",
+          "metodos tradicionais nao integram diagnostico humano e estrutural",
+          "faltam playbooks objetivos para transferir a inteligencia do fundador"
+        ],
+        "linguagemDoMercado": [
+          "performance comercial",
+          "accountability",
+          "diagnostico de causa-raiz",
+          "escala previsivel",
+          "seguranca psicologica com exigencia"
+        ],
+        "objecoes": [
+          "o modelo parece subjetivo demais",
+          "sem scorecard o metodo pode ficar personalista",
+          "gestores acostumados a meta podem rejeitar leitura sistemica"
+        ],
+        "riscos": [
+          "romantizar intuicao sem operacionalizacao",
+          "prometer transformacao cultural instantanea",
+          "reduzir APO a tecnica de lideranca sem camada estrutural"
+        ],
+        "insights": [
+          "o diferencial real esta em tratar o gestor como arquitetura de alocacao, nao cobrador",
+          "o caso da melhor vendedora demitida fornece prova forte de tese sistemica",
+          "a esteira natural de valor comeca no manifesto e sobe para diagnostico e implementacao"
+        ]
+      }
+    },
+    "architecture": {
+      "storedAt": "2026-03-31T12:24:01.422Z",
+      "payload": {
+        "id": "architecture_apo_manifesto_001",
+        "briefId": "brief_apo_manifesto_001",
+        "researchPackId": "research_apo_manifesto_001",
+        "tese": "A performance sustentavel nasce quando o gestor deixa de reagir a numeros isolados e passa a operar como infraestrutura de leitura, intervencao e alocacao da equipe.",
+        "formato": "ebook",
+        "capitulosOuBlocos": [
+          "o colapso do gestor-cobrador",
+          "APO como leitura de realidade, leitura humana e intervencao",
+          "casos de prova: top performer toxico e escala de 1.5M para 60M",
+          "como transformar intuicao em sistema transferivel",
+          "proximo passo: diagnostico APO"
+        ],
+        "transformacaoPrometida": "O leitor passa de uma gestao reativa baseada em meta e pressao para um modelo de diagnostico sistemico com criterio de intervencao.",
+        "ctaPrincipal": "Solicitar diagnostico APO",
+        "escadaDeValor": [
+          "ebook manifesto APO",
+          "diagnostico APO",
+          "consultoria de implementacao",
+          "augmentation layer com IA"
+        ]
+      }
+    },
+    "review": {
+      "storedAt": "2026-03-31T12:24:01.462Z",
+      "payload": {
+        "id": "review_apo_manifesto_001",
+        "briefId": "brief_apo_manifesto_001",
+        "adherenceToBrief": {
+          "score": 9.4,
+          "rationale": "A estrutura preserva a tese APO, o ICP executivo e o objetivo comercial de levar ao diagnostico."
+        },
+        "usefulDensity": {
+          "score": 8.9,
+          "rationale": "O conteudo prioriza criterio operacional, casos concretos e sequencia de aplicacao."
+        },
+        "differentiation": {
+          "score": 9.1,
+          "rationale": "O framing do gestor como infraestrutura de performance se diferencia de lideranca situacional e MBO classico."
+        },
+        "promiseSafety": {
+          "score": 9.3,
+          "rationale": "A promessa evita atalho comercial e posiciona APO como metodo de diagnostico e implementacao progressiva."
+        },
+        "commercialPotential": {
+          "score": 9,
+          "rationale": "A escada ebook -> diagnostico -> implementacao esta clara e coerente com o estudo estrategico."
+        },
+        "decision": "approved",
+        "globalScore": 9.1,
+        "reviewer": "trustware-reviewer-internal-apo"
+      }
+    },
+    "distribution": {
+      "storedAt": "2026-03-31T12:24:01.504Z",
+      "payload": {
+        "id": "distribution_apo_manifesto_001",
+        "briefId": "brief_apo_manifesto_001",
+        "title": "APO: O Gestor Como Infraestrutura de Performance",
+        "subtitle": "Um manifesto pratico para diagnosticar anomalias, intervir com precisao e escalar sem heroismo individual",
+        "promise": "Substituir cobranca reativa por criterio sistemico de performance comercial",
+        "cta": "Solicitar diagnostico APO",
+        "landingCopy": "Entenda por que metas, pressao e heroismo individual nao sustentam escala. Descubra o modelo APO para ler a realidade da operacao, intervir no ponto certo e estruturar crescimento com mais clareza, disciplina e transferencia de inteligencia.",
+        "emailSequence": [
+          "email_manifesto_apo_abertura",
+          "email_top_performer_toxico",
+          "email_diagnostico_apo_cta"
+        ],
+        "socialDerivatives": [
+          "carrossel_gestor_infraestrutura",
+          "post_falso_top_performer",
+          "post_fim_da_era_da_cobranca"
+        ]
+      }
+    }
+  },
+  "auditTrail": [
+    {
+      "occurredAt": "2026-03-31T12:24:01.289Z",
+      "action": "pipeline:intake",
+      "principal": "consumer-full",
+      "keyId": "dev-internal-e2e-v4",
+      "consumer": "AuroraCognitiveAssets",
+      "environment": "dev",
+      "scope": "pipeline:write"
+    },
+    {
+      "occurredAt": "2026-03-31T12:24:01.365Z",
+      "action": "pipeline:research",
+      "principal": "consumer-full",
+      "keyId": "dev-internal-e2e-v4",
+      "consumer": "AuroraCognitiveAssets",
+      "environment": "dev",
+      "scope": "pipeline:write"
+    },
+    {
+      "occurredAt": "2026-03-31T12:24:01.401Z",
+      "action": "pipeline:architecture",
+      "principal": "consumer-full",
+      "keyId": "dev-internal-e2e-v4",
+      "consumer": "AuroraCognitiveAssets",
+      "environment": "dev",
+      "scope": "pipeline:write"
+    },
+    {
+      "occurredAt": "2026-03-31T12:24:01.442Z",
+      "action": "pipeline:review",
+      "principal": "consumer-full",
+      "keyId": "dev-internal-e2e-v4",
+      "consumer": "AuroraCognitiveAssets",
+      "environment": "dev",
+      "scope": "pipeline:write"
+    },
+    {
+      "occurredAt": "2026-03-31T12:24:01.483Z",
+      "action": "pipeline:distribution",
+      "principal": "consumer-full",
+      "keyId": "dev-internal-e2e-v4",
+      "consumer": "AuroraCognitiveAssets",
+      "environment": "dev",
+      "scope": "pipeline:write"
+    },
+    {
+      "occurredAt": "2026-03-31T12:24:01.521Z",
+      "action": "pipeline:get_run",
+      "principal": "consumer-full",
+      "keyId": "dev-internal-e2e-v4",
+      "consumer": "AuroraCognitiveAssets",
+      "environment": "dev",
+      "scope": "pipeline:read"
+    }
+  ]
+}

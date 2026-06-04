@@ -1,0 +1,27 @@
+{
+  "id": "review_e2e_010",
+  "briefId": "brief_e2e_001",
+  "adherenceToBrief": {
+    "score": 9.1,
+    "rationale": "A arquitetura permaneceu aderente ao brief canonico."
+  },
+  "usefulDensity": {
+    "score": 8.8,
+    "rationale": "O material prioriza criterio pratico e elimina ruido promocional."
+  },
+  "differentiation": {
+    "score": 8.7,
+    "rationale": "A tese se diferencia por framing patrimonial e nao por hype."
+  },
+  "promiseSafety": {
+    "score": 9.2,
+    "rationale": "A promessa e segura e evita extrapolacoes comerciais."
+  },
+  "commercialPotential": {
+    "score": 8.9,
+    "rationale": "O CTA se conecta bem com a escada consultiva."
+  },
+  "decision": "approved",
+  "globalScore": 8.9,
+  "reviewer": "trustware-reviewer-e2e"
+}

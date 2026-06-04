@@ -1,0 +1,41 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+web_modules/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+.nuxt/
+.cache/
+
+# Local configuration files
+.env*.local
+.env
+.env.production
+.env.development
+.env.local
+
+# Git checkout folders and scratch directories (workspace specific)
+checkouts/
+scratch/
+
+# IDE / Editor folders
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Agent / Temp caches
+.fallow/
+.claude/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db

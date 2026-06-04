@@ -1,0 +1,37 @@
+{
+  "month": "2026-06",
+  "generated_at": "2026-06-01T10:46:00-03:00",
+  "total_tokens": 25000,
+  "total_cost_usd": 0.00325,
+  "total_cost_brl": 0.02275,
+  "budget_alert": false,
+  "by_agent": {
+    "antigravity": {
+      "tokens": 25000,
+      "cost_usd": 0.00325,
+      "os_count": 1
+    }
+  },
+  "by_model": {
+    "gemini-3.5-flash": {
+      "tokens": 25000,
+      "cost_usd": 0.00325
+    }
+  },
+  "by_os": [
+    {
+      "os_id": "OS-MADLAB-TS-STABILIZATION-20260601-001",
+      "total_tokens": 25000,
+      "total_cost_usd": 0.00325,
+      "steps": 1,
+      "note": "TypeScript compilation errors resolved"
+    }
+  ],
+  "top_cost_steps": [
+    {
+      "entry_id": "OS-MADLAB-TS-STABILIZATION-20260601-001-step-1",
+      "cost_usd": 0.00325
+    }
+  ],
+  "optimization_notes": []
+}

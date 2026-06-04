@@ -1,0 +1,16 @@
+{
+  "name": "@aurora/stacked-panels",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "dependencies": {
+    "next": "latest",
+    "framer-motion": "latest",
+    "clsx": "latest",
+    "tailwind-merge": "latest"
+  },
+  "aurora": {
+    "type": "interaction",
+    "patterns": ["P012", "P013"],
+    "status": "production"
+  }
+}

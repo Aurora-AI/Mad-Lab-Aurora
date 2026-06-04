@@ -1,0 +1,27 @@
+{
+  "id": "review_apo_manifesto_001",
+  "briefId": "brief_apo_manifesto_001",
+  "adherenceToBrief": {
+    "score": 9.4,
+    "rationale": "A estrutura preserva a tese APO, o ICP executivo e o objetivo comercial de levar ao diagnostico."
+  },
+  "usefulDensity": {
+    "score": 8.9,
+    "rationale": "O conteudo prioriza criterio operacional, casos concretos e sequencia de aplicacao."
+  },
+  "differentiation": {
+    "score": 9.1,
+    "rationale": "O framing do gestor como infraestrutura de performance se diferencia de lideranca situacional e MBO classico."
+  },
+  "promiseSafety": {
+    "score": 9.3,
+    "rationale": "A promessa evita atalho comercial e posiciona APO como metodo de diagnostico e implementacao progressiva."
+  },
+  "commercialPotential": {
+    "score": 9.0,
+    "rationale": "A escada ebook -> diagnostico -> implementacao esta clara e coerente com o estudo estrategico."
+  },
+  "decision": "approved",
+  "globalScore": 9.1,
+  "reviewer": "trustware-reviewer-internal-apo"
+}

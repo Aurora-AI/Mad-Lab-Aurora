@@ -1,0 +1,17 @@
+{
+  "entry_id": "OS-CLAUDECODE-AURORA-VISUAL-ASSETS-20260418-004-summary",
+  "os_id": "OS-CLAUDECODE-AURORA-VISUAL-ASSETS-20260418-004",
+  "step_name": "SUMMARY — entrada retroativa",
+  "step_number": 0,
+  "agent": "claude-code",
+  "model": "claude-sonnet-4-6",
+  "input_tokens": 8500,
+  "output_tokens": 4200,
+  "total_tokens": 12700,
+  "cost_usd_estimated": 0.11,
+  "cost_brl_estimated": 0.77,
+  "duration_ms": 0,
+  "timestamp": "2026-04-18T12:01:50-03:00",
+  "notes": "Entry retroativa. Tokens estimados — OS-004 não tinha ledger ativo durante execução.",
+  "cache_hit": false
+}

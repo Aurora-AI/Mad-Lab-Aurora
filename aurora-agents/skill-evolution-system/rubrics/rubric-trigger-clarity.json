@@ -1,0 +1,23 @@
+{
+  "name": "trigger-clarity",
+  "description": "Avalia se a skill possui gatilhos (triggers) de ativação claros, não-ambíguos e determinísticos.",
+  "max_points": 20,
+  "criteria": [
+    {
+      "condition": "Presença da palavra trigger/gatilho ou seção correspondente no frontmatter/metadados",
+      "points": 5
+    },
+    {
+      "condition": "O gatilho define explicitamente palavras-chave ou condições exatas de ativação do usuário",
+      "points": 5
+    },
+    {
+      "condition": "O gatilho não utiliza expressões vagas (ex: 'quando achar apropriado', 'se necessário')",
+      "points": 5
+    },
+    {
+      "condition": "Possui exemplo de frase ou cenário específico que dispara a ativação",
+      "points": 5
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "entry_id": "OS-ANTIGRAVITY-AURORA-VAULT-20260418-006-summary",
+  "os_id": "OS-ANTIGRAVITY-AURORA-VAULT-20260418-006",
+  "step_name": "SUMMARY — gerado ao concluir OS-006",
+  "step_number": 0,
+  "agent": "antigravity",
+  "model": "gemini-3-flash",
+  "input_tokens": 12000,
+  "output_tokens": 8000,
+  "total_tokens": 20000,
+  "cost_usd_estimated": 0.0044,
+  "cost_brl_estimated": 0.03,
+  "duration_ms": 0,
+  "timestamp": "2026-04-18T16:45:00-03:00",
+  "notes": "Execução completa da OS-006. Implementação da infraestrutura de Token Ledger.",
+  "cache_hit": false
+}

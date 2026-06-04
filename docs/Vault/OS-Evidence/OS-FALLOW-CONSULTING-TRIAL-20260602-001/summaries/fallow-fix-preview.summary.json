@@ -1,0 +1,19 @@
+{
+  "command": "fallow fix preview",
+  "exit_code": "exit_code=0",
+  "input_file": "fallow-fix-preview.stdout.json",
+  "generated_at": "2026-06-02T11:59:19.4103455-03:00",
+  "parseable_json": true,
+  "top_level_keys": [
+    "dry_run",
+    "fixes",
+    "total_fixed",
+    "skipped",
+    "skipped_content_changed",
+    "skipped_mixed_line_endings",
+    "skipped_low_confidence_exports"
+  ],
+  "verdict": "dry_run_preview",
+  "issue_count_hint": 29,
+  "notes": []
+}

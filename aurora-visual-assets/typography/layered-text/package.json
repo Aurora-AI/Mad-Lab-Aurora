@@ -1,0 +1,13 @@
+{
+  "name": "@aurora-visual/layered-text",
+  "version": "1.0.0",
+  "description": "Sheared isometric layered typography with GSAP interaction.",
+  "origin": "external",
+  "author": "External (Curated by Aurora)",
+  "aurora_status": "external_curated",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "gsap": "^3.0.0"
+  },
+  "notes": "Uses CSS skew and GSAP stagger for a 3D stacking effect."
+}

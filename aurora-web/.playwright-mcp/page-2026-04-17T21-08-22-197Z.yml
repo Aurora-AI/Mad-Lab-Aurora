@@ -1,0 +1,446 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - generic [ref=e6]: ELYSIAN
+    - generic [ref=e7]: INITIALIZING COGNITIVE_LAYER_0.1
+  - generic [ref=e8]:
+    - banner [ref=e9]:
+      - link "ELYSIAN" [ref=e10] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e11]:
+        - button "Ecossistema" [ref=e12] [cursor=pointer]
+        - button "Produtos" [ref=e13] [cursor=pointer]
+        - button "Método" [ref=e14] [cursor=pointer]
+        - button "Agendar" [ref=e15] [cursor=pointer]
+    - main [ref=e16]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20]: Aurora
+          - generic [ref=e21]: Infraestrutura Cognitiva · 2026
+          - link "Falar com a equipe →" [ref=e22] [cursor=pointer]:
+            - /url: "#cta"
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - generic [ref=e25]:
+              - generic [ref=e28]: Aurora · Ecossistema de IA Governada
+              - heading "Quando tudo se fragmenta, nós construímos." [level=1] [ref=e29]:
+                - text: Quando tudo
+                - text: se fragmenta,
+                - emphasis [ref=e30]: nós
+                - text: construímos.
+            - generic [ref=e31]:
+              - paragraph [ref=e32]: Automação com contrato de confiabilidade. Decisões de IA com trilha de auditoria completa. Sistemas que sobrevivem ao primeiro contato com a realidade operacional.
+              - generic [ref=e33]:
+                - link "Agendar Diagnóstico" [ref=e34] [cursor=pointer]:
+                  - /url: "#cta"
+                  - text: Agendar Diagnóstico
+                  - generic [ref=e35]: →
+                - link "Ver os sistemas" [ref=e36] [cursor=pointer]:
+                  - /url: "#what-we-built"
+              - generic [ref=e37]:
+                - generic [ref=e40]: Aurora CRM
+                - generic [ref=e43]: Elysian Lex
+                - generic [ref=e46]: Living Doc
+          - generic [ref=e47]:
+            - img
+            - img
+            - img
+            - img
+            - img
+            - generic [ref=e50]: Role para montar
+            - generic [ref=e52]: 01 — 09
+        - generic [ref=e53]:
+          - generic [ref=e54]: Role para descobrir
+          - generic [ref=e57]: Aurora · 2026
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e60]: Capítulo 01
+          - generic [ref=e62]: O diagnóstico
+        - heading "O mercado de IA cresceu em promessa. Vazio de infraestrutura." [level=2] [ref=e63]:
+          - text: O mercado de IA
+          - text: cresceu em promessa.
+          - text: Vazio de infraestrutura.
+        - generic [ref=e64]:
+          - paragraph [ref=e66]: R$ 8 bilhões investidos em tecnologia corporativa no Brasil em 2025. A maior parte foi em licenças de SaaS, pilotos de IA e consultorias de transformação digital.
+          - paragraph [ref=e68]: Desse total, menos de 3% foi direcionado a governança, auditabilidade e infraestrutura de confiança para sistemas de IA em operação crítica.
+          - paragraph [ref=e70]: "O resultado: empresas com IA em produção, sem contrato de confiabilidade, sem trilha de decisão, sem responsável quando o sistema erra."
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e73]: Capítulo 02
+          - generic [ref=e75]: Os sintomas
+        - heading "Três cenários. Uma causa." [level=2] [ref=e76]:
+          - text: Três cenários.
+          - text: Uma causa.
+        - generic [ref=e77]:
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - generic [ref=e81]: "01"
+              - heading "Automações que falham em produção" [level=3] [ref=e82]
+            - generic [ref=e83]:
+              - paragraph [ref=e84]: Você implementou um agente de triagem de leads. Na semana 3, ele reclassificou 240 contratos ativos como leads frios e os inseriu em uma campanha de reativação. Nenhum log. Nenhum rollback. A equipe descobriu quando os clientes começaram a ligar.
+              - generic [ref=e85]:
+                - generic [ref=e86]: Causa raiz
+                - paragraph [ref=e87]: Ausência de contrato de confiabilidade entre o agente e o processo de negócio.
+          - generic [ref=e89]:
+            - generic [ref=e90]:
+              - generic [ref=e91]: "02"
+              - heading "Decisões de IA sem trilha" [level=3] [ref=e92]
+            - generic [ref=e93]:
+              - paragraph [ref=e94]: O sistema aprovou automaticamente uma proposta de R$ 180.000. O cliente pediu justificativa. O gestor perguntou ao desenvolvedor. O desenvolvedor pediu ao modelo. O modelo não sabia. O output existia. O raciocínio, não.
+              - generic [ref=e95]:
+                - generic [ref=e96]: Causa raiz
+                - paragraph [ref=e97]: Ausência de auditabilidade estruturada — o modelo decide, mas não documenta.
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - generic [ref=e101]: "03"
+              - heading "Velocidade que vira dívida" [level=3] [ref=e102]
+            - generic [ref=e103]:
+              - paragraph [ref=e104]: "Em 6 meses: 3 agentes construídos, 2 integrações feitas, 1 dashboard ao vivo. Em 12 meses: nenhum dos três em produção real, dois reescritos do zero, um abandonado. A aceleração sem método se transforma em retrabalho permanente."
+              - generic [ref=e105]:
+                - generic [ref=e106]: Causa raiz
+                - paragraph [ref=e107]: Ausência de arquitetura de governança — cada entrega é uma aposta isolada.
+      - generic [ref=e109]:
+        - generic [ref=e110]:
+          - generic [ref=e111]: Capítulo 03
+          - generic [ref=e113]: A resposta
+        - heading "Um ecossistema. Quatro camadas." [level=2] [ref=e114]:
+          - text: Um ecossistema.
+          - text: Quatro camadas.
+        - paragraph [ref=e115]: Enquanto o mercado vende ferramentas isoladas, a Aurora constrói um sistema integrado onde cada camada sustenta a próxima. Não é uma pilha de SaaS — é uma arquitetura com contrato entre as partes.
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - generic [ref=e118]:
+              - generic [ref=e119]: LAYER_01
+              - generic [ref=e120]: Aurora Governance
+              - generic [ref=e121]: O que a IA pode e não pode decidir
+            - paragraph [ref=e123]: Define os contratos de autoridade de cada agente — quais decisões ele executa autonomamente, quais escalam para humano, e quais são vetadas. Sem governança, cada automação é uma decisão sem dono.
+          - generic [ref=e124]:
+            - generic [ref=e125]:
+              - generic [ref=e126]: LAYER_02
+              - generic [ref=e127]: Ozzmosis
+              - generic [ref=e128]: A fábrica de componentes compartilhados
+            - paragraph [ref=e130]: Biblioteca de contratos, tipos e runtimes reutilizados por todos os produtos Aurora. O que foi testado uma vez funciona em todos. Nenhuma duplicação, nenhuma incompatibilidade silenciosa entre sistemas.
+          - generic [ref=e131]:
+            - generic [ref=e132]:
+              - generic [ref=e133]: LAYER_03
+              - generic [ref=e134]: Products
+              - generic [ref=e135]: Sistemas especializados por domínio
+            - paragraph [ref=e137]: Aurora CRM para operações comerciais com WhatsApp e outbound. Elysian Lex para inteligência jurídica com auditabilidade forense. Living Document para estado persistente e verificável de qualquer processo.
+          - generic [ref=e138]:
+            - generic [ref=e139]:
+              - generic [ref=e140]: LAYER_04
+              - generic [ref=e141]: MadLab
+              - generic [ref=e142]: Tecnologia com presença institucional
+            - paragraph [ref=e144]: A camada onde os sistemas ganham identidade, narrativa e superfície pública. Onde você está agora. Cada produto Aurora tem uma presença institucional à altura da seriedade da infraestrutura que carrega.
+      - generic [ref=e145]:
+        - generic [ref=e146]:
+          - generic [ref=e147]: Capítulo 04
+          - generic [ref=e149]: O método
+        - generic [ref=e150]:
+          - generic [ref=e151]:
+            - heading "Construído sobre protocolos." [level=2] [ref=e152]:
+              - text: Construído sobre
+              - text: protocolos.
+            - paragraph [ref=e153]: Cada componente da Aurora tem uma função específica no contrato de confiabilidade. Não são ferramentas independentes — são camadas de um sistema onde cada uma verifica a anterior.
+            - generic [ref=e154]:
+              - generic [ref=e155]:
+                - generic [ref=e156]:
+                  - heading "Ozzmosis" [level=4] [ref=e157]
+                  - generic [ref=e158]: — Base tecnológica compartilhada
+                - paragraph [ref=e159]: Um monorepo de bibliotecas, contratos de tipo e runtimes que todos os produtos Aurora consomem. Quando um contrato é atualizado aqui, todos os produtos herdam — sem divergência de versão, sem integração manual.
+              - generic [ref=e160]:
+                - generic [ref=e161]:
+                  - heading "Aurora Conductor" [level=4] [ref=e162]
+                  - generic [ref=e163]: — Orquestrador de fluxos de IA
+                - paragraph [ref=e164]: Traduz intenção de negócio em planos de execução auditáveis. Cada decisão que o Conductor toma é registrada com contexto, input, output e o agente responsável — rastreável do início ao fim.
+              - generic [ref=e165]:
+                - generic [ref=e166]:
+                  - heading "Trustware" [level=4] [ref=e167]
+                  - generic [ref=e168]: — Contrato de confiança entre IA e decisão humana
+                - paragraph [ref=e169]: Define o threshold de confiança necessário para cada tipo de ação. Abaixo do threshold, escala para humano. Acima, executa com log. Nenhum output de IA alcança um processo crítico sem passar por esse gate.
+              - generic [ref=e170]:
+                - generic [ref=e171]:
+                  - heading "Alvaro Core" [level=4] [ref=e172]
+                  - generic [ref=e173]: — Núcleo de raciocínio determinista
+                - paragraph [ref=e174]: Camada de raciocínio estruturado que força o modelo a seguir um roteiro lógico antes de produzir output. Reduz alucinações em fluxos jurídicos e comerciais onde a cadeia de raciocínio precisa ser verificável.
+          - generic [ref=e176]:
+            - generic [ref=e177]: FLUXO DE EXECUÇÃO SEGURA
+            - generic [ref=e178]:
+              - generic [ref=e180]: "01"
+              - generic [ref=e182]:
+                - generic [ref=e183]: Input recebido
+                - generic [ref=e184]: Usuário ou sistema externo
+            - generic [ref=e185]:
+              - generic [ref=e187]: "02"
+              - generic [ref=e189]:
+                - generic [ref=e190]: Conductor planeja
+                - generic [ref=e191]: Traduz intenção → plano auditável
+            - generic [ref=e192]:
+              - generic [ref=e194]: "03"
+              - generic [ref=e196]:
+                - generic [ref=e197]: Trustware avalia
+                - generic [ref=e198]: Confiança ≥ threshold → executa
+            - generic [ref=e199]:
+              - generic [ref=e201]: "04"
+              - generic [ref=e203]:
+                - generic [ref=e204]: Agente executa
+                - generic [ref=e205]: Alvaro Core garante raciocínio
+            - generic [ref=e206]:
+              - generic [ref=e208]: "05"
+              - generic [ref=e209]:
+                - generic [ref=e210]: Output selado
+                - generic [ref=e211]: SHA-256 · trilha imutável
+      - generic [ref=e212]:
+        - generic [ref=e213]:
+          - generic [ref=e214]: Capítulo 05
+          - generic [ref=e216]: A âncora
+        - generic [ref=e217]:
+          - generic [ref=e218]:
+            - heading "Não é output. É evidência." [level=2] [ref=e219]:
+              - text: Não é output.
+              - text: É evidência.
+            - generic [ref=e220]:
+              - paragraph [ref=e221]: "Todo sistema de IA produz outputs. A maioria deles desaparece: sem contexto, sem versão, sem rastreabilidade. Quando algo dá errado, o output sumiu — e com ele, qualquer possibilidade de entender o que aconteceu."
+              - paragraph [ref=e222]: "Living Document é a resposta da Aurora para esse problema: um estado persistente de verdade auditável. Cada análise, cada decisão, cada versão de um documento produzido pelos sistemas Aurora é selada criptograficamente e armazenada com trilha forense completa."
+              - paragraph [ref=e223]: Não é um arquivo que se salva. É um ativo de confiança que prova o que aconteceu, quando aconteceu, e com que nível de certeza o sistema operou.
+            - generic [ref=e224]:
+              - generic [ref=e225]:
+                - generic [ref=e226]: Identidade
+                - generic [ref=e227]: Hash SHA-256 gerado no momento da criação
+              - generic [ref=e228]:
+                - generic [ref=e229]: Versionamento
+                - generic [ref=e230]: Cada alteração cria uma nova versão imutável
+              - generic [ref=e231]:
+                - generic [ref=e232]: Cadeia de custódia
+                - generic [ref=e233]: Trilha forense completa de todos os agentes envolvidos
+              - generic [ref=e234]:
+                - generic [ref=e235]: Verificação
+                - generic [ref=e236]: Trustware seal em todo output antes de persistir
+          - generic [ref=e238]:
+            - generic [ref=e239]:
+              - generic [ref=e240]: SEM LIVING DOCUMENT
+              - generic [ref=e241]:
+                - generic [ref=e242]: —
+                - generic [ref=e243]: output_final_v3.docx
+              - generic [ref=e244]:
+                - generic [ref=e245]: —
+                - generic [ref=e246]: análise_revisada.pdf
+              - generic [ref=e247]:
+                - generic [ref=e248]: —
+                - generic [ref=e249]: contrato_aprovado_final2.docx
+              - generic [ref=e250]:
+                - text: Sem versão. Sem autor. Sem contexto.
+                - text: Sem como provar o que aconteceu.
+            - generic [ref=e251]:
+              - generic [ref=e252]: COM LIVING DOCUMENT
+              - generic [ref=e253]:
+                - generic [ref=e254]: LD_2026_0312_001
+                - generic [ref=e255]: Análise Contrato Civil
+                - generic [ref=e256]: SEALED
+              - generic [ref=e257]:
+                - generic [ref=e258]: LD_2026_0312_002
+                - generic [ref=e259]: Revisão Cláusula 7.3
+                - generic [ref=e260]: SEALED
+              - generic [ref=e261]:
+                - generic [ref=e262]: LD_2026_0312_003
+                - generic [ref=e263]: Output Final Aprovado
+                - generic [ref=e264]: ACTIVE
+              - generic [ref=e265]:
+                - text: Identidade criptográfica. Cadeia de custódia.
+                - text: Prova de o que aconteceu e quando.
+      - generic [ref=e266]:
+        - generic [ref=e267]:
+          - generic [ref=e268]: Capítulo 06
+          - generic [ref=e270]: Portfólio // 2026
+        - heading "Não é visão. É o que já existe." [level=2] [ref=e271]:
+          - text: Não é visão.
+          - text: É o que já existe.
+        - generic [ref=e272]:
+          - generic [ref=e273]:
+            - generic [ref=e274]:
+              - generic [ref=e275]: "01"
+              - generic [ref=e276]: Operações Comerciais
+              - generic [ref=e278]: Ativo
+              - generic [ref=e280]: Ativo
+            - generic [ref=e281]:
+              - generic [ref=e282]:
+                - heading "Aurora CRM" [level=3] [ref=e283]
+                - paragraph [ref=e284]: O sistema de operação comercial para equipes que vendem via WhatsApp e precisam de mais do que um CRM convencional.
+              - generic [ref=e285]:
+                - generic [ref=e286]:
+                  - generic [ref=e287]: O que faz
+                  - list [ref=e288]:
+                    - listitem [ref=e289]:
+                      - generic [ref=e290]: →
+                      - text: Automação de outbound com sequências parametrizadas por segmento
+                    - listitem [ref=e291]:
+                      - generic [ref=e292]: →
+                      - text: Integração nativa com WhatsApp Business API — sem gateway de terceiros
+                    - listitem [ref=e293]:
+                      - generic [ref=e294]: →
+                      - text: "Governança de pipeline: cada etapa tem contrato de entrada e saída"
+                    - listitem [ref=e295]:
+                      - generic [ref=e296]: →
+                      - text: Trilha de decisão auditável para aprovações comerciais acima de threshold
+                - generic [ref=e297]:
+                  - generic [ref=e298]:
+                    - generic [ref=e299]: Para quem
+                    - paragraph [ref=e300]: Equipes comerciais B2B com volume de outbound e necessidade de rastreabilidade por negócio.
+                  - link "Explorar" [ref=e301] [cursor=pointer]:
+                    - /url: /crm
+                    - text: Explorar
+                    - img [ref=e302]
+          - generic [ref=e304]:
+            - generic [ref=e305]:
+              - generic [ref=e306]: "02"
+              - generic [ref=e307]: Inteligência Jurídica
+              - generic [ref=e309]: Em Desenvolvimento
+            - generic [ref=e310]:
+              - generic [ref=e311]:
+                - heading "Elysian Lex" [level=3] [ref=e312]
+                - paragraph [ref=e313]: Motor de análise jurídica que processa contratos, identifica riscos e produz outputs auditáveis — com PII protegido e raciocínio verificável.
+              - generic [ref=e314]:
+                - generic [ref=e315]:
+                  - generic [ref=e316]: O que faz
+                  - list [ref=e317]:
+                    - listitem [ref=e318]:
+                      - generic [ref=e319]: →
+                      - text: Análise forense de contratos com classificação de risco por cláusula
+                    - listitem [ref=e320]:
+                      - generic [ref=e321]: →
+                      - text: PII jamais alcança o LLM em plaintext — tokenização obrigatória
+                    - listitem [ref=e322]:
+                      - generic [ref=e323]: →
+                      - text: Output estruturado no template T-22.1 com Trustware seal
+                    - listitem [ref=e324]:
+                      - generic [ref=e325]: →
+                      - text: Predição de cenários com trilha de raciocínio completa
+                - generic [ref=e326]:
+                  - generic [ref=e327]:
+                    - generic [ref=e328]: Para quem
+                    - paragraph [ref=e329]: Escritórios de advocacia e departamentos jurídicos com volume de contratos e exigência de rastreabilidade.
+                  - link "Em breve" [ref=e330] [cursor=pointer]:
+                    - /url: /lex
+                    - text: Em breve
+                    - img [ref=e331]
+          - generic [ref=e333]:
+            - generic [ref=e334]:
+              - generic [ref=e335]: "03"
+              - generic [ref=e336]: Infraestrutura de Confiança
+              - generic [ref=e338]: Em Desenvolvimento
+            - generic [ref=e339]:
+              - generic [ref=e340]:
+                - heading "Living Document" [level=3] [ref=e341]
+                - paragraph [ref=e342]: Estado persistente de verdade auditável. Cada output de IA produzido nos sistemas Aurora é selado, versionado e armazenado com cadeia de custódia criptográfica.
+              - generic [ref=e343]:
+                - generic [ref=e344]:
+                  - generic [ref=e345]: O que faz
+                  - list [ref=e346]:
+                    - listitem [ref=e347]:
+                      - generic [ref=e348]: →
+                      - text: Identidade SHA-256 gerada no momento da criação do documento
+                    - listitem [ref=e349]:
+                      - generic [ref=e350]: →
+                      - text: Versionamento imutável — nenhuma versão anterior pode ser sobrescrita
+                    - listitem [ref=e351]:
+                      - generic [ref=e352]: →
+                      - text: Cadeia de custódia com registro de todos os agentes envolvidos
+                    - listitem [ref=e353]:
+                      - generic [ref=e354]: →
+                      - text: Disponível como infraestrutura para qualquer produto Aurora ou externo
+                - generic [ref=e355]:
+                  - generic [ref=e356]:
+                    - generic [ref=e357]: Para quem
+                    - paragraph [ref=e358]: Qualquer operação que precise provar o que foi decidido, por quem, com base em quê.
+                  - link "Em breve" [ref=e359] [cursor=pointer]:
+                    - /url: /living-document
+                    - text: Em breve
+                    - img [ref=e360]
+      - generic [ref=e363]:
+        - generic [ref=e364]:
+          - generic [ref=e365]: Capítulo 07
+          - generic [ref=e367]: Quem constrói
+        - generic [ref=e368]:
+          - generic [ref=e369]:
+            - generic [ref=e370]:
+              - generic [ref=e371]: Rodrigo Winhaski · Fundador · Aurora
+              - heading "O futuro é determinista. Construo sistemas que tornam o erro improvável." [level=2] [ref=e372]:
+                - text: O futuro é determinista.
+                - generic [ref=e373]:
+                  - text: Construo sistemas que
+                  - text: tornam o erro improvável.
+            - generic [ref=e374]:
+              - paragraph [ref=e375]: "Rodrigo construiu a Aurora a partir de uma experiência direta: implementar automações de IA em operações reais e ver o que acontece quando não há governança. Não em teoria — em produção, com consequências."
+              - paragraph [ref=e376]: "O resultado foi uma convicção: o problema não é o modelo de IA. O problema é a ausência de arquitetura ao redor dele. Sem contratos de confiabilidade, sem trilha de decisão, sem governança — qualquer modelo vai errar de forma invisível."
+              - paragraph [ref=e377]: A Aurora é a resposta para esse problema. Não uma consultoria, não um SaaS genérico — um ecossistema construído componente por componente, com cada camada servindo ao princípio de que sistemas críticos exigem infraestrutura séria.
+          - generic [ref=e378]:
+            - generic [ref=e379]: Convicções operacionais
+            - generic [ref=e380]:
+              - generic [ref=e381]:
+                - generic [ref=e382]: "01"
+                - paragraph [ref=e383]: IA sem governança não é inovação — é risco acumulado sem responsável.
+              - generic [ref=e384]:
+                - generic [ref=e385]: "02"
+                - paragraph [ref=e386]: Velocidade de implementação sem arquitetura é dívida técnica paga com juros operacionais.
+              - generic [ref=e387]:
+                - generic [ref=e388]: "03"
+                - paragraph [ref=e389]: O modelo não é o produto. A infraestrutura que o sustenta é.
+              - generic [ref=e390]:
+                - generic [ref=e391]: "04"
+                - paragraph [ref=e392]: Auditabilidade não é feature — é pré-requisito para qualquer sistema crítico.
+            - generic [ref=e394]:
+              - generic [ref=e395]: Aurora Factory // MadLab Research Group
+              - paragraph [ref=e396]:
+                - text: Ecossistema independente. Sem investidor externo.
+                - text: Sem agenda que não seja a do produto.
+                - text: Construído em Curitiba, Brasil. Desde 2024.
+      - generic [ref=e397]:
+        - generic [ref=e398]:
+          - generic [ref=e399]: Capítulo 08
+          - generic [ref=e401]: O próximo passo
+        - generic [ref=e402]:
+          - generic [ref=e403]:
+            - heading "O próximo passo não é uma aposta. É uma decisão." [level=2] [ref=e404]:
+              - text: O próximo passo
+              - text: não é uma aposta.
+              - text: É uma decisão.
+            - paragraph [ref=e405]: Não vendemos software. Construímos infraestrutura. A conversa inicial não é um pitch — é um diagnóstico real da sua operação de IA e uma avaliação honesta se a Aurora resolve seu problema.
+            - generic [ref=e406]:
+              - link "Solicitar Diagnóstico" [ref=e407] [cursor=pointer]:
+                - /url: mailto:winhaski@gmail.com?subject=Diagnóstico Aurora — Infraestrutura de IA
+                - text: Solicitar Diagnóstico
+                - img [ref=e408]
+              - generic [ref=e410]: Resposta em até 24h · Sem compromisso de contratação
+          - generic [ref=e411]:
+            - generic [ref=e412]: O que acontece quando você entra em contato
+            - generic [ref=e413]:
+              - generic [ref=e414]:
+                - generic [ref=e415]: "01"
+                - generic [ref=e416]:
+                  - heading "Diagnóstico de infraestrutura" [level=4] [ref=e417]
+                  - paragraph [ref=e418]: "Conversa de 60 minutos com o fundador. Mapeamos sua operação atual de IA: o que está rodando, o que está falhando, e onde a ausência de governança está acumulando risco."
+              - generic [ref=e419]:
+                - generic [ref=e420]: "02"
+                - generic [ref=e421]:
+                  - heading "Relatório de gaps" [level=4] [ref=e422]
+                  - paragraph [ref=e423]: Documento estruturado com os três principais pontos de falha identificados, a causa raiz de cada um, e qual componente da Aurora resolve cada problema.
+              - generic [ref=e424]:
+                - generic [ref=e425]: "03"
+                - generic [ref=e426]:
+                  - heading "Proposta de arquitetura" [level=4] [ref=e427]
+                  - paragraph [ref=e428]: "Se houver fit, propomos o escopo de implementação: quais sistemas, em qual ordem, com quais contratos de entrega e critérios de auditoria."
+    - contentinfo [ref=e430]:
+      - generic [ref=e431]:
+        - generic [ref=e432]:
+          - link "ELYSIAN" [ref=e433] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e434]: Factory Operational
+        - navigation [ref=e435]:
+          - generic [ref=e436] [cursor=pointer]: Ecossistema
+          - generic [ref=e437] [cursor=pointer]: Produtos
+          - generic [ref=e438] [cursor=pointer]: Método
+          - generic [ref=e439] [cursor=pointer]: Diretrizes
+      - generic [ref=e440]:
+        - generic [ref=e441]:
+          - text: Audit Note
+          - generic [ref=e442]: "Build: 0x7E3A_2026 // Hash: 9f8ea...2d31 // Synchronized: 17/04/2026"
+        - text: AURORA FACTORY // MADLAB // © 2026

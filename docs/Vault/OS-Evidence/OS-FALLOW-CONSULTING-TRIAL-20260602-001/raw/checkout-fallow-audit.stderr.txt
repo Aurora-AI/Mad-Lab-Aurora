@@ -1,0 +1,3 @@
+Warning: --changed-since failed for ref 'main': fatal: ambiguous argument 'main...HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'

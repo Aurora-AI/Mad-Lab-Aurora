@@ -1,0 +1,91 @@
+{
+  "schema_version": "2.0.0",
+  "name": "MadLabAurora",
+  "classification": "creative-arm",
+  "root_path": "C:\\Projetos\\MadLabAurora",
+  "role": "Braço criativo da Aurora — direção de arte, motion design, WebGL e infraestrutura criativa para todo o ecossistema Elysian",
+  "last_updated": "2026-05-30",
+  "updated_by": "antigravity-sprint3",
+  "assets": [
+    {
+      "name": "aurora-web",
+      "path": "C:\\Projetos\\MadLabAurora\\aurora-web",
+      "classification": "creative-site",
+      "description": "Site institucional Aurora — Vite + TypeScript (porta 3001 em dev)",
+      "status": "active",
+      "owner": "MadLabAurora"
+    },
+    {
+      "name": "ElysianCorp",
+      "path": "C:\\Projetos\\MadLabAurora\\ElysianCorp",
+      "classification": "creative-site",
+      "description": "Site institucional Elysian — Astro + TailwindCSS. Hero dual-phase dark/luminoso.",
+      "status": "active",
+      "owner": "MadLabAurora"
+    },
+    {
+      "name": "AuroraCognitiveAssets",
+      "path": "C:\\Projetos\\MadLabAurora\\AuroraCognitiveAssets",
+      "classification": "cognitive-assets",
+      "description": "Ativos cognitivos e documentos de ingestão para o ecossistema",
+      "status": "active",
+      "owner": "MadLabAurora"
+    },
+    {
+      "name": "aurora-visual-assets",
+      "path": "C:\\Projetos\\MadLabAurora\\aurora-visual-assets",
+      "classification": "design-library",
+      "description": "Biblioteca canônica de componentes, shaders e interações WebGL. Manifesto em aurora-visual-assets/manifest.json",
+      "status": "active",
+      "owner": "MadLabAurora"
+    },
+    {
+      "name": "WebGL-Scroll-Sync-main",
+      "path": "C:\\Projetos\\MadLabAurora\\WebGL-Scroll-Sync-main",
+      "classification": "prototype",
+      "description": "Protótipo de sincronização WebGL com scroll DOM — padrões P046-P052 do Design Library",
+      "status": "active",
+      "owner": "MadLabAurora"
+    },
+    {
+      "name": "integrations/open-design",
+      "path": "C:\\Projetos\\MadLabAurora\\integrations\\open-design",
+      "classification": "integration",
+      "description": "Catálogo de 138 sistemas de design — usado por ceo-critique-theater e ceo-discovery-specialist",
+      "status": "active",
+      "owner": "MadLabAurora"
+    },
+    {
+      "name": "aurora-agents/skill-evolution-system",
+      "path": "C:\\Projetos\\MadLabAurora\\aurora-agents\\skill-evolution-system",
+      "classification": "internal-tooling",
+      "description": "Skill Evolution System — scaffolding. Status: planned (não operacional para produção). Ver STATUS.md.",
+      "status": "scaffolding",
+      "owner": "MadLabAurora"
+    },
+    {
+      "name": "Bando de Texturas",
+      "path": "C:\\Projetos\\MadLabAurora\\Bando de Texturas",
+      "classification": "design-assets",
+      "description": "Biblioteca de texturas para uso em shaders e efeitos atmosféricos",
+      "status": "active",
+      "owner": "MadLabAurora"
+    },
+    {
+      "name": "conductor",
+      "path": "C:\\Projetos\\MadLabAurora\\conductor",
+      "classification": "integration",
+      "description": "Integração local com Ozzmosis Conductor — consumo de capacidades da fábrica",
+      "status": "active",
+      "owner": "MadLabAurora"
+    },
+    {
+      "name": "Referências",
+      "path": "C:\\Projetos\\MadLabAurora\\Referências",
+      "classification": "reference-materials",
+      "description": "Materiais de referência visual — sites, portfólios, screenshots de referências S-Tier",
+      "status": "active",
+      "owner": "MadLabAurora"
+    }
+  ]
+}

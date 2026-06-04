@@ -1,0 +1,32 @@
+{
+  "id": "research_e2e_010",
+  "briefId": "brief_e2e_001",
+  "fontes": [
+    "entrevistas com executivos patrimoniais",
+    "landing pages de concorrentes"
+  ],
+  "concorrentes": [
+    "asset-playbook-a",
+    "asset-playbook-b"
+  ],
+  "lacunas": [
+    "explicacao superficial de risco",
+    "baixa clareza sobre uso estrategico"
+  ],
+  "linguagemDoMercado": [
+    "protecao patrimonial",
+    "alocacao inteligente"
+  ],
+  "objecoes": [
+    "produto parece complexo",
+    "receio de promessa excessiva"
+  ],
+  "riscos": [
+    "overpromise comercial",
+    "confusao entre liquidez e estrategia"
+  ],
+  "insights": [
+    "o mercado premia clareza operacional",
+    "a linguagem de seguranca aumenta confianca"
+  ]
+}

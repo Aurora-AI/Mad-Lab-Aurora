@@ -1,0 +1,3 @@
+   0.015260200s  WARN node_modules directory not found. Run `npm install` / `pnpm install` first for accurate results.
+Kept unused export(s) in aurora-visual-assets\backgrounds\plasma-grid\index.tsx: unresolved imports make the usage graph incomplete.
+Kept unused export(s) in aurora-visual-assets\interactions\image-comparison-slider\index.tsx: unresolved imports make the usage graph incomplete.

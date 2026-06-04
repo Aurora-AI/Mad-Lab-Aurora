@@ -1,0 +1,15 @@
+{
+  "name": "@aurora/depth-map-parallax",
+  "version": "1.0.0",
+  "description": "Standard Aurora Depth Map Parallax (P001) implementation using WebGPU/TSL.",
+  "main": "index.ts",
+  "aurora": {
+    "assetId": "depth-map-parallax-001",
+    "category": "effects/depth-map",
+    "patterns": ["P001"],
+    "phase": 2
+  },
+  "peerDependencies": {
+    "three": "^0.163.0"
+  }
+}

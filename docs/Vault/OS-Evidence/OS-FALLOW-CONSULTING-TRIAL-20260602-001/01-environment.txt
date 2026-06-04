@@ -1,0 +1,3 @@
+GitRepo: not_present
+WorkspaceRoot: C:\Projetos\MadLabAurora
+GitValidation: unavailable

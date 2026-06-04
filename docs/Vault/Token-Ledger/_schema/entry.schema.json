@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Aurora Token Ledger Entry",
+  "description": "Rastreamento de custo por OS/step/agent. Append-only. Uma entry por step.",
+  "type": "object",
+  "required": [
+    "entry_id",
+    "os_id",
+    "step_name",
+    "step_number",
+    "agent",
+    "model",
+    "input_tokens",
+    "output_tokens",
+    "total_tokens",
+    "cost_usd_estimated",
+    "duration_ms",
+    "timestamp"
+  ],
+  "properties": {
+    "entry_id": {
+      "type": "string",
+      "description": "UUID único desta entry. Formato: {os_id}-step-{N}",
+      "example": "OS-ANTIGRAVITY-AURORA-AGENTS-SKILLS-20260418-005-step-1"
+    },
+    "os_id": {
+      "type": "string",
+      "description": "ID canônico da OS executada"
+    },
+    "step_name": {
+      "type": "string",
+      "description": "Nome do passo conforme OS (ex: Passo 1 — Inventário)"
+    },
+    "step_number": {
+      "type": "integer",
+      "description": "Número sequencial do passo dentro da OS"
+    },
+    "agent": {
+      "type": "string",
+      "enum": ["antigravity", "claude-code", "codex", "claude-chat", "manual"],
+      "description": "Agente que executou o passo"
+    },
+    "model": {
+      "type": "string",
+      "description": "Modelo LLM usado",
+      "example": "gemini-2.0-flash, claude-sonnet-4-6, claude-haiku-4-5"
+    },
+    "input_tokens": {
+      "type": "integer",
+      "description": "Tokens de entrada (prompt + contexto)"
+    },
+    "output_tokens": {
+      "type": "integer",
+      "description": "Tokens de saída gerados"
+    },
+    "total_tokens": {
+      "type": "integer",
+      "description": "input_tokens + output_tokens"
+    },
+    "cost_usd_estimated": {
+      "type": "number",
+      "description": "Custo estimado em USD. Calcular: input * price_in + output * price_out pelo modelo"
+    },
+    "cost_brl_estimated": {
+      "type": "number",
+      "description": "cost_usd_estimated * fator_cambial_atual (incluir majoração fiscal BR: ~1.4x)"
+    },
+    "duration_ms": {
+      "type": "integer",
+      "description": "Duração do step em milissegundos"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 com timezone BR (-03:00)"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Observações opcionais (ex: cache hit, retry, prompt otimizado)"
+    },
+    "cache_hit": {
+      "type": "boolean",
+      "description": "true se o modelo usou cache de prompt (reduz custo)",
+      "default": false
+    }
+  }
+}

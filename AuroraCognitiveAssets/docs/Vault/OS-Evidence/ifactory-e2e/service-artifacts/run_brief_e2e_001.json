@@ -1,0 +1,198 @@
+{
+  "run": {
+    "runId": "run_brief_e2e_001",
+    "currentStage": "distribution",
+    "completedStages": [
+      "brief",
+      "research",
+      "architecture",
+      "review",
+      "distribution"
+    ],
+    "briefId": "brief_e2e_001",
+    "updatedAt": "2026-03-31T12:17:33.694Z"
+  },
+  "artifacts": {
+    "brief": {
+      "storedAt": "2026-03-31T12:17:33.503Z",
+      "payload": {
+        "id": "brief_e2e_001",
+        "tema": "Consorcio como clareza patrimonial",
+        "icp": "Executivos e empresarios",
+        "dorCentral": "Decisao patrimonial tomada com baixa visibilidade",
+        "promessaCentral": "Estruturar uma leitura clara do mecanismo antes da alocacao",
+        "formato": "ebook",
+        "objetivoDeNegocio": "gerar demanda qualificada",
+        "canal": "landing-page",
+        "restricoes": [],
+        "status": "approved"
+      }
+    },
+    "research": {
+      "storedAt": "2026-03-31T12:17:33.558Z",
+      "payload": {
+        "id": "research_e2e_010",
+        "briefId": "brief_e2e_001",
+        "fontes": [
+          "entrevistas com executivos patrimoniais",
+          "landing pages de concorrentes"
+        ],
+        "concorrentes": [
+          "asset-playbook-a",
+          "asset-playbook-b"
+        ],
+        "lacunas": [
+          "explicacao superficial de risco",
+          "baixa clareza sobre uso estrategico"
+        ],
+        "linguagemDoMercado": [
+          "protecao patrimonial",
+          "alocacao inteligente"
+        ],
+        "objecoes": [
+          "produto parece complexo",
+          "receio de promessa excessiva"
+        ],
+        "riscos": [
+          "overpromise comercial",
+          "confusao entre liquidez e estrategia"
+        ],
+        "insights": [
+          "o mercado premia clareza operacional",
+          "a linguagem de seguranca aumenta confianca"
+        ]
+      }
+    },
+    "architecture": {
+      "storedAt": "2026-03-31T12:17:33.607Z",
+      "payload": {
+        "id": "architecture_e2e_010",
+        "briefId": "brief_e2e_001",
+        "researchPackId": "research_e2e_010",
+        "tese": "Consorcio deve ser apresentado como instrumento de leitura patrimonial, nao como atalho promocional.",
+        "formato": "ebook",
+        "capitulosOuBlocos": [
+          "contexto patrimonial",
+          "mecanica do instrumento",
+          "criterios de decisao",
+          "proximo passo consultivo"
+        ],
+        "transformacaoPrometida": "O leitor passa de percepcao difusa para criterio claro de decisao patrimonial.",
+        "ctaPrincipal": "Solicitar diagnostico consultivo",
+        "escadaDeValor": [
+          "ebook",
+          "diagnostico",
+          "proposta consultiva"
+        ]
+      }
+    },
+    "review": {
+      "storedAt": "2026-03-31T12:17:33.650Z",
+      "payload": {
+        "id": "review_e2e_010",
+        "briefId": "brief_e2e_001",
+        "adherenceToBrief": {
+          "score": 9.1,
+          "rationale": "A arquitetura permaneceu aderente ao brief canonico."
+        },
+        "usefulDensity": {
+          "score": 8.8,
+          "rationale": "O material prioriza criterio pratico e elimina ruido promocional."
+        },
+        "differentiation": {
+          "score": 8.7,
+          "rationale": "A tese se diferencia por framing patrimonial e nao por hype."
+        },
+        "promiseSafety": {
+          "score": 9.2,
+          "rationale": "A promessa e segura e evita extrapolacoes comerciais."
+        },
+        "commercialPotential": {
+          "score": 8.9,
+          "rationale": "O CTA se conecta bem com a escada consultiva."
+        },
+        "decision": "approved",
+        "globalScore": 8.9,
+        "reviewer": "trustware-reviewer-e2e"
+      }
+    },
+    "distribution": {
+      "storedAt": "2026-03-31T12:17:33.694Z",
+      "payload": {
+        "id": "distribution_e2e_010",
+        "briefId": "brief_e2e_001",
+        "title": "Consorcio com criterio patrimonial",
+        "subtitle": "Como tomar a decisao com mais clareza e menos ruida comercial",
+        "promise": "Entender o instrumento antes de comprometer capital",
+        "cta": "Solicitar diagnostico patrimonial",
+        "landingCopy": "Uma leitura objetiva para decidir com mais criterio, seguranca e visibilidade patrimonial.",
+        "emailSequence": [
+          "email_abertura",
+          "email_objecoes",
+          "email_cta"
+        ],
+        "socialDerivatives": [
+          "carrossel_clareza_patrimonial",
+          "post_objecoes",
+          "post_cta"
+        ]
+      }
+    }
+  },
+  "auditTrail": [
+    {
+      "occurredAt": "2026-03-31T12:17:33.497Z",
+      "action": "pipeline:intake",
+      "principal": "consumer-full",
+      "keyId": "dev-internal-e2e-v4",
+      "consumer": "AuroraCognitiveAssets",
+      "environment": "dev",
+      "scope": "pipeline:write"
+    },
+    {
+      "occurredAt": "2026-03-31T12:17:33.553Z",
+      "action": "pipeline:research",
+      "principal": "consumer-full",
+      "keyId": "dev-internal-e2e-v4",
+      "consumer": "AuroraCognitiveAssets",
+      "environment": "dev",
+      "scope": "pipeline:write"
+    },
+    {
+      "occurredAt": "2026-03-31T12:17:33.605Z",
+      "action": "pipeline:architecture",
+      "principal": "consumer-full",
+      "keyId": "dev-internal-e2e-v4",
+      "consumer": "AuroraCognitiveAssets",
+      "environment": "dev",
+      "scope": "pipeline:write"
+    },
+    {
+      "occurredAt": "2026-03-31T12:17:33.646Z",
+      "action": "pipeline:review",
+      "principal": "consumer-full",
+      "keyId": "dev-internal-e2e-v4",
+      "consumer": "AuroraCognitiveAssets",
+      "environment": "dev",
+      "scope": "pipeline:write"
+    },
+    {
+      "occurredAt": "2026-03-31T12:17:33.692Z",
+      "action": "pipeline:distribution",
+      "principal": "consumer-full",
+      "keyId": "dev-internal-e2e-v4",
+      "consumer": "AuroraCognitiveAssets",
+      "environment": "dev",
+      "scope": "pipeline:write"
+    },
+    {
+      "occurredAt": "2026-03-31T12:17:33.724Z",
+      "action": "pipeline:get_run",
+      "principal": "consumer-full",
+      "keyId": "dev-internal-e2e-v4",
+      "consumer": "AuroraCognitiveAssets",
+      "environment": "dev",
+      "scope": "pipeline:read"
+    }
+  ]
+}

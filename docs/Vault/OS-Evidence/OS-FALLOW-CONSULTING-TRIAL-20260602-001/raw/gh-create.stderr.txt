@@ -1,0 +1,3 @@
+Flag --confirm has been deprecated, Pass any argument to skip confirmation prompt
+To https://github.com/Aurora-AI/Elysiancorpfront-backup-20260602.git
+ * [new branch]      HEAD -> main

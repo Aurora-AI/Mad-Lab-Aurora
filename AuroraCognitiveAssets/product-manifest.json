@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "name": "AuroraCognitiveAssets",
+  "classification": "product",
+  "product_type": "cognitive-assets-product",
+  "root_path": "C:\\Projetos\\MadLabAurora\\AuroraCognitiveAssets",
+  "portfolio_group": "MadLabAurora",
+  "domain": "cognitive asset production, packaging and distribution",
+  "factory_dependencies": [
+    {
+      "name": "@aurora/infoproduct-factory-contracts",
+      "type": "factory-contract-package",
+      "consumption": "formal-dependency",
+      "integration_status": "declared-consumer-wp3"
+    },
+    {
+      "name": "@aurora/infoproduct-factory-service",
+      "type": "factory-platform-service",
+      "consumption": "typed-api",
+      "integration_status": "consumer-secure-operations-ready-os-024"
+    },
+    {
+      "name": "aurora-clevel-advisor",
+      "type": "global-skill",
+      "consumption": "skill-contract"
+    },
+    {
+      "name": "agent-red-team-sales",
+      "type": "global-skill",
+      "consumption": "skill-contract"
+    },
+    {
+      "name": "ingestor",
+      "type": "global-skill",
+      "consumption": "skill-contract"
+    },
+    {
+      "name": "bibliotecario",
+      "type": "global-skill",
+      "consumption": "skill-contract"
+    },
+    {
+      "name": "cientista",
+      "type": "global-skill",
+      "consumption": "skill-contract"
+    }
+  ],
+  "public_interfaces": {
+    "apps": [
+      "apps/content-engine"
+    ],
+    "vault": [
+      "docs/Vault"
+    ]
+  },
+  "factory_consumption_policy": {
+    "shared_code": "versioned-packages-only",
+    "stateful_capabilities": "typed-apis-only",
+    "forbidden": [
+      "cross-repo imports by path",
+      "hardcoded checkout paths",
+      "copying factory source into product"
+    ],
+    "governed_system": "infoproduct-factory",
+    "active_runtime_integration": "typed-api-staged-endpoints-with-scoped-bearer-auth-consumer-environment-binding-access-audit-and-factory-managed-cutover",
+    "required_scopes": [
+      "pipeline:read",
+      "pipeline:write"
+    ],
+    "consumer_identity": "AuroraCognitiveAssets",
+    "environment_identity": "dev",
+    "audit_expectation": "factory-persists-principal-consumer-environment-scope-action-and-keyid-per-run",
+    "credential_lifecycle_mode": "factory-managed-registry-plan-and-cutover"
+  }
+}

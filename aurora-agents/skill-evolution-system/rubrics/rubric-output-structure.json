@@ -1,0 +1,23 @@
+{
+  "name": "output-structure",
+  "description": "Avalia se a skill define com precisão o formato e a estrutura da saída esperada, preferencialmente com templates/exemplos.",
+  "max_points": 20,
+  "criteria": [
+    {
+      "condition": "Seção explícita de output/saída documentada",
+      "points": 5
+    },
+    {
+      "condition": "Especificação do formato de arquivo (ex: JSON, Markdown, YAML) e schemas se aplicável",
+      "points": 5
+    },
+    {
+      "condition": "Presença de blocos de exemplo de saída (código ou markdown) ilustrando a estrutura esperada",
+      "points": 5
+    },
+    {
+      "condition": "Instruções explícitas de não omitir campos ou usar placeholders",
+      "points": 5
+    }
+  ]
+}

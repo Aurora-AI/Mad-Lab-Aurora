@@ -1,0 +1,213 @@
+{
+  "project": "Aurora Design Library",
+  "version": "1.2.0",
+  "categories": {
+    "Effects": "Visual and motion effects for cinematic immersion.",
+    "Patterns": "Structural layout and interaction architectures.",
+    "Principles": "Operational directives and governance frameworks for development.",
+    "ARC": "Materialized 3D generative assets (Aurora Rendering Core)."
+  },
+  "seeds": [
+    {
+      "id": "HERO-SCRAMBLE",
+      "name": "Hero Scramble",
+      "type": "Effect",
+      "path": "Effects/hero-scramble.md",
+      "source": "ElysianLex",
+      "description": "Random characters freezing into deterministic headlines."
+    },
+    {
+      "id": "PARTICLE-FORM",
+      "name": "Particle Image Form",
+      "type": "Effect",
+      "path": "Effects/particle-form.md",
+      "source": "Ozzmosis",
+      "description": "Kinetic particle reconstruction for visual assets."
+    },
+    {
+      "id": "EMOTIONAL-PHYSICS",
+      "name": "Emotional Physics",
+      "type": "Effect",
+      "path": "Effects/emotional-physics.md",
+      "source": "Ozzmosis",
+      "description": "High-gravitas motion presets (Stiffness/Damping)."
+    },
+    {
+      "id": "CHRONOS-NAUTILUS",
+      "name": "Chronos Nautilus",
+      "type": "ARC",
+      "path": "ARC/chronos-nautilus.md",
+      "source": "ARC-Portal",
+      "artifactId": "cca01d0b-34b4-46ff-881c-7ebf61d00b5a",
+      "description": "3D shell archetype for organic-deterministic surfaces."
+    },
+    {
+      "id": "CINEMATIC-SEQUENTIAL",
+      "name": "Cinematic Sequential",
+      "type": "Pattern",
+      "path": "Patterns/cinematic-sequential.md",
+      "source": "Certum",
+      "description": "Sticky scroll narrative architecture."
+    },
+    {
+      "id": "EVIDENCE-CANVAS",
+      "name": "Evidence Canvas",
+      "type": "Pattern",
+      "path": "Patterns/evidence-canvas.md",
+      "source": "ElysianLex",
+      "description": "Interactive semantic data grid."
+    },
+    {
+      "id": "CLIP-REVEAL",
+      "name": "Clip Reveal",
+      "type": "Effect",
+      "path": "Effects/clip-reveal.md",
+      "source": "Certum",
+      "description": "Mechanical emergence via viewport clipping and aggressive ease."
+    },
+    {
+      "id": "INERTIA-SCROLL",
+      "name": "Inertia Engine",
+      "type": "Effect",
+      "path": "Effects/inertia-engine.md",
+      "source": "Certum",
+      "description": "Mass-driven scroll physics for physical presence."
+    },
+    {
+      "id": "VIRTUAL-TRACK-INERTIA",
+      "name": "Virtual Track Inertia",
+      "type": "Effect",
+      "path": "Effects/virtual-track-inertia.md",
+      "source": "Hyperplexed",
+      "description": "Invisible slider interaction with inverse parallax image depth."
+    },
+    {
+      "id": "STRUCTURAL-TYPO",
+      "name": "Structural Typography",
+      "type": "Pattern",
+      "path": "Patterns/structural-typography.md",
+      "source": "Certum",
+      "description": "Linear vw-scaling and negative tracking architecture."
+    },
+    {
+      "id": "OPERATIONAL-SURFACE",
+      "name": "Operational Surface",
+      "type": "Pattern",
+      "path": "Patterns/operational-surface.md",
+      "source": "CRM",
+      "description": "High-density forensic data grid with surface tiering."
+    },
+    {
+      "id": "SMAS-COGNITION",
+      "name": "SMAS Cognition",
+      "type": "Pattern",
+      "path": "Patterns/smas-cognition.md",
+      "source": "Certum",
+      "description": "Cognitive hierarchy display pattern for multi-agent synthesis."
+    },
+    {
+      "id": "GRAVITY-DRAG",
+      "name": "Gravity Drag",
+      "type": "Pattern",
+      "path": "Patterns/gravity-drag.md",
+      "source": "Hyperplexed",
+      "description": "Stateful manual interactions with physical mass and momentum."
+    },
+    {
+      "id": "SOVEREIGN-HERO-NOISE",
+      "name": "Sovereign Hero Noise",
+      "type": "Effect",
+      "path": "Effects/SovereignHero.md",
+      "source": "Elysian / Jay E",
+      "description": "WebGL Scramble-Noise-to-Truth reveal with auditor-pointer focus."
+    },
+    {
+      "id": "AINO-TERMINAL-GRID",
+      "name": "Aino Terminal Grid",
+      "type": "Pattern",
+      "path": "Patterns/TerminalGrid.md",
+      "source": "Aino / Jay E",
+      "description": "Deterministic viewport grid based on character dimensions."
+    },
+    {
+      "id": "TECHNICAL-ASCII-REVEAL",
+      "name": "Technical ASCII Reveal",
+      "type": "Pattern",
+      "path": "Patterns/AsciiReveal.md",
+      "source": "Elysian / Jay E",
+      "description": "Modular forensic reveal engine supporting cinematic 1.8s transitions and interactive X-Ray modes."
+    },
+    {
+      "id": "INSTITUTIONAL-SMOOTH-SCROLL",
+      "name": "Institutional Smooth Scroll",
+      "type": "Effect",
+      "path": "Effects/SmoothScroll.md",
+      "source": "Studio Freight / Jay E",
+      "description": "High-inertia 1.2s scroll engine with exponential decay."
+    },
+    {
+      "id": "CINEMATOGRAPHER-RULES",
+      "name": "Antigravity Cinematographer Rules",
+      "type": "Principle",
+      "path": "Principles/cinematographer-rules.md",
+      "source": "Claude Library",
+      "description": "Operational manual for motion design without altering structural integrity."
+    },
+    {
+      "id": "GOLD-PIPELINE",
+      "name": "Aurora Gold Pipeline",
+      "type": "Principle",
+      "path": "Principles/gold-pipeline.md",
+      "source": "Claude Library",
+      "description": "End-to-end framework: Stitch (Design) -> Antigravity (Motion) -> Deploy."
+    },
+    {
+      "id": "KINETIC-TYPOGRAPHY",
+      "name": "Kinetic Typography",
+      "type": "Principle",
+      "path": "Principles/kinetic-typography.md",
+      "source": "Arsenal / Jay E",
+      "description": "Premium text entry logic using SplitType and GSAP character-stagger sequences."
+    },
+    {
+      "id": "BLACK-HOLE-REVEAL",
+      "name": "Black Hole Reveal",
+      "type": "Effect",
+      "path": "Effects/black-hole-reveal.md",
+      "source": "Claude Library",
+      "description": "Radial-gradient mask reveal with scroll and cursor tracking."
+    },
+    {
+      "id": "SPIRAL-VORTEX-MENU",
+      "name": "Spiral Vortex Menu",
+      "type": "Effect",
+      "path": "Effects/spiral-vortex-menu.md",
+      "source": "Claude Library",
+      "description": "Trigonometric layout for immersive navigation nodes."
+    },
+    {
+      "id": "MAGNETIC-INTERACTIONS",
+      "name": "Magnetic Interactions",
+      "type": "Effect",
+      "path": "Effects/magnetic-interactions.md",
+      "source": "Claude Library",
+      "description": "Mouse-reactive element transformations with physical inertia."
+    },
+    {
+      "id": "PARALLAX-DEPTH-STACK",
+      "name": "Parallax Depth Stack",
+      "type": "Pattern",
+      "path": "Patterns/parallax-depth-stack.md",
+      "source": "Claude Library",
+      "description": "Optimized depth-layering logic for cinematic scrolling."
+    },
+    {
+      "id": "X-RAY-ASCII-REVEAL",
+      "name": "X-Ray ASCII Reveal",
+      "type": "Effect",
+      "path": "Patterns/AsciiReveal.md",
+      "source": "Arsenal / Jay E",
+      "description": "Spatial-interactive ASCII flashlight reveal via CSS mask-image."
+    }
+  ]
+}

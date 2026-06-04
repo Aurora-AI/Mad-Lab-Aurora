@@ -1,0 +1,12 @@
+npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+npm warn cleanup Failed to remove some directories [
+npm warn cleanup   [
+npm warn cleanup     'C:\\Projetos\\MadLabAurora\\checkouts\\Mad-Lab-Aurora\\aurora-web\\node_modules\\@tailwindcss\\.oxide-win32-x64-msvc-37g5tEGC',
+npm warn cleanup     [Error: EPERM: operation not permitted, unlink 'C:\Projetos\MadLabAurora\checkouts\Mad-Lab-Aurora\aurora-web\node_modules\@tailwindcss\.oxide-win32-x64-msvc-37g5tEGC\tailwindcss-oxide.win32-x64-msvc.node'] {
+npm warn cleanup       errno: -4048,
+npm warn cleanup       code: 'EPERM',
+npm warn cleanup       syscall: 'unlink',
+npm warn cleanup       path: 'C:\\Projetos\\MadLabAurora\\checkouts\\Mad-Lab-Aurora\\aurora-web\\node_modules\\@tailwindcss\\.oxide-win32-x64-msvc-37g5tEGC\\tailwindcss-oxide.win32-x64-msvc.node'
+npm warn cleanup     }
+npm warn cleanup   ]
+npm warn cleanup ]

@@ -1,0 +1,23 @@
+{
+  "name": "mode-coverage",
+  "description": "Avalia se a skill cobre múltiplos modos de operação detalhados, com regras e fluxos específicos para cada um.",
+  "max_points": 20,
+  "criteria": [
+    {
+      "condition": "Seção explícita de modos de operação ('Modos de Operação' ou semelhante)",
+      "points": 5
+    },
+    {
+      "condition": "Definição de pelo menos 2 modos de operação (ex: Express, Completo, Diagnóstico)",
+      "points": 5
+    },
+    {
+      "condition": "Descrição clara de quando utilizar cada modo e quais as diferenças no fluxo de execução",
+      "points": 5
+    },
+    {
+      "condition": "Diferenciação no volume/estrutura do output para cada modo",
+      "points": 5
+    }
+  ]
+}

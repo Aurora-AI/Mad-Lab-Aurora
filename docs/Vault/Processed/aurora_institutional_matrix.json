@@ -1,0 +1,12 @@
+{
+  "document": "aurora_institutional_architecture_briefing.md",
+  "timestamp": "2026-04-23T21:43:21Z",
+  "hash": "7d8e9f2a1b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e",
+  "classification": "Hibrido",
+  "gain_estimate": "+45%",
+  "impacted_skills": ["ceo-web", "ceo-copy", "taste-design", "site-builder", "ceo-effects"],
+  "proposed_skill": "credency-protocol-v1",
+  "decision": "INGERIR",
+  "status": "APPROVED",
+  "custody_chain": ["ingestor", "bibliotecario"]
+}

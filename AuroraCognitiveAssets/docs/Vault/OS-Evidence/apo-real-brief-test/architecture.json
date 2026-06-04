@@ -1,0 +1,22 @@
+{
+  "id": "architecture_apo_manifesto_001",
+  "briefId": "brief_apo_manifesto_001",
+  "researchPackId": "research_apo_manifesto_001",
+  "tese": "A performance sustentavel nasce quando o gestor deixa de reagir a numeros isolados e passa a operar como infraestrutura de leitura, intervencao e alocacao da equipe.",
+  "formato": "ebook",
+  "capitulosOuBlocos": [
+    "o colapso do gestor-cobrador",
+    "APO como leitura de realidade, leitura humana e intervencao",
+    "casos de prova: top performer toxico e escala de 1.5M para 60M",
+    "como transformar intuicao em sistema transferivel",
+    "proximo passo: diagnostico APO"
+  ],
+  "transformacaoPrometida": "O leitor passa de uma gestao reativa baseada em meta e pressao para um modelo de diagnostico sistemico com criterio de intervencao.",
+  "ctaPrincipal": "Solicitar diagnostico APO",
+  "escadaDeValor": [
+    "ebook manifesto APO",
+    "diagnostico APO",
+    "consultoria de implementacao",
+    "augmentation layer com IA"
+  ]
+}

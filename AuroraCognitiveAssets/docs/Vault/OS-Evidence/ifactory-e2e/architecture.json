@@ -1,0 +1,20 @@
+{
+  "id": "architecture_e2e_010",
+  "briefId": "brief_e2e_001",
+  "researchPackId": "research_e2e_010",
+  "tese": "Consorcio deve ser apresentado como instrumento de leitura patrimonial, nao como atalho promocional.",
+  "formato": "ebook",
+  "capitulosOuBlocos": [
+    "contexto patrimonial",
+    "mecanica do instrumento",
+    "criterios de decisao",
+    "proximo passo consultivo"
+  ],
+  "transformacaoPrometida": "O leitor passa de percepcao difusa para criterio claro de decisao patrimonial.",
+  "ctaPrincipal": "Solicitar diagnostico consultivo",
+  "escadaDeValor": [
+    "ebook",
+    "diagnostico",
+    "proposta consultiva"
+  ]
+}

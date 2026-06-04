@@ -1,0 +1,23 @@
+{
+  "domain": "madlab",
+  "consumer_id": "madlab-aurora-vertical",
+  "capabilities": {
+    "observability.get_trace_summary": {
+      "required": true,
+      "type": "read-only",
+      "fallback": "log_warning_only"
+    },
+    "observability.osqa.list_qa_artifacts_by_os": {
+      "required": true,
+      "type": "read-only",
+      "fallback": "log_warning_only"
+    },
+    "topology-impact-analyzer": {
+      "required": false,
+      "type": "contract-only",
+      "status": "planned_or_contract_only",
+      "fallback": "local_static_dependency_scan"
+    }
+  },
+  "on_unavailable": "FACTORY_TOOL_UNAVAILABLE"
+}

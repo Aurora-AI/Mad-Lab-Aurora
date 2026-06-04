@@ -1,0 +1,21 @@
+{
+  "name": "@aurora-visual/webgl-scroll-sync",
+  "version": "1.0.0",
+  "description": "Sincronização canvas WebGL com elementos DOM via scroll nativo. Zero drift, zero scroll-jacking.",
+  "origin": "external",
+  "source": "https://github.com/lusionltd/WebGL-Scroll-Sync",
+  "author": "Lusion Ltd",
+  "license": "MIT",
+  "aurora_status": "ingested",
+  "category": "effects/scroll-sync",
+  "patterns": ["P046", "P047", "P048", "P049", "P050", "P051", "P052"],
+  "peerDependencies": {
+    "three": ">=0.128.0"
+  },
+  "notes": "Infraestrutura de anchoring WebGL+DOM. Combinar com shaders de profundidade (P001-P005) para profundidade impossível ancorada ao DOM.",
+  "known_limitations": [
+    "Sem prefers-reduced-motion check — adicionar antes de produção",
+    "Fragment shader com 5 samples — monitorar em mobile low-end",
+    "Padding buffer aumenta pixels renderizados em ~50% no eixo vertical"
+  ]
+}

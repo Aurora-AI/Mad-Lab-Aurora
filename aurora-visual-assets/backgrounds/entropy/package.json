@@ -1,0 +1,14 @@
+{
+  "name": "@aurora/entropy",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "dependencies": {
+    "next": "latest",
+    "framer-motion": "latest"
+  },
+  "aurora": {
+    "type": "background",
+    "patterns": ["P016", "P017"],
+    "status": "production"
+  }
+}

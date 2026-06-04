@@ -1,0 +1,479 @@
+{
+  "project": "MadLabAurora",
+  "skills": [
+    {
+      "name": "ceo-business-partner",
+      "status": "installed",
+      "installed_at": "2026-04-18T11:46:18Z"
+    },
+    {
+      "name": "ceo-copy",
+      "status": "installed",
+      "installed_at": "2026-04-18T11:46:18Z"
+    },
+    {
+      "name": "ceo-design",
+      "status": "installed",
+      "installed_at": "2026-04-18T11:46:18Z"
+    },
+    {
+      "name": "ceo-effects",
+      "status": "installed",
+      "installed_at": "2026-04-18T11:46:18Z"
+    },
+    {
+      "name": "ceo-marketing",
+      "status": "installed",
+      "installed_at": "2026-04-18T11:46:18Z"
+    },
+    {
+      "name": "ceo-product-owner",
+      "status": "installed",
+      "installed_at": "2026-04-18T11:46:18Z"
+    },
+    {
+      "name": "ceo-web",
+      "status": "installed",
+      "installed_at": "2026-04-18T11:46:18Z"
+    },
+    {
+      "name": "design-md",
+      "status": "installed",
+      "installed_at": "2026-04-18T11:46:18Z"
+    },
+    {
+      "name": "qa-review",
+      "status": "installed",
+      "installed_at": "2026-04-18T11:46:18Z"
+    },
+    {
+      "name": "taste-design",
+      "status": "installed",
+      "installed_at": "2026-04-18T11:46:18Z"
+    }
+  ],
+  "last_synced_at": "2026-05-06T18:15:00Z",
+  "status": "CERTIFIED-INDUSTRIAL",
+  "repository_root": "C:\\Aurora\\aurora-agents",
+  "project_root": "C:\\Projetos\\MadLabAurora",
+  "installed_skills": {
+    "engenheiro-reverso": {
+      "version": "1.0.1-PROD",
+      "status": "production",
+      "installed_at": "2026-05-06T09:41:58+00:00",
+      "installed_path": "C:\\Projetos\\MadLabAurora\\.aurora\\skills\\engenheiro-reverso",
+      "source_path": "C:\\Aurora\\aurora-agents\\engenheiro-reverso"
+    },
+    "ceo-discovery-specialist": {
+      "version": "2.1.0-HARDENED",
+      "status": "production",
+      "installed_at": "2026-05-06T18:13:30+00:00",
+      "vault_id": "84b7694f-80d1-4406-838c-a15cbd249ef9",
+      "installed_path": "C:\\Projetos\\MadLabAurora\\.aurora\\skills\\ceo-discovery-specialist"
+    },
+    "ceo-critique-theater": {
+      "version": "2.1.0-HARDENED",
+      "status": "production",
+      "installed_at": "2026-05-06T18:13:31+00:00",
+      "vault_id": "29422b9b-49e6-4b79-8869-2456c8399a8d",
+      "installed_path": "C:\\Projetos\\MadLabAurora\\.aurora\\skills\\ceo-critique-theater"
+    },
+    "open-design-library": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "library",
+      "installed_at": "2026-05-06T09:50:00+00:00",
+      "path": "C:\\Projetos\\MadLabAurora\\integrations\\open-design",
+      "protocols": [
+        "docs/Vault/Raw/protocolo_descoberta_open_design.md",
+        "docs/Vault/Raw/escolas_visuais_open_design.md",
+        "docs/Vault/Raw/critique_theater_spec.md",
+        "integrations/open-design/tokens_open_design.json"
+      ]
+    },
+    "od-audio-jingle": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.020329",
+      "path": "integrations\\open-design\\skills\\audio-jingle"
+    },
+    "od-blog-post": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.020964",
+      "path": "integrations\\open-design\\skills\\blog-post"
+    },
+    "od-critique": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.020964",
+      "path": "integrations\\open-design\\skills\\critique"
+    },
+    "od-dashboard": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.020964",
+      "path": "integrations\\open-design\\skills\\dashboard"
+    },
+    "od-dating-web": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.021679",
+      "path": "integrations\\open-design\\skills\\dating-web"
+    },
+    "od-design-brief": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.021679",
+      "path": "integrations\\open-design\\skills\\design-brief"
+    },
+    "od-digital-eguide": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.021679",
+      "path": "integrations\\open-design\\skills\\digital-eguide"
+    },
+    "od-docs-page": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.022407",
+      "path": "integrations\\open-design\\skills\\docs-page"
+    },
+    "od-email-marketing": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.022407",
+      "path": "integrations\\open-design\\skills\\email-marketing"
+    },
+    "od-eng-runbook": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.022407",
+      "path": "integrations\\open-design\\skills\\eng-runbook"
+    },
+    "od-finance-report": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.022407",
+      "path": "integrations\\open-design\\skills\\finance-report"
+    },
+    "od-gamified-app": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.023427",
+      "path": "integrations\\open-design\\skills\\gamified-app"
+    },
+    "od-guizang-ppt": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.023427",
+      "path": "integrations\\open-design\\skills\\guizang-ppt"
+    },
+    "od-hatch-pet": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.023427",
+      "path": "integrations\\open-design\\skills\\hatch-pet"
+    },
+    "od-hr-onboarding": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.023427",
+      "path": "integrations\\open-design\\skills\\hr-onboarding"
+    },
+    "od-html-ppt": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.023427",
+      "path": "integrations\\open-design\\skills\\html-ppt"
+    },
+    "od-html-ppt-course-module": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.023427",
+      "path": "integrations\\open-design\\skills\\html-ppt-course-module"
+    },
+    "od-html-ppt-dir-key-nav-minimal": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.023427",
+      "path": "integrations\\open-design\\skills\\html-ppt-dir-key-nav-minimal"
+    },
+    "od-html-ppt-graphify-dark-graph": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.023427",
+      "path": "integrations\\open-design\\skills\\html-ppt-graphify-dark-graph"
+    },
+    "od-html-ppt-hermes-cyber-terminal": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.023427",
+      "path": "integrations\\open-design\\skills\\html-ppt-hermes-cyber-terminal"
+    },
+    "od-html-ppt-knowledge-arch-blueprint": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.023427",
+      "path": "integrations\\open-design\\skills\\html-ppt-knowledge-arch-blueprint"
+    },
+    "od-html-ppt-obsidian-claude-gradient": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.023427",
+      "path": "integrations\\open-design\\skills\\html-ppt-obsidian-claude-gradient"
+    },
+    "od-html-ppt-pitch-deck": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.023427",
+      "path": "integrations\\open-design\\skills\\html-ppt-pitch-deck"
+    },
+    "od-html-ppt-presenter-mode-reveal": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.023427",
+      "path": "integrations\\open-design\\skills\\html-ppt-presenter-mode-reveal"
+    },
+    "od-html-ppt-product-launch": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.023427",
+      "path": "integrations\\open-design\\skills\\html-ppt-product-launch"
+    },
+    "od-html-ppt-taste-brutalist": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.023427",
+      "path": "integrations\\open-design\\skills\\html-ppt-taste-brutalist"
+    },
+    "od-html-ppt-taste-editorial": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.023427",
+      "path": "integrations\\open-design\\skills\\html-ppt-taste-editorial"
+    },
+    "od-html-ppt-tech-sharing": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.025245",
+      "path": "integrations\\open-design\\skills\\html-ppt-tech-sharing"
+    },
+    "od-html-ppt-testing-safety-alert": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.025245",
+      "path": "integrations\\open-design\\skills\\html-ppt-testing-safety-alert"
+    },
+    "od-html-ppt-weekly-report": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.025245",
+      "path": "integrations\\open-design\\skills\\html-ppt-weekly-report"
+    },
+    "od-html-ppt-xhs-pastel-card": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.025245",
+      "path": "integrations\\open-design\\skills\\html-ppt-xhs-pastel-card"
+    },
+    "od-html-ppt-xhs-post": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.025245",
+      "path": "integrations\\open-design\\skills\\html-ppt-xhs-post"
+    },
+    "od-html-ppt-xhs-white-editorial": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.025245",
+      "path": "integrations\\open-design\\skills\\html-ppt-xhs-white-editorial"
+    },
+    "od-hyperframes": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.025245",
+      "path": "integrations\\open-design\\skills\\hyperframes"
+    },
+    "od-image-poster": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.025245",
+      "path": "integrations\\open-design\\skills\\image-poster"
+    },
+    "od-invoice": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.025245",
+      "path": "integrations\\open-design\\skills\\invoice"
+    },
+    "od-kami-deck": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.025245",
+      "path": "integrations\\open-design\\skills\\kami-deck"
+    },
+    "od-kami-landing": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.025245",
+      "path": "integrations\\open-design\\skills\\kami-landing"
+    },
+    "od-kanban-board": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.025245",
+      "path": "integrations\\open-design\\skills\\kanban-board"
+    },
+    "od-live-artifact": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.025245",
+      "path": "integrations\\open-design\\skills\\live-artifact"
+    },
+    "od-magazine-poster": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.025245",
+      "path": "integrations\\open-design\\skills\\magazine-poster"
+    },
+    "od-meeting-notes": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.025245",
+      "path": "integrations\\open-design\\skills\\meeting-notes"
+    },
+    "od-mobile-app": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.025245",
+      "path": "integrations\\open-design\\skills\\mobile-app"
+    },
+    "od-mobile-onboarding": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.025245",
+      "path": "integrations\\open-design\\skills\\mobile-onboarding"
+    },
+    "od-motion-frames": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026259",
+      "path": "integrations\\open-design\\skills\\motion-frames"
+    },
+    "od-open-design-landing": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026259",
+      "path": "integrations\\open-design\\skills\\open-design-landing"
+    },
+    "od-open-design-landing-deck": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026259",
+      "path": "integrations\\open-design\\skills\\open-design-landing-deck"
+    },
+    "od-pm-spec": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026259",
+      "path": "integrations\\open-design\\skills\\pm-spec"
+    },
+    "od-pptx-html-fidelity-audit": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026259",
+      "path": "integrations\\open-design\\skills\\pptx-html-fidelity-audit"
+    },
+    "od-pricing-page": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026259",
+      "path": "integrations\\open-design\\skills\\pricing-page"
+    },
+    "od-replit-deck": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026259",
+      "path": "integrations\\open-design\\skills\\replit-deck"
+    },
+    "od-saas-landing": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026259",
+      "path": "integrations\\open-design\\skills\\saas-landing"
+    },
+    "od-simple-deck": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026770",
+      "path": "integrations\\open-design\\skills\\simple-deck"
+    },
+    "od-social-carousel": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026770",
+      "path": "integrations\\open-design\\skills\\social-carousel"
+    },
+    "od-sprite-animation": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026770",
+      "path": "integrations\\open-design\\skills\\sprite-animation"
+    },
+    "od-team-okrs": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026770",
+      "path": "integrations\\open-design\\skills\\team-okrs"
+    },
+    "od-tweaks": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026770",
+      "path": "integrations\\open-design\\skills\\tweaks"
+    },
+    "od-video-shortform": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026770",
+      "path": "integrations\\open-design\\skills\\video-shortform"
+    },
+    "od-web-prototype": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026770",
+      "path": "integrations\\open-design\\skills\\web-prototype"
+    },
+    "od-web-prototype-taste-brutalist": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026770",
+      "path": "integrations\\open-design\\skills\\web-prototype-taste-brutalist"
+    },
+    "od-web-prototype-taste-editorial": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026770",
+      "path": "integrations\\open-design\\skills\\web-prototype-taste-editorial"
+    },
+    "od-web-prototype-taste-soft": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026770",
+      "path": "integrations\\open-design\\skills\\web-prototype-taste-soft"
+    },
+    "od-weekly-update": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026770",
+      "path": "integrations\\open-design\\skills\\weekly-update"
+    },
+    "od-wireframe-sketch": {
+      "version": "1.0.0-INTEGRATED",
+      "status": "integrated",
+      "installed_at": "2026-05-06T15:06:22.026770",
+      "path": "integrations\\open-design\\skills\\wireframe-sketch"
+    }
+  },
+  "updated_at": "2026-05-06T15:06:22.026770"
+}

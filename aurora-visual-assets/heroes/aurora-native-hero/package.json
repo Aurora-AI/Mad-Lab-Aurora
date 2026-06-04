@@ -1,0 +1,15 @@
+{
+  "name": "@aurora-visual/aurora-native-hero",
+  "version": "1.0.0",
+  "description": "Hero de entrada Aurora-native. Tipografia como único elemento visual. Scroll como mecanismo de revelação.",
+  "origin": "aurora-native",
+  "aurora_status": "aurora_native",
+  "concept": "A fábrica se revela",
+  "patterns_used": ["P006", "P008", "P010", "P015", "P040", "P042", "P045"],
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "gsap": ">=3.15.0",
+    "lenis": ">=1.3.0"
+  },
+  "notes": "Requer CSS variables: --color-background, --color-foreground, --color-foreground-muted, --font-primary"
+}

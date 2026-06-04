@@ -37,6 +37,14 @@ class ComponentRequirement(BaseModel):
     component_name: str = Field(..., description="Nome exato do componente (ex: 'AuroraButton', 'AuroraCard').")
     required_variants: List[str] = Field(..., description="Variantes identificadas (ex: ['primary', 'outline', 'ghost']).")
     is_core_library: bool = Field(default=True, description="Garante que não estamos a criar componentes do zero desnecessariamente.")
+    
+    # NOVAS PROPRIEDADES SEMÂNTICAS (OS-016)
+    label: str = Field(default="Ação", description="Rótulo original ou semântico.")
+    semantic_role: str = Field(default="generic", description="Papel semântico correspondente.")
+    content_function: str = Field(default="content_placeholder", description="Função textual do componente.")
+    source_reference_id: str = Field(default="ref_none", description="ID de referência na página original.")
+    transformed_text: str = Field(default="Transmuted Text", description="Texto transmutado para o ecossistema Aurora.")
+    section_group: str = Field(default="default_section", description="Seção à qual pertence na composição.")
 
 class ComponentMissingAlert(BaseModel):
     """Selo de Governança: Disparado quando um role não existe na biblioteca Aurora."""

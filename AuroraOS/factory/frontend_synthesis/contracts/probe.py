@@ -115,7 +115,11 @@ async def extract_page_intelligence(target_url: str) -> PageIntelligenceArtifact
             # [OS Futura]: OS-003 (Motion & A11y Extractors)
             # [Critério de Remoção]: Substituição por injetores JS Playwright reais.
             motion=[{"duration_ms": 200, "easing_function": "ease-in-out", "target_property": "all"}],
-            a11y_tree=[{"role": "main", "aria_label_present": False, "contrast_ratio": 4.5}],
+            a11y_tree=[
+                {"role": "main", "aria_label_present": False, "contrast_ratio": 4.5},
+                {"role": "heading", "aria_label_present": True, "contrast_ratio": 7.0},
+                {"role": "button", "aria_label_present": True, "contrast_ratio": 8.0}
+            ],
             dom_hierarchy_snapshot=f"SHA256:{dom_hash}"
         )
         

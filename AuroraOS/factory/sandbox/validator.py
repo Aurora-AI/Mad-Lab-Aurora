@@ -182,6 +182,13 @@ class SandboxValidator:
                 if ".git" in normalized_root or "__pycache__" in normalized_root or ".next" in normalized_root or "node_modules" in normalized_root or "factory/sandbox" in normalized_root:
                     continue
                     
+                # Regra: Pular pastas de assets descarregados do kit original (_files)
+                if "_files" in normalized_root:
+                    continue
+                # Regra: Pular scripts externos conhecidos do kit de terceiros
+                if file.endswith(".js.download") or file.endswith(".min.js") or file == "js" or file.endswith(".css.download"):
+                    continue
+                    
                 fp = Path(root) / file
                 
                 # Check for symlink/junction escapes

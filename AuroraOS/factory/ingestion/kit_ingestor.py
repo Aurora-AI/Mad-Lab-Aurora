@@ -52,10 +52,22 @@ class KitIngestor:
     def __init__(self, staging_dir: Path, kit_name: str = "Google Antigravity"):
         self.staging_dir = staging_dir.resolve()
         self.kit_name = kit_name
-        
-        self.html_file = self.staging_dir / f"{kit_name}.html"
-        self.files_dir = self.staging_dir / f"{kit_name}_files"
         self.manifest_file = self.staging_dir / "asset_kit_manifest.json"
+        
+        # Tenta ler do manifesto dinamicamente
+        html_name = f"{kit_name}.html"
+        assets_dir_name = f"{kit_name}_files"
+        if self.manifest_file.exists():
+            try:
+                with open(self.manifest_file, 'r', encoding='utf-8') as f:
+                    manifest_data = json.load(f)
+                html_name = manifest_data.get("html_file", html_name)
+                assets_dir_name = manifest_data.get("assets_dir", assets_dir_name)
+            except Exception:
+                pass
+                
+        self.html_file = self.staging_dir / html_name
+        self.files_dir = self.staging_dir / assets_dir_name
 
     def _validate_path_security(self, file_path: Path) -> Path:
         resolved = file_path.resolve()
@@ -127,7 +139,7 @@ class KitIngestor:
         # 3. Parsing estático dos arquivos CSS
         if self.files_dir.exists():
             safe_files_dir = self._validate_path_security(self.files_dir)
-            for css_file in safe_files_dir.glob("*.css"):
+            for css_file in safe_files_dir.rglob("*.css"):
                 safe_css_path = self._validate_path_security(css_file)
                 css_hashes[css_file.name] = compute_hash(safe_css_path)
                 self._extract_css_tokens(safe_css_path, css_vars, breakpoints, font_declarations)

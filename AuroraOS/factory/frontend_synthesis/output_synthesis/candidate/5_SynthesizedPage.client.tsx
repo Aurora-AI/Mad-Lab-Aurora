@@ -6,13 +6,150 @@
 
 import type { SynthesizedPageProps } from './SynthesizedPage.types';
 import { AuroraButton } from '@/components/core';
+import { AuroraCard } from '@/components/core';
+import { AuroraHeading } from '@/components/core';
+import { AuroraLink } from '@/components/core';
 
 export default function SynthesizedPageClient(props: SynthesizedPageProps) {
   return (
-      <main className="min-h-screen w-full bg-base-surface flex flex-col items-center transition-opacity opacity-100 motion-safe:duration-300 motion-safe:ease-out motion-reduce:transition-opacity motion-reduce:duration-100" motionConfig={{"primitive": "fade_in", "durationMs": 300, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "opacity"}}>
-        <div className="flex flex-col w-full">
-          <AuroraButton className="mt-8 w-1/2 h-[50vh] bg-action-primary transition-transform active:motion-safe:scale-95 motion-safe:duration-150 motion-safe:ease-out" motionConfig={{"primitive": "press_scale", "durationMs": 150, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "static"}} />
+      <div className="w-full">
+        <div className="w-full">
+          <div className="w-full min-h-screen">
+            <div className="w-full h-full">
+              <div className="w-full flex">
+                <div className="w-full flex flex-col flex-1">
+                  <main className="min-h-screen bg-base-surface text-text-primary flex flex-col flex-1 w-full font-sans transition-opacity opacity-100 motion-safe:duration-300 motion-safe:ease-out motion-reduce:transition-opacity motion-reduce:duration-100" motionConfig={{"primitive": "fade_in", "durationMs": 300, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "opacity"}}>
+                    <header className="w-full border-b border-gray-900 bg-black/50 backdrop-blur-md sticky top-0 z-50">
+                      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+                        <div className="font-bold text-xl tracking-widest text-accent">
+                          AURORA
+                        </div>
+                        <nav className="flex items-center gap-8">
+                          <AuroraLink className="text-sm text-gray-300 hover:text-white transition-colors transition-transform active:motion-safe:scale-95 motion-safe:duration-150 motion-safe:ease-out" motionConfig={{"primitive": "press_scale", "durationMs": 150, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "static"}}>
+                            Preços & Licenciamento
+                          </AuroraLink>
+                          <AuroraLink className="text-sm text-gray-300 hover:text-white transition-colors transition-transform active:motion-safe:scale-95 motion-safe:duration-150 motion-safe:ease-out" motionConfig={{"primitive": "press_scale", "durationMs": 150, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "static"}}>
+                            Entrar na superfície
+                          </AuroraLink>
+                        </nav>
+                      </div>
+                    </header>
+                    <section className="relative overflow-hidden py-32 px-6 border-b border-gray-900 bg-gradient-to-b from-black to-gray-950 transition-opacity opacity-100 motion-safe:duration-300 motion-safe:ease-out motion-reduce:transition-opacity motion-reduce:duration-100" motionConfig={{"primitive": "fade_in", "durationMs": 300, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "opacity"}}>
+                      <div className="max-w-5xl mx-auto flex flex-col items-center text-center gap-8 relative z-10">
+                        <AuroraHeading className="text-5xl md:text-7xl font-bold tracking-tight text-white leading-tight">
+                          Soberania Cognitiva e Controle Absoluto na Era da Inteligência Agentiva
+                        </AuroraHeading>
+                        <div className="text-lg md:text-xl text-gray-400 max-w-3xl">
+                          Operação sob Override Executivo do Comandante. Automação cognitiva de alta fidelidade e auditoria de originalidade.
+                        </div>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-6 w-full">
+                          <AuroraButton variant="primary" className="px-8 py-4 bg-accent hover:bg-accent/80 text-black rounded-lg font-medium transition-all shadow-lg shadow-accent/20 transition-transform active:motion-safe:scale-95 motion-safe:duration-150 motion-safe:ease-out" motionConfig={{"primitive": "press_scale", "durationMs": 150, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "static"}}>
+                            Entrar na superfície
+                          </AuroraButton>
+                          <AuroraButton variant="outline" className="px-8 py-4 border border-gray-700 hover:border-white text-gray-300 hover:text-white rounded-lg font-medium transition-all transition-transform active:motion-safe:scale-95 motion-safe:duration-150 motion-safe:ease-out" motionConfig={{"primitive": "press_scale", "durationMs": 150, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "static"}}>
+                            Explorar padrões de uso
+                          </AuroraButton>
+                        </div>
+                      </div>
+                    </section>
+                    <section className="py-24 px-6 bg-black border-b border-gray-900 transition-opacity opacity-100 motion-safe:duration-300 motion-safe:ease-out motion-reduce:transition-opacity motion-reduce:duration-100" motionConfig={{"primitive": "fade_in", "durationMs": 300, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "opacity"}}>
+                      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div className="flex flex-col gap-6">
+                          <AuroraHeading className="text-3xl md:text-5xl font-bold tracking-tight text-white">
+                            Plataforma Aurora — Built for developers
+for the agent-first era
+                          </AuroraHeading>
+                          <div className="text-gray-400 leading-relaxed">
+                            A arquitetura industrial do Aurora OS garante isolamento cognitivo de eixos criativos e operacionais por meio de gates determinísticos.
+                          </div>
+                        </div>
+                        <div className="bg-gray-900/50 border border-gray-800 p-8 rounded-2xl">
+                          <AuroraCard className="text-accent font-semibold mb-4">
+                            Sistemas de Transmutação S-Tier
+                          </AuroraCard>
+                          <div className="text-sm text-gray-500">
+                            Mapeamento de PageIntelligence real em tempo de execução livre de stubs estruturais e com auditorias de originalidade de alta precisão.
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section className="py-24 px-6 bg-gray-950/40 border-b border-gray-900 transition-opacity opacity-100 motion-safe:duration-300 motion-safe:ease-out motion-reduce:transition-opacity motion-reduce:duration-100" motionConfig={{"primitive": "fade_in", "durationMs": 300, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "opacity"}}>
+                      <div className="max-w-7xl mx-auto flex flex-col gap-12">
+                        <div className="text-center">
+                          <AuroraHeading className="text-3xl md:text-4xl font-bold text-white mb-4">
+                            Casos de Uso & Aplicações
+                          </AuroraHeading>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                          <div className="bg-gray-900/30 border border-gray-800/80 p-6 rounded-xl hover:border-gray-700 transition-all flex flex-col gap-4">
+                            <div className="flex flex-col gap-2">
+                              <span className="text-accent font-mono text-sm">
+                                01
+                              </span>
+                              <div className="text-lg font-semibold text-white">
+                                Preços & Licenciamento
+                              </div>
+                              <div className="text-sm text-gray-500">
+                                Isolamento de contextos e governança determinística do ecossistema.
+                              </div>
+                            </div>
+                          </div>
+                          <div className="bg-gray-900/30 border border-gray-800/80 p-6 rounded-xl hover:border-gray-700 transition-all flex flex-col gap-4">
+                            <div className="flex flex-col gap-2">
+                              <span className="text-accent font-mono text-sm">
+                                02
+                              </span>
+                              <div className="text-lg font-semibold text-white">
+                                Publicações & Insights
+                              </div>
+                              <div className="text-sm text-gray-500">
+                                Isolamento de contextos e governança determinística do ecossistema.
+                              </div>
+                            </div>
+                          </div>
+                          <div className="bg-gray-900/30 border border-gray-800/80 p-6 rounded-xl hover:border-gray-700 transition-all flex flex-col gap-4">
+                            <div className="flex flex-col gap-2">
+                              <span className="text-accent font-mono text-sm">
+                                03
+                              </span>
+                              <div className="text-lg font-semibold text-white">
+                                Acervo Cognitivo
+                              </div>
+                              <div className="text-sm text-gray-500">
+                                Isolamento de contextos e governança determinística do ecossistema.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <footer className="w-full py-12 px-6 border-t border-gray-900 bg-black">
+                      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-gray-500">
+                        <div>
+                          © 2026 Aurora OS. Todos os direitos reservados de forma soberana.
+                        </div>
+                        <div className="flex gap-6">
+                          <AuroraLink className="hover:text-white transition-colors transition-transform active:motion-safe:scale-95 motion-safe:duration-150 motion-safe:ease-out" motionConfig={{"primitive": "press_scale", "durationMs": 150, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "static"}}>
+                            Ir para About Google
+                          </AuroraLink>
+                          <AuroraLink className="hover:text-white transition-colors transition-transform active:motion-safe:scale-95 motion-safe:duration-150 motion-safe:ease-out" motionConfig={{"primitive": "press_scale", "durationMs": 150, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "static"}}>
+                            Entrar na superfície
+                          </AuroraLink>
+                          <AuroraLink className="hover:text-white transition-colors transition-transform active:motion-safe:scale-95 motion-safe:duration-150 motion-safe:ease-out" motionConfig={{"primitive": "press_scale", "durationMs": 150, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "static"}}>
+                            Política de Privacidade e Segurança
+                          </AuroraLink>
+                          <AuroraLink className="hover:text-white transition-colors transition-transform active:motion-safe:scale-95 motion-safe:duration-150 motion-safe:ease-out" motionConfig={{"primitive": "press_scale", "durationMs": 150, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "static"}}>
+                            Termos de Uso Governamental
+                          </AuroraLink>
+                        </div>
+                      </div>
+                    </footer>
+                  </main>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
+      </div>
   );
 }

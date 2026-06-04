@@ -6,12 +6,21 @@
 
 import type { SynthesizedPageProps } from './SynthesizedPage.types';
 import { AuroraButton } from '@/components/core';
+import { AuroraContainer } from '@/components/core';
+import { AuroraHeading } from '@/components/core';
 
 export default function SynthesizedPageClient(props: SynthesizedPageProps) {
   return (
-      <main className="min-h-screen w-full bg-base-surface flex flex-col items-center transition-opacity opacity-100 motion-safe:duration-300 motion-safe:ease-out motion-reduce:transition-opacity motion-reduce:duration-100" motionConfig={{"primitive": "fade_in", "durationMs": 300, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "opacity"}}>
-        <div className="flex flex-col w-full">
-          <AuroraButton className="mt-8 w-1/2 h-[50vh] bg-action-primary transition-transform active:motion-safe:scale-95 motion-safe:duration-150 motion-safe:ease-out" motionConfig={{"primitive": "press_scale", "durationMs": 150, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "static"}} />
+      <main className="min-h-screen w-full flex flex-col items-center bg-base-surface text-white transition-opacity opacity-100 motion-safe:duration-300 motion-safe:ease-out motion-reduce:transition-opacity motion-reduce:duration-100" motionConfig={{"primitive": "fade_in", "durationMs": 300, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "opacity"}}>
+        <div className="w-full flex flex-col items-center">
+          <AuroraContainer className="w-full py-8 px-4 flex flex-col gap-4 transition-opacity opacity-100 motion-safe:duration-300 motion-safe:ease-out motion-reduce:transition-opacity motion-reduce:duration-100" motionConfig={{"primitive": "fade_in", "durationMs": 300, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "opacity"}}>
+            <AuroraHeading className="text-heading-1 font-bold text-text-primary">
+              Título Principal
+            </AuroraHeading>
+            <AuroraButton variant="default" className="mt-4 px-6 py-2 bg-action-primary text-white rounded font-medium transition-transform active:motion-safe:scale-95 motion-safe:duration-150 motion-safe:ease-out" motionConfig={{"primitive": "press_scale", "durationMs": 150, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "static"}}>
+              Ação
+            </AuroraButton>
+          </AuroraContainer>
         </div>
       </main>
   );

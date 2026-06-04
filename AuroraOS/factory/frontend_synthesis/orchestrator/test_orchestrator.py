@@ -5,30 +5,31 @@ from models import A11yNodeSummary
 from datetime import datetime
 
 class MockA11yNode:
-    def __init__(self, role):
+    def __init__(self, role, text_content=None):
         self.role = role
+        self.text_content = text_content
 
 def test_semantic_mapping_matches_core_components():
-    """Garante que roles padrão invocam os componentes Aurora corretos."""
-    tree = [MockA11yNode("button"), MockA11yNode("navigation"), MockA11yNode("textbox")]
+    """Garante que a composição semântica mapeia para componentes estruturais do Aurora (OS-016)."""
+    tree = [
+        MockA11yNode("button", "Download for Windows"), 
+        MockA11yNode("navigation", "pricing"), 
+        MockA11yNode("heading", "experience liftoff with the next-gen agent platform")
+    ]
     
     registry, alerts = infer_components(tree)
     
     component_names = [comp.component_name for comp in registry]
-    assert "AuroraButton" in component_names
-    assert "AuroraNavbar" in component_names
-    assert "AuroraInput" in component_names
-    assert len(alerts) == 0
+    assert "AuroraLandingShell" in component_names
+    assert "AuroraHeroStatement" in component_names
+    assert "AuroraTopNavigation" in component_names
+    assert "AuroraPrimaryCTA" in component_names
 
 def test_fallback_degradation_for_unknown_roles():
     """Garante que roles bizarros não alucinam componentes e disparam alertas."""
-    tree = [MockA11yNode("button"), MockA11yNode("marquee"), MockA11yNode("timer")]
+    tree = [MockA11yNode("marquee"), MockA11yNode("timer")]
     
     registry, alerts = infer_components(tree)
-    
-    # O botão deve ter passado normal
-    component_names = [comp.component_name for comp in registry]
-    assert "AuroraButton" in component_names
     
     # As anomalias devem ter gerado alertas e degradações específicas
     assert len(alerts) == 2
@@ -48,16 +49,17 @@ def test_full_orchestration_pipeline():
         typography_scale={"body": "1.0rem"},
         do_not_copy_rules=[],
         a11y_tree=[
-            A11yNodeSummary(role="button", aria_label_present=True, contrast_ratio=7.0),
-            A11yNodeSummary(role="custom-marquee", aria_label_present=False, contrast_ratio=2.1)
+            A11yNodeSummary(role="button", aria_label_present=True, contrast_ratio=7.0, text_content="Download for Windows", depth=4),
+            A11yNodeSummary(role="custom-marquee", aria_label_present=False, contrast_ratio=2.1, text_content="Promo", depth=3)
         ],
         is_safe_for_production=True
     )
     
     spec = orchestrate_code_spec(mock_draft)
     assert spec.derived_from_draft_id == "DS-INTEGRATION"
-    assert len(spec.component_registry) == 1
-    assert spec.component_registry[0].component_name == "AuroraButton"
+    component_names = [comp.component_name for comp in spec.component_registry]
+    assert "AuroraLandingShell" in component_names
+    assert "AuroraPrimaryCTA" in component_names
     assert len(spec.component_alerts) == 1
     assert spec.component_alerts[0].original_role == "custom-marquee"
     assert spec.component_alerts[0].degraded_to == "div"

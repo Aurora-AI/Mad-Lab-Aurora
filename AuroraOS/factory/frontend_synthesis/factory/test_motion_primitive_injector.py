@@ -37,8 +37,9 @@ def test_motion_injection_in_node():
     injector = MotionPrimitiveInjector()
     node = UINode(
         node_id="btn-1",
-        component_type="button",
-        tailwind_classes=["bg-blue-500"]
+        component_name="button",
+        semantic_role="button",
+        props={"className": "bg-blue-500"}
     )
     config = MotionConfig(
         primitive="press_scale",
@@ -47,17 +48,19 @@ def test_motion_injection_in_node():
     )
     
     updated_node = injector.inject_node_motion(node, config)
-    assert "transition-transform" in updated_node.tailwind_classes
-    assert "active:motion-safe:scale-95" in updated_node.tailwind_classes
-    assert "motion-safe:duration-150" in updated_node.tailwind_classes
+    class_names = updated_node.props.get("className", "").split()
+    assert "transition-transform" in class_names
+    assert "active:motion-safe:scale-95" in class_names
+    assert "motion-safe:duration-150" in class_names
     assert updated_node.props["motionConfig"]["primitive"] == "press_scale"
 
 def test_reduced_motion_fallbacks():
     injector = MotionPrimitiveInjector()
     node = UINode(
         node_id="btn-1",
-        component_type="button",
-        tailwind_classes=[]
+        component_name="button",
+        semantic_role="button",
+        props={"className": ""}
     )
     config = MotionConfig(
         primitive="fade_in",
@@ -66,17 +69,21 @@ def test_reduced_motion_fallbacks():
     )
     
     updated_node = injector.inject_node_motion(node, config)
-    assert "motion-reduce:transition-opacity" in updated_node.tailwind_classes
-    assert "motion-reduce:duration-100" in updated_node.tailwind_classes
+    class_names = updated_node.props.get("className", "").split()
+    assert "motion-reduce:transition-opacity" in class_names
+    assert "motion-reduce:duration-100" in class_names
 
     node2 = UINode(
         node_id="btn-2",
-        component_type="button",
-        tailwind_classes=[]
+        component_name="button",
+        semantic_role="button",
+        props={"className": ""}
     )
     config2 = MotionConfig(
         primitive="subtle_lift",
         reducedMotionFallback="none"
     )
     updated_node2 = injector.inject_node_motion(node2, config2)
-    assert "motion-reduce:transition-none" in updated_node2.tailwind_classes
+    class_names2 = updated_node2.props.get("className", "").split()
+    assert "motion-reduce:transition-none" in class_names2
+

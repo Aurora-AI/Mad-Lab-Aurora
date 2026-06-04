@@ -1,6 +1,6 @@
 {
-  "synthesis_id": "DS-079D448B",
-  "synthesized_at": "2026-06-02T06:31:53.150294",
+  "synthesis_id": "DS-9B4BE156",
+  "synthesized_at": "2026-06-02T16:57:00.336190",
   "governance_mode": "transmute",
   "semantic_tokens": [
     {
@@ -53,6 +53,16 @@
       "role": "main",
       "aria_label_present": false,
       "contrast_ratio": 4.5
+    },
+    {
+      "role": "heading",
+      "aria_label_present": true,
+      "contrast_ratio": 7.0
+    },
+    {
+      "role": "button",
+      "aria_label_present": true,
+      "contrast_ratio": 8.0
     }
   ],
   "is_safe_for_production": true

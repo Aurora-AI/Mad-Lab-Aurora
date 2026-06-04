@@ -63,10 +63,12 @@ class MotionPrimitiveInjector:
             classes.append("motion-safe:ease-[cubic-bezier(0.34,1.56,0.64,1)]")
             
         # Insere as classes de motion no nó sem duplicidades
+        current_classes = node.props.get("className", "").split()
         for cls in classes + fallback_classes:
-            if cls not in node.tailwind_classes:
-                node.tailwind_classes.append(cls)
+            if cls not in current_classes:
+                current_classes.append(cls)
                 
+        node.props["className"] = " ".join(current_classes)
         # Registra a configuração de motion nas props do nó
         node.props["motionConfig"] = validated_config.model_dump(by_alias=True)
         return node
@@ -76,7 +78,7 @@ class MotionPrimitiveInjector:
         
         def _traverse(node: UINode):
             # Injeta fade_in se for a tag raiz ou main/section/AuroraContainer
-            if node.component_type in ["main", "section", "AuroraContainer"]:
+            if node.component_name in ["main", "section", "AuroraContainer"]:
                 config = MotionConfig(
                     primitive="fade_in",
                     durationMs=300,
@@ -84,7 +86,7 @@ class MotionPrimitiveInjector:
                 )
                 self.inject_node_motion(node, config)
             # Injeta press_scale se for botão/link
-            elif node.component_type in ["button", "AuroraButton", "AuroraLink"]:
+            elif node.component_name in ["button", "AuroraButton", "AuroraLink"]:
                 config = MotionConfig(
                     primitive="press_scale",
                     durationMs=150,

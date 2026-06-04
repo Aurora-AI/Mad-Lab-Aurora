@@ -68,8 +68,16 @@ def promote_candidate(output_dir: str):
     qa_report_file = staging_dir / "QA_REPORT.md"
     qa_sha = hashlib.sha256(qa_report_file.read_bytes()).hexdigest() if qa_report_file.exists() else hashlib.sha256(b"").hexdigest()
     
+    import re
+    expected_run_id = ""
+    if qa_report_file.exists():
+        qa_content = qa_report_file.read_text(encoding="utf-8")
+        run_match = re.search(r"\*\*[Ss]andbox Run ID:\*\* (\S+)", qa_content)
+        if run_match:
+            expected_run_id = run_match.group(1)
+            
     # Match double hashes and run id
-    if (approval_record.sandbox_run_id != approval_record.sandbox_run_id or
+    if (approval_record.sandbox_run_id != expected_run_id or
         approval_record.patch_candidate_sha256 != patch_sha or
         approval_record.qa_report_sha256 != qa_sha):
         print("[ERRO] Assinatura/Hashes do candidato de aprovação divergem do staging!")

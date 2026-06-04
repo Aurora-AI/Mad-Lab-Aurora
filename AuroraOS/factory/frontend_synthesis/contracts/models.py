@@ -1,6 +1,6 @@
 import re
 from datetime import datetime
-from typing import List, Optional
+from typing import List, Optional, Dict, Any
 from pydantic import BaseModel, Field, field_validator, HttpUrl
 
 class ColorSample(BaseModel):
@@ -42,6 +42,10 @@ class A11yNodeSummary(BaseModel):
     role: str = Field(..., description="Papel semântico do nó (ex: 'button', 'navigation').")
     aria_label_present: bool = Field(..., description="Indica se o nó interativo possui rótulo acessível.")
     contrast_ratio: float = Field(..., description="Taxa de contraste calculada segundo a WCAG.")
+    
+    # NOVAS PROPRIEDADES DE INTEGRIDADE E CONTEXTO (OS-016)
+    depth: int = Field(default=1, description="Profundidade do nó na árvore DOM original.")
+    text_content: Optional[str] = Field(None, description="Conteúdo textual original do nó.")
 
 class PageIntelligenceArtifact(BaseModel):
     """
@@ -57,9 +61,22 @@ class PageIntelligenceArtifact(BaseModel):
     motion: List[MotionSample]
     a11y_tree: List[A11yNodeSummary]
     dom_hierarchy_snapshot: str = Field(..., description="Hash ou resumo topológico da árvore para deteção de layout e governança.")
+    
+    # Real Structural Probe Fields (OS-015)
+    visible_texts: List[str] = Field(default_factory=list)
+    headings: List[str] = Field(default_factory=list)
+    buttons: List[str] = Field(default_factory=list)
+    links: List[str] = Field(default_factory=list)
+    nav_items: List[str] = Field(default_factory=list)
+    sections: List[str] = Field(default_factory=list)
+    landmarks: List[str] = Field(default_factory=list)
+    bounding_boxes: Dict[str, Any] = Field(default_factory=dict)
+    computed_styles: Dict[str, Any] = Field(default_factory=dict)
+    dom_depth: int = Field(default=0)
+    above_the_fold_elements: List[str] = Field(default_factory=list)
+    viewport_metrics: Dict[str, Any] = Field(default_factory=dict)
 
 from enum import Enum
-from typing import Any, Dict
 
 class ProvenanceWinner(str, Enum):
     KIT = "kit"

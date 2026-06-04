@@ -1,9 +1,12 @@
 {
-  "spec_id": "SPEC-433EFAFB",
-  "derived_from_draft_id": "DS-079D448B",
+  "spec_id": "SPEC-F966297F",
+  "derived_from_draft_id": "DS-E253C49F",
   "theme_config": {
     "colors": {
-      "base-surface": "#0A0A0C"
+      "base-surface": "#0A0A0C",
+      "text-primary": "#FFFFFF",
+      "action-primary": "#818CF8",
+      "accent": "#818CF8"
     },
     "fontFamily": {
       "sans": [
@@ -27,14 +30,117 @@
   },
   "component_registry": [
     {
-      "component_name": "AuroraContainer",
+      "component_name": "AuroraLandingShell",
       "required_variants": [
         "default"
       ],
-      "is_core_library": true
+      "is_core_library": true,
+      "label": "Landing Shell",
+      "semantic_role": "document",
+      "content_function": "page_layout_wrapper",
+      "source_reference_id": "shell",
+      "transformed_text": "",
+      "section_group": "shell"
+    },
+    {
+      "component_name": "AuroraTopNavigation",
+      "required_variants": [
+        "dark"
+      ],
+      "is_core_library": true,
+      "label": "Top Navigation",
+      "semantic_role": "navigation",
+      "content_function": "main_header_navigation",
+      "source_reference_id": "nav_menu",
+      "transformed_text": "Preços & Licenciamento | Entrar na superfície",
+      "section_group": "header"
+    },
+    {
+      "component_name": "AuroraHeroStatement",
+      "required_variants": [
+        "hero"
+      ],
+      "is_core_library": true,
+      "label": "Hero Statement",
+      "semantic_role": "heading",
+      "content_function": "hero_title",
+      "source_reference_id": "hero_title_ref",
+      "transformed_text": "Soberania Cognitiva e Controle Absoluto na Era da Inteligência Agentiva",
+      "section_group": "hero"
+    },
+    {
+      "component_name": "AuroraPrimaryCTA",
+      "required_variants": [
+        "primary"
+      ],
+      "is_core_library": true,
+      "label": "Product\nkeyboard_arrow_down",
+      "semantic_role": "button",
+      "content_function": "hero_primary_action",
+      "source_reference_id": "btn_primary_ref",
+      "transformed_text": "Entrar na superfície",
+      "section_group": "hero"
+    },
+    {
+      "component_name": "AuroraSecondaryCTA",
+      "required_variants": [
+        "outline"
+      ],
+      "is_core_library": true,
+      "label": "Use Cases\nkeyboard_arrow_down",
+      "semantic_role": "button",
+      "content_function": "hero_secondary_action",
+      "source_reference_id": "btn_secondary_ref",
+      "transformed_text": "Explorar padrões de uso",
+      "section_group": "hero"
+    },
+    {
+      "component_name": "AuroraProductNarrativeSection",
+      "required_variants": [
+        "default"
+      ],
+      "is_core_library": true,
+      "label": "Product Narrative",
+      "semantic_role": "region",
+      "content_function": "product_explanation",
+      "source_reference_id": "narrative_section_ref",
+      "transformed_text": "Plataforma Aurora — Built for developers\nfor the agent-first era",
+      "section_group": "body"
+    },
+    {
+      "component_name": "AuroraUseCaseCluster",
+      "required_variants": [
+        "grid"
+      ],
+      "is_core_library": true,
+      "label": "Use Case Cluster",
+      "semantic_role": "region",
+      "content_function": "use_case_list",
+      "source_reference_id": "use_cases_ref",
+      "transformed_text": "Preços & Licenciamento // Publicações & Insights // Acervo Cognitivo",
+      "section_group": "body"
+    },
+    {
+      "component_name": "AuroraFooterNavigation",
+      "required_variants": [
+        "muted"
+      ],
+      "is_core_library": true,
+      "label": "Footer Navigation",
+      "semantic_role": "navigation",
+      "content_function": "footer_links",
+      "source_reference_id": "footer_nav_ref",
+      "transformed_text": "Ir para About Google | Entrar na superfície | Política de Privacidade e Segurança | Termos de Uso Governamental",
+      "section_group": "footer"
     }
   ],
-  "component_alerts": [],
+  "component_alerts": [
+    {
+      "original_role": "section",
+      "degraded_to": "div",
+      "reason": "Role 'section' incorporado na composição semântica."
+    }
+  ],
   "debt_tracking": {
     "target_os": "OS-003",
     "pending_injectors": [

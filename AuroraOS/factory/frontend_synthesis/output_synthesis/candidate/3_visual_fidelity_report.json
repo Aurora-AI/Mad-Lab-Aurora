@@ -1,16 +1,16 @@
 {
   "report_id": "FID-100",
-  "code_spec_id": "SPEC-433EFAFB",
+  "code_spec_id": "SPEC-F966297F",
   "hybrid_truth_id": "HT-CURRENT",
   "proprietary_candidate_id": "CAND-001",
   "fidelity": {
-    "proportion_score": 85.0,
+    "proportion_score": 94.0,
     "visual_hierarchy_score": 85.0,
-    "density_score": 85.0,
-    "contrast_score": 85.0,
-    "spacing_score": 85.0,
-    "compositional_rhythm_score": 85.0,
-    "intent_fidelity_score": 85.0
+    "density_score": 90.0,
+    "contrast_score": 95.0,
+    "spacing_score": 88.0,
+    "compositional_rhythm_score": 90.0,
+    "intent_fidelity_score": 90.33333333333333
   },
   "clone_risk": {
     "layout_similarity_risk": 30.0,

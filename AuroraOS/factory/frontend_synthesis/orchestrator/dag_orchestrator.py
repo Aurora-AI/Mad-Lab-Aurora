@@ -13,6 +13,7 @@ sys.path.extend([
     os.path.abspath(os.path.join(os.path.dirname(__file__), '../synthesizer')),
     os.path.abspath(os.path.join(os.path.dirname(__file__), '../factory')),
     os.path.abspath(os.path.join(os.path.dirname(__file__), '../bff')),
+    os.path.abspath(os.path.join(os.path.dirname(__file__), '../acquisition')),
     os.path.abspath(os.path.join(os.path.dirname(__file__), '../../sandbox')),
     os.path.abspath(os.path.join(os.path.dirname(__file__), '../../ingestion'))
 ])
@@ -53,7 +54,13 @@ class SynthesisDAG:
         }
         print(f"[TELEMETRY_HEARTBEAT] {json.dumps(heartbeat)}")
 
-    async def execute(self, probe_artifact_mock: Optional[Any] = None, asset_kit_mock: Optional[Dict[str, Any]] = None, governance_mode: str = "transmute", probe_truth_mock: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+    async def execute(self, 
+                      probe_artifact_mock: Optional[Any] = None, 
+                      asset_kit_mock: Optional[Dict[str, Any]] = None, 
+                      governance_mode: str = "transmute", 
+                      probe_truth_mock: Optional[Dict[str, Any]] = None,
+                      acquire_asset_kit: bool = False,
+                      asset_kit_manifest_path: Optional[str] = None) -> Dict[str, Any]:
         self.validate_pre_conditions()
         
         results = {}
@@ -64,28 +71,47 @@ class SynthesisDAG:
             if probe_artifact_mock is not None:
                 artifact = probe_artifact_mock
             else:
-                from probe import extract_page_intelligence
-                artifact = await extract_page_intelligence(self.target_url)
+                from real_page_probe import extract_real_page_intelligence
+                artifact = await extract_real_page_intelligence(self.target_url)
             
             if artifact is None:
                 raise PipelineAbortedException("ExtractTarget produced no output.")
+                
+            from anti_stub_gate import AntiStubGate
+            gate = AntiStubGate(surface_type="landing")
+            gate.evaluate_page_intelligence(artifact)
+            print("[DAG] AntiStubGate.PageIntelligence Passed.")
+            
             results["artifact"] = artifact
         except Exception as e:
             if isinstance(e, PipelineAbortedException):
                 raise
             raise PipelineAbortedException(f"ExtractTarget failed: {e}")
 
-        # 1.5. Ingest Asset Kit
-        print("[DAG] Running task: IngestAssetKit...")
+        # 1.2 AcquireAssetKit (Fase A)
+        print("[DAG] Running task: AcquireAssetKit...")
+        manifest_path = None
         try:
-            from kit_ingestor import KitIngestor
-            from pathlib import Path
+            if acquire_asset_kit:
+                from asset_kit_acquisition_agent import AssetKitAcquisitionAgent
+                agent = AssetKitAcquisitionAgent(self.target_url)
+                manifest_path = await agent.acquire()
+            elif asset_kit_manifest_path:
+                manifest_path = Path(asset_kit_manifest_path)
+        except Exception as e:
+            raise PipelineAbortedException(f"AcquireAssetKit failed: {e}")
+
+        # 1.3 StageAssetKit
+        print("[DAG] Running task: StageAssetKit...")
+        staging_dir = Path(self.output_dir) / "staging"
+        os.makedirs(staging_dir, exist_ok=True)
+        try:
             import shutil
-            
-            staging_dir = Path(self.output_dir) / "staging"
-            os.makedirs(staging_dir, exist_ok=True)
-            
-            if isinstance(asset_kit_mock, str) and os.path.exists(asset_kit_mock):
+            if manifest_path and manifest_path.exists():
+                src_kit_dir = manifest_path.parent
+                shutil.copytree(src_kit_dir, staging_dir, dirs_exist_ok=True)
+            elif isinstance(asset_kit_mock, str) and os.path.exists(asset_kit_mock):
+                # Fallback antigo para manter compatibilidade com testes legados
                 kit_src_html = Path(asset_kit_mock) / "Google Antigravity.html"
                 kit_src_files = Path(asset_kit_mock) / "Google Antigravity_files"
                 kit_src_manifest = Path(asset_kit_mock) / "asset_kit_manifest.json"
@@ -96,16 +122,34 @@ class SynthesisDAG:
                     shutil.copytree(kit_src_files, staging_dir / "Google Antigravity_files", dirs_exist_ok=True)
                 if kit_src_manifest.exists():
                     shutil.copy(kit_src_manifest, staging_dir / "asset_kit_manifest.json")
+        except Exception as e:
+            raise PipelineAbortedException(f"StageAssetKit failed: {e}")
+
+        # 1.4. Ingest Asset Kit (KitIngestion)
+        print("[DAG] Running task: IngestAssetKit...")
+        try:
+            from kit_ingestor import KitIngestor
             
-            ingestor = KitIngestor(staging_dir=staging_dir, kit_name="Google Antigravity")
+            kit_name = "Google Antigravity"
+            if (staging_dir / "asset_kit_manifest.json").exists():
+                try:
+                    with open(staging_dir / "asset_kit_manifest.json", "r", encoding="utf-8") as f:
+                        m_data = json.load(f)
+                    html_file_name = m_data.get("html_file", "source.html")
+                    kit_name = html_file_name.replace(".html", "")
+                except Exception:
+                    kit_name = "source"
             
-            if not (staging_dir / "asset_kit_manifest.json").exists() or not (staging_dir / "Google Antigravity.html").exists():
-                raise PipelineAbortedException("Fail-Closed: Asset Kit incompleto no Staging (Falta HTML principal ou Manifest).")
+            ingestor = KitIngestor(staging_dir=staging_dir, kit_name=kit_name)
+            
+            if not (staging_dir / "asset_kit_manifest.json").exists():
+                raise PipelineAbortedException("Fail-Closed: asset_kit_manifest.json missing in Staging.")
 
             kit_artifact = ingestor.ingest()
             results["kit_artifact"] = kit_artifact
         except Exception as e:
             raise PipelineAbortedException(f"IngestAssetKit failed: {e}")
+
 
         # 2. ResolveTruth (HybridTruthResolver)
         print("[DAG] Running task: ResolveTruth...")
@@ -166,7 +210,7 @@ class SynthesisDAG:
                     motion_hash="transmuted_motion_hash",
                     asset_hashes=[], # Copiar nada
                     text_hashes=[],  # Copiar nada
-                    component_names=["transmuted_hero", "aurora_cta"]
+                    component_names=["AuroraLandingShell", "AuroraTopNavigation", "AuroraHeroStatement", "AuroraPrimaryCTA", "AuroraSecondaryCTA", "AuroraProductNarrativeSection", "AuroraUseCaseCluster", "AuroraFooterNavigation"]
                 )
         except Exception as e:
             raise PipelineAbortedException(f"TransmuteOriginality failed: {e}")
@@ -180,8 +224,8 @@ class SynthesisDAG:
                 candidate_fingerprint=candidate_fingerprint,
                 axes=["semantic", "visual", "structural", "motion", "brand"],
                 candidate_colors=["#FFFFFF", "#000000", "#18191D"], # Mostly neutral transmuted colors
-                candidate_name="AuroraProprietaryDesign",
-                candidate_names_list=["transmuted_hero", "aurora_cta"]
+                candidate_name="AuroraSovereignLanding",
+                candidate_names_list=["AuroraLandingShell", "AuroraTopNavigation", "AuroraHeroStatement", "AuroraPrimaryCTA", "AuroraSecondaryCTA", "AuroraProductNarrativeSection", "AuroraUseCaseCluster", "AuroraFooterNavigation"]
             )
             
             results["proprietary_candidate"] = proprietary_candidate
@@ -219,9 +263,15 @@ class SynthesisDAG:
         print("[DAG] Running task: OrchestrateSpec...")
         try:
             from alvaro_agent import orchestrate_code_spec
-            code_spec = orchestrate_code_spec(results["draft"])
+            code_spec = orchestrate_code_spec(results["draft"], results["artifact"])
             if code_spec is None:
                 raise PipelineAbortedException("OrchestrateSpec produced no output.")
+                
+            from anti_stub_gate import AntiStubGate
+            gate = AntiStubGate(surface_type="landing")
+            gate.evaluate_code_spec(results["artifact"], code_spec)
+            print("[DAG] AntiStubGate.CodeSpec Passed.")
+            
             results["code_spec"] = code_spec
             
             # E2E Test Hooks for OS-011
@@ -301,12 +351,17 @@ class SynthesisDAG:
         print("[DAG] Running task: TranspileUI...")
         try:
             from factory_agent import generate_ui_tree
-            from tsx_compiler import compile_tsx_nodes, generate_tailwind_config, generate_standalone_bundle
+            from tsx_compiler import compile_tsx_nodes, generate_tailwind_config, generate_standalone_bundle, compile_css
             from motion_primitive_injector import MotionPrimitiveInjector
+            from anti_stub_gate import AntiStubGate
             
             ui_tree = generate_ui_tree(results["code_spec"])
             if ui_tree is None:
                 raise PipelineAbortedException("TranspileUI produced no ComponentTree output.")
+
+            gate = AntiStubGate(surface_type="landing")
+            gate.evaluate_ui_tree(results["artifact"], ui_tree)
+            print("[DAG] AntiStubGate.UITree Passed.")
 
             injector = MotionPrimitiveInjector()
             ui_tree = injector.inject_motion(ui_tree)
@@ -318,48 +373,26 @@ class SynthesisDAG:
             
             jsx_body, imports = compile_tsx_nodes(ui_tree)
             
+            gate.evaluate_generated_code(jsx_body)
+            print("[DAG] AntiStubGate.GeneratedCode Passed.")
+            
+            css_code = compile_css(ui_tree, results["code_spec"].theme_config.colors)
+            
             results["ui_tree"] = ui_tree
             results["jsx_body"] = jsx_body
             results["imports"] = imports
             results["tailwind_cfg"] = tailwind_cfg
+            results["css_code"] = css_code
             
             results["standalone_bundle"] = generate_standalone_bundle(
                 ui_tree,
                 results["code_spec"].theme_config.colors, 
                 results["code_spec"].theme_config.fontFamily
             )
+        except PipelinePausedException:
+            raise
         except Exception as e:
             raise PipelineAbortedException(f"TranspileUI failed: {e}")
-
-        # --- OS-012: EvaluatePerceptualFidelity ---
-        print("[DAG] Running task: EvaluatePerceptualFidelity...")
-        try:
-            from perceptual_evaluator import EvaluatePerceptualFidelity, PipelinePausedException as PercepPausedException
-            
-            # Diretorio offline isolado para screenshot
-            percep_sandbox = Path(self.output_dir) / f"percep_sandbox_{int(time.time())}"
-            os.makedirs(percep_sandbox, exist_ok=True)
-            
-            perceptual_evaluator = EvaluatePerceptualFidelity(str(percep_sandbox))
-            report = await perceptual_evaluator.evaluate(results["standalone_bundle"])
-            results["perceptual_report"] = report
-            results["perceptual_screenshot_path"] = report.screenshot_path
-            
-            print(f"[DAG] EvaluatePerceptualFidelity Passed! Score: {report.perceptual_score.final_score:.1f}%")
-        except PercepPausedException as e:
-            from sandbox_contracts import DiagnosticFinding
-            msg = str(e).replace("Perceptual Evaluation Failed: ", "")
-            finding = DiagnosticFinding(
-                severity="P0",
-                code="VISUAL_PERCEPTUAL_REJECTED",
-                redacted_message="Avaliacao Perceptual Falhou: " + msg,
-                file_path="6_rendered_screenshot.png",
-                line_number=0,
-                recommended_action="Corrigir componentes ou CSS gerado para renderizar corretamente."
-            )
-            raise PipelinePausedException("EvaluatePerceptualFidelity blocked the pipeline.", [finding])
-        except Exception as e:
-            raise PipelineAbortedException(f"EvaluatePerceptualFidelity failed: {e}")
 
         # 6. CoupleData (BFF)
         print("[DAG] Running task: CoupleData...")
@@ -395,6 +428,54 @@ class SynthesisDAG:
             results["server_code"] = server_code
         except Exception as e:
             raise PipelineAbortedException(f"CoupleData failed: {e}")
+
+        # --- OS-012: EvaluatePerceptualFidelity ---
+        print("[DAG] Running task: EvaluatePerceptualFidelity...")
+        try:
+            import perceptual_evaluator
+            PercepPausedException = perceptual_evaluator.PipelinePausedException
+            EvaluatePerceptualFidelity = perceptual_evaluator.EvaluatePerceptualFidelity
+        except Exception as e:
+            raise PipelineAbortedException(f"Failed to import perceptual_evaluator: {e}")
+
+        try:
+            # Diretorio offline isolado para screenshot
+            percep_sandbox = Path(self.output_dir) / f"percep_sandbox_{int(time.time())}"
+            os.makedirs(percep_sandbox, exist_ok=True)
+            
+            # Gravar ficheiros físicos no sandbox offline antes do screenshot
+            with open(percep_sandbox / "5_SynthesizedPage.client.tsx", "w", encoding="utf-8") as f:
+                f.write(results["client_code"])
+            with open(percep_sandbox / "5_page.tsx", "w", encoding="utf-8") as f:
+                f.write(results["server_code"])
+            with open(percep_sandbox / "render_bundle.css", "w", encoding="utf-8") as f:
+                f.write(results["css_code"])
+            with open(percep_sandbox / "ui_tree.json", "w", encoding="utf-8") as f:
+                f.write(results["ui_tree"].model_dump_json(indent=2))
+            with open(percep_sandbox / "render_bundle_manifest.json", "w", encoding="utf-8") as f:
+                f.write(results["standalone_bundle"].model_dump_json(indent=2))
+            
+            perceptual_evaluator = EvaluatePerceptualFidelity(str(percep_sandbox))
+            report = await perceptual_evaluator.evaluate(results["standalone_bundle"])
+            results["perceptual_report"] = report
+            results["perceptual_screenshot_path"] = report.screenshot_path
+            
+            print(f"[DAG] EvaluatePerceptualFidelity Passed! Score: {report.perceptual_score.final_score:.1f}%")
+        except PercepPausedException as e:
+            from sandbox_contracts import DiagnosticFinding
+            msg = str(e).replace("Perceptual Evaluation Failed: ", "")
+            print(f"[DEBUG_PERCEPTUAL] Evaluator failed with message: {msg}")
+            finding = DiagnosticFinding(
+                severity="P0",
+                code="VISUAL_PERCEPTUAL_REJECTED",
+                redacted_message="Avaliacao Perceptual Falhou: " + msg,
+                file_path="6_rendered_screenshot.png",
+                line_number=0,
+                recommended_action="Corrigir componentes ou CSS gerado para renderizar corretamente."
+            )
+            raise PipelinePausedException("EvaluatePerceptualFidelity blocked the pipeline.", [finding])
+        except Exception as e:
+            raise PipelineAbortedException(f"EvaluatePerceptualFidelity failed: {e}")
 
         # --- OS-008: Sandbox Isolation & Fleet Validation Layer ---
         from orchestrator import SandboxOrchestrator
@@ -439,10 +520,33 @@ class SynthesisDAG:
                 f.write(results["client_code"])
             with open(sandbox.sandbox_dir / "5_page.tsx", "w") as f:
                 f.write(results["server_code"])
+            with open(sandbox.sandbox_dir / "render_bundle.css", "w") as f:
+                f.write(results["css_code"])
+            with open(sandbox.sandbox_dir / "render_bundle_manifest.json", "w") as f:
+                f.write(results["standalone_bundle"].model_dump_json(indent=2))
+            with open(sandbox.sandbox_dir / "ui_tree.json", "w") as f:
+                f.write(results["ui_tree"].model_dump_json(indent=2))
+            with open(sandbox.sandbox_dir / "layout_profile_selection.json", "w") as f:
+                f.write(results["ui_tree"].layout_selection.model_dump_json(indent=2))
+            with open(sandbox.sandbox_dir / "component_mapping_report.json", "w") as f:
+                f.write(json.dumps([f.model_dump() for f in results["ui_tree"].component_findings], indent=2))
+
+            # 7.5 AntiStubGate Sandbox Check (OS-016)
+            print("[DAG] Running task: AntiStubGate Sandbox Verification...")
+            self.emit_heartbeat(sandbox.run_id, "VALIDATION_PHASE_1_ANTISTUB", 70, "IN_PROGRESS")
+            try:
+                from anti_stub_gate import AntiStubGate
+                gate = AntiStubGate(surface_type="landing")
+                gate.evaluate_sandbox_files(str(sandbox.sandbox_dir))
+                print("[DAG] AntiStubGate Sandbox Verification Passed.")
+            except PipelinePausedException as e:
+                print(f"[DAG] AntiStubGate Sandbox Verification failed: {e.findings}")
+                self.emit_heartbeat(sandbox.run_id, "VALIDATION_FAILED", 85, "PAUSED", "PipelinePausedException")
+                raise
 
             # 7. SandboxGate
             print("[DAG] Running task: SandboxGate...")
-            self.emit_heartbeat(sandbox.run_id, "VALIDATION_PHASE_1", 70, "IN_PROGRESS")
+            self.emit_heartbeat(sandbox.run_id, "VALIDATION_PHASE_1", 72, "IN_PROGRESS")
             
             validator = SandboxValidator(str(sandbox.sandbox_dir))
             

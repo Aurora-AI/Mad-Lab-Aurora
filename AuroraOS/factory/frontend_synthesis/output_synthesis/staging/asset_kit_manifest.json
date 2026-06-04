@@ -1,5 +1,42 @@
 {
-  "kit_version": "1.0",
-  "name": "Google Antigravity",
-  "author": "Aurora OS"
+  "asset_kit_id": "AK-20260604-093027-antigravity-google",
+  "source_url": "https://antigravity.google/",
+  "captured_at": "2026-06-04T12:30:37.373580+00:00",
+  "staging_root": "C:/Projetos/Aurora/AuroraOS/factory/frontend_synthesis/staging/asset_kits/AK-20260604-093027-antigravity-google",
+  "html_file": "source.html",
+  "assets_dir": "assets",
+  "script_execution_allowed": false,
+  "network_allowed_after_acquisition": false,
+  "input_hashes": {
+    "assets/styles/styles-NNWH23TG.css": "sha256:2845505d7c7afa2f88bfe26c992682fe8013361a65b997fb52bdbb99ebfe9ba3",
+    "assets/scripts_cataloged/chunk-E6TGZIGP.js": "sha256:8765fc0b54acb586b91ad6906f36b18721118407c315c3751484651148f15d6e",
+    "assets/styles/css2.css": "sha256:7a4e49d88a403d7bc66cc63289d34ec1fe6da63cb99032379811c95c6bfe2f0f",
+    "assets/scripts_cataloged/main-E6QKDO3U.js": "sha256:b6fb49bc472b06962f37b67b4aa3afbc94e78dd289aea957f57439bc2195021f",
+    "assets/fonts/t5t2IQcYNIWbFgDgAAzZ34auoVyXkJCOvp3SFWJbN5hF8LG572o.woff2": "sha256:06bf832d5f4765ade0a9777c1d5d7f0feef58466cbe9e4bf8351d497fe2cf38c",
+    "assets/images/individual.png": "sha256:de8ccb6963577e26350d7cf6a0689b4226e9a1d0fd8f7474b1b04c5904c3bd87",
+    "assets/images/new-chat.png": "sha256:19bfd89363a20ebe4c02759d41081a620ccde6591e9d575e67d38c7a3f56963d",
+    "assets/images/feature-3.jpg": "sha256:2577f0c768f801073598e592b7102c671bae6ff2e77c31821f382630ae510286",
+    "assets/images/antigravity-cursor.png": "sha256:314dfd949940bf6c66af173d9e21afcf99dae418f982416b0543d76886ac34f7",
+    "assets/images/landing-thumbnail-fullstack.jpg": "sha256:3c1bee36d3a5452cc985f286a98014f5aa266edd5534fb6ce9dcd3521fa2397e",
+    "assets/images/landing-thumbnail-enterprise.jpg": "sha256:1d21bb0f602ea04fb11b15b46201c569bde385540da9d349222c644951963ca5",
+    "assets/images/Google%20IO%20-%20Square.jpg": "sha256:82afee1aa929250ff00f8060bb4d4666ea0550b99a521a4b19c7b92d6769bedc",
+    "assets/images/3.5%20Flash%20-%20Square.png": "sha256:4c5d40e50ec63b4ffeed80d38e419c7bba368e39d9d82e9f2275e9c69d32cdb7",
+    "assets/images/blog-feature-introducing-google-antigravity.png": "sha256:e2e0bf8c0ddebdbc6147d636460750d3c2e2ef1efa7e4418a0e709abaa3e00d5",
+    "assets/images/AGY%20Enterprise%20-%20Square.png": "sha256:2902f3f2dd36794e9ff3bd1859fe0b2562f18153e232a311c07677cdbe95caaa",
+    "assets/images/AGY%20SDK%20Blog%20-%20Square.png": "sha256:7543370eb4e494ad0effec6086a36198b0bdb8b9d579d972b9519628c183dc60",
+    "assets/images/cube.png": "sha256:0cfd6800ffc3ddabe81cb360fe6921cec848679196a5e025be7df2ab84b20972",
+    "assets/images/AGY%20CLI%20Blog%20-%20Square.png": "sha256:7519803e01eb9d074ae6b3f8f59563532e77647e72fc008f1c5d42798cf2a971",
+    "assets/images/antigravity-cli.png": "sha256:9dd806aeec11dc6b3541b3f01002b78c9f7ded81b2303b0aafd26f7c74bbb716",
+    "assets/images/AGY2%20Square.jpg": "sha256:f1ec3ad39560238d6f5b6f6b8446d0317c944f02e01c1080074566ab2c2f2a80",
+    "assets/images/Agent%20Teams%20Square.jpg": "sha256:e47e1b03c7720be06cb55336332f53754d7a38bdba549e676a795ebe1d82fb85",
+    "assets/images/landing-thumbnail-frontend.jpg": "sha256:375b19483f8a8c5e335ddcf5fa8bdb2ff8152f4f98c9cda95041f3917294ab37",
+    "assets/fonts/HhyqU5Ak9u-oMExPeInvcuEmPosC9zS3FYkFU68cPrjdKM1XMoDZlWmzc3IiWvF1R4oJxQmdBnupCeyl.woff2": "sha256:9f7ede1064632f56d323d6d3b457f1c7a444b1912c05dd9db2e93639df669fee",
+    "source.html": "sha256:ab5e9859832b8a05e29c7e111e627bfdb4fde8e8289de20426075f4d1fab383e"
+  },
+  "resource_counts": {
+    "css": 3,
+    "images": 17,
+    "fonts": 2,
+    "scripts_cataloged": 2
+  }
 }

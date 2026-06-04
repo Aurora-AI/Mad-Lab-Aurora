@@ -1,6 +1,6 @@
 {
   "source_url": "https://antigravity.google/",
-  "extracted_at": "2026-06-02T06:31:50.746448",
+  "extracted_at": "2026-06-02T16:56:50.377972",
   "colors": [
     {
       "hex_value": "#000000",
@@ -114,7 +114,17 @@
       "role": "main",
       "aria_label_present": false,
       "contrast_ratio": 4.5
+    },
+    {
+      "role": "heading",
+      "aria_label_present": true,
+      "contrast_ratio": 7.0
+    },
+    {
+      "role": "button",
+      "aria_label_present": true,
+      "contrast_ratio": 8.0
     }
   ],
-  "dom_hierarchy_snapshot": "SHA256:08346d8b42d93a9909c663d3ee699a022ae13a8e01abaa7c077e26044f305413"
+  "dom_hierarchy_snapshot": "SHA256:69ca76d11ce8f1b919497ba829dd5f6169a6f347f547b2868ab7703dcd7a94e1"
 }

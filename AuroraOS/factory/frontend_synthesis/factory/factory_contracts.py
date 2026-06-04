@@ -1,31 +1,56 @@
 from pydantic import BaseModel, Field
 from typing import List, Dict, Any, Optional, Literal
 
+class LayoutProfileSelection(BaseModel):
+    profile: Literal[
+        "editorial_field",
+        "hero_centric",
+        "split_screen",
+        "bento_grid",
+        "dashboard_grid",
+        "dark_editorial",
+    ]
+    reason: str
+    confidence: float
+    source_signals: list[str] = Field(default_factory=list)
+
 class UINode(BaseModel):
     node_id: str
-    component_type: str = Field(..., description="Mapeamento com ComponentRegistry ou tag HTML (ex: 'div', 'AuroraButton').")
-    props: Dict[str, Any] = Field(default_factory=dict, description="Propriedades injetadas no React Component.")
-    tailwind_classes: List[str] = Field(default_factory=list, description="Vetor puro de classes governadas.")
+    component_name: str  # Renomeado de component_type
+    semantic_role: str
+    props: dict[str, Any] = Field(default_factory=dict)
+    children: list["UINode"] = Field(default_factory=list)
+    layout_slot: str | None = None
+    fallback_used: bool = False
     text_content: Optional[str] = Field(None, description="Texto interno do nó (ex: label de um botão).")
-    children: Optional[List['UINode']] = Field(None, description="Alofocação recursiva de nós filhos.")
 
     # Permite recursão estrita no Pydantic V2
     model_config = {"validate_assignment": True}
+
+class ComponentMappingFinding(BaseModel):
+    code: str
+    severity: Literal["P0", "P1", "P2", "P3"]
+    component_name: str
+    reason: str
+    action: Literal["rendered", "degraded", "blocked"]
 
 class ComponentTree(BaseModel):
     """O artefacto pré-compilação supremo. Apenas AST Pura."""
     spec_id: str = Field(..., description="Rastreabilidade da origem (FrontendCodeSpec).")
     root_node: UINode
+    layout_selection: LayoutProfileSelection
+    component_findings: list[ComponentMappingFinding] = Field(default_factory=list)
 
 # Resolve referências recursivas para Pydantic V2
 UINode.model_rebuild()
 
 class StandaloneRenderBundle(BaseModel):
     bundle_id: str
-    component_code: str
-    html_fallback: str
-    css_code: str
-    tailwind_safelist: list[str]
-    viewport: dict[str, int]
+    ui_tree_hash: str
+    client_component_path: str
+    page_entry_path: str
+    css_entry_path: str | None
     dependencies_mode: Literal["local_pinned"]
     network_allowed: Literal[False]
+    viewport_presets: list[str]
+

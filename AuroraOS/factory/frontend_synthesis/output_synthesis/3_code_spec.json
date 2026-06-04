@@ -1,9 +1,12 @@
 {
-  "spec_id": "SPEC-433EFAFB",
-  "derived_from_draft_id": "DS-079D448B",
+  "spec_id": "SPEC-5EDF4BF1",
+  "derived_from_draft_id": "DS-9B4BE156",
   "theme_config": {
     "colors": {
-      "base-surface": "#0A0A0C"
+      "base-surface": "#0A0A0C",
+      "text-primary": "#FFFFFF",
+      "action-primary": "#4A3FF4",
+      "accent": "#4F46E5"
     },
     "fontFamily": {
       "sans": [
@@ -28,6 +31,20 @@
   "component_registry": [
     {
       "component_name": "AuroraContainer",
+      "required_variants": [
+        "default"
+      ],
+      "is_core_library": true
+    },
+    {
+      "component_name": "AuroraHeading",
+      "required_variants": [
+        "default"
+      ],
+      "is_core_library": true
+    },
+    {
+      "component_name": "AuroraButton",
       "required_variants": [
         "default"
       ],

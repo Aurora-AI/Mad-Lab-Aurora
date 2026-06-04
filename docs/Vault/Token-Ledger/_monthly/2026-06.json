@@ -1,15 +1,15 @@
 {
   "month": "2026-06",
-  "generated_at": "2026-06-04T17:16:00-03:00",
-  "total_tokens": 320000,
-  "total_cost_usd": 0.42825,
-  "total_cost_brl": 2.99775,
+  "generated_at": "2026-06-04T19:35:00-03:00",
+  "total_tokens": 368500,
+  "total_cost_usd": 0.51075,
+  "total_cost_brl": 3.57525,
   "budget_alert": false,
   "by_agent": {
     "antigravity": {
-      "tokens": 320000,
-      "cost_usd": 0.42825,
-      "os_count": 2
+      "tokens": 368500,
+      "cost_usd": 0.51075,
+      "os_count": 3
     }
   },
   "by_model": {
@@ -18,8 +18,8 @@
       "cost_usd": 0.00325
     },
     "gemini-1.5-pro": {
-      "tokens": 295000,
-      "cost_usd": 0.425
+      "tokens": 343500,
+      "cost_usd": 0.5075
     }
   },
   "by_os": [
@@ -36,12 +36,23 @@
       "total_cost_usd": 0.425,
       "steps": 1,
       "note": "Generalization heuristics and authority flow implemented"
+    },
+    {
+      "os_id": "OS-MADLAB-OS018-20260604-001",
+      "total_tokens": 48500,
+      "total_cost_usd": 0.0825,
+      "steps": 1,
+      "note": "BuildPlanResolver implementation & contract traceability mapping"
     }
   ],
   "top_cost_steps": [
     {
       "entry_id": "OS-MADLAB-OS017-20260604-001-step-1",
       "cost_usd": 0.425
+    },
+    {
+      "entry_id": "OS-MADLAB-OS018-20260604-001-step-2",
+      "cost_usd": 0.0825
     },
     {
       "entry_id": "OS-MADLAB-TS-STABILIZATION-20260601-001-step-1",

@@ -1,6 +1,7 @@
 import uuid
 import sys
 import os
+from typing import Any
 
 # Ajuste de paths para simulação em ambiente local/industrial
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../synthesizer')))
@@ -135,10 +136,10 @@ def transmute_text(text: str, role: str) -> dict:
         "proprietary_copy": text
     }
 
-def infer_components(a11y_tree: list, artifact: PageIntelligenceArtifact = None) -> tuple[list, list]:
+def infer_components(a11y_tree: list, artifact: PageIntelligenceArtifact = None, blueprint: Any = None) -> tuple[list, list]:
     """
     Varre a a11y_tree e o PageIntelligenceArtifact para gerar uma composição semântica proprietária rica
-    em vez de mapeamento um-para-um mecânico (OS-016).
+    honrando as decisões estruturais e estratégias decididas pelo Experience Blueprint (OS-017).
     """
     from models import A11yNodeSummary
     processed_tree = []
@@ -193,17 +194,32 @@ def infer_components(a11y_tree: list, artifact: PageIntelligenceArtifact = None)
         section_group="shell"
     ))
     
-    # 2. Adicionar Navegação no topo se houver itens de menu
-    if artifact.nav_items or artifact.links:
+    # 2. Adicionar Navegação no topo se houver itens de menu ou se ditado pelo blueprint
+    has_nav = bool(artifact.nav_items or artifact.links)
+    nav_variant = "dark"
+    if blueprint:
+        if hasattr(blueprint, "navigation_strategy"):
+            strat = blueprint.navigation_strategy.value if hasattr(blueprint.navigation_strategy, "value") else str(blueprint.navigation_strategy)
+            if strat == "mega_dropdown":
+                has_nav = True
+                nav_variant = "mega"
+            elif strat == "minimal_chrome":
+                nav_variant = "minimal"
+            elif strat == "canvas_navigation":
+                nav_variant = "canvas"
+
+    if has_nav:
         # Pega os primeiros links de nav
-        nav_labels = [item for item in artifact.nav_items[:4]]
-        if not nav_labels:
+        nav_labels = [item for item in artifact.nav_items[:4]] if (artifact.nav_items) else []
+        if not nav_labels and artifact.links:
             nav_labels = [link for link in artifact.links[:3]]
+        if not nav_labels:
+            nav_labels = ["Console", "Store", "Docs"]
         
         nav_text = " | ".join([transmute_text(lbl, "link")["proprietary_copy"] for lbl in nav_labels if lbl])
         registry_list.append(ComponentRequirement(
             component_name="AuroraTopNavigation",
-            required_variants=["dark"],
+            required_variants=[nav_variant],
             label="Top Navigation",
             semantic_role="navigation",
             content_function="main_header_navigation",
@@ -271,12 +287,20 @@ def infer_components(a11y_tree: list, artifact: PageIntelligenceArtifact = None)
             section_group="hero"
         ))
 
-    # 5. Adicionar Seção Narrativa de Produto se houver múltiplos headings/seções
-    if len(artifact.headings) > 1:
-        narrative_heading = transmute_text(artifact.headings[1], "heading")["proprietary_copy"]
+    # 5. Adicionar Seção Narrativa de Produto se houver múltiplos headings/seções ou se for split_screen
+    has_narrative = len(artifact.headings) > 1
+    narrative_variant = "default"
+    if blueprint and hasattr(blueprint, "spatial_strategy"):
+        strat = blueprint.spatial_strategy.value if hasattr(blueprint.spatial_strategy, "value") else str(blueprint.spatial_strategy)
+        if strat == "split_screen":
+            has_narrative = True
+            narrative_variant = "split"
+
+    if has_narrative:
+        narrative_heading = transmute_text(artifact.headings[1], "heading")["proprietary_copy"] if len(artifact.headings) > 1 else "Composição Narrativa Aurora"
         registry_list.append(ComponentRequirement(
             component_name="AuroraProductNarrativeSection",
-            required_variants=["default"],
+            required_variants=[narrative_variant],
             label="Product Narrative",
             semantic_role="region",
             content_function="product_explanation",
@@ -285,14 +309,25 @@ def infer_components(a11y_tree: list, artifact: PageIntelligenceArtifact = None)
             section_group="body"
         ))
 
-    # 6. Adicionar Casos de Uso/Bento Grid se houver múltiplos textos/links
-    if len(artifact.visible_texts) > 5:
+    # 6. Adicionar Casos de Uso/Bento Grid se houver múltiplos textos/links ou se ditado pelo blueprint
+    has_bento = len(artifact.visible_texts) > 5
+    bento_variant = "grid"
+    if blueprint and hasattr(blueprint, "spatial_strategy"):
+        strat = blueprint.spatial_strategy.value if hasattr(blueprint.spatial_strategy, "value") else str(blueprint.spatial_strategy)
+        if strat == "clean_bento":
+            has_bento = True
+            bento_variant = "bento"
+        elif strat == "layered_cards":
+            has_bento = True
+            bento_variant = "cards"
+
+    if has_bento:
         # Pega alguns textos do meio para os blocos
-        middle_texts = [transmute_text(t, "text")["proprietary_copy"] for t in artifact.visible_texts[3:6] if t]
+        middle_texts = [transmute_text(t, "text")["proprietary_copy"] for t in artifact.visible_texts[3:6] if t] if len(artifact.visible_texts) > 5 else ["Eficiência", "Controle", "Escala"]
         cluster_text = " // ".join(middle_texts)
         registry_list.append(ComponentRequirement(
             component_name="AuroraUseCaseCluster",
-            required_variants=["grid"],
+            required_variants=[bento_variant],
             label="Use Case Cluster",
             semantic_role="region",
             content_function="use_case_list",
@@ -329,7 +364,7 @@ def infer_components(a11y_tree: list, artifact: PageIntelligenceArtifact = None)
             
     return registry_list, alerts
 
-def orchestrate_code_spec(draft: DesignSystemDraft, artifact: PageIntelligenceArtifact = None) -> FrontendCodeSpec:
+def orchestrate_code_spec(draft: DesignSystemDraft, artifact: PageIntelligenceArtifact = None, blueprint: Any = None) -> FrontendCodeSpec:
     """
     Orquestrador Central (Álvaro).
     Consome o Design System Draft e gera a especificação de frontend definitiva.
@@ -428,7 +463,7 @@ def orchestrate_code_spec(draft: DesignSystemDraft, artifact: PageIntelligenceAr
 
     # 3. Inferência de Componentes Real (Fim do Scaffolding)
     print("[ÁLVARO] A executar Inferência de Componentes via A11y Tree e PageIntelligence...")
-    components, alerts = infer_components(draft.a11y_tree, artifact)
+    components, alerts = infer_components(draft.a11y_tree, artifact, blueprint)
     
     if alerts:
         print(f"[ALERTA DE DEGRADAÇÃO] {len(alerts)} elementos não mapeados foram degradados.")
@@ -448,7 +483,8 @@ def orchestrate_code_spec(draft: DesignSystemDraft, artifact: PageIntelligenceAr
         component_registry=components,
         component_alerts=alerts,
         debt_tracking=debt,
-        ready_for_factory=True
+        ready_for_factory=True,
+        blueprint=blueprint
     )
     
     print(f"[ÁLVARO] Frontend Code Spec [{spec.spec_id}] gerada e selada com sucesso.")

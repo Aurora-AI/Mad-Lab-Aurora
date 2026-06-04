@@ -45,13 +45,14 @@
   {
     "vault_section": "OS-Evidence",
     "path": "docs/Vault/OS-Evidence/",
-    "description": "Evidências de OSes executadas. Append-only. 15+ OSes registradas com evidências reais.",
+    "description": "Evidências de OSes executadas. Append-only. 16+ OSes registradas com evidências reais.",
     "created_at": "2026-04-18",
     "created_by": "OS-AURORA-VISUAL-ASSETS-20260418-004",
     "policy": "append-only",
     "indexable": true,
-    "os_count": 15,
+    "os_count": 16,
     "key_os": [
+      "OS-MADLAB-OS017-20260604-001",
       "OS-MADLAB-CONSUMER-BRIDGE-20260527-001",
       "OS-MADLAB-DOC-STACK-PREPARATION-20260528-001",
       "OS-MADLAB-MANUAL-DA-AGENCIA-REWRITE-20260528-002",

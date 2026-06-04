@@ -1,21 +1,25 @@
 {
   "month": "2026-06",
-  "generated_at": "2026-06-01T10:46:00-03:00",
-  "total_tokens": 25000,
-  "total_cost_usd": 0.00325,
-  "total_cost_brl": 0.02275,
+  "generated_at": "2026-06-04T17:16:00-03:00",
+  "total_tokens": 320000,
+  "total_cost_usd": 0.42825,
+  "total_cost_brl": 2.99775,
   "budget_alert": false,
   "by_agent": {
     "antigravity": {
-      "tokens": 25000,
-      "cost_usd": 0.00325,
-      "os_count": 1
+      "tokens": 320000,
+      "cost_usd": 0.42825,
+      "os_count": 2
     }
   },
   "by_model": {
     "gemini-3.5-flash": {
       "tokens": 25000,
       "cost_usd": 0.00325
+    },
+    "gemini-1.5-pro": {
+      "tokens": 295000,
+      "cost_usd": 0.425
     }
   },
   "by_os": [
@@ -25,9 +29,20 @@
       "total_cost_usd": 0.00325,
       "steps": 1,
       "note": "TypeScript compilation errors resolved"
+    },
+    {
+      "os_id": "OS-MADLAB-OS017-20260604-001",
+      "total_tokens": 295000,
+      "total_cost_usd": 0.425,
+      "steps": 1,
+      "note": "Generalization heuristics and authority flow implemented"
     }
   ],
   "top_cost_steps": [
+    {
+      "entry_id": "OS-MADLAB-OS017-20260604-001-step-1",
+      "cost_usd": 0.425
+    },
     {
       "entry_id": "OS-MADLAB-TS-STABILIZATION-20260601-001-step-1",
       "cost_usd": 0.00325

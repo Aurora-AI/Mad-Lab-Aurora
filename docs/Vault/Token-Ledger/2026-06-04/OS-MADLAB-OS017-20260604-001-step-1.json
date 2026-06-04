@@ -1,0 +1,17 @@
+{
+  "entry_id": "OS-MADLAB-OS017-20260604-001-step-1",
+  "os_id": "OS-MADLAB-OS017-20260604-001",
+  "step_name": "Experience Architect generalization audit & authority flow",
+  "step_number": 1,
+  "agent": "antigravity",
+  "model": "gemini-1.5-pro",
+  "input_tokens": 280000,
+  "output_tokens": 15000,
+  "total_tokens": 295000,
+  "cost_usd_estimated": 0.425,
+  "cost_brl_estimated": 2.975,
+  "duration_ms": 1200000,
+  "timestamp": "2026-06-04T17:15:00-03:00",
+  "notes": "Added rich content-driven heuristics to BlueprintResolver enabling structural generalization on Raycast and Perplexity, and established authority flow (Blueprint decides, CodeSpec describes). Passed 70/70 tests.",
+  "cache_hit": false
+}

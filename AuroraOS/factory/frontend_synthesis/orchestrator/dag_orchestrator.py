@@ -443,7 +443,7 @@ class SynthesisDAG:
             from motion_primitive_injector import MotionPrimitiveInjector
             from anti_stub_gate import AntiStubGate
             
-            ui_tree = generate_ui_tree(results["code_spec"])
+            ui_tree = generate_ui_tree(results["code_spec"], results.get("stories_plan"))
             if ui_tree is None:
                 raise PipelineAbortedException("TranspileUI produced no ComponentTree output.")
 
@@ -451,8 +451,58 @@ class SynthesisDAG:
             gate.evaluate_ui_tree(results["artifact"], ui_tree)
             print("[DAG] AntiStubGate.UITree Passed.")
 
-            injector = MotionPrimitiveInjector()
-            ui_tree = injector.inject_motion(ui_tree)
+            # Check motion capability in stories_plan
+            stories_plan = results.get("stories_plan")
+            has_motion_capability = False
+            if stories_plan:
+                from stories_builder_contracts import BuilderCapability
+                has_motion_capability = BuilderCapability.INJECT_MOTION_PRIMITIVES in stories_plan.capabilities
+                
+            blueprint = results.get("blueprint")
+            motion_strat = getattr(blueprint, "motion_strategy", None) if blueprint else None
+            motion_val = motion_strat.value if hasattr(motion_strat, "value") else str(motion_strat)
+            has_motion_strat = motion_val and motion_val != "none" and motion_val != "MotionStrategy.NONE"
+            
+            if has_motion_strat and not has_motion_capability:
+                from sandbox_contracts import DiagnosticFinding
+                finding = DiagnosticFinding(
+                    severity="P1",
+                    code="MOTION_CAPABILITY_MISMATCH",
+                    redacted_message="motion_strategy is enabled in Blueprint, but stories_plan is missing the inject_motion_primitives capability.",
+                    file_path="stories_build_plan",
+                    line_number=0,
+                    recommended_action="Ensure the build plan grants the inject_motion_primitives capability."
+                )
+                raise PipelinePausedException("Motion capability mismatch.", [finding])
+
+            if has_motion_capability:
+                injector = MotionPrimitiveInjector()
+                ui_tree = injector.inject_motion(ui_tree)
+            else:
+                # Se FactoryAgent injeta motion sem capability: BUILDER_ARCHITECTURE_LEAK — P0
+                def check_motion_injected(node):
+                    if "motionConfig" in node.props or "motion-safe:" in node.props.get("className", ""):
+                        return True
+                    for child in node.children:
+                        if check_motion_injected(child):
+                            return True
+                    return False
+                
+                if check_motion_injected(ui_tree.root_node):
+                    from sandbox_contracts import DiagnosticFinding
+                    raise PipelinePausedException(
+                        "BUILDER_ARCHITECTURE_LEAK: Motion primitives were injected without motion capability.",
+                        [
+                            DiagnosticFinding(
+                                severity="P0",
+                                code="BUILDER_ARCHITECTURE_LEAK",
+                                redacted_message="Motion primitives were injected without inject_motion_primitives capability.",
+                                file_path="stories_build_plan",
+                                line_number=0,
+                                recommended_action="Ensure motion is not injected unless authorized by build plan."
+                            )
+                        ]
+                    )
 
             tailwind_cfg = generate_tailwind_config(
                 results["code_spec"].theme_config.colors, 
@@ -816,9 +866,51 @@ class SynthesisDAG:
                 Path(".").resolve()
             ]
             
+            # Check if synthetic
+            is_synthetic_run = False
+            if fixture_mode:
+                is_synthetic_run = True
+            else:
+                for k in ["artifact", "kit_artifact", "resolved_truth"]:
+                    if k in results and getattr(results[k], "is_synthetic", False):
+                        is_synthetic_run = True
+                        break
+
+            promotion_allowed = not is_synthetic_run
+            human_promotion_allowed = not is_synthetic_run
+            candidate_status = "NON_PROMOTABLE_FIXTURE" if is_synthetic_run else "PROMOTABLE_CANDIDATE"
+
+            # Write promotion_metadata.json
+            with open(staging_dir / "promotion_metadata.json", "w", encoding="utf-8") as f:
+                json.dump({
+                    "promotion_allowed": promotion_allowed,
+                    "human_promotion_allowed": human_promotion_allowed,
+                    "candidate_status": candidate_status
+                }, f, indent=2)
+
+            # Write promotion_candidate.json
+            with open(staging_dir / "promotion_candidate.json", "w", encoding="utf-8") as f:
+                json.dump({
+                    "promotion_allowed": promotion_allowed,
+                    "human_promotion_allowed": human_promotion_allowed,
+                    "candidate_status": candidate_status
+                }, f, indent=2)
+
             promotion_approved = False
             approval_record = None
             
+            if is_synthetic_run:
+                print("[DAG] Synthetic Run (Fixture-Mode): Promotion is strictly disabled.")
+                self.emit_heartbeat(sandbox.run_id, "COMPLETED", 100, "SUCCESS")
+                raise HumanPromotionHalt(
+                    f"Human Promotion Halt: Approval is disabled for synthetic fixtures.\n"
+                    f"Candidate Info:\n"
+                    f"  sandbox_run_id: {sandbox.run_id}\n"
+                    f"  patch_candidate_sha256: {patch_sha}\n"
+                    f"  qa_report_sha256: {qa_report_sha}\n"
+                    f"  candidate_status: NON_PROMOTABLE_FIXTURE"
+                )
+
             if approval_file.exists():
                 try:
                     resolved_approval = approval_file.resolve()

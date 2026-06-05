@@ -84,7 +84,7 @@ def test_generate_ui_tree_hierarchical_success():
         ready_for_factory=True
     )
     
-    tree = generate_ui_tree(spec)
+    tree = generate_ui_tree(spec, compatibility_mode=True)
     # Check nesting: AuroraButton is a child of AuroraContainer
     container_node = None
     for child in tree.root_node.children[-1].children:
@@ -117,7 +117,7 @@ def test_generate_ui_tree_empty_container_fails():
     )
     
     with pytest.raises(PipelinePausedException) as exc:
-        generate_ui_tree(spec)
+        generate_ui_tree(spec, compatibility_mode=True)
         
     assert "Component Transpilation Paused" in str(exc.value)
     findings = exc.value.findings

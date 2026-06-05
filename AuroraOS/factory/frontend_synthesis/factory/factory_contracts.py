@@ -22,7 +22,12 @@ class UINode(BaseModel):
     children: list["UINode"] = Field(default_factory=list)
     layout_slot: str | None = None
     fallback_used: bool = False
+    fallback_reason: Optional[str] = None
+    blueprint_source: Optional[str] = None
+    decision_owner: Optional[str] = None
+    authority_level: Optional[str] = None
     text_content: Optional[str] = Field(None, description="Texto interno do nó (ex: label de um botão).")
+
 
     # Permite recursão estrita no Pydantic V2
     model_config = {"validate_assignment": True}

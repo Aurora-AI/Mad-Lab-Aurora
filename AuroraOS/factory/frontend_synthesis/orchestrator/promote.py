@@ -24,6 +24,21 @@ def promote_candidate(output_dir: str):
     if not repo_root:
         repo_root = Path("C:/Projetos/Aurora").resolve()
         
+    staging_dir = Path(output_dir) / "candidate"
+    
+    # Check synthetic metadata first to fail fast with SYNTHETIC_PROMOTION_ATTEMPT
+    meta_file = staging_dir / "promotion_metadata.json"
+    if meta_file.exists():
+        try:
+            with open(meta_file, "r") as f:
+                meta = json.load(f)
+            if meta.get("candidate_status") == "NON_PROMOTABLE_FIXTURE" or not meta.get("promotion_allowed", True):
+                print("[ERRO] SYNTHETIC_PROMOTION_ATTEMPT — P0: Promotion blocked for synthetic fixture candidate.")
+                sys.exit(1)
+        except Exception as e:
+            print(f"[ERRO] Falha ao analisar promotion_metadata.json: {e}")
+            sys.exit(1)
+
     approval_dir = repo_root / ".aurora" / "approvals"
     approval_file = approval_dir / "promotion_approval.json"
     

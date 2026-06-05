@@ -259,11 +259,39 @@ class SynthesisDAG:
         except Exception as e:
             raise PipelineAbortedException(f"SynthesizeTokens failed: {e}")
 
+        # --- OS-017: Experience Architect ---
+        print("[DAG] Running task: ExperienceArchitect...")
+        sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../experience_architect')))
+        try:
+            from experience_architect import ExperienceArchitect, ExperienceArchitectureGate, ArchitectureCoverageGate
+            architect = ExperienceArchitect()
+            blueprint = architect.architect(
+                url=self.target_url,
+                hybrid_truth=results["resolved_truth"],
+                page_intel=results["artifact"],
+                pattern_intel=results["draft"]
+            )
+            results["blueprint"] = blueprint
+            print("[DAG] ExperienceArchitect generated blueprint.")
+            
+            # Run ExperienceArchitectureGate
+            arch_gate = ExperienceArchitectureGate()
+            arch_gate.evaluate(blueprint)
+            print("[DAG] ExperienceArchitectureGate Passed.")
+            
+            # Run ArchitectureCoverageGate
+            coverage_gate = ArchitectureCoverageGate()
+            coverage_gate.evaluate(blueprint)
+            print("[DAG] ArchitectureCoverageGate Passed.")
+            
+        except Exception as e:
+            raise PipelineAbortedException(f"ExperienceArchitect or Gates failed: {e}")
+
         # 4. OrchestrateSpec (Alvaro)
         print("[DAG] Running task: OrchestrateSpec...")
         try:
             from alvaro_agent import orchestrate_code_spec
-            code_spec = orchestrate_code_spec(results["draft"], results["artifact"])
+            code_spec = orchestrate_code_spec(results["draft"], results["artifact"], results["blueprint"])
             if code_spec is None:
                 raise PipelineAbortedException("OrchestrateSpec produced no output.")
                 
@@ -293,6 +321,58 @@ class SynthesisDAG:
                 
         except Exception as e:
             raise PipelineAbortedException(f"OrchestrateSpec failed: {e}")
+
+        # --- OS-018: Stories Build Plan Resolution and Gate ---
+        print("[DAG] Running task: StoriesBuildPlanResolution...")
+        sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../stories_builder')))
+        try:
+            from build_plan_resolver import BuildPlanResolver
+            from stories_builder_gate import StoriesBuilderGate
+            
+            resolver = BuildPlanResolver()
+            proposed_comps = [req.component_name for req in results["code_spec"].component_registry] if (results.get("code_spec") and results["code_spec"].component_registry) else []
+            
+            try:
+                stories_plan = resolver.resolve_build_plan(results["blueprint"], proposed_components=proposed_comps)
+                results["stories_plan"] = stories_plan
+                print("[DAG] BuildPlanResolver resolved stories build plan.")
+            except Exception as resolver_error:
+                from sandbox_contracts import DiagnosticFinding
+                raise PipelinePausedException(f"BuildPlanResolver failed: {resolver_error}", [
+                    DiagnosticFinding(
+                        severity="P0",
+                        code="BUILDER_CONSTRAINTS_MISSING",
+                        redacted_message=f"BuildPlanResolver failed during execution: {resolver_error}",
+                        file_path="stories_build_plan",
+                        line_number=0,
+                        recommended_action="Verifique os parametros do resolver e a estrutura do blueprint."
+                    )
+                ])
+                
+            gate = StoriesBuilderGate()
+            gate_report = gate.validate_build_plan(stories_plan, results["blueprint"])
+            results["stories_builder_gate_report"] = gate_report
+            print(f"[DAG] StoriesBuilderGate status: {gate_report.status}")
+            
+            if gate_report.status == "failed":
+                from sandbox_contracts import DiagnosticFinding
+                findings = []
+                for f in gate_report.findings:
+                    if f.severity in ["P0", "P1"]:
+                        findings.append(DiagnosticFinding(
+                            severity=f.severity,
+                            code=f.code,
+                            redacted_message=f.message,
+                            file_path="stories_build_plan",
+                            line_number=0,
+                            recommended_action="Corrigir os limites de decisao do Stories Builder no resolver ou contratos."
+                        ))
+                raise PipelinePausedException("StoriesBuilderGate blocked the build plan.", findings)
+                
+        except PipelinePausedException:
+            raise
+        except Exception as e:
+            raise PipelineAbortedException(f"StoriesBuildPlanResolution or StoriesBuilderGate failed: {e}")
 
         # OS-011: EvaluateVisualFidelity
         print("[DAG] Running task: EvaluateVisualFidelity...")
@@ -531,6 +611,28 @@ class SynthesisDAG:
             with open(sandbox.sandbox_dir / "component_mapping_report.json", "w") as f:
                 f.write(json.dumps([f.model_dump() for f in results["ui_tree"].component_findings], indent=2))
 
+            if "blueprint" in results:
+                with open(sandbox.sandbox_dir / "experience_blueprint.json", "w") as f:
+                    f.write(results["blueprint"].model_dump_json(indent=2))
+
+            if "stories_plan" in results:
+                with open(sandbox.sandbox_dir / "stories_build_plan.json", "w") as f:
+                    f.write(results["stories_plan"].model_dump_json(indent=2))
+            else:
+                from sandbox_contracts import DiagnosticFinding
+                raise PipelinePausedException("stories_build_plan.json missing.", [
+                    DiagnosticFinding(severity="P0", code="MISSING_STORIES_BUILD_PLAN", redacted_message="stories_build_plan.json was not generated.", file_path="stories_build_plan.json", line_number=0, recommended_action="Ensure BuildPlanResolver runs and outputs the build plan.")
+                ])
+                
+            if "stories_builder_gate_report" in results:
+                with open(sandbox.sandbox_dir / "stories_builder_gate_report.json", "w") as f:
+                    f.write(results["stories_builder_gate_report"].model_dump_json(indent=2))
+            else:
+                from sandbox_contracts import DiagnosticFinding
+                raise PipelinePausedException("stories_builder_gate_report.json missing.", [
+                    DiagnosticFinding(severity="P0", code="MISSING_STORIES_BUILD_GATE_REPORT", redacted_message="stories_builder_gate_report.json was not generated.", file_path="stories_builder_gate_report.json", line_number=0, recommended_action="Ensure StoriesBuilderGate runs and outputs the gate report.")
+                ])
+
             # 7.5 AntiStubGate Sandbox Check (OS-016)
             print("[DAG] Running task: AntiStubGate Sandbox Verification...")
             self.emit_heartbeat(sandbox.run_id, "VALIDATION_PHASE_1_ANTISTUB", 70, "IN_PROGRESS")
@@ -541,6 +643,18 @@ class SynthesisDAG:
                 print("[DAG] AntiStubGate Sandbox Verification Passed.")
             except PipelinePausedException as e:
                 print(f"[DAG] AntiStubGate Sandbox Verification failed: {e.findings}")
+                self.emit_heartbeat(sandbox.run_id, "VALIDATION_FAILED", 85, "PAUSED", "PipelinePausedException")
+                raise
+
+            # 7.5.2 ExperienceArchitectureGate Sandbox Check (OS-017)
+            print("[DAG] Running task: ExperienceArchitectureGate Sandbox Verification...")
+            try:
+                from experience_gates import ExperienceArchitectureGate
+                exp_gate = ExperienceArchitectureGate()
+                exp_gate.evaluate_sandbox_files(str(sandbox.sandbox_dir))
+                print("[DAG] ExperienceArchitectureGate Sandbox Verification Passed.")
+            except PipelinePausedException as e:
+                print(f"[DAG] ExperienceArchitectureGate Sandbox Verification failed: {e.findings}")
                 self.emit_heartbeat(sandbox.run_id, "VALIDATION_FAILED", 85, "PAUSED", "PipelinePausedException")
                 raise
 
@@ -643,6 +757,12 @@ class SynthesisDAG:
             shutil.copy(sandbox.sandbox_dir / "5_SynthesizedPage.types.ts", staging_dir / "5_SynthesizedPage.types.ts")
             shutil.copy(sandbox.sandbox_dir / "5_SynthesizedPage.client.tsx", staging_dir / "5_SynthesizedPage.client.tsx")
             shutil.copy(sandbox.sandbox_dir / "5_page.tsx", staging_dir / "5_page.tsx")
+            if (sandbox.sandbox_dir / "experience_blueprint.json").exists():
+                shutil.copy(sandbox.sandbox_dir / "experience_blueprint.json", staging_dir / "experience_blueprint.json")
+            if (sandbox.sandbox_dir / "stories_build_plan.json").exists():
+                shutil.copy(sandbox.sandbox_dir / "stories_build_plan.json", staging_dir / "stories_build_plan.json")
+            if (sandbox.sandbox_dir / "stories_builder_gate_report.json").exists():
+                shutil.copy(sandbox.sandbox_dir / "stories_builder_gate_report.json", staging_dir / "stories_builder_gate_report.json")
             
             # Save QA report to staging candidate folder
             report_path = staging_dir / "QA_REPORT.md"

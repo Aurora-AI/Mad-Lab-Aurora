@@ -1,6 +1,6 @@
 import re
 from pydantic import BaseModel, Field, field_validator
-from typing import List, Dict
+from typing import List, Dict, Optional, Any
 
 class TailwindThemeSpec(BaseModel):
     """Mapeamento determinístico para o ficheiro tailwind.config.js da fábrica."""
@@ -73,3 +73,5 @@ class FrontendCodeSpec(BaseModel):
         default=True, 
         description="Selo final do Álvaro. Se False, o pipeline de CI/CD deve abortar."
     )
+    blueprint: Optional[Any] = Field(default=None, description="Experience Blueprint arquited.")
+

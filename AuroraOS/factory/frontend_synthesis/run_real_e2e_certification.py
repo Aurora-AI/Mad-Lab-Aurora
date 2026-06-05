@@ -50,6 +50,7 @@ async def main():
     print(f"Surface Type: {args.surface_type}")
     print(f"Promotion Mode: {args.promotion_mode}")
     print(f"No Mocks: {args.no_mocks}")
+    print(f"Flow: Reference -> Page Intelligence -> Hybrid Truth -> Experience Architect -> Experience Blueprint -> BuildPlanResolver -> StoriesBuilderGate -> Stories Builder -> Visual QA")
     print(f"---------------------------------------------\n")
     
     # Locate repo root

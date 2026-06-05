@@ -63,7 +63,21 @@ class StoriesBuildPlan(BaseModel):
         return v
 
 class StoriesBuilderGateFinding(BaseModel):
-    code: Literal["BUILDER_ARCHITECTURE_LEAK", "STORIES_UNTRACED_IMPLEMENTATION", "BUILDER_CONSTRAINTS_MISSING", "INFO_TRACE_COMPLETE", "MISSING_OPTIONAL_TRACE"]
+    code: Literal[
+        "BUILDER_ARCHITECTURE_LEAK",
+        "BUILDER_CONSTRAINTS_MISSING",
+        "SOURCE_BLUEPRINT_HASH_MISSING",
+        "RAW_REFERENCE_AUTHORITY_LEAK",
+        "AUTO_PROMOTION_ATTEMPT",
+        "STORIES_UNTRACED_IMPLEMENTATION",
+        "MISSING_REQUIRED_BLUEPRINT_SOURCE",
+        "MOTION_WITHOUT_PERFORMANCE_BUDGET",
+        "LAYOUT_WITHOUT_RESPONSIVE_STRATEGY",
+        "MISSING_OPTIONAL_TRACE",
+        "WEAK_TRACEABILITY_DESCRIPTION",
+        "INFO_TRACE_COMPLETE",
+        "INFO_BUILD_PLAN_VALID"
+    ]
     severity: Literal["P0", "P1", "P2", "P3"]
     message: str
     element_id: Optional[str] = None

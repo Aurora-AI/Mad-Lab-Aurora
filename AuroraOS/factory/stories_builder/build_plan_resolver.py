@@ -150,6 +150,13 @@ class BuildPlanResolver:
                 decision_owner="experience_architect",
                 authority_level="architectural"
             ))
+            traceability_items.append(BuildPlanTraceabilityItem(
+                element_id="motion-performance-budget",
+                element_type="motion",
+                blueprint_source="immersion_level",
+                decision_owner="experience_architect",
+                authority_level="architectural"
+            ))
             
         # 7. Map custom proposed components ensuring strict traceback rules
         if proposed_components:

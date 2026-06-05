@@ -1,14 +1,14 @@
 {
   "month": "2026-06",
-  "generated_at": "2026-06-04T19:35:00-03:00",
-  "total_tokens": 368500,
-  "total_cost_usd": 0.51075,
-  "total_cost_brl": 3.57525,
+  "generated_at": "2026-06-05T10:15:00-03:00",
+  "total_tokens": 438500,
+  "total_cost_usd": 0.63825,
+  "total_cost_brl": 4.46775,
   "budget_alert": false,
   "by_agent": {
     "antigravity": {
-      "tokens": 368500,
-      "cost_usd": 0.51075,
+      "tokens": 438500,
+      "cost_usd": 0.63825,
       "os_count": 3
     }
   },
@@ -18,8 +18,8 @@
       "cost_usd": 0.00325
     },
     "gemini-1.5-pro": {
-      "tokens": 343500,
-      "cost_usd": 0.5075
+      "tokens": 413500,
+      "cost_usd": 0.635
     }
   },
   "by_os": [
@@ -39,16 +39,20 @@
     },
     {
       "os_id": "OS-MADLAB-OS018-20260604-001",
-      "total_tokens": 48500,
-      "total_cost_usd": 0.0825,
-      "steps": 1,
-      "note": "BuildPlanResolver implementation & contract traceability mapping"
+      "total_tokens": 118500,
+      "total_cost_usd": 0.210,
+      "steps": 2,
+      "note": "BuildPlanResolver and StoriesBuilderGate implementation & verification"
     }
   ],
   "top_cost_steps": [
     {
       "entry_id": "OS-MADLAB-OS017-20260604-001-step-1",
       "cost_usd": 0.425
+    },
+    {
+      "entry_id": "OS-MADLAB-OS018-20260604-001-step-3",
+      "cost_usd": 0.1275
     },
     {
       "entry_id": "OS-MADLAB-OS018-20260604-001-step-2",

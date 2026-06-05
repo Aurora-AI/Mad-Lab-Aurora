@@ -75,6 +75,7 @@ class PageIntelligenceArtifact(BaseModel):
     dom_depth: int = Field(default=0)
     above_the_fold_elements: List[str] = Field(default_factory=list)
     viewport_metrics: Dict[str, Any] = Field(default_factory=dict)
+    is_synthetic: bool = Field(default=False, description="Flag indicating if this is a synthetic artifact (mock/fixture)")
 
 from enum import Enum
 
@@ -104,6 +105,7 @@ class AssetKitArtifact(BaseModel):
     asset_hashes: Dict[str, str] = Field(default_factory=dict, description="SHA256 dos assets validados.")
     remote_resources: List[str] = Field(default_factory=list, description="URLs externos catalogados mas nunca baixados.")
     scripts_cataloged: List[str] = Field(default_factory=list, description="Tags <script> encontradas, catalogadas mas não executadas.")
+    is_synthetic: bool = Field(default=False, description="Flag indicating if this is a synthetic artifact (mock/fixture)")
 
 class HybridTruthArtifact(BaseModel):
     """
@@ -123,3 +125,5 @@ class HybridTruthArtifact(BaseModel):
     css_variables: Dict[str, str]
     breakpoints: Dict[str, str]
     asset_paths: Dict[str, str]
+    is_synthetic: bool = Field(default=False, description="Flag indicating if this is a synthetic artifact (mock/fixture)")
+

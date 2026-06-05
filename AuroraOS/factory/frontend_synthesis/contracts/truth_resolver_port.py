@@ -14,6 +14,8 @@ class TruthResolutionResult(BaseModel):
     resolved_data: Dict[str, Any] = Field(..., description="Dicionário com os dados finais de design/estilo consolidados")
     conflicts: Dict[str, ConflictReport] = Field(default_factory=dict, description="Todos os conflitos identificados e suas respectivas resoluções")
     has_critical_conflicts: bool = Field(default=False, description="Flag indicando se há algum conflito crítico pendente de escalação")
+    is_synthetic: bool = Field(default=False, description="Flag indicating if the resolution is synthetic (mock/fixture)")
+
 
 class TruthResolverPort(ABC):
     @abstractmethod

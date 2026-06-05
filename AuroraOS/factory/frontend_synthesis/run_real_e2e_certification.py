@@ -34,12 +34,17 @@ def parse_args():
     parser.add_argument("--surface-type", default="landing", choices=["landing", "crm"], help="Surface target layout type")
     parser.add_argument("--promotion-mode", default="candidate-only", choices=["candidate-only", "promote"], help="Candidate promotion mode")
     parser.add_argument("--no-mocks", action="store_true", help="Disable all mocks (active by default in certification)")
+    parser.add_argument("--fixture-mode", action="store_true", help="Enable fixture mode using synthetic data")
     parser.add_argument("--promote", action="store_true", help="Automatically write approval record and promote candidate on success (legacy flag)")
     return parser.parse_args()
 
 async def main():
     args = parse_args()
     
+    if args.no_mocks and args.fixture_mode:
+        print("[CRITICAL] Conflict: --no-mocks and --fixture-mode cannot be used together.")
+        sys.exit(1)
+        
     # Resolve promotion flag
     should_promote = args.promote or (args.promotion_mode == "promote")
     
@@ -50,6 +55,7 @@ async def main():
     print(f"Surface Type: {args.surface_type}")
     print(f"Promotion Mode: {args.promotion_mode}")
     print(f"No Mocks: {args.no_mocks}")
+    print(f"Fixture Mode: {args.fixture_mode}")
     print(f"Flow: Reference -> Page Intelligence -> Hybrid Truth -> Experience Architect -> Experience Blueprint -> BuildPlanResolver -> StoriesBuilderGate -> Stories Builder -> Visual QA")
     print(f"---------------------------------------------\n")
     
@@ -73,7 +79,9 @@ async def main():
         results = await dag.execute(
             acquire_asset_kit=args.acquire_asset_kit,
             asset_kit_manifest_path=args.manifest_path,
-            governance_mode=args.governance_mode
+            governance_mode=args.governance_mode,
+            no_mocks=args.no_mocks,
+            fixture_mode=args.fixture_mode
         )
         print("[SUCCESS] Pipeline completed successfully!")
         if results.get("promotion_authorized"):

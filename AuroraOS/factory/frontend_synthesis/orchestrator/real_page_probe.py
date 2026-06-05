@@ -160,25 +160,55 @@ TELEMETRY_INJECTION_SCRIPT = r"""
 }
 """
 
-async def extract_real_page_intelligence(target_url: str) -> PageIntelligenceArtifact:
+async def extract_real_page_intelligence(target_url: str, no_mocks: bool = False, fixture_mode: bool = False) -> PageIntelligenceArtifact:
     """
     Extrator DOM Real. Usa Playwright para iterar a arvore visualmente
     e criar o PageIntelligenceArtifact estendido.
     """
-    print(f"[PROBE] Iniciando varredura real do DOM em: {target_url}")
+    print(f"[PROBE] Iniciando varredura real do DOM em: {target_url} (no_mocks={no_mocks}, fixture_mode={fixture_mode})")
+
+    if no_mocks and fixture_mode:
+        from sandbox_contracts import PipelinePausedException, DiagnosticFinding
+        raise PipelinePausedException("REAL_RUN_MOCK_FALLBACK_ATTEMPT: Conflict between --no-mocks and --fixture-mode.", [
+            DiagnosticFinding(
+                severity="P0",
+                code="REAL_RUN_MOCK_FALLBACK_ATTEMPT",
+                redacted_message="Conflict: Cannot run in real mode and fixture mode simultaneously.",
+                file_path="real_page_probe.py",
+                line_number=170,
+                recommended_action="Run with either --no-mocks or --fixture-mode, not both."
+            )
+        ])
 
     if "antigravity.google" in target_url:
+        if no_mocks:
+            from sandbox_contracts import PipelinePausedException, DiagnosticFinding
+            raise PipelinePausedException("REAL_RUN_MOCK_FALLBACK_ATTEMPT: Mock fallback attempt in real run.", [
+                DiagnosticFinding(
+                    severity="P0",
+                    code="REAL_RUN_MOCK_FALLBACK_ATTEMPT",
+                    redacted_message="Mock/fixture fallback for antigravity.google is forbidden under --no-mocks.",
+                    file_path="real_page_probe.py",
+                    line_number=180,
+                    recommended_action="Ensure real network connection is active or run in --fixture-mode."
+                )
+            ])
+
         candidate_path = Path(__file__).parent.parent / "output_synthesis" / "candidate" / "1_artifact.json"
         if not candidate_path.exists():
             candidate_path = Path("C:/Projetos/Aurora/AuroraOS/factory/frontend_synthesis/output_synthesis/candidate/1_artifact.json")
         if candidate_path.exists():
-            print(f"[PROBE] Offline/Sandbox detected. Loading cached mock artifact from: {candidate_path}")
+            print(f"[PROBE] Sandbox/Fixture detected. Loading cached mock artifact from: {candidate_path}")
             try:
                 with open(candidate_path, "r", encoding="utf-8") as f:
                     data = json.load(f)
-                return PageIntelligenceArtifact(**data)
+                art = PageIntelligenceArtifact(**data)
+                if fixture_mode:
+                    art.is_synthetic = True
+                return art
             except Exception as read_err:
                 print(f"[PROBE] Failed to load cached mock artifact: {read_err}. Proceeding with Playwright...")
+
     
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)

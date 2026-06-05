@@ -60,7 +60,9 @@ class SynthesisDAG:
                       governance_mode: str = "transmute", 
                       probe_truth_mock: Optional[Dict[str, Any]] = None,
                       acquire_asset_kit: bool = False,
-                      asset_kit_manifest_path: Optional[str] = None) -> Dict[str, Any]:
+                      asset_kit_manifest_path: Optional[str] = None,
+                      no_mocks: bool = False,
+                      fixture_mode: bool = False) -> Dict[str, Any]:
         self.validate_pre_conditions()
         
         results = {}
@@ -72,7 +74,9 @@ class SynthesisDAG:
                 artifact = probe_artifact_mock
             else:
                 from real_page_probe import extract_real_page_intelligence
-                artifact = await extract_real_page_intelligence(self.target_url)
+                artifact = await extract_real_page_intelligence(self.target_url, no_mocks=no_mocks, fixture_mode=fixture_mode)
+                if fixture_mode:
+                    artifact.is_synthetic = True
             
             if artifact is None:
                 raise PipelineAbortedException("ExtractTarget produced no output.")
@@ -146,6 +150,8 @@ class SynthesisDAG:
                 raise PipelineAbortedException("Fail-Closed: asset_kit_manifest.json missing in Staging.")
 
             kit_artifact = ingestor.ingest()
+            if fixture_mode:
+                kit_artifact.is_synthetic = True
             results["kit_artifact"] = kit_artifact
         except Exception as e:
             raise PipelineAbortedException(f"IngestAssetKit failed: {e}")
@@ -167,6 +173,8 @@ class SynthesisDAG:
             kit_dict = kit_artifact.model_dump()
             
             resolution = resolver.resolve(probe_dict, kit_dict)
+            if fixture_mode:
+                resolution.is_synthetic = True
             if resolution.has_critical_conflicts:
                 raise PipelinePausedException("ResolveTruth paused: Critical Conflict identified (Manual Escalation).", [])
                 

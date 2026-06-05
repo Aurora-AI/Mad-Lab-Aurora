@@ -4,7 +4,7 @@ Aurora v9.0 Compliance Documentation:
 - Implementation: Realizada em microetapas seguindo o plano de execucao.
 - Production First: Este modulo esta pronto para uso real e integrado.
 - Trustware: A validacao e feita atraves de gate deterministico no Pydantic.
-- Auditabilidade: Rastreabilidade de plano e relatorio de gate persistido.
+- Auditabilidade: Rastreabilidade de plano e relatorio de gate persistido como evidencia.
 - Zero Divida Tecnica: Codigo enxuto, tipado e livre de acoplamento fragil.
 - Contrato Antes de Codigo: Depende estritamente de stories_builder_contracts.py.
 - Soberania de Dominio: O escopo e restrito ao Stories Builder e nao mistura CRM ou ElysianLex.

@@ -1,14 +1,14 @@
 {
   "month": "2026-06",
-  "generated_at": "2026-06-05T10:15:00-03:00",
-  "total_tokens": 438500,
-  "total_cost_usd": 0.63825,
-  "total_cost_brl": 4.46775,
+  "generated_at": "2026-06-05T11:12:00-03:00",
+  "total_tokens": 531500,
+  "total_cost_usd": 0.76575,
+  "total_cost_brl": 5.36025,
   "budget_alert": false,
   "by_agent": {
     "antigravity": {
-      "tokens": 438500,
-      "cost_usd": 0.63825,
+      "tokens": 531500,
+      "cost_usd": 0.76575,
       "os_count": 3
     }
   },
@@ -18,8 +18,8 @@
       "cost_usd": 0.00325
     },
     "gemini-1.5-pro": {
-      "tokens": 413500,
-      "cost_usd": 0.635
+      "tokens": 506500,
+      "cost_usd": 0.7625
     }
   },
   "by_os": [
@@ -39,10 +39,10 @@
     },
     {
       "os_id": "OS-MADLAB-OS018-20260604-001",
-      "total_tokens": 118500,
-      "total_cost_usd": 0.210,
-      "steps": 2,
-      "note": "BuildPlanResolver and StoriesBuilderGate implementation & verification"
+      "total_tokens": 211500,
+      "total_cost_usd": 0.3375,
+      "steps": 3,
+      "note": "BuildPlanResolver, StoriesBuilderGate and SynthesisDAG integration & verification"
     }
   ],
   "top_cost_steps": [
@@ -52,6 +52,10 @@
     },
     {
       "entry_id": "OS-MADLAB-OS018-20260604-001-step-3",
+      "cost_usd": 0.1275
+    },
+    {
+      "entry_id": "OS-MADLAB-OS018-20260604-001-step-4",
       "cost_usd": 0.1275
     },
     {

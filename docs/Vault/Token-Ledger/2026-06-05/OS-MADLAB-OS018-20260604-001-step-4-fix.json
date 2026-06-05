@@ -1,0 +1,17 @@
+{
+  "entry_id": "OS-MADLAB-OS018-20260604-001-step-4-fix",
+  "os_id": "OS-MADLAB-OS018-20260604-001",
+  "step_name": "Probe reality fix (REAL_RUN_MOCK_FALLBACK_ATTEMPT)",
+  "step_number": 4,
+  "agent": "antigravity",
+  "model": "gemini-1.5-pro",
+  "input_tokens": 90000,
+  "output_tokens": 3000,
+  "total_tokens": 93000,
+  "cost_usd_estimated": 0.1275,
+  "cost_brl_estimated": 0.8925,
+  "duration_ms": 150000,
+  "timestamp": "2026-06-05T12:02:00-03:00",
+  "notes": "Fixed silent local mock fallback in real_page_probe.py. Created REAL_RUN_MOCK_FALLBACK_ATTEMPT P0 diagnostic blocker when attempting to load mock data under --no-mocks. Created --fixture-mode flag and mapped is_synthetic property to all data model artifacts under fixture runs.",
+  "cache_hit": false
+}

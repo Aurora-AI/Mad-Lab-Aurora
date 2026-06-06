@@ -180,20 +180,7 @@ async def extract_real_page_intelligence(target_url: str, no_mocks: bool = False
             )
         ])
 
-    if "antigravity.google" in target_url:
-        if no_mocks:
-            from sandbox_contracts import PipelinePausedException, DiagnosticFinding
-            raise PipelinePausedException("REAL_RUN_MOCK_FALLBACK_ATTEMPT: Mock fallback attempt in real run.", [
-                DiagnosticFinding(
-                    severity="P0",
-                    code="REAL_RUN_MOCK_FALLBACK_ATTEMPT",
-                    redacted_message="Mock/fixture fallback for antigravity.google is forbidden under --no-mocks.",
-                    file_path="real_page_probe.py",
-                    line_number=180,
-                    recommended_action="Ensure real network connection is active or run in --fixture-mode."
-                )
-            ])
-
+    if "antigravity.google" in target_url and not no_mocks:
         candidate_path = Path(__file__).parent.parent / "output_synthesis" / "candidate" / "1_artifact.json"
         if not candidate_path.exists():
             candidate_path = Path("C:/Projetos/Aurora/AuroraOS/factory/frontend_synthesis/output_synthesis/candidate/1_artifact.json")
@@ -212,7 +199,7 @@ async def extract_real_page_intelligence(target_url: str, no_mocks: bool = False
     
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
-        context = await browser.new_context()
+        context = await browser.new_context(ignore_https_errors=True)
         page = await context.new_page()
         
         await page.goto(target_url, wait_until="networkidle")

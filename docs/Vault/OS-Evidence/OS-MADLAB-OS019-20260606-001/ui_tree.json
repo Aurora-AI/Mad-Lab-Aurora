@@ -1,0 +1,1040 @@
+{
+  "spec_id": "SPEC-97B47204",
+  "root_node": {
+    "node_id": "html",
+    "component_name": "div",
+    "semantic_role": "document",
+    "props": {
+      "className": "w-full"
+    },
+    "children": [
+      {
+        "node_id": "body",
+        "component_name": "div",
+        "semantic_role": "application",
+        "props": {
+          "className": "w-full"
+        },
+        "children": [
+          {
+            "node_id": "wrap1",
+            "component_name": "div",
+            "semantic_role": "presentation",
+            "props": {
+              "className": "w-full min-h-screen"
+            },
+            "children": [
+              {
+                "node_id": "wrap2",
+                "component_name": "div",
+                "semantic_role": "presentation",
+                "props": {
+                  "className": "w-full h-full"
+                },
+                "children": [
+                  {
+                    "node_id": "wrap3",
+                    "component_name": "div",
+                    "semantic_role": "presentation",
+                    "props": {
+                      "className": "w-full flex"
+                    },
+                    "children": [
+                      {
+                        "node_id": "wrap4",
+                        "component_name": "div",
+                        "semantic_role": "presentation",
+                        "props": {
+                          "className": "w-full flex flex-col flex-1"
+                        },
+                        "children": [
+                          {
+                            "node_id": "root",
+                            "component_name": "main",
+                            "semantic_role": "main",
+                            "props": {
+                              "className": "min-h-screen bg-base-surface text-text-primary flex flex-col flex-1 w-full font-sans transition-opacity opacity-100 motion-safe:duration-300 motion-safe:ease-out motion-reduce:transition-opacity motion-reduce:duration-100",
+                              "motionConfig": {
+                                "primitive": "fade_in",
+                                "durationMs": 300,
+                                "delayMs": 0,
+                                "easing": "ease-out",
+                                "intensity": "medium",
+                                "reducedMotionFallback": "opacity"
+                              }
+                            },
+                            "children": [
+                              {
+                                "node_id": "header-13b0",
+                                "component_name": "header",
+                                "semantic_role": "banner",
+                                "props": {
+                                  "className": "w-full border-b border-gray-900 bg-black/50 backdrop-blur-md sticky top-0 z-50",
+                                  "originalComponent": "AuroraTopNavigation"
+                                },
+                                "children": [
+                                  {
+                                    "node_id": "nav-inner-516a",
+                                    "component_name": "div",
+                                    "semantic_role": "presentation",
+                                    "props": {
+                                      "className": "max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+                                    },
+                                    "children": [
+                                      {
+                                        "node_id": "logo-29ff",
+                                        "component_name": "div",
+                                        "semantic_role": "presentation",
+                                        "props": {
+                                          "className": "font-bold text-xl tracking-widest text-accent"
+                                        },
+                                        "children": [],
+                                        "layout_slot": null,
+                                        "fallback_used": false,
+                                        "fallback_reason": null,
+                                        "blueprint_source": null,
+                                        "decision_owner": null,
+                                        "authority_level": null,
+                                        "text_content": "AURORA"
+                                      },
+                                      {
+                                        "node_id": "nav-links-fdc9",
+                                        "component_name": "nav",
+                                        "semantic_role": "navigation",
+                                        "props": {
+                                          "className": "flex items-center gap-8"
+                                        },
+                                        "children": [
+                                          {
+                                            "node_id": "nav-item-69c7-0",
+                                            "component_name": "AuroraLink",
+                                            "semantic_role": "link",
+                                            "props": {
+                                              "className": "text-sm text-gray-300 hover:text-white transition-colors transition-transform active:motion-safe:scale-95 motion-safe:duration-150 motion-safe:ease-out",
+                                              "motionConfig": {
+                                                "primitive": "press_scale",
+                                                "durationMs": 150,
+                                                "delayMs": 0,
+                                                "easing": "ease-out",
+                                                "intensity": "medium",
+                                                "reducedMotionFallback": "static"
+                                              }
+                                            },
+                                            "children": [],
+                                            "layout_slot": null,
+                                            "fallback_used": false,
+                                            "fallback_reason": null,
+                                            "blueprint_source": null,
+                                            "decision_owner": null,
+                                            "authority_level": null,
+                                            "text_content": "Ir para Work\nStudio\nNews\nContact"
+                                          }
+                                        ],
+                                        "layout_slot": null,
+                                        "fallback_used": false,
+                                        "fallback_reason": null,
+                                        "blueprint_source": null,
+                                        "decision_owner": null,
+                                        "authority_level": null,
+                                        "text_content": null
+                                      }
+                                    ],
+                                    "layout_slot": null,
+                                    "fallback_used": false,
+                                    "fallback_reason": null,
+                                    "blueprint_source": null,
+                                    "decision_owner": null,
+                                    "authority_level": null,
+                                    "text_content": null
+                                  }
+                                ],
+                                "layout_slot": null,
+                                "fallback_used": false,
+                                "fallback_reason": null,
+                                "blueprint_source": "navigation_strategy",
+                                "decision_owner": "experience_architect",
+                                "authority_level": "architectural",
+                                "text_content": null
+                              },
+                              {
+                                "node_id": "hero-8a1d",
+                                "component_name": "section",
+                                "semantic_role": "region",
+                                "props": {
+                                  "className": "relative overflow-hidden py-32 px-6 border-b border-gray-900 bg-gradient-to-b from-black to-gray-950 transition-opacity opacity-100 motion-safe:duration-300 motion-safe:ease-out motion-reduce:transition-opacity motion-reduce:duration-100",
+                                  "originalComponent": "AuroraHeroStatement",
+                                  "motionConfig": {
+                                    "primitive": "fade_in",
+                                    "durationMs": 300,
+                                    "delayMs": 0,
+                                    "easing": "ease-out",
+                                    "intensity": "medium",
+                                    "reducedMotionFallback": "opacity"
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "node_id": "hero-container-35dd",
+                                    "component_name": "div",
+                                    "semantic_role": "presentation",
+                                    "props": {
+                                      "className": "max-w-5xl mx-auto flex flex-col items-center text-center gap-8 relative z-10"
+                                    },
+                                    "children": [
+                                      {
+                                        "node_id": "hero-title-3e81",
+                                        "component_name": "AuroraHeading",
+                                        "semantic_role": "heading",
+                                        "props": {
+                                          "className": "text-5xl md:text-7xl font-bold tracking-tight text-white leading-tight"
+                                        },
+                                        "children": [],
+                                        "layout_slot": null,
+                                        "fallback_used": false,
+                                        "fallback_reason": null,
+                                        "blueprint_source": "narrative_strategy",
+                                        "decision_owner": "experience_architect",
+                                        "authority_level": "architectural",
+                                        "text_content": "Plataforma Aurora — Digital\nDesign\nExperience"
+                                      },
+                                      {
+                                        "node_id": "hero-sub-e70d",
+                                        "component_name": "div",
+                                        "semantic_role": "presentation",
+                                        "props": {
+                                          "className": "text-lg md:text-xl text-gray-400 max-w-3xl"
+                                        },
+                                        "children": [],
+                                        "layout_slot": null,
+                                        "fallback_used": false,
+                                        "fallback_reason": null,
+                                        "blueprint_source": null,
+                                        "decision_owner": null,
+                                        "authority_level": null,
+                                        "text_content": "Operação sob Override Executivo do Comandante. Automação cognitiva de alta fidelidade e auditoria de originalidade."
+                                      },
+                                      {
+                                        "node_id": "cta-wrap-f507",
+                                        "component_name": "div",
+                                        "semantic_role": "group",
+                                        "props": {
+                                          "className": "flex flex-col sm:flex-row gap-4 justify-center items-center mt-6 w-full"
+                                        },
+                                        "children": [
+                                          {
+                                            "node_id": "btn-primary-89ab",
+                                            "component_name": "AuroraButton",
+                                            "semantic_role": "button",
+                                            "props": {
+                                              "variant": "primary",
+                                              "className": "px-8 py-4 bg-accent hover:bg-accent/80 text-black rounded-lg font-medium transition-all shadow-lg shadow-accent/20 transition-transform active:motion-safe:scale-95 motion-safe:duration-150 motion-safe:ease-out",
+                                              "motionConfig": {
+                                                "primitive": "press_scale",
+                                                "durationMs": 150,
+                                                "delayMs": 0,
+                                                "easing": "ease-out",
+                                                "intensity": "medium",
+                                                "reducedMotionFallback": "static"
+                                              }
+                                            },
+                                            "children": [],
+                                            "layout_slot": null,
+                                            "fallback_used": false,
+                                            "fallback_reason": null,
+                                            "blueprint_source": "narrative_strategy",
+                                            "decision_owner": "experience_architect",
+                                            "authority_level": "architectural",
+                                            "text_content": "Ir para Work"
+                                          }
+                                        ],
+                                        "layout_slot": null,
+                                        "fallback_used": false,
+                                        "fallback_reason": null,
+                                        "blueprint_source": null,
+                                        "decision_owner": null,
+                                        "authority_level": null,
+                                        "text_content": null
+                                      }
+                                    ],
+                                    "layout_slot": null,
+                                    "fallback_used": false,
+                                    "fallback_reason": null,
+                                    "blueprint_source": null,
+                                    "decision_owner": null,
+                                    "authority_level": null,
+                                    "text_content": null
+                                  }
+                                ],
+                                "layout_slot": null,
+                                "fallback_used": false,
+                                "fallback_reason": null,
+                                "blueprint_source": "narrative_strategy",
+                                "decision_owner": "experience_architect",
+                                "authority_level": "architectural",
+                                "text_content": null
+                              },
+                              {
+                                "node_id": "prod-e7b1",
+                                "component_name": "section",
+                                "semantic_role": "region",
+                                "props": {
+                                  "className": "py-24 px-6 bg-black border-b border-gray-900 transition-opacity opacity-100 motion-safe:duration-300 motion-safe:ease-out motion-reduce:transition-opacity motion-reduce:duration-100",
+                                  "originalComponent": "AuroraProductNarrativeSection",
+                                  "motionConfig": {
+                                    "primitive": "fade_in",
+                                    "durationMs": 300,
+                                    "delayMs": 0,
+                                    "easing": "ease-out",
+                                    "intensity": "medium",
+                                    "reducedMotionFallback": "opacity"
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "node_id": "prod-container-5e08",
+                                    "component_name": "div",
+                                    "semantic_role": "presentation",
+                                    "props": {
+                                      "className": "max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+                                    },
+                                    "children": [
+                                      {
+                                        "node_id": "prod-left-f4a7",
+                                        "component_name": "div",
+                                        "semantic_role": "presentation",
+                                        "props": {
+                                          "className": "flex flex-col gap-6"
+                                        },
+                                        "children": [
+                                          {
+                                            "node_id": "prod-title-4fd9",
+                                            "component_name": "AuroraHeading",
+                                            "semantic_role": "heading",
+                                            "props": {
+                                              "className": "text-3xl md:text-5xl font-bold tracking-tight text-white"
+                                            },
+                                            "children": [],
+                                            "layout_slot": null,
+                                            "fallback_used": false,
+                                            "fallback_reason": null,
+                                            "blueprint_source": "narrative_strategy",
+                                            "decision_owner": "experience_architect",
+                                            "authority_level": "architectural",
+                                            "text_content": "Plataforma Aurora — Featured Projects"
+                                          },
+                                          {
+                                            "node_id": "prod-desc-276f",
+                                            "component_name": "div",
+                                            "semantic_role": "presentation",
+                                            "props": {
+                                              "className": "text-gray-400 leading-relaxed"
+                                            },
+                                            "children": [],
+                                            "layout_slot": null,
+                                            "fallback_used": false,
+                                            "fallback_reason": null,
+                                            "blueprint_source": null,
+                                            "decision_owner": null,
+                                            "authority_level": null,
+                                            "text_content": "A arquitetura industrial do Aurora OS garante isolamento cognitivo de eixos criativos e operacionais por meio de gates determinísticos."
+                                          }
+                                        ],
+                                        "layout_slot": null,
+                                        "fallback_used": false,
+                                        "fallback_reason": null,
+                                        "blueprint_source": null,
+                                        "decision_owner": null,
+                                        "authority_level": null,
+                                        "text_content": null
+                                      },
+                                      {
+                                        "node_id": "prod-right-8102",
+                                        "component_name": "div",
+                                        "semantic_role": "presentation",
+                                        "props": {
+                                          "className": "bg-gray-900/50 border border-gray-800 p-8 rounded-2xl"
+                                        },
+                                        "children": [
+                                          {
+                                            "node_id": "card-info-8c0d",
+                                            "component_name": "AuroraCard",
+                                            "semantic_role": "region",
+                                            "props": {
+                                              "className": "text-accent font-semibold mb-4"
+                                            },
+                                            "children": [],
+                                            "layout_slot": null,
+                                            "fallback_used": false,
+                                            "fallback_reason": null,
+                                            "blueprint_source": "narrative_strategy",
+                                            "decision_owner": "experience_architect",
+                                            "authority_level": "architectural",
+                                            "text_content": "Sistemas de Transmutação S-Tier"
+                                          },
+                                          {
+                                            "node_id": "card-body-9c2d",
+                                            "component_name": "div",
+                                            "semantic_role": "presentation",
+                                            "props": {
+                                              "className": "text-sm text-gray-500"
+                                            },
+                                            "children": [],
+                                            "layout_slot": null,
+                                            "fallback_used": false,
+                                            "fallback_reason": null,
+                                            "blueprint_source": null,
+                                            "decision_owner": null,
+                                            "authority_level": null,
+                                            "text_content": "Mapeamento de PageIntelligence real em tempo de execução livre de stubs estruturais e com auditorias de originalidade de alta precisão."
+                                          }
+                                        ],
+                                        "layout_slot": null,
+                                        "fallback_used": false,
+                                        "fallback_reason": null,
+                                        "blueprint_source": null,
+                                        "decision_owner": null,
+                                        "authority_level": null,
+                                        "text_content": null
+                                      }
+                                    ],
+                                    "layout_slot": null,
+                                    "fallback_used": false,
+                                    "fallback_reason": null,
+                                    "blueprint_source": null,
+                                    "decision_owner": null,
+                                    "authority_level": null,
+                                    "text_content": null
+                                  }
+                                ],
+                                "layout_slot": null,
+                                "fallback_used": false,
+                                "fallback_reason": null,
+                                "blueprint_source": "narrative_strategy",
+                                "decision_owner": "experience_architect",
+                                "authority_level": "architectural",
+                                "text_content": null
+                              },
+                              {
+                                "node_id": "bento-ba48",
+                                "component_name": "section",
+                                "semantic_role": "region",
+                                "props": {
+                                  "className": "py-24 px-6 bg-gray-950/40 border-b border-gray-900 transition-opacity opacity-100 motion-safe:duration-300 motion-safe:ease-out motion-reduce:transition-opacity motion-reduce:duration-100",
+                                  "originalComponent": "AuroraUseCaseCluster",
+                                  "motionConfig": {
+                                    "primitive": "fade_in",
+                                    "durationMs": 300,
+                                    "delayMs": 0,
+                                    "easing": "ease-out",
+                                    "intensity": "medium",
+                                    "reducedMotionFallback": "opacity"
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "node_id": "bento-container-782d",
+                                    "component_name": "div",
+                                    "semantic_role": "presentation",
+                                    "props": {
+                                      "className": "max-w-7xl mx-auto flex flex-col gap-12"
+                                    },
+                                    "children": [
+                                      {
+                                        "node_id": "bento-head-724e",
+                                        "component_name": "div",
+                                        "semantic_role": "presentation",
+                                        "props": {
+                                          "className": "text-center"
+                                        },
+                                        "children": [
+                                          {
+                                            "node_id": "bento-title-eb8f",
+                                            "component_name": "AuroraHeading",
+                                            "semantic_role": "heading",
+                                            "props": {
+                                              "className": "text-3xl md:text-4xl font-bold text-white mb-4"
+                                            },
+                                            "children": [],
+                                            "layout_slot": null,
+                                            "fallback_used": false,
+                                            "fallback_reason": null,
+                                            "blueprint_source": "spatial_strategy",
+                                            "decision_owner": "experience_architect",
+                                            "authority_level": "architectural",
+                                            "text_content": "Casos de Uso & Aplicações"
+                                          }
+                                        ],
+                                        "layout_slot": null,
+                                        "fallback_used": false,
+                                        "fallback_reason": null,
+                                        "blueprint_source": null,
+                                        "decision_owner": null,
+                                        "authority_level": null,
+                                        "text_content": null
+                                      },
+                                      {
+                                        "node_id": "bento-grid-8dfd",
+                                        "component_name": "div",
+                                        "semantic_role": "presentation",
+                                        "props": {
+                                          "className": "grid grid-cols-1 md:grid-cols-3 gap-6"
+                                        },
+                                        "children": [
+                                          {
+                                            "node_id": "bento-col-f21a-0",
+                                            "component_name": "div",
+                                            "semantic_role": "presentation",
+                                            "props": {
+                                              "className": "bg-gray-900/30 border border-gray-800/80 p-6 rounded-xl hover:border-gray-700 transition-all flex flex-col gap-4"
+                                            },
+                                            "children": [
+                                              {
+                                                "node_id": "bento-inner-1994-0",
+                                                "component_name": "div",
+                                                "semantic_role": "presentation",
+                                                "props": {
+                                                  "className": "flex flex-col gap-2"
+                                                },
+                                                "children": [
+                                                  {
+                                                    "node_id": "bento-num-75c8-0",
+                                                    "component_name": "span",
+                                                    "semantic_role": "presentation",
+                                                    "props": {
+                                                      "className": "text-accent font-mono text-sm"
+                                                    },
+                                                    "children": [],
+                                                    "layout_slot": null,
+                                                    "fallback_used": false,
+                                                    "fallback_reason": null,
+                                                    "blueprint_source": null,
+                                                    "decision_owner": null,
+                                                    "authority_level": null,
+                                                    "text_content": "01"
+                                                  },
+                                                  {
+                                                    "node_id": "bento-lbl-2b9d-0",
+                                                    "component_name": "div",
+                                                    "semantic_role": "presentation",
+                                                    "props": {
+                                                      "className": "text-lg font-semibold text-white"
+                                                    },
+                                                    "children": [],
+                                                    "layout_slot": null,
+                                                    "fallback_used": false,
+                                                    "fallback_reason": null,
+                                                    "blueprint_source": null,
+                                                    "decision_owner": null,
+                                                    "authority_level": null,
+                                                    "text_content": "Studio"
+                                                  },
+                                                  {
+                                                    "node_id": "bento-desc-326e-0",
+                                                    "component_name": "div",
+                                                    "semantic_role": "presentation",
+                                                    "props": {
+                                                      "className": "text-sm text-gray-500"
+                                                    },
+                                                    "children": [],
+                                                    "layout_slot": null,
+                                                    "fallback_used": false,
+                                                    "fallback_reason": null,
+                                                    "blueprint_source": null,
+                                                    "decision_owner": null,
+                                                    "authority_level": null,
+                                                    "text_content": "Isolamento de contexts e governança determinística do ecossistema."
+                                                  }
+                                                ],
+                                                "layout_slot": null,
+                                                "fallback_used": false,
+                                                "fallback_reason": null,
+                                                "blueprint_source": null,
+                                                "decision_owner": null,
+                                                "authority_level": null,
+                                                "text_content": null
+                                              }
+                                            ],
+                                            "layout_slot": null,
+                                            "fallback_used": false,
+                                            "fallback_reason": null,
+                                            "blueprint_source": null,
+                                            "decision_owner": null,
+                                            "authority_level": null,
+                                            "text_content": null
+                                          },
+                                          {
+                                            "node_id": "bento-col-2e67-1",
+                                            "component_name": "div",
+                                            "semantic_role": "presentation",
+                                            "props": {
+                                              "className": "bg-gray-900/30 border border-gray-800/80 p-6 rounded-xl hover:border-gray-700 transition-all flex flex-col gap-4"
+                                            },
+                                            "children": [
+                                              {
+                                                "node_id": "bento-inner-cc6d-1",
+                                                "component_name": "div",
+                                                "semantic_role": "presentation",
+                                                "props": {
+                                                  "className": "flex flex-col gap-2"
+                                                },
+                                                "children": [
+                                                  {
+                                                    "node_id": "bento-num-3cb9-1",
+                                                    "component_name": "span",
+                                                    "semantic_role": "presentation",
+                                                    "props": {
+                                                      "className": "text-accent font-mono text-sm"
+                                                    },
+                                                    "children": [],
+                                                    "layout_slot": null,
+                                                    "fallback_used": false,
+                                                    "fallback_reason": null,
+                                                    "blueprint_source": null,
+                                                    "decision_owner": null,
+                                                    "authority_level": null,
+                                                    "text_content": "02"
+                                                  },
+                                                  {
+                                                    "node_id": "bento-lbl-b271-1",
+                                                    "component_name": "div",
+                                                    "semantic_role": "presentation",
+                                                    "props": {
+                                                      "className": "text-lg font-semibold text-white"
+                                                    },
+                                                    "children": [],
+                                                    "layout_slot": null,
+                                                    "fallback_used": false,
+                                                    "fallback_reason": null,
+                                                    "blueprint_source": null,
+                                                    "decision_owner": null,
+                                                    "authority_level": null,
+                                                    "text_content": "News"
+                                                  },
+                                                  {
+                                                    "node_id": "bento-desc-42e3-1",
+                                                    "component_name": "div",
+                                                    "semantic_role": "presentation",
+                                                    "props": {
+                                                      "className": "text-sm text-gray-500"
+                                                    },
+                                                    "children": [],
+                                                    "layout_slot": null,
+                                                    "fallback_used": false,
+                                                    "fallback_reason": null,
+                                                    "blueprint_source": null,
+                                                    "decision_owner": null,
+                                                    "authority_level": null,
+                                                    "text_content": "Isolamento de contexts e governança determinística do ecossistema."
+                                                  }
+                                                ],
+                                                "layout_slot": null,
+                                                "fallback_used": false,
+                                                "fallback_reason": null,
+                                                "blueprint_source": null,
+                                                "decision_owner": null,
+                                                "authority_level": null,
+                                                "text_content": null
+                                              }
+                                            ],
+                                            "layout_slot": null,
+                                            "fallback_used": false,
+                                            "fallback_reason": null,
+                                            "blueprint_source": null,
+                                            "decision_owner": null,
+                                            "authority_level": null,
+                                            "text_content": null
+                                          },
+                                          {
+                                            "node_id": "bento-col-d032-2",
+                                            "component_name": "div",
+                                            "semantic_role": "presentation",
+                                            "props": {
+                                              "className": "bg-gray-900/30 border border-gray-800/80 p-6 rounded-xl hover:border-gray-700 transition-all flex flex-col gap-4"
+                                            },
+                                            "children": [
+                                              {
+                                                "node_id": "bento-inner-eff9-2",
+                                                "component_name": "div",
+                                                "semantic_role": "presentation",
+                                                "props": {
+                                                  "className": "flex flex-col gap-2"
+                                                },
+                                                "children": [
+                                                  {
+                                                    "node_id": "bento-num-3e9b-2",
+                                                    "component_name": "span",
+                                                    "semantic_role": "presentation",
+                                                    "props": {
+                                                      "className": "text-accent font-mono text-sm"
+                                                    },
+                                                    "children": [],
+                                                    "layout_slot": null,
+                                                    "fallback_used": false,
+                                                    "fallback_reason": null,
+                                                    "blueprint_source": null,
+                                                    "decision_owner": null,
+                                                    "authority_level": null,
+                                                    "text_content": "03"
+                                                  },
+                                                  {
+                                                    "node_id": "bento-lbl-0161-2",
+                                                    "component_name": "div",
+                                                    "semantic_role": "presentation",
+                                                    "props": {
+                                                      "className": "text-lg font-semibold text-white"
+                                                    },
+                                                    "children": [],
+                                                    "layout_slot": null,
+                                                    "fallback_used": false,
+                                                    "fallback_reason": null,
+                                                    "blueprint_source": null,
+                                                    "decision_owner": null,
+                                                    "authority_level": null,
+                                                    "text_content": "Contact"
+                                                  },
+                                                  {
+                                                    "node_id": "bento-desc-c5ab-2",
+                                                    "component_name": "div",
+                                                    "semantic_role": "presentation",
+                                                    "props": {
+                                                      "className": "text-sm text-gray-500"
+                                                    },
+                                                    "children": [],
+                                                    "layout_slot": null,
+                                                    "fallback_used": false,
+                                                    "fallback_reason": null,
+                                                    "blueprint_source": null,
+                                                    "decision_owner": null,
+                                                    "authority_level": null,
+                                                    "text_content": "Isolamento de contexts e governança determinística do ecossistema."
+                                                  }
+                                                ],
+                                                "layout_slot": null,
+                                                "fallback_used": false,
+                                                "fallback_reason": null,
+                                                "blueprint_source": null,
+                                                "decision_owner": null,
+                                                "authority_level": null,
+                                                "text_content": null
+                                              }
+                                            ],
+                                            "layout_slot": null,
+                                            "fallback_used": false,
+                                            "fallback_reason": null,
+                                            "blueprint_source": null,
+                                            "decision_owner": null,
+                                            "authority_level": null,
+                                            "text_content": null
+                                          }
+                                        ],
+                                        "layout_slot": null,
+                                        "fallback_used": false,
+                                        "fallback_reason": null,
+                                        "blueprint_source": null,
+                                        "decision_owner": null,
+                                        "authority_level": null,
+                                        "text_content": null
+                                      }
+                                    ],
+                                    "layout_slot": null,
+                                    "fallback_used": false,
+                                    "fallback_reason": null,
+                                    "blueprint_source": null,
+                                    "decision_owner": null,
+                                    "authority_level": null,
+                                    "text_content": null
+                                  }
+                                ],
+                                "layout_slot": null,
+                                "fallback_used": false,
+                                "fallback_reason": null,
+                                "blueprint_source": "spatial_strategy",
+                                "decision_owner": "experience_architect",
+                                "authority_level": "architectural",
+                                "text_content": null
+                              },
+                              {
+                                "node_id": "footer-0904",
+                                "component_name": "footer",
+                                "semantic_role": "contentinfo",
+                                "props": {
+                                  "className": "w-full py-12 px-6 border-t border-gray-900 bg-black",
+                                  "originalComponent": "AuroraFooterNavigation"
+                                },
+                                "children": [
+                                  {
+                                    "node_id": "footer-inner-36ea",
+                                    "component_name": "div",
+                                    "semantic_role": "presentation",
+                                    "props": {
+                                      "className": "max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-gray-500"
+                                    },
+                                    "children": [
+                                      {
+                                        "node_id": "footer-cop-250e",
+                                        "component_name": "div",
+                                        "semantic_role": "presentation",
+                                        "props": {},
+                                        "children": [],
+                                        "layout_slot": null,
+                                        "fallback_used": false,
+                                        "fallback_reason": null,
+                                        "blueprint_source": null,
+                                        "decision_owner": null,
+                                        "authority_level": null,
+                                        "text_content": "© 2026 Aurora OS. Direitos reservados de forma soberana."
+                                      },
+                                      {
+                                        "node_id": "footer-links-7a5b",
+                                        "component_name": "div",
+                                        "semantic_role": "presentation",
+                                        "props": {
+                                          "className": "flex gap-6"
+                                        },
+                                        "children": [
+                                          {
+                                            "node_id": "footer-item-bf56-0",
+                                            "component_name": "AuroraLink",
+                                            "semantic_role": "link",
+                                            "props": {
+                                              "className": "hover:text-white transition-colors transition-transform active:motion-safe:scale-95 motion-safe:duration-150 motion-safe:ease-out",
+                                              "motionConfig": {
+                                                "primitive": "press_scale",
+                                                "durationMs": 150,
+                                                "delayMs": 0,
+                                                "easing": "ease-out",
+                                                "intensity": "medium",
+                                                "reducedMotionFallback": "static"
+                                              }
+                                            },
+                                            "children": [],
+                                            "layout_slot": null,
+                                            "fallback_used": false,
+                                            "fallback_reason": null,
+                                            "blueprint_source": null,
+                                            "decision_owner": null,
+                                            "authority_level": null,
+                                            "text_content": "Ir para Dribbble"
+                                          },
+                                          {
+                                            "node_id": "footer-item-0593-1",
+                                            "component_name": "AuroraLink",
+                                            "semantic_role": "link",
+                                            "props": {
+                                              "className": "hover:text-white transition-colors transition-transform active:motion-safe:scale-95 motion-safe:duration-150 motion-safe:ease-out",
+                                              "motionConfig": {
+                                                "primitive": "press_scale",
+                                                "durationMs": 150,
+                                                "delayMs": 0,
+                                                "easing": "ease-out",
+                                                "intensity": "medium",
+                                                "reducedMotionFallback": "static"
+                                              }
+                                            },
+                                            "children": [],
+                                            "layout_slot": null,
+                                            "fallback_used": false,
+                                            "fallback_reason": null,
+                                            "blueprint_source": null,
+                                            "decision_owner": null,
+                                            "authority_level": null,
+                                            "text_content": "Ir para Linkedin"
+                                          },
+                                          {
+                                            "node_id": "footer-item-8480-2",
+                                            "component_name": "AuroraLink",
+                                            "semantic_role": "link",
+                                            "props": {
+                                              "className": "hover:text-white transition-colors transition-transform active:motion-safe:scale-95 motion-safe:duration-150 motion-safe:ease-out",
+                                              "motionConfig": {
+                                                "primitive": "press_scale",
+                                                "durationMs": 150,
+                                                "delayMs": 0,
+                                                "easing": "ease-out",
+                                                "intensity": "medium",
+                                                "reducedMotionFallback": "static"
+                                              }
+                                            },
+                                            "children": [],
+                                            "layout_slot": null,
+                                            "fallback_used": false,
+                                            "fallback_reason": null,
+                                            "blueprint_source": null,
+                                            "decision_owner": null,
+                                            "authority_level": null,
+                                            "text_content": "Ir para Instagram"
+                                          },
+                                          {
+                                            "node_id": "footer-item-ae67-3",
+                                            "component_name": "AuroraLink",
+                                            "semantic_role": "link",
+                                            "props": {
+                                              "className": "hover:text-white transition-colors transition-transform active:motion-safe:scale-95 motion-safe:duration-150 motion-safe:ease-out",
+                                              "motionConfig": {
+                                                "primitive": "press_scale",
+                                                "durationMs": 150,
+                                                "delayMs": 0,
+                                                "easing": "ease-out",
+                                                "intensity": "medium",
+                                                "reducedMotionFallback": "static"
+                                              }
+                                            },
+                                            "children": [],
+                                            "layout_slot": null,
+                                            "fallback_used": false,
+                                            "fallback_reason": null,
+                                            "blueprint_source": null,
+                                            "decision_owner": null,
+                                            "authority_level": null,
+                                            "text_content": "Ir para Our Story"
+                                          }
+                                        ],
+                                        "layout_slot": null,
+                                        "fallback_used": false,
+                                        "fallback_reason": null,
+                                        "blueprint_source": null,
+                                        "decision_owner": null,
+                                        "authority_level": null,
+                                        "text_content": null
+                                      }
+                                    ],
+                                    "layout_slot": null,
+                                    "fallback_used": false,
+                                    "fallback_reason": null,
+                                    "blueprint_source": null,
+                                    "decision_owner": null,
+                                    "authority_level": null,
+                                    "text_content": null
+                                  }
+                                ],
+                                "layout_slot": null,
+                                "fallback_used": false,
+                                "fallback_reason": null,
+                                "blueprint_source": "surface_type",
+                                "decision_owner": "experience_architect",
+                                "authority_level": "architectural",
+                                "text_content": null
+                              }
+                            ],
+                            "layout_slot": null,
+                            "fallback_used": false,
+                            "fallback_reason": null,
+                            "blueprint_source": null,
+                            "decision_owner": null,
+                            "authority_level": null,
+                            "text_content": null
+                          }
+                        ],
+                        "layout_slot": null,
+                        "fallback_used": false,
+                        "fallback_reason": null,
+                        "blueprint_source": null,
+                        "decision_owner": null,
+                        "authority_level": null,
+                        "text_content": null
+                      }
+                    ],
+                    "layout_slot": null,
+                    "fallback_used": false,
+                    "fallback_reason": null,
+                    "blueprint_source": null,
+                    "decision_owner": null,
+                    "authority_level": null,
+                    "text_content": null
+                  }
+                ],
+                "layout_slot": null,
+                "fallback_used": false,
+                "fallback_reason": null,
+                "blueprint_source": null,
+                "decision_owner": null,
+                "authority_level": null,
+                "text_content": null
+              }
+            ],
+            "layout_slot": null,
+            "fallback_used": false,
+            "fallback_reason": null,
+            "blueprint_source": null,
+            "decision_owner": null,
+            "authority_level": null,
+            "text_content": null
+          }
+        ],
+        "layout_slot": null,
+        "fallback_used": false,
+        "fallback_reason": null,
+        "blueprint_source": null,
+        "decision_owner": null,
+        "authority_level": null,
+        "text_content": null
+      }
+    ],
+    "layout_slot": null,
+    "fallback_used": false,
+    "fallback_reason": null,
+    "blueprint_source": null,
+    "decision_owner": null,
+    "authority_level": null,
+    "text_content": null
+  },
+  "layout_selection": {
+    "profile": "editorial_field",
+    "reason": "Editorial field profile selected based on freeform_depth spatial strategy.",
+    "confidence": 1.0,
+    "source_signals": [
+      "stories_plan"
+    ]
+  },
+  "component_findings": [
+    {
+      "code": "COMPONENT_RENDERED",
+      "severity": "P3",
+      "component_name": "AuroraLandingShell",
+      "reason": "Componente semântico governado renderizado no layout.",
+      "action": "rendered"
+    },
+    {
+      "code": "COMPONENT_RENDERED",
+      "severity": "P3",
+      "component_name": "AuroraTopNavigation",
+      "reason": "Componente semântico governado renderizado no layout.",
+      "action": "rendered"
+    },
+    {
+      "code": "COMPONENT_RENDERED",
+      "severity": "P3",
+      "component_name": "AuroraHeroStatement",
+      "reason": "Componente semântico governado renderizado no layout.",
+      "action": "rendered"
+    },
+    {
+      "code": "COMPONENT_RENDERED",
+      "severity": "P3",
+      "component_name": "AuroraPrimaryCTA",
+      "reason": "Componente semântico governado renderizado no layout.",
+      "action": "rendered"
+    },
+    {
+      "code": "COMPONENT_RENDERED",
+      "severity": "P3",
+      "component_name": "AuroraProductNarrativeSection",
+      "reason": "Componente semântico governado renderizado no layout.",
+      "action": "rendered"
+    },
+    {
+      "code": "COMPONENT_RENDERED",
+      "severity": "P3",
+      "component_name": "AuroraUseCaseCluster",
+      "reason": "Componente semântico governado renderizado no layout.",
+      "action": "rendered"
+    },
+    {
+      "code": "COMPONENT_RENDERED",
+      "severity": "P3",
+      "component_name": "AuroraFooterNavigation",
+      "reason": "Componente semântico governado renderizado no layout.",
+      "action": "rendered"
+    }
+  ]
+}

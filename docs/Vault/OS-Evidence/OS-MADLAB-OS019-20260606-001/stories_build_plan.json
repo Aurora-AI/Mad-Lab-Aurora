@@ -1,7 +1,7 @@
 {
-  "plan_id": "PLAN-9495CB34",
-  "source_blueprint_id": "BP-LANDING-f828b62c",
-  "source_blueprint_hash": "f828b62c0c9e1d377c4ae4ac28871eff9f90bd1deaa9c3fe766aae7fe9c96db6",
+  "plan_id": "PLAN-800FC732",
+  "source_blueprint_id": "BP-LANDING-40617903",
+  "source_blueprint_hash": "40617903c2f45fabbd941809f95c556d53046e176cb2c0ecd98f7c10f4935a39",
   "target_surface": "landing",
   "capabilities": [
     "render_layout",
@@ -96,5 +96,5 @@
       "authority_level": "implementation"
     }
   ],
-  "generated_at": "2026-06-06T12:09:21.638599"
+  "generated_at": "2026-06-06T12:14:48.169643"
 }

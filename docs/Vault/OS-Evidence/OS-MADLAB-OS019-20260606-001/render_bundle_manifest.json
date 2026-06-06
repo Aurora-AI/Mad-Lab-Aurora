@@ -1,0 +1,12 @@
+{
+  "bundle_id": "bundle-3acf2e90",
+  "ui_tree_hash": "6bda80883e5d0689d455f8467e3f2ce94fa68d52eb06e91d004a8cd0886112db",
+  "client_component_path": "5_SynthesizedPage.client.tsx",
+  "page_entry_path": "5_page.tsx",
+  "css_entry_path": "render_bundle.css",
+  "dependencies_mode": "local_pinned",
+  "network_allowed": false,
+  "viewport_presets": [
+    "1440x900"
+  ]
+}

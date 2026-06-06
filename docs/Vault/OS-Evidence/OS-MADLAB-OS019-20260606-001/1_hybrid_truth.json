@@ -1,38 +1,21 @@
 {
   "resolved_data": {
-    "scripts_cataloged": [
-      "/_nuxt/static/1779347953/manifest.js",
-      "/_nuxt/static/1779347953/payload.js",
-      "/_nuxt/6f3a20d.js",
-      "/_nuxt/a4c5813.js",
-      "/_nuxt/7989983.js",
-      "/_nuxt/5353853.js",
-      "/_nuxt/static/1779347953/work/payload.js",
-      "/_nuxt/static/1779347953/studio/payload.js",
-      "/_nuxt/static/1779347953/news/payload.js",
-      "/_nuxt/static/1779347953/contact/payload.js",
-      "/_nuxt/static/1779347953/state.js",
-      "/_nuxt/62789af.js",
-      "/_nuxt/e3cea04.js",
-      "/_nuxt/e36d691.js",
-      "/_nuxt/b6072a7.js",
-      "/_nuxt/5c5d488.js",
-      "/_nuxt/d5d162b.js"
-    ],
-    "breakpoints": {
-      "breakpoint_0": "(max-width: 1600px)",
-      "breakpoint_1": "(max-width: 1024px)",
-      "breakpoint_2": "(max-width: 767px)",
-      "breakpoint_3": "(max-width: 425px)",
-      "breakpoint_4": "(min-width: 768px)",
-      "breakpoint_5": "(min-width: 1024px)"
-    },
-    "layout_viewport": {
-      "height": "85vh"
-    },
     "source_path": "C:\\Projetos\\Aurora\\AuroraOS\\factory\\frontend_synthesis\\output_synthesis\\staging",
-    "asset_hashes": {},
-    "asset_paths": {},
+    "html_hash": "efc9a05bd4f05739912aca43e27a0c3fc1ecc6ad4b6fc373ec746a96e8a74af2",
+    "font_declarations": [
+      "\"Google Sans Flex\"",
+      "inherit",
+      "Google Sans Flex,Google Sans,sans-serif",
+      "Courier New,monospace",
+      "Google Symbols",
+      "Google Sans Code"
+    ],
+    "css_hashes": {
+      "css2.css": "7a4e49d88a403d7bc66cc63289d34ec1fe6da63cb99032379811c95c6bfe2f0f",
+      "styles-NNWH23TG.css": "2845505d7c7afa2f88bfe26c992682fe8013361a65b997fb52bdbb99ebfe9ba3"
+    },
+    "extracted_at": "2026-06-06T15:14:48.083491Z",
+    "is_synthetic": false,
     "css_variables": {
       "--palette-grey-900": "#2F3034",
       "--palette-grey-800": "#45474D",
@@ -124,6 +107,33 @@
       "--theme-nav-button": "rgba(var(--palette-grey-400-rgb), .09)",
       "--theme-nav-button-hover": "rgba(var(--palette-grey-400-rgb), .2)"
     },
+    "breakpoints": {
+      "breakpoint_0": "(max-width: 1600px)",
+      "breakpoint_1": "(max-width: 1024px)",
+      "breakpoint_2": "(max-width: 767px)",
+      "breakpoint_3": "(max-width: 425px)",
+      "breakpoint_4": "(min-width: 768px)",
+      "breakpoint_5": "(min-width: 1024px)"
+    },
+    "scripts_cataloged": [
+      "/_nuxt/static/1779347953/manifest.js",
+      "/_nuxt/static/1779347953/payload.js",
+      "/_nuxt/6f3a20d.js",
+      "/_nuxt/a4c5813.js",
+      "/_nuxt/7989983.js",
+      "/_nuxt/5353853.js",
+      "/_nuxt/static/1779347953/work/payload.js",
+      "/_nuxt/static/1779347953/studio/payload.js",
+      "/_nuxt/static/1779347953/news/payload.js",
+      "/_nuxt/static/1779347953/contact/payload.js",
+      "/_nuxt/static/1779347953/state.js",
+      "/_nuxt/62789af.js",
+      "/_nuxt/e3cea04.js",
+      "/_nuxt/e36d691.js",
+      "/_nuxt/b6072a7.js",
+      "/_nuxt/5c5d488.js",
+      "/_nuxt/d5d162b.js"
+    ],
     "remote_resources": [
       "https://exoape.com/",
       "https://a.storyblok.com/f/133769/1920x2716/5c24d6b467/exo-ape-hero-1.jpg/m/2400x3395/filters:quality(90)",
@@ -160,21 +170,11 @@
       "https://linkedin.com/company/exo-ape",
       "https://www.instagram.com/exoape/?hl=en"
     ],
-    "extracted_at": "2026-06-06T15:09:21.569871Z",
-    "font_declarations": [
-      "\"Google Sans Flex\"",
-      "inherit",
-      "Google Sans Flex,Google Sans,sans-serif",
-      "Courier New,monospace",
-      "Google Symbols",
-      "Google Sans Code"
-    ],
-    "css_hashes": {
-      "css2.css": "7a4e49d88a403d7bc66cc63289d34ec1fe6da63cb99032379811c95c6bfe2f0f",
-      "styles-NNWH23TG.css": "2845505d7c7afa2f88bfe26c992682fe8013361a65b997fb52bdbb99ebfe9ba3"
-    },
-    "html_hash": "76cb1f2ddfbcab790f762cb2ae4ba0142165bc0f57b2397281fa4142fa875177",
-    "is_synthetic": false
+    "asset_hashes": {},
+    "asset_paths": {},
+    "layout_viewport": {
+      "height": "85vh"
+    }
   },
   "conflicts": {
     "css_variables": {

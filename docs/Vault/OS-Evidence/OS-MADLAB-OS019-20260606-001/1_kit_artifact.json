@@ -1,6 +1,6 @@
 {
   "source_path": "C:\\Projetos\\Aurora\\AuroraOS\\factory\\frontend_synthesis\\output_synthesis\\staging",
-  "extracted_at": "2026-06-06T15:09:21.569871Z",
+  "extracted_at": "2026-06-06T15:14:48.083491Z",
   "css_variables": {
     "--palette-grey-900": "#2F3034",
     "--palette-grey-800": "#45474D",
@@ -109,7 +109,7 @@
     "Google Sans Code"
   ],
   "asset_paths": {},
-  "html_hash": "76cb1f2ddfbcab790f762cb2ae4ba0142165bc0f57b2397281fa4142fa875177",
+  "html_hash": "efc9a05bd4f05739912aca43e27a0c3fc1ecc6ad4b6fc373ec746a96e8a74af2",
   "css_hashes": {
     "css2.css": "7a4e49d88a403d7bc66cc63289d34ec1fe6da63cb99032379811c95c6bfe2f0f",
     "styles-NNWH23TG.css": "2845505d7c7afa2f88bfe26c992682fe8013361a65b997fb52bdbb99ebfe9ba3"

@@ -1,7 +1,7 @@
 {
-  "report_id": "perceptual-563109e5",
-  "render_bundle_id": "bundle-1f818761",
-  "screenshot_path": "output_synthesis\\percep_sandbox_1780758561\\6_rendered_screenshot.png",
+  "report_id": "perceptual-bc444c4a",
+  "render_bundle_id": "bundle-3acf2e90",
+  "screenshot_path": "output_synthesis\\percep_sandbox_1780758888\\6_rendered_screenshot.png",
   "perceptual_score": {
     "structural_similarity_score": 100.0,
     "contrast_score": 100.0,

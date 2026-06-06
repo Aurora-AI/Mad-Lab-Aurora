@@ -1,40 +1,35 @@
 {
   "source_url": "https://www.exoape.com/",
-  "extracted_at": "2026-06-06T12:09:18.545424",
+  "extracted_at": "2026-06-06T12:14:44.550091",
   "colors": [
     {
       "hex_value": "#0D0E13",
-      "usage_frequency": 37.34,
+      "usage_frequency": 40.19,
+      "semantic_guess": "surface-background"
+    },
+    {
+      "hex_value": "#FFFFFF",
+      "usage_frequency": 33.18,
       "semantic_guess": null
     },
     {
       "hex_value": "#E4E0DB",
-      "usage_frequency": 20.17,
-      "semantic_guess": null
-    },
-    {
-      "hex_value": "#E5E1DC",
-      "usage_frequency": 0.43,
-      "semantic_guess": null
-    },
-    {
-      "hex_value": "#FFFFFF",
-      "usage_frequency": 24.03,
+      "usage_frequency": 7.01,
       "semantic_guess": null
     },
     {
       "hex_value": "#070707",
-      "usage_frequency": 0.43,
+      "usage_frequency": 0.47,
       "semantic_guess": null
     },
     {
       "hex_value": "#E0CCBB",
-      "usage_frequency": 8.15,
+      "usage_frequency": 8.88,
       "semantic_guess": null
     },
     {
       "hex_value": "#E0CDBD",
-      "usage_frequency": 9.44,
+      "usage_frequency": 10.28,
       "semantic_guess": null
     }
   ],
@@ -60,14 +55,14 @@
     {
       "font_family": "Lausanne-300, sans-serif",
       "weight": 400,
-      "size_px": 14.2222,
-      "line_height": 14.2222
+      "size_px": 222.222,
+      "line_height": 200.889
     },
     {
-      "font_family": "Times New Roman, sans-serif",
+      "font_family": "Lausanne-300, sans-serif",
       "weight": 400,
-      "size_px": 16.0,
-      "line_height": 28.4444
+      "size_px": 222.222,
+      "line_height": 162.667
     }
   ],
   "spatial_system": [
@@ -84,7 +79,7 @@
   ],
   "motion": [],
   "a11y_tree": [],
-  "dom_hierarchy_snapshot": "SHA256:65d38a13de8f92080ba85c44dad736351d2a340075d680df205859fd6d59080a",
+  "dom_hierarchy_snapshot": "SHA256:b62eb9f2e42eba6ab72dfdef4788b06b842459882cdeca6823a1e4187fac0f2b",
   "visible_texts": [
     "Exo Ape",
     "Work\nStudio\nNews\nContact",
@@ -92,6 +87,13 @@
     "Studio",
     "News",
     "Contact",
+    "Global digital design studio partnering with",
+    "brands and businesses that create exceptional",
+    "experiences where people live, work, and unwind.",
+    "Digital\nDesign\nExperience",
+    "Digital",
+    "Design",
+    "Experience",
     "We help experience-driven companies thrive by making their audience feel the refined intricacies of their brand and product in the digital space. Unforgettable journeys start with a click.",
     "The Studio",
     "hello@exoape.com\n+31 772 086 200",
@@ -128,6 +130,7 @@
     "Our Story"
   ],
   "headings": [
+    "Digital\nDesign\nExperience",
     "Featured Projects",
     "Work in motion",
     "Play\nReel",
@@ -174,15 +177,17 @@
   "dom_depth": 15,
   "above_the_fold_elements": [
     "div",
-    "svg",
     "path",
-    "img",
+    "svg",
     "span",
     "nav",
     "ul",
     "li",
     "a",
-    "header"
+    "header",
+    "p",
+    "h1",
+    "img"
   ],
   "viewport_metrics": {
     "width": 1920,

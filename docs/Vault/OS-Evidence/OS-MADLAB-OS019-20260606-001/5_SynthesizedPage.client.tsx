@@ -37,7 +37,9 @@ Contact
                     <section className="relative overflow-hidden py-32 px-6 border-b border-gray-900 bg-gradient-to-b from-black to-gray-950 transition-opacity opacity-100 motion-safe:duration-300 motion-safe:ease-out motion-reduce:transition-opacity motion-reduce:duration-100" originalComponent="AuroraHeroStatement" motionConfig={{"primitive": "fade_in", "durationMs": 300, "delayMs": 0, "easing": "ease-out", "intensity": "medium", "reducedMotionFallback": "opacity"}}>
                       <div className="max-w-5xl mx-auto flex flex-col items-center text-center gap-8 relative z-10">
                         <AuroraHeading className="text-5xl md:text-7xl font-bold tracking-tight text-white leading-tight">
-                          Plataforma Aurora — Featured Projects
+                          Plataforma Aurora — Digital
+Design
+Experience
                         </AuroraHeading>
                         <div className="text-lg md:text-xl text-gray-400 max-w-3xl">
                           Operação sob Override Executivo do Comandante. Automação cognitiva de alta fidelidade e auditoria de originalidade.
@@ -53,7 +55,7 @@ Contact
                       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div className="flex flex-col gap-6">
                           <AuroraHeading className="text-3xl md:text-5xl font-bold tracking-tight text-white">
-                            Plataforma Aurora — Work in motion
+                            Plataforma Aurora — Featured Projects
                           </AuroraHeading>
                           <div className="text-gray-400 leading-relaxed">
                             A arquitetura industrial do Aurora OS garante isolamento cognitivo de eixos criativos e operacionais por meio de gates determinísticos.

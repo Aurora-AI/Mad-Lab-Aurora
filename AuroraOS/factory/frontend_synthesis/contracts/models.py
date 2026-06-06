@@ -76,6 +76,7 @@ class PageIntelligenceArtifact(BaseModel):
     above_the_fold_elements: List[str] = Field(default_factory=list)
     viewport_metrics: Dict[str, Any] = Field(default_factory=dict)
     is_synthetic: bool = Field(default=False, description="Flag indicating if this is a synthetic artifact (mock/fixture)")
+    crawler_tls_policy: Optional[Dict[str, Any]] = Field(default=None, description="Audit trail for TLS/SSL bypass policies used during crawl")
 
 from enum import Enum
 

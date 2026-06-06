@@ -233,7 +233,13 @@ async def extract_real_page_intelligence(target_url: str, no_mocks: bool = False
             computed_styles={},
             dom_depth=raw_data.get("maxDomDepth", 0),
             above_the_fold_elements=raw_data.get("aboveTheFoldElements", []),
-            viewport_metrics={"width": 1920, "height": 1080}
+            viewport_metrics={"width": 1920, "height": 1080},
+            crawler_tls_policy={
+                "ignore_https_errors": True,
+                "reason": "controlled sandbox crawler compatibility",
+                "allowed_scope": "probe_acquisition_only",
+                "production_browser_policy": "not_applicable"
+            }
         )
         
         return artifact

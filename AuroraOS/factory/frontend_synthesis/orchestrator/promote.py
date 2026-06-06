@@ -32,7 +32,11 @@ def promote_candidate(output_dir: str):
         try:
             with open(meta_file, "r") as f:
                 meta = json.load(f)
-            if meta.get("candidate_status") == "NON_PROMOTABLE_FIXTURE" or not meta.get("promotion_allowed", True):
+            is_eligible = meta.get("eligible_for_human_review")
+            if is_eligible is None:
+                is_eligible = meta.get("promotion_allowed", True)
+                
+            if meta.get("candidate_status") == "NON_PROMOTABLE_FIXTURE" or not is_eligible:
                 print("[ERRO] SYNTHETIC_PROMOTION_ATTEMPT — P0: Promotion blocked for synthetic fixture candidate.")
                 sys.exit(1)
         except Exception as e:

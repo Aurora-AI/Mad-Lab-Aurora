@@ -876,25 +876,32 @@ class SynthesisDAG:
                         is_synthetic_run = True
                         break
 
-            promotion_allowed = not is_synthetic_run
-            human_promotion_allowed = not is_synthetic_run
-            candidate_status = "NON_PROMOTABLE_FIXTURE" if is_synthetic_run else "PROMOTABLE_CANDIDATE"
+            if is_synthetic_run:
+                meta_data = {
+                    "candidate_status": "NON_PROMOTABLE_FIXTURE",
+                    "eligible_for_human_review": False,
+                    "promotion_authorized": False,
+                    "promotion_allowed": False,
+                    "requires_promotion_approval_record": False,
+                    "promotion_eligibility": "NOT_ELIGIBLE"
+                }
+            else:
+                meta_data = {
+                    "candidate_status": "REVIEWABLE_CANDIDATE",
+                    "eligible_for_human_review": True,
+                    "promotion_authorized": False,
+                    "promotion_allowed": False,
+                    "requires_promotion_approval_record": True,
+                    "promotion_eligibility": "HUMAN_REVIEW_REQUIRED"
+                }
 
             # Write promotion_metadata.json
             with open(staging_dir / "promotion_metadata.json", "w", encoding="utf-8") as f:
-                json.dump({
-                    "promotion_allowed": promotion_allowed,
-                    "human_promotion_allowed": human_promotion_allowed,
-                    "candidate_status": candidate_status
-                }, f, indent=2)
+                json.dump(meta_data, f, indent=2)
 
             # Write promotion_candidate.json
             with open(staging_dir / "promotion_candidate.json", "w", encoding="utf-8") as f:
-                json.dump({
-                    "promotion_allowed": promotion_allowed,
-                    "human_promotion_allowed": human_promotion_allowed,
-                    "candidate_status": candidate_status
-                }, f, indent=2)
+                json.dump(meta_data, f, indent=2)
 
             promotion_approved = False
             approval_record = None

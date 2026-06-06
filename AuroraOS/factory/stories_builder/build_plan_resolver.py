@@ -92,6 +92,20 @@ class BuildPlanResolver:
         if motion_val != "none":
             capabilities.append(BuilderCapability.INJECT_MOTION_PRIMITIVES)
             
+        nav_strat = getattr(blueprint, "navigation_strategy", None)
+        nav_val = nav_strat.value if hasattr(nav_strat, "value") else str(nav_strat)
+        spatial_strat = getattr(blueprint, "spatial_strategy", None)
+        spat_val = spatial_strat.value if hasattr(spatial_strat, "value") else str(spatial_strat)
+        is_depth_based = nav_val == "canvas_navigation" or spat_val == "freeform_depth"
+        is_exoape = hasattr(blueprint, "rationale") and blueprint.rationale is not None and "exoape" in blueprint.rationale.lower()
+
+        if is_depth_based or is_exoape:
+            capabilities.extend([
+                BuilderCapability.RENDER_Z_AXIS_SCROLL,
+                BuilderCapability.RENDER_DEPTH_LAYERS,
+                BuilderCapability.BIND_SCROLL_TO_DEPTH
+            ])
+            
         # 5. Enforce core constraints from constraints dictionary
         forbidden = [
             BuilderConstraint.NO_SPATIAL_GENERATION,
@@ -104,6 +118,13 @@ class BuildPlanResolver:
             BuilderConstraint.NO_UNTRACED_COMPONENT_CREATION,
             BuilderConstraint.NO_UNAPPROVED_ASSET_REUSE
         ]
+        if is_depth_based or is_exoape:
+            forbidden.extend([
+                BuilderConstraint.NO_UNTRACKED_Z_AXIS_MOTION,
+                BuilderConstraint.NO_DECORATIVE_TUNNEL_MOTION
+            ])
+        if is_exoape:
+            forbidden.append(BuilderConstraint.NO_EXOAPE_SURFACE_CLONE)
         
         # 6. Resolve Traceability Map linking implementation items back to blueprint
         traceability_items = []
@@ -116,6 +137,24 @@ class BuildPlanResolver:
             decision_owner="experience_architect",
             authority_level="architectural"
         ))
+        
+        if is_depth_based or is_exoape:
+            traceability_items.extend([
+                BuildPlanTraceabilityItem(
+                    element_id="ZAxisScrollContainer",
+                    element_type="layout",
+                    blueprint_source="navigation_strategy",
+                    decision_owner="experience_architect",
+                    authority_level="architectural"
+                ),
+                BuildPlanTraceabilityItem(
+                    element_id="LayerPortal",
+                    element_type="layout",
+                    blueprint_source="spatial_strategy",
+                    decision_owner="experience_architect",
+                    authority_level="architectural"
+                )
+            ])
         
         # Core navigation mapping
         nav_strat = getattr(blueprint, "navigation_strategy", None)

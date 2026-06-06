@@ -48,6 +48,8 @@ def _compile_node(node: UINode, indent_level: int = 2, imports: set = None) -> s
     # Se for componente Aurora, registra o import
     if comp.startswith("Aurora"):
         imports.add(f"import {{ {comp} }} from '@/components/core';")
+    elif comp in ["ZAxisScrollContainer", "LayerPortal"]:
+        imports.add(f"import {{ {comp} }} from '@/components/fx';")
 
     props_formatted = _format_props(node.props, [])
     
@@ -79,6 +81,7 @@ def _compile_html_node(node: UINode, theme_colors: dict = None, indent_level: in
     elif "card" in comp: comp = "div"
     elif "text" in comp: comp = "span"
     elif comp.startswith("aurora"): comp = "div"
+    elif comp in ["zaxisscrollcontainer", "layerportal"]: comp = "div"
     
     prop_str = ""
     className = node.props.get("className", "")

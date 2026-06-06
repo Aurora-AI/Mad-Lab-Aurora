@@ -261,3 +261,85 @@ def test_gate_warns_weak_description():
     assert report.status == "passed"
     finding_codes = [f.code for f in report.findings]
     assert "WEAK_TRACEABILITY_DESCRIPTION" in finding_codes
+
+
+def test_gate_blocks_missing_z_axis_capabilities_for_depth_layout():
+    resolver = BuildPlanResolver()
+    gate = StoriesBuilderGate()
+    blueprint = create_mock_blueprint()
+    blueprint.navigation_strategy = NavigationStrategy.CANVAS_NAVIGATION
+    blueprint.spatial_strategy = SpatialStrategy.FREEFORM_DEPTH
+    
+    # Resolve plan but remove Z-axis capabilities to trigger gate failure
+    plan = resolver.resolve_build_plan(blueprint)
+    plan.capabilities = [c for c in plan.capabilities if c not in [
+        BuilderCapability.RENDER_Z_AXIS_SCROLL,
+        BuilderCapability.RENDER_DEPTH_LAYERS,
+        BuilderCapability.BIND_SCROLL_TO_DEPTH
+    ]]
+    
+    report = gate.validate_build_plan(plan, blueprint)
+    assert report.status == "failed"
+    finding_codes = [f.code for f in report.findings]
+    assert "BUILDER_CONSTRAINTS_MISSING" in finding_codes
+
+
+def test_gate_blocks_exoape_clone_without_constraint_or_capabilities():
+    resolver = BuildPlanResolver()
+    gate = StoriesBuilderGate()
+    blueprint = create_mock_blueprint()
+    blueprint.rationale = "Target URL is exoape.com. This uses a depth layout."
+    
+    plan = resolver.resolve_build_plan(blueprint)
+    
+    # Test 1: missing NO_EXOAPE_SURFACE_CLONE constraint
+    plan_no_constraint = plan.model_copy(deep=True)
+    plan_no_constraint.forbidden_decisions = [c for c in plan_no_constraint.forbidden_decisions if c != BuilderConstraint.NO_EXOAPE_SURFACE_CLONE]
+    report = gate.validate_build_plan(plan_no_constraint, blueprint)
+    assert report.status == "failed"
+    finding_codes = [f.code for f in report.findings]
+    assert "BUILDER_CONSTRAINTS_MISSING" in finding_codes
+    
+    # Test 2: missing Z-axis capabilities
+    plan_no_caps = plan.model_copy(deep=True)
+    plan_no_caps.capabilities = [c for c in plan_no_caps.capabilities if c not in [
+        BuilderCapability.RENDER_Z_AXIS_SCROLL,
+        BuilderCapability.RENDER_DEPTH_LAYERS,
+        BuilderCapability.BIND_SCROLL_TO_DEPTH
+    ]]
+    report = gate.validate_build_plan(plan_no_caps, blueprint)
+    assert report.status == "failed"
+
+
+def test_gate_detects_dark_theme_misinterpretation():
+    resolver = BuildPlanResolver()
+    gate = StoriesBuilderGate()
+    blueprint = create_mock_blueprint()
+    blueprint.rationale = "We resolve a dark editorial concept."
+    
+    plan = resolver.resolve_build_plan(blueprint)
+    report = gate.validate_build_plan(plan, blueprint)
+    
+    # Should flag P1 warning
+    finding_codes = [f.code for f in report.findings]
+    assert "DARK_EDITORIAL_MISINTERPRETED_AS_DARK_THEME" in finding_codes
+    finding = [f for f in report.findings if f.code == "DARK_EDITORIAL_MISINTERPRETED_AS_DARK_THEME"][0]
+    assert finding.severity == "P1"
+
+
+def test_gate_blocks_mad_lab_theme_surface_violation():
+    resolver = BuildPlanResolver()
+    gate = StoriesBuilderGate()
+    blueprint = create_mock_blueprint()
+    blueprint.rationale = "mad_lab_theme_intent = tunnel_progression. We use black background."
+    
+    plan = resolver.resolve_build_plan(blueprint)
+    report = gate.validate_build_plan(plan, blueprint)
+    
+    # Should fail with P0
+    assert report.status == "failed"
+    finding_codes = [f.code for f in report.findings]
+    assert "MAD_LAB_THEME_SURFACE_VIOLATION" in finding_codes
+    finding = [f for f in report.findings if f.code == "MAD_LAB_THEME_SURFACE_VIOLATION"][0]
+    assert finding.severity == "P0"
+

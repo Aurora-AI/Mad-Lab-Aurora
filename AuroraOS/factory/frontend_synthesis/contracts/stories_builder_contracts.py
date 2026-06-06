@@ -13,6 +13,9 @@ class BuilderCapability(str, Enum):
     ASSEMBLE_COMPONENT_TREE = "assemble_component_tree"
     PREPARE_RENDER_BUNDLE = "prepare_render_bundle"
     BIND_ACCESSIBILITY_ATTRIBUTES = "bind_accessibility_attributes"
+    RENDER_Z_AXIS_SCROLL = "render_z_axis_scroll"
+    RENDER_DEPTH_LAYERS = "render_depth_layers"
+    BIND_SCROLL_TO_DEPTH = "bind_scroll_to_depth"
 
 class BuilderConstraint(str, Enum):
     NO_SPATIAL_GENERATION = "no_spatial_generation"
@@ -24,6 +27,9 @@ class BuilderConstraint(str, Enum):
     NO_REFERENCE_RAW_CONSUMPTION = "no_reference_raw_consumption"
     NO_UNTRACED_COMPONENT_CREATION = "no_untraced_component_creation"
     NO_UNAPPROVED_ASSET_REUSE = "no_unapproved_asset_reuse"
+    NO_UNTRACKED_Z_AXIS_MOTION = "no_untracked_z_axis_motion"
+    NO_DECORATIVE_TUNNEL_MOTION = "no_decorative_tunnel_motion"
+    NO_EXOAPE_SURFACE_CLONE = "no_exoape_surface_clone"
 
 class BuildPlanTraceabilityItem(BaseModel):
     element_id: str = Field(..., description="Unique ID of the generated element (e.g., node, component, container)")
@@ -76,7 +82,9 @@ class StoriesBuilderGateFinding(BaseModel):
         "MISSING_OPTIONAL_TRACE",
         "WEAK_TRACEABILITY_DESCRIPTION",
         "INFO_TRACE_COMPLETE",
-        "INFO_BUILD_PLAN_VALID"
+        "INFO_BUILD_PLAN_VALID",
+        "MAD_LAB_THEME_SURFACE_VIOLATION",
+        "DARK_EDITORIAL_MISINTERPRETED_AS_DARK_THEME"
     ]
     severity: Literal["P0", "P1", "P2", "P3"]
     message: str

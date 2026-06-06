@@ -30,7 +30,8 @@ from stories_builder_contracts import (
     BuildPlanTraceabilityItem,
     StoriesBuilderGateFinding,
     StoriesBuilderGateReport,
-    BuilderConstraint
+    BuilderConstraint,
+    BuilderCapability
 )
 try:
     from .build_plan_resolver import compute_blueprint_hash
@@ -103,6 +104,91 @@ class StoriesBuilderGate:
                 severity="P0",
                 message=f"Plan is missing required forbidden constraints: {[c.value for c in missing_constraints]}"
             ))
+
+        # 4.1 Enforce Z-Axis constraints and capabilities
+        is_depth_based = False
+        if blueprint:
+            nav_strat = getattr(blueprint, "navigation_strategy", None)
+            spat_strat = getattr(blueprint, "spatial_strategy", None)
+            nav_val = nav_strat.value if hasattr(nav_strat, "value") else str(nav_strat)
+            spat_val = spat_strat.value if hasattr(spat_strat, "value") else str(spat_strat)
+            if nav_val == "canvas_navigation" or spat_val == "freeform_depth":
+                is_depth_based = True
+
+        if is_depth_based:
+            required_capabilities = {
+                BuilderCapability.RENDER_Z_AXIS_SCROLL,
+                BuilderCapability.RENDER_DEPTH_LAYERS,
+                BuilderCapability.BIND_SCROLL_TO_DEPTH
+            }
+            plan_capabilities = set(plan.capabilities)
+            missing_caps = required_capabilities - plan_capabilities
+            if missing_caps:
+                findings.append(StoriesBuilderGateFinding(
+                    code="BUILDER_CONSTRAINTS_MISSING",
+                    severity="P0",
+                    message=f"Z-axis layout is active but plan is missing required Z-axis capabilities: {[c.value for c in missing_caps]}"
+                ))
+            
+            required_z_constraints = {
+                BuilderConstraint.NO_UNTRACKED_Z_AXIS_MOTION,
+                BuilderConstraint.NO_DECORATIVE_TUNNEL_MOTION
+            }
+            missing_z_consts = required_z_constraints - plan_constraints
+            if missing_z_consts:
+                findings.append(StoriesBuilderGateFinding(
+                    code="BUILDER_CONSTRAINTS_MISSING",
+                    severity="P0",
+                    message=f"Z-axis layout is active but plan is missing required Z-axis constraints: {[c.value for c in missing_z_consts]}"
+                ))
+
+        # 4.2 Enforce Exo Ape reference check
+        is_exoape = False
+        if blueprint and blueprint.rationale and "exoape" in blueprint.rationale.lower():
+            is_exoape = True
+
+        if is_exoape:
+            if BuilderConstraint.NO_EXOAPE_SURFACE_CLONE not in plan_constraints:
+                findings.append(StoriesBuilderGateFinding(
+                    code="BUILDER_CONSTRAINTS_MISSING",
+                    severity="P0",
+                    message="Exo Ape reference detected but plan is missing NO_EXOAPE_SURFACE_CLONE constraint."
+                ))
+            required_caps = {
+                BuilderCapability.RENDER_Z_AXIS_SCROLL,
+                BuilderCapability.RENDER_DEPTH_LAYERS,
+                BuilderCapability.BIND_SCROLL_TO_DEPTH
+            }
+            plan_capabilities = set(plan.capabilities)
+            missing_caps = required_caps - plan_capabilities
+            if missing_caps:
+                findings.append(StoriesBuilderGateFinding(
+                    code="BUILDER_CONSTRAINTS_MISSING",
+                    severity="P0",
+                    message="Exo Ape reference requires Z-axis capabilities which are missing from plan."
+                ))
+
+        # 4.3 Validate theme background against automatic dark interpretation and surface violations
+        has_dark_justification = False
+        if blueprint and blueprint.rationale:
+            rational_lower = blueprint.rationale.lower()
+            if any(w in rational_lower for w in ["shadow", "cinema", "blackbox", "dramatism", "earned", "justified", "tension", "visual_energy"]):
+                has_dark_justification = True
+
+        if blueprint and blueprint.rationale:
+            rat_lower = blueprint.rationale.lower()
+            if "dark editorial" in rat_lower and not has_dark_justification:
+                findings.append(StoriesBuilderGateFinding(
+                    code="DARK_EDITORIAL_MISINTERPRETED_AS_DARK_THEME",
+                    severity="P1",
+                    message="Dark Editorial automatically interpreted as dark background without narrative justification."
+                ))
+            if "black" in rat_lower and not has_dark_justification:
+                findings.append(StoriesBuilderGateFinding(
+                    code="MAD_LAB_THEME_SURFACE_VIOLATION",
+                    severity="P0",
+                    message="Pure black surface used as background without narrative justification."
+                ))
 
         # 5. Verify component and layout traceability mapping rules
         valid_blueprint_fields = {

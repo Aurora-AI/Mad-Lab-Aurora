@@ -1,0 +1,74 @@
+{
+  "candidate_id": "CAND-001",
+  "source_pattern_ids": [
+    "global_source"
+  ],
+  "generated_name": "AuroraSovereignLanding",
+  "design_intent": "Transmutated proprietary component",
+  "transformed_description": "Soberana composição transmuta padrão visual.",
+  "implementation_guidance": "Estruturação semântica governada Aurora.",
+  "originality_score": 100.0,
+  "score_breakdown": {
+    "brand_score": 100.0,
+    "text_score": 100.0,
+    "asset_score": 100.0,
+    "layout_score": 100.0,
+    "motion_score": 100.0,
+    "color_score": 100.0,
+    "component_score": 100.0,
+    "final_score": 100.0
+  },
+  "transformation_axes": [
+    "semantic",
+    "visual",
+    "structural",
+    "motion",
+    "brand"
+  ],
+  "risk_level": "low",
+  "blocked_reasons": [],
+  "color_findings": [
+    {
+      "hex_value": "#FFFFFF",
+      "is_neutral": true,
+      "is_distinctive": false,
+      "source_usage": "background",
+      "action": "allow",
+      "reason": "Neutral color allowed (P3)."
+    },
+    {
+      "hex_value": "#000000",
+      "is_neutral": true,
+      "is_distinctive": false,
+      "source_usage": "background",
+      "action": "allow",
+      "reason": "Neutral color allowed (P3)."
+    },
+    {
+      "hex_value": "#18191D",
+      "is_neutral": true,
+      "is_distinctive": false,
+      "source_usage": "background",
+      "action": "allow",
+      "reason": "Neutral color allowed (P3)."
+    }
+  ],
+  "candidate_fingerprint": {
+    "layout_hash": "transmuted_layout_hash",
+    "color_palette_hash": "transmuted_color_hash",
+    "typography_hash": "transmuted_typo_hash",
+    "motion_hash": "transmuted_motion_hash",
+    "asset_hashes": [],
+    "text_hashes": [],
+    "component_names": [
+      "AuroraLandingShell",
+      "AuroraTopNavigation",
+      "AuroraHeroStatement",
+      "AuroraPrimaryCTA",
+      "AuroraSecondaryCTA",
+      "AuroraProductNarrativeSection",
+      "AuroraUseCaseCluster",
+      "AuroraFooterNavigation"
+    ]
+  }
+}

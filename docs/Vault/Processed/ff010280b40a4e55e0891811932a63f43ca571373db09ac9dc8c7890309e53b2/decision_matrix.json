@@ -1,0 +1,12 @@
+{
+  "document": "ff010280b40a4e55e0891811932a63f43ca571373db09ac9dc8c7890309e53b2.md",
+  "timestamp": "2026-06-06T12:06:18-03:00",
+  "hash": "ff010280b40a4e55e0891811932a63f43ca571373db09ac9dc8c7890309e53b2",
+  "classification": "Hibrido",
+  "gain_estimate": "+20%",
+  "impacted_skills": ["ceo-design", "ceo-effects", "ceo-web", "taste-design"],
+  "proposed_skill": null,
+  "decision": "INGERIR",
+  "status": "APPROVED",
+  "custody_chain": ["ingestor", "bibliotecario"]
+}

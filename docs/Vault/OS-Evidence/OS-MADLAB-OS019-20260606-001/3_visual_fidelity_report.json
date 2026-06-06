@@ -1,0 +1,26 @@
+{
+  "report_id": "FID-100",
+  "code_spec_id": "SPEC-E5D91994",
+  "hybrid_truth_id": "HT-CURRENT",
+  "proprietary_candidate_id": "CAND-001",
+  "fidelity": {
+    "proportion_score": 91.0,
+    "visual_hierarchy_score": 85.0,
+    "density_score": 90.0,
+    "contrast_score": 95.0,
+    "spacing_score": 88.0,
+    "compositional_rhythm_score": 86.0,
+    "intent_fidelity_score": 89.16666666666667
+  },
+  "clone_risk": {
+    "layout_similarity_risk": 30.0,
+    "spacing_similarity_risk": 30.0,
+    "typography_similarity_risk": 30.0,
+    "color_similarity_risk": 30.0,
+    "motion_similarity_risk": 30.0,
+    "final_clone_risk": 30.0
+  },
+  "findings": [],
+  "decision": "approved",
+  "blocked_reasons": []
+}

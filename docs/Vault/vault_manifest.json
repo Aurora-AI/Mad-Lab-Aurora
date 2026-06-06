@@ -50,8 +50,9 @@
     "created_by": "OS-AURORA-VISUAL-ASSETS-20260418-004",
     "policy": "append-only",
     "indexable": true,
-    "os_count": 17,
+    "os_count": 18,
     "key_os": [
+      "OS-MADLAB-OS019-20260606-001",
       "OS-MADLAB-OS018-20260604-001",
       "OS-MADLAB-OS017-20260604-001",
       "OS-MADLAB-CONSUMER-BRIDGE-20260527-001",

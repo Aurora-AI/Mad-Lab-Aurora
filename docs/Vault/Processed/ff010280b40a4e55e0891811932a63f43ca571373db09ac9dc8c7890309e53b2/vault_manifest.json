@@ -1,0 +1,21 @@
+{
+  "document_id": "ff010280b40a4e55e0891811932a63f43ca571373db09ac9dc8c7890309e53b2",
+  "title": "Definição do Mad Lab Theme",
+  "source": "Instrução de Ingestão do Comandante - Mad Lab Theme",
+  "ingested_at": "2026-06-06T12:06:18-03:00",
+  "ingested_by": "bibliotecario",
+  "classification": "Hibrido",
+  "qdrant_chunks": 0,
+  "neo4j_nodes": 0,
+  "neo4j_edges": 0,
+  "skills_enriched": [
+    "ceo-design",
+    "ceo-effects",
+    "ceo-web",
+    "taste-design"
+  ],
+  "new_skill_proposed": null,
+  "sanitized": true,
+  "deprecated": false,
+  "raw_path": "docs/Vault/Raw/ff010280b40a4e55e0891811932a63f43ca571373db09ac9dc8c7890309e53b2.md"
+}

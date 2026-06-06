@@ -1,0 +1,198 @@
+{
+  "source_url": "https://www.exoape.com/",
+  "extracted_at": "2026-06-06T12:09:18.545424",
+  "colors": [
+    {
+      "hex_value": "#0D0E13",
+      "usage_frequency": 37.34,
+      "semantic_guess": null
+    },
+    {
+      "hex_value": "#E4E0DB",
+      "usage_frequency": 20.17,
+      "semantic_guess": null
+    },
+    {
+      "hex_value": "#E5E1DC",
+      "usage_frequency": 0.43,
+      "semantic_guess": null
+    },
+    {
+      "hex_value": "#FFFFFF",
+      "usage_frequency": 24.03,
+      "semantic_guess": null
+    },
+    {
+      "hex_value": "#070707",
+      "usage_frequency": 0.43,
+      "semantic_guess": null
+    },
+    {
+      "hex_value": "#E0CCBB",
+      "usage_frequency": 8.15,
+      "semantic_guess": null
+    },
+    {
+      "hex_value": "#E0CDBD",
+      "usage_frequency": 9.44,
+      "semantic_guess": null
+    }
+  ],
+  "typography": [
+    {
+      "font_family": "Times New Roman, sans-serif",
+      "weight": 400,
+      "size_px": 16.0,
+      "line_height": 24.0
+    },
+    {
+      "font_family": "Lausanne-300, sans-serif",
+      "weight": 400,
+      "size_px": 12.4444,
+      "line_height": 18.6667
+    },
+    {
+      "font_family": "Lausanne-300, sans-serif",
+      "weight": 400,
+      "size_px": 21.3333,
+      "line_height": 28.4444
+    },
+    {
+      "font_family": "Lausanne-300, sans-serif",
+      "weight": 400,
+      "size_px": 14.2222,
+      "line_height": 14.2222
+    },
+    {
+      "font_family": "Times New Roman, sans-serif",
+      "weight": 400,
+      "size_px": 16.0,
+      "line_height": 28.4444
+    }
+  ],
+  "spatial_system": [
+    {
+      "property_name": "padding-left",
+      "value_px": 19.5556,
+      "occurrence_count": 3
+    },
+    {
+      "property_name": "padding-left",
+      "value_px": 13.3333,
+      "occurrence_count": 2
+    }
+  ],
+  "motion": [],
+  "a11y_tree": [],
+  "dom_hierarchy_snapshot": "SHA256:65d38a13de8f92080ba85c44dad736351d2a340075d680df205859fd6d59080a",
+  "visible_texts": [
+    "Exo Ape",
+    "Work\nStudio\nNews\nContact",
+    "Work",
+    "Studio",
+    "News",
+    "Contact",
+    "We help experience-driven companies thrive by making their audience feel the refined intricacies of their brand and product in the digital space. Unforgettable journeys start with a click.",
+    "The Studio",
+    "hello@exoape.com\n+31 772 086 200",
+    "hello@exoape.com",
+    "+31 772 086 200",
+    "Scroll to explore",
+    "Featured Projects",
+    "Highlights of cases that we passionately built with forward-thinking clients and friends over the years.",
+    "Ottografie Seamless Photographic Journey",
+    "Ottografie",
+    "Amaterasu Frontier Health Innovation",
+    "Amaterasu",
+    "Columbia Pictures Celebrating a Century of Cinema",
+    "Columbia Pictures",
+    "Cambium Pioneering Sustainable Solutions",
+    "Cambium",
+    "Browse all work",
+    "Work in motion",
+    "Play\nReel",
+    "Play",
+    "Reel",
+    "Our work is best experienced in motion. Don’t forget to put on your headphones.",
+    "In the media",
+    "Find out more about our work on these leading design and technology platforms.",
+    "Browse all news",
+    "The story behind Exo Ape is one of exploration, creativity and curiosity.",
+    "Willem II Singel 8\n6041 HS, Roermond\nThe Netherlands\nhello@exoape.com",
+    "Willem II Singel 8\n6041 HS, Roermond\nThe Netherlands",
+    "Behance\nDribbble\nLinkedin\nInstagram",
+    "Behance",
+    "Dribbble",
+    "Linkedin",
+    "Instagram",
+    "Our Story"
+  ],
+  "headings": [
+    "Featured Projects",
+    "Work in motion",
+    "Play\nReel",
+    "In the media"
+  ],
+  "buttons": [],
+  "links": [
+    "Work",
+    "Studio",
+    "News",
+    "Contact",
+    "The Studio",
+    "hello@exoape.com",
+    "+31 772 086 200",
+    "Ottografie Seamless Photographic Journey",
+    "Amaterasu Frontier Health Innovation",
+    "Columbia Pictures Celebrating a Century of Cinema",
+    "Cambium Pioneering Sustainable Solutions",
+    "Browse all work",
+    "Browse all news",
+    "Willem II Singel 8\n6041 HS, Roermond\nThe Netherlands",
+    "Behance",
+    "Dribbble",
+    "Linkedin",
+    "Instagram",
+    "Our Story"
+  ],
+  "nav_items": [
+    "Work\nStudio\nNews\nContact"
+  ],
+  "sections": [
+    "header",
+    "section",
+    "footer"
+  ],
+  "landmarks": [
+    "nav",
+    "header",
+    "section",
+    "footer"
+  ],
+  "bounding_boxes": {},
+  "computed_styles": {},
+  "dom_depth": 15,
+  "above_the_fold_elements": [
+    "div",
+    "svg",
+    "path",
+    "img",
+    "span",
+    "nav",
+    "ul",
+    "li",
+    "a",
+    "header"
+  ],
+  "viewport_metrics": {
+    "width": 1920,
+    "height": 1080
+  },
+  "is_synthetic": false,
+  "crawler_tls_policy": {
+    "ignore_https_errors": true,
+    "reason": "controlled sandbox crawler compatibility",
+    "allowed_scope": "probe_acquisition_only",
+    "production_browser_policy": "not_applicable"
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "synthesis_id": "DS-5AEB24B4",
+  "synthesized_at": "2026-06-06T12:09:21.606374",
+  "governance_mode": "transmute",
+  "semantic_tokens": [
+    {
+      "name": "color-base-surface",
+      "value": "#0A0A0C",
+      "rationale": "Mapeado pela cor dominante original (37.34%). Ajustado para padrão Aurora."
+    }
+  ],
+  "typography_scale": {
+    "heading-1": "1.333rem",
+    "heading-2": "1.0rem",
+    "heading-3": "1.0rem",
+    "heading-4": "0.889rem",
+    "body": "0.778rem"
+  },
+  "do_not_copy_rules": [
+    {
+      "blocked_original_value": "#0D0E13",
+      "violation_type": "Identity Theft (Brand Color)",
+      "aurora_transmutation": "#0A0A0C"
+    },
+    {
+      "blocked_original_value": "Lausanne-300, sans-serif",
+      "violation_type": "Typography Exact Copy",
+      "aurora_transmutation": "var(--aurora-font-sans)"
+    },
+    {
+      "blocked_original_value": "Times New Roman, sans-serif",
+      "violation_type": "Typography Exact Copy",
+      "aurora_transmutation": "var(--aurora-font-sans)"
+    },
+    {
+      "blocked_original_value": "Times New Roman, sans-serif",
+      "violation_type": "Typography Exact Copy",
+      "aurora_transmutation": "var(--aurora-font-sans)"
+    },
+    {
+      "blocked_original_value": "Lausanne-300, sans-serif",
+      "violation_type": "Typography Exact Copy",
+      "aurora_transmutation": "var(--aurora-font-sans)"
+    },
+    {
+      "blocked_original_value": "Lausanne-300, sans-serif",
+      "violation_type": "Typography Exact Copy",
+      "aurora_transmutation": "var(--aurora-font-sans)"
+    }
+  ],
+  "a11y_tree": [
+    {
+      "role": "heading",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 4,
+      "text_content": "Featured Projects"
+    },
+    {
+      "role": "heading",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 4,
+      "text_content": "Work in motion"
+    },
+    {
+      "role": "heading",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 4,
+      "text_content": "Play\nReel"
+    },
+    {
+      "role": "heading",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 4,
+      "text_content": "In the media"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Work"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Studio"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "News"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Contact"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "The Studio"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "hello@exoape.com"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "+31 772 086 200"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Ottografie Seamless Photographic Journey"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Amaterasu Frontier Health Innovation"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Columbia Pictures Celebrating a Century of Cinema"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Cambium Pioneering Sustainable Solutions"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Browse all work"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Browse all news"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Willem II Singel 8\n6041 HS, Roermond\nThe Netherlands"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Behance"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Dribbble"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Linkedin"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Instagram"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Our Story"
+    },
+    {
+      "role": "navigation",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 3,
+      "text_content": "Work\nStudio\nNews\nContact"
+    },
+    {
+      "role": "section",
+      "aria_label_present": false,
+      "contrast_ratio": 4.5,
+      "depth": 2,
+      "text_content": null
+    }
+  ],
+  "is_safe_for_production": true
+}

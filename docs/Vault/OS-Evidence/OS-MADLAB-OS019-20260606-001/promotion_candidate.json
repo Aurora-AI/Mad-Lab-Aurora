@@ -1,0 +1,8 @@
+{
+  "candidate_status": "REVIEWABLE_CANDIDATE",
+  "eligible_for_human_review": true,
+  "promotion_authorized": false,
+  "promotion_allowed": false,
+  "requires_promotion_approval_record": true,
+  "promotion_eligibility": "HUMAN_REVIEW_REQUIRED"
+}

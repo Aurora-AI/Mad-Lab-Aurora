@@ -1,15 +1,15 @@
 {
   "month": "2026-06",
-  "generated_at": "2026-06-06T09:05:00-03:00",
-  "total_tokens": 965500,
-  "total_cost_usd": 1.36075,
-  "total_cost_brl": 9.52525,
+  "generated_at": "2026-06-06T12:06:18-03:00",
+  "total_tokens": 1112500,
+  "total_cost_usd": 1.53025,
+  "total_cost_brl": 10.71175,
   "budget_alert": false,
   "by_agent": {
     "antigravity": {
-      "tokens": 965500,
-      "cost_usd": 1.36075,
-      "os_count": 3
+      "tokens": 1112500,
+      "cost_usd": 1.53025,
+      "os_count": 4
     }
   },
   "by_model": {
@@ -18,8 +18,8 @@
       "cost_usd": 0.00325
     },
     "gemini-1.5-pro": {
-      "tokens": 940500,
-      "cost_usd": 1.3575
+      "tokens": 1087500,
+      "cost_usd": 1.527
     }
   },
   "by_os": [
@@ -43,6 +43,13 @@
       "total_cost_usd": 0.9325,
       "steps": 6,
       "note": "BuildPlanResolver, StoriesBuilderGate, SynthesisDAG integration, Stories Builder alignment and real E2E certification run"
+    },
+    {
+      "os_id": "OS-MADLAB-OS019-20260606-001",
+      "total_tokens": 147000,
+      "total_cost_usd": 0.1695,
+      "steps": 1,
+      "note": "First real product candidate generated for Mad Lab Stories from reference target https://www.exoape.com/ under Mad Lab Theme"
     }
   ],
   "top_cost_steps": [
@@ -57,6 +64,10 @@
     {
       "entry_id": "OS-MADLAB-OS018-20260604-001-step-5",
       "cost_usd": 0.2125
+    },
+    {
+      "entry_id": "OS-MADLAB-OS019-20260606-001",
+      "cost_usd": 0.1695
     },
     {
       "entry_id": "OS-MADLAB-OS018-20260604-001-step-3",

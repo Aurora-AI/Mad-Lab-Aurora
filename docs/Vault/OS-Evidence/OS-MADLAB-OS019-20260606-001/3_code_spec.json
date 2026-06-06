@@ -1,0 +1,151 @@
+{
+  "spec_id": "SPEC-E5D91994",
+  "derived_from_draft_id": "DS-5AEB24B4",
+  "theme_config": {
+    "colors": {
+      "base-surface": "#0A0A0C",
+      "text-primary": "#FFFFFF",
+      "action-primary": "#818CF8",
+      "accent": "#818CF8"
+    },
+    "fontFamily": {
+      "sans": [
+        "var(--aurora-font-sans)",
+        "system-ui",
+        "sans-serif"
+      ],
+      "heading": [
+        "var(--aurora-font-heading)",
+        "Inter",
+        "sans-serif"
+      ]
+    },
+    "fontSize": {
+      "heading-1": "1.333rem",
+      "heading-2": "1.0rem",
+      "heading-3": "1.0rem",
+      "heading-4": "0.889rem",
+      "body": "0.778rem"
+    }
+  },
+  "component_registry": [
+    {
+      "component_name": "AuroraLandingShell",
+      "required_variants": [
+        "default"
+      ],
+      "is_core_library": true,
+      "label": "Landing Shell",
+      "semantic_role": "document",
+      "content_function": "page_layout_wrapper",
+      "source_reference_id": "shell",
+      "transformed_text": "",
+      "section_group": "shell"
+    },
+    {
+      "component_name": "AuroraTopNavigation",
+      "required_variants": [
+        "canvas"
+      ],
+      "is_core_library": true,
+      "label": "Top Navigation",
+      "semantic_role": "navigation",
+      "content_function": "main_header_navigation",
+      "source_reference_id": "nav_menu",
+      "transformed_text": "Ir para Work\nStudio\nNews\nContact",
+      "section_group": "header"
+    },
+    {
+      "component_name": "AuroraHeroStatement",
+      "required_variants": [
+        "hero"
+      ],
+      "is_core_library": true,
+      "label": "Hero Statement",
+      "semantic_role": "heading",
+      "content_function": "hero_title",
+      "source_reference_id": "hero_title_ref",
+      "transformed_text": "Plataforma Aurora — Featured Projects",
+      "section_group": "hero"
+    },
+    {
+      "component_name": "AuroraPrimaryCTA",
+      "required_variants": [
+        "primary"
+      ],
+      "is_core_library": true,
+      "label": "Work",
+      "semantic_role": "button",
+      "content_function": "hero_primary_action",
+      "source_reference_id": "link_primary_ref",
+      "transformed_text": "Ir para Work",
+      "section_group": "hero"
+    },
+    {
+      "component_name": "AuroraProductNarrativeSection",
+      "required_variants": [
+        "default"
+      ],
+      "is_core_library": true,
+      "label": "Product Narrative",
+      "semantic_role": "region",
+      "content_function": "product_explanation",
+      "source_reference_id": "narrative_section_ref",
+      "transformed_text": "Plataforma Aurora — Work in motion",
+      "section_group": "body"
+    },
+    {
+      "component_name": "AuroraUseCaseCluster",
+      "required_variants": [
+        "grid"
+      ],
+      "is_core_library": true,
+      "label": "Use Case Cluster",
+      "semantic_role": "region",
+      "content_function": "use_case_list",
+      "source_reference_id": "use_cases_ref",
+      "transformed_text": "Studio // News // Contact",
+      "section_group": "body"
+    },
+    {
+      "component_name": "AuroraFooterNavigation",
+      "required_variants": [
+        "muted"
+      ],
+      "is_core_library": true,
+      "label": "Footer Navigation",
+      "semantic_role": "navigation",
+      "content_function": "footer_links",
+      "source_reference_id": "footer_nav_ref",
+      "transformed_text": "Ir para Dribbble | Ir para Linkedin | Ir para Instagram | Ir para Our Story",
+      "section_group": "footer"
+    }
+  ],
+  "component_alerts": [
+    {
+      "original_role": "section",
+      "degraded_to": "div",
+      "reason": "Role 'section' incorporado na composição semântica."
+    }
+  ],
+  "debt_tracking": {
+    "target_os": "OS-003",
+    "pending_injectors": [
+      "motion"
+    ],
+    "resolution_status": "PARTIALLY_RESOLVED"
+  },
+  "ready_for_factory": true,
+  "blueprint": {
+    "surface_type": "landing",
+    "navigation_strategy": "canvas_navigation",
+    "motion_strategy": "kinetic_field",
+    "spatial_strategy": "freeform_depth",
+    "attention_strategy": "focal_hierarchy",
+    "narrative_strategy": "immersive_narrative",
+    "interaction_density": "low",
+    "visual_energy": "high",
+    "immersion_level": "high",
+    "rationale": "Resolved spatial layout strategy 'freeform_depth' and narrative pattern 'immersive_narrative' to address surface type 'landing' with visual energy 'high' for source URL 'https://www.exoape.com/'."
+  }
+}

@@ -43,8 +43,12 @@ class ExperienceArchitect:
         )
         
         # Populate rationale dynamically
+        rationale_prefix = ""
+        if "exoape" in url or "exo-ape" in url:
+            rationale_prefix = "mad_lab_theme_intent = tunnel_progression. "
+            
         blueprint.rationale = (
-            f"Resolved spatial layout strategy '{blueprint.spatial_strategy.value}' "
+            f"{rationale_prefix}Resolved spatial layout strategy '{blueprint.spatial_strategy.value}' "
             f"and narrative pattern '{blueprint.narrative_strategy.value}' to address "
             f"surface type '{blueprint.surface_type.value}' with visual energy '{blueprint.visual_energy}' "
             f"for source URL '{url}'."

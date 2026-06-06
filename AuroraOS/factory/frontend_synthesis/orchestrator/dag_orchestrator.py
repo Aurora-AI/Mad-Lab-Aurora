@@ -821,6 +821,10 @@ class SynthesisDAG:
                 shutil.copy(sandbox.sandbox_dir / "stories_build_plan.json", staging_dir / "stories_build_plan.json")
             if (sandbox.sandbox_dir / "stories_builder_gate_report.json").exists():
                 shutil.copy(sandbox.sandbox_dir / "stories_builder_gate_report.json", staging_dir / "stories_builder_gate_report.json")
+            if (sandbox.sandbox_dir / "ui_tree.json").exists():
+                shutil.copy(sandbox.sandbox_dir / "ui_tree.json", staging_dir / "ui_tree.json")
+            if (sandbox.sandbox_dir / "render_bundle_manifest.json").exists():
+                shutil.copy(sandbox.sandbox_dir / "render_bundle_manifest.json", staging_dir / "render_bundle_manifest.json")
             
             # Save QA report to staging candidate folder
             report_path = staging_dir / "QA_REPORT.md"

@@ -62,7 +62,8 @@ class BlueprintResolver:
                 narrative_strategy=NarrativeStrategy.IMMERSIVE_NARRATIVE,
                 interaction_density="low",
                 visual_energy="high",
-                immersion_level="high"
+                immersion_level="high",
+                rationale="mad_lab_theme_intent = tunnel_progression. Resolved spatial layout strategy 'freeform_depth' and narrative pattern 'immersive_narrative' to address surface type 'landing' with visual energy 'high' for source URL 'https://www.exoape.com/'."
             )
             
         if "linear" in url_str:

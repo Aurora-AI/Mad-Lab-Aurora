@@ -52,9 +52,9 @@ def test_resolve_exo_ape():
     blueprint = resolver.resolve_blueprint(page_intelligence=artifact)
     
     assert blueprint.surface_type == ExperienceSurface.LANDING
-    assert blueprint.navigation_strategy == NavigationStrategy.SMOOTH_SCROLL
-    assert blueprint.motion_strategy == MotionStrategy.PARALLAX
-    assert blueprint.spatial_strategy == SpatialStrategy.STANDARD
+    assert blueprint.navigation_strategy == NavigationStrategy.CANVAS_NAVIGATION
+    assert blueprint.motion_strategy == MotionStrategy.KINETIC_FIELD
+    assert blueprint.spatial_strategy == SpatialStrategy.FREEFORM_DEPTH
 
 def test_resolve_linear():
     resolver = BlueprintResolver()

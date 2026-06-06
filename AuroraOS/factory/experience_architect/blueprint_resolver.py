@@ -55,9 +55,9 @@ class BlueprintResolver:
         if "exoape" in url_str or "exo-ape" in url_str:
             return ExperienceBlueprint(
                 surface_type=ExperienceSurface.LANDING,
-                navigation_strategy=NavigationStrategy.SMOOTH_SCROLL,
-                motion_strategy=MotionStrategy.PARALLAX,
-                spatial_strategy=SpatialStrategy.STANDARD,
+                navigation_strategy=NavigationStrategy.CANVAS_NAVIGATION,
+                motion_strategy=MotionStrategy.KINETIC_FIELD,
+                spatial_strategy=SpatialStrategy.FREEFORM_DEPTH,
                 attention_strategy=AttentionStrategy.FOCAL_HIERARCHY,
                 narrative_strategy=NarrativeStrategy.IMMERSIVE_NARRATIVE,
                 interaction_density="low",

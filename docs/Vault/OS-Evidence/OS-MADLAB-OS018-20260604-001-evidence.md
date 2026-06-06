@@ -1,41 +1,69 @@
 # OS-Evidence: Stories Builder Domain Separation
 
-**ID:** OS-MADLAB-OS018-20260604-001
-**Status:** MICRO-STEP 3 CONCLUÍDO ✅ (OS EM ANDAMENTO)
-**Data:** 2026-06-05
-**Executor:** Antigravity (Gemini 1.5 Pro)
+**ID:** OS-MADLAB-OS018-20260604-001  
+**Status:** EM ANDAMENTO 🚧  
+**Data:** 2026-06-06  
+**Executor:** Antigravity (Gemini 1.5 Pro)  
 
-## Descrição do Resultado
+---
+
+## Descrição do Progresso e Registro
 
 Esta Ordem de Serviço formaliza a separação de domínio do Stories Builder para evitar que decisões arquiteturais (layout, motion, navegação e temas) vazem para o executor de código.
 
-- **Micro-step 1 (Contracts & Authority Boundary):** Criação dos contratos formais (`StoriesBuildPlan`, `BuildPlanTraceabilityItem`, `BuilderCapability`, `BuilderConstraint`) no arquivo [stories_builder_contracts.py](file:///C:/Projetos/Aurora/AuroraOS/factory/frontend_synthesis/contracts/stories_builder_contracts.py). Foram implementadas validações estritas no Pydantic que emitem P0 `BUILDER_ARCHITECTURE_LEAK` se uma decisão arquitetural for marcada como de posse do `stories_builder`.
-- **Micro-step 2 (BuildPlanResolver):** Criação do [build_plan_resolver.py](file:///C:/Projetos/Aurora/AuroraOS/factory/stories_builder/build_plan_resolver.py) que traduz um `ExperienceBlueprint` em um `StoriesBuildPlan` concreto com rastreabilidade detalhada, aplicando assinatura hash SHA256 determinística para associar fisicamente o plano de execução ao blueprint de entrada.
-- **Micro-step 3 (StoriesBuilderGate):** Criação do [stories_builder_gate.py](file:///C:/Projetos/Aurora/AuroraOS/factory/stories_builder/stories_builder_gate.py) que implementa a validação do `StoriesBuildPlan` e gera `StoriesBuilderGateReport`. O gate valida a assinatura de blueprint hash, restrições obrigatórias (`forbidden_decisions`), integridade e autoria da rastreabilidade (`BUILDER_ARCHITECTURE_LEAK`, `RAW_REFERENCE_AUTHORITY_LEAK`, `AUTO_PROMOTION_ATTEMPT`, `MOTION_WITHOUT_PERFORMANCE_BUDGET`, `LAYOUT_WITHOUT_RESPONSIVE_STRATEGY`).
+### Status de Execução por Micro-etapas
 
-## Evidências de Execução
+* **Micro-step 1 — Contracts & Authority Boundary:** CONCLUÍDA / APROVADA ✅  
+* **Micro-step 2 — BuildPlanResolver:** CONCLUÍDA / APROVADA ✅  
+* **Micro-step 3 — StoriesBuilderGate:** CONCLUÍDA / APROVADA ✅  
+* **Micro-step 4 — DAG Integration:** CONCLUÍDA / APROVADA COM CORREÇÃO APLICADA ✅  
+* **Micro-step 5 — Stories Builder Alignment:** CONCLUÍDA / APROVADA ✅  
+
+> [!IMPORTANT]
+> **Observação:**
+> Execução fixture-mode é sintética e não promovível.
+> E2E real no-mocks fica reservado para Micro-step 6.
+
+---
+
+## Evidências de Execução (Micro-step 5)
 
 ### Arquivos Criados/Modificados
 1. [stories_builder_contracts.py](file:///C:/Projetos/Aurora/AuroraOS/factory/frontend_synthesis/contracts/stories_builder_contracts.py) — Contratos e modelos de validação.
 2. [test_stories_builder_contracts.py](file:///C:/Projetos/Aurora/AuroraOS/factory/frontend_synthesis/contracts/test_stories_builder_contracts.py) — Testes unitários para validação de limites de autoridade.
 3. [__init__.py](file:///C:/Projetos/Aurora/AuroraOS/factory/stories_builder/__init__.py) — Módulo `stories_builder`.
 4. [build_plan_resolver.py](file:///C:/Projetos/Aurora/AuroraOS/factory/stories_builder/build_plan_resolver.py) — Resolvedor que traduz blueprint em plano.
-5. [test_build_plan_resolver.py](file:///C:/Projetos/Aurora/AuroraOS/factory/stories_builder/test_build_plan_resolver.py) — Testes de resolução para múltiplos perfis de superfície (landing, canvas, dashboard, portal).
-6. [stories_builder_gate.py](file:///C:/Projetos/Aurora/AuroraOS/factory/stories_builder/stories_builder_gate.py) — Validador autônomo do plano de construção.
-7. [test_stories_builder_gate.py](file:///C:/Projetos/Aurora/AuroraOS/factory/stories_builder/test_stories_builder_gate.py) — Testes unitários do validador.
+5. [stories_builder_gate.py](file:///C:/Projetos/Aurora/AuroraOS/factory/stories_builder/stories_builder_gate.py) — Validador autônomo do plano de construção.
+6. [factory_agent.py](file:///C:/Projetos/Aurora/AuroraOS/factory/frontend_synthesis/factory/factory_agent.py) — Factory Agent alinhado e governado.
+7. [test_stories_builder_alignment.py](file:///C:/Projetos/Aurora/AuroraOS/factory/stories_builder/test_stories_builder_alignment.py) — Testes de governança e alinhamento do Stories Builder.
+8. [dag_orchestrator.py](file:///C:/Projetos/Aurora/AuroraOS/factory/frontend_synthesis/orchestrator/dag_orchestrator.py) — Integração e persistência do plano e validação de capacidades no DAG.
+9. [promote.py](file:///C:/Projetos/Aurora/AuroraOS/factory/frontend_synthesis/orchestrator/promote.py) — Bloqueios de promoção sintética.
 
-### Output do Terminal (pytest)
+### Suite de Testes (pytest)
 ```txt
-collected 92 items
+collected 101 items
 
-factory\frontend_synthesis\acquisition\test_asset_kit_acquisition_agent.py . [  1%]
+AuroraOS\factory\stories_builder\test_build_plan_resolver.py ......      [  5%]
+AuroraOS\factory\stories_builder\test_stories_builder_alignment.py ..... [ 10%]
+....                                                                     [ 14%]
+AuroraOS\factory\stories_builder\test_stories_builder_gate.py ........   [ 22%]
 ...
-factory\experience_architect\test_experience_architect.py ..             [ 84%]
-factory\stories_builder\test_build_plan_resolver.py ......               [ 91%]
-factory\stories_builder\test_stories_builder_gate.py ........            [100%]
-
-======================== 92 passed in 84.33s (0:01:24) ========================
+======================= 101 passed, 1 warning in 41.50s =======================
 ```
+
+### Certificação E2E sintética em fixture-mode
+```txt
+--- INICIANDO E2E REAL MODE CERTIFICATION ---
+URL: https://antigravity.google/
+Fixture Mode: True
+...
+[DAG] StoriesBuilderGate status: passed
+[DAG] Running task: HumanPromotionGate...
+[DAG] Synthetic Run (Fixture-Mode): Promotion is strictly disabled.
+[INFO] Pipeline halted for Human Promotion (as expected).
+```
+
+---
 
 ## Token Tracking
 
@@ -44,15 +72,19 @@ factory\stories_builder\test_stories_builder_gate.py ........            [100%]
 | OS Micro-step 1 — Contracts | Antigravity | Gemini 1.5 Pro | 185000 | 8500 | $0.27 |
 | OS Micro-step 2 — Resolver | Antigravity | Gemini 1.5 Pro | 45000 | 3500 | $0.0825 |
 | OS Micro-step 3 — Gate | Antigravity | Gemini 1.5 Pro | 65000 | 5000 | $0.1275 |
-| **TOTAL** | | | **295000** | **17000** | **$0.48** |
+| OS Micro-step 4 — DAG Integration | Antigravity | Gemini 1.5 Pro | 90000 | 3000 | $0.1275 |
+| OS Micro-step 5 — Alignment | Antigravity | Gemini 1.5 Pro | 150000 | 5000 | $0.2125 |
+| **TOTAL** | | | **535000** | **25000** | **$0.82** |
 
-**Custo BRL estimado:** R$ 3.36  
-**Ledger entry:** `Vault/Token-Ledger/2026-06-05/OS-MADLAB-OS018-20260604-001-step-3.json`  
+**Custo BRL total estimado:** R$ 5.74  
+**Último ledger entry:** `Vault/Token-Ledger/2026-06-05/OS-MADLAB-OS018-20260604-001-step-5.json`  
+
+---
 
 ## Impacto Sistêmico
 
-Com a introdução do `StoriesBuilderGate`, estabelecemos uma barreira de integridade que bloqueia automaticamente qualquer plano de construção que apresente vazamento arquitetural (`BUILDER_ARCHITECTURE_LEAK`), atalhos não-rastreados (`STORIES_UNTRACED_IMPLEMENTATION`), ou tentativas de autoproteção de código. O construtor é obrigado a ser 100% passivo e aderente ao blueprint aprovado.
+Com a homologação da Micro-step 5, consolidamos a domesticação do `FactoryAgent`. O Builder agora funciona 100% como executor governado pelo plano de construção, validado por gates determinísticos no DAG, impedindo injeções de layout desalinhadas ou promoções indevidas de builds sintéticos.
 
 ---
 **Autoridade de Validação:** Antigravity  
-**Gate:** MICRO-STEP 3 APROVADO COM OBSERVAÇÃO OPERACIONAL NÃO BLOQUEANTE  
+**Gate:** MICRO-STEP 5 APROVADO COM OBSERVAÇÃO NÃO BLOQUEANTE  

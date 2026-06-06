@@ -38,6 +38,10 @@ Você não audita o código contra o código mesmo; você audita contra o **cont
 ### FASE 2 — Dissecação Estática (Checklist Crítico)
 Examine o entregável linha a linha contra a matriz de qualidade:
 - **Funcional:** Atende à OS? Há brechas na lógica central?
+- **Mad Lab Theme Alignment (OS-019-M0 / OS-019):**
+  * **Exo Ape Clones Block**: Validate that no assets, texts, or exact grids from Exo Ape are copied. The reference must only provide spatial grammar (ryhthm, pacing).
+  * **No Decorative Motion**: Validate that every animation/motion has a clear narrative or physical purpose. Block arbitrary bounces or decorative transitions.
+  * **Surface/Color Rule**: Validate that base surfaces use light editorial tones (ivory/sand/warm white) instead of defaulting to pure black (`#000000`) unless dark surfaces are narratively justified (raise P0 `MAD_LAB_THEME_SURFACE_VIOLATION` on failure). Block automatic dark theme interpretation (raise P1 `DARK_EDITORIAL_MISINTERPRETED_AS_DARK_THEME` on failure).
 - **Edge Cases:** O array vazio, o null pointer, o timeout de rede ou a string infinita quebram o fluxo?
 - **Desempenho (Eng. Dados):** Existem laços aninhados ignorando eficiência? Consultas sem limite?
 - **SRP:** Funções que tentam fazer tudo de uma vez?

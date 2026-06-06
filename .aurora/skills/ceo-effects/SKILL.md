@@ -140,7 +140,7 @@ A página que vem depois não precisa explicar. O visitante já sentiu.
 ```
 Three.js        r128 — versão fixa da Aurora
                 NÃO usar THREE.CapsuleGeometry (introduzida em r142)
-                Alternativas: CylinderGeometry, SphereGeometry
+                Alternativas: CylinderGeometry, SphereGeometry, Custom shaders
 
 React Three     R3F — integração Three.js + React
 Fiber           Canvas, useFrame, useThree
@@ -155,6 +155,12 @@ Shaders         GLSL quando GSAP + Three.js não alcançam
 
 CSS             Para efeitos simples e fallbacks
                 prefers-reduced-motion obrigatório
+
+Z-Axis Scroll   Z-axis tunnel physics, depth-driven scroll, layered parallax,
+                and forward immersion. Vertical input is mapped to Z axis depth changes.
+                Performance budget is mandatory: 60fps on desktop, 30fps on mobile.
+                Mobile fallback: "reduced_depth" or "static_sections".
+                Reduced motion fallback: "static_depth_sections" or "fade_sections".
 
 PROIBIDO        CUDA, nvidia-*, torch, dependências GPU pesadas
                 Ver Manual v8.0 Seção 4.1.1

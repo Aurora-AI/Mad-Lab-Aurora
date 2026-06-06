@@ -93,9 +93,16 @@ Every design must work across all viewports:
 
 ### 8. Encode Motion Philosophy
 - **Spring Physics default:** `stiffness: 100, damping: 20` — premium, weighty feel. No linear easing
+- **Z-Axis Taste Tokens (Mad Lab Theme):**
+  * `non_linear_navigation_axis`: Defines depth traversal instead of raw Y scrolling.
+  * `z_axis_scroll_model`: Vertical input maps directly to viewport forward depth translation.
+  * `null_space_ratio`: Spaces between content segments to ensure visual breathing room and high-end editorial scale.
+  * `depth_layers`: Number of layers and distance steps (e.g. 5 layers spaced at 1000px depth steps).
+  * `motion_budget`: Performance boundaries (60fps desktop, 30fps mobile).
+  * `reduced_motion_fallback`: Specifies `static_depth_sections` or `fade_sections` to satisfy accessibility.
 - **Perpetual Micro-Interactions:** Every active component should have an infinite loop state (Pulse, Typewriter, Float, Shimmer)
 - **Staggered Orchestration:** Never mount lists instantly — use cascade delays for waterfall reveals
-- **Performance:** Animate exclusively via `transform` and `opacity`. Never animate `top`, `left`, `width`, `height`. Grain/noise filters on fixed pseudo-elements only
+- **Performance:** Animate exclusively via `transform` and `opacity`. Never animate `top`, `left`, `width`, `height`. Grain/noise filters on fixed pseudo-elements only. Banned: absolute positioning animations causing layout reflow (CLS). Only hardware-accelerated properties (translate3d, scale, opacity, clip-path) allowed.
 
 ### 9. List Anti-Patterns (AI Tells)
 Encode these as explicit "NEVER DO" rules in the DESIGN.md:

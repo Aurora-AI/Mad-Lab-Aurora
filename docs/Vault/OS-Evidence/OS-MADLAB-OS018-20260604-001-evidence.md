@@ -1,7 +1,7 @@
 # OS-Evidence: Stories Builder Domain Separation
 
 **ID:** OS-MADLAB-OS018-20260604-001  
-**Status:** CONCLUÍDA ✅  
+**Status:** CONCLUÍDA / APROVADA COM OBSERVAÇÃO OPERACIONAL ⚠️  
 **Data:** 2026-06-06  
 **Executor:** Antigravity (Gemini 1.5 Pro)  
 
@@ -120,6 +120,9 @@ Fixture Mode: False
 
 Com a homologação e finalização da Ordem de Serviço **OS-018**, consolidamos com êxito a separação de domínio e domesticação do `FactoryAgent`. Todo o pipeline end-to-end de transmutação real funciona sem mocks de rede e sem stubs, gerando código auditável e perfeitamente rastreável com base na governação do `StoriesBuildPlan`. Os candidatos gerados em execuções reais nascem como `REVIEWABLE_CANDIDATE` (com flags de aprovação `promotion_allowed = false` e `promotion_authorized = false`) aguardando a aprovação humana soberana no `HumanPromotionGate` via `PromotionApprovalRecord` externo, sem tentativas de autopromoção.
 
+### Observações:
+*   **Indisponibilidade de Ingestão de Aprendizado:** O script `qa-learning:ingest` ficou indisponível no ambiente local devido à ausência do escopo do package.json correspondente e foi registrado como `FACTORY_TOOL_UNAVAILABLE` (com `requires_factory_action: true`). Isso exige uma regularização operacional posterior assim que a infraestrutura da fábrica for sincronizada.
+
 ---
 **Autoridade de Validação:** Antigravity  
-**Gate:** OS CONCLUÍDA E APROVADA ✅
+**Gate:** OS CONCLUÍDA / APROVADA COM OBSERVAÇÃO OPERACIONAL ⚠️

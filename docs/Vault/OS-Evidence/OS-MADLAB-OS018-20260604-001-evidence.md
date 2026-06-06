@@ -61,7 +61,7 @@ Fixture Mode: False
 [DAG] Running task: ExperienceArchitect...
 [DAG] ExperienceArchitect generated blueprint.
 [DAG] Running task: StoriesBuildPlanResolution...
-[BUILD PLAN RESOLVER] Build plan resolved successfully with ID: PLAN-721C6FBF
+[BUILD PLAN RESOLVER] Build plan resolved successfully with ID: PLAN-EF52373F
 [DAG] BuildPlanResolver resolved stories build plan.
 [DAG] StoriesBuilderGate status: passed
 [DAG] Running task: EvaluateVisualFidelity...
@@ -75,25 +75,27 @@ Fixture Mode: False
 [DAG] Compliance QA Report generated at output_synthesis\candidate\QA_REPORT.md
 [DAG] Running task: HumanPromotionGate...
 [DAG] Promotion Candidate Generated:
-      - Sandbox Run ID: SR-4AC1F
+      - Sandbox Run ID: SR-ACA38
       - Patch SHA256: e43e8123e4d623751196dc1c1b91e5fa2959f07985a9c04f4918a200b056d9d4
-      - QA Report SHA256: 5bdae2f1adee333e20f7a2eb8733fbaec9fc5c02231f9a312cd2b2dc5c4ad039
+      - QA Report SHA256: c6474f6afbc277199bae28c42ef21d5e966253c7b2b7c1ad64c048faa9cc3a9d
 [DAG] Pipeline Paused: Promotion is pending formal human approval record.
 [INFO] Pipeline halted for Human Promotion (as expected).
 ```
 
-### Artefatos Físicos Gerados na Pasta `candidate`:
-- `experience_blueprint.json` (blueprint estrutural canônico)
-- `stories_build_plan.json` (plano de construção que governa o FactoryAgent)
-- `stories_builder_gate_report.json` (relatório de conformidade do gate de arquitetura)
-- `3_code_spec.json` (especificação técnica)
-- `ui_tree.json` (estrutura da árvore de componentes)
-- `5_SynthesizedPage.client.tsx` (código transpílado puro da página)
-- `render_bundle_manifest.json` (manifesto de renderização)
-- `6_rendered_screenshot.png` (captura visual real do candidato renderizado)
-- `4_perceptual_report.json` (relatório perceptual estendido)
-- `QA_REPORT.md` (relatório completo de conformidade e testes QA)
-- `promotion_metadata.json` (flags de promoção real configurados: `PROMOTABLE_CANDIDATE`, sem autogate)
+### Rastreabilidade e Hashes Físicos (Run ID: SR-ACA38):
+- **Command Log:** [command.log](file:///C:/Projetos/MadLabAurora/docs/Vault/OS-Evidence/OS-MADLAB-OS018-20260604-001/command.log)
+- **Experience Blueprint:** [experience_blueprint.json](file:///C:/Projetos/MadLabAurora/docs/Vault/OS-Evidence/OS-MADLAB-OS018-20260604-001/experience_blueprint.json)
+- **Stories Build Plan:** [stories_build_plan.json](file:///C:/Projetos/MadLabAurora/docs/Vault/OS-Evidence/OS-MADLAB-OS018-20260604-001/stories_build_plan.json)
+  - Hash SHA256: `971D0F3CE344FAC824C693318DC68A9B4CB631E5EFD8D8C4107AD6E1C1111F5A`
+- **Stories Builder Gate Report:** [stories_builder_gate_report.json](file:///C:/Projetos/MadLabAurora/docs/Vault/OS-Evidence/OS-MADLAB-OS018-20260604-001/stories_builder_gate_report.json)
+  - Hash SHA256: `C2FEB67F581CACA69647105BFB77DDC59B7712386EB49BC19A8BCFFC100B4F6F`
+- **Promotion Metadata:** [promotion_metadata.json](file:///C:/Projetos/MadLabAurora/docs/Vault/OS-Evidence/OS-MADLAB-OS018-20260604-001/promotion_metadata.json)
+  - Hash SHA256: `1D67FE75E8AF812E58256ED85E6E61DEF0EFA5B69375F9EC6F296C71B759CD0A`
+  - *Confirmação Explícita:* `"promotion_allowed": false`, `"promotion_authorized": false`, `"requires_promotion_approval_record": true`, `"candidate_status": "REVIEWABLE_CANDIDATE"`
+- **QA Report:** [QA_REPORT.md](file:///C:/Projetos/MadLabAurora/docs/Vault/OS-Evidence/OS-MADLAB-OS018-20260604-001/QA_REPORT.md)
+  - Hash SHA256: `C6474F6AFBC277199BAE28C42EF21D5E966253c7b2b7c1ad64c048faa9cc3a9d`
+- **Screenshot Renderizado:** [6_rendered_screenshot.png](file:///C:/Projetos/MadLabAurora/docs/Vault/OS-Evidence/OS-MADLAB-OS018-20260604-001/6_rendered_screenshot.png)
+  - Hash SHA256: `2DD7B97D1391D1D3BD343FA9848AE6018392BD45E68FE556A0B8E11647FEDE60`
 
 ---
 
@@ -116,7 +118,7 @@ Fixture Mode: False
 
 ## Impacto Sistêmico
 
-Com a homologação e finalização da Ordem de Serviço **OS-018**, consolidamos com êxito a separação de domínio e domesticação do `FactoryAgent`. Todo o pipeline end-to-end de transmutação real funciona sem mocks de rede e sem stubs, gerando código auditável e perfeitamente rastreável com base na governação do `StoriesBuildPlan`. Os candidatos gerados em execuções reais nascem como `PROMOTABLE_CANDIDATE` aguardando a aprovação humana soberana no `HumanPromotionGate`, sem tentativas de autopromoção.
+Com a homologação e finalização da Ordem de Serviço **OS-018**, consolidamos com êxito a separação de domínio e domesticação do `FactoryAgent`. Todo o pipeline end-to-end de transmutação real funciona sem mocks de rede e sem stubs, gerando código auditável e perfeitamente rastreável com base na governação do `StoriesBuildPlan`. Os candidatos gerados em execuções reais nascem como `REVIEWABLE_CANDIDATE` (com flags de aprovação `promotion_allowed = false` e `promotion_authorized = false`) aguardando a aprovação humana soberana no `HumanPromotionGate` via `PromotionApprovalRecord` externo, sem tentativas de autopromoção.
 
 ---
 **Autoridade de Validação:** Antigravity  

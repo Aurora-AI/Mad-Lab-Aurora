@@ -1,0 +1,355 @@
+{
+  "synthesis_id": "DS-F3BFCDB4",
+  "synthesized_at": "2026-06-06T09:10:08.090272",
+  "governance_mode": "transmute",
+  "semantic_tokens": [
+    {
+      "name": "color-base-surface",
+      "value": "#0A0A0C",
+      "rationale": "Mapeado pela cor dominante original (53.43%). Ajustado para padrão Aurora."
+    }
+  ],
+  "typography_scale": {
+    "heading-1": "1.359rem",
+    "heading-2": "1.0rem",
+    "heading-3": "1.0rem",
+    "heading-4": "0.906rem",
+    "body": "0.906rem"
+  },
+  "do_not_copy_rules": [
+    {
+      "blocked_original_value": "#121317",
+      "violation_type": "Identity Theft (Brand Color)",
+      "aurora_transmutation": "#0A0A0C"
+    },
+    {
+      "blocked_original_value": "Google Symbols, sans-serif",
+      "violation_type": "Typography Exact Copy",
+      "aurora_transmutation": "var(--aurora-font-sans)"
+    },
+    {
+      "blocked_original_value": "Google Sans Flex, Google Sans, sans-serif",
+      "violation_type": "Typography Exact Copy",
+      "aurora_transmutation": "var(--aurora-font-sans)"
+    },
+    {
+      "blocked_original_value": "Google Sans Flex, Google Sans, sans-serif",
+      "violation_type": "Typography Exact Copy",
+      "aurora_transmutation": "var(--aurora-font-sans)"
+    },
+    {
+      "blocked_original_value": "Google Sans Flex, Google Sans, sans-serif",
+      "violation_type": "Typography Exact Copy",
+      "aurora_transmutation": "var(--aurora-font-sans)"
+    },
+    {
+      "blocked_original_value": "Google Sans Flex, sans-serif",
+      "violation_type": "Typography Exact Copy",
+      "aurora_transmutation": "var(--aurora-font-sans)"
+    }
+  ],
+  "a11y_tree": [
+    {
+      "role": "heading",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 4,
+      "text_content": "Experience liftoff with the next-gen agent platform\nExperience liftoff with the next-gen agent platform"
+    },
+    {
+      "role": "heading",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 4,
+      "text_content": "Built for developers\nfor the agent-first era"
+    },
+    {
+      "role": "button",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Product\nkeyboard_arrow_down"
+    },
+    {
+      "role": "button",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Use Cases\nkeyboard_arrow_down"
+    },
+    {
+      "role": "button",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Pricing"
+    },
+    {
+      "role": "button",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Blog"
+    },
+    {
+      "role": "button",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Resources\nkeyboard_arrow_down"
+    },
+    {
+      "role": "button",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Download\ndownload"
+    },
+    {
+      "role": "button",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Download for Windows"
+    },
+    {
+      "role": "button",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Explore use cases"
+    },
+    {
+      "role": "button",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "keyboard_arrow_left"
+    },
+    {
+      "role": "button",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "keyboard_arrow_right"
+    },
+    {
+      "role": "button",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Download"
+    },
+    {
+      "role": "button",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Read More"
+    },
+    {
+      "role": "button",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "View blog"
+    },
+    {
+      "role": "button",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Download for x64"
+    },
+    {
+      "role": "button",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Download for ARM64"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Explore Product"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Google Antigravity @ I/O 2026\n\nMay 19, 2026\nProduct\nRead blog"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Introducing Google Antigravity 2.0\n\nMay 19, 2026\nProduct\nRead blog"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Google Antigravity Built an OS (and more)\n\nMay 19, 2026\nProduct\nRead blog"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Google Antigravity CLI\n\nMay 19, 2026\nProduct\nRead blog"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Google Antigravity SDK\n\nMay 19, 2026\nProduct\nRead blog"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Google Antigravity in Gemini Enterprise\n\nMay 19, 2026\nEnterprise\nRead blog"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Gemini 3.5 Flash in Google Antigravity\n\nMay 19, 2026\nProduct\nRead blog"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Introducing Google Antigravity\n\nNov 18, 2025\nProduct\nRead blog"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Download"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Product"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Docs"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Changelog"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Press"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Releases"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Blog"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Pricing"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Use Cases"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "About Google"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Google Products"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Privacy"
+    },
+    {
+      "role": "link",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 5,
+      "text_content": "Terms"
+    },
+    {
+      "role": "navigation",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 3,
+      "text_content": "Product\nkeyboard_arrow_down\nUse Cases\nkeyboard_arrow_down\nPricing\nBlog\nResources\nkeyboard_arrow_down"
+    },
+    {
+      "role": "navigation",
+      "aria_label_present": true,
+      "contrast_ratio": 4.5,
+      "depth": 3,
+      "text_content": "About Google\nGoogle Products\nPrivacy\nTerms"
+    },
+    {
+      "role": "main",
+      "aria_label_present": false,
+      "contrast_ratio": 4.5,
+      "depth": 2,
+      "text_content": null
+    },
+    {
+      "role": "section",
+      "aria_label_present": false,
+      "contrast_ratio": 4.5,
+      "depth": 2,
+      "text_content": null
+    }
+  ],
+  "is_safe_for_production": true
+}

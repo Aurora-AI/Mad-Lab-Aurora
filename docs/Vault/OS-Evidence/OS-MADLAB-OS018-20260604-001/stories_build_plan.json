@@ -1,0 +1,107 @@
+{
+  "plan_id": "PLAN-EF52373F",
+  "source_blueprint_id": "BP-LANDING-c5fbec77",
+  "source_blueprint_hash": "c5fbec770b25b65cb92bf192bd0a9729bc39d43a8248664f708ce7d91f60287f",
+  "target_surface": "landing",
+  "capabilities": [
+    "render_layout",
+    "bind_styles",
+    "hydrate_texts",
+    "compile_tsx",
+    "assemble_component_tree",
+    "prepare_render_bundle",
+    "bind_accessibility_attributes",
+    "inject_motion_primitives"
+  ],
+  "forbidden_decisions": [
+    "no_spatial_generation",
+    "no_motion_derivation",
+    "no_navigation_origin",
+    "no_theme_definition",
+    "no_narrative_strategy_definition",
+    "no_attention_strategy_definition",
+    "no_reference_raw_consumption",
+    "no_untraced_component_creation",
+    "no_unapproved_asset_reuse"
+  ],
+  "traceability_items": [
+    {
+      "element_id": "AuroraLandingShell",
+      "element_type": "layout",
+      "blueprint_source": "surface_type",
+      "decision_owner": "experience_architect",
+      "authority_level": "architectural"
+    },
+    {
+      "element_id": "AuroraTopNavigation",
+      "element_type": "navigation",
+      "blueprint_source": "navigation_strategy",
+      "decision_owner": "experience_architect",
+      "authority_level": "architectural"
+    },
+    {
+      "element_id": "AuroraUseCaseCluster",
+      "element_type": "layout",
+      "blueprint_source": "spatial_strategy",
+      "decision_owner": "experience_architect",
+      "authority_level": "architectural"
+    },
+    {
+      "element_id": "motion_primitives",
+      "element_type": "motion",
+      "blueprint_source": "motion_strategy",
+      "decision_owner": "experience_architect",
+      "authority_level": "architectural"
+    },
+    {
+      "element_id": "motion-performance-budget",
+      "element_type": "motion",
+      "blueprint_source": "immersion_level",
+      "decision_owner": "experience_architect",
+      "authority_level": "architectural"
+    },
+    {
+      "element_id": "AuroraHeroStatement",
+      "element_type": "component",
+      "blueprint_source": "narrative_strategy",
+      "decision_owner": "experience_architect",
+      "authority_level": "architectural"
+    },
+    {
+      "element_id": "AuroraPrimaryCTA",
+      "element_type": "component",
+      "blueprint_source": "interaction_density",
+      "decision_owner": "experience_architect",
+      "authority_level": "architectural"
+    },
+    {
+      "element_id": "AuroraSecondaryCTA",
+      "element_type": "component",
+      "blueprint_source": "interaction_density",
+      "decision_owner": "experience_architect",
+      "authority_level": "architectural"
+    },
+    {
+      "element_id": "AuroraProductNarrativeSection",
+      "element_type": "component",
+      "blueprint_source": "narrative_strategy",
+      "decision_owner": "experience_architect",
+      "authority_level": "architectural"
+    },
+    {
+      "element_id": "AuroraFooterNavigation",
+      "element_type": "component",
+      "blueprint_source": "surface_type",
+      "decision_owner": "experience_architect",
+      "authority_level": "architectural"
+    },
+    {
+      "element_id": "AuroraLandingShell-styling",
+      "element_type": "component",
+      "blueprint_source": "interaction_density",
+      "decision_owner": "stories_builder",
+      "authority_level": "implementation"
+    }
+  ],
+  "generated_at": "2026-06-06T09:10:08.115966"
+}

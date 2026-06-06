@@ -1,0 +1,12 @@
+{
+  "surface_type": "landing",
+  "navigation_strategy": "canvas_navigation",
+  "motion_strategy": "kinetic_field",
+  "spatial_strategy": "freeform_depth",
+  "attention_strategy": "focal_hierarchy",
+  "narrative_strategy": "progressive_discovery",
+  "interaction_density": "low",
+  "visual_energy": "medium",
+  "immersion_level": "high",
+  "rationale": "Resolved spatial layout strategy 'freeform_depth' and narrative pattern 'progressive_discovery' to address surface type 'landing' with visual energy 'medium' for source URL 'https://antigravity.google/'."
+}

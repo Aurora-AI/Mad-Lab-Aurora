@@ -91,24 +91,11 @@ export function ZAxisScrollContainer({
   const frameInterval = 1000 / Math.min(performanceBudget.targetFps, 60);
   const scaleFactor = QUALITY_SCALE[quality];
 
-  // Reduced motion: render static fallback, no transforms
-  if (!enabled || reducedMotion) {
-    return (
-      <div
-        ref={containerRef}
-        className={className}
-        data-fx="z-axis-scroll-container"
-        data-enabled="false"
-        data-fallback={fallback}
-        data-reduced-motion={String(reducedMotion)}
-        style={{ position: 'relative', overflow: 'hidden' }}
-      >
-        {children}
-      </div>
-    );
-  }
-
+  // Pure math utility — defined outside hooks to remain stable across renders
   const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
+
+  // Rules of Hooks: ALL hooks must be declared before any conditional return.
+  // Conditional behavior is expressed inside the hook bodies, not before them.
 
   const applyTransform = useCallback(() => {
     if (!depthRef.current) return;
@@ -133,6 +120,10 @@ export function ZAxisScrollContainer({
   );
 
   useEffect(() => {
+    // Guard inside the effect — hooks always run, but the kinetic scroll is
+    // only registered when enabled and reduced motion is not active.
+    if (!enabled || reducedMotion) return;
+
     const container = containerRef.current;
     if (!container) return;
 
@@ -155,7 +146,24 @@ export function ZAxisScrollContainer({
         cancelAnimationFrame(rafRef.current);
       }
     };
-  }, [depth, scaleFactor, scrollAxis, tick]);
+  }, [depth, enabled, reducedMotion, scaleFactor, scrollAxis, tick]);
+
+  // Conditional return AFTER all hooks — renders static fallback when kinetic scroll is inactive
+  if (!enabled || reducedMotion) {
+    return (
+      <div
+        ref={containerRef}
+        className={className}
+        data-fx="z-axis-scroll-container"
+        data-enabled="false"
+        data-fallback={fallback}
+        data-reduced-motion={String(reducedMotion)}
+        style={{ position: 'relative', overflow: 'hidden' }}
+      >
+        {children}
+      </div>
+    );
+  }
 
   return (
     <div

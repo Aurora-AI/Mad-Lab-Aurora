@@ -3,6 +3,25 @@ import json
 import uuid
 import hashlib
 
+# Sentinel used in UINode props to emit a runtime JSX expression instead of a literal string.
+# Example: props={"reducedMotion": "__RUNTIME_EXPR__:systemReducedMotion"}
+# Compiles to:  reducedMotion={systemReducedMotion}
+#
+# Canonical mechanism for prefers-reduced-motion passthrough in FX components.
+# Fail-closed: if sentinel is missing, prop is emitted as a literal (gate detects the gap).
+RUNTIME_EXPRESSION_PREFIX = "__RUNTIME_EXPR__:"
+
+# FX components that require 'use client' + useReducedMotion hook when present in the tree.
+FX_COMPONENTS = {"ZAxisScrollContainer", "LayerPortal"}
+
+
+def _has_fx_components(node: UINode) -> bool:
+    """Recursively checks whether any FX component exists in the UINode tree."""
+    if node.component_name in FX_COMPONENTS:
+        return True
+    return any(_has_fx_components(child) for child in node.children)
+
+
 def _format_props(props: dict, classes: list) -> str:
     """Serializa as propriedades Python para sintaxe TSX segura com validação."""
     prop_str = ""
@@ -26,11 +45,16 @@ def _format_props(props: dict, classes: list) -> str:
     for key, value in props.items():
         if isinstance(value, bool):
             prop_str += f" {key}" if value else ""
+        elif isinstance(value, str) and value.startswith(RUNTIME_EXPRESSION_PREFIX):
+            # Runtime expression sentinel: emit as JSX expression, not a string literal.
+            # Used to pass prefers-reduced-motion and other runtime-resolved values.
+            expr = value[len(RUNTIME_EXPRESSION_PREFIX):]
+            prop_str += f" {key}={{{expr}}}"
         elif isinstance(value, str):
             prop_str += f' {key}="{value}"'
         else:
             prop_str += f" {key}={{{json.dumps(value)}}}"
-    
+
     return prop_str
 
 def _compile_node(node: UINode, indent_level: int = 2, imports: set = None) -> str:
@@ -134,21 +158,77 @@ def _compile_html_node(node: UINode, theme_colors: dict = None, indent_level: in
     return code
 
 
+_USE_REDUCED_MOTION_HOOK = '''\
+/**
+ * useReducedMotion — reads prefers-reduced-motion from the system at runtime.
+ * Fail-closed: returns true (motion disabled) when the media query API is unavailable (SSR).
+ * OS-019 / Mad Lab Theme — accessibility contract.
+ */
+function useReducedMotion(): boolean {
+  const [reducedMotion, setReducedMotion] = React.useState<boolean>(() => {
+    if (typeof window === 'undefined') return true;
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  });
+  React.useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const onChange = (e: MediaQueryListEvent) => setReducedMotion(e.matches);
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
+  }, []);
+  return reducedMotion;
+}
+'''
+
+
 def compile_tsx(tree: ComponentTree) -> str:
-    """Invólucro Final: Gera o arquivo React pronto para produção."""
-    imports = set()
+    """Invólucro Final: Gera o arquivo React pronto para producao.
+
+    When FX components (ZAxisScrollContainer, LayerPortal) are present in the tree:
+    - Prepends 'use client';
+    - Adds React import.
+    - Emits the useReducedMotion hook (reads prefers-reduced-motion; fail-closed).
+    - Declares `const systemReducedMotion = useReducedMotion()` inside the component body.
+    - The hook always runs before any conditional return — Rules of Hooks compliant.
+    """
+    imports: set = set()
     jsx_body = _compile_node(tree.root_node, indent_level=2, imports=imports)
-    
-    header = "/**\n * SYNTHESIZED BY AURORA FRONTEND FACTORY\n"
-    header += f" * SPEC_ID: {tree.spec_id}\n * TRUSTWARE CERTIFIED\n */\n\n"
-    
+
+    has_fx = _has_fx_components(tree.root_node)
+
+    header = ""
+    if has_fx:
+        header += "'use client';\n"
+
+    header += "/**\n * SYNTHESIZED BY AURORA FRONTEND FACTORY\n"
+    header += f" * SPEC_ID: {tree.spec_id}\n * TRUSTWARE CERTIFIED\n"
+    if has_fx:
+        header += " * FX: Z-axis tunnel — prefers-reduced-motion via useReducedMotion (fail-closed)\n"
+    header += " */\n\n"
+
+    if has_fx:
+        imports.add("import React from 'react';")
+
     imports_block = "\n".join(sorted(imports))
     if imports_block:
         imports_block += "\n"
-    
-    component_wrapper = f"\nexport default function SynthesizedPage() {{\n  return (\n{jsx_body}\n  );\n}}\n"
-    
-    return header + imports_block + component_wrapper
+
+    if has_fx:
+        hook_block = "\n" + _USE_REDUCED_MOTION_HOOK
+        # Component body includes the hook call before any JSX return.
+        # Rules of Hooks: hook always executes unconditionally.
+        component_wrapper = (
+            f"\nexport default function SynthesizedPage() {{\n"
+            f"  // prefers-reduced-motion — read once on mount, reactive to system changes.\n"
+            f"  // Fail-closed: returns true (no motion) when window is unavailable (SSR).\n"
+            f"  const systemReducedMotion = useReducedMotion();\n"
+            f"  return (\n{jsx_body}\n  );\n}}\n"
+        )
+    else:
+        hook_block = ""
+        component_wrapper = f"\nexport default function SynthesizedPage() {{\n  return (\n{jsx_body}\n  );\n}}\n"
+
+    return header + imports_block + hook_block + component_wrapper
 
 def compile_tsx_nodes(tree: ComponentTree) -> tuple[str, set]:
     """Compila apenas o corpo interno da árvore JSX e retorna a string e os imports."""

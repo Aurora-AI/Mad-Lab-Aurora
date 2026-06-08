@@ -210,3 +210,98 @@ def test_tsx_compiler_both_fx_components_in_same_tree():
     assert "import { LayerPortal } from '@/components/fx';" in output
     assert "<ZAxisScrollContainer" in output
     assert "<LayerPortal" in output
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# OS-019 M2: useReducedMotion + RUNTIME_EXPRESSION_PREFIX tests
+# Verifies tsx_compiler emits 'use client', useReducedMotion hook, and
+# systemReducedMotion variable when FX components are present.
+# Verifies RUNTIME_EXPRESSION_PREFIX sentinel emits JSX expression (not string literal).
+# ─────────────────────────────────────────────────────────────────────────────
+
+def test_tsx_compiler_fx_emits_use_client_directive():
+    """FX component in tree causes 'use client'; directive at top of output."""
+    node = UINode(
+        node_id="tunnel",
+        component_name="ZAxisScrollContainer",
+        semantic_role="container",
+        props={"enabled": True, "depth": 3000}
+    )
+    tree = ComponentTree(spec_id="TEST-FX-UC", root_node=node, layout_selection=_get_fx_layout())
+    output = compile_tsx(tree)
+    assert output.startswith("'use client';"), "Generated file must start with 'use client';"
+
+
+def test_tsx_compiler_fx_emits_use_reduced_motion_hook():
+    """FX component in tree causes useReducedMotion hook to be emitted."""
+    node = UINode(
+        node_id="tunnel",
+        component_name="ZAxisScrollContainer",
+        semantic_role="container",
+        props={"enabled": True, "depth": 3000}
+    )
+    tree = ComponentTree(spec_id="TEST-FX-RMH", root_node=node, layout_selection=_get_fx_layout())
+    output = compile_tsx(tree)
+    assert "function useReducedMotion" in output
+    assert "prefers-reduced-motion" in output
+    assert "systemReducedMotion = useReducedMotion()" in output
+
+
+def test_tsx_compiler_fx_emits_react_import():
+    """FX component in tree causes React import to be emitted."""
+    node = UINode(
+        node_id="layer",
+        component_name="LayerPortal",
+        semantic_role="presentation",
+        props={"zPosition": -500, "scaleFactor": 0.8}
+    )
+    tree = ComponentTree(spec_id="TEST-FX-REACT", root_node=node, layout_selection=_get_fx_layout())
+    output = compile_tsx(tree)
+    assert "import React from 'react';" in output
+
+
+def test_tsx_compiler_no_use_client_without_fx():
+    """Non-FX tree must NOT emit 'use client'; — only FX triggers it."""
+    node = UINode(
+        node_id="hero",
+        component_name="AuroraHeroStatement",
+        semantic_role="hero",
+        props={"className": "text-center"}
+    )
+    tree = ComponentTree(spec_id="TEST-NOFX-UC", root_node=node, layout_selection=_get_fx_layout())
+    output = compile_tsx(tree)
+    assert "'use client';" not in output
+    assert "useReducedMotion" not in output
+
+
+def test_tsx_compiler_runtime_expression_sentinel_emits_jsx_expression():
+    """RUNTIME_EXPRESSION_PREFIX sentinel emits {expr} instead of string literal."""
+    from tsx_compiler import RUNTIME_EXPRESSION_PREFIX
+    node = UINode(
+        node_id="tunnel",
+        component_name="ZAxisScrollContainer",
+        semantic_role="container",
+        props={
+            "enabled": True,
+            "depth": 3000,
+            "reducedMotion": f"{RUNTIME_EXPRESSION_PREFIX}systemReducedMotion",
+        }
+    )
+    tree = ComponentTree(spec_id="TEST-FX-SENTINEL", root_node=node, layout_selection=_get_fx_layout())
+    output = compile_tsx(tree)
+    # Must emit JSX expression, not string literal
+    assert "reducedMotion={systemReducedMotion}" in output
+    assert 'reducedMotion="__RUNTIME_EXPR__' not in output
+
+
+def test_tsx_compiler_runtime_expression_does_not_affect_non_sentinel_props():
+    """Regular string props must NOT be emitted as JSX expressions."""
+    node = UINode(
+        node_id="layer",
+        component_name="LayerPortal",
+        semantic_role="presentation",
+        props={"quality": "high", "scaleFactor": 0.9}
+    )
+    tree = ComponentTree(spec_id="TEST-FX-REGULAR", root_node=node, layout_selection=_get_fx_layout())
+    output = compile_tsx(tree)
+    assert 'quality="high"' in output

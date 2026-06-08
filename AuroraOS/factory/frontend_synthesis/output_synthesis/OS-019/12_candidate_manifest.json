@@ -1,21 +1,33 @@
 {
   "os_id": "OS-019",
-  "m3_id": "OS-019-M3",
+  "final_micro_step": "OS-019-M4",
   "spec_id": "SPEC-OS019-MAD-LAB-001",
+  "candidate_status": "REVIEWABLE_CANDIDATE",
   "theme": "Mad Lab Theme \u2014 Z-axis tunnel physics",
+  "perceptual_decision": "approved",
+  "perceptual_score": 89.38,
+  "contrast_remediation": {
+    "applied": true,
+    "token": "editorial-warm",
+    "before": "#D4C5A9",
+    "after": "#7A6A52",
+    "contrast_ratio": 5.01,
+    "wcag_aa_passes": true
+  },
   "artifacts": {
     "1_blueprint.json": "ExperienceBlueprint (M1)",
     "2_build_plan.json": "StoriesBuildPlan (M1)",
     "3_gate_report.json": "StoriesBuilderGateReport (M1)",
-    "4_code_spec.json": "FrontendCodeSpec (M2)",
+    "4_code_spec.json": "FrontendCodeSpec (M2/M3.1 \u2014 editorial-warm corrigido)",
     "5_component_tree.json": "ComponentTree \u2014 ZAxisScrollContainer + 3 LayerPortals (M2)",
     "6_SynthesizedPage.client.tsx": "TSX Candidate \u2014 reducedMotion fail-closed (M2)",
     "7_render_bundle_manifest.json": "StandaloneRenderBundle manifest (M2)",
-    "8_rendered_screenshot.png": "Playwright offline screenshot (M3)",
-    "9_perceptual_report.json": "Perceptual regression report (M3)",
-    "10_QA_REPORT.md": "M3 QA evidence (M3)",
-    "11_promotion_metadata.json": "Promotion metadata \u2014 promotion_allowed=false (M3)",
-    "12_candidate_manifest.json": "This manifest (M3)"
+    "8_rendered_screenshot.png": "Screenshot final \u2014 Playwright offline 1440x900 (M3.1)",
+    "9_perceptual_report.json": "Perceptual report \u2014 approved, 89.4% (M3.1)",
+    "10_QA_REPORT.md": "QA evidence consolidado (M3.1)",
+    "11_promotion_metadata.json": "Promotion metadata \u2014 promotion_allowed=false (M3.1)",
+    "12_candidate_manifest.json": "This manifest (M4 \u2014 final)",
+    "HUMAN_REVIEW_PACKAGE.md": "Pacote de revisao humana \u2014 decisao de promocao (M4)"
   },
   "promotion": {
     "promotion_allowed": false,

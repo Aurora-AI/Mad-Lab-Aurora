@@ -9,6 +9,7 @@ class LayoutProfileSelection(BaseModel):
         "bento_grid",
         "dashboard_grid",
         "dark_editorial",
+        "z_axis_depth",
     ]
     reason: str
     confidence: float

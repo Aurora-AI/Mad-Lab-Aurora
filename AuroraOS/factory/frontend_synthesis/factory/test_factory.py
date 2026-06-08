@@ -1,6 +1,6 @@
 import pytest
 from factory_contracts import UINode, ComponentTree, LayoutProfileSelection, ComponentMappingFinding
-from tsx_compiler import compile_tsx, generate_tailwind_config
+from tsx_compiler import compile_tsx, compile_tsx_nodes, generate_tailwind_config
 from factory_agent import generate_ui_tree
 from alvaro_contracts import FrontendCodeSpec, TailwindThemeSpec, ComponentRequirement, ScaffoldingResolution
 from sandbox_contracts import PipelinePausedException, DiagnosticFinding
@@ -122,3 +122,91 @@ def test_generate_ui_tree_empty_container_fails():
     assert "Component Transpilation Paused" in str(exc.value)
     findings = exc.value.findings
     assert any(f.code == "CONTAINER_EMPTY" and f.severity == "P1" for f in findings)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# OS-019-M0: FX Component Compiler Tests
+# Verifies tsx_compiler conditionally imports @/components/fx only when
+# ZAxisScrollContainer or LayerPortal appear in the UI tree.
+# An orphan import (imported but unused) is a P1 violation.
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _get_fx_layout():
+    return LayoutProfileSelection(
+        profile="z_axis_depth",
+        reason="Mad Lab Theme Z-axis layout",
+        confidence=1.0,
+        source_signals=["stories_plan"]
+    )
+
+
+def test_tsx_compiler_imports_z_axis_scroll_container():
+    """ZAxisScrollContainer triggers conditional import from @/components/fx."""
+    node = UINode(
+        node_id="tunnel-root",
+        component_name="ZAxisScrollContainer",
+        semantic_role="container",
+        props={"enabled": True, "quality": "high", "depth": 3000}
+    )
+    tree = ComponentTree(spec_id="TEST-FX-001", root_node=node, layout_selection=_get_fx_layout())
+    output = compile_tsx(tree)
+
+    assert "import { ZAxisScrollContainer } from '@/components/fx';" in output
+    assert "<ZAxisScrollContainer" in output
+    # Must NOT import from @/components/core — wrong package
+    assert "import { ZAxisScrollContainer } from '@/components/core';" not in output
+
+
+def test_tsx_compiler_imports_layer_portal():
+    """LayerPortal triggers conditional import from @/components/fx."""
+    node = UINode(
+        node_id="depth-layer-0",
+        component_name="LayerPortal",
+        semantic_role="presentation",
+        props={"zPosition": -1000, "scaleFactor": 0.7}
+    )
+    tree = ComponentTree(spec_id="TEST-FX-002", root_node=node, layout_selection=_get_fx_layout())
+    output = compile_tsx(tree)
+
+    assert "import { LayerPortal } from '@/components/fx';" in output
+    assert "<LayerPortal" in output
+    assert "import { LayerPortal } from '@/components/core';" not in output
+
+
+def test_tsx_compiler_no_orphan_fx_import_when_no_fx_component():
+    """When no FX components are in the tree, @/components/fx is NOT imported."""
+    node = UINode(
+        node_id="hero",
+        component_name="AuroraHeroStatement",
+        semantic_role="hero",
+        props={"className": "text-center"}
+    )
+    tree = ComponentTree(spec_id="TEST-FX-003", root_node=node, layout_selection=_get_fx_layout())
+    output = compile_tsx(tree)
+
+    assert "@/components/fx" not in output
+    assert "import { AuroraHeroStatement } from '@/components/core';" in output
+
+
+def test_tsx_compiler_both_fx_components_in_same_tree():
+    """Both ZAxisScrollContainer and LayerPortal can coexist in one tree with separate imports."""
+    layer_node = UINode(
+        node_id="layer-0",
+        component_name="LayerPortal",
+        semantic_role="presentation",
+        props={"zPosition": -2000, "scaleFactor": 0.5}
+    )
+    root_node = UINode(
+        node_id="tunnel",
+        component_name="ZAxisScrollContainer",
+        semantic_role="container",
+        props={"enabled": True, "depth": 4000},
+        children=[layer_node]
+    )
+    tree = ComponentTree(spec_id="TEST-FX-004", root_node=root_node, layout_selection=_get_fx_layout())
+    output = compile_tsx(tree)
+
+    assert "import { ZAxisScrollContainer } from '@/components/fx';" in output
+    assert "import { LayerPortal } from '@/components/fx';" in output
+    assert "<ZAxisScrollContainer" in output
+    assert "<LayerPortal" in output

@@ -1,0 +1,23 @@
+{
+  "candidate_status": "REVIEWABLE_CANDIDATE",
+  "promotion_allowed": false,
+  "promotion_authorized": false,
+  "requires_promotion_approval_record": true,
+  "promotion_eligibility": "HUMAN_REVIEW_REQUIRED",
+  "eligible_for_human_review": true,
+  "os_id": "OS-019",
+  "m3_id": "OS-019-M3",
+  "tsx_candidate": "6_SynthesizedPage.client.tsx",
+  "screenshot": "8_rendered_screenshot.png",
+  "perceptual_score": 86.88,
+  "perceptual_decision": "rejected",
+  "perceptual_blocked_reasons": [
+    "Contraste insuficiente no elemento <div> (Depth Horizon \u2014 Aurora Factory): 1.6:1. Minimo 4.5:1. Texto: rgb(212, 197, 169), Fundo: rgb(250, 250, 248)."
+  ],
+  "perceptual_findings_count": 2,
+  "screenshot_sha256": "2e3a9dd4393b82d44e52037b5bb2f4980dfe78d7f55b06c1a93480c836cf4ec5",
+  "qa_report_sha256": "f259bf8822af661423bed43a2722d2328c3b3993526b11c2e7e6a799c5f474a3",
+  "gate_checks_passed": 24,
+  "gate_checks_total": 24,
+  "reduced_motion_contract": "VERIFIED"
+}

@@ -1,0 +1,12 @@
+{
+  "surface_type": "landing",
+  "navigation_strategy": "canvas_navigation",
+  "motion_strategy": "kinetic_field",
+  "spatial_strategy": "freeform_depth",
+  "attention_strategy": "focal_hierarchy",
+  "narrative_strategy": "progressive_discovery",
+  "interaction_density": "medium",
+  "visual_energy": "high",
+  "immersion_level": "high",
+  "rationale": "Mad Lab Theme \u2014 Z-axis tunnel progression inspirada na gramatica editorial do exoape. Nao eh um clone do exoape. Eh uma fisica propria: o usuario nao rola uma pagina, ele atravessa um organismo digital. Fundo editorial radical, nao dark generico. Tension earned through depth, not decoration. canvas_navigation ativa Z-axis. freeform_depth ativa depth layers. exoape referencia de gramatica \u2014 constraint NO_EXOAPE_SURFACE_CLONE obrigatorio."
+}

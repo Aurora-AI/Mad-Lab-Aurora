@@ -1,0 +1,38 @@
+{
+  "screenshot_path": "C:\\Projetos\\Aurora\\AuroraOS\\factory\\frontend_synthesis\\output_synthesis\\OS-019\\m3_render_sandbox\\6_rendered_screenshot.png",
+  "screenshot_sha256": "2e3a9dd4393b82d44e52037b5bb2f4980dfe78d7f55b06c1a93480c836cf4ec5",
+  "viewport_width": 1440,
+  "viewport_height": 900,
+  "render_bundle_id": "bundle-os019-mad-lab-001",
+  "perceptual_score": {
+    "structural_similarity_score": 100.0,
+    "contrast_score": 85.0,
+    "visual_density_score": 36.275720164609055,
+    "layout_integrity_score": 100.0,
+    "overlap_score": 100.0,
+    "viewport_fit_score": 100.0,
+    "final_score": 86.87928669410151
+  },
+  "findings": [
+    {
+      "code": "LOW_VISUAL_DENSITY",
+      "severity": "P2",
+      "axis": "density",
+      "message": "Densidade visual baixa (0.0054 < 0.015). Verifique se o espaco negativo e intencional.",
+      "recommended_action": "Rever layout se espaco negativo nao for intencional."
+    },
+    {
+      "code": "LOW_CONTRAST_RATIO",
+      "severity": "P1",
+      "axis": "contrast",
+      "message": "Contraste insuficiente no elemento <div> (Depth Horizon \u2014 Aurora Factory): 1.6:1. Minimo 4.5:1. Texto: rgb(212, 197, 169), Fundo: rgb(250, 250, 248).",
+      "recommended_action": "Ajustar cores ou fundo do elemento para atingir o contraste WCAG minimo."
+    }
+  ],
+  "decision": "rejected",
+  "blocked_reasons": [
+    "Contraste insuficiente no elemento <div> (Depth Horizon \u2014 Aurora Factory): 1.6:1. Minimo 4.5:1. Texto: rgb(212, 197, 169), Fundo: rgb(250, 250, 248)."
+  ],
+  "network_requests_blocked": [],
+  "console_errors": []
+}

@@ -1,0 +1,108 @@
+{
+  "spec_id": "SPEC-OS019-MAD-LAB-001",
+  "derived_from_draft_id": "DRAFT-BP-LANDING-ba6fd079",
+  "theme_config": {
+    "colors": {
+      "base-surface": "#FAFAF8",
+      "text-primary": "#0A0A0A",
+      "text-secondary": "#555555",
+      "accent": "#0D0D1A",
+      "depth-mid": "#2D2D3E",
+      "depth-horizon": "#1A1A2E",
+      "editorial-warm": "#D4C5A9",
+      "motion-trace": "#4A4A6A"
+    },
+    "fontFamily": {
+      "sans": [
+        "Space Grotesk",
+        "Helvetica Neue",
+        "sans-serif"
+      ],
+      "mono": [
+        "Space Mono",
+        "Courier New",
+        "monospace"
+      ]
+    },
+    "fontSize": {
+      "body": "1rem",
+      "caption": "0.875rem",
+      "heading": "3rem",
+      "display": "5rem"
+    }
+  },
+  "component_registry": [
+    {
+      "component_name": "AuroraLandingShell",
+      "required_variants": [
+        "default"
+      ],
+      "is_core_library": true,
+      "label": "Landing Shell",
+      "semantic_role": "shell",
+      "content_function": "layout_container",
+      "source_reference_id": "mad_lab_shell",
+      "transformed_text": "Mad Lab Aurora",
+      "section_group": "shell"
+    },
+    {
+      "component_name": "ZAxisScrollContainer",
+      "required_variants": [
+        "z_axis_depth"
+      ],
+      "is_core_library": false,
+      "label": "Tunnel Engine",
+      "semantic_role": "z_axis_scroll",
+      "content_function": "depth_progression",
+      "source_reference_id": "mad_lab_tunnel",
+      "transformed_text": "Z-Axis Tunnel",
+      "section_group": "fx_layer"
+    },
+    {
+      "component_name": "LayerPortal",
+      "required_variants": [
+        "depth_layer"
+      ],
+      "is_core_library": false,
+      "label": "Depth Layer",
+      "semantic_role": "depth_layer",
+      "content_function": "depth_positioning",
+      "source_reference_id": "mad_lab_layer",
+      "transformed_text": "Layer Portal",
+      "section_group": "fx_layer"
+    },
+    {
+      "component_name": "AuroraHeading",
+      "required_variants": [
+        "display"
+      ],
+      "is_core_library": true,
+      "label": "Mad Lab Aurora",
+      "semantic_role": "heading",
+      "content_function": "primary_headline",
+      "source_reference_id": "mad_lab_hero_headline",
+      "transformed_text": "Mad Lab Aurora",
+      "section_group": "hero"
+    },
+    {
+      "component_name": "AuroraButton",
+      "required_variants": [
+        "primary"
+      ],
+      "is_core_library": true,
+      "label": "Explorar o Sistema",
+      "semantic_role": "button",
+      "content_function": "primary_cta",
+      "source_reference_id": "mad_lab_cta_primary",
+      "transformed_text": "Explorar o Sistema",
+      "section_group": "hero"
+    }
+  ],
+  "component_alerts": [],
+  "debt_tracking": {
+    "target_os": "OS-019",
+    "pending_injectors": [],
+    "resolution_status": "RESOLVED"
+  },
+  "ready_for_factory": true
+}

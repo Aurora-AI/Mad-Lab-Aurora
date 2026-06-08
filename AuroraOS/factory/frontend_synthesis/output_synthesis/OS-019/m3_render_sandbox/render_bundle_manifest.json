@@ -1,0 +1,13 @@
+{
+  "bundle_id": "bundle-os019-mad-lab-001",
+  "ui_tree_hash": "69b38a4c4226a7ad776d3d547a49f8bf3ff7128aa38c9f0db0de7d7063d80e8d",
+  "client_component_path": "6_SynthesizedPage.client.tsx",
+  "page_entry_path": "page.tsx",
+  "css_entry_path": "render_bundle.css",
+  "dependencies_mode": "local_pinned",
+  "network_allowed": false,
+  "viewport_presets": [
+    "1440x900",
+    "375x812"
+  ]
+}

@@ -1,37 +1,38 @@
-# QA Report — OS-019 M3
-## Rendered Candidate Certification + HumanPromotionGate
+# QA Report — OS-019 M3.1
+## Contrast Token Remediation & Re-render
 
 **Data:** 2026-06-08  
-**Pipeline:** TSX Candidate → Render Sandbox → Playwright Screenshot → Perceptual QA → SandboxGate → HumanPromotionGate  
+**Remediação:** `editorial-warm` `#D4C5A9` → `#7A6A52`  
+**Contraste:** `5.01:1` (WCAG AA >= 4.5:1 ✓)  
 
 ---
 
-## Gate M3 — Checks
+## Correção Aplicada
+
+| Token | Antes | Depois | Motivo |
+|---|---|---|---|
+| `editorial-warm` | `#D4C5A9` | `#7A6A52` | Contraste insuficiente 1.63:1 → 5.01:1 sobre `base-surface #FAFAF8` |
+
+---
+
+## Gate M3.1 — Checks
 
 | Check | Status |
 |---|---|
-| M2 artifact: TSX loaded | OK |
-| M2 artifact: ComponentTree loaded | OK |
-| M2 artifact: CodeSpec loaded | OK |
-| M2 hash integrity: ui_tree_hash | OK |
-| TSX has 'use client'; | OK |
-| TSX has function useReducedMotion | OK |
-| TSX has prefers-reduced-motion | OK |
-| TSX has systemReducedMotion = useReducedMotion() | OK |
-| TSX passes reducedMotion={systemReducedMotion} | OK |
+| editorial-warm corrected to #7A6A52 | OK |
+| Contrast ratio 5.01:1 >= 4.5:1 WCAG AA | OK |
+| CSS has corrected editorial-warm | OK |
+| CSS has no old editorial-warm | OK |
+| No P0/P1 LOW_CONTRAST_RATIO findings | OK |
+| TSX: 'use client'; | OK |
+| TSX: reducedMotion={systemReducedMotion} | OK |
 | TSX: useReducedMotion fail-closed | OK |
-| TSX: no reducedMotion hardcoded false | OK |
-| TSX: no raw __RUNTIME_EXPR__ sentinel | OK |
-| TSX imports ZAxisScrollContainer from @/components/fx | OK |
-| TSX imports LayerPortal from @/components/fx | OK |
-| TSX renders ZAxisScrollContainer | OK |
-| TSX renders 3 LayerPortal layers | OK |
-| TSX has performanceBudget | OK |
-| TSX has fallback=static_depth_sections | OK |
-| Screenshot file exists | OK |
-| Screenshot is valid PNG | OK |
+| TSX: no __RUNTIME_EXPR__ sentinel | OK |
+| TSX: ZAxisScrollContainer present | OK |
+| TSX: 3 LayerPortal layers | OK |
+| Screenshot valid PNG | OK |
 | Perceptual report generated | OK |
-| No Exo Ape text in TSX | OK |
+| No Exo Ape text | OK |
 | promotion_allowed = false (invariant) | OK |
 | HumanPromotionGate will be raised | OK |
 
@@ -39,34 +40,20 @@
 
 ## Render Evidence
 
-| Artifact | Value |
+| Artifact | Valor |
 |---|---|
-| Screenshot SHA256 | `2e3a9dd4393b82d44e52037b5bb2f498…` |
-| Perceptual score | `86.9%` |
-| Perceptual decision | `rejected` |
-| Perceptual findings | `2` |
-| Perceptual blocked reasons | `1` |
-
----
-
-## Reduced-Motion Contract
-
-| Check | Status |
-|---|---|
-| useReducedMotion hook present | OK |
-| prefers-reduced-motion referenced | OK |
-| Fail-closed (SSR returns true) | OK |
-| reducedMotion={systemReducedMotion} on ZAxisScrollContainer | OK |
-| reducedMotion={systemReducedMotion} on LayerPortal (×3) | OK |
-| No hardcoded reducedMotion={false} | OK |
-| No raw __RUNTIME_EXPR__ sentinel in output | OK |
+| Screenshot SHA256 | `07900d7f47c2ab00aa37128f2b5af693…` |
+| Perceptual score | `89.4%` |
+| Perceptual decision | `approved` |
+| Perceptual findings | `1` |
+| P0/P1 LOW_CONTRAST_RATIO findings | `0` (expected 0) |
 
 ---
 
 ## HumanPromotionGate Status
 
 ```
-[M3] HumanPromotionGate — PAUSED
+[M3.1] HumanPromotionGate — PAUSED
 promotion_allowed: false
 promotion_authorized: false
 requires_promotion_approval_record: true
@@ -78,8 +65,10 @@ promotion_eligibility: HUMAN_REVIEW_REQUIRED
 ## Veredicto
 
 ```
-GATE M3: PASSOU — 24/24 checks
-SCREENSHOT: gerado e validado PNG
-PERCEPTUAL SCORE: 86.9%
-STATUS: M3 CONCLUIDA — HumanPromotionGate PAUSED
+GATE M3.1: PASSOU — 16/16 checks
+CONTRASTE: 5.01:1 (WCAG AA ✓)
+PERCEPTUAL SCORE: 89.4%
+P1 LOW_CONTRAST_RATIO: REMEDIADO
+HUMANPROMOTIONGATES: PAUSED — exit 0 (nominal)
+STATUS: M3.1 CONCLUÍDA — CANDIDATO VISUALMENTE APROVÁVEL
 ```

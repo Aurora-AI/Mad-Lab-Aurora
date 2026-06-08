@@ -1,0 +1,157 @@
+{
+  "root_node": {
+    "node_id": "tunnel-root",
+    "component_name": "ZAxisScrollContainer",
+    "semantic_role": "container",
+    "props": {
+      "enabled": true,
+      "quality": "high",
+      "depth": 3000,
+      "scrollAxis": "vertical_input_to_z",
+      "performanceBudget": {
+        "targetFps": 60,
+        "maxLayers": 8
+      },
+      "fallback": "static_depth_sections",
+      "reducedMotion": "__RUNTIME_EXPR__:systemReducedMotion",
+      "className": "w-full min-h-screen bg-base-surface"
+    },
+    "children": [
+      {
+        "node_id": "layer-0-hero",
+        "component_name": "LayerPortal",
+        "semantic_role": "presentation",
+        "props": {
+          "zPosition": 0,
+          "scaleFactor": 1.0,
+          "opacityLimit": 1.0,
+          "visible": true,
+          "reducedMotion": "__RUNTIME_EXPR__:systemReducedMotion"
+        },
+        "children": [
+          {
+            "node_id": "hero-heading",
+            "component_name": "AuroraHeading",
+            "semantic_role": "heading",
+            "props": {
+              "className": "text-5xl font-bold text-text-primary tracking-tight"
+            },
+            "children": [],
+            "layout_slot": null,
+            "fallback_used": false,
+            "fallback_reason": null,
+            "blueprint_source": "narrative_strategy",
+            "decision_owner": "experience_architect",
+            "authority_level": "architectural",
+            "text_content": "Mad Lab Aurora"
+          },
+          {
+            "node_id": "hero-cta",
+            "component_name": "AuroraButton",
+            "semantic_role": "button",
+            "props": {
+              "variant": "primary",
+              "className": "mt-8 px-10 py-4"
+            },
+            "children": [],
+            "layout_slot": null,
+            "fallback_used": false,
+            "fallback_reason": null,
+            "blueprint_source": "interaction_density",
+            "decision_owner": "experience_architect",
+            "authority_level": "architectural",
+            "text_content": "Explorar o Sistema"
+          }
+        ],
+        "layout_slot": null,
+        "fallback_used": false,
+        "fallback_reason": null,
+        "blueprint_source": "spatial_strategy",
+        "decision_owner": "experience_architect",
+        "authority_level": "architectural",
+        "text_content": null
+      },
+      {
+        "node_id": "layer-1-mid",
+        "component_name": "LayerPortal",
+        "semantic_role": "presentation",
+        "props": {
+          "zPosition": -800,
+          "scaleFactor": 0.85,
+          "opacityLimit": 0.8,
+          "visible": true,
+          "reducedMotion": "__RUNTIME_EXPR__:systemReducedMotion"
+        },
+        "children": [
+          {
+            "node_id": "mid-narrative-copy",
+            "component_name": "div",
+            "semantic_role": "region",
+            "props": {
+              "className": "text-2xl text-text-secondary font-sans max-w-2xl text-center"
+            },
+            "children": [],
+            "layout_slot": null,
+            "fallback_used": false,
+            "fallback_reason": null,
+            "blueprint_source": null,
+            "decision_owner": null,
+            "authority_level": null,
+            "text_content": "A fabrica cognitiva que materializa produto a partir de fisica de profundidade."
+          }
+        ],
+        "layout_slot": null,
+        "fallback_used": false,
+        "fallback_reason": null,
+        "blueprint_source": "spatial_strategy",
+        "decision_owner": "experience_architect",
+        "authority_level": "architectural",
+        "text_content": null
+      },
+      {
+        "node_id": "layer-2-far",
+        "component_name": "LayerPortal",
+        "semantic_role": "presentation",
+        "props": {
+          "zPosition": -2000,
+          "scaleFactor": 0.6,
+          "opacityLimit": 0.5,
+          "visible": true,
+          "reducedMotion": "__RUNTIME_EXPR__:systemReducedMotion"
+        },
+        "children": [
+          {
+            "node_id": "horizon-text",
+            "component_name": "div",
+            "semantic_role": "region",
+            "props": {
+              "className": "text-lg text-editorial-warm tracking-widest uppercase"
+            },
+            "children": [],
+            "layout_slot": null,
+            "fallback_used": false,
+            "fallback_reason": null,
+            "blueprint_source": null,
+            "decision_owner": null,
+            "authority_level": null,
+            "text_content": "Depth Horizon \u2014 Aurora Factory"
+          }
+        ],
+        "layout_slot": null,
+        "fallback_used": false,
+        "fallback_reason": null,
+        "blueprint_source": "spatial_strategy",
+        "decision_owner": "experience_architect",
+        "authority_level": "architectural",
+        "text_content": null
+      }
+    ],
+    "layout_slot": null,
+    "fallback_used": false,
+    "fallback_reason": null,
+    "blueprint_source": "navigation_strategy",
+    "decision_owner": "experience_architect",
+    "authority_level": "architectural",
+    "text_content": null
+  }
+}

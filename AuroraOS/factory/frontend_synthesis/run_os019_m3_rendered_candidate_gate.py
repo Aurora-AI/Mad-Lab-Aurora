@@ -56,8 +56,6 @@ VAULT_DIR = os.path.join(
     "/OS-MADLAB-OS019-M0-MAD-LAB-THEME-ZAXIS-CAPABILITY-ALIGNMENT"
 )
 
-M2_BLUEPRINT_HASH_KEY = "source_blueprint_hash"
-
 
 # ──────────────────────────────────────────────────────────────────────────────
 # Helpers

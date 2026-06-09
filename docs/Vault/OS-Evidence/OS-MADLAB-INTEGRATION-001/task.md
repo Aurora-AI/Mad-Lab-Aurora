@@ -17,7 +17,7 @@
 | M4    | Controlled Integration Candidate      | ✅ CONCLUÍDA  | `04-controlled-integration-candidate.md`|
 | M5    | Smoke & Runtime Certification         | ✅ CONCLUÍDA  | `05-smoke-runtime-certification.md`     |
 | M6    | Visual & Motion Certification         | ✅ PASS C/ RESSALVA | `06-visual-motion-certification.md` |
-| M7    | Promotion Package                     | ⏳ PENDENTE   | `vault/promotions/elysian-corp-astro-integration.md` |
+| M7    | Promotion Package                     | ✅ CONCLUÍDA  | `vault/promotions/elysian-corp-astro-islands-integration.md` |
 | M8    | PR Readiness                          | ⏳ PENDENTE   | `08-pr-readiness.md`                    |
 
 ---

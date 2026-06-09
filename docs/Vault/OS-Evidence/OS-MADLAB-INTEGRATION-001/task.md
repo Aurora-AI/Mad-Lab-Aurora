@@ -1,7 +1,7 @@
 # OS-MADLAB-INTEGRATION-001 — Astro Islands Integration Bridge — Task Tracker
 
 **Abertura:** 2026-06-09  
-**Status:** EM EXECUÇÃO  
+**Status:** PRONTO PARA PR — aguardando aprovação humana  
 **Emenda M3:** nome técnico corrigido de "Next.js Integration Bridge" para "Astro Islands Integration Bridge"  
 
 ---
@@ -18,7 +18,7 @@
 | M5    | Smoke & Runtime Certification         | ✅ CONCLUÍDA  | `05-smoke-runtime-certification.md`     |
 | M6    | Visual & Motion Certification         | ✅ PASS C/ RESSALVA | `06-visual-motion-certification.md` |
 | M7    | Promotion Package                     | ✅ CONCLUÍDA  | `vault/promotions/elysian-corp-astro-islands-integration.md` |
-| M8    | PR Readiness                          | ⏳ PENDENTE   | `08-pr-readiness.md`                    |
+| M8    | PR Readiness                          | ✅ CONCLUÍDA  | `08-pr-readiness.md`                    |
 
 ---
 

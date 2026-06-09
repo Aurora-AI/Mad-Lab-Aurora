@@ -63,22 +63,24 @@ export default function ElysianChat() {
     setLoading(true);
 
     try {
-      const { GoogleGenAI } = await import('@google/genai');
-      const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY ?? '' });
-
       const history = next.slice(1).map(m => ({
         role: m.role === 'user' ? 'user' : 'model',
         parts: [{ text: m.content }],
       }));
 
-      const chat = ai.chats.create({
-        model: 'gemini-2.0-flash',
-        config: { systemInstruction: SYSTEM_PROMPT },
-        history: history.slice(0, -1),
+      const res = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: text,
+          history: history.slice(0, -1),
+          systemInstruction: SYSTEM_PROMPT,
+        }),
       });
 
-      const response = await chat.sendMessage({ message: text });
-      const reply = response.text ?? 'ERRO_DE_PROTOCOLO: Tente novamente.';
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      const reply = data.text ?? 'ERRO_DE_PROTOCOLO: Tente novamente.';
 
       setMessages(prev => [...prev, { role: 'assistant', content: reply }]);
     } catch {

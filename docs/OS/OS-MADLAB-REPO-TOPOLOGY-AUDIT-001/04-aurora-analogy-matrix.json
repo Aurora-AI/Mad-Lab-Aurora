@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "audit_os": "OS-MADLAB-REPO-TOPOLOGY-AUDIT-AND-ENVIRONMENT-RECONCILIATION-20260609-001",
+  "date": "2026-06-09",
+  "verdict": "FUNCTIONAL_BUT_INCOMPLETE",
+  "analogy_elements": {
+    "vault_os_evidence": "PRESENT",
+    "token_ledger": "PRESENT",
+    "os_records": "PRESENT",
+    "design_system": "PRESENT",
+    "motion_system": "PARTIAL — BUILD-001 motion hooks absent from canonical ElysianCorp",
+    "qa_gates_scripts": "PRESENT",
+    "qa_gate_records": "ABSENT — no formal pass/fail gate records in canonical",
+    "governance_docs": "PRESENT",
+    "transfer_zone": "ABSENT",
+    "promotion_package": "ABSENT_FROM_CANONICAL",
+    "playground": "PARTIAL — scratch/ exists, not formalized"
+  },
+  "indevid_couplings": [
+    {
+      "type": "structural",
+      "description": "BUILD-001 factory artifacts generated inside Aurora repo, not canonical MadLab"
+    },
+    {
+      "type": "manifest",
+      "description": "product-manifest.json path field points to C:/Projetos/Aurora/MadLabAurora"
+    },
+    {
+      "type": "git",
+      "description": "Aurora repo has madlab remote — created staging mechanism that caused path confusion"
+    }
+  ],
+  "aurora_package_coupling": "NONE_DETECTED",
+  "blockers": [
+    "BUILD-001 artifacts not in canonical",
+    "product-manifest.json path wrong",
+    "transfer zone absent",
+    "motion components absent from canonical ElysianCorp"
+  ]
+}

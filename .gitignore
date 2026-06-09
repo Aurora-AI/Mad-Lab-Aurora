@@ -19,8 +19,11 @@ out/
 .env.local
 
 # Git checkout folders and scratch directories (workspace specific)
+# ElysianCorp is a sovereign product repo — local checkout only, not tracked here
+# See: DEC-MADLAB-PRODUCT-WORKSPACE-BOUNDARY-001 R2 + R5
 checkouts/
 scratch/
+ElysianCorp/
 
 # IDE / Editor folders
 .vscode/

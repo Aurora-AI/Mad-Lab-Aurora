@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "audit_os": "OS-MADLAB-REPO-TOPOLOGY-AUDIT-AND-ENVIRONMENT-RECONCILIATION-20260609-001",
+  "date": "2026-06-09",
+  "build_001_classification": "LAB_STANDARD_CANDIDATE_REVIEWABLE",
+  "candidate_status": "REVIEWABLE_CANDIDATE",
+  "promotion_allowed": false,
+  "promotion_authorized": false,
+  "is_product": false,
+  "is_promotion_package": "PARTIALLY — gate locked",
+  "is_lab_standard": true,
+  "is_exploratory": false,
+  "current_location": "C:/Projetos/Aurora/MadLabAurora/factory/OS-MADLAB-BUILD-001 (WRONG — inside Aurora repo)",
+  "canonical_target_location": "C:/Projetos/MadLabAurora/docs/OS/OS-MADLAB-BUILD-001",
+  "migration_required": true,
+  "migration_approved": false,
+  "open_items_count": 5,
+  "anti_clone_gate": "7/7 PASS",
+  "required_actions_before_promotion": [
+    "Migrate artifacts to canonical repo",
+    "Correct product-manifest.json path",
+    "Establish transfer zone in canonical",
+    "Resolve open items (assets, logo, cursor, copy)",
+    "Confirm integration target (OS-MADLAB-INTEGRATION-001)"
+  ]
+}

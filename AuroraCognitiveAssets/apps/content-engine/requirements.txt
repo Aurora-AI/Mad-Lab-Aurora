@@ -1,0 +1,13 @@
+# AuroraCognitiveAssets / content-engine
+#
+# Zero third-party dependencies.
+# All modules (urllib, json, pathlib, argparse, unittest) are Python stdlib.
+# Requires Python >= 3.11 (cpython-311 bytecache confirmed in OS-Evidence).
+#
+# To run:
+#   python apps/content-engine/client/run_infoproduct_pipeline.py --brief brief.json
+#   python apps/content-engine/client/run_refinement_pipeline.py --payload-dir ./payload
+#
+# Environment variables required at runtime (not at install time):
+#   INFOPRODUCT_FACTORY_BASE_URL   Base URL of the Infoproduct Factory service
+#   INFOPRODUCT_FACTORY_TOKEN      Optional auth token (if factory requires auth)

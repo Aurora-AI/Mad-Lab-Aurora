@@ -1,7 +1,8 @@
 # OS-MADLAB-INTEGRATION-001 — Astro Islands Integration Bridge — Task Tracker
 
 **Abertura:** 2026-06-09  
-**Status:** PRONTO PARA PR — aguardando aprovação humana  
+**Status:** PR ABERTO — aguardando merge  
+**PR:** https://github.com/Aurora-AI/Elysiancorpfront/pull/1  
 **Emenda M3:** nome técnico corrigido de "Next.js Integration Bridge" para "Astro Islands Integration Bridge"  
 
 ---

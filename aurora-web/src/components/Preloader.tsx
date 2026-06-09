@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 
 const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
 
@@ -27,6 +27,7 @@ const ScrambleText = ({ text, duration = 2 }: { text: string; duration?: number 
 }
 
 export default function Preloader({ onComplete }: { onComplete: () => void }) {
+  const shouldReduceMotion = useReducedMotion();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -63,19 +64,19 @@ export default function Preloader({ onComplete }: { onComplete: () => void }) {
         >
           {/* Subtle Progress Bar */}
           <div style={{ position: 'relative', overflow: 'hidden', width: '240px', height: '1px', background: 'rgba(26, 26, 23, 0.05)', marginBottom: '3rem' }}>
-            <motion.div 
+            <motion.div
               initial={{ x: "-100%" }}
               animate={{ x: "0%" }}
-              transition={{ duration: 2.8, ease: "easeInOut" }}
+              transition={{ duration: shouldReduceMotion ? 0 : 2.8, ease: "easeInOut" }}
               style={{ position: 'absolute', inset: 0, background: 'var(--page-accent)' }}
             />
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem' }}>
             <motion.div
-              initial={{ opacity: 0, y: 10 }}
+              initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: shouldReduceMotion ? 0 : 0.2 }}
               style={{
                 fontFamily: 'var(--font-display)',
                 fontSize: '2.5rem',
@@ -92,7 +93,7 @@ export default function Preloader({ onComplete }: { onComplete: () => void }) {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.4 }}
-              transition={{ delay: 1.2 }}
+              transition={{ delay: shouldReduceMotion ? 0 : 1.2 }}
               style={{
                 fontFamily: 'var(--font-mono)',
                 fontSize: '0.65rem',

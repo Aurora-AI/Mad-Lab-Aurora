@@ -29,8 +29,12 @@ const TEXT_TO   = '#111111';
 export function useScrollProgress(): void {
   useEffect(() => {
     const root = document.documentElement;
+    const prefersReducedMotion =
+      typeof window !== 'undefined' &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     const update = () => {
+      if (prefersReducedMotion) return;
       const scrollY  = window.scrollY;
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
       if (maxScroll <= 0) return;

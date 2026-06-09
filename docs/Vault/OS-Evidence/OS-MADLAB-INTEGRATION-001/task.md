@@ -15,7 +15,7 @@
 | M2    | Source/Destination Delta Map          | ✅ CONCLUÍDA  | `02-delta-map.md`                       |
 | M3    | Astro Islands Integration Plan        | ✅ CONCLUÍDA  | `03-astro-islands-integration-plan.md` |
 | M4    | Controlled Integration Candidate      | ✅ CONCLUÍDA  | `04-controlled-integration-candidate.md`|
-| M5    | Smoke & Runtime Certification         | ⏳ PENDENTE   | `05-smoke-runtime-certification.md`     |
+| M5    | Smoke & Runtime Certification         | ✅ CONCLUÍDA  | `05-smoke-runtime-certification.md`     |
 | M6    | Visual & Motion Certification         | ⏳ PENDENTE   | `06-visual-motion-certification.md`     |
 | M7    | Promotion Package                     | ⏳ PENDENTE   | `vault/promotions/elysian-corp-astro-integration.md` |
 | M8    | PR Readiness                          | ⏳ PENDENTE   | `08-pr-readiness.md`                    |

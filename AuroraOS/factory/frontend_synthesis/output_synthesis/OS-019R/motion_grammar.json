@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M4",
+    "source": "Playwright runtime — desktop 1440×900",
+    "generated_at": "2026-06-08T21:06:37",
+    "promotion_allowed": false
+  },
+  "motion_primitives": {
+    "intersection_observer": {
+      "confirmed": true,
+      "instances_detected": 1,
+      "events_captured": 21,
+      "video_events": 0,
+      "conclusion": "CONFIRMED — IntersectionObserver ativo com 1 instâncias. 21 events capturados, 0 sobre elementos video.",
+      "source_trace": "JS_IO_SPY injected before page load"
+    },
+    "css_transitions": {
+      "count_unique": 2,
+      "present": true,
+      "source_trace": "getComputedStyle transitionProperty/Duration"
+    },
+    "css_animations": {
+      "keyframes_found": 0,
+      "keyframe_names": [],
+      "source_trace": "document.styleSheets KEYFRAMES_RULE scan"
+    },
+    "will_change": {
+      "element_count": 68,
+      "values": [
+        "transform"
+      ],
+      "elements": [
+        {
+          "tag": "svg",
+          "classes": "wordmark-icon",
+          "will_change": "transform"
+        },
+        {
+          "tag": "div",
+          "classes": "label-item",
+          "will_change": "transform"
+        },
+        {
+          "tag": "div",
+          "classes": "label-item",
+          "will_change": "transform"
+        },
+        {
+          "tag": "div",
+          "classes": "icon",
+          "will_change": "transform"
+        },
+        {
+          "tag": "a",
+          "classes": "nav-link",
+          "will_change": "transform"
+        },
+        {
+          "tag": "a",
+          "classes": "nav-link",
+          "will_change": "transform"
+        },
+        {
+          "tag": "a",
+          "classes": "nav-link",
+          "will_change": "transform"
+        },
+        {
+          "tag": "a",
+          "classes": "nav-link",
+          "will_change": "transform"
+        },
+        {
+          "tag": "header",
+          "classes": "hero light",
+          "will_change": "transform"
+        },
+        {
+          "tag": "div",
+          "classes": "text-line",
+          "will_change": "transform"
+        }
+      ],
+      "source_trace": "getComputedStyle willChange"
+    },
+    "active_transforms": {
+      "element_count": 15,
+      "elements": [
+        {
+          "tag": "svg",
+          "classes": "icon",
+          "transform": "matrix(-1, 0, 0, -1, 0, 0)",
+          "position": "static",
+          "rect": {
+            "x": 1139,
+            "y": 69,
+            "w": 12,
+            "h": 12
+          }
+        },
+        {
+          "tag": "h1",
+          "classes": "title",
+          "transform": "matrix(1, 0, 0, 1, -20, 0)",
+          "position": "static",
+          "rect": {
+            "x": 100,
+            "y": 652,
+            "w": 1200,
+            "h": 690
+          }
+        },
+        {
+          "tag": "div",
+          "classes": "circle-fill",
+          "transform": "matrix(0, 0, 0, 0, 0, 0)",
+          "position": "absolute",
+          "rect": {
+            "x": 108,
+            "y": 1699,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "classes": "scroll-to",
+          "transform": "matrix(1, 0, 0, 1, 0, -75)",
+          "position": "absolute",
+          "rect": {
+            "x": 1287,
+            "y": 825,
+            "w": 103,
+            "h": 21
+          }
+        },
+        {
+          "tag": "svg",
+          "classes": "icon",
+          "transform": "matrix(1, 0, 0, 1, -21.5, 11)",
+          "position": "absolute",
+          "rect": {
+            "x": 942,
+            "y": 2510,
+            "w": 12,
+            "h": 12
+          }
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "transform": "matrix(1, 0, 0, 1, 0, 144)",
+          "position": "static",
+          "rect": {
+            "x": 941,
+            "y": 3035,
+            "w": 379,
+            "h": 507
+          }
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "transform": "matrix(1, 0, 0, 1, 0, -288)",
+          "position": "static",
+          "rect": {
+            "x": 223,
+            "y": 3766,
+            "w": 276,
+            "h": 378
+          }
+        },
+        {
+          "tag": "div",
+          "classes": "circle-fill",
+          "transform": "matrix(0, 0, 0, 0, 0, 0)",
+          "position": "absolute",
+          "rect": {
+            "x": 998,
+            "y": 4424,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "svg",
+          "classes": "icon",
+          "transform": "matrix(1, 0, 0, 1, -21.5, 11)",
+          "position": "absolute",
+          "rect": {
+            "x": 662,
+            "y": 4694,
+            "w": 12,
+            "h": 12
+          }
+        },
+        {
+          "tag": "div",
+          "classes": "title-mask",
+          "transform": "matrix(1, 0, 0, 1, -288, 0)",
+          "position": "static",
+          "rect": {
+            "x": 148,
+            "y": 5015,
+            "w": 276,
+            "h": 145
+          }
+        }
+      ],
+      "source_trace": "getComputedStyle transform (non-identity)"
+    }
+  },
+  "motion_roles": {
+    "structural_motion": {
+      "description": "Navegação fixa (z:9) com menu button (z:14) — transição de estado ao abrir menu",
+      "evidence": {
+        "found": true,
+        "button_text": "open menu",
+        "button_classes": "menu-button",
+        "nav_before": {
+          "display": "block",
+          "opacity": "1",
+          "transform": "none",
+          "visibility": "visible"
+        },
+        "nav_after_click": {
+          "display": "block",
+          "opacity": "1",
+          "transform": "none",
+          "visibility": "visible"
+        },
+        "nav_changes": {}
+      },
+      "source_trace": "JS_MENU_TEST runtime observation"
+    },
+    "media_motion": {
+      "description": "Vídeos acionados por IntersectionObserver — ambient/editorial loop",
+      "io_confirmed": true,
+      "videos_playing_after_scroll": 8,
+      "videos_time_changed": 8,
+      "conclusion": "IO_CONFIRMED",
+      "source_trace": "JS_IO_SPY + JS_VIDEO_RUNTIME scroll test"
+    },
+    "hover_motion": {
+      "description": "Elementos interativos com mudança de estado ao hover",
+      "elements_with_changes": 0,
+      "elements_tested": 6,
+      "details": [],
+      "source_trace": "JS_HOVER_TEST dispatch mouseover/mouseenter"
+    },
+    "scroll_motion": {
+      "description": "Behavior derivado de snapshots em 5 posições de scroll",
+      "snapshots_taken": 5,
+      "source_trace": "JS_SCROLL_SNAPSHOT at 0%, 20%, 40%, 60%, 80%"
+    }
+  },
+  "motion_intensity": {
+    "scale": "medium_to_high",
+    "primary_trigger": "scroll_intersection",
+    "secondary_trigger": "hover",
+    "ambient": "video_loops_silent",
+    "source_trace": "runtime observation synthesis"
+  },
+  "unresolved_after_m4": [
+    "IO video events não capturados diretamente — IO confirmado mas disparo em vídeos precisa de análise JS mais profunda"
+  ]
+}

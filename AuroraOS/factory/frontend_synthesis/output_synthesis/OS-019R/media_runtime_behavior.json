@@ -1,0 +1,307 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M4",
+    "source": "Playwright JS_VIDEO_RUNTIME + IO spy",
+    "generated_at": "2026-06-08T21:06:37",
+    "promotion_allowed": false
+  },
+  "videos": [
+    {
+      "index": 0,
+      "src": "https://player.vimeo.com/progressive_redirect/playback/1047169994/rendition/720p",
+      "sources": [
+        {
+          "src": "https://player.vimeo.com/progressive_redirect/playback/1047169994/rendition/720p",
+          "type": "video/mp4"
+        }
+      ],
+      "autoplay_attribute": false,
+      "muted": true,
+      "loop": true,
+      "controls": false,
+      "preload": "metadata",
+      "ready_state": 4,
+      "paused_on_capture": false,
+      "current_time_initial": 3.703392,
+      "is_playing_after_scroll": true,
+      "current_time_after_scroll": 4.503671,
+      "time_changed_after_scroll": true,
+      "data_attrs": {
+        "data-v-4aa72278": "",
+        "parent_data-v-4aa72278": ""
+      },
+      "parent_classes": "video",
+      "rect": {
+        "x": -346,
+        "y": 3446,
+        "w": 862,
+        "h": 1026
+      },
+      "object_fit": "cover",
+      "position": "absolute"
+    },
+    {
+      "index": 1,
+      "src": "https://player.vimeo.com/progressive_redirect/playback/1020697798/rendition/720p",
+      "sources": [
+        {
+          "src": "https://player.vimeo.com/progressive_redirect/playback/1020697798/rendition/720p",
+          "type": "video/mp4"
+        }
+      ],
+      "autoplay_attribute": false,
+      "muted": true,
+      "loop": true,
+      "controls": false,
+      "preload": "metadata",
+      "ready_state": 4,
+      "paused_on_capture": false,
+      "current_time_initial": 1.824051,
+      "is_playing_after_scroll": true,
+      "current_time_after_scroll": 2.648055,
+      "time_changed_after_scroll": true,
+      "data_attrs": {
+        "data-v-4aa72278": "",
+        "parent_data-v-4aa72278": ""
+      },
+      "parent_classes": "video",
+      "rect": {
+        "x": 921,
+        "y": 610,
+        "w": 564,
+        "h": 670
+      },
+      "object_fit": "cover",
+      "position": "absolute"
+    },
+    {
+      "index": 2,
+      "src": "https://player.vimeo.com/progressive_redirect/playback/927016456/rendition/720p/",
+      "sources": [
+        {
+          "src": "https://player.vimeo.com/progressive_redirect/playback/927016456/rendition/720p/",
+          "type": "video/mp4"
+        }
+      ],
+      "autoplay_attribute": false,
+      "muted": true,
+      "loop": true,
+      "controls": false,
+      "preload": "metadata",
+      "ready_state": 4,
+      "paused_on_capture": false,
+      "current_time_initial": 0.423984,
+      "is_playing_after_scroll": true,
+      "current_time_after_scroll": 1.224113,
+      "time_changed_after_scroll": true,
+      "data_attrs": {
+        "data-v-4aa72278": "",
+        "parent_data-v-4aa72278": ""
+      },
+      "parent_classes": "video",
+      "rect": {
+        "x": 277,
+        "y": 886,
+        "w": 716,
+        "h": 850
+      },
+      "object_fit": "cover",
+      "position": "absolute"
+    },
+    {
+      "index": 3,
+      "src": "https://player.vimeo.com/progressive_redirect/playback/1001982172/rendition/720p",
+      "sources": [
+        {
+          "src": "https://player.vimeo.com/progressive_redirect/playback/1001982172/rendition/720p",
+          "type": "video/mp4"
+        }
+      ],
+      "autoplay_attribute": false,
+      "muted": true,
+      "loop": true,
+      "controls": false,
+      "preload": "metadata",
+      "ready_state": 4,
+      "paused_on_capture": false,
+      "current_time_initial": 3.946756,
+      "is_playing_after_scroll": true,
+      "current_time_after_scroll": 4.749179,
+      "time_changed_after_scroll": true,
+      "data_attrs": {
+        "data-v-4aa72278": "",
+        "parent_data-v-4aa72278": ""
+      },
+      "parent_classes": "video",
+      "rect": {
+        "x": -164,
+        "y": 466,
+        "w": 411,
+        "h": 488
+      },
+      "object_fit": "cover",
+      "position": "absolute"
+    },
+    {
+      "index": 4,
+      "src": "https://player.vimeo.com/progressive_redirect/playback/914803778/rendition/1080p",
+      "sources": [
+        {
+          "src": "https://player.vimeo.com/progressive_redirect/playback/914803778/rendition/1080p",
+          "type": "video/mp4"
+        }
+      ],
+      "autoplay_attribute": false,
+      "muted": true,
+      "loop": true,
+      "controls": false,
+      "preload": "metadata",
+      "ready_state": 4,
+      "paused_on_capture": true,
+      "current_time_initial": 0,
+      "is_playing_after_scroll": true,
+      "current_time_after_scroll": 0.701936,
+      "time_changed_after_scroll": true,
+      "data_attrs": {
+        "data-v-65273f07": "",
+        "parent_data-v-65273f07": ""
+      },
+      "parent_classes": "video",
+      "rect": {
+        "x": 318,
+        "y": 1569,
+        "w": 500,
+        "h": 347
+      },
+      "object_fit": "cover",
+      "position": "absolute"
+    },
+    {
+      "index": 5,
+      "src": "https://a.storyblok.com/f/133769/x/9c433c7aac/home-news-diesel-be-a-follower.mp4",
+      "sources": [
+        {
+          "src": "https://a.storyblok.com/f/133769/x/9c433c7aac/home-news-diesel-be-a-follower.mp4",
+          "type": "video/mp4"
+        }
+      ],
+      "autoplay_attribute": false,
+      "muted": true,
+      "loop": true,
+      "controls": false,
+      "preload": "metadata",
+      "ready_state": 4,
+      "paused_on_capture": true,
+      "current_time_initial": 0,
+      "is_playing_after_scroll": true,
+      "current_time_after_scroll": 0.389816,
+      "time_changed_after_scroll": true,
+      "data_attrs": {
+        "data-v-3800ac8b": "",
+        "parent_data-v-3800ac8b": ""
+      },
+      "parent_classes": "media",
+      "rect": {
+        "x": -165,
+        "y": 2636,
+        "w": 523,
+        "h": 335
+      },
+      "object_fit": "cover",
+      "position": "static"
+    },
+    {
+      "index": 6,
+      "src": "https://a.storyblok.com/f/133769/x/88b4bf7989/news-rino-pelle.mp4",
+      "sources": [
+        {
+          "src": "https://a.storyblok.com/f/133769/x/88b4bf7989/news-rino-pelle.mp4",
+          "type": "video/mp4"
+        }
+      ],
+      "autoplay_attribute": false,
+      "muted": true,
+      "loop": true,
+      "controls": false,
+      "preload": "metadata",
+      "ready_state": 4,
+      "paused_on_capture": false,
+      "current_time_initial": 0.734211,
+      "is_playing_after_scroll": true,
+      "current_time_after_scroll": 1.547298,
+      "time_changed_after_scroll": true,
+      "data_attrs": {
+        "data-v-3800ac8b": "",
+        "parent_data-v-3800ac8b": ""
+      },
+      "parent_classes": "media",
+      "rect": {
+        "x": 830,
+        "y": 1010,
+        "w": 549,
+        "h": 549
+      },
+      "object_fit": "cover",
+      "position": "static"
+    },
+    {
+      "index": 7,
+      "src": "https://www.exoape.com/video/video-6.mp4",
+      "sources": [
+        {
+          "src": "https://www.exoape.com/video/video-6.mp4",
+          "type": "video/mp4"
+        }
+      ],
+      "autoplay_attribute": false,
+      "muted": true,
+      "loop": true,
+      "controls": false,
+      "preload": "metadata",
+      "ready_state": 4,
+      "paused_on_capture": true,
+      "current_time_initial": 0,
+      "is_playing_after_scroll": true,
+      "current_time_after_scroll": 0.690905,
+      "time_changed_after_scroll": true,
+      "data_attrs": {
+        "data-v-fde92388": "",
+        "parent_data-v-fde92388": ""
+      },
+      "parent_classes": "video",
+      "rect": {
+        "x": -42,
+        "y": 1405,
+        "w": 1449,
+        "h": 1449
+      },
+      "object_fit": "contain",
+      "position": "static"
+    }
+  ],
+  "video_count": 8,
+  "autoplay_analysis": {
+    "autoplay_html_attribute": 0,
+    "is_playing_after_scroll": 8,
+    "time_changed_after_scroll": 8,
+    "intersection_observer_confirmed": true,
+    "io_instances": 1,
+    "io_events_total": 21,
+    "io_events_on_media": 0,
+    "conclusion": "IntersectionObserver CONFIRMADO (1 instâncias, 21 eventos). autoplay HTML=False mas IO presente — vídeos são acionados via JS callback. Pattern: muted + loop + IO-triggered autoplay = ambient editorial loops.",
+    "classification": "JS_INTERSECTION_OBSERVER_AUTOPLAY",
+    "source_trace": "JS_IO_SPY + JS_VIDEO_RUNTIME"
+  },
+  "times_new_roman_resolution": {
+    "status": "BROWSER_DEFAULT_CONFIRMED",
+    "conclusion": "Times New Roman não aparece em nenhum contexto intencional de vídeo/mídia. Ausência de uso deliberado confirmado — classificação M3 'NOT_CANONICAL' mantida.",
+    "evidence": [],
+    "source_trace": "JS_VIDEO_RUNTIME parent_classes analysis + M2 font_inventory"
+  },
+  "captions_tracks": {
+    "videos_with_track": 0,
+    "total_videos": 8,
+    "wcag_risk": "Vídeos são muted+loop — risco WCAG reduzido se não houver narração. Validação humana recomendada."
+  }
+}

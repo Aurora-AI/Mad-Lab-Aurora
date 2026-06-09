@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M5",
+    "reference": "https://www.exoape.com",
+    "generated_at": "2026-06-08T22:02:41",
+    "promotion_allowed": false,
+    "source_phases": [
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ]
+  },
+  "entries": [
+    {
+      "pattern": "P-001 Monumental Editorial Hero",
+      "m2": "computed_styles h1",
+      "m3": "typography_system.display_monumental",
+      "m4": "viewport_motion_matrix h1 comparison"
+    },
+    {
+      "pattern": "P-002 Intersection-Gated Media",
+      "m1": "capture_metadata videos",
+      "m4": "media_runtime_behavior + IO spy"
+    },
+    {
+      "pattern": "P-003 Minimal Sticky Nav",
+      "m2": "layout_boxes navigation",
+      "m3": "surface_system.z_index",
+      "m4": "interaction_map.menu"
+    },
+    {
+      "pattern": "P-004 GPU Composited Scroll Field",
+      "m4": "motion_grammar.will_change",
+      "m3": "surface_system.z_index_landscape"
+    },
+    {
+      "pattern": "P-005 Responsive Optical Tracking",
+      "m2": "computed_styles h1",
+      "m3": "typography_system.tracking_rule",
+      "m4": "viewport_motion_matrix"
+    },
+    {
+      "pattern": "P-006 Monocromatic Semantic Palette",
+      "m2": "color_usage",
+      "m3": "color_semantics + design_tokens"
+    },
+    {
+      "pattern": "P-007 Section-Label Taxonomy",
+      "m2": "accessibility_tree headings",
+      "m3": "typography_system.label_section"
+    },
+    {
+      "pattern": "gpu_layer_strategy",
+      "m4": "motion_grammar.will_change",
+      "m3": "surface_system.z_index_system"
+    },
+    {
+      "pattern": "anti_clone_constraints",
+      "m1": "fonts + assets",
+      "m2": "dom_tree + accessibility_tree",
+      "m3": "color_semantics"
+    },
+    {
+      "pattern": "Times New Roman NOT_CANONICAL",
+      "m3": "typography_system.fallback_detected",
+      "m4": "media_runtime_behavior.times_new_roman_resolution"
+    }
+  ],
+  "resolved_items": [
+    "IntersectionObserver: CONFIRMED (M4)",
+    "Times New Roman: BROWSER_DEFAULT / NOT_CANONICAL (M4)",
+    "Autoplay: JS_INTERSECTION_OBSERVER_AUTOPLAY (M4)",
+    "H1 mobile scale: 62.4px / -1.56px (M4)"
+  ],
+  "unresolved_for_m6": [
+    "Custom cursor behavior — não testado",
+    "Keyboard focus states — não testado",
+    "CSS-in-JS animation details — stylesheet scan limitado",
+    "Tracking intermediário 60–100px — não observado nesta faixa"
+  ]
+}

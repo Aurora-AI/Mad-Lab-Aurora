@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M5",
+    "reference": "https://www.exoape.com",
+    "generated_at": "2026-06-08T22:02:41",
+    "promotion_allowed": false,
+    "source_phases": [
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ]
+  },
+  "motion_system": {
+    "primary_trigger": "IntersectionObserver (scroll-based visibility)",
+    "secondary_trigger": "CSS hover transitions",
+    "ambient": "muted+loop video editorial",
+    "architecture": "GPU compositing (68 will-change:transform elements)"
+  },
+  "patterns": [
+    {
+      "id": "MP-MOT-001",
+      "name": "Viewport Reveal",
+      "trigger": "IntersectionObserver threshold",
+      "effect": "elemento entra na viewport — dispara opacity/transform de entrada",
+      "timing": "0.5s ease (único timing confirmado em M4)",
+      "properties": [
+        "opacity",
+        "transform"
+      ],
+      "h1_evidence": "h1.title transform=translateX(-20px) em repouso → anima para 0",
+      "reduced_motion": "static — sem animação de entrada",
+      "source_trace": "M4/motion_grammar + M4/m4_runtime_trace transform_elements"
+    },
+    {
+      "id": "MP-MOT-002",
+      "name": "Nav Theme Transition",
+      "trigger": "mudança de seção / scroll",
+      "effect": "nav alterna entre .is-light e .is-dark",
+      "timing": "0.5s ease",
+      "mechanism": "CSS class toggle no elemento .app",
+      "source_trace": "M3/surface_system.theme_switching + M4/interaction_map.menu"
+    },
+    {
+      "id": "MP-MOT-003",
+      "name": "Menu Overlay Open/Close",
+      "trigger": "click .menu-button (z:14)",
+      "effect": "nav overlay aparece/desaparece",
+      "timing": "0.5s ease estimado",
+      "nav_z_index": 9,
+      "button_z_index": 14,
+      "source_trace": "M4/interaction_map.menu"
+    },
+    {
+      "id": "MP-MOT-004",
+      "name": "Editorial Media Loop",
+      "trigger": "IO threshold — play() via JS",
+      "effect": "vídeo começa loop silencioso",
+      "reduced_motion": "poster apenas",
+      "io_confirmed": true,
+      "source_trace": "M4/media_runtime_behavior + M4/motion_grammar.media_motion"
+    }
+  ],
+  "timing_system": {
+    "confirmed_curves": [
+      {
+        "duration": "0.5s",
+        "timing_function": "ease",
+        "property": "opacity",
+        "delay": "0s",
+        "example_elements": [
+          {
+            "tag": "path",
+            "classes": ""
+          },
+          {
+            "tag": "div",
+            "classes": "wordmark"
+          }
+        ],
+        "count": 2,
+        "source_trace": "getComputedStyle transitionTimingFunction"
+      }
+    ],
+    "note": "Apenas 2 transições CSS únicas detectadas — a maioria do motion é JS-driven (rAF, IntersectionObserver)",
+    "source_trace": "M4/timing_curves.json"
+  },
+  "reduced_motion": {
+    "css_detected": false,
+    "mad_lab_contract": "useReducedMotion() fail-closed — herdado da OS-019 M0",
+    "rule": "Se prefers-reduced-motion: static poster, sem transforms animados, sem video autoplay",
+    "source_trace": "M4/reduced_motion_observations + OS-019 M0 contract"
+  },
+  "source_trace": "M4/motion_grammar + M4/timing_curves + M3/surface_system"
+}

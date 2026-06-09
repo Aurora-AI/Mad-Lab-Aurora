@@ -1,74 +1,52 @@
-# QA Report — OS-019 M3.1
-## Contrast Token Remediation & Re-render
+# QA Report — OS-019 / M4.1
 
-**Data:** 2026-06-08  
-**Remediação:** `editorial-warm` `#D4C5A9` → `#7A6A52`  
-**Contraste:** `5.01:1` (WCAG AA >= 4.5:1 ✓)  
+**Data:** 2026-06-08 17:17:56  
+**Micro-etapa:** OS-019-M4.1  
+**Branch:** feature/purga-debt-001
 
----
+## Style Integrity Gate (Novo M4.1)
 
-## Correção Aplicada
-
-| Token | Antes | Depois | Motivo |
-|---|---|---|---|
-| `editorial-warm` | `#D4C5A9` | `#7A6A52` | Contraste insuficiente 1.63:1 → 5.01:1 sobre `base-surface #FAFAF8` |
-
----
-
-## Gate M3.1 — Checks
-
-| Check | Status |
+| Gate | Status |
 |---|---|
-| editorial-warm corrected to #7A6A52 | OK |
-| Contrast ratio 5.01:1 >= 4.5:1 WCAG AA | OK |
-| CSS has corrected editorial-warm | OK |
-| CSS has no old editorial-warm | OK |
-| No P0/P1 LOW_CONTRAST_RATIO findings | OK |
-| TSX: 'use client'; | OK |
-| TSX: reducedMotion={systemReducedMotion} | OK |
-| TSX: useReducedMotion fail-closed | OK |
-| TSX: no __RUNTIME_EXPR__ sentinel | OK |
-| TSX: ZAxisScrollContainer present | OK |
-| TSX: 3 LayerPortal layers | OK |
-| Screenshot valid PNG | OK |
-| Perceptual report generated | OK |
-| No Exo Ape text | OK |
-| promotion_allowed = false (invariant) | OK |
-| HumanPromotionGate will be raised | OK |
+| CSS bundle completo (24 classes obrigatórias) | ✅ |
+| aurora-zaxis-container no HTML | ✅ |
+| aurora-layer-{hero,mid,far} no HTML | ✅ |
+| aurora-button sem browser default | ✅ |
+| depth cues (opacity/scale por layer) | ✅ |
+| editorial-warm #7A6A52 WCAG AA | ✅ |
+| 0 P0 style findings no runtime | ✅ |
 
----
+## Gate Matrix M4.1
 
-## Render Evidence
+**24/24 checks passed**
 
-| Artifact | Valor |
-|---|---|
-| Screenshot SHA256 | `07900d7f47c2ab00aa37128f2b5af693…` |
-| Perceptual score | `89.4%` |
-| Perceptual decision | `approved` |
-| Perceptual findings | `1` |
-| P0/P1 LOW_CONTRAST_RATIO findings | `0` (expected 0) |
+- ✅ STYLE_INTEGRITY: aurora-zaxis-container no HTML
+- ✅ STYLE_INTEGRITY: aurora-layer-hero no HTML
+- ✅ STYLE_INTEGRITY: aurora-layer-mid no HTML
+- ✅ STYLE_INTEGRITY: aurora-layer-far no HTML
+- ✅ STYLE_INTEGRITY: aurora-button no HTML
+- ✅ STYLE_INTEGRITY: data-z depth attributes presentes
+- ✅ STYLE_INTEGRITY: CSS text-5xl presente
+- ✅ STYLE_INTEGRITY: CSS tracking-tight presente
+- ✅ STYLE_INTEGRITY: CSS aurora-zaxis-container presente
+- ✅ STYLE_INTEGRITY: CSS button reset presente
+- ✅ STYLE_INTEGRITY: 0 P0 style findings no runtime
+- ✅ Z_AXIS: ZAxisScrollContainer no HTML
+- ✅ Z_AXIS: 3 LayerPortals no HTML
+- ✅ Z_AXIS: depth cues opacity aplicados
+- ✅ CONTRAST: editorial-warm #7A6A52 no CSS
+- ✅ CONTRAST: editorial-warm antigo ausente
+- ✅ CONTRAST: editorial-warm WCAG AA
+- ✅ ACCESSIBILITY: reducedMotion no TSX
+- ✅ ACCESSIBILITY: fail-closed SSR presente
+- ✅ RENDER: Screenshot PNG gerado
+- ✅ RENDER: Screenshot > 10KB
+- ✅ PERCEPTUAL: decision não rejected
+- ✅ PERCEPTUAL: 0 P1 LOW_CONTRAST_RATIO
+- ✅ PROMOTION: promotion_allowed=false
 
----
+## Perceptual QA
 
-## HumanPromotionGate Status
-
-```
-[M3.1] HumanPromotionGate — PAUSED
-promotion_allowed: false
-promotion_authorized: false
-requires_promotion_approval_record: true
-promotion_eligibility: HUMAN_REVIEW_REQUIRED
-```
-
----
-
-## Veredicto
-
-```
-GATE M3.1: PASSOU — 16/16 checks
-CONTRASTE: 5.01:1 (WCAG AA ✓)
-PERCEPTUAL SCORE: 89.4%
-P1 LOW_CONTRAST_RATIO: REMEDIADO
-HUMANPROMOTIONGATES: PAUSED — exit 0 (nominal)
-STATUS: M3.1 CONCLUÍDA — CANDIDATO VISUALMENTE APROVÁVEL
-```
+- Decision: **approved**
+- Score: **100.0%**
+- Blocked reasons: 0

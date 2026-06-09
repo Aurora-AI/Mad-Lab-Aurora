@@ -1,0 +1,131 @@
+{
+  "is_mobile": false,
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "device_pixel_ratio": 1,
+  "scroll_info": {
+    "page_height": 0,
+    "viewport_height": 900,
+    "viewport_width": 1440,
+    "scroll_ratio": 0
+  },
+  "active_breakpoints_min_width": [
+    320,
+    375,
+    390,
+    480,
+    640,
+    768,
+    1024,
+    1280,
+    1440
+  ],
+  "prefers_reduced_motion": false,
+  "prefers_dark_mode": false,
+  "z_index_landscape": [
+    1,
+    2,
+    9,
+    14,
+    20
+  ],
+  "fixed_sticky_elements": [
+    {
+      "tag": "html",
+      "classes": "",
+      "position": "fixed",
+      "z_index": "auto"
+    },
+    {
+      "tag": "div",
+      "classes": "app is-light",
+      "position": "fixed",
+      "z_index": "auto"
+    },
+    {
+      "tag": "button",
+      "classes": "menu-button",
+      "position": "fixed",
+      "z_index": "14"
+    },
+    {
+      "tag": "nav",
+      "classes": "nav",
+      "position": "fixed",
+      "z_index": "9"
+    },
+    {
+      "tag": "div",
+      "classes": "scroll",
+      "position": "fixed",
+      "z_index": "auto"
+    },
+    {
+      "tag": "div",
+      "classes": "container",
+      "position": "sticky",
+      "z_index": "auto"
+    }
+  ],
+  "css_custom_properties": {
+    "--color-white": "#fff",
+    "--color-white-02": "hsla(0,0%,100%,.2)",
+    "--color-white-04": "hsla(0,0%,100%,.4)",
+    "--color-white-06": "hsla(0,0%,100%,.6)",
+    "--color-white-08": "hsla(0,0%,100%,.8)",
+    "--color-off-white": "#f8f8f8",
+    "--color-off-white-02": "hsla(0,0%,97%,.2)",
+    "--color-off-white-04": "hsla(0,0%,97%,.4)",
+    "--color-off-white-06": "hsla(0,0%,97%,.6)",
+    "--color-off-white-08": "hsla(0,0%,97%,.8)",
+    "--color-story": "#070707",
+    "--color-dark-grey": "#0d0e13",
+    "--color-dark-grey-02": "rgba(13,14,19,.2)",
+    "--color-dark-grey-04": "rgba(13,14,19,.4)",
+    "--color-dark-grey-06": "rgba(13,14,19,.6)",
+    "--color-dark-grey-08": "rgba(13,14,19,.8)",
+    "--color-light-grey": "#e4e0db",
+    "--color-light-grey-02": "hsla(33,14%,88%,.2)",
+    "--color-light-grey-06": "hsla(33,14%,88%,.6)",
+    "--color-light-grey-08": "hsla(33,14%,88%,.8)",
+    "--color-sand": "#e0ccbb",
+    "--color-sand-06": "hsla(28,37%,81%,.6)",
+    "--color-sand-08": "hsla(28,37%,81%,.8)",
+    "--font-f-lausanne-300": "\"Lausanne-300\"",
+    "--font-f-lausanne-400": "\"Lausanne-400\"",
+    "--font-f-lausanne-500": "\"Lausanne-500\"",
+    "--font-s-h0": "25.6vw",
+    "--font-lh-h0": "25.6vw",
+    "--font-ls-h0": "-1.2vw",
+    "--font-s-h1": "16vw",
+    "--font-lh-h1": "16vw",
+    "--font-ls-h1": "-0.4vw",
+    "--font-s-h2": "7.7333333333vw",
+    "--font-lh-h2": "9.0666666667vw",
+    "--font-ls-h2": "-0.2666666667vw",
+    "--font-s-h3": "6.4vw",
+    "--font-lh-h3": "8vw",
+    "--font-ls-h3": "-0.1333333333vw",
+    "--font-s-h4": "4.8vw",
+    "--font-lh-h4": "6.4vw",
+    "--font-ls-h4": "0vw",
+    "--font-s-p": "3.7333333333vw",
+    "--font-lh-p": "5.6vw",
+    "--font-ls-p": "0.0266666667vw",
+    "--font-s-p-small": "3.7333333333vw",
+    "--font-lh-p-small": "5.6vw",
+    "--font-ls-p-small": "0.0266666667vw",
+    "--font-s-subtitle": "3.2vw",
+    "--font-lh-subtitle": "4.2666666667vw",
+    "--font-ls-subtitle": "0.0266666667vw",
+    "--font-s-cta": "4.2666666667vw",
+    "--font-lh-cta": "4.2666666667vw",
+    "--font-ls-cta": "0vw",
+    "--font-s-label": "3.7333333333vw",
+    "--font-lh-label": "3.7333333333vw",
+    "--font-ls-label": "0vw"
+  },
+  "document_ready_state": "complete"
+}

@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M5",
+    "reference": "https://www.exoape.com",
+    "generated_at": "2026-06-08T22:02:41",
+    "promotion_allowed": false,
+    "source_phases": [
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ]
+  },
+  "viewport": {
+    "desktop_width": 1440,
+    "mobile_width": 390
+  },
+  "archetypes": [
+    {
+      "id": "LA-01",
+      "name": "Full-Bleed Editorial",
+      "description": "Conteúdo cobre 100% da viewport sem margens laterais. Usado para hero e motion reel.",
+      "width": "100vw",
+      "detected_width_px": 1440,
+      "padding": "none ou mínimo",
+      "source_trace": "M2/layout_boxes large_container 1440w"
+    },
+    {
+      "id": "LA-02",
+      "name": "Contained Content Column",
+      "description": "Conteúdo em coluna centralizada com margens generosas. Usado para seções editoriais.",
+      "max_width_px": 1440,
+      "typical_width_px": 1200,
+      "horizontal_margin_approx": 120,
+      "source_trace": "M2/layout_boxes large_container analysis"
+    },
+    {
+      "id": "LA-03",
+      "name": "Variable Media Grid",
+      "description": "Grid de mídia com proporções intencionalmente variadas — não uniforme.",
+      "video_widths_observed": [
+        276,
+        360,
+        379,
+        481,
+        584,
+        1000
+      ],
+      "video_heights_observed": [
+        213,
+        225,
+        344,
+        379,
+        473,
+        600,
+        729,
+        1000
+      ],
+      "aspect_ratios": [
+        0.801,
+        0.802,
+        1.0,
+        1.6,
+        1.779
+      ],
+      "note": "Grade editorial, não grid matemático. Proporções transmitem energia visual.",
+      "source_trace": "M2/layout_boxes video_* bounding boxes"
+    },
+    {
+      "id": "LA-04",
+      "name": "Sticky Nav Layer",
+      "description": "Camada de navegação fixa acima do conteúdo, invisível mas sempre acessível.",
+      "position": "fixed",
+      "height_px": 21,
+      "z_index": 9,
+      "source_trace": "M2/layout_boxes navigation + M3/surface_system.z_index_system"
+    }
+  ],
+  "source_trace": "M2/layout_boxes + M3/spacing_system"
+}

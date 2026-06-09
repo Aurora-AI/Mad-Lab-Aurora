@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M4",
+    "source": "Playwright hover + click tests — desktop",
+    "generated_at": "2026-06-08T21:06:37",
+    "promotion_allowed": false
+  },
+  "hover_states": {
+    "elements_tested": 6,
+    "elements_with_changes": 0,
+    "results": [
+      {
+        "selector": "a[href]",
+        "found": true,
+        "text": "Exo Ape",
+        "before": {
+          "color": "rgb(13, 14, 19)",
+          "background": "rgba(0, 0, 0, 0)",
+          "transform": "none",
+          "opacity": "1",
+          "text_decoration": "none",
+          "border": "0px none rgb(13, 14, 19)",
+          "outline": "rgb(13, 14, 19) none 3px"
+        },
+        "after": {
+          "color": "rgb(13, 14, 19)",
+          "background": "rgba(0, 0, 0, 0)",
+          "transform": "none",
+          "opacity": "1",
+          "text_decoration": "none"
+        },
+        "changes": {},
+        "has_changes": false
+      },
+      {
+        "selector": "nav a",
+        "found": true,
+        "text": "Work",
+        "before": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "transform": "none",
+          "opacity": "1",
+          "text_decoration": "none",
+          "border": "0px none rgb(255, 255, 255)",
+          "outline": "rgb(255, 255, 255) none 3px"
+        },
+        "after": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "transform": "none",
+          "opacity": "1",
+          "text_decoration": "none"
+        },
+        "changes": {},
+        "has_changes": false
+      },
+      {
+        "selector": "button",
+        "found": true,
+        "text": "",
+        "before": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "transform": "none",
+          "opacity": "1",
+          "text_decoration": "none",
+          "border": "0px none rgb(255, 255, 255)",
+          "outline": "rgb(255, 255, 255) none 0px"
+        },
+        "after": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "transform": "none",
+          "opacity": "1",
+          "text_decoration": "none"
+        },
+        "changes": {},
+        "has_changes": false
+      },
+      {
+        "selector": ".menu-button",
+        "found": true,
+        "text": "",
+        "before": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "transform": "none",
+          "opacity": "1",
+          "text_decoration": "none",
+          "border": "0px none rgb(255, 255, 255)",
+          "outline": "rgb(255, 255, 255) none 0px"
+        },
+        "after": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "transform": "none",
+          "opacity": "1",
+          "text_decoration": "none"
+        },
+        "changes": {},
+        "has_changes": false
+      },
+      {
+        "selector": "[class*='project']",
+        "found": true,
+        "text": "Featured Projects\n\nHighlights of cases t",
+        "before": {
+          "color": "rgb(13, 14, 19)",
+          "background": "rgba(0, 0, 0, 0)",
+          "transform": "none",
+          "opacity": "1",
+          "text_decoration": "none",
+          "border": "0px none rgb(13, 14, 19)",
+          "outline": "rgb(13, 14, 19) none 3px"
+        },
+        "after": {
+          "color": "rgb(13, 14, 19)",
+          "background": "rgba(0, 0, 0, 0)",
+          "transform": "none",
+          "opacity": "1",
+          "text_decoration": "none"
+        },
+        "changes": {},
+        "has_changes": false
+      },
+      {
+        "selector": "[class*='link']",
+        "found": true,
+        "text": "Work",
+        "before": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "transform": "none",
+          "opacity": "1",
+          "text_decoration": "none",
+          "border": "0px none rgb(255, 255, 255)",
+          "outline": "rgb(255, 255, 255) none 3px"
+        },
+        "after": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "transform": "none",
+          "opacity": "1",
+          "text_decoration": "none"
+        },
+        "changes": {},
+        "has_changes": false
+      }
+    ]
+  },
+  "menu": {
+    "found": true,
+    "button_text": "open menu",
+    "button_classes": "menu-button",
+    "nav_before": {
+      "display": "block",
+      "opacity": "1",
+      "transform": "none",
+      "visibility": "visible"
+    },
+    "nav_after_click": {
+      "display": "block",
+      "opacity": "1",
+      "transform": "none",
+      "visibility": "visible"
+    },
+    "nav_changes": {}
+  },
+  "keyboard_focus": {
+    "observed": false,
+    "note": "Focus states requerem interação de teclado — não testado nesta fase. Marcar para validação humana.",
+    "source_trace": "not_tested_in_m4"
+  },
+  "cursor_behavior": {
+    "observed": false,
+    "note": "cursor: custom não pode ser verificado sem screenshot interativo — requer análise manual",
+    "source_trace": "not_tested_in_m4"
+  },
+  "cta_behavior": {
+    "tested": true,
+    "selector": "a[href]",
+    "results": [
+      {
+        "selector": "a[href]",
+        "found": true,
+        "text": "Exo Ape",
+        "before": {
+          "color": "rgb(13, 14, 19)",
+          "background": "rgba(0, 0, 0, 0)",
+          "transform": "none",
+          "opacity": "1",
+          "text_decoration": "none",
+          "border": "0px none rgb(13, 14, 19)",
+          "outline": "rgb(13, 14, 19) none 3px"
+        },
+        "after": {
+          "color": "rgb(13, 14, 19)",
+          "background": "rgba(0, 0, 0, 0)",
+          "transform": "none",
+          "opacity": "1",
+          "text_decoration": "none"
+        },
+        "changes": {},
+        "has_changes": false
+      }
+    ]
+  }
+}

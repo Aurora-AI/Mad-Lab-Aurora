@@ -1,0 +1,165 @@
+{
+  "reference_url": "https://www.exoape.com",
+  "page_title": "Exo Ape - Global Digital Design Studio",
+  "meta_description": "We partner with brands and businesses that create exceptional experiences where people live, work and unwind.",
+  "fonts": {
+    "cdn_links": [],
+    "woff_urls": [],
+    "family_declarations": [
+      "Lausanne-400",
+      "sans-serif",
+      "Lausanne-300",
+      "var(--font-f-lausanne-300)",
+      "Lausanne-500",
+      "inherit",
+      "var(--font-f-lausanne-500)",
+      "var(--font-f-lausanne-400)"
+    ],
+    "network_fonts": [
+      {
+        "url": "https://www.exoape.com/_nuxt/fonts/TWKLausanne-300.b6399e7.woff2",
+        "size_bytes": 30152
+      },
+      {
+        "url": "https://www.exoape.com/_nuxt/fonts/TWKLausanne-400.c74d82a.woff2",
+        "size_bytes": 30952
+      },
+      {
+        "url": "https://www.exoape.com/_nuxt/fonts/TWKLausanne-500.eb0ea77.woff2",
+        "size_bytes": 30900
+      }
+    ]
+  },
+  "images": {
+    "img_tags": [
+      "https://a.storyblok.com/f/133769/2409x3000/cfd16e1a58/cambium-carbon-hero.jpg/m/1300x1619/filters:quality(90)",
+      "https://a.storyblok.com/f/133769/1440x966/8fe83b498c/home-news-7.jpg/m/1200x805/filters:quality(90)",
+      "https://a.storyblok.com/f/133769/2400x2990/729680ed7f/ottografie-2025-hero.jpg/m/1300x1620/filters:quality(90)",
+      "https://a.storyblok.com/f/133769/2400x2990/540fb12941/columbia-pictures-thumbnail.jpg/m/1300x1620/filters:quality(90)",
+      "https://a.storyblok.com/f/133769/348x494/21becfd449/home-news-3.jpg/m/1200x1703/filters:quality(90)",
+      "https://a.storyblok.com/f/133769/2409x3000/c155d3e27e/amaterasu-hero.jpg/m/1300x1619/filters:quality(90)",
+      "https://a.storyblok.com/f/133769/1920x2716/5c24d6b467/exo-ape-hero-1.jpg/m/2400x3395/filters:quality(90)",
+      "https://a.storyblok.com/f/133769/748x1278/5784aa7150/home-news-1.jpg/m/1200x2050/filters:quality(90)"
+    ],
+    "background_images": [],
+    "network_images": [
+      {
+        "url": "https://a.storyblok.com/f/133769/1920x2716/5c24d6b467/exo-ape-hero-1.jpg/m/2400x3395/filters:quality(90)",
+        "content_type": "image/webp",
+        "size_bytes": 1166512
+      },
+      {
+        "url": "https://a.storyblok.com/f/133769/2400x2990/20d07e6f0c/pixelflakes-hero.jpg/m/2400x2990/filters:quality(80)",
+        "content_type": "image/webp",
+        "size_bytes": 489416
+      },
+      {
+        "url": "https://a.storyblok.com/f/133769/2400x2990/8f08135741/studio-d-hero.jpg/m/2400x2990/filters:quality(80)",
+        "content_type": "image/webp",
+        "size_bytes": 1089992
+      },
+      {
+        "url": "https://a.storyblok.com/f/133769/2400x2990/13b1c95334/ali-ali-hero.jpg/m/2400x2990/filters:quality(80)",
+        "content_type": "image/webp",
+        "size_bytes": 561396
+      },
+      {
+        "url": "https://a.storyblok.com/f/133769/2400x2990/dd4fa8bc81/stock-dutch-design-hero.jpg/m/2400x2990/filters:quality(80)",
+        "content_type": "image/webp",
+        "size_bytes": 311764
+      },
+      {
+        "url": "https://a.storyblok.com/f/133769/2400x2990/e4828e1c81/st-regis-hero.jpg/m/2400x2990/filters:quality(80)",
+        "content_type": "image/webp",
+        "size_bytes": 351772
+      },
+      {
+        "url": "https://a.storyblok.com/f/133769/2400x2990/b66359da25/rino-pelle-hero.jpg/m/2400x2990/filters:quality(80)",
+        "content_type": "image/webp",
+        "size_bytes": 293582
+      },
+      {
+        "url": "https://a.storyblok.com/f/133769/2400x2990/3e8f8d08f7/aebele-interiors-hero.jpg/m/2400x2990/filters:quality(80)",
+        "content_type": "image/webp",
+        "size_bytes": 486660
+      },
+      {
+        "url": "https://a.storyblok.com/f/133769/2400x2990/61c001bac1/columbia-pictures-hero.jpg/m/2400x2990/filters:quality(80)",
+        "content_type": "image/webp",
+        "size_bytes": 227874
+      },
+      {
+        "url": "https://a.storyblok.com/f/133769/2409x3000/c155d3e27e/amaterasu-hero.jpg/m/2400x2990/filters:quality(80)",
+        "content_type": "image/webp",
+        "size_bytes": 120770
+      },
+      {
+        "url": "https://a.storyblok.com/f/133769/2409x3000/cfd16e1a58/cambium-carbon-hero.jpg/m/2400x2990/filters:quality(80)",
+        "content_type": "image/webp",
+        "size_bytes": 334918
+      },
+      {
+        "url": "https://a.storyblok.com/f/133769/2400x2990/729680ed7f/ottografie-2025-hero.jpg/m/2400x2990/filters:quality(80)",
+        "content_type": "image/webp",
+        "size_bytes": 556052
+      },
+      {
+        "url": "https://a.storyblok.com/f/133769/2400x2990/729680ed7f/ottografie-2025-hero.jpg/m/1300x1620/filters:quality(90)",
+        "content_type": "image/webp",
+        "size_bytes": 352926
+      },
+      {
+        "url": "https://a.storyblok.com/f/133769/2409x3000/c155d3e27e/amaterasu-hero.jpg/m/1300x1619/filters:quality(90)",
+        "content_type": "image/webp",
+        "size_bytes": 81206
+      },
+      {
+        "url": "https://a.storyblok.com/f/133769/2400x2990/540fb12941/columbia-pictures-thumbnail.jpg/m/1300x1620/filters:quality(90)",
+        "content_type": "image/webp",
+        "size_bytes": 223650
+      },
+      {
+        "url": "https://a.storyblok.com/f/133769/2409x3000/cfd16e1a58/cambium-carbon-hero.jpg/m/1300x1619/filters:quality(90)",
+        "content_type": "image/webp",
+        "size_bytes": 253292
+      }
+    ]
+  },
+  "videos": [
+    {
+      "url": "https://a.storyblok.com/f/133769/x/9c433c7aac/home-news-diesel-be-a-follower.mp4",
+      "content_type": "application/mp4"
+    },
+    {
+      "url": "https://a.storyblok.com/f/133769/x/88b4bf7989/news-rino-pelle.mp4",
+      "content_type": "application/mp4"
+    },
+    {
+      "url": "https://www.exoape.com/video/video-6.mp4",
+      "content_type": "video/mp4"
+    },
+    {
+      "url": "https://download-video-ak.vimeocdn.com/v3-1/playback/be1179ab-5aaa-4f63-a9a7-f40c70ae895e/96953878?__token__=st=1780953870~exp=1780957470~acl=%2Fv3-1%2Fplayback%2Fbe1179ab-5aaa-4f63-a9a7-f40c70ae895e%2F96953878%2A~hmac=b5ab8108cae43ae6e91ee9746c1d9694061e5d39089441023833a7de3eb2f41a&r=dXMtZWFzdDE%3D",
+      "content_type": "video/mp4"
+    },
+    {
+      "url": "https://download-video-ak.vimeocdn.com/v3-1/playback/4692069d-08ba-4820-846c-31007f25c1ee/3109df1e?__token__=st=1780953870~exp=1780957470~acl=%2Fv3-1%2Fplayback%2F4692069d-08ba-4820-846c-31007f25c1ee%2F3109df1e%2A~hmac=f96be2fbf724ab47719ee5fa6f7c10fa593d547149a4ab51dcd0f9a14debb46e&r=dXMtd2VzdDE%3D",
+      "content_type": "video/mp4"
+    },
+    {
+      "url": "https://download-video-ak.vimeocdn.com/v3-1/playback/4bdb3586-71c8-40be-b000-2ba5691333a3/dee0a4f7?__token__=st=1780953870~exp=1780957470~acl=%2Fv3-1%2Fplayback%2F4bdb3586-71c8-40be-b000-2ba5691333a3%2Fdee0a4f7%2A~hmac=11e40b88f39e4f0e0c970ebdda36d13284343b3207f0a943dd4bc213f6cc2a91&r=dXMtY2VudHJhbDE%3D",
+      "content_type": "video/mp4"
+    },
+    {
+      "url": "https://download-video-ak.vimeocdn.com/v3-1/playback/c8169bff-def9-46a0-ab51-a3079dd79927/babd849a?__token__=st=1780953870~exp=1780957470~acl=%2Fv3-1%2Fplayback%2Fc8169bff-def9-46a0-ab51-a3079dd79927%2Fbabd849a%2A~hmac=01e64bac560a2dbe7f54218a4aee80708d58c2840a16ca9ccf612db0472da557&r=dXMtZWFzdDE%3D",
+      "content_type": "video/mp4"
+    },
+    {
+      "url": "https://download-video-ak.vimeocdn.com/v3-1/playback/334619e0-f92f-4627-ba88-dfe521b4e062/9e976370?__token__=st=1780953870~exp=1780957470~acl=%2Fv3-1%2Fplayback%2F334619e0-f92f-4627-ba88-dfe521b4e062%2F9e976370%2A~hmac=572fc5cc751b9546bf31748ba237841a91ce0ecec4515f5ee5db34ec22963ef6&r=dXMtY2VudHJhbDE%3D",
+      "content_type": "video/mp4"
+    }
+  ],
+  "scripts_count": 17,
+  "css_count": 0,
+  "total_assets": 51
+}

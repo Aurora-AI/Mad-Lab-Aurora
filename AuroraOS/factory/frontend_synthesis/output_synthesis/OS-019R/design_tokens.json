@@ -1,0 +1,253 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M3",
+    "source": "M2 viewport_state_desktop.css_custom_properties + computed_styles",
+    "generated_at": "2026-06-08T19:36:58",
+    "promotion_allowed": false,
+    "total_tokens": 56
+  },
+  "primitive_tokens": {},
+  "semantic_tokens": {
+    "--color-white": {
+      "value": "#fff",
+      "role": "surface_light_primary",
+      "source": "css_custom_property"
+    },
+    "--color-off-white": {
+      "value": "#f8f8f8",
+      "role": "surface_background_soft",
+      "source": "css_custom_property"
+    },
+    "--color-story": {
+      "value": "#070707",
+      "role": "surface_editorial_dark",
+      "source": "css_custom_property"
+    },
+    "--color-dark-grey": {
+      "value": "#0d0e13",
+      "role": "surface_dark_primary",
+      "source": "css_custom_property"
+    },
+    "--color-light-grey": {
+      "value": "#e4e0db",
+      "role": "surface_light_secondary",
+      "source": "css_custom_property"
+    },
+    "--color-sand": {
+      "value": "#e0ccbb",
+      "role": "unclassified_color",
+      "source": "css_custom_property"
+    }
+  },
+  "opacity_scale": {
+    "--color-white-02": {
+      "value": "hsla(0,0%,100%,.2)",
+      "source": "css_custom_property"
+    },
+    "--color-white-04": {
+      "value": "hsla(0,0%,100%,.4)",
+      "source": "css_custom_property"
+    },
+    "--color-white-06": {
+      "value": "hsla(0,0%,100%,.6)",
+      "source": "css_custom_property"
+    },
+    "--color-white-08": {
+      "value": "hsla(0,0%,100%,.8)",
+      "source": "css_custom_property"
+    },
+    "--color-off-white-02": {
+      "value": "hsla(0,0%,97%,.2)",
+      "source": "css_custom_property"
+    },
+    "--color-off-white-04": {
+      "value": "hsla(0,0%,97%,.4)",
+      "source": "css_custom_property"
+    },
+    "--color-off-white-06": {
+      "value": "hsla(0,0%,97%,.6)",
+      "source": "css_custom_property"
+    },
+    "--color-off-white-08": {
+      "value": "hsla(0,0%,97%,.8)",
+      "source": "css_custom_property"
+    },
+    "--color-dark-grey-02": {
+      "value": "rgba(13,14,19,.2)",
+      "source": "css_custom_property"
+    },
+    "--color-dark-grey-04": {
+      "value": "rgba(13,14,19,.4)",
+      "source": "css_custom_property"
+    },
+    "--color-dark-grey-06": {
+      "value": "rgba(13,14,19,.6)",
+      "source": "css_custom_property"
+    },
+    "--color-dark-grey-08": {
+      "value": "rgba(13,14,19,.8)",
+      "source": "css_custom_property"
+    },
+    "--color-light-grey-02": {
+      "value": "hsla(33,14%,88%,.2)",
+      "source": "css_custom_property"
+    },
+    "--color-light-grey-06": {
+      "value": "hsla(33,14%,88%,.6)",
+      "source": "css_custom_property"
+    },
+    "--color-light-grey-08": {
+      "value": "hsla(33,14%,88%,.8)",
+      "source": "css_custom_property"
+    },
+    "--color-sand-06": {
+      "value": "hsla(28,37%,81%,.6)",
+      "source": "css_custom_property"
+    },
+    "--color-sand-08": {
+      "value": "hsla(28,37%,81%,.8)",
+      "source": "css_custom_property"
+    }
+  },
+  "motion_tokens": {},
+  "radius_tokens": {},
+  "unclassified_tokens": {
+    "--font-f-lausanne-300": {
+      "value": "\"Lausanne-300\"",
+      "source": "css_custom_property"
+    },
+    "--font-f-lausanne-400": {
+      "value": "\"Lausanne-400\"",
+      "source": "css_custom_property"
+    },
+    "--font-f-lausanne-500": {
+      "value": "\"Lausanne-500\"",
+      "source": "css_custom_property"
+    },
+    "--font-s-h0": {
+      "value": "25.6vw",
+      "source": "css_custom_property"
+    },
+    "--font-lh-h0": {
+      "value": "25.6vw",
+      "source": "css_custom_property"
+    },
+    "--font-ls-h0": {
+      "value": "-1.2vw",
+      "source": "css_custom_property"
+    },
+    "--font-s-h1": {
+      "value": "16vw",
+      "source": "css_custom_property"
+    },
+    "--font-lh-h1": {
+      "value": "16vw",
+      "source": "css_custom_property"
+    },
+    "--font-ls-h1": {
+      "value": "-0.4vw",
+      "source": "css_custom_property"
+    },
+    "--font-s-h2": {
+      "value": "7.7333333333vw",
+      "source": "css_custom_property"
+    },
+    "--font-lh-h2": {
+      "value": "9.0666666667vw",
+      "source": "css_custom_property"
+    },
+    "--font-ls-h2": {
+      "value": "-0.2666666667vw",
+      "source": "css_custom_property"
+    },
+    "--font-s-h3": {
+      "value": "6.4vw",
+      "source": "css_custom_property"
+    },
+    "--font-lh-h3": {
+      "value": "8vw",
+      "source": "css_custom_property"
+    },
+    "--font-ls-h3": {
+      "value": "-0.1333333333vw",
+      "source": "css_custom_property"
+    },
+    "--font-s-h4": {
+      "value": "4.8vw",
+      "source": "css_custom_property"
+    },
+    "--font-lh-h4": {
+      "value": "6.4vw",
+      "source": "css_custom_property"
+    },
+    "--font-ls-h4": {
+      "value": "0vw",
+      "source": "css_custom_property"
+    },
+    "--font-s-p": {
+      "value": "3.7333333333vw",
+      "source": "css_custom_property"
+    },
+    "--font-lh-p": {
+      "value": "5.6vw",
+      "source": "css_custom_property"
+    },
+    "--font-ls-p": {
+      "value": "0.0266666667vw",
+      "source": "css_custom_property"
+    },
+    "--font-s-p-small": {
+      "value": "3.7333333333vw",
+      "source": "css_custom_property"
+    },
+    "--font-lh-p-small": {
+      "value": "5.6vw",
+      "source": "css_custom_property"
+    },
+    "--font-ls-p-small": {
+      "value": "0.0266666667vw",
+      "source": "css_custom_property"
+    },
+    "--font-s-subtitle": {
+      "value": "3.2vw",
+      "source": "css_custom_property"
+    },
+    "--font-lh-subtitle": {
+      "value": "4.2666666667vw",
+      "source": "css_custom_property"
+    },
+    "--font-ls-subtitle": {
+      "value": "0.0266666667vw",
+      "source": "css_custom_property"
+    },
+    "--font-s-cta": {
+      "value": "4.2666666667vw",
+      "source": "css_custom_property"
+    },
+    "--font-lh-cta": {
+      "value": "4.2666666667vw",
+      "source": "css_custom_property"
+    },
+    "--font-ls-cta": {
+      "value": "0vw",
+      "source": "css_custom_property"
+    },
+    "--font-s-label": {
+      "value": "3.7333333333vw",
+      "source": "css_custom_property"
+    },
+    "--font-lh-label": {
+      "value": "3.7333333333vw",
+      "source": "css_custom_property"
+    },
+    "--font-ls-label": {
+      "value": "0vw",
+      "source": "css_custom_property"
+    }
+  },
+  "notes": {
+    "opacity_pattern": "Sistema de opacidade consistente com sufixos -02/-04/-06/-08 (20%/40%/60%/80%) aplicado a todas as cores principais.",
+    "dark_mode_risk": "Paleta usa claro (#fff) e escuro (#0d0e13) como duo dominante — inversão de dark mode requer atenção ao --color-story (#070707) vs backgrounds."
+  }
+}

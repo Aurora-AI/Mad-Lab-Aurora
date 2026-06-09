@@ -1,0 +1,282 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M3",
+    "source": "M2 color_usage.json + viewport_state_desktop.css_custom_properties",
+    "generated_at": "2026-06-08T19:36:58",
+    "promotion_allowed": false
+  },
+  "palette_character": {
+    "description": "Paleta quase monocromática — escuro profundo + off-white + bege quente. Ausência de cores saturadas é deliberada.",
+    "dominant_mode": "light backgrounds with dark type",
+    "secondary_mode": "dark sections (--color-story #070707) for editorial contrast",
+    "accent": "none_detected — editorial emphasis via scale and weight, not color"
+  },
+  "core_colors": {
+    "dark_grey": {
+      "token": "--color-dark-grey",
+      "hex": "#0d0e13",
+      "computed_rgb": "rgb(13, 14, 19)",
+      "role": "primary_text + navigation_surface + dark_overlay",
+      "frequency_rank": 1,
+      "source_trace": "color_usage.json rank 1 + css_custom_properties"
+    },
+    "white": {
+      "token": "--color-white",
+      "hex": "#ffffff",
+      "computed_rgb": "rgb(255, 255, 255)",
+      "role": "primary_background + text_on_dark",
+      "frequency_rank": 2,
+      "source_trace": "color_usage.json rank 2 + css_custom_properties"
+    },
+    "off_white": {
+      "token": "--color-off-white",
+      "hex": "#f8f8f8",
+      "computed_rgb": "rgb(248, 248, 248)",
+      "role": "soft_background_variant",
+      "source_trace": "css_custom_properties"
+    },
+    "light_grey": {
+      "token": "--color-light-grey",
+      "hex": "#e4e0db",
+      "computed_rgb": "rgb(228, 224, 219)",
+      "role": "secondary_text + borders + muted_elements",
+      "frequency_rank": 5,
+      "source_trace": "color_usage.json rank 5 + css_custom_properties"
+    },
+    "warm_beige": {
+      "token": null,
+      "hex": "#e0ccbb",
+      "computed_rgb": "rgb(224, 204, 187)",
+      "role": "editorial_text + footer + warm_muted",
+      "frequency_rank": 4,
+      "source_trace": "color_usage.json rank 4",
+      "note": "Não tem CSS custom property própria — pode ser derivada de outro token com opacidade ou cor editorial."
+    },
+    "story_dark": {
+      "token": "--color-story",
+      "hex": "#070707",
+      "computed_rgb": "rgb(7, 7, 7)",
+      "role": "editorial_dark_section_background",
+      "source_trace": "color_usage.json + css_custom_properties"
+    }
+  },
+  "opacity_relationships": {
+    "pattern": "Todas as cores principais têm variantes de opacidade -02/-04/-06/-08",
+    "use_cases": {
+      "02": "subtle_overlay, ghost_divider",
+      "04": "muted_text, placeholder",
+      "06": "secondary_text, icon_inactive",
+      "08": "almost_opaque, soft_overlay"
+    },
+    "source_trace": "css_custom_properties opacity pattern analysis"
+  },
+  "contrast_pairs": [
+    {
+      "foreground": {
+        "name": "story",
+        "hex": "#070707"
+      },
+      "background": {
+        "name": "white",
+        "hex": "#ffffff"
+      },
+      "contrast_ratio": 20.14,
+      "wcag_level": "AAA",
+      "source_trace": "computed from css_custom_properties + wcag_formula"
+    },
+    {
+      "foreground": {
+        "name": "dark_grey",
+        "hex": "#0d0e13"
+      },
+      "background": {
+        "name": "white",
+        "hex": "#ffffff"
+      },
+      "contrast_ratio": 19.28,
+      "wcag_level": "AAA",
+      "source_trace": "computed from css_custom_properties + wcag_formula"
+    },
+    {
+      "foreground": {
+        "name": "off_white",
+        "hex": "#f8f8f8"
+      },
+      "background": {
+        "name": "story",
+        "hex": "#070707"
+      },
+      "contrast_ratio": 18.97,
+      "wcag_level": "AAA",
+      "source_trace": "computed from css_custom_properties + wcag_formula"
+    },
+    {
+      "foreground": {
+        "name": "dark_grey",
+        "hex": "#0d0e13"
+      },
+      "background": {
+        "name": "off_white",
+        "hex": "#f8f8f8"
+      },
+      "contrast_ratio": 18.15,
+      "wcag_level": "AAA",
+      "source_trace": "computed from css_custom_properties + wcag_formula"
+    },
+    {
+      "foreground": {
+        "name": "light_grey",
+        "hex": "#e4e0db"
+      },
+      "background": {
+        "name": "story",
+        "hex": "#070707"
+      },
+      "contrast_ratio": 15.33,
+      "wcag_level": "AAA",
+      "source_trace": "computed from css_custom_properties + wcag_formula"
+    },
+    {
+      "foreground": {
+        "name": "dark_grey",
+        "hex": "#0d0e13"
+      },
+      "background": {
+        "name": "light_grey",
+        "hex": "#e4e0db"
+      },
+      "contrast_ratio": 14.67,
+      "wcag_level": "AAA",
+      "source_trace": "computed from css_custom_properties + wcag_formula"
+    },
+    {
+      "foreground": {
+        "name": "story",
+        "hex": "#070707"
+      },
+      "background": {
+        "name": "warm_beige",
+        "hex": "#e0ccbb"
+      },
+      "contrast_ratio": 12.97,
+      "wcag_level": "AAA",
+      "source_trace": "computed from css_custom_properties + wcag_formula"
+    },
+    {
+      "foreground": {
+        "name": "dark_grey",
+        "hex": "#0d0e13"
+      },
+      "background": {
+        "name": "warm_beige",
+        "hex": "#e0ccbb"
+      },
+      "contrast_ratio": 12.42,
+      "wcag_level": "AAA",
+      "source_trace": "computed from css_custom_properties + wcag_formula"
+    },
+    {
+      "foreground": {
+        "name": "warm_beige",
+        "hex": "#e0ccbb"
+      },
+      "background": {
+        "name": "white",
+        "hex": "#ffffff"
+      },
+      "contrast_ratio": 1.55,
+      "wcag_level": "FAIL",
+      "source_trace": "computed from css_custom_properties + wcag_formula"
+    },
+    {
+      "foreground": {
+        "name": "off_white",
+        "hex": "#f8f8f8"
+      },
+      "background": {
+        "name": "warm_beige",
+        "hex": "#e0ccbb"
+      },
+      "contrast_ratio": 1.46,
+      "wcag_level": "FAIL",
+      "source_trace": "computed from css_custom_properties + wcag_formula"
+    }
+  ],
+  "wcag_risk_areas": [
+    {
+      "pair": "warm_beige #e0ccbb on white #fff",
+      "estimated_ratio": 1.55,
+      "risk": "FAIL for body text — use only for large display text (18px+ bold)",
+      "source_trace": "computed from color_usage.json + wcag_formula"
+    },
+    {
+      "pair": "light_grey #e4e0db on white #fff",
+      "estimated_ratio": 1.31,
+      "risk": "FAIL — decorative use only, never for text",
+      "source_trace": "computed from css_custom_properties + wcag_formula"
+    }
+  ],
+  "usage_frequency": [
+    {
+      "color": "rgb(13, 14, 19)",
+      "count": 267,
+      "primary_prop": "color"
+    },
+    {
+      "color": "rgb(255, 255, 255)",
+      "count": 257,
+      "primary_prop": "background-color"
+    },
+    {
+      "color": "rgba(224, 205, 189, 0.8)",
+      "count": 69,
+      "primary_prop": "color"
+    },
+    {
+      "color": "rgb(224, 204, 187)",
+      "count": 61,
+      "primary_prop": "color"
+    },
+    {
+      "color": "rgb(228, 224, 219)",
+      "count": 45,
+      "primary_prop": "color"
+    },
+    {
+      "color": "rgba(13, 14, 19, 0.6)",
+      "count": 24,
+      "primary_prop": "color"
+    },
+    {
+      "color": "rgb(0, 0, 0)",
+      "count": 3,
+      "primary_prop": "color"
+    },
+    {
+      "color": "rgba(255, 255, 255, 0.6)",
+      "count": 3,
+      "primary_prop": "color"
+    },
+    {
+      "color": "rgba(13, 14, 19, 0.4)",
+      "count": 2,
+      "primary_prop": "background-color"
+    },
+    {
+      "color": "rgba(0, 0, 0, 0.15)",
+      "count": 1,
+      "primary_prop": "background-color"
+    },
+    {
+      "color": "rgb(7, 7, 7)",
+      "count": 1,
+      "primary_prop": "background-color"
+    },
+    {
+      "color": "rgba(224, 205, 189, 0.6)",
+      "count": 1,
+      "primary_prop": "background-color"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "os_id": "OS-019R",
+  "m_id": "OS-019R-M1",
+  "reference_url": "https://www.exoape.com",
+  "captured_at": "2026-06-08T21:24:40Z",
+  "capture_duration_s": 16.22,
+  "page_title": "Exo Ape - Global Digital Design Studio",
+  "meta_description": "We partner with brands and businesses that create exceptional experiences where people live, work and unwind.",
+  "performance": {
+    "dom_content_loaded": 4010,
+    "load_complete": 4588,
+    "first_paint": 3612,
+    "first_contentful_paint": 3612
+  },
+  "desktop_viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "mobile_viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "artifacts": {
+    "raw_html.html": {
+      "sha256": "ad5406408487f48bed668eab1e59bee9c2bca1e6cb58fa776bceb969fecb93b6",
+      "size_chars": 202545
+    },
+    "screenshot_desktop.png": {
+      "sha256": "d4cb0a149b3e0b20292f07160128b5ac2b43d8912ae764a6f946c52d89ef6903",
+      "size_bytes": 948337
+    },
+    "screenshot_mobile.png": {
+      "sha256": "144b04c16b92194b40d7527aee8de1224d97b6b7021ebede559fb2bd21103e15",
+      "size_bytes": 458595
+    },
+    "network_manifest.json": {
+      "requests": 51
+    },
+    "asset_inventory.json": {
+      "assets": 51
+    }
+  },
+  "summary": {
+    "total_requests": 51,
+    "fonts_detected": 3,
+    "images_detected": 16,
+    "videos_detected": 8,
+    "css_files": 0,
+    "scripts": 17,
+    "console_errors": 2
+  },
+  "gate_matrix": {
+    "passed": 12,
+    "total": 12
+  },
+  "mode": "read-only capture",
+  "promotion_allowed": false,
+  "next_step": "M2 — DevTools Structural Extraction"
+}

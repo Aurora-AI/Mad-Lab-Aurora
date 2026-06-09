@@ -1,0 +1,167 @@
+[
+  {
+    "family": "\"Times New Roman\"",
+    "weight": "400",
+    "sizes": [
+      "16px"
+    ],
+    "line_heights": [
+      "normal",
+      "32px"
+    ],
+    "letter_spacings": [
+      "normal"
+    ],
+    "text_transforms": [
+      "none"
+    ],
+    "usage_contexts": [
+      {
+        "tag": "html",
+        "text": "Exo Ape\nWork\nStudio\nNews\nConta"
+      },
+      {
+        "tag": "body",
+        "text": "Exo Ape\nWork\nStudio\nNews\nConta"
+      },
+      {
+        "tag": "div",
+        "text": "Exo Ape\nWork\nStudio\nNews\nConta"
+      },
+      {
+        "tag": "div",
+        "text": "Exo Ape\nWork\nStudio\nNews\nConta"
+      },
+      {
+        "tag": "div",
+        "text": "Exo Ape\nWork\nStudio\nNews\nConta"
+      }
+    ]
+  },
+  {
+    "family": "Lausanne-300",
+    "weight": "400",
+    "sizes": [
+      "14px",
+      "16px",
+      "24px",
+      "144px",
+      "250px"
+    ],
+    "line_heights": [
+      "20px",
+      "21px",
+      "32px",
+      "226px",
+      "183px",
+      "16px",
+      "24px",
+      "144px",
+      "110px",
+      "30px"
+    ],
+    "letter_spacings": [
+      "0.1px",
+      "normal",
+      "-11.5px",
+      "-5px"
+    ],
+    "text_transforms": [
+      "none"
+    ],
+    "usage_contexts": [
+      {
+        "tag": "a",
+        "text": "Work"
+      },
+      {
+        "tag": "a",
+        "text": "Studio"
+      },
+      {
+        "tag": "a",
+        "text": "News"
+      },
+      {
+        "tag": "a",
+        "text": "Contact"
+      },
+      {
+        "tag": "p",
+        "text": "Global digital design studio p"
+      }
+    ]
+  },
+  {
+    "family": "Lausanne-400",
+    "weight": "400",
+    "sizes": [
+      "14px"
+    ],
+    "line_heights": [
+      "37px"
+    ],
+    "letter_spacings": [
+      "normal"
+    ],
+    "text_transforms": [
+      "none"
+    ],
+    "usage_contexts": [
+      {
+        "tag": "h2",
+        "text": "Featured Projects"
+      },
+      {
+        "tag": "div",
+        "text": "Featured Projects"
+      },
+      {
+        "tag": "h2",
+        "text": "Work in motion"
+      },
+      {
+        "tag": "div",
+        "text": "Work in motion"
+      },
+      {
+        "tag": "h2",
+        "text": "In the media"
+      }
+    ]
+  },
+  {
+    "family": "Lausanne-500",
+    "weight": "400",
+    "sizes": [
+      "14px"
+    ],
+    "line_heights": [
+      "21px"
+    ],
+    "letter_spacings": [
+      "0.1px"
+    ],
+    "text_transforms": [
+      "none"
+    ],
+    "usage_contexts": [
+      {
+        "tag": "strong",
+        "text": "Ottografie"
+      },
+      {
+        "tag": "strong",
+        "text": "Amaterasu"
+      },
+      {
+        "tag": "strong",
+        "text": "Columbia Pictures"
+      },
+      {
+        "tag": "strong",
+        "text": "Cambium"
+      }
+    ]
+  }
+]

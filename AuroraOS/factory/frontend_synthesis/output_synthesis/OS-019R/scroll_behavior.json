@@ -1,0 +1,1982 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M4",
+    "source": "Playwright scroll snapshots — desktop",
+    "generated_at": "2026-06-08T21:06:37",
+    "promotion_allowed": false
+  },
+  "page_height_desktop": 0,
+  "snapshots": [
+    {
+      "scrollY": 0,
+      "elements": [
+        {
+          "tag": "nav",
+          "classes": "nav",
+          "in_viewport": true,
+          "rect_top": 45,
+          "rect_bottom": 66,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "fixed"
+        },
+        {
+          "tag": "header",
+          "classes": "hero light",
+          "in_viewport": true,
+          "rect_top": 0,
+          "rect_bottom": 1968,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h1",
+          "classes": "title",
+          "in_viewport": true,
+          "rect_top": 652,
+          "rect_bottom": 1342,
+          "transform": "matrix(1, 0, 0, 1, -20, 0)",
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": true,
+          "rect_top": 0,
+          "rect_bottom": 1968,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "section",
+          "classes": "featured-projects dark",
+          "in_viewport": false,
+          "rect_top": 1967,
+          "rect_bottom": 4638,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h2",
+          "classes": "label",
+          "in_viewport": false,
+          "rect_top": 2499,
+          "rect_bottom": 2533,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h3",
+          "classes": "title",
+          "in_viewport": false,
+          "rect_top": 2173,
+          "rect_bottom": 2399,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "div",
+          "classes": "projects",
+          "in_viewport": false,
+          "rect_top": 2501,
+          "rect_bottom": 4432,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 2501,
+          "rect_bottom": 3398,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 2502,
+          "rect_bottom": 3229,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 2501,
+          "rect_bottom": 3230,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 3035,
+          "rect_bottom": 3542,
+          "transform": "matrix(1, 0, 0, 1, 0, 144)",
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 3036,
+          "rect_bottom": 3507,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 3035,
+          "rect_bottom": 3508,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 3565,
+          "rect_bottom": 4199,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 3566,
+          "rect_bottom": 4164,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 3565,
+          "rect_bottom": 4165,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 3766,
+          "rect_bottom": 4144,
+          "transform": "matrix(1, 0, 0, 1, 0, -288)",
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 3767,
+          "rect_bottom": 4109,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 3766,
+          "rect_bottom": 4110,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "section",
+          "classes": "showreel light-grey",
+          "in_viewport": false,
+          "rect_top": 4637,
+          "rect_bottom": 6437,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h2",
+          "classes": "label",
+          "in_viewport": false,
+          "rect_top": 4683,
+          "rect_bottom": 4717,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "h2",
+          "classes": "title",
+          "in_viewport": false,
+          "rect_top": 5015,
+          "rect_bottom": 5160,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 4975,
+          "rect_bottom": 5200,
+          "transform": "matrix(0.25, 0, 0, 0.25, 0, 0)",
+          "opacity": "0.3",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "img",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 6636,
+          "rect_bottom": 7275,
+          "transform": null,
+          "opacity": "0",
+          "visibility": "hidden",
+          "position": "static"
+        },
+        {
+          "tag": "video",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 6836,
+          "rect_bottom": 7049,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 6697,
+          "rect_bottom": 6944,
+          "transform": null,
+          "opacity": "0",
+          "visibility": "hidden",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 7211,
+          "rect_bottom": 7465,
+          "transform": null,
+          "opacity": "0",
+          "visibility": "hidden",
+          "position": "static"
+        },
+        {
+          "tag": "video",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 7211,
+          "rect_bottom": 7590,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "h2",
+          "classes": "label",
+          "in_viewport": false,
+          "rect_top": 7740,
+          "rect_bottom": 7774,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        }
+      ]
+    },
+    {
+      "scrollY": 0,
+      "elements": [
+        {
+          "tag": "nav",
+          "classes": "nav",
+          "in_viewport": true,
+          "rect_top": 45,
+          "rect_bottom": 66,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "fixed"
+        },
+        {
+          "tag": "header",
+          "classes": "hero light",
+          "in_viewport": true,
+          "rect_top": 0,
+          "rect_bottom": 1968,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h1",
+          "classes": "title",
+          "in_viewport": true,
+          "rect_top": 652,
+          "rect_bottom": 1342,
+          "transform": "matrix(1, 0, 0, 1, -20, 0)",
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": true,
+          "rect_top": 0,
+          "rect_bottom": 1968,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "section",
+          "classes": "featured-projects dark",
+          "in_viewport": false,
+          "rect_top": 1967,
+          "rect_bottom": 4638,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h2",
+          "classes": "label",
+          "in_viewport": false,
+          "rect_top": 2499,
+          "rect_bottom": 2533,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h3",
+          "classes": "title",
+          "in_viewport": false,
+          "rect_top": 2173,
+          "rect_bottom": 2399,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "div",
+          "classes": "projects",
+          "in_viewport": false,
+          "rect_top": 2501,
+          "rect_bottom": 4432,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 2501,
+          "rect_bottom": 3398,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 2502,
+          "rect_bottom": 3229,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 2501,
+          "rect_bottom": 3230,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 3035,
+          "rect_bottom": 3542,
+          "transform": "matrix(1, 0, 0, 1, 0, 144)",
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 3036,
+          "rect_bottom": 3507,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 3035,
+          "rect_bottom": 3508,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 3565,
+          "rect_bottom": 4199,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 3566,
+          "rect_bottom": 4164,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 3565,
+          "rect_bottom": 4165,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 3766,
+          "rect_bottom": 4144,
+          "transform": "matrix(1, 0, 0, 1, 0, -288)",
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 3767,
+          "rect_bottom": 4109,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 3766,
+          "rect_bottom": 4110,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "section",
+          "classes": "showreel light-grey",
+          "in_viewport": false,
+          "rect_top": 4637,
+          "rect_bottom": 6437,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h2",
+          "classes": "label",
+          "in_viewport": false,
+          "rect_top": 4683,
+          "rect_bottom": 4717,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "h2",
+          "classes": "title",
+          "in_viewport": false,
+          "rect_top": 5015,
+          "rect_bottom": 5160,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 4975,
+          "rect_bottom": 5200,
+          "transform": "matrix(0.25, 0, 0, 0.25, 0, 0)",
+          "opacity": "0.3",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "img",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 6636,
+          "rect_bottom": 7275,
+          "transform": null,
+          "opacity": "0",
+          "visibility": "hidden",
+          "position": "static"
+        },
+        {
+          "tag": "video",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 6836,
+          "rect_bottom": 7049,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 6697,
+          "rect_bottom": 6944,
+          "transform": null,
+          "opacity": "0",
+          "visibility": "hidden",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 7211,
+          "rect_bottom": 7465,
+          "transform": null,
+          "opacity": "0",
+          "visibility": "hidden",
+          "position": "static"
+        },
+        {
+          "tag": "video",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 7211,
+          "rect_bottom": 7590,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "h2",
+          "classes": "label",
+          "in_viewport": false,
+          "rect_top": 7740,
+          "rect_bottom": 7774,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        }
+      ]
+    },
+    {
+      "scrollY": 0,
+      "elements": [
+        {
+          "tag": "nav",
+          "classes": "nav",
+          "in_viewport": true,
+          "rect_top": 45,
+          "rect_bottom": 66,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "fixed"
+        },
+        {
+          "tag": "header",
+          "classes": "hero light",
+          "in_viewport": true,
+          "rect_top": 0,
+          "rect_bottom": 1968,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h1",
+          "classes": "title",
+          "in_viewport": true,
+          "rect_top": 652,
+          "rect_bottom": 1342,
+          "transform": "matrix(1, 0, 0, 1, -20, 0)",
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": true,
+          "rect_top": 0,
+          "rect_bottom": 1968,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "section",
+          "classes": "featured-projects dark",
+          "in_viewport": false,
+          "rect_top": 1967,
+          "rect_bottom": 4638,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h2",
+          "classes": "label",
+          "in_viewport": false,
+          "rect_top": 2499,
+          "rect_bottom": 2533,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h3",
+          "classes": "title",
+          "in_viewport": false,
+          "rect_top": 2173,
+          "rect_bottom": 2399,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "div",
+          "classes": "projects",
+          "in_viewport": false,
+          "rect_top": 2501,
+          "rect_bottom": 4432,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 2501,
+          "rect_bottom": 3398,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 2502,
+          "rect_bottom": 3229,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 2501,
+          "rect_bottom": 3230,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 3035,
+          "rect_bottom": 3542,
+          "transform": "matrix(1, 0, 0, 1, 0, 144)",
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 3036,
+          "rect_bottom": 3507,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 3035,
+          "rect_bottom": 3508,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 3565,
+          "rect_bottom": 4199,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 3566,
+          "rect_bottom": 4164,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 3565,
+          "rect_bottom": 4165,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 3766,
+          "rect_bottom": 4144,
+          "transform": "matrix(1, 0, 0, 1, 0, -288)",
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 3767,
+          "rect_bottom": 4109,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 3766,
+          "rect_bottom": 4110,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "section",
+          "classes": "showreel light-grey",
+          "in_viewport": false,
+          "rect_top": 4637,
+          "rect_bottom": 6437,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h2",
+          "classes": "label",
+          "in_viewport": false,
+          "rect_top": 4683,
+          "rect_bottom": 4717,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "h2",
+          "classes": "title",
+          "in_viewport": false,
+          "rect_top": 5015,
+          "rect_bottom": 5160,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 4975,
+          "rect_bottom": 5200,
+          "transform": "matrix(0.25, 0, 0, 0.25, 0, 0)",
+          "opacity": "0.3",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "img",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 6636,
+          "rect_bottom": 7275,
+          "transform": null,
+          "opacity": "0",
+          "visibility": "hidden",
+          "position": "static"
+        },
+        {
+          "tag": "video",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 6836,
+          "rect_bottom": 7049,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 6697,
+          "rect_bottom": 6944,
+          "transform": null,
+          "opacity": "0",
+          "visibility": "hidden",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 7211,
+          "rect_bottom": 7465,
+          "transform": null,
+          "opacity": "0",
+          "visibility": "hidden",
+          "position": "static"
+        },
+        {
+          "tag": "video",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 7211,
+          "rect_bottom": 7590,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "h2",
+          "classes": "label",
+          "in_viewport": false,
+          "rect_top": 7740,
+          "rect_bottom": 7774,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        }
+      ]
+    },
+    {
+      "scrollY": 0,
+      "elements": [
+        {
+          "tag": "nav",
+          "classes": "nav",
+          "in_viewport": true,
+          "rect_top": 45,
+          "rect_bottom": 66,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "fixed"
+        },
+        {
+          "tag": "header",
+          "classes": "hero light",
+          "in_viewport": true,
+          "rect_top": 0,
+          "rect_bottom": 1968,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h1",
+          "classes": "title",
+          "in_viewport": true,
+          "rect_top": 652,
+          "rect_bottom": 1342,
+          "transform": "matrix(1, 0, 0, 1, -20, 0)",
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": true,
+          "rect_top": 0,
+          "rect_bottom": 1968,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "section",
+          "classes": "featured-projects dark",
+          "in_viewport": false,
+          "rect_top": 1967,
+          "rect_bottom": 4638,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h2",
+          "classes": "label",
+          "in_viewport": false,
+          "rect_top": 2499,
+          "rect_bottom": 2533,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h3",
+          "classes": "title",
+          "in_viewport": false,
+          "rect_top": 2173,
+          "rect_bottom": 2399,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "div",
+          "classes": "projects",
+          "in_viewport": false,
+          "rect_top": 2501,
+          "rect_bottom": 4432,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 2501,
+          "rect_bottom": 3398,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 2502,
+          "rect_bottom": 3229,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 2501,
+          "rect_bottom": 3230,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 3035,
+          "rect_bottom": 3542,
+          "transform": "matrix(1, 0, 0, 1, 0, 144)",
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 3036,
+          "rect_bottom": 3507,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 3035,
+          "rect_bottom": 3508,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 3565,
+          "rect_bottom": 4199,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 3566,
+          "rect_bottom": 4164,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 3565,
+          "rect_bottom": 4165,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 3766,
+          "rect_bottom": 4144,
+          "transform": "matrix(1, 0, 0, 1, 0, -288)",
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 3767,
+          "rect_bottom": 4109,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 3766,
+          "rect_bottom": 4110,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "section",
+          "classes": "showreel light-grey",
+          "in_viewport": false,
+          "rect_top": 4637,
+          "rect_bottom": 6437,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h2",
+          "classes": "label",
+          "in_viewport": false,
+          "rect_top": 4683,
+          "rect_bottom": 4717,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "h2",
+          "classes": "title",
+          "in_viewport": false,
+          "rect_top": 5015,
+          "rect_bottom": 5160,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 4975,
+          "rect_bottom": 5200,
+          "transform": "matrix(0.25, 0, 0, 0.25, 0, 0)",
+          "opacity": "0.3",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "img",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 6636,
+          "rect_bottom": 7275,
+          "transform": null,
+          "opacity": "0",
+          "visibility": "hidden",
+          "position": "static"
+        },
+        {
+          "tag": "video",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 6836,
+          "rect_bottom": 7049,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 6697,
+          "rect_bottom": 6944,
+          "transform": null,
+          "opacity": "0",
+          "visibility": "hidden",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 7211,
+          "rect_bottom": 7465,
+          "transform": null,
+          "opacity": "0",
+          "visibility": "hidden",
+          "position": "static"
+        },
+        {
+          "tag": "video",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 7211,
+          "rect_bottom": 7590,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "h2",
+          "classes": "label",
+          "in_viewport": false,
+          "rect_top": 7740,
+          "rect_bottom": 7774,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        }
+      ]
+    },
+    {
+      "scrollY": 0,
+      "elements": [
+        {
+          "tag": "nav",
+          "classes": "nav",
+          "in_viewport": true,
+          "rect_top": 45,
+          "rect_bottom": 66,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "fixed"
+        },
+        {
+          "tag": "header",
+          "classes": "hero light",
+          "in_viewport": true,
+          "rect_top": 0,
+          "rect_bottom": 1968,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h1",
+          "classes": "title",
+          "in_viewport": true,
+          "rect_top": 652,
+          "rect_bottom": 1342,
+          "transform": "matrix(1, 0, 0, 1, -20, 0)",
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": true,
+          "rect_top": 0,
+          "rect_bottom": 1968,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "section",
+          "classes": "featured-projects dark",
+          "in_viewport": false,
+          "rect_top": 1967,
+          "rect_bottom": 4638,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h2",
+          "classes": "label",
+          "in_viewport": false,
+          "rect_top": 2499,
+          "rect_bottom": 2533,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h3",
+          "classes": "title",
+          "in_viewport": false,
+          "rect_top": 2173,
+          "rect_bottom": 2399,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "div",
+          "classes": "projects",
+          "in_viewport": false,
+          "rect_top": 2501,
+          "rect_bottom": 4432,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 2501,
+          "rect_bottom": 3398,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 2502,
+          "rect_bottom": 3229,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 2501,
+          "rect_bottom": 3230,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 3035,
+          "rect_bottom": 3542,
+          "transform": "matrix(1, 0, 0, 1, 0, 144)",
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 3036,
+          "rect_bottom": 3507,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 3035,
+          "rect_bottom": 3508,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 3565,
+          "rect_bottom": 4199,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 3566,
+          "rect_bottom": 4164,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 3565,
+          "rect_bottom": 4165,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "a",
+          "classes": "project",
+          "in_viewport": false,
+          "rect_top": 3766,
+          "rect_bottom": 4144,
+          "transform": "matrix(1, 0, 0, 1, 0, -288)",
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "image",
+          "in_viewport": false,
+          "rect_top": 3767,
+          "rect_bottom": 4109,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 3766,
+          "rect_bottom": 4110,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "section",
+          "classes": "showreel light-grey",
+          "in_viewport": false,
+          "rect_top": 4637,
+          "rect_bottom": 6437,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        },
+        {
+          "tag": "h2",
+          "classes": "label",
+          "in_viewport": false,
+          "rect_top": 4683,
+          "rect_bottom": 4717,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "h2",
+          "classes": "title",
+          "in_viewport": false,
+          "rect_top": 5015,
+          "rect_bottom": 5160,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "video",
+          "classes": "video",
+          "in_viewport": false,
+          "rect_top": 4975,
+          "rect_bottom": 5200,
+          "transform": "matrix(0.25, 0, 0, 0.25, 0, 0)",
+          "opacity": "0.3",
+          "visibility": "visible",
+          "position": "absolute"
+        },
+        {
+          "tag": "img",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 6636,
+          "rect_bottom": 7275,
+          "transform": null,
+          "opacity": "0",
+          "visibility": "hidden",
+          "position": "static"
+        },
+        {
+          "tag": "video",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 6836,
+          "rect_bottom": 7049,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 6697,
+          "rect_bottom": 6944,
+          "transform": null,
+          "opacity": "0",
+          "visibility": "hidden",
+          "position": "static"
+        },
+        {
+          "tag": "img",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 7211,
+          "rect_bottom": 7465,
+          "transform": null,
+          "opacity": "0",
+          "visibility": "hidden",
+          "position": "static"
+        },
+        {
+          "tag": "video",
+          "classes": "",
+          "in_viewport": false,
+          "rect_top": 7211,
+          "rect_bottom": 7590,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "static"
+        },
+        {
+          "tag": "h2",
+          "classes": "label",
+          "in_viewport": false,
+          "rect_top": 7740,
+          "rect_bottom": 7774,
+          "transform": null,
+          "opacity": "1",
+          "visibility": "visible",
+          "position": "relative"
+        }
+      ]
+    }
+  ],
+  "observed_scroll_changes": [
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "img",
+      "classes": "image",
+      "changes": {
+        "in_viewport": {
+          "before": false,
+          "after": true
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "a",
+      "classes": "project",
+      "changes": {
+        "transform": {
+          "before": "matrix(1, 0, 0, 1, 0, -288)",
+          "after": null
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "video",
+      "classes": "video",
+      "changes": {
+        "transform": {
+          "before": "matrix(0.25, 0, 0, 0.25, 0, 0)",
+          "after": null
+        },
+        "opacity": {
+          "before": "0.3",
+          "after": "1"
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "a",
+      "classes": "project",
+      "changes": {
+        "transform": {
+          "before": "matrix(1, 0, 0, 1, 0, -288)",
+          "after": "matrix(1, 0, 0, 1, 0, 144)"
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "video",
+      "classes": "video",
+      "changes": {
+        "transform": {
+          "before": "matrix(0.25, 0, 0, 0.25, 0, 0)",
+          "after": null
+        },
+        "opacity": {
+          "before": "0.3",
+          "after": "1"
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "a",
+      "classes": "project",
+      "changes": {
+        "transform": {
+          "before": "matrix(1, 0, 0, 1, 0, -288)",
+          "after": null
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "video",
+      "classes": "video",
+      "changes": {
+        "transform": {
+          "before": "matrix(0.25, 0, 0, 0.25, 0, 0)",
+          "after": null
+        },
+        "opacity": {
+          "before": "0.3",
+          "after": "1"
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "video",
+      "classes": "video",
+      "changes": {
+        "transform": {
+          "before": "matrix(0.25, 0, 0, 0.25, 0, 0)",
+          "after": null
+        },
+        "opacity": {
+          "before": "0.3",
+          "after": "1"
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "img",
+      "classes": "image",
+      "changes": {
+        "in_viewport": {
+          "before": false,
+          "after": true
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "a",
+      "classes": "project",
+      "changes": {
+        "transform": {
+          "before": "matrix(1, 0, 0, 1, 0, -288)",
+          "after": null
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "video",
+      "classes": "video",
+      "changes": {
+        "transform": {
+          "before": "matrix(0.25, 0, 0, 0.25, 0, 0)",
+          "after": null
+        },
+        "opacity": {
+          "before": "0.3",
+          "after": "1"
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "a",
+      "classes": "project",
+      "changes": {
+        "transform": {
+          "before": "matrix(1, 0, 0, 1, 0, -288)",
+          "after": "matrix(1, 0, 0, 1, 0, 144)"
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "video",
+      "classes": "video",
+      "changes": {
+        "transform": {
+          "before": "matrix(0.25, 0, 0, 0.25, 0, 0)",
+          "after": null
+        },
+        "opacity": {
+          "before": "0.3",
+          "after": "1"
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "a",
+      "classes": "project",
+      "changes": {
+        "transform": {
+          "before": "matrix(1, 0, 0, 1, 0, -288)",
+          "after": null
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "video",
+      "classes": "video",
+      "changes": {
+        "transform": {
+          "before": "matrix(0.25, 0, 0, 0.25, 0, 0)",
+          "after": null
+        },
+        "opacity": {
+          "before": "0.3",
+          "after": "1"
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "video",
+      "classes": "video",
+      "changes": {
+        "transform": {
+          "before": "matrix(0.25, 0, 0, 0.25, 0, 0)",
+          "after": null
+        },
+        "opacity": {
+          "before": "0.3",
+          "after": "1"
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "img",
+      "classes": "image",
+      "changes": {
+        "in_viewport": {
+          "before": false,
+          "after": true
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "a",
+      "classes": "project",
+      "changes": {
+        "transform": {
+          "before": "matrix(1, 0, 0, 1, 0, -288)",
+          "after": null
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "video",
+      "classes": "video",
+      "changes": {
+        "transform": {
+          "before": "matrix(0.25, 0, 0, 0.25, 0, 0)",
+          "after": null
+        },
+        "opacity": {
+          "before": "0.3",
+          "after": "1"
+        }
+      }
+    },
+    {
+      "from_scroll": 0,
+      "to_scroll": 0,
+      "element": "a",
+      "classes": "project",
+      "changes": {
+        "transform": {
+          "before": "matrix(1, 0, 0, 1, 0, -288)",
+          "after": "matrix(1, 0, 0, 1, 0, 144)"
+        }
+      }
+    }
+  ],
+  "sticky_fixed_elements": {
+    "nav": {
+      "position": "fixed",
+      "z_index": 9,
+      "behavior": "remains fixed throughout scroll — adapts theme class via JS",
+      "source_trace": "layout_boxes.json + surface_system.json"
+    },
+    "menu_button": {
+      "position": "fixed",
+      "z_index": 14,
+      "behavior": "always visible — triggers navigation overlay",
+      "source_trace": "layout_boxes.json/fixed_sticky_elements"
+    }
+  },
+  "intersection_observer_scroll_events": 21,
+  "io_confirmed": true,
+  "note": "Scroll-linked transforms detectáveis apenas via JS RAF analysis — não disponível via computed styles estáticos"
+}

@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M4",
+    "source": "Playwright getComputedStyle — desktop",
+    "generated_at": "2026-06-08T21:06:37",
+    "promotion_allowed": false
+  },
+  "unique_curves": [
+    {
+      "duration": "0.5s",
+      "timing_function": "ease",
+      "property": "opacity",
+      "delay": "0s",
+      "example_elements": [
+        {
+          "tag": "path",
+          "classes": ""
+        },
+        {
+          "tag": "div",
+          "classes": "wordmark"
+        }
+      ],
+      "count": 2,
+      "source_trace": "getComputedStyle transitionTimingFunction"
+    }
+  ],
+  "duration_groups": {
+    "0.5s": 2
+  },
+  "keyframes": [],
+  "animation_rules": [],
+  "note": "CSS transitions extraídas de computed styles em estado neutro (sem hover ativo). Curvas durante hover/scroll podem diferir — marcadas como observed_but_not_quantified quando aplicável."
+}

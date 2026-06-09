@@ -1,0 +1,322 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M5",
+    "reference": "https://www.exoape.com",
+    "generated_at": "2026-06-08T22:02:41",
+    "promotion_allowed": false,
+    "source_phases": [
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ]
+  },
+  "patterns": [
+    {
+      "id": "P-001",
+      "name": "Monumental Editorial Hero",
+      "category": "typography",
+      "cognitive_function": "Criar impacto visual imediato através de tipografia de escala extrema. O tamanho não é decorativo — é a mensagem primária. O conteúdo entra pelo tamanho antes de ser lido pelo significado.",
+      "source_trace": [
+        "M2/computed_styles.json h1: font-size 250px",
+        "M2/computed_styles.json h1: letter-spacing -11.5px",
+        "M4/viewport_motion_matrix.json h1 desktop vs mobile",
+        "M3/typography_system.json display_monumental"
+      ],
+      "evidence": {
+        "font_size_desktop": "250px",
+        "font_size_mobile": "62.4px",
+        "letter_spacing_desktop": "-11.5px",
+        "letter_spacing_mobile": "-1.56px",
+        "font_family": "TWKLausanne / Lausanne-300",
+        "font_weight_computed": "400",
+        "line_height_ratio": "0.904",
+        "tracking_ratio_desktop": "-0.046",
+        "tracking_ratio_mobile": "-0.025"
+      },
+      "permitted_use": [
+        "Título de abertura de seção hero",
+        "Manifesto ou declaração institucional",
+        "Nome de projeto em abertura de case study",
+        "Qualquer texto de no máximo 3–5 palavras em escala monumental"
+      ],
+      "prohibited_use": [
+        "Corpo de texto ou parágrafos",
+        "Labels ou metadados",
+        "Texto abaixo de 80px que não recalibrou tracking",
+        "Cópia exata do texto da Exo Ape"
+      ],
+      "clone_risk": "MEDIUM — escala extrema com tracking negativo é a assinatura da referência. Usar com conteúdo diferente e composição diferente.",
+      "agent_instructions": [
+        "Usar Lausanne-300 como família ou equivalente aprovado no handoff",
+        "Calcular letter-spacing como: tamanho_px × (-0.046) para desktop, × (-0.025) para mobile",
+        "line-height = font-size × 0.904 (tight editorial)",
+        "font-weight: 400 — não usar bold em escala monumental",
+        "Não copiar o texto 'Digital Design Experience' ou qualquer copy da referência",
+        "Testar com conteúdo real — não usar lorem ipsum em display monumental"
+      ]
+    },
+    {
+      "id": "P-002",
+      "name": "Intersection-Gated Editorial Media",
+      "category": "media",
+      "cognitive_function": "Mídia só entra em atividade quando o usuário chega na zona de interesse. Cria sensação de revelação progressiva — cada seção 'acorda' ao ser alcançada. Economiza performance e cria ritmo de descoberta.",
+      "source_trace": [
+        "M4/motion_grammar.json IO instances=1, events=21",
+        "M4/media_runtime_behavior.json is_playing_after_scroll=8",
+        "M2/media_inventory.json 8 vídeos muted+loop",
+        "M1/capture_metadata.json 8 vídeos detectados"
+      ],
+      "evidence": {
+        "mechanism": "IntersectionObserver (JS) — não atributo HTML autoplay",
+        "io_instances": 1,
+        "io_events_captured": 21,
+        "videos_playing_after_scroll": 8,
+        "autoplay_html_attribute": false,
+        "pattern": "muted + loop + IO-triggered = ambient editorial loops"
+      },
+      "permitted_use": [
+        "Vídeos de projeto/case study em cards editoriais",
+        "Background ambient de seções sem narração",
+        "Demonstração de produto em contexto de portfolio"
+      ],
+      "prohibited_use": [
+        "Autoplay via atributo HTML sem IntersectionObserver",
+        "Mídia com narração/áudio sem controles visíveis",
+        "Autoplay fora da viewport (desperdício de performance)",
+        "Mais de 3 vídeos simultâneos ativos na viewport"
+      ],
+      "clone_risk": "LOW — o padrão é técnico (IntersectionObserver), não visual. Implementar com conteúdo próprio.",
+      "agent_instructions": [
+        "Implementar IntersectionObserver para acionar play() quando ratio >= 0.3",
+        "Sempre muted=true para autoplay permitido pelos browsers",
+        "loop=true para ambient media",
+        "preload='none' até o elemento entrar no threshold",
+        "Fornecer poster como placeholder antes da carga",
+        "useReducedMotion() → não acionar autoplay (fail-closed herdado da OS-019)"
+      ],
+      "budget_fallback": {
+        "max_simultaneous_playing": 3,
+        "threshold": 0.3,
+        "reduced_motion": "poster_static_only",
+        "low_bandwidth": "poster_static_with_play_button"
+      }
+    },
+    {
+      "id": "P-003",
+      "name": "Minimal Sticky Navigation",
+      "category": "navigation",
+      "cognitive_function": "Presença persistente que não compete com o conteúdo principal. A navegação existe como acesso seguro, não como âncora visual. O conteúdo é a cena — a nav é a saída de emergência.",
+      "source_trace": [
+        "M2/layout_boxes.json navigation z_index=9, position=fixed",
+        "M2/accessibility_tree.json nav landmark",
+        "M4/motion_grammar.json structural_motion/menu",
+        "M3/surface_system.json navigation_surface dynamic theme"
+      ],
+      "evidence": {
+        "position": "fixed",
+        "z_index": 9,
+        "menu_button_z": 14,
+        "theme": "adapts via .is-light / .is-dark on .app element",
+        "height": 21
+      },
+      "permitted_use": [
+        "Navegação principal fixa com menu hamburger",
+        "Nav que adapta contraste ao contexto da seção atual",
+        "Logo + links essenciais + CTA único"
+      ],
+      "prohibited_use": [
+        "Nav com altura superior a 80px",
+        "Nav com elementos visuais pesados (gradientes, sombras profundas)",
+        "Nav que compete visualmente com hero ou seção ativa",
+        "Z-index acima de 14 sem justificativa de modal/overlay"
+      ],
+      "clone_risk": "LOW — estrutura funcional padrão. Risco apenas se copiar identidade visual (logo, cores, copy).",
+      "agent_instructions": [
+        "position: fixed, z-index: 9 para nav principal",
+        "z-index: 14 para trigger de menu (deve estar acima da nav)",
+        "Implementar theme toggle (.is-light / .is-dark) baseado na seção ativa",
+        "Altura máxima recomendada: 64px–80px",
+        "Transição de tema: opacity 0.5s ease (padrão confirmado em M4)"
+      ]
+    },
+    {
+      "id": "P-004",
+      "name": "GPU-Composited Scroll Field",
+      "category": "motion",
+      "cognitive_function": "A página inteira é um campo físico onde elementos se movem com física própria durante o scroll. Não é slideshow. Não são cards. É um campo contínuo de camadas compostas que respondem ao input do usuário.",
+      "source_trace": [
+        "M4/motion_grammar.json will_change=transform, 68 elements",
+        "M4/m4_runtime_trace.json transform_elements h1.title translateX(-20px)",
+        "M3/surface_system.json z_index_landscape [1,2,9,14,20]",
+        "M2/viewport_state_desktop.json z_index_landscape"
+      ],
+      "evidence": {
+        "will_change_elements": 68,
+        "will_change_value": "transform",
+        "h1_transform_at_rest": "matrix(1,0,0,1,-20,0) = translateX(-20px)",
+        "z_layers": [
+          1,
+          2,
+          9,
+          14,
+          20
+        ]
+      },
+      "permitted_use": [
+        "Reveal de elementos ao entrar na viewport (translateY, opacity, scale)",
+        "Parallax sutil em media ou backgrounds (< 10% do scroll delta)",
+        "Depth layers no hero (Z-axis do Mad Lab Theme)",
+        "Entrance animations vinculadas ao IntersectionObserver"
+      ],
+      "prohibited_use": [
+        "will-change em todos os elementos sem budget definido",
+        "Mais de 20 GPU layers simultâneos sem teste de performance",
+        "Scroll-linked transforms sem useReducedMotion() fail-closed",
+        "Parallax profundo em conteúdo textual (afeta legibilidade e acessibilidade)"
+      ],
+      "clone_risk": "LOW — arquitetura técnica. Não há visual único para clonar — apenas o padrão de engenharia.",
+      "agent_instructions": [
+        "Aplicar will-change: transform apenas nos elementos que serão animados (não global)",
+        "Definir budget por qualidade: low=5 layers, medium=12 layers, high=20 layers",
+        "Sempre incluir @media (prefers-reduced-motion: reduce) { transition: none; animation: none; }",
+        "Usar transform (não top/left) para todas as animações de posição",
+        "Cleanup: remover will-change após animação via JS para liberar memória GPU"
+      ],
+      "budget_fallback": {
+        "quality_low": "max 5 GPU layers, sem parallax",
+        "quality_medium": "max 12 GPU layers, parallax sutil",
+        "quality_high": "max 20 GPU layers, full scroll physics",
+        "reduced_motion": "static — nenhuma transform animada",
+        "cleanup": "remove will-change after animation complete"
+      }
+    },
+    {
+      "id": "P-005",
+      "name": "Responsive Optical Tracking",
+      "category": "typography",
+      "cognitive_function": "Compensação óptica do espaço entre letras em função do tamanho do display. Em escala extrema, o espaçamento padrão cria 'frouxidão' visual. O tracking negativo restaura a coesão da palavra como unidade visual.",
+      "source_trace": [
+        "M4/viewport_motion_matrix.json h1 desktop vs mobile",
+        "M3/typography_system.json tracking_rule",
+        "M2/computed_styles.json h1 letter-spacing"
+      ],
+      "evidence": {
+        "desktop_250px": {
+          "letter_spacing": "-11.5px",
+          "tracking_ratio": "-0.046"
+        },
+        "mobile_62px": {
+          "letter_spacing": "-1.56px",
+          "tracking_ratio": "-0.025"
+        },
+        "rule": "tracking é função não linear do tamanho — diminui proporcionalmente em mobile"
+      },
+      "permitted_use": [
+        "Qualquer display acima de 40px que precise de compensação óptica",
+        "Sistema tipográfico editorial com escalas extremas"
+      ],
+      "prohibited_use": [
+        "Tracking negativo em corpo de texto (< 18px)",
+        "Tracking fixo sem variação por breakpoint",
+        "letter-spacing positivo em display extremo"
+      ],
+      "clone_risk": "LOW — é uma regra técnica tipográfica, não uma identidade visual.",
+      "agent_instructions": [
+        "Fórmula desktop (> 768px): letter-spacing = font-size × (-0.046)",
+        "Fórmula mobile (< 640px): letter-spacing = font-size × (-0.025)",
+        "Interpolar entre 0.025 e 0.046 para breakpoints intermediários",
+        "Abaixo de 40px: tracking-ratio neutro (0 a -0.01)",
+        "Testar opticamente — a fórmula é ponto de partida, não regra absoluta"
+      ]
+    },
+    {
+      "id": "P-006",
+      "name": "Monochromatic Semantic Palette",
+      "category": "color",
+      "cognitive_function": "Hierarquia visual construída inteiramente por escala e peso, não por cor. A ausência de cor saturada força o olho a usar tamanho, peso e posição como único vocabulário de atenção. Cria sofisticação editorial.",
+      "source_trace": [
+        "M3/color_semantics.json core_colors",
+        "M3/design_tokens.json semantic_tokens",
+        "M2/color_usage.json top colors"
+      ],
+      "evidence": {
+        "dominant_duo": "#0d0e13 (escuro) + #ffffff (branco)",
+        "warm_editorial": "#e0ccbb (bege quente para texto editorial/footer)",
+        "accent": "none — ênfase via escala tipográfica",
+        "token_count": 56,
+        "opacity_scale": [
+          "0.2",
+          "0.4",
+          "0.6",
+          "0.8"
+        ]
+      },
+      "permitted_use": [
+        "Sistemas editoriais e de portfolio sem necessidade de cor-marca forte",
+        "Contextos onde a mídia (foto/vídeo) é a cor — não a UI",
+        "Dark sections como --color-story (#070707) para contraste editorial"
+      ],
+      "prohibited_use": [
+        "Usar #e4e0db ou #e0ccbb como cor de texto em body size (falha WCAG)",
+        "Adicionar cores saturadas sem revisar o sistema completo",
+        "Usar Times New Roman — NOT_CANONICAL confirmado"
+      ],
+      "clone_risk": "LOW — paleta monocromática é princípio de design, não identidade. Aplicar com brand colors próprias.",
+      "agent_instructions": [
+        "Primary text: --color-dark-grey (#0d0e13)",
+        "Background: --color-white (#ffffff) ou --color-off-white (#f8f8f8)",
+        "Editorial warm: usar apenas em texto de apoio grande (> 18px bold) — WCAG risco em body",
+        "Dark sections: --color-story (#070707) com texto claro",
+        "Não declarar Times New Roman em font-family stack"
+      ]
+    },
+    {
+      "id": "P-007",
+      "name": "Section-Label Taxonomy",
+      "category": "content",
+      "cognitive_function": "Labels de seção em 14px com peso normal servem como âncoras de orientação silenciosas. O contraste de escala entre o label (14px) e o título da seção (144px ou 250px) cria ritmo editorial imediato.",
+      "source_trace": [
+        "M2/accessibility_tree.json headings h2 14px",
+        "M3/typography_system.json label_section",
+        "M2/computed_styles.json h2 small scale"
+      ],
+      "evidence": {
+        "label_font_size": "14px",
+        "label_font_weight": "400",
+        "examples": [
+          "Featured Projects",
+          "Work in motion",
+          "In the media"
+        ],
+        "contrast_ratio": "label 14px vs display 250px = ratio 1:17.9"
+      },
+      "permitted_use": [
+        "Rótulo de seção antes do título principal",
+        "Categoria ou metadado de contexto",
+        "Timestamp ou indicação de ordenação"
+      ],
+      "prohibited_use": [
+        "Labels como CTA (não são clicáveis por padrão)",
+        "Labels para informação crítica (baixo contraste em fundo claro)",
+        "Mais de 3 palavras por label"
+      ],
+      "clone_risk": "LOW — padrão de UX writing universal. Risco apenas se copiar o copy exato.",
+      "agent_instructions": [
+        "font-size: 14px, font-weight: 400",
+        "Usar como elemento de abertura de seção antes do título",
+        "Não usar a mesma copy da referência ('Featured Projects', etc.)"
+      ]
+    }
+  ],
+  "pattern_count": 7,
+  "categories": [
+    "media",
+    "motion",
+    "navigation",
+    "content",
+    "typography",
+    "color"
+  ]
+}

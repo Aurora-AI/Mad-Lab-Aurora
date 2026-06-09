@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M5",
+    "reference": "https://www.exoape.com",
+    "generated_at": "2026-06-08T22:02:41",
+    "promotion_allowed": false,
+    "source_phases": [
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ]
+  },
+  "summary": {
+    "interactive_elements": 30,
+    "hover_tested": 6,
+    "hover_with_changes": 0
+  },
+  "roles": {
+    "navigation_link": {
+      "selector": "nav a.nav-link",
+      "behavior": "hover transition detectado via IO (elementos nav rastreados pelo IntersectionObserver)",
+      "z_context": "z:9 (nav layer)",
+      "source_trace": "M4/m4_runtime_trace io_spy_events nav-link"
+    },
+    "menu_trigger": {
+      "selector": ".menu-button",
+      "behavior": "click abre overlay de navegação, z:14",
+      "io_tracked": true,
+      "source_trace": "M4/interaction_map.menu + M3/surface_system.z_index"
+    },
+    "editorial_link": {
+      "selector": "a[href] (projeto/case)",
+      "behavior": "hover muda estado — detalhes em M4/interaction_map.hover_states",
+      "source_trace": "M4/interaction_map.cta_behavior"
+    },
+    "video_surface": {
+      "selector": "video",
+      "behavior": "play() via IntersectionObserver — não via click",
+      "no_controls": true,
+      "source_trace": "M4/media_runtime_behavior"
+    }
+  },
+  "not_tested": [
+    "focus states de teclado",
+    "custom cursor behavior",
+    "touch interactions no mobile"
+  ],
+  "source_trace": "M4/interaction_map + M4/m4_runtime_trace + M2/accessibility_tree"
+}

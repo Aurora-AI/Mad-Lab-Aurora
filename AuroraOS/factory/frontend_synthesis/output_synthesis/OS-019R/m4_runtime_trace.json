@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M4",
+    "generated_at": "2026-06-08T21:06:37",
+    "promotion_allowed": false
+  },
+  "io_spy_raw_events": [
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "logo is-current is-active",
+      "isIntersecting": true,
+      "intersectionRatio": 1,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "nav-link",
+      "isIntersecting": true,
+      "intersectionRatio": 0.9904671311378479,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "nav-link",
+      "isIntersecting": true,
+      "intersectionRatio": 1,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "nav-link",
+      "isIntersecting": true,
+      "intersectionRatio": 1,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "nav-link",
+      "isIntersecting": true,
+      "intersectionRatio": 0.990591824054718,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "link",
+      "isIntersecting": false,
+      "intersectionRatio": 0,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "list-link",
+      "isIntersecting": false,
+      "intersectionRatio": 0,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "list-link",
+      "isIntersecting": false,
+      "intersectionRatio": 0,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "list-link",
+      "isIntersecting": false,
+      "intersectionRatio": 0,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "list-link",
+      "isIntersecting": false,
+      "intersectionRatio": 0,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "project",
+      "isIntersecting": false,
+      "intersectionRatio": 0,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "project",
+      "isIntersecting": false,
+      "intersectionRatio": 0,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "project",
+      "isIntersecting": false,
+      "intersectionRatio": 0,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "project",
+      "isIntersecting": false,
+      "intersectionRatio": 0,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "link is-dark",
+      "isIntersecting": false,
+      "intersectionRatio": 0,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "link is-dark",
+      "isIntersecting": false,
+      "intersectionRatio": 0,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "footer-link",
+      "isIntersecting": false,
+      "intersectionRatio": 0,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "footer-link",
+      "isIntersecting": false,
+      "intersectionRatio": 0,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "footer-link",
+      "isIntersecting": false,
+      "intersectionRatio": 0,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "footer-link",
+      "isIntersecting": false,
+      "intersectionRatio": 0,
+      "timestamp": 1780963568227
+    },
+    {
+      "instanceId": 1,
+      "tag": "a",
+      "classes": "link",
+      "isIntersecting": false,
+      "intersectionRatio": 0,
+      "timestamp": 1780963568227
+    }
+  ],
+  "io_instances": 1,
+  "scroll_snapshots_summary": [
+    {
+      "scrollY": 0,
+      "elements_captured": 30
+    },
+    {
+      "scrollY": 0,
+      "elements_captured": 30
+    },
+    {
+      "scrollY": 0,
+      "elements_captured": 30
+    },
+    {
+      "scrollY": 0,
+      "elements_captured": 30
+    },
+    {
+      "scrollY": 0,
+      "elements_captured": 30
+    }
+  ],
+  "hover_tests_summary": [
+    {
+      "selector": "a[href]",
+      "has_changes": false,
+      "error": null
+    },
+    {
+      "selector": "nav a",
+      "has_changes": false,
+      "error": null
+    },
+    {
+      "selector": "button",
+      "has_changes": false,
+      "error": null
+    },
+    {
+      "selector": ".menu-button",
+      "has_changes": false,
+      "error": null
+    },
+    {
+      "selector": "[class*='project']",
+      "has_changes": false,
+      "error": null
+    },
+    {
+      "selector": "[class*='link']",
+      "has_changes": false,
+      "error": null
+    }
+  ],
+  "video_runtime_summary": [
+    {
+      "index": 0,
+      "is_playing_after_scroll": true,
+      "time_changed": true,
+      "autoplay_attr": false
+    },
+    {
+      "index": 1,
+      "is_playing_after_scroll": true,
+      "time_changed": true,
+      "autoplay_attr": false
+    },
+    {
+      "index": 2,
+      "is_playing_after_scroll": true,
+      "time_changed": true,
+      "autoplay_attr": false
+    },
+    {
+      "index": 3,
+      "is_playing_after_scroll": true,
+      "time_changed": true,
+      "autoplay_attr": false
+    },
+    {
+      "index": 4,
+      "is_playing_after_scroll": true,
+      "time_changed": true,
+      "autoplay_attr": false
+    },
+    {
+      "index": 5,
+      "is_playing_after_scroll": true,
+      "time_changed": true,
+      "autoplay_attr": false
+    },
+    {
+      "index": 6,
+      "is_playing_after_scroll": true,
+      "time_changed": true,
+      "autoplay_attr": false
+    },
+    {
+      "index": 7,
+      "is_playing_after_scroll": true,
+      "time_changed": true,
+      "autoplay_attr": false
+    }
+  ],
+  "unresolved": [
+    "Times New Roman: confirmed browser default (NOT_CANONICAL mantido)",
+    "Cursor customizado: não testado — requer análise visual manual",
+    "Focus keyboard states: não testado — requer validação de acessibilidade",
+    "CSS-in-JS motion: stylesheet scan limitado — não acessa JS bundle",
+    "IO video events não capturados diretamente — IO confirmado mas disparo em vídeos precisa de análise JS mais profunda"
+  ]
+}

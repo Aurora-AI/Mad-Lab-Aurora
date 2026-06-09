@@ -1,0 +1,433 @@
+{
+  "landmarks": [
+    {
+      "tag": "header",
+      "role": "header",
+      "aria_label": null,
+      "text_sample": "Global digital design studio partnering "
+    },
+    {
+      "tag": "nav",
+      "role": "nav",
+      "aria_label": null,
+      "text_sample": "Work\nStudio\nNews\nContact"
+    },
+    {
+      "tag": "footer",
+      "role": "footer",
+      "aria_label": null,
+      "text_sample": "The story behind Exo Ape is one of explo"
+    },
+    {
+      "tag": "section",
+      "role": "section",
+      "aria_label": null,
+      "text_sample": "Featured Projects\n\nHighlights of cases t"
+    },
+    {
+      "tag": "section",
+      "role": "section",
+      "aria_label": null,
+      "text_sample": "Work in motion\nPlay\nReel\n\nOur work is be"
+    },
+    {
+      "tag": "section",
+      "role": "section",
+      "aria_label": null,
+      "text_sample": "In the media\n\nFind out more about our wo"
+    }
+  ],
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Digital\nDesign\nExperience",
+      "font_size": "250px",
+      "font_weight": "400",
+      "visible": true
+    },
+    {
+      "tag": "h2",
+      "text": "Featured Projects",
+      "font_size": "14px",
+      "font_weight": "400",
+      "visible": true
+    },
+    {
+      "tag": "h3",
+      "text": "",
+      "font_size": "250px",
+      "font_weight": "400",
+      "visible": true
+    },
+    {
+      "tag": "h2",
+      "text": "Work in motion",
+      "font_size": "14px",
+      "font_weight": "400",
+      "visible": true
+    },
+    {
+      "tag": "h2",
+      "text": "Play\nReel",
+      "font_size": "144px",
+      "font_weight": "400",
+      "visible": true
+    },
+    {
+      "tag": "h2",
+      "text": "In the media",
+      "font_size": "14px",
+      "font_weight": "400",
+      "visible": true
+    },
+    {
+      "tag": "h1",
+      "text": "",
+      "font_size": "144px",
+      "font_weight": "400",
+      "visible": true
+    }
+  ],
+  "interactive": [
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Exo Ape",
+      "href": "/",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "button",
+      "role": "button",
+      "text": "open menu",
+      "href": null,
+      "aria_label": "open menu",
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Work",
+      "href": "/work",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Studio",
+      "href": "/studio",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "News",
+      "href": "/news",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Contact",
+      "href": "/contact",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "The Studio",
+      "href": "/studio",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Work",
+      "href": "/work",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Studio",
+      "href": "/studio",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "News",
+      "href": "/news",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Contact",
+      "href": "/contact",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "hello@exoape.com",
+      "href": "mailto:hello@exoape.com",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "+31 772 086 200",
+      "href": "tel:+31 772 086 200",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Ottografie Seamless Photographic Journey",
+      "href": "/work/ottografie",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Amaterasu Frontier Health Innovation",
+      "href": "/work/amaterasu",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Columbia Pictures Celebrating a Century of Cinema",
+      "href": "/work/columbia-pictures",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Cambium Pioneering Sustainable Solutions",
+      "href": "/work/cambium",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Browse all work",
+      "href": "/work",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Browse all news",
+      "href": "/news",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Willem II Singel 8\n6041 HS, Roermond\nThe Netherlands",
+      "href": "https://goo.gl/maps/8z56qdL3F85VQmLf9",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "hello@exoape.com",
+      "href": "mailto:hello@exoape.com",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Work",
+      "href": "/work",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Studio",
+      "href": "/studio",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "News",
+      "href": "/news",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Contact",
+      "href": "/contact",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Behance",
+      "href": "https://www.behance.net/exoape",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Dribbble",
+      "href": "https://dribbble.com/ExoApe",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Linkedin",
+      "href": "https://linkedin.com/company/exo-ape",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Instagram",
+      "href": "https://www.instagram.com/exoape/?hl=en",
+      "aria_label": null,
+      "tabindex": null
+    },
+    {
+      "tag": "a",
+      "role": "a",
+      "text": "Our Story",
+      "href": "/story",
+      "aria_label": null,
+      "tabindex": null
+    }
+  ],
+  "images_with_alt": [
+    {
+      "src": "https://a.storyblok.com/f/133769/1920x2716/5c24d6b467/exo-ape-hero-1.jpg/m/2400x",
+      "alt": "Venice Grand Canal",
+      "has_alt": true,
+      "role": null
+    },
+    {
+      "src": "https://a.storyblok.com/f/133769/2400x2990/729680ed7f/ottografie-2025-hero.jpg/m",
+      "alt": "fashion model posing",
+      "has_alt": true,
+      "role": null
+    },
+    {
+      "src": "https://a.storyblok.com/f/133769/2409x3000/c155d3e27e/amaterasu-hero.jpg/m/1300x",
+      "alt": "woman feeling the sun with her eyes closed",
+      "has_alt": true,
+      "role": null
+    },
+    {
+      "src": "https://a.storyblok.com/f/133769/2400x2990/540fb12941/columbia-pictures-thumbnai",
+      "alt": "Columbia Pictures",
+      "has_alt": true,
+      "role": null
+    },
+    {
+      "src": "https://a.storyblok.com/f/133769/2409x3000/cfd16e1a58/cambium-carbon-hero.jpg/m/",
+      "alt": "Mother with child in front of a modern house with wooden elements",
+      "has_alt": true,
+      "role": null
+    },
+    {
+      "src": "https://a.storyblok.com/f/133769/748x1278/5784aa7150/home-news-1.jpg/m/1200x2050",
+      "alt": "awwwards annual nominee",
+      "has_alt": true,
+      "role": null
+    },
+    {
+      "src": "https://a.storyblok.com/f/133769/348x494/21becfd449/home-news-3.jpg/m/1200x1703/",
+      "alt": "ottografie site of the year",
+      "has_alt": true,
+      "role": null
+    },
+    {
+      "src": "https://a.storyblok.com/f/133769/1440x966/8fe83b498c/home-news-7.jpg/m/1200x805/",
+      "alt": "Three smiling men pose with a spiral trophy against a red backdrop, all wearing casual beige outfits.",
+      "has_alt": true,
+      "role": null
+    }
+  ],
+  "videos_with_track": [
+    {
+      "has_track": false,
+      "aria_label": null,
+      "autoplay": false,
+      "muted": true
+    },
+    {
+      "has_track": false,
+      "aria_label": null,
+      "autoplay": false,
+      "muted": true
+    },
+    {
+      "has_track": false,
+      "aria_label": null,
+      "autoplay": false,
+      "muted": true
+    },
+    {
+      "has_track": false,
+      "aria_label": null,
+      "autoplay": false,
+      "muted": true
+    },
+    {
+      "has_track": false,
+      "aria_label": null,
+      "autoplay": false,
+      "muted": true
+    },
+    {
+      "has_track": false,
+      "aria_label": null,
+      "autoplay": false,
+      "muted": true
+    },
+    {
+      "has_track": false,
+      "aria_label": null,
+      "autoplay": false,
+      "muted": true
+    },
+    {
+      "has_track": false,
+      "aria_label": null,
+      "autoplay": false,
+      "muted": true
+    }
+  ]
+}

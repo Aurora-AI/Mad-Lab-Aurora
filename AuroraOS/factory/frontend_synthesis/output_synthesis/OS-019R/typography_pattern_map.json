@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M5",
+    "reference": "https://www.exoape.com",
+    "generated_at": "2026-06-08T22:02:41",
+    "promotion_allowed": false,
+    "source_phases": [
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ]
+  },
+  "font_system": {
+    "canonical_family": "TWKLausanne",
+    "variants": [
+      "Lausanne-300",
+      "Lausanne-400",
+      "Lausanne-500"
+    ],
+    "fallback_stack": [
+      "Helvetica Neue",
+      "Helvetica",
+      "Arial",
+      "sans-serif"
+    ],
+    "not_canonical": [
+      "Times New Roman"
+    ],
+    "source_trace": "M3/typography_system + M4/media_runtime_behavior.times_new_roman_resolution"
+  },
+  "scale": {
+    "display_monumental": {
+      "desktop": {
+        "size": "250px",
+        "tracking": "-11.5px",
+        "ratio": "-0.046",
+        "lh_ratio": "0.904"
+      },
+      "mobile": {
+        "size": "62.4px",
+        "tracking": "-1.56px",
+        "ratio": "-0.025"
+      },
+      "weight": "400",
+      "use": "hero / abertura de seção de alto impacto",
+      "source_trace": "M2/computed_styles.json h1 + M4/viewport_motion_matrix"
+    },
+    "display_large": {
+      "desktop": {
+        "size": "144px"
+      },
+      "weight": "400",
+      "use": "seção motion reel, títulos de seção de impacto médio",
+      "source_trace": "M2/computed_styles.json h2 large"
+    },
+    "label_section": {
+      "desktop": {
+        "size": "14px"
+      },
+      "weight": "400",
+      "use": "rótulo de seção antes do título",
+      "source_trace": "M2/computed_styles.json h2 label"
+    },
+    "body": {
+      "family": "Lausanne-300",
+      "size": 24.0,
+      "source_trace": "M2/computed_styles.json p"
+    }
+  },
+  "tracking_system": {
+    "rule": "tracking negativo proporcional ao tamanho, curva não linear",
+    "desktop_formula": "letter-spacing = font-size × (-0.046)",
+    "mobile_formula": "letter-spacing = font-size × (-0.025)",
+    "below_40px": "tracking neutro — 0 a -0.01",
+    "source_trace": "M3/typography_system.tracking_rule + M4/viewport_motion_matrix"
+  },
+  "not_canonical": {
+    "Times New Roman": {
+      "status": "BROWSER_DEFAULT_CONFIRMED",
+      "decision": "NOT_CANONICAL — nunca declarar em font-family stack",
+      "source_trace": "M4/media_runtime_behavior.times_new_roman_resolution"
+    }
+  }
+}

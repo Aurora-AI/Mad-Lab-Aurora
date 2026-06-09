@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M5",
+    "reference": "https://www.exoape.com",
+    "generated_at": "2026-06-08T22:02:41",
+    "promotion_allowed": false,
+    "source_phases": [
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ]
+  },
+  "sections_identified": 3,
+  "taxonomy": [
+    {
+      "id": "S-01",
+      "name": "Hero / Manifesto",
+      "role": "institutional_opening",
+      "content": "Título monumental + vídeo/foto full-bleed ou campo vazio com tipografia extrema",
+      "heading_level": "H1",
+      "heading_scale": "250px",
+      "motion": "scroll-physics reveal, Z-axis depth (padrão Mad Lab)",
+      "source_trace": "M2/dom_tree + M3/typography_system.display_monumental + M4/motion_grammar"
+    },
+    {
+      "id": "S-02",
+      "name": "Featured Work Grid",
+      "role": "portfolio_showcase",
+      "content": "Seção de projetos com vídeos editoriais em cards de proporção variada",
+      "heading_level": "H2",
+      "heading_text_evidence": "Featured Projects",
+      "heading_scale": "14px label + 144px display",
+      "motion": "IntersectionObserver gated video autoplay por card",
+      "source_trace": "M2/accessibility_tree headings + M4/media_runtime_behavior"
+    },
+    {
+      "id": "S-03",
+      "name": "Motion Reel",
+      "role": "motion_showcase",
+      "content": "Seção de vídeo de alta impacto — Play Reel — título de 144px",
+      "heading_level": "H2",
+      "heading_text_evidence": "Play Reel",
+      "heading_scale": "144px",
+      "motion": "Video ambient + intersection trigger",
+      "source_trace": "M2/accessibility_tree h2 Play Reel + M4/media_runtime_behavior"
+    },
+    {
+      "id": "S-04",
+      "name": "Press / Media",
+      "role": "credibility_social_proof",
+      "content": "Clippings de imprensa, logos de veículos, títulos em escala reduzida",
+      "heading_level": "H2",
+      "heading_text_evidence": "In the media",
+      "heading_scale": "14px label",
+      "motion": "minimal — sem vídeo dominante",
+      "source_trace": "M2/accessibility_tree headings"
+    },
+    {
+      "id": "S-05",
+      "name": "Footer",
+      "role": "navigation_closure",
+      "content": "Links de navegação, cor editorial escura (#070707)",
+      "background_color": "#070707",
+      "background_token": "--color-story",
+      "source_trace": "M2/layout_boxes footer + M3/color_semantics.story_dark"
+    }
+  ],
+  "source_trace": "M2/accessibility_tree + M2/layout_boxes + M3/color_semantics + M4"
+}

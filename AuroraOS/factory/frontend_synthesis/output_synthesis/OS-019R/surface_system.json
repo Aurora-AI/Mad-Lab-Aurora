@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M3",
+    "source": "M2 computed_styles + layout_boxes + viewport_state_desktop",
+    "generated_at": "2026-06-08T19:36:58",
+    "promotion_allowed": false
+  },
+  "surfaces": {
+    "primary_background": {
+      "color": "#ffffff",
+      "token": "--color-white",
+      "usage": "main page background, section default",
+      "source_trace": "computed_styles.json body + color_usage.json rank 2"
+    },
+    "soft_background": {
+      "color": "#f8f8f8",
+      "token": "--color-off-white",
+      "usage": "alternate section, subtle differentiation",
+      "source_trace": "css_custom_properties"
+    },
+    "editorial_dark": {
+      "color": "#070707",
+      "token": "--color-story",
+      "usage": "dark section backgrounds for editorial contrast",
+      "source_trace": "color_usage.json + css_custom_properties --color-story"
+    },
+    "navigation_surface": {
+      "color": "dynamic — adapts to is-light / is-dark body class",
+      "detected_class": "app is-light",
+      "position": "fixed",
+      "z_index": "9",
+      "source_trace": "layout_boxes.json/navigation + dom_tree.json .app.is-light"
+    }
+  },
+  "z_index_system": {
+    "layers": [
+      1,
+      2,
+      9,
+      14,
+      20
+    ],
+    "layer_map": [
+      {
+        "z": 1,
+        "role": "base_interactive"
+      },
+      {
+        "z": 2,
+        "role": "elevated_content"
+      },
+      {
+        "z": 9,
+        "role": "navigation"
+      },
+      {
+        "z": 14,
+        "role": "menu_button"
+      },
+      {
+        "z": 20,
+        "role": "overlay_or_modal"
+      }
+    ],
+    "fixed_sticky_elements": [
+      {
+        "tag": "html",
+        "classes": "",
+        "position": "fixed",
+        "z_index": "auto"
+      },
+      {
+        "tag": "div",
+        "classes": "app is-light",
+        "position": "fixed",
+        "z_index": "auto"
+      },
+      {
+        "tag": "button",
+        "classes": "menu-button",
+        "position": "fixed",
+        "z_index": "14"
+      },
+      {
+        "tag": "nav",
+        "classes": "nav",
+        "position": "fixed",
+        "z_index": "9"
+      },
+      {
+        "tag": "div",
+        "classes": "scroll",
+        "position": "fixed",
+        "z_index": "auto"
+      },
+      {
+        "tag": "div",
+        "classes": "container",
+        "position": "sticky",
+        "z_index": "auto"
+      }
+    ],
+    "source_trace": "viewport_state_desktop.json/z_index_landscape"
+  },
+  "theme_switching": {
+    "observed": true,
+    "mechanism": "CSS class on .app element — detected: .app.is-light",
+    "implication": "Dark/light theme switching via class toggle, not CSS media query",
+    "source_trace": "dom_tree.json .app class + color_usage.json pattern"
+  },
+  "overlay_system": {
+    "opacity_scale": [
+      "0.2",
+      "0.4",
+      "0.6",
+      "0.8"
+    ],
+    "tokens": {},
+    "source_trace": "css_custom_properties opacity suffix pattern"
+  }
+}

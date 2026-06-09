@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M3",
+    "source": "M2 layout_boxes.json + viewport_state_desktop.json + computed_styles.json",
+    "generated_at": "2026-06-08T19:36:58",
+    "promotion_allowed": false
+  },
+  "viewport": {
+    "desktop_width": 1440,
+    "desktop_height": 900,
+    "mobile_width": 390,
+    "mobile_height": 844,
+    "source_trace": "viewport_state_desktop.json + viewport_state_mobile.json"
+  },
+  "navigation": {
+    "height_px": 21,
+    "position": "fixed",
+    "z_index": "9",
+    "source_trace": "layout_boxes.json/navigation"
+  },
+  "page_layout": {
+    "max_content_width_detected_px": 1440,
+    "typical_content_width_px": 1200,
+    "page_width_px": 1440,
+    "horizontal_margin_approx": 120,
+    "source_trace": "layout_boxes.json/large_container analysis"
+  },
+  "section_rhythm": {
+    "section_count": 3,
+    "y_positions": [
+      1967,
+      4637,
+      6436
+    ],
+    "inter_section_gaps_px": [
+      2670,
+      1799
+    ],
+    "typical_gap_px": 2670,
+    "source_trace": "layout_boxes.json/section_* bounding boxes"
+  },
+  "media_grid": {
+    "video_count": 8,
+    "video_widths_px": [
+      276,
+      360,
+      379,
+      481,
+      584,
+      1000
+    ],
+    "video_heights_px": [
+      213,
+      225,
+      344,
+      379,
+      473,
+      600,
+      729,
+      1000
+    ],
+    "video_aspect_ratios": [
+      0.801,
+      0.802,
+      1.0,
+      1.6,
+      1.779
+    ],
+    "note": "Aspect ratios variam — grid não é uniforme. Sistema de mídia usa variação intencional de proporção.",
+    "source_trace": "layout_boxes.json/video_* bounding boxes"
+  },
+  "element_spacing": {
+    "h1_padding": "0px",
+    "body_padding": null,
+    "note": "Valores de padding extraídos de computed_styles — podem incluir padding do browser se não resetado.",
+    "source_trace": "computed_styles.json"
+  }
+}

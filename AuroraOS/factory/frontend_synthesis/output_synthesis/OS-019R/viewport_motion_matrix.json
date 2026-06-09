@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M4",
+    "source": "Playwright desktop + mobile comparison",
+    "generated_at": "2026-06-08T21:06:37",
+    "promotion_allowed": false
+  },
+  "desktop": {
+    "viewport_width": 1440,
+    "viewport_height": 900,
+    "active_breakpoints": [
+      320,
+      375,
+      390,
+      480,
+      640,
+      768,
+      1024,
+      1280,
+      1440
+    ],
+    "nav": {
+      "display": "block",
+      "flex_direction": "row",
+      "position": "fixed",
+      "height": "21px"
+    },
+    "h1": {
+      "font_size": "250px",
+      "letter_spacing": "-11.5px",
+      "line_height": "226px"
+    },
+    "main": {
+      "padding": "0px",
+      "margin": "0px"
+    }
+  },
+  "mobile": {
+    "viewport_width": 390,
+    "viewport_height": 844,
+    "active_breakpoints": [
+      320,
+      375,
+      390
+    ],
+    "nav": {
+      "display": "none",
+      "flex_direction": "row",
+      "position": "fixed",
+      "height": "auto"
+    },
+    "h1": {
+      "font_size": "62.4px",
+      "letter_spacing": "-1.56px",
+      "line_height": "62.4px"
+    },
+    "main": {
+      "padding": "0px",
+      "margin": "0px"
+    }
+  },
+  "comparison": {
+    "h1_font_size": {
+      "desktop": "250px",
+      "mobile": "62.4px"
+    },
+    "h1_letter_spacing": {
+      "desktop": "-11.5px",
+      "mobile": "-1.56px"
+    },
+    "active_breakpoints": {
+      "desktop": [
+        320,
+        375,
+        390,
+        480,
+        640,
+        768,
+        1024,
+        1280,
+        1440
+      ],
+      "mobile": [
+        320,
+        375,
+        390
+      ]
+    }
+  },
+  "transitions_comparison": {
+    "desktop_unique": 2,
+    "mobile_unique": 2,
+    "note": "Diferença de transitions entre viewports indica breakpoint-conditioned motion"
+  }
+}

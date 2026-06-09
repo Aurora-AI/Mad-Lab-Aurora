@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M5",
+    "reference": "https://www.exoape.com",
+    "generated_at": "2026-06-08T22:02:41",
+    "promotion_allowed": false,
+    "source_phases": [
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ]
+  },
+  "principle": "Esta OS extraiu padrões técnicos e visuais de uma referência real. O objetivo é inspirar a arquitetura, não reproduzir a identidade. Cada item abaixo é uma restrição ativa para agentes construtores.",
+  "hard_prohibitions": [
+    {
+      "id": "AC-001",
+      "item": "Tipografia TWKLausanne",
+      "reason": "Fonte proprietária da Exo Ape — não está disponível para uso externo",
+      "alternative": "Usar fonte aprovada no handoff que tenha equivalência de contraste e peso",
+      "source_trace": "M1/capture_metadata.json fonts_detected"
+    },
+    {
+      "id": "AC-002",
+      "item": "Assets visuais (vídeos, imagens, fotografias)",
+      "reason": "Conteúdo de propriedade intelectual da Exo Ape",
+      "alternative": "Usar mídia própria ou licenciada — nunca hotlink ou cópia de assets",
+      "source_trace": "M1/asset_inventory.json"
+    },
+    {
+      "id": "AC-003",
+      "item": "Copy e textos",
+      "reason": "Textos como 'Digital Design Experience', 'Exo Ape', copy de projetos são marca registrada",
+      "alternative": "Usar copy próprio do Mad Lab Aurora",
+      "source_trace": "M2/accessibility_tree.headings"
+    },
+    {
+      "id": "AC-004",
+      "item": "Identidade visual (logo, cores de marca, nome)",
+      "reason": "Marca da Exo Ape — proteção legal e ética",
+      "alternative": "Identidade exclusiva do Mad Lab Aurora",
+      "source_trace": "M2/dom_tree logo class"
+    }
+  ],
+  "soft_constraints": [
+    {
+      "id": "AC-005",
+      "item": "Layout de hero com H1 monocousal + vídeo na mesma composição exata",
+      "reason": "Composição muito próxima pode ser identificável como clone",
+      "guidance": "Usar a mesma escala tipográfica mas composição e conteúdo distintos"
+    },
+    {
+      "id": "AC-006",
+      "item": "Footer com background --color-story (#070707) + mesmo grid",
+      "reason": "A combinação específica é assinatura da referência",
+      "guidance": "Dark footer é permitido; usar cor e layout diferentes"
+    },
+    {
+      "id": "AC-007",
+      "item": "Grid de portfolio com as mesmas proporções de vídeo",
+      "reason": "A combinação exata de proporções é identidade editorial",
+      "guidance": "Variable media grid é o padrão — usar proporções distintas"
+    }
+  ],
+  "permitted_derivations": [
+    "Escala tipográfica extrema com tracking negativo (é técnica, não identidade)",
+    "IntersectionObserver para gating de vídeo (é padrão de performance)",
+    "will-change: transform para GPU compositing (é arquitetura de engenharia)",
+    "Paleta near-monocromática (é princípio de design, não identidade)",
+    "Estrutura de seções (hero / works / reel / footer) — estrutura genérica de portfolio",
+    "Nav fixa z:9 + menu z:14 — estrutura funcional padrão"
+  ],
+  "source_trace": "M1/capture_metadata + M2/dom_tree + M3/color_semantics + M4"
+}

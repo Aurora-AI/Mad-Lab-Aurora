@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M4",
+    "source": "Playwright CSS stylesheet scan + matchMedia",
+    "generated_at": "2026-06-08T21:06:37",
+    "promotion_allowed": false
+  },
+  "runtime_data": {
+    "prefers_reduced_motion_active": false,
+    "css_media_rules_found": [],
+    "has_css_reduced_motion_support": false,
+    "total_css_rules_scanned": 1212,
+    "js_matchmedia_queried": false
+  },
+  "css_support_confirmed": false,
+  "rules_count": 0,
+  "rules": [],
+  "interpretation": "NOT_DETECTED — prefers-reduced-motion não encontrado em CSS escaneado. Pode estar em CSS-in-JS bundled. Marcar como hypothesis_unresolved para validação M6.",
+  "m3_contract": {
+    "reducedMotion_fail_closed": true,
+    "source": "OS-019 M0 contract — useReducedMotion() fail-closed preservado",
+    "note": "Contrato de acessibilidade da OS-019 mantido — a referência pode não implementar, mas o Mad Lab Theme deve."
+  }
+}

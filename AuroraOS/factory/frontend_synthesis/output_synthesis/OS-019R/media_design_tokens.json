@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M3",
+    "source": "M2 media_inventory.json + layout_boxes.json",
+    "generated_at": "2026-06-08T19:36:58",
+    "promotion_allowed": false
+  },
+  "video_system": {
+    "total_count": 8,
+    "role_distribution": {
+      "editorial_media": 8
+    },
+    "autoplay_html_attribute": 0,
+    "autoplay_note": "autoplay=False em HTML não confirma ausência de autoplay. O site usa JavaScript para acionar autoplay via IntersectionObserver. Classificação definitiva requer análise JS em M4.",
+    "autoplay_classification": "hypothesis_for_M4_validation",
+    "muted": 8,
+    "loop": 8,
+    "attribute_pattern": "muted=True + loop=True em todos os vídeos — padrão de ambient/editorial media",
+    "aspect_ratios": {
+      "video_0": {
+        "dimensions": "584×729",
+        "ratio": 0.801,
+        "ratio_name": "3:4 (portrait)"
+      },
+      "video_1": {
+        "dimensions": "379×473",
+        "ratio": 0.801,
+        "ratio_name": "3:4 (portrait)"
+      },
+      "video_2": {
+        "dimensions": "481×600",
+        "ratio": 0.802,
+        "ratio_name": "3:4 (portrait)"
+      },
+      "video_3": {
+        "dimensions": "276×344",
+        "ratio": 0.802,
+        "ratio_name": "3:4 (portrait)"
+      },
+      "video_4": {
+        "dimensions": "360×225",
+        "ratio": 1.6,
+        "ratio_name": "landscape_custom"
+      },
+      "video_5": {
+        "dimensions": "379×213",
+        "ratio": 1.779,
+        "ratio_name": "16:9 (widescreen)"
+      },
+      "video_6": {
+        "dimensions": "379×379",
+        "ratio": 1.0,
+        "ratio_name": "1:1 (square)"
+      },
+      "video_7": {
+        "dimensions": "1000×1000",
+        "ratio": 1.0,
+        "ratio_name": "1:1 (square)"
+      }
+    },
+    "design_token_video_as_surface": {
+      "description": "Vídeos usados como superfícies editoriais em cards/projetos — não como hero background puro",
+      "dimensions_range": {
+        "min_width": 276,
+        "max_width": 1000,
+        "min_height": 213,
+        "max_height": 1000
+      },
+      "source_trace": "media_inventory.json + layout_boxes.json video_*"
+    }
+  },
+  "image_system": {
+    "total_count": 8,
+    "all_with_alt": true,
+    "alt_coverage": "8/8",
+    "loading_lazy_count": 7,
+    "source_trace": "media_inventory.json images"
+  },
+  "accessibility": {
+    "videos_with_track": 0,
+    "videos_without_track": 8,
+    "risk": "HIGH — 0/8 vídeos têm captions/track. Violação WCAG 1.2.2 se vídeos tiverem áudio relevante.",
+    "mitigation": "Vídeos são muted+loop — provavelmente ambient/editorial sem fala. Verificar em M4 se há narração.",
+    "source_trace": "accessibility_tree.json videos_with_track"
+  },
+  "media_grammar": {
+    "description": "Mídia como elemento editorial central, não decorativo. Proporções variadas intencionais.",
+    "motion_classification": "hypothesis_for_M4_validation — comportamento de autoplay requer análise JS",
+    "source_trace": "media_inventory.json + layout_boxes.json + accessibility_tree.json"
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M3",
+    "source": "M2 computed_styles + font_inventory + a11y_tree",
+    "generated_at": "2026-06-08T19:36:58",
+    "promotion_allowed": false
+  },
+  "font_families": {
+    "primary": {
+      "name": "TWKLausanne",
+      "variants": [
+        "Lausanne-300",
+        "Lausanne-400",
+        "Lausanne-500"
+      ],
+      "weights_in_use": {
+        "300": {
+          "css_computed_weight": "400",
+          "sizes_in_use": [
+            "14px",
+            "16px",
+            "24px",
+            "144px",
+            "250px"
+          ],
+          "usage_contexts": [
+            {
+              "tag": "a",
+              "text": "Work"
+            },
+            {
+              "tag": "a",
+              "text": "Studio"
+            },
+            {
+              "tag": "a",
+              "text": "News"
+            },
+            {
+              "tag": "a",
+              "text": "Contact"
+            },
+            {
+              "tag": "p",
+              "text": "Global digital design studio p"
+            }
+          ]
+        },
+        "400": {
+          "css_computed_weight": "400",
+          "sizes_in_use": [
+            "14px"
+          ],
+          "usage_contexts": [
+            {
+              "tag": "h2",
+              "text": "Featured Projects"
+            },
+            {
+              "tag": "div",
+              "text": "Featured Projects"
+            },
+            {
+              "tag": "h2",
+              "text": "Work in motion"
+            },
+            {
+              "tag": "div",
+              "text": "Work in motion"
+            },
+            {
+              "tag": "h2",
+              "text": "In the media"
+            }
+          ]
+        },
+        "500": {
+          "css_computed_weight": "400",
+          "sizes_in_use": [
+            "14px"
+          ],
+          "usage_contexts": [
+            {
+              "tag": "strong",
+              "text": "Ottografie"
+            },
+            {
+              "tag": "strong",
+              "text": "Amaterasu"
+            },
+            {
+              "tag": "strong",
+              "text": "Columbia Pictures"
+            },
+            {
+              "tag": "strong",
+              "text": "Cambium"
+            }
+          ]
+        }
+      },
+      "hosting": "self-hosted woff2 (~30KB per variant)",
+      "fallback_stack": [
+        "Helvetica Neue",
+        "Helvetica",
+        "Arial",
+        "sans-serif"
+      ],
+      "source_trace": "M1 network_manifest.json + M2 font_inventory.json"
+    },
+    "fallback_detected": {
+      "name": "Times New Roman",
+      "status": "fallback_or_default_detected",
+      "classification": "NOT_CANONICAL",
+      "requires_usage_context": true,
+      "evidence": [
+        {
+          "family": "\"Times New Roman\"",
+          "weight": "400",
+          "sizes": [
+            "16px"
+          ],
+          "line_heights": [
+            "normal",
+            "32px"
+          ],
+          "letter_spacings": [
+            "normal"
+          ],
+          "text_transforms": [
+            "none"
+          ],
+          "usage_contexts": [
+            {
+              "tag": "html",
+              "text": "Exo Ape\nWork\nStudio\nNews\nConta"
+            },
+            {
+              "tag": "body",
+              "text": "Exo Ape\nWork\nStudio\nNews\nConta"
+            },
+            {
+              "tag": "div",
+              "text": "Exo Ape\nWork\nStudio\nNews\nConta"
+            },
+            {
+              "tag": "div",
+              "text": "Exo Ape\nWork\nStudio\nNews\nConta"
+            },
+            {
+              "tag": "div",
+              "text": "Exo Ape\nWork\nStudio\nNews\nConta"
+            }
+          ]
+        }
+      ],
+      "note": "Detectado pelo browser em nós não completamente estilizados ou herança residual. Não entra como token canônico sem confirmação de uso deliberado.",
+      "source_trace": "M2 font_inventory.json — presença não confirma intencionalidade"
+    }
+  },
+  "type_scale": [
+    {
+      "level": "display_monumental",
+      "tag": "h1",
+      "font_family": "Lausanne-300",
+      "font_size_px": 250.0,
+      "font_size_rem_approx": 15.62,
+      "font_weight_computed": "400",
+      "line_height_px": 226.0,
+      "line_height_ratio": "0.904",
+      "letter_spacing_px": -11.5,
+      "tracking_ratio": "-0.046",
+      "text_transform": "none",
+      "color_computed": "rgb(255, 255, 255)",
+      "usage_context": "hero/display monumental",
+      "source_trace": "computed_styles.json/h1 + a11y_tree.headings",
+      "notes": "Escala extrema de display — tracking negativo artesanal (-4.6% do font-size). Não usar abaixo de 80px sem recalibrar tracking."
+    },
+    {
+      "level": "display_large",
+      "tag": "h2",
+      "font_family": "Lausanne-300",
+      "font_size_px": 144.0,
+      "font_size_rem_approx": 9.0,
+      "font_weight_computed": "400",
+      "line_height_px": 144.0,
+      "line_height_ratio": "1.000",
+      "letter_spacing_px": -5.0,
+      "tracking_ratio": "-0.035",
+      "text_transform": "none",
+      "usage_context": "section display (Play Reel, hero sections)",
+      "source_trace": "computed_styles.json/h2 large scale"
+    },
+    {
+      "level": "label_section",
+      "tag": "h2",
+      "font_family": "Lausanne-400",
+      "font_size_px": 14.0,
+      "font_size_rem_approx": 0.88,
+      "font_weight_computed": "400",
+      "line_height_px": 37.0,
+      "line_height_ratio": "2.643",
+      "letter_spacing_px": null,
+      "tracking_ratio": null,
+      "text_transform": "none",
+      "usage_context": "section labels, category tags",
+      "source_trace": "computed_styles.json/h2 label scale"
+    },
+    {
+      "level": "body",
+      "tag": "p",
+      "font_family": "Lausanne-300",
+      "font_size_px": 24.0,
+      "font_size_rem_approx": 1.5,
+      "font_weight_computed": "400",
+      "line_height_px": 32.0,
+      "line_height_ratio": "1.333",
+      "letter_spacing_px": null,
+      "tracking_ratio": null,
+      "text_transform": "none",
+      "usage_context": "body text, editorial copy",
+      "source_trace": "computed_styles.json/p"
+    }
+  ],
+  "tracking_rule": {
+    "rule": "negative_tracking_scale",
+    "description": "Quanto maior o tamanho de display, mais negativo o tracking óptico.",
+    "evidence": {
+      "250px_display": "-11.5px = -0.046 do font-size"
+    },
+    "safe_range": {
+      "display_gt_100px": "tracking-ratio entre -0.04 e -0.06",
+      "display_lt_60px": "tracking-ratio entre -0.01 e -0.02",
+      "label_14px": "tracking-ratio neutra a levemente negativa"
+    },
+    "source_trace": "computed_styles.json/h1.letter_spacing"
+  }
+}

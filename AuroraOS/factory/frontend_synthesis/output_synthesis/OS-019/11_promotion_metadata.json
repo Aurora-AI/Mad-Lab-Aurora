@@ -6,7 +6,7 @@
   "promotion_eligibility": "HUMAN_REVIEW_REQUIRED",
   "eligible_for_human_review": true,
   "os_id": "OS-019",
-  "m_id": "OS-019-M3.1",
+  "m_id": "OS-019-M4.1",
   "contrast_remediation": {
     "applied": true,
     "token": "editorial-warm",
@@ -17,13 +17,16 @@
   },
   "tsx_candidate": "6_SynthesizedPage.client.tsx",
   "screenshot": "8_rendered_screenshot.png",
-  "perceptual_score": 89.38,
+  "perceptual_score": 100.0,
   "perceptual_decision": "approved",
-  "perceptual_findings_count": 1,
+  "perceptual_findings_count": 0,
   "perceptual_blocked_reasons": [],
-  "screenshot_sha256": "07900d7f47c2ab00aa37128f2b5af693b17ba148537ee236ca0e60dba7965074",
-  "qa_report_sha256": "6c509506a5193ea4280a9469050b16dbe0406c493fd263d7ffb8de15cc70969e",
-  "gate_checks_passed": 16,
-  "gate_checks_total": 16,
-  "reduced_motion_contract": "VERIFIED"
+  "screenshot_sha256": "18b03df1087a7c1766c193096ae0b389b123346238a2e6ab9cad0510247b873c",
+  "qa_report_sha256": "cecf5d6593c48685311ce0425600d172a86bdb2ae1706bb80316c07bb5c35743",
+  "gate_checks_passed": 24,
+  "gate_checks_total": 24,
+  "reduced_motion_contract": "VERIFIED",
+  "style_integrity_gate": "PASSED",
+  "human_review_result": "REPROVADO_EM_M4_REPROCESSADO_EM_M4_1",
+  "generated_at": 1780949876
 }

@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M5",
+    "reference": "https://www.exoape.com",
+    "generated_at": "2026-06-08T22:02:41",
+    "promotion_allowed": false,
+    "source_phases": [
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ]
+  },
+  "reference_data": {
+    "will_change_transform_count": 68,
+    "z_index_layers": [
+      1,
+      2,
+      9,
+      14,
+      20
+    ],
+    "transform_elements_at_rest": 15,
+    "source_trace": "M4/motion_grammar.will_change + M3/surface_system.z_index_system"
+  },
+  "mad_lab_budget": {
+    "interpretation": "A referência usa 68 elementos com will-change:transform. Isso é a referência, não o target. O Mad Lab Theme deve definir budget próprio baseado em viewport e qualidade.",
+    "budget_by_quality": {
+      "low": {
+        "max_will_change_layers": 5,
+        "parallax": false,
+        "video_autoplay": false
+      },
+      "medium": {
+        "max_will_change_layers": 12,
+        "parallax": "sutil",
+        "video_autoplay": "intersection_only"
+      },
+      "high": {
+        "max_will_change_layers": 20,
+        "parallax": true,
+        "video_autoplay": "intersection_only"
+      },
+      "reduced_motion": {
+        "max_will_change_layers": 0,
+        "parallax": false,
+        "video_autoplay": false
+      }
+    },
+    "rules": [
+      "will-change apenas nos elementos que serão animados no próximo frame",
+      "Remover will-change após animação para liberar GPU layer",
+      "Testar em dispositivos de médio desempenho (não apenas high-end)",
+      "Z-index: manter hierarquia com no máximo 5 camadas declaradas",
+      "Não usar will-change: all"
+    ]
+  },
+  "z_index_budget": {
+    "max_layers": 5,
+    "recommended_values": [
+      1,
+      2,
+      9,
+      14,
+      20
+    ],
+    "semantic_map": {
+      "1": "base_interactive",
+      "2": "elevated_content",
+      "9": "navigation",
+      "14": "menu_trigger",
+      "20": "overlay_modal"
+    },
+    "source_trace": "M3/surface_system.z_index_system"
+  },
+  "source_trace": "M4/motion_grammar + M3/surface_system"
+}

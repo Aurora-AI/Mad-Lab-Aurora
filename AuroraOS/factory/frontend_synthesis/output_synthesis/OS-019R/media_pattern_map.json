@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M5",
+    "reference": "https://www.exoape.com",
+    "generated_at": "2026-06-08T22:02:41",
+    "promotion_allowed": false,
+    "source_phases": [
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ]
+  },
+  "video_pattern": {
+    "id": "MP-001",
+    "name": "Intersection-Gated Editorial Video",
+    "mechanism": "IntersectionObserver (JS) — autoplay HTML=False",
+    "attributes": {
+      "muted": true,
+      "loop": true,
+      "autoplay_html": false,
+      "controls": false
+    },
+    "trigger": "IO ratio >= threshold (threshold estimado ~0.3)",
+    "total_in_reference": 8,
+    "roles_observed": [
+      "editorial_media"
+    ],
+    "aspect_ratio_variation": [
+      0.801,
+      0.802,
+      1.0,
+      1.6,
+      1.779
+    ],
+    "a11y_risk": "0/8 vídeos com track — aceito se muted+loop ambient sem narração. Validar com stakeholder.",
+    "production_rule": "preload='none' até IO threshold. Poster obrigatório.",
+    "reduced_motion": "poster_static — não acionar play() se prefers-reduced-motion",
+    "source_trace": "M1/capture_metadata + M4/media_runtime_behavior + M2/media_inventory"
+  },
+  "image_pattern": {
+    "id": "MP-002",
+    "name": "Alt-Covered Editorial Image",
+    "alt_coverage": "8/8",
+    "loading": "lazy observado",
+    "use": "thumbnails, case study media, editorial support",
+    "a11y_status": "COMPLIANT — 8/8 com alt text",
+    "source_trace": "M2/media_inventory + M2/accessibility_tree"
+  },
+  "source_trace": "M1/asset_inventory + M2/media_inventory + M4/media_runtime_behavior"
+}

@@ -1,25 +1,19 @@
 {
-  "report_id": "perceptual-c5f887a8",
-  "render_bundle_id": "bundle-os019-mad-lab-001",
-  "screenshot_path": "C:\\Projetos\\Aurora\\AuroraOS\\factory\\frontend_synthesis\\output_synthesis\\OS-019\\m3_1_render_sandbox\\6_rendered_screenshot.png",
+  "report_id": "perceptual-m4-1-os019",
+  "render_bundle_id": "m4-1-a810bcac",
+  "screenshot_path": "C:\\Projetos\\Aurora\\AuroraOS\\factory\\frontend_synthesis\\output_synthesis\\OS-019\\8_rendered_screenshot.png",
   "perceptual_score": {
+    "final_score": 100.0,
     "structural_similarity_score": 100.0,
     "contrast_score": 100.0,
-    "visual_density_score": 36.275720164609055,
+    "visual_density_score": 100.0,
     "layout_integrity_score": 100.0,
     "overlap_score": 100.0,
-    "viewport_fit_score": 100.0,
-    "final_score": 89.37928669410151
+    "viewport_fit_score": 100.0
   },
-  "findings": [
-    {
-      "code": "LOW_VISUAL_DENSITY",
-      "severity": "P2",
-      "axis": "density",
-      "message": "Densidade visual baixa (0.0054 < 0.015). Verifique se o espaco negativo e intencional.",
-      "recommended_action": "Rever layout se espaco negativo nao for intencional."
-    }
-  ],
+  "findings": [],
   "decision": "approved",
-  "blocked_reasons": []
+  "blocked_reasons": [],
+  "micro_step": "OS-019-M4.1",
+  "generated_at": 1780949876
 }

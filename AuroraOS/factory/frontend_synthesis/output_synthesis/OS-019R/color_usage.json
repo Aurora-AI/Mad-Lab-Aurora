@@ -1,0 +1,279 @@
+[
+  {
+    "color": "rgb(13, 14, 19)",
+    "usages": [
+      {
+        "prop": "color",
+        "tag": "body",
+        "context": "body: \"Exo Ape\nWork\nStudio\n\""
+      },
+      {
+        "prop": "border-color",
+        "tag": "body",
+        "context": "body"
+      },
+      {
+        "prop": "outline-color",
+        "tag": "body",
+        "context": "body"
+      },
+      {
+        "prop": "color",
+        "tag": "div",
+        "context": "div: \"Exo Ape\nWork\nStudio\n\""
+      },
+      {
+        "prop": "border-color",
+        "tag": "div",
+        "context": "div"
+      }
+    ],
+    "count": 267
+  },
+  {
+    "color": "rgb(255, 255, 255)",
+    "usages": [
+      {
+        "prop": "background-color",
+        "tag": "body",
+        "context": "body"
+      },
+      {
+        "prop": "color",
+        "tag": "svg",
+        "context": "svg: \"\""
+      },
+      {
+        "prop": "border-color",
+        "tag": "svg",
+        "context": "svg"
+      },
+      {
+        "prop": "outline-color",
+        "tag": "svg",
+        "context": "svg"
+      },
+      {
+        "prop": "color",
+        "tag": "path",
+        "context": "path: \"\""
+      }
+    ],
+    "count": 257
+  },
+  {
+    "color": "rgba(224, 205, 189, 0.8)",
+    "usages": [
+      {
+        "prop": "color",
+        "tag": "p",
+        "context": "p: \"The story behind Exo\""
+      },
+      {
+        "prop": "border-color",
+        "tag": "p",
+        "context": "p"
+      },
+      {
+        "prop": "outline-color",
+        "tag": "p",
+        "context": "p"
+      },
+      {
+        "prop": "color",
+        "tag": "li",
+        "context": "li: \"Willem II Singel 8\n6\""
+      },
+      {
+        "prop": "border-color",
+        "tag": "li",
+        "context": "li"
+      }
+    ],
+    "count": 69
+  },
+  {
+    "color": "rgb(224, 204, 187)",
+    "usages": [
+      {
+        "prop": "color",
+        "tag": "footer",
+        "context": "footer: \"The story behind Exo\""
+      },
+      {
+        "prop": "border-color",
+        "tag": "footer",
+        "context": "footer"
+      },
+      {
+        "prop": "outline-color",
+        "tag": "footer",
+        "context": "footer"
+      },
+      {
+        "prop": "color",
+        "tag": "div",
+        "context": "div: \"The story behind Exo\""
+      },
+      {
+        "prop": "border-color",
+        "tag": "div",
+        "context": "div"
+      }
+    ],
+    "count": 61
+  },
+  {
+    "color": "rgb(228, 224, 219)",
+    "usages": [
+      {
+        "prop": "color",
+        "tag": "section",
+        "context": "section: \"Work in motion\nPlay\n\""
+      },
+      {
+        "prop": "border-color",
+        "tag": "section",
+        "context": "section"
+      },
+      {
+        "prop": "outline-color",
+        "tag": "section",
+        "context": "section"
+      },
+      {
+        "prop": "color",
+        "tag": "div",
+        "context": "div: \"Work in motion\nPlay\n\""
+      },
+      {
+        "prop": "border-color",
+        "tag": "div",
+        "context": "div"
+      }
+    ],
+    "count": 45
+  },
+  {
+    "color": "rgba(13, 14, 19, 0.6)",
+    "usages": [
+      {
+        "prop": "color",
+        "tag": "p",
+        "context": "p: \"Ottografie Seamless \""
+      },
+      {
+        "prop": "border-color",
+        "tag": "p",
+        "context": "p"
+      },
+      {
+        "prop": "outline-color",
+        "tag": "p",
+        "context": "p"
+      },
+      {
+        "prop": "color",
+        "tag": "span",
+        "context": "span: \"Ottografie Seamless \""
+      },
+      {
+        "prop": "border-color",
+        "tag": "span",
+        "context": "span"
+      }
+    ],
+    "count": 24
+  },
+  {
+    "color": "rgb(0, 0, 0)",
+    "usages": [
+      {
+        "prop": "color",
+        "tag": "html",
+        "context": "html: \"Exo Ape\nWork\nStudio\n\""
+      },
+      {
+        "prop": "border-color",
+        "tag": "html",
+        "context": "html"
+      },
+      {
+        "prop": "outline-color",
+        "tag": "html",
+        "context": "html"
+      }
+    ],
+    "count": 3
+  },
+  {
+    "color": "rgba(255, 255, 255, 0.6)",
+    "usages": [
+      {
+        "prop": "color",
+        "tag": "div",
+        "context": "div: \"Scroll to explore\""
+      },
+      {
+        "prop": "border-color",
+        "tag": "div",
+        "context": "div"
+      },
+      {
+        "prop": "outline-color",
+        "tag": "div",
+        "context": "div"
+      }
+    ],
+    "count": 3
+  },
+  {
+    "color": "rgba(13, 14, 19, 0.4)",
+    "usages": [
+      {
+        "prop": "background-color",
+        "tag": "div",
+        "context": "div"
+      },
+      {
+        "prop": "background-color",
+        "tag": "div",
+        "context": "div"
+      }
+    ],
+    "count": 2
+  },
+  {
+    "color": "rgba(0, 0, 0, 0.15)",
+    "usages": [
+      {
+        "prop": "background-color",
+        "tag": "div",
+        "context": "div"
+      }
+    ],
+    "count": 1
+  },
+  {
+    "color": "rgb(7, 7, 7)",
+    "usages": [
+      {
+        "prop": "background-color",
+        "tag": "footer",
+        "context": "footer"
+      }
+    ],
+    "count": 1
+  },
+  {
+    "color": "rgba(224, 205, 189, 0.6)",
+    "usages": [
+      {
+        "prop": "background-color",
+        "tag": "div",
+        "context": "div"
+      }
+    ],
+    "count": 1
+  }
+]

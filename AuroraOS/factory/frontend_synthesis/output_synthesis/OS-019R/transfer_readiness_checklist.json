@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M6",
+    "generated_at": "2026-06-08T22:35:31",
+    "promotion_allowed": false
+  },
+  "micro_steps": {
+    "M1 Reference Acquisition": {
+      "status": "CONCLUÍDA",
+      "gates": "12/12"
+    },
+    "M2 DevTools Extraction": {
+      "status": "CONCLUÍDA",
+      "gates": "15/15"
+    },
+    "M3 Design System Synthesis": {
+      "status": "CONCLUÍDA",
+      "gates": "17/17"
+    },
+    "M4 Motion Grammar": {
+      "status": "CONCLUÍDA",
+      "gates": "19/19"
+    },
+    "M5 Component Pattern Map": {
+      "status": "CONCLUÍDA",
+      "gates": "21/21"
+    },
+    "M6 Agent Handoff Package": {
+      "status": "EM EXECUÇÃO",
+      "gates": "—"
+    }
+  },
+  "criteria": [
+    {
+      "criterion": "Todos os artefatos M1–M5 presentes",
+      "passed": true
+    },
+    {
+      "criterion": "Cada padrão tem source_trace",
+      "passed": true
+    },
+    {
+      "criterion": "Cada restrição tem justificativa",
+      "passed": true
+    },
+    {
+      "criterion": "Budget GPU definido (low/medium/high/rm)",
+      "passed": true
+    },
+    {
+      "criterion": "Anti-clone explícito e acionável",
+      "passed": true
+    },
+    {
+      "criterion": "Unresolved items listados",
+      "passed": true
+    },
+    {
+      "criterion": "Próximo agente consegue construir sem Exo Ape",
+      "passed": true
+    },
+    {
+      "criterion": "Nenhum candidato visual gerado",
+      "passed": true
+    },
+    {
+      "criterion": "Nenhum código novo gerado",
+      "passed": true
+    },
+    {
+      "criterion": "Nenhum browser necessário em M6",
+      "passed": true
+    },
+    {
+      "criterion": "promotion_allowed=false preservado",
+      "passed": true
+    },
+    {
+      "criterion": "Times New Roman NOT_CANONICAL documentado",
+      "passed": true
+    },
+    {
+      "criterion": "IntersectionObserver confirmado como padrão",
+      "passed": true
+    },
+    {
+      "criterion": "Reduced motion fail-closed documentado",
+      "passed": true
+    },
+    {
+      "criterion": "Font stack sem TWKLausanne declarada",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "unresolved": [
+    "Custom cursor behavior — não testado",
+    "Keyboard focus states — não testado",
+    "CSS-in-JS animation details — stylesheet scan limitado",
+    "Tracking intermediário 60–100px — não observado nesta faixa"
+  ]
+}

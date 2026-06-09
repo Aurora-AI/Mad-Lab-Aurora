@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "os": "OS-019R",
+    "phase": "M3",
+    "generated_at": "2026-06-08T19:36:58",
+    "promotion_allowed": false
+  },
+  "entries": [
+    {
+      "token_group": "typography_system.type_scale.display_monumental",
+      "derived_from": "computed_styles.json/h1",
+      "key_values": {
+        "font_size": "250px",
+        "letter_spacing": "-11.5px",
+        "font_weight": "400"
+      },
+      "confidence": "high",
+      "note": "Extraído diretamente do browser"
+    },
+    {
+      "token_group": "typography_system.font_families.primary",
+      "derived_from": "M1 network_manifest.json + M2 font_inventory.json",
+      "key_values": {
+        "name": "TWKLausanne",
+        "variants": [
+          "300",
+          "400",
+          "500"
+        ]
+      },
+      "confidence": "high",
+      "note": "Confirmado via M1 network interception"
+    },
+    {
+      "token_group": "typography_system.font_families.fallback_detected",
+      "derived_from": "M2 font_inventory.json",
+      "key_values": {
+        "name": "Times New Roman",
+        "status": "NOT_CANONICAL"
+      },
+      "confidence": "medium",
+      "note": "Presença detectada mas não confirmada como uso intencional"
+    },
+    {
+      "token_group": "design_tokens.semantic_tokens",
+      "derived_from": "viewport_state_desktop.json/css_custom_properties",
+      "key_values": {
+        "total_css_vars": 56
+      },
+      "confidence": "high",
+      "note": "CSS custom properties extraídas do :root via browser JS"
+    },
+    {
+      "token_group": "color_semantics.core_colors",
+      "derived_from": "color_usage.json + css_custom_properties",
+      "key_values": {
+        "dominant": "#0d0e13",
+        "background": "#ffffff",
+        "warm": "#e0ccbb"
+      },
+      "confidence": "high",
+      "note": "Derivado de computed colors + frequência de uso"
+    },
+    {
+      "token_group": "color_semantics.contrast_pairs",
+      "derived_from": "color_semantics.core_colors",
+      "key_values": {
+        "method": "wcag_formula"
+      },
+      "confidence": "medium",
+      "note": "Calculado — confirmar com ferramenta auditora em M6"
+    },
+    {
+      "token_group": "spacing_system.page_layout",
+      "derived_from": "layout_boxes.json/large_container analysis",
+      "key_values": {
+        "max_width_detected": 1440
+      },
+      "confidence": "medium",
+      "note": "Derivado de bounding boxes — não de CSS max-width direta"
+    },
+    {
+      "token_group": "spacing_system.section_rhythm",
+      "derived_from": "layout_boxes.json/section_* y_positions",
+      "key_values": {
+        "section_count": 3
+      },
+      "confidence": "medium",
+      "note": "Gaps derivados de posicionamento, não de margin/padding direto"
+    },
+    {
+      "token_group": "surface_system.z_index_system",
+      "derived_from": "viewport_state_desktop.json/z_index_landscape",
+      "key_values": {
+        "layers": [
+          1,
+          2,
+          9,
+          14,
+          20
+        ]
+      },
+      "confidence": "high",
+      "note": "Extraído via computed style zIndex de todos os elementos"
+    },
+    {
+      "token_group": "media_design_tokens.video_system",
+      "derived_from": "media_inventory.json + layout_boxes.json",
+      "key_values": {
+        "total_videos": 8,
+        "autoplay_classification": "hypothesis_for_M4"
+      },
+      "confidence": "high_structure_low_behavior",
+      "note": "Estrutura confirmada. Comportamento de autoplay JS requer M4"
+    }
+  ],
+  "unresolved_for_m4": [
+    "Comportamento real de autoplay — IntersectionObserver vs atributo HTML",
+    "Times New Roman — confirmar se uso é intencional",
+    "letter-spacing rule nos tamanhos intermediários (60px–100px)",
+    "Breakpoints responsive exatos — viewport_state capturou apenas 2 viewports"
+  ]
+}

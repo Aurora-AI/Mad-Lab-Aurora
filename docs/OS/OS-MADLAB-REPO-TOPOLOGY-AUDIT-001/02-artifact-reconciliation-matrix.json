@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "audit_os": "OS-MADLAB-REPO-TOPOLOGY-AUDIT-AND-ENVIRONMENT-RECONCILIATION-20260609-001",
+  "date": "2026-06-09",
+  "canonical_path": "C:/Projetos/MadLabAurora",
+  "accidental_path": "C:/Projetos/Aurora/MadLabAurora",
+  "nature_of_accidental_path": "subdirectory_inside_aurora_repo_not_separate_clone",
+  "artifacts": [
+    {
+      "item": "factory/OS-MADLAB-BUILD-001",
+      "source": "accidental",
+      "classification": "COPY_TO_CANONICAL",
+      "target": "docs/OS/OS-MADLAB-BUILD-001",
+      "action_required": "migrate after explicit approval",
+      "contains": ["m1","m2","m3","m4","m5","m6","m7","CLOSURE","PROMOTION_APPROVAL_RECORD"]
+    },
+    {
+      "item": "factory/OS-MADLAB-INTEGRATION-001-SCOPE.md",
+      "source": "accidental",
+      "classification": "COPY_TO_CANONICAL",
+      "target": "docs/OS/OS-MADLAB-INTEGRATION-001-SCOPE.md",
+      "action_required": "migrate after approval — integration frozen, doc should be in canonical"
+    },
+    {
+      "item": "docs/OS/OS-019R-SCOPE-RECONCILIATION.md",
+      "source": "accidental",
+      "classification": "COPY_TO_CANONICAL",
+      "target": "docs/OS/OS-019R-SCOPE-RECONCILIATION.md",
+      "action_required": "migrate after approval"
+    },
+    {
+      "item": "docs/MANUAL_DA_AGENCIA.md",
+      "source": "accidental",
+      "classification": "COPY_TO_CANONICAL",
+      "target": "docs/MANUAL_DA_AGENCIA.md",
+      "action_required": "migrate after approval"
+    },
+    {
+      "item": "product-manifest.json",
+      "source": "accidental",
+      "classification": "DIVERGENT_REVIEW_REQUIRED",
+      "issue": "path field contains accidental location C:/Projetos/Aurora/MadLabAurora",
+      "action_required": "correct path to C:/Projetos/MadLabAurora before migrating"
+    },
+    {
+      "item": "project-manifest.json",
+      "source": "accidental",
+      "classification": "DIVERGENT_REVIEW_REQUIRED",
+      "action_required": "compare with canonical project-manifest.json before action"
+    },
+    {
+      "item": ".playwright-mcp/",
+      "source": "accidental",
+      "classification": "QUARANTINE",
+      "action_required": "do not copy — runtime sandbox artifact, review before delete"
+    }
+  ],
+  "summary": {
+    "COPY_TO_CANONICAL": 4,
+    "DIVERGENT_REVIEW_REQUIRED": 2,
+    "QUARANTINE": 1,
+    "no_destructive_action_taken": true,
+    "build_001_in_canonical": false,
+    "build_001_location": "C:/Projetos/Aurora/MadLabAurora/factory/OS-MADLAB-BUILD-001"
+  }
+}

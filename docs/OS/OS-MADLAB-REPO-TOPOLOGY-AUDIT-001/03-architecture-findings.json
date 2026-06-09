@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "audit_os": "OS-MADLAB-REPO-TOPOLOGY-AUDIT-AND-ENVIRONMENT-RECONCILIATION-20260609-001",
+  "date": "2026-06-09",
+  "repo": "C:/Projetos/MadLabAurora",
+  "present": [
+    "docs/Vault (with OS-Evidence, Token-Ledger, Decisions, KIs, Threads, Raw, Processed, Deltas)",
+    "docs/OS",
+    "docs/brand",
+    "docs/specs",
+    "ElysianCorp (Astro design system — full project)",
+    "aurora-web (Vite/React)",
+    "aurora-agents",
+    "aurora-visual-assets",
+    "AuroraCognitiveAssets",
+    "conductor",
+    "integrations",
+    "scripts (design-system-lint.ps1, hydration-integrity-check.js, validate-configs.ps1)",
+    "project-manifest.json",
+    "creative-area-manifest.json",
+    "AGENTS.md",
+    "GEMINI.md"
+  ],
+  "absent": [
+    "transfer/ (no explicit transfer/ready or transfer/rejected zone)",
+    "playground/ (scratch/ may serve this role — needs classification)",
+    "governance/ (scripts exist but no governance folder)",
+    "factory/ (BUILD-001 artifacts not in canonical)",
+    "product-manifest.json (exists only in accidental path with wrong path field)"
+  ],
+  "partial": [
+    "quality gates (scripts present, no formal gate records in canonical)",
+    "promotion package (PROMOTION_APPROVAL_RECORD exists only in accidental path)"
+  ],
+  "blockers_for_promotion": [
+    "BUILD-001 artifacts not in canonical repo",
+    "product-manifest.json path field incorrect",
+    "no transfer zone defined in canonical"
+  ]
+}

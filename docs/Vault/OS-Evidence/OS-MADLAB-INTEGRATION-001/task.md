@@ -1,8 +1,10 @@
 # OS-MADLAB-INTEGRATION-001 — Astro Islands Integration Bridge — Task Tracker
 
 **Abertura:** 2026-06-09  
-**Status:** PR ABERTO — aguardando merge  
+**Status:** FECHADA COM PROMOTION PACKAGE  
 **PR:** https://github.com/Aurora-AI/Elysiancorpfront/pull/1  
+**Merge SHA:** `0bdc6fd61854cf54a38855bff50b3714577ca853`  
+**Data de merge:** 2026-06-09  
 **Emenda M3:** nome técnico corrigido de "Next.js Integration Bridge" para "Astro Islands Integration Bridge"  
 
 ---
@@ -36,14 +38,17 @@
 
 ---
 
-## Veredito Esperado
+## Veredito
 
 ```
 OS-MADLAB-INTEGRATION-001 → FECHADA COM PROMOTION PACKAGE
-```
 
-ou
+Astro Islands Chat Integration promovida ao repo soberano.
+Merge: 0bdc6fd61854cf54a38855bff50b3714577ca853
+Data:  2026-06-09
 
-```
-OS-MADLAB-INTEGRATION-001 → BLOQUEADA COM MOTIVO EXPLÍCITO
+M7 criou o contrato.
+M8 preparou a travessia.
+O PR abriu a ponte.
+O merge selou a promoção.
 ```

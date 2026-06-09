@@ -178,9 +178,9 @@ gh pr create \
 ### 7. Pós-merge
 
 ```
-[ ] Registrar SHA do merge commit no evidence desta OS
-[ ] Fechar OS-MADLAB-INTEGRATION-001 com veredito: FECHADA COM PROMOTION PACKAGE
-[ ] Registrar data de fechamento
+[✅] Merge SHA: 0bdc6fd61854cf54a38855bff50b3714577ca853
+[✅] OS-MADLAB-INTEGRATION-001 fechada com veredito: FECHADA COM PROMOTION PACKAGE
+[✅] Data de fechamento: 2026-06-09
 ```
 
 ---

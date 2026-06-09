@@ -1,0 +1,17 @@
+[project]
+name = "aurora-cognitive-assets-content-engine"
+version = "1.0.0"
+description = "Infoproduct Factory consumer CLI for AuroraCognitiveAssets"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+run-infoproduct  = "client.run_infoproduct_pipeline:main"
+run-refinement   = "client.run_refinement_pipeline:main"
+run-e2e          = "client.run_e2e_verification:main"
+
+[tool.pytest.ini_options]
+testpaths = ["client"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]

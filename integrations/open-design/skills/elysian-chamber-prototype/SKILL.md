@@ -8,7 +8,6 @@ trigger: explicit human request with chamber spec
 promotion_gate: PROMOTION_ALLOWED
 design_system: elysian
 # SES validation 2026-06-10: ses_certification: draft | score: 65 | pass_rate: 0.8
-# Concerns: broken references (MANUAL_DA_AGENCIA.md), output-structure rubric low (5/20)
 ---
 
 # Elysian Chamber Prototype
@@ -35,9 +34,69 @@ Density mapping:
 - `medium` → standard Fibonacci spacing, secondary HUD elements
 - `high` → tight spacing, all HUD pillars visible, supplementary mono labels
 
-## Output: self-contained HTML file
+## Outputs
 
-The output is a **single `.html` file** with no external dependencies except Google Fonts (one `<link>` import). All CSS is inlined in `<style>`. All JS is inlined in `<script>`. No React, no Tailwind, no CDN scripts.
+A single self-contained HTML file (`elysian-chamber-{id}.html`) that:
+
+format: HTML5 — UTF-8, inline CSS only, no external JS, no external CSS (Google Fonts @import in `<style>` is allowed).
+
+**Required sections in order:**
+1. `<head>`: `<meta charset>`, `<meta viewport>`, Google Fonts `@import`, `<style>` with CSS token variables + utility classes
+2. `<body class="world-{light|dark}">`: HUD label, main content section, halftone grain overlay
+3. No `<script>` tags — static prototype only
+
+**CSS token block that MUST appear in every output:**
+```css
+:root {
+  /* Canvas */
+  --parchment: #F8F7F3;
+  --obsidian: #000000;
+  /* Ink */
+  --ink: #1A1A17;
+  --parchment-text: #F2F2F2;
+  /* Accent */
+  --moss: #4E5B4B;
+  --moss-bright: #6B7A66;
+  /* Dark metallics */
+  --silver-glimmer: #E5E7EB;
+  --silver-technical: #9CA3AF;
+  --gold-sovereign: #D4AF37;
+  /* Fibonacci spacing */
+  --sp-1: 8px; --sp-2: 13px; --sp-3: 21px;
+  --sp-4: 34px; --sp-5: 55px; --sp-6: 89px;
+}
+```
+
+**Minimal viable skeleton:**
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elysian — Chamber {id}</title>
+  <style>
+    /* PASTE TOKEN BLOCK HERE */
+    body { margin: 0; height: 100vh; overflow: hidden; background: var(--{world}-canvas); }
+    .hud { position: fixed; top: var(--sp-3); left: var(--sp-5); font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
+    .grain { position: fixed; inset: 0; pointer-events: none; opacity: 0.02; }
+  </style>
+</head>
+<body>
+  <div class="hud">[ STAGE: {CHAMBER_ID} ]</div>
+  <!-- CHAMBER CONTENT -->
+  <div class="grain" style="background-image: url('data:image/svg+xml,...')"></div>
+</body>
+</html>
+```
+
+**Placeholder prevention:** Não use placeholder, não omitir campos, não truncar output. Output must never contain Lorem Ipsum, `[INSERT COPY]`, `TODO`, or generic brand names (Acme / Contoso / Example Inc). All copy comes from the skill inputs.
+
+---
+
+### Full output specification
+
+The output is a **single `.html` file** with no external dependencies except Google Fonts (one `@import` in `<style>`). All CSS is inlined in `<style>`. No React, no Tailwind, no CDN scripts.
 
 ### Required HTML structure
 
@@ -379,3 +438,9 @@ Before returning the HTML file, verify:
 - [ ] C02: locked Portuguese headline and English body reproduced verbatim
 - [ ] C02: all five HUD pillars present
 - [ ] File is self-contained (no external scripts, no CDN JS)
+
+---
+
+## Referências
+
+- [DESIGN.md](file:///C:/Projetos/MadLabAurora/integrations/open-design/design-systems/elysian/DESIGN.md) — Elysian Design System tokens, typography, spacing, motion rules. **MANDATORY read before generating any chamber.**

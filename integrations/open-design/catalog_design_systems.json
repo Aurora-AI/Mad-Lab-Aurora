@@ -295,6 +295,13 @@
       "path": "open-design\\design-systems\\elevenlabs\\DESIGN.md"
     },
     {
+      "slug": "elysian",
+      "name": "Elysian Design System",
+      "category": "Aurora Ecosystem",
+      "description": "Governed AI infrastructure. Dual-world parchment/obsidian aesthetic, moss accent, Fibonacci type scale, fail-closed governance language.",
+      "path": "open-design\\design-systems\\elysian\\DESIGN.md"
+    },
+    {
       "slug": "energetic",
       "name": "Design System Inspired by Energetic",
       "category": "Bold & Expressive",

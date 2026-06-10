@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[ STAGE: CONTEXT ] — Elysian</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:ital,wght@0,200..800;1,300..600&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+    /* 1. CSS custom properties — tokens */
+    :root {
+      --parchment:        #F8F7F3;
+      --obsidian:         #000000;
+      --ink:              #1A1A17;
+      --parchment-text:   #F2F2F2;
+      --moss:             #4E5B4B;
+      --moss-bright:      #6B7A66;
+      --silver-glimmer:   #E5E7EB;
+      --silver-technical: #9CA3AF;
+      --gold-sovereign:   #D4AF37;
+      --rust:             #984731;
+      --amber:            #D97706;
+
+      --sp-1:  8px;
+      --sp-2: 13px;
+      --sp-3: 21px;
+      --sp-4: 34px;
+      --sp-5: 55px;
+      --sp-6: 89px;
+
+      --fs-xs:   8px;
+      --fs-sm:  13px;
+      --fs-md:  21px;
+      --fs-lg:  34px;
+      --fs-xl:  55px;
+      --fs-2xl: 89px;
+    }
+
+    /* 2. Reset + base */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+      background: var(--parchment);
+      color: var(--ink);
+      position: relative;
+    }
+
+    /* 3. Typography classes */
+    .t-display {
+      font-family: 'Instrument Serif', serif;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+    }
+    .t-editorial {
+      font-family: 'Public Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+    .t-mono {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: var(--fs-sm);
+    }
+    .t-label {
+      font-family: 'Public Sans', sans-serif;
+      font-weight: 400;
+      font-size: var(--fs-sm);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .t-accent {
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      color: var(--moss);
+    }
+
+    /* 4. HUD */
+    .hud-stage {
+      position: fixed;
+      top: var(--sp-4);
+      left: var(--sp-4);
+      z-index: 1000;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--moss);
+    }
+
+    /* 5. Layout — asymmetric two-column */
+    .c01-stage {
+      display: grid;
+      grid-template-columns: 5fr 4fr;
+      height: 100vh;
+      position: relative;
+    }
+
+    .c01-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: var(--sp-6);
+      padding-right: var(--sp-5);
+      padding-top: var(--sp-6);
+      padding-bottom: var(--sp-6);
+      z-index: 10;
+    }
+
+    .c01-headline {
+      font-size: var(--fs-2xl);
+      color: var(--ink);
+      max-width: 14ch;
+      margin-bottom: var(--sp-4);
+      opacity: 0;
+      transform: translateY(21px);
+      animation: fadeUp 1.2s cubic-bezier(0.76, 0, 0.24, 1) 1.6s forwards;
+    }
+
+    .c01-body {
+      font-size: var(--fs-md);
+      color: var(--ink);
+      max-width: 44ch;
+      opacity: 0;
+      transform: translateY(21px);
+      animation: fadeUp 1.2s cubic-bezier(0.76, 0, 0.24, 1) 1.9s forwards;
+    }
+
+    /* 6. Fragments region */
+    .c01-fragments {
+      position: relative;
+      height: 100%;
+    }
+
+    /* Spring fragments — scattered mono words */
+    .fragment {
+      position: absolute;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+      font-size: var(--fs-sm);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--ink);
+      opacity: 0;
+      cursor: default;
+      transition: opacity 0.5s ease, color 0.5s ease;
+      animation: fragmentFloat 6s ease-in-out infinite alternate;
+    }
+
+    .fragment:hover {
+      opacity: 0.55 !important;
+      color: var(--moss);
+    }
+
+    .fragment-1  { top: 12%;  left: 8%;   animation-delay: 0s,    0s;    animation-duration: 6s, 1.2s; }
+    .fragment-2  { top: 28%;  left: 55%;  animation-delay: 0.6s,  0.12s; animation-duration: 7s, 1.2s; }
+    .fragment-3  { top: 44%;  left: 18%;  animation-delay: 1.2s,  0.24s; animation-duration: 8s, 1.2s; }
+    .fragment-4  { top: 60%;  left: 72%;  animation-delay: 1.8s,  0.36s; animation-duration: 6.5s, 1.2s; }
+    .fragment-5  { top: 18%;  right: 8%;  animation-delay: 2.4s,  0.48s; animation-duration: 7.5s, 1.2s; }
+    .fragment-6  { top: 52%;  left: 38%;  animation-delay: 3.0s,  0.60s; animation-duration: 8s, 1.2s; }
+    .fragment-7  { top: 78%;  left: 12%;  animation-delay: 3.6s,  0.72s; animation-duration: 6s, 1.2s; }
+    .fragment-8  { top: 70%;  right: 12%; animation-delay: 4.2s,  0.84s; animation-duration: 7s, 1.2s; }
+
+    @keyframes fragmentAppear {
+      from { opacity: 0; transform: scale(0.6); }
+      to   { opacity: 0.18; transform: scale(1); }
+    }
+
+    @keyframes fragmentFloat {
+      from { transform: translateY(0px) scale(1); }
+      to   { transform: translateY(-8px) scale(1.01); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(21px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Fragment individual appear animations */
+    .fragment-1 { animation: fragmentAppear 1.2s cubic-bezier(0.76,0,0.24,1) 0s    forwards, fragmentFloat 6s   ease-in-out 1.2s  infinite alternate; }
+    .fragment-2 { animation: fragmentAppear 1.2s cubic-bezier(0.76,0,0.24,1) 0.12s forwards, fragmentFloat 7s   ease-in-out 1.32s infinite alternate; }
+    .fragment-3 { animation: fragmentAppear 1.2s cubic-bezier(0.76,0,0.24,1) 0.24s forwards, fragmentFloat 8s   ease-in-out 1.44s infinite alternate; }
+    .fragment-4 { animation: fragmentAppear 1.2s cubic-bezier(0.76,0,0.24,1) 0.36s forwards, fragmentFloat 6.5s ease-in-out 1.56s infinite alternate; }
+    .fragment-5 { animation: fragmentAppear 1.2s cubic-bezier(0.76,0,0.24,1) 0.48s forwards, fragmentFloat 7.5s ease-in-out 1.68s infinite alternate; }
+    .fragment-6 { animation: fragmentAppear 1.2s cubic-bezier(0.76,0,0.24,1) 0.60s forwards, fragmentFloat 8s   ease-in-out 1.80s infinite alternate; }
+    .fragment-7 { animation: fragmentAppear 1.2s cubic-bezier(0.76,0,0.24,1) 0.72s forwards, fragmentFloat 6s   ease-in-out 1.92s infinite alternate; }
+    .fragment-8 { animation: fragmentAppear 1.2s cubic-bezier(0.76,0,0.24,1) 0.84s forwards, fragmentFloat 7s   ease-in-out 2.04s infinite alternate; }
+
+    /* 7. Grain overlay */
+    .grain {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      pointer-events: none;
+      opacity: 0.02;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-size: 256px 256px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hud-stage t-mono">[ STAGE: CONTEXT ]</div>
+
+  <div class="c01-stage">
+    <!-- Left column: headline + body -->
+    <div class="c01-content">
+      <h1 class="t-display c01-headline">
+        O mercado aprendeu a escalar respostas. Nós construímos <span class="t-accent">controle.</span>
+      </h1>
+      <p class="t-editorial c01-body">
+        Empresas não sofrem por falta de dados. Sofrem por perda de contexto. O conhecimento existe — mas vaza entre reuniões, planilhas, e-mails e cabeças.
+      </p>
+    </div>
+
+    <!-- Right column: spring fragments -->
+    <div class="c01-fragments">
+      <span class="fragment fragment-1">reunião</span>
+      <span class="fragment fragment-2">planilha</span>
+      <span class="fragment fragment-3">e-mail</span>
+      <span class="fragment fragment-4">decisão</span>
+      <span class="fragment fragment-5">contexto</span>
+      <span class="fragment fragment-6">memória</span>
+      <span class="fragment fragment-7">processo</span>
+      <span class="fragment fragment-8">relatório</span>
+    </div>
+  </div>
+
+  <!-- Halftone grain overlay -->
+  <div class="grain"></div>
+
+</body>
+</html>

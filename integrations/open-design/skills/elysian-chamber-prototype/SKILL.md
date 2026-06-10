@@ -7,6 +7,8 @@ mode: generative / on-demand
 trigger: explicit human request with chamber spec
 promotion_gate: PROMOTION_ALLOWED
 design_system: elysian
+# SES validation 2026-06-10: ses_certification: draft | score: 65 | pass_rate: 0.8
+# Concerns: broken references (MANUAL_DA_AGENCIA.md), output-structure rubric low (5/20)
 ---
 
 # Elysian Chamber Prototype

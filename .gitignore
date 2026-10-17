@@ -24,6 +24,7 @@ out/
 checkouts/
 scratch/
 ElysianCorp/
+tone-lab-site/
 
 # IDE / Editor folders
 .vscode/

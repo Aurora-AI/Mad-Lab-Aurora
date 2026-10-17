@@ -1,0 +1,67 @@
+{
+  "participants": [
+    {
+      "role": "comandante",
+      "name": "Rodrigo"
+    },
+    {
+      "agent": "codex",
+      "name": "Codex",
+      "role": "executor"
+    }
+  ],
+  "decisions": [
+    {
+      "rationale": "Migração reversível",
+      "id": "D1",
+      "decision": "Preservar protótipo e usar checkout isolado"
+    },
+    {
+      "rationale": "Não inventar fatos técnicos",
+      "id": "D2",
+      "decision": "Separar documentos brutos, confiança e conhecimento promovido"
+    },
+    {
+      "rationale": "Sites default e escopo autorizado",
+      "id": "D3",
+      "decision": "Manter audiência privada"
+    }
+  ],
+  "context": "Novo site privado a partir do protótipo React e do acervo documental local.",
+  "os_generated": [
+    "OS-MADLAB-TONELAB-SITES-20261005-001"
+  ],
+  "thread_id": "2026-10-05-tone-lab-sites",
+  "title": "Tone Lab OS — migração Sites privada",
+  "token_ledger_ref": "Token-Ledger/2026-10-05/tone-lab-sites-summary.json",
+  "messages": [
+    {
+      "type": "instrução",
+      "id": "M1",
+      "summary": "Criar novo site Sites; documentos em Documents/MadLab; continuar",
+      "role": "comandante"
+    },
+    {
+      "type": "gate-verificado",
+      "id": "M2",
+      "summary": "Build e QA concluídos; deploy privado succeeded; limites e arquivos MOCK arquivados registrados",
+      "role": "processador"
+    }
+  ],
+  "summary": {
+    "achievements": [
+      "Site privado publicado",
+      "Três fluxos com D1/R2 hospedados",
+      "Seis documentos importados",
+      "Acesso direto autenticado confirmado"
+    ],
+    "pending": [
+      "Mapeamento Drive",
+      "QA integral de acessibilidade e viewer",
+      "Expansão M5"
+    ],
+    "next_session_context": "Consultar 04-publication-qa.md antes de expandir."
+  },
+  "date": "2026-10-05",
+  "status": "completed"
+}

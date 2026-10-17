@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ArtDirectionBrief",
+  "type": "object",
+  "properties": {
+    "project": { "type": "string" },
+    "page": { "type": "string" },
+    "section": { "type": "string" },
+    "asset_type": {
+      "type": "string",
+      "enum": ["image", "video", "texture", "overlay", "background", "scene"]
+    },
+    "concept": { "type": "string" },
+    "narrative_goal": { "type": "string" },
+    "cognitive_goal": { "type": "string" },
+    "canonical_style": {
+      "type": "string",
+      "enum": ["volumetric_silence", "controlled_chaos", "ambient_intelligence"]
+    },
+    "approved_references": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "forbidden_patterns": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "technical_context": { "type": "string" },
+    "output_intent": { "type": "string", "const": "art_production_report" }
+  },
+  "required": [
+    "project",
+    "page",
+    "section",
+    "asset_type",
+    "concept",
+    "narrative_goal",
+    "cognitive_goal",
+    "canonical_style",
+    "approved_references",
+    "forbidden_patterns",
+    "technical_context",
+    "output_intent"
+  ]
+}

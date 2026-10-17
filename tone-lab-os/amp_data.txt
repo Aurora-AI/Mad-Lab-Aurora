@@ -1,0 +1,1200 @@
+PROJETO AMPLIFICADOR SIGNATURE
+
+Protótipo 01 — Plataforma valvulada modular de baixa potência
+
+Especificação de conceito, arquitetura, modificações, upgrades, gates de validação e roadmap de industrialização
+
+STATUS DO DOCUMENTOBaseline de planejamento e SSOT do Protótipo 01 v1.1. Não é um pacote de fabricação. Valores elétricos finais, transformadores, Pre-Shape, Power Management, layout de alta tensão, creepage/clearance, fusíveis e BOM definitiva dependem de revisão de engenharia e validação em bancada antes da energização/industrialização.
+
+
+
+Versão 1.1  |  2 de outubro de 2026
+
+
+
+1. Resumo executivo
+
+O Protótipo 01 é um amplificador valvulado de baixa potência concebido como plataforma de P&D para criação de timbres autorais. A referência inicial será um circuito JCM800 Micro documentado e reproduzível, preferencialmente na versão com power amp push-pull de EF80. O objetivo não é construir uma réplica de JCM800, GH100TI, SLO, Trainwreck, Vox ou qualquer outro amplificador; essas arquiteturas serão usadas como fontes de princípios, enquanto o desenvolvimento seguirá uma metodologia behavior-first: definir o comportamento musical desejado, reproduzi-lo de forma controlada, medir o fenômeno e somente então traduzi-lo para circuito próprio.
+
+A estratégia é construir primeiro uma referência funcional, estável e silenciosa; em seguida, adicionar módulos e controles que alterem o comportamento do circuito de forma mensurável e musical. O Pre-Shape passa a ser tratado como parte da arquitetura de geração de distorção — não como simples EQ — e será descoberto experimentalmente com ferramentas externas antes de ser internalizado em redes de parâmetros fixos. A gestão de potência também permanece no escopo: mesmo em baixa potência, o projeto deve investigar meios de obter clipping útil de phase inverter, power amp e transformador de saída em níveis de SPL compatíveis com estúdio e uso doméstico.
+
+Decisão
+
+Estado
+
+Baseline técnico
+
+JCM800 Micro — preferência por EF80 push-pull
+
+Potência
+
+Baixa potência / uso de estúdio; potência final exata depende do transformador e versão escolhida
+
+Construção V0
+
+Turret/eyelet board; não iniciar por PCB industrial
+
+Chassis
+
+Formato físico de head 50/100 W, propositalmente superdimensionado
+
+Modularidade
+
+Daughterboards e conectores para boost, lógica e upgrades
+
+Ventilação
+
+Projeto passivamente seguro; fan apenas como margem térmica adicional
+
+Industrialização
+
+Somente após congelamento do circuito e validação de V1/V2
+
+
+
+PRINCÍPIO CENTRALProjetar comportamentos, não copiar circuitos. Toda modificação tonal deve partir de um fenômeno musical definido, ser reproduzida externamente e medida, depois traduzida para circuito próprio. Nenhuma função entra na versão Signature apenas por parecer interessante: precisa sobreviver a A/B nivelado, medição e teste de uso.
+
+
+
+2. Objetivos do projeto
+
+Construir um primeiro amplificador valvulado completo com documentação suficientemente madura para reduzir incertezas de engenharia.
+
+Criar uma plataforma de baixa potência adequada a home studio, gravação e testes de pedais, sem exigir níveis de SPL de um head de 50/100 W.
+
+Permitir experimentação com estrutura de ganho, perfil espectral antes do clipping, presença, ressonância e estágios de push/pre-level, separando explicitamente shape de frequência e nível de excitação.
+
+Responder bem a pedais externos, especialmente ShredMaster, Tube Screamer/boost, Darta General, Dr. Boogie e futuros circuitos autorais.
+
+Criar desde a V0 uma arquitetura mecânica e elétrica que aceite módulos futuros sem refazer todo o amplificador.
+
+Desenvolver conhecimento próprio de layout, grounding, alta tensão, térmica, QA e industrialização de amplificadores.
+
+Investigar gestão de potência/atenuação capaz de permitir saturação útil do amplificador completo em diferentes níveis de SPL, sem assumir que a baixa potência nominal elimina essa necessidade.
+
+2.1 O que o projeto não pretende ser
+
+Não é uma réplica comercial de JCM800, GH100TI, SLO ou qualquer outro amplificador.
+
+Não busca “acertar o timbre do álbum” ou reproduzir 100% um amplificador clássico.
+
+Não terá 100 W apenas porque a carcaça é de um head grande.
+
+Não será enviado para fabricação em lote antes de uma fase real de prototipagem, medição e revisão.
+
+3. Referências técnicas e filosofia tonal
+
+Três arquiteturas e uma referência metodológica serão estudadas como fontes de princípios, não como alvos de clonagem.
+
+Referência
+
+Princípios a estudar
+
+Uso no Protótipo 01
+
+JCM800 / JCM800 Micro
+
+Cold clipper, médios britânicos, estrutura simples, resposta a boost, master volume
+
+Baseline inicial e ponto de comparação
+
+Soldano SLO
+
+Cascata de estágios, atenuação entre estágios, high-gain controlado, tightness
+
+Referência futura para evolução da estrutura de ganho
+
+Laney GH100TI
+
+Cinco estágios de ganho, presença, ressonância, filosofia Iommi
+
+Referência futura de comportamento e voicing; não baseline de fabricação
+
+Metodologia boutique custom / Apollo
+
+Topologia conhecida como ponto de partida; valores ajustados ao músico; poucos controles; foco em resposta, dinâmica e articulação
+
+Referência metodológica. Incorporar princípios de projeto sem copiar o circuito
+
+
+
+3.1 Filosofia de assinatura
+
+O objetivo é obter vários timbres bonitos, úteis e reconhecíveis dentro de uma mesma plataforma. O projeto prioriza combinação de comportamentos — perfil espectral de entrada, nível de excitação, pré valvulado, estrutura de clipping, power amp, transformador, speaker e pedais — em vez de fidelidade a um modelo histórico específico. A pergunta central deixa de ser “qual circuito copiar?” e passa a ser “qual comportamento musical queremos provocar e como comprová-lo?”.
+
+GUITARRA   ↓INPUT   ↓PRE-SHAPE  [PERFIL DE RESPOSTA]   ↓PRE-LEVEL / PUSH  [NÍVEL DE EXCITAÇÃO]   ↓PREAMP VALVULADO   ↓GAIN STRUCTURE [OPEN / HEAVY]   ↓TONE STACK / POST-SHAPE   ↓FX LOOP   ↓MASTER   ↓PRESENCE / RESONANCE   ↓PHASE INVERTER / POWER AMP   ↓OUTPUT TRANSFORMER   ↓POWER MANAGEMENT / ATTENUATION  [TOPOLOGIA A VALIDAR]   ↓SPEAKER OUT
+
+
+
+3.2 Metodologia behavior-first
+
+O desenvolvimento adotará reverse engineering comportamental, não reverse engineering de produto. O circuito final pode ser diferente das referências desde que reproduza, com estabilidade e repetibilidade, o comportamento musical definido no briefing.
+
+Definir o comportamento-alvo em linguagem musical e operacional: tightness, compressão, articulação, sag, low-end thump, limpeza pelo volume da guitarra, densidade harmônica ou outro fenômeno observável.
+
+Produzir esse comportamento externamente com EQ gráfico/paramétrico, boost, Ampero, plugin ou outra ferramenta de laboratório, sem compromisso de copiar o equipamento usado no teste.
+
+Usar a mesma DI em reamp e comparação com volume percebido nivelado para reduzir a influência da execução e do “mais alto = melhor”.
+
+Medir função de transferência, nível, headroom, início do clipping e resposta em frequência relevante ao comportamento-alvo.
+
+Traduzir a referência para uma rede própria, preferencialmente simples, reversível e de parâmetros fixos; depois comparar circuito interno versus referência externa.
+
+Congelar a função somente quando o comportamento sobreviver a A/B, medição, diferentes guitarras e uso real.
+
+4. Arquitetura geral proposta
+
+Bloco
+
+Função
+
+Estado
+
+Input / Buffering
+
+Entrada de alta impedância e referência de grounding
+
+Obrigatório
+
+Pre-Shape
+
+Definir o perfil espectral que atinge os estágios não lineares; controlar quais regiões disparam clipping e compressão
+
+Planejado; curva descoberta externamente e depois internalizada
+
+Pre-Level / Push Module
+
+Ajustar nível de excitação do preamp independentemente do Pre-Shape
+
+Planejado como daughterboard
+
+Preamp valvulado
+
+Núcleo tonal da referência JCM800 Micro
+
+Baseline
+
+Gain Structure
+
+Mudar comportamento estrutural sem depender apenas do knob de gain
+
+Planejado
+
+Tone Stack
+
+Acabamento tonal pós-clipping; não substitui a função do Pre-Shape
+
+Baseline + possível revisão posterior
+
+FX Loop
+
+Integração com Ampero e efeitos de tempo/modulação
+
+Recomendado
+
+Master
+
+Controle de nível para uso de estúdio
+
+Obrigatório
+
+Presence / Resonance
+
+Ajuste do feedback e sensação do power amp
+
+Upgrade prioritário
+
+Power amp
+
+Baixa potência valvulada real; alvo de saturação controlada, não apenas reprodução limpa
+
+Baseline preferido
+
+Aux Power
+
+Rails dedicados para boost, fan, relés e lógica
+
+Planejado desde V0
+
+Thermal Management
+
+Convecção passiva + fan-ready
+
+Planejado
+
+Output Transformer
+
+Casamento de carga, bandwidth e dinâmica; investigar margem de dimensionamento sem assumir que “maior é melhor”
+
+P&D após definição do power amp
+
+Power Management
+
+Reduzir SPL preservando, tanto quanto tecnicamente possível, o comportamento de saturação do amplificador completo
+
+Requisito de P&D; topologia final a validar
+
+
+
+5. Baseline V0 — referência antes das modificações
+
+A primeira energização deve ocorrer com uma configuração o mais próxima possível da referência escolhida. O objetivo é provar que o amplificador funciona corretamente antes de adicionar circuitos experimentais.
+
+Construir o baseline JCM800 Micro na variante escolhida.
+
+Confirmar tensões principais, bias/condições operacionais aplicáveis, ruído, hum e estabilidade.
+
+Realizar teste de áudio com guitarra e carga/speaker apropriados.
+
+Registrar resposta subjetiva e medições-base.
+
+Somente após aprovação do baseline, adicionar módulos de modificação um a um.
+
+GATE V0
+
+Nenhum upgrade tonal é considerado válido se o amplificador de referência ainda apresentar hum anormal, oscilação, comportamento térmico inadequado, tensões fora da especificação ou instabilidade.
+
+
+
+6. Modificação 01 — Pre-Shape: TIGHT / NORMAL / FAT
+
+O Pre-Shape deixa de ser definido apenas como “controle de graves antes da distorção”. Sua função é moldar o perfil espectral que chega aos estágios não lineares e, portanto, alterar quais regiões do sinal atingem primeiro o limiar de clipping. Cortar graves antes do ganho pode produzir resposta mais tight sem impedir que parte do corpo seja recomposta depois; o processo inverso pode levar o mesmo núcleo de ganho a respostas mais soltas, densas ou próximas de fuzz. O fenômeno será tratado como engenharia da distorção, não como EQ cosmético.
+
+Modo
+
+Comportamento pretendido
+
+Uso provável
+
+TIGHT
+
+Perfil de entrada com low-end controlado e possível concentração de médios/upper-mids; valores exatos serão descobertos por teste
+
+Metal, riffs rápidos, palm mute e situações que exigem ataque firme
+
+NORMAL
+
+Bypass/baseline de referência; preserva a resposta original do circuito
+
+Referência A/B, pedais externos e uso geral
+
+FAT
+
+Permite maior participação de grave/low-mid no clipping e/ou outra inclinação validada em teste; não será definido apenas como “mais grave”
+
+Rock, doom, texturas mais soltas ou densas
+
+
+
+A implementação elétrica final será definida somente depois da etapa de descoberta. Primeiro serão usadas ferramentas externas — EQ gráfico/paramétrico, Ampero ou plugin — para localizar curvas úteis. A curva vencedora será medida e convertida em rede interna própria, com parâmetros fixos ou seleção discreta. O equipamento externo é instrumento de laboratório; não é referência de circuito a ser copiada.
+
+6.1 Separação entre Pre-Shape e Post-EQ
+
+O Pre-Shape determina como o amplificador entra em não linearidade; o Post-EQ determina como o resultado já distorcido é apresentado. Repor grave depois do clipping não equivale a deixar esse grave participar do clipping. Por isso, as duas funções serão tratadas e medidas separadamente.
+
+6.2 Metodologia de descoberta da curva
+
+Executar DI/reamp repetível com o baseline aprovado.
+
+Usar EQ externo antes do amp para explorar curvas extremas e úteis sem preconceito visual sobre “curvas bonitas”.
+
+Ajustar um segundo EQ/post-shape somente quando necessário para separar comportamento de clipping do acabamento tonal.
+
+Registrar posições, medir a resposta real e converter o resultado em função de transferência.
+
+Projetar rede interna com o menor número de elementos que preserve aproximadamente o comportamento validado.
+
+Comparar referência externa versus circuito interno em A/B nivelado e cego quando praticável.
+
+6.3 Pre-Shape e Pre-Level são variáveis independentes
+
+A forma espectral do sinal e a amplitude com que ele atinge o próximo estágio não serão fundidas em um único conceito. O Pre-Shape define “o que chega”; o Pre-Level/PUSH define “com quanta intensidade chega”. Essa separação permite distinguir tightness causada por filtragem de ganho adicional causado por boost.
+
+7. Modificação 02 — Módulo PUSH / PRE-LEVEL pré-preamp
+
+Será estudado um estágio de nível/boost antes do preamp valvulado para controlar a intensidade de excitação sem confundir essa função com o Pre-Shape. Tube Screamer, treble boosters e outros pedais podem servir como referências de comportamento, mas o módulo não deve copiá-los literalmente. Sua função principal é oferecer ganho/nível suficiente para empurrar o primeiro estágio do preamp, preservando a possibilidade de testar o mesmo shape com diferentes níveis de excitação.
+
+INPUT  ↓PRE-SHAPE  ↓PRE-LEVEL / PUSH DAUGHTERBOARD  ↓PREAMP VALVULADO
+
+
+
+Controle/Modo
+
+Função proposta
+
+OFF
+
+Bypass verdadeiro/eletrônico do módulo para manter baseline
+
+LOW / PUSH
+
+Boost moderado de nível; preservar dinâmica e permitir A/B com o mesmo Pre-Shape.
+
+HIGH / PUSH+
+
+Maior excitação do preamp; não deve alterar deliberadamente a curva do Pre-Shape salvo se o teste justificar.
+
+COLOR (opcional)
+
+Somente se testes demonstrarem necessidade de uma segunda variável espectral; evitar duplicar a função do Pre-Shape.
+
+
+
+7.1 Requisitos de implementação
+
+Daughterboard removível na fase de P&D.
+
+Alimentação de baixa tensão dedicada, preferencialmente 12–18 V conforme o circuito escolhido.
+
+Grounding organizado e separado de retornos de alta corrente.
+
+Ganho moderado; o objetivo é empurrar o preamp, não substituir o preamp.
+
+Teste A/B com volume nivelado contra bypass, Tube Screamer externo, ShredMaster em low gain e Pre-Shape isolado, para separar efeito de level/boost de efeito espectral.
+
+8. Modificação 03 — Estrutura de ganho OPEN / HEAVY
+
+Em vez de depender apenas de um knob de Gain, será estudada uma mudança estrutural simples entre dois comportamentos do preamp. OPEN/HEAVY só será otimizado depois que Pre-Shape e Pre-Level estiverem caracterizados, para evitar atribuir à cascata de ganho um efeito que na verdade pertence ao espectro ou ao nível de entrada.
+
+Modo
+
+Objetivo
+
+OPEN
+
+Menor compressão, maior dinâmica e resposta melhor a pedais externos.
+
+HEAVY
+
+Maior saturação/cascata efetiva e resposta mais densa para high-gain.
+
+
+
+A implementação deve preservar ganho estável, evitar pops de chaveamento e manter níveis compatíveis entre modos. Relés podem ser avaliados futuramente se o chaveamento mecânico direto introduzir ruído ou exigir trajetos longos de sinal.
+
+9. Modificação 04 — Presence e Resonance
+
+Presence e Resonance são upgrades prioritários por influenciarem a interação do power amp com o speaker. A intenção é ampliar a variedade de “feel” sem recorrer a mais ganho.
+
+Controle
+
+Função tonal pretendida
+
+Presence
+
+Ajustar conteúdo de altas frequências no loop de feedback / comportamento do power amp.
+
+Resonance
+
+Ajustar resposta de graves e damping percebido no power amp/speaker.
+
+
+
+REFERÊNCIA GH100TI
+
+Presence e Resonance serão estudados também à luz do comportamento de amplificadores como o GH100TI. O objetivo é incorporar o princípio, não reproduzir o circuito de forma automática.
+
+
+
+10. FX Loop e integração com a Fábrica de Timbres
+
+O FX Loop é altamente desejável porque o amplificador será usado com Ampero II Stomp, delays, chorus, reverb e futuras cadeias híbridas. O loop permite separar efeitos de front-end dos efeitos pós-preamp.
+
+GUITARRA / PEDAIS       ↓PREAMP DO AMP       ↓FX SEND → AMPERO / TIME FX → FX RETURN       ↓MASTER / POWER AMP
+
+
+
+Nível do loop deve ser compatível com equipamentos de pedal e, se possível, tolerante a níveis maiores.
+
+O loop deve ser testado quanto a headroom, ruído e transparência.
+
+Bypass do loop ou normalização dos jacks deve permitir funcionamento do amp sem equipamento externo.
+
+11. Power amp de baixa potência
+
+A preferência atual é pela variante EF80 push-pull do JCM800 Micro, pois mantém uma seção de potência valvulada real em baixa potência e é adequada ao uso doméstico/estúdio. A potência exata, impedâncias e transformador de saída serão definidos somente após seleção do circuito final e revisão do projeto. A baixa potência nominal não encerra o problema de volume: o projeto deve permitir estudar clipping do conjunto phase inverter/power amp/transformador em níveis de SPL menores do que o modo pleno.
+
+Objetivo
+
+Decisão
+
+Uso
+
+Home studio, gravação, testes e criação tonal
+
+Filosofia
+
+Power amp valvulado real, não apenas preamp com saída de linha
+
+Potência
+
+Baixa, porém com faixa útil de SPL a ser ampliada por Power Management; evitar 50/100 W desnecessários
+
+Transformadores
+
+Dimensionados especificamente; não reaproveitar valores sem cálculo
+
+Speaker outputs
+
+Definir conforme OT e topologia final; proteger contra uso incorreto
+
+Power Management
+
+Requisito de P&D. Comparar atenuação pós-OT, scaling e modos de potência; objetivo: saturação utilizável em FULL / STUDIO / NIGHT
+
+Output Transformer
+
+Dimensionamento específico; além do casamento de impedâncias, avaliar bandwidth e margem como variável de resposta, sem regra simplista de superdimensionamento
+
+
+
+11.1 Power Management — clipping útil em baixo SPL
+
+Atenuação permanece no escopo como função potencialmente relevante de produto. O objetivo não é apenas “baixar watts”, mas permitir que o usuário opere o amplificador próximo do sweet spot e explore saturação do conjunto valvulado em situações de estúdio, gravação e prática doméstica.
+
+A implementação final não está congelada. Serão comparados pelo menos três caminhos: atenuação/carga após o transformador de saída; power scaling/controle de tensão; e modos de potência baseados na própria seção valvulada. Pentode/triode ou simples half-power podem ser avaliados, mas não serão presumidos como equivalentes ao mesmo amplificador apenas mais baixo.
+
+Nomenclatura provisória de produto: FULL / STUDIO / NIGHT. Os níveis de potência, impedâncias, dissipação e topologia só serão definidos depois dos testes elétricos, térmicos e tonais.
+
+12. Chassis, gabinete e arquitetura mecânica
+
+Embora o circuito seja “mini”, a carcaça será deliberadamente grande, em formato de head de aproximadamente 50/100 W. O espaço adicional é parte do projeto, não desperdício.
+
+Afastar transformador de força, transformador de saída, preamp e circuitos de baixa tensão.
+
+Manter capacitores eletrolíticos e componentes sensíveis longe de válvulas e resistores quentes.
+
+Reservar área para daughterboards de boost, relés, controle de fan e lógica futura.
+
+Facilitar acesso a pontos de teste, válvulas, fusíveis e conectores.
+
+Permitir ventilação natural vertical, com entradas inferiores/traseiras e saída superior/traseira.
+
+Prever blindagem e roteamento físico adequado de sinais de baixo nível.
+
+VANTAGEM DO CHASSIS GRANDE
+
+Baixa densidade de componentes reduz concentração térmica, facilita manutenção, reduz risco de acoplamento indesejado e torna o amplificador uma plataforma de P&D reutilizável.
+
+
+
+13. Gestão térmica e fan
+
+O fan será tratado como redundância térmica. O amplificador deve ser seguro termicamente sem ventilação forçada em condições normais. Se utilizado, o fan deverá aumentar margem e longevidade, não “salvar” um layout térmico ruim.
+
+Item
+
+Especificação de planejamento
+
+Ventilação passiva
+
+Obrigatória e suficiente para operação nominal
+
+Fan
+
+Provisionado; preferência por 80 ou 92 mm, baixa rotação
+
+Posição
+
+Exaustão traseira/superior acompanhando a convecção natural
+
+Montagem
+
+Desacoplamento mecânico por borracha/grommets
+
+Alimentação
+
+Rail DC dedicado e filtrado
+
+Controle
+
+Inicialmente opcional; futura operação AUTO/OFF ou controle térmico
+
+Falha do fan
+
+Não pode levar o amplificador a condição térmica insegura
+
+
+
+13.1 Protocolo de teste térmico
+
+1. Operar o amplificador em condição representativa sem fan.
+
+2. Registrar temperaturas em T0, 30, 60, 120 e 180 minutos.
+
+3. Medir transformador de força, região de power tube, resistores de potência, capacitores de fonte, reguladores e temperatura interna.
+
+4. Repetir o teste com fan em baixa rotação.
+
+5. Comparar delta térmico e decidir se o fan entra na configuração final.
+
+14. Alimentação auxiliar de baixa tensão
+
+Desde a primeira revisão do transformador de força, deve ser considerada uma alimentação auxiliar separada para módulos não valvulados. Isso evita improvisos posteriores e reduz o risco de injetar ruído na alimentação dos filamentos ou no áudio.
+
+TRANSFORMADOR DE FORÇA   ├─ Alta tensão → B+ / válvulas   ├─ Heater → filamentos   └─ Secundário AUX        ↓      retificação / filtro        ├─ 12 V → fan / relés        ├─ 9–18 V → módulos analógicos        └─ 5 V → lógica futura (se necessária)
+
+
+
+As tensões exatas e correntes devem ser dimensionadas após definição dos módulos. O rail auxiliar deve ser fisicamente e eletricamente tratado como subsistema próprio.
+
+15. Grounding, ruído e layout
+
+A qualidade do layout é crítica em amplificador valvulado high-gain. O projeto deve ser avaliado como sistema eletromagnético, não apenas como diagrama elétrico.
+
+Separar retornos de alta corrente da fonte/power de retornos de sinal de baixo nível.
+
+Planejar referência de terra de input, boost e primeiros estágios para minimizar loops internos.
+
+Manter grid leads curtos e roteamento de heater adequado.
+
+Avaliar orientação e distância entre transformadores para reduzir hum induzido.
+
+Evitar trajetos longos de sinal em chaves do painel; usar relés quando necessário.
+
+Definir star/bus grounding somente após analisar a topologia completa; não aplicar uma regra genérica cegamente.
+
+CRITÉRIO DE QUALIDADE
+
+O protótipo não passa para a fase tonal se apresentar hum, buzz, oscilação parasita ou ruído de chaveamento acima do esperado para a topologia.
+
+
+
+16. Confiabilidade, derating e segurança
+
+O projeto deverá trabalhar com margens de tensão, potência e temperatura. A preocupação com falhas térmicas observadas em alguns amplificadores comerciais será tratada por engenharia, não apenas por fan.
+
+Área
+
+Diretriz
+
+Resistores de potência
+
+Usar margem de dissipação; evitar operação contínua próxima do limite nominal.
+
+Capacitores eletrolíticos
+
+Preferir especificação térmica adequada, frequentemente 105 °C onde fizer sentido.
+
+Capacitores de alta tensão
+
+Margem suficiente sobre a tensão máxima real do circuito.
+
+Trilhas/fiação
+
+Dimensionar corrente, tensão, isolamento e temperatura.
+
+Creepage/clearance
+
+Definir conforme tensões reais e normas/práticas aplicáveis.
+
+Fusíveis
+
+Dimensionamento final obrigatório em primário e pontos adicionais se a arquitetura justificar.
+
+Bleeders / descarga
+
+Obrigatórios conforme projeto final para reduzir risco de tensão armazenada.
+
+Chassis/terra de proteção
+
+Ligação de proteção independente e robusta; revisão obrigatória antes de energizar.
+
+
+
+ALTA TENSÃO
+
+Amplificadores valvulados podem manter tensões letais mesmo desligados. Montagem, medição e energização devem ser realizadas por profissional competente ou sob supervisão técnica adequada. Este documento não substitui um projeto elétrico executivo.
+
+
+
+17. Estratégia de construção: turret primeiro, PCB depois
+
+O primeiro protótipo não deve nascer como PCB industrial. O objetivo inicial é modificar rapidamente componentes e topologia sem destruir placas ou gerar lotes obsoletos.
+
+SCHEMATIC / BASELINE      ↓TURRET / EYELET PROTOTYPE V0      ↓MODIFICAÇÕES E MEDIÇÕES      ↓V1 TONE LAB      ↓V2 SIGNATURE      ↓CIRCUITO CONGELADO      ↓KiCad / DFM / DRC      ↓PCB — LOTE PILOTO 3–5 UNIDADES
+
+
+
+17.1 Quando migrar para PCB
+
+Somente quando valores e topologia estiverem congelados.
+
+Após validação térmica, elétrica e tonal do protótipo manual.
+
+Após definir conectores, pontos de teste, dissipação e manutenção.
+
+Após revisão específica de alta tensão e DFM.
+
+18. Plano de versões
+
+Versão
+
+Escopo
+
+Critério de saída
+
+V0 — Learning Reference
+
+Baseline JCM800 Micro, sem modificações essenciais
+
+Estável, silencioso, tensões e térmica aprovadas
+
+V0.1 — Modular Lab
+
+Instrumentação, pontos de teste, Pre-Shape externo e Pre-Level/PUSH em daughterboard
+
+Método A/B/reamp repetível; funções de shape e level separadas sem regressão de ruído/estabilidade
+
+V0.2 — Behavior Lab
+
+Internalizar curvas Pre-Shape fixas descobertas externamente; comparar topologias de Power Management e OT
+
+Circuito interno reproduz comportamento de referência em A/B; modos de potência tecnicamente seguros
+
+V1 — Tone Lab
+
+OPEN/HEAVY, Presence/Resonance, FX Loop consolidado e Power Management em versão funcional
+
+Combinações tonais e modos de SPL validados com várias guitarras/pedais
+
+V2 — Signature
+
+Remover excessos, congelar controles e voicing final
+
+Circuito definido, repetível e documentado
+
+V3 — Industrial Pilot
+
+PCB própria, lote 3–5, DFM e QA de repetibilidade
+
+Unidades consistentes e aprovadas
+
+
+
+19. Matriz de testes tonais
+
+O amplificador deve ser testado com fontes e pedais diferentes para evitar otimização excessiva para uma única guitarra.
+
+Fonte
+
+Objetivo
+
+Epiphone + P94 / Custom 59
+
+Avaliar médios, dinâmica, low-mid e resposta a boosts coloridos
+
+Aria HSS modificada
+
+Avaliar high-gain, ataque, tightness e articulação
+
+Futura SSS/Carrozza
+
+Avaliar clean/crunch, brilho e dinâmica de baixo ganho
+
+ShredMaster
+
+Testar colored boost / preamp / distortion
+
+Tube Screamer / boost
+
+Testar tight boost clássico
+
+Darta General
+
+Testar empilhamento de voicing JCM-style
+
+Dr. Boogie / 5150
+
+Testar preamps high-gain na frente e/ou retorno do loop, se compatível
+
+Ampero II Stomp
+
+Testar FX loop, modulações, delays, EQ e integração híbrida
+
+EQ gráfico/paramétrico externo
+
+Descobrir curvas de Pre-Shape; explorar extremos; não serve como circuito a ser copiado
+
+DI/Reamp
+
+Repetir exatamente a mesma execução durante A/B de Pre-Shape, Pre-Level, ganho e Power Management
+
+
+
+MÉTODO A/BSempre que possível, comparar com volume percebido nivelado e a mesma DI/reamp. “Mais alto” não deve ser confundido com “melhor”, “maior” ou “mais definido”. Para Pre-Shape, registrar separadamente curva espectral e nível para evitar confundir filtragem com boost.
+
+
+
+20. Matriz de medições e QA
+
+Categoria
+
+Medições/checagens
+
+Elétrica
+
+Tensões DC, ripple, consumo, condições de bias aplicáveis, ruído de fonte
+
+Sinal
+
+Ganho por estágio, clipping, resposta em frequência, função de transferência do Pre-Shape, headroom, comportamento do loop e comparação shape/level
+
+Ruído
+
+Hum, buzz, hiss, pops de chaveamento, oscilação ultrassônica
+
+Térmica
+
+Temperaturas em 0/30/60/120/180 min; com e sem fan
+
+Mecânica
+
+Vibração, fixação de transformadores, fan, jacks, pots e válvulas
+
+Uso
+
+Resposta com pedais, diferentes captadores, níveis de guitarra, limpeza no volume e modos FULL/STUDIO/NIGHT
+
+Repetibilidade
+
+Após PCB: comparação entre unidades do lote piloto
+
+Power Management
+
+Potência/nível de saída por modo, temperatura/dissipação, estabilidade de carga, preservação de dinâmica e resposta tonal
+
+Clipping
+
+Registrar onde o clipping começa e como o espectro de entrada altera a forma de saturação; comparar Pre-Shape externo e interno
+
+
+
+21. Upgrade path futuro
+
+Os itens abaixo ficam registrados como futuras extensões possíveis, mas não entram automaticamente na V1.
+
+Upgrade
+
+Status
+
+Condição para considerar
+
+Relés para switching
+
+Backlog
+
+Se chaves físicas gerarem pops ou trajetos longos de sinal
+
+MIDI/controle externo
+
+Backlog
+
+Somente se houver uso real com ES-5/Ampero e cenas
+
+Fan automático por temperatura
+
+Backlog
+
+Se os testes mostrarem benefício térmico relevante
+
+Mais de um voicing de preamp
+
+Backlog
+
+Após consolidar OPEN/HEAVY e evitar complexidade desnecessária
+
+Line out / DI
+
+Backlog
+
+Se houver demanda prática de gravação/palco
+
+Power Management / atenuação
+
+P&D ativo
+
+Não depende de a potência nominal ser “alta”; validar se permite clipping útil do amp completo em SPL menor
+
+PCB modular com daughterboards
+
+Futuro industrial
+
+Após V2 congelada
+
+OT com margem / bandwidth
+
+P&D
+
+Testar apenas após definir o power amp; comparar resposta de grave, transientes e saturação sem assumir superioridade por tamanho
+
+
+
+22. Componentes e subsistemas a definir
+
+Item
+
+Decisão atual
+
+Pendente
+
+Transformador de força
+
+Novo / adequado ao circuito
+
+Tensões, correntes, secundário AUX
+
+Transformador de saída
+
+Específico para power final
+
+Impedâncias e potência
+
+Válvulas de preamp
+
+Conforme baseline escolhido
+
+Seleção final e quantidade
+
+Válvulas de power
+
+Preferência EF80 PP
+
+Confirmar variante
+
+Chassis
+
+Head 50/100 W
+
+Dimensões e furação
+
+Fan
+
+80/92 mm low-RPM, opcional
+
+Modelo e controle
+
+FX Loop
+
+Desejado
+
+Topologia e níveis
+
+Aux PSU
+
+Obrigatório prever
+
+Correntes e regulação
+
+Speaker outputs
+
+Conforme OT
+
+Conectores e impedâncias finais
+
+Power Management
+
+Obrigatório investigar
+
+Topologia, níveis FULL/STUDIO/NIGHT, dissipação, carga e segurança
+
+Pre-Shape
+
+Curvas serão descobertas externamente
+
+Frequências, ganhos relativos, passivo/ativo, posição e rede final
+
+Pre-Level / Push
+
+Separado do Pre-Shape
+
+Faixa de ganho, headroom, alimentação e bypass
+
+
+
+23. Terceirização e fabricação
+
+A estratégia industrial é terceirizar processos repetitivos e manter internamente arquitetura, voicing, validação e QA.
+
+Etapa
+
+Responsável preferencial
+
+Projeto elétrico e revisão de alta tensão
+
+Engenheiro/técnico qualificado
+
+Protótipo turret/eyelet
+
+Bancada própria ou técnico especializado
+
+PCB futura
+
+Fabricante local/regional após congelamento
+
+Montagem de lote
+
+Empresa EMS/PTH conforme viabilidade
+
+Transformadores
+
+Fornecedor especializado sob especificação
+
+Chassis/gabinete
+
+Metalúrgica/marcenaria terceirizada
+
+QA tonal final
+
+Interno
+
+
+
+Foi solicitada cotação para fabricação de 01 protótipo a fornecedor de montagem eletrônica. O orçamento definitivo dependerá da entrega de schematic revisado, BOM e definição da abordagem de prototipagem.
+
+24. Gates de aprovação
+
+Gate
+
+Pergunta
+
+Aprovação
+
+G0 — Baseline
+
+O circuito de referência está documentado e revisado?
+
+Antes de comprar componentes críticos
+
+G1 — Segurança
+
+Alta tensão, aterramento, fusíveis e distâncias foram revisados?
+
+Antes de energizar
+
+G2 — V0
+
+O amp baseline é estável, silencioso e termicamente seguro?
+
+Antes de mods
+
+G3 — Behavior Target
+
+O comportamento desejado foi reproduzido externamente de forma repetível e com A/B nivelado?
+
+Antes de internalizar a mod
+
+G4 — Internalização
+
+A rede interna reproduz o comportamento-alvo sem regressão e sem depender de ganho de volume?
+
+Antes de incorporar à V1
+
+G5 — Power Management
+
+Os modos de SPL são seguros, estáveis e musicalmente úteis sob carga real?
+
+Antes de congelar a seção de potência
+
+G6 — Térmica
+
+Opera 3 h com margem, inclusive sem fan?
+
+Antes de fechar chassis
+
+G7 — V1
+
+Controles são úteis e não excessivos?
+
+Antes da V2
+
+G8 — V2
+
+Circuito está congelado e repetível?
+
+Antes de PCB
+
+G9 — Industrial
+
+3–5 unidades PCB apresentam consistência?
+
+Antes de qualquer lote maior
+
+
+
+25. Próximos passos executivos
+
+1. Escolher definitivamente a variante JCM800 Micro para V0 — preferência atual: EF80 push-pull.
+
+2. Baixar e arquivar schematic, layout, BOM e arquivos editáveis da referência escolhida.
+
+3. Revisar a arquitetura com profissional qualificado em amplificadores valvulados.
+
+4. Definir transformadores e incluir secundário AUX adequado; especificar OT como variável de engenharia, não apenas potência nominal.
+
+5. Definir dimensões do chassis/head e mapa físico preliminar dos subsistemas.
+
+6. Criar BOM V0 sem modificações.
+
+7. Construir e validar V0.
+
+8. Montar laboratório de Pre-Shape externo com EQ gráfico/paramétrico/Ampero e protocolo DI/reamp.
+
+9. Descobrir e documentar curvas-alvo TIGHT/NORMAL/FAT, registrando separadamente shape e level.
+
+10. Internalizar as curvas vencedoras em redes fixas/reversíveis e executar A/B contra a referência externa.
+
+11. Projetar daughterboard PRE-LEVEL/PUSH separada do Pre-Shape e comparar com boosts externos.
+
+12. Prototipar Power Management e comparar atenuação pós-OT, scaling e demais caminhos tecnicamente viáveis.
+
+13. Adicionar OPEN/HEAVY, Presence/Resonance e consolidar FX Loop.
+
+14. Executar matriz de testes tonal, elétrica, térmica e de SPL.
+
+15. Remover controles redundantes e congelar V2 Signature antes de iniciar PCB própria.
+
+DECISÃO DE CONTROLE
+
+Este projeto permanece em P&D futuro. O documento serve como SSOT do Protótipo 01: qualquer nova modificação deve ser registrada aqui com justificativa, impacto, dependências e resultado de teste antes de entrar na versão Signature.
+
+
+
+26. Registro de decisões congeladas
+
+ID
+
+Decisão
+
+Motivo
+
+D-01
+
+Baixa potência; não construir 100 W
+
+Uso doméstico/estúdio e foco em timbre, não SPL
+
+D-02
+
+Chassis grande de head 50/100 W
+
+Térmica, modularidade e manutenção
+
+D-03
+
+Turret/eyelet na V0
+
+Facilidade de modificação e aprendizagem
+
+D-04
+
+PCB somente após V2
+
+Evitar industrializar circuito ainda instável
+
+D-05
+
+Boost interno em daughterboard
+
+Reversibilidade e P&D comparativo
+
+D-06
+
+Fan não pode ser necessário para sobreviver
+
+Confiabilidade e fail-safe térmico
+
+D-07
+
+Aux PSU desde o início
+
+Suportar módulos sem improvisar alimentação
+
+D-08
+
+GH100TI e SLO são referências, não clones
+
+Preservar caráter autoral do projeto
+
+D-09
+
+Metodologia behavior-first
+
+Definir comportamento, reproduzir/medir externamente e só então traduzir para circuito próprio
+
+D-10
+
+Pre-Shape é arquitetura de clipping, não EQ cosmético
+
+O espectro que atinge o estágio não linear define sua resposta; acabamento pós-EQ é função separada
+
+D-11
+
+Pre-Shape e Pre-Level são independentes
+
+Separar perfil espectral de intensidade de excitação evita confundir tightness com boost
+
+D-12
+
+Power Management permanece no escopo mesmo em baixa potência
+
+Saturação do amplificador completo em SPL utilizável pode ser diferencial funcional e comercial
+
+D-13
+
+Atenuação não será reduzida a simples half-power
+
+FULL/STUDIO/NIGHT são alvos de uso; topologia e níveis só após testes
+
+
+
+27. Questões abertas
+
+Variante exata do JCM800 Micro para V0 e valores finais do power amp.
+
+Transformadores e impedâncias de saída.
+
+Topologia exata do FX Loop.
+
+Curvas-alvo, frequências, ganhos relativos e topologia passiva/ativa do Pre-Shape; a definição virá da etapa externa de descoberta.
+
+Circuito do PRE-LEVEL/PUSH, faixa de ganho e tensão de alimentação ideal, mantendo-o independente do Pre-Shape.
+
+Implementação de OPEN/HEAVY.
+
+Topologia de Presence/Resonance compatível com o power escolhido.
+
+Necessidade real de fan após teste térmico.
+
+Seleção de speaker/cab para validação inicial.
+
+Topologia de Power Management: atenuação pós-OT, scaling ou combinação; níveis e nomenclatura finais FULL/STUDIO/NIGHT.
+
+Dimensionamento e comportamento do output transformer: impedâncias, potência, bandwidth, margem e efeito real sobre low-end/transientes.
+
+Custo final do protótipo após cotações.
+
+28. Histórico de revisões
+
+Versão
+
+Data
+
+Descrição
+
+1.0
+
+27/09/2026
+
+Criação do documento mestre do Protótipo 01. Consolida baseline, modificações, thermal management, chassis, boost pré-preamp, Pre-Shape, OPEN/HEAVY, Presence/Resonance, FX Loop, aux power, plano de versões e gates.
+
+1.1
+
+02/10/2026
+
+Adota metodologia behavior-first; redefine Pre-Shape como controle do perfil que dispara clipping; separa Pre-Shape de Pre-Level/PUSH; cria etapa Behavior Lab com EQ externo + DI/reamp; traz Power Management para o escopo ativo com objetivo FULL/STUDIO/NIGHT; atualiza gates, QA, roadmap e decisões congeladas.
+
+
+
+FIM DO DOCUMENTO
+

@@ -1,0 +1,135 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ArtProductionReport",
+  "type": "object",
+  "properties": {
+    "asset_name": { "type": "string" },
+    "executive_summary": { "type": "string" },
+    "usage_location": {
+      "type": "object",
+      "properties": {
+        "page": { "type": "string" },
+        "section": { "type": "string" }
+      },
+      "required": ["page", "section"]
+    },
+    "narrative_function": { "type": "string" },
+    "cognitive_function": { "type": "string" },
+    "artistic_description": { "type": "string" },
+    "composition": {
+      "type": "object",
+      "properties": {
+        "arrangement": { "type": "string" },
+        "focal_point": { "type": "string" }
+      },
+      "required": ["arrangement", "focal_point"]
+    },
+    "camera_lens_framing": {
+      "type": "object",
+      "properties": {
+        "lens": { "type": "string" },
+        "framing": { "type": "string" }
+      },
+      "required": ["lens", "framing"]
+    },
+    "lighting": {
+      "type": "object",
+      "properties": {
+        "style": { "type": "string" },
+        "direction": { "type": "string" }
+      },
+      "required": ["style", "direction"]
+    },
+    "color": {
+      "type": "object",
+      "properties": {
+        "palette": { "type": "array", "items": { "type": "string" } },
+        "dominant_color": { "type": "string" }
+      },
+      "required": ["palette", "dominant_color"]
+    },
+    "materials_and_texture": {
+      "type": "object",
+      "properties": {
+        "materials": { "type": "array", "items": { "type": "string" } },
+        "texture": { "type": "string" }
+      },
+      "required": ["materials", "texture"]
+    },
+    "mandatory_elements": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "forbidden_elements": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "art_references": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "generation_prompt_en": { "type": "string" },
+    "negative_prompt_en": { "type": "string" },
+    "requested_variations": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "technical_specs": {
+      "type": "object",
+      "properties": {
+        "aspect_ratio": { "type": "string" },
+        "target_weight_kb": { "type": "integer" }
+      },
+      "required": ["aspect_ratio", "target_weight_kb"]
+    },
+    "fallback": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string" },
+        "value": { "type": "string" }
+      },
+      "required": ["type", "value"]
+    },
+    "production_risks": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "acceptance_criteria": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "handoff": {
+      "type": "object",
+      "properties": {
+        "design": { "type": "array", "items": { "type": "string" } },
+        "effects": { "type": "array", "items": { "type": "string" } },
+        "web": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["design", "effects", "web"]
+    }
+  },
+  "required": [
+    "asset_name",
+    "executive_summary",
+    "usage_location",
+    "narrative_function",
+    "cognitive_function",
+    "artistic_description",
+    "composition",
+    "camera_lens_framing",
+    "lighting",
+    "color",
+    "materials_and_texture",
+    "mandatory_elements",
+    "forbidden_elements",
+    "art_references",
+    "generation_prompt_en",
+    "negative_prompt_en",
+    "requested_variations",
+    "technical_specs",
+    "fallback",
+    "production_risks",
+    "acceptance_criteria",
+    "handoff"
+  ]
+}

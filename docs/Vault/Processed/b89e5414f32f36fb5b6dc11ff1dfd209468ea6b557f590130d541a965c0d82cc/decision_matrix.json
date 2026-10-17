@@ -1,0 +1,12 @@
+{
+  "document": "b89e5414f32f36fb5b6dc11ff1dfd209468ea6b557f590130d541a965c0d82cc.md",
+  "timestamp": "2026-06-26T16:53:30-03:00",
+  "hash": "b89e5414f32f36fb5b6dc11ff1dfd209468ea6b557f590130d541a965c0d82cc",
+  "classification": "Material Cognitivo",
+  "gain_estimate": "+35%",
+  "impacted_skills": ["ceo-3d", "site-builder", "taste-design", "qa-review", "ceo-effects"],
+  "proposed_skill": null,
+  "decision": "INGERIR",
+  "status": "APPROVED",
+  "custody_chain": ["ingestor", "bibliotecario"]
+}

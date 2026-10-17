@@ -1,5 +1,8 @@
 ---
 name: design-md
+status: deprecated
+deprecated: true
+deprecated_by: OS-MADLAB-AGENTIC-PIVOT-20261016-001
 description: Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files
 allowed-tools:
   - "stitch*:*"

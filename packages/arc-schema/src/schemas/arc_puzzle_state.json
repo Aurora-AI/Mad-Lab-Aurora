@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ArcPuzzleState",
+  "description": "Contrato semântico para a representação visual de um fragmento de conhecimento no ecossistema Aurora.",
+  "type": "object",
+  "properties": {
+    "intensity": {
+      "type": "number",
+      "description": "Intensidade da tensão cognitiva (0.0 a 1.0). Controla o brilho e a frequência dos raios.",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "alignment": {
+      "type": "number",
+      "description": "Grau de proximidade com o encaixe perfeito (0.0 a 1.0). Controla a convergência física.",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "mouseFocus": {
+      "type": "array",
+      "description": "Posição 3D normalizada do foco do usuário.",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "connected": {
+      "type": "boolean",
+      "description": "Indica se a peça está formalmente integrada ao núcleo (Sovereign Core)."
+    }
+  },
+  "required": ["intensity", "alignment"]
+}

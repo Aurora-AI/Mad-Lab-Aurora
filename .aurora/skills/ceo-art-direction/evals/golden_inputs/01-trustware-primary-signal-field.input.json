@@ -1,0 +1,22 @@
+{
+  "project": "ElysianCorp",
+  "page": "Home",
+  "section": "Chamber 2 (Method)",
+  "asset_type": "background",
+  "concept": "Sinal primário de contenção sob regras determinísticas (fail-closed)",
+  "narrative_goal": "Transmitir solidez metodológica e segurança lógica intransponível",
+  "cognitive_goal": "Reduzir carga cognitiva do conceito de fail-closed",
+  "canonical_style": "volumetric_silence",
+  "approved_references": [
+    "Diagramas Bauhas",
+    "Exo Ape texturas físicas"
+  ],
+  "forbidden_patterns": [
+    "neon",
+    "robôs",
+    "cyberpunk",
+    "hologramas"
+  ],
+  "technical_context": "Fundo de seção escura, texto sobreposto em branco",
+  "output_intent": "art_production_report"
+}

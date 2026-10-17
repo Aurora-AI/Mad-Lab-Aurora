@@ -1,0 +1,18 @@
+# Elysian Turnkey Revenue Systems — Engenharia de Receita Autônoma (B2C Médio & B2G)
+
+> A Elysian Turnkey Revenue Systems implanta ecossistemas completos de aquisição e conversão agêntica (RevOps Agêntico) para operações B2C de médio porte e fornecedores governamentais (B2G) no Brasil. Substituímos consultorias teóricas e sites estáticos por diagnóstico forense de funil, portais compatíveis com WebMCP (`document.modelContext`), detecção automatizada de ghosting no WhatsApp e mapeamento determinístico de licitações.
+
+## Soluções Principais (Spec-Sheets)
+
+- [Motor de Conversão & Resgate de Funil para B2C Médio](https://elysianconsult.com.br/index.md#2-spec-sheet-vertical-b2c-de-medio-porte): Acoplamento do `whatsapp-gateway`, extração automática de BANT, detecção de ghosting em tempo real e recomendação de Next Best Action para equipes comerciais B2C.
+- [Inteligência Determinística & Pré-Venda Técnica B2G](https://elysianconsult.com.br/index.md#3-spec-sheet-vertical-b2g-vendas-governamentais-e-licitacoes): Mapeamento municipal determinístico (IBGE/PNCP), prospecção pré-edital em texto puro imune a filtros de spam e geração automatizada de dossiês licitatórios com validação `trustware`.
+
+## Ferramentas WebMCP Disponíveis no Domínio (`document.modelContext`)
+
+- `calcular_vazamento_funil_b2c`: Simula o impacto financeiro mensal e anual da recuperação de leads via blindagem de ghosting e automação de follow-up.
+- `solicitar_auditoria_receita`: Registra o pedido de Auditoria Forense de Vazamento de Receita (7 dias) e retorna o número de protocolo `OS-ELYSIAN`.
+
+## Detalhes Ozzmosis Engine
+
+- Documento Completo em Markdown: [index.md](https://elysianconsult.com.br/index.md)
+- Manifesto Google A2A (v0.3+): [agent-card.json](https://elysianconsult.com.br/.well-known/agent-card.json)

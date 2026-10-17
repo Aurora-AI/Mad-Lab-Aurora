@@ -1,0 +1,21 @@
+{
+  "project": "ElysianCorp",
+  "page": "Home",
+  "section": "Chamber 3 (Factory)",
+  "asset_type": "scene",
+  "concept": "Câmara forense de auditoria de dados em tempo real",
+  "narrative_goal": "Mostrar o Álvaro processando pipelines e sendo auditado por gates",
+  "cognitive_goal": "Tornar o pipeline complexo legível espacialmente",
+  "canonical_style": "controlled_chaos",
+  "approved_references": [
+    "Active Theory WebGL",
+    "Codrops camera focus"
+  ],
+  "forbidden_patterns": [
+    "dashboard genérico",
+    "lucide icons puros",
+    "saas cards"
+  ],
+  "technical_context": "Cena interactiva R3F / Canvas 3D",
+  "output_intent": "art_production_report"
+}

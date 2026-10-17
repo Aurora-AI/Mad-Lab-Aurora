@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "0.3.0",
+  "name": "Elysian Turnkey Revenue Systems Agent",
+  "description": "Agente oficial de diagnostico comercial e simulacao de eficiencia de receita da Elysian Turnkey Revenue Systems para operacoes B2C de Medio Porte e Fornecedores B2G no Brasil.",
+  "url": "https://elysianconsult.com.br",
+  "provider": {
+    "organization": "Elysian Turnkey Revenue Systems / Ecossistema Aurora",
+    "url": "https://elysianconsult.com.br"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "webmcp": true,
+    "markdownNegotiation": true
+  },
+  "skills": [
+    {
+      "id": "calcular_vazamento_funil_b2c",
+      "name": "Calculadora de Vazamento de Receita B2C e B2G",
+      "description": "Quantifica a perda financeira mensal no funil de WhatsApp ou pipeline de licitacoes e projeta a recuperacao anual.",
+      "tags": ["b2c", "b2g", "revops", "roi", "whatsapp"]
+    },
+    {
+      "id": "solicitar_auditoria_receita",
+      "name": "Solicitacao de Diagnostico Forense de 7 Dias",
+      "description": "Agenda a auditoria forense sobre conversas de WhatsApp, entregabilidade de e-mail e presenca web agentica.",
+      "tags": ["auditoria", "diagnostico", "consultoria", "licitacoes"]
+    }
+  ]
+}

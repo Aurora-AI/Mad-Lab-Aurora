@@ -1,7 +1,14 @@
-# Mad Lab Aurora — Manual da Agência (Constituição e Roteador)
+---
+deprecated: true
+status: deprecated
+deprecated_by: OS-MADLAB-AGENTIC-PIVOT-20261016-001
+superseded_by: docs/AGENTS/DOCTRINE.md
+---
+
+# Mad Lab Aurora — Manual da Agência (Constituição e Roteador) [DEPRECATED]
 **Versão:** 3.0.0  
 **Data:** 28 de Maio de 2026  
-**Status:** 🟢 VIGENTE — Constituição Central  
+**Status:** 🔴 DEPRECATED (`deprecated: true`) — Substituído por `docs/AGENTS/DOCTRINE.md`, `AGENTS.md` e `GEMINI.md` (`DEC-MADLAB-AGENTIC-PIVOT-002`)  
 **Localização canônica:** `MadLabAurora/docs/brand/MANUAL_DA_AGENCIA.md`  
 
 ---

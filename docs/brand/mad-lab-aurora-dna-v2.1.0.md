@@ -1,11 +1,18 @@
-# Mad Lab Aurora — DNA Visual e Sensorial
+---
+deprecated: true
+status: deprecated
+deprecated_by: OS-MADLAB-AGENTIC-PIVOT-20261016-001
+superseded_by: docs/AGENTS/DOCTRINE.md
+---
+
+# Mad Lab Aurora — DNA Visual e Sensorial [DEPRECATED]
 **Versão:** 2.1.0  
 **Documento:** Manifesto de Identidade da Fábrica  
 **Criado por:** Claude (Arquiteto) com aprovação do Comandante  
 **Data original:** 08 de abril de 2026  
 **Revisado em:** 18 de abril de 2026  
 **Localização canônica:** `C:\Aurora\.skills\shared\mad-lab-aurora-dna.md`  
-**Status:** 🟢 VIGENTE — substitui v1.0
+**Status:** 🔴 DEPRECATED (`deprecated: true`) — Substituído por `docs/AGENTS/DOCTRINE.md` (`DEC-MADLAB-AGENTIC-PIVOT-002`)
 
 ---
 

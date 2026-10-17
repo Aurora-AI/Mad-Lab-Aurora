@@ -1,9 +1,11 @@
 ---
 name: ceo-effects
 version: 1.0.0
-updated: 2026-04-12
+updated: 2026-10-16
 classification: global-agents
-status: production
+status: deprecated
+deprecated: true
+deprecated_by: OS-MADLAB-AGENTIC-PIVOT-20261016-001
 domain: effects
 authors_cloned:
   - Hyperplexed (motion com intenção — clone primário)
@@ -46,6 +48,7 @@ e depois desaparece da memória do visitante?"**
 > - `references/effects-playbook.md` — Biblioteca Hyperplexed/Codrops/Aurora.
 > - `references/motion-narrative-delta.md` — Parâmetros calibrados de timing e easing.
 > - `references/evolution-delta.md` — O Delta Final da próxima ingestão de motion.
+> - `../cinematic-grammar/primitives/` — Catálogo de primitivas cinéticas e cinematográficas (Apoio de repertório).
 
 ---
 

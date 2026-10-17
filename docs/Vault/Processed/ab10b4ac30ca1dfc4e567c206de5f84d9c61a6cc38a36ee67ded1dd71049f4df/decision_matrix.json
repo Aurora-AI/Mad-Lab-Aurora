@@ -1,0 +1,12 @@
+{
+  "document": "ab10b4ac30ca1dfc4e567c206de5f84d9c61a6cc38a36ee67ded1dd71049f4df.md",
+  "timestamp": "2026-06-14T14:09:00-03:00",
+  "hash": "ab10b4ac30ca1dfc4e567c206de5f84d9c61a6cc38a36ee67ded1dd71049f4df",
+  "classification": "Hibrido",
+  "gain_estimate": "+25%",
+  "impacted_skills": ["ceo-art-direction", "ceo-effects", "ceo-design", "site-builder", "cinematic-grammar"],
+  "proposed_skill": "cinematic-grammar",
+  "decision": "INGERIR",
+  "status": "APPROVED",
+  "custody_chain": ["ingestor", "bibliotecario"]
+}

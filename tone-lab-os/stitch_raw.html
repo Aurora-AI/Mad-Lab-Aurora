@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tone Lab — Marshall Origin 50C</title>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "sans-serif"]
+          },
+          colors: {
+            brand: {
+              black: "#111111",
+              charcoal: "#262626",
+              muted: "#52525b",
+              subtle: "#71717a",
+              light: "#a1a1aa",
+              faint: "#f4f4f5",
+              warmbg: "#fafafa"
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 350, 'GRAD' 0, 'opsz' 20;
+    }
+  </style>
+</head>
+<body class="bg-[#fafafa] text-brand-black font-sans antialiased selection:bg-brand-black selection:text-white min-h-screen flex flex-col">
+<!-- Minimal Borderless Navigation -->
+<header class="w-full max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 pt-10 pb-6 flex items-center justify-between">
+<div class="flex items-center gap-10">
+<a class="text-sm font-semibold tracking-tight text-brand-black flex items-center gap-2.5" href="#">
+<span class="w-2 h-2 rounded-full bg-brand-black"></span>
+        Tone Lab
+      </a>
+<nav class="hidden md:flex items-center gap-8 text-xs font-medium text-brand-subtle tracking-wide">
+<a class="hover:text-brand-black transition-colors" href="#">Architecture</a>
+<a class="text-brand-black font-semibold" href="#">Schematics</a>
+<a class="hover:text-brand-black transition-colors" href="#">Signal Chain</a>
+<a class="hover:text-brand-black transition-colors" href="#">Telemetry</a>
+<a class="hover:text-brand-black transition-colors" href="#">Bench Test</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<span class="hidden sm:inline-flex items-center gap-1.5 text-xs font-medium text-brand-subtle">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+        Calibrated
+      </span>
+<button class="inline-flex items-center gap-2 text-xs font-medium text-brand-black hover:text-brand-subtle transition-colors">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+        Export Spec
+      </button>
+<div class="hidden sm:flex items-center gap-3 text-brand-light hover:text-brand-black transition-colors">
+<button class="hover:text-brand-black" title="Terminal"><span class="material-symbols-outlined text-[18px]">terminal</span></button>
+<button class="hover:text-brand-black" title="Settings"><span class="material-symbols-outlined text-[18px]">settings_input_component</span></button>
+</div>
+</div>
+</header>
+<!-- Main Editorial Canvas -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 py-12 lg:py-20 space-y-28 lg:space-y-36">
+<!-- Section 1 & 2: Asymmetric Editorial Hero -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+<!-- Left Editorial Column (7 cols) -->
+<div class="lg:col-span-7 space-y-8">
+<div class="space-y-4">
+<div class="flex items-center gap-3 text-xs tracking-wider uppercase font-medium text-brand-subtle">
+<span>Amplifiers</span>
+<span class="text-brand-light">/</span>
+<span class="text-brand-black font-semibold">Reference Unit</span>
+</div>
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-brand-black leading-[1.06]">
+            Marshall Origin 50C
+          </h1>
+<p class="text-base sm:text-lg text-brand-muted font-normal tracking-tight">
+            50-Watt Valve Combo <span class="text-brand-light mx-2">•</span> Celestion G12N-60 Midnight 60 <span class="text-brand-light mx-2">•</span> Single Channel Vintage Revoice
+          </p>
+</div>
+<!-- Flowing Editorial Narrative -->
+<div class="space-y-5 text-brand-muted text-[15px] sm:text-base leading-relaxed max-w-xl font-normal">
+<p>
+            Pure vintage-voiced all-valve combo engineered for harmonic transparency and natural power-tube saturation. It pairs classic British tone architecture with a single-channel configuration boosted by push-pull tilt tone-shaping.
+          </p>
+<p class="text-brand-subtle text-sm leading-relaxed">
+            Maintained as the calibrated analog benchmark for testing high-gain front-end stages, dynamic clean headroom thresholds, and reactive load impulse response profiling.
+          </p>
+</div>
+<!-- Understated Minimal Action Links -->
+<div class="pt-2 flex flex-wrap items-center gap-4">
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-black text-white text-xs font-medium tracking-wide hover:bg-neutral-800 transition-colors">
+<span class="material-symbols-outlined text-[15px]">picture_as_pdf</span>
+            Export Dossier PDF
+          </button>
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-neutral-200/70 text-brand-black text-xs font-medium tracking-wide hover:bg-neutral-300 transition-colors">
+<span class="material-symbols-outlined text-[15px]">edit_note</span>
+            Edit Specification
+          </button>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 text-brand-subtle hover:text-brand-black text-xs font-medium transition-colors">
+            Bench Telemetry
+            <span class="material-symbols-outlined text-[15px]">arrow_outward</span>
+</button>
+</div>
+<!-- Subtle Physical Details Row -->
+<div class="pt-6 flex items-center gap-8 text-xs text-brand-subtle font-normal">
+<div>
+<span class="text-brand-light block text-[11px] mb-0.5">Weight</span>
+<span class="text-brand-black font-medium">18.2 kg</span>
+</div>
+<div>
+<span class="text-brand-light block text-[11px] mb-0.5">Dimensions</span>
+<span class="text-brand-black font-medium">580 × 480 × 245 mm</span>
+</div>
+<div>
+<span class="text-brand-light block text-[11px] mb-0.5">Cabinet</span>
+<span class="text-brand-black font-medium">Birch Plywood</span>
+</div>
+<div>
+<span class="text-brand-light block text-[11px] mb-0.5">Duty Cycle</span>
+<span class="text-brand-black font-medium">Continuous Bench</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Floating Product Showcase (5 cols) -->
+<div class="lg:col-span-5 flex justify-center items-center">
+<div class="w-full relative group">
+<div class="aspect-[4/3] rounded-3xl bg-neutral-900/95 flex items-center justify-center p-8 sm:p-12 overflow-hidden shadow-2xl shadow-neutral-900/10">
+<img class="max-h-full max-w-full object-contain filter contrast-105 transition-transform duration-700 ease-out group-hover:scale-105" data-alt="A striking industrial catalog photograph of the Marshall Origin 50C valve guitar combo amplifier. Positioned directly in the center against a clean, ultra-dark graphite studio backdrop with sharp dramatic edge lighting highlighting the textured black vinyl covering, the vintage fret cloth, gold piping, and front brass control panel. The mood is uncompromising, precise, and utilitarian, adhering to a high-contrast brutalist engineering aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNeWt820Xlaf22S-3628PCNEF8oZWOxqWkEDJe20418DXrjyQ_Bz4_DKa6nLBsFtbMQMJTzJG84YE7hsx7_ugkC42cmR_BF_AXHeEDNZM1e7gZ65x6S2eJPJ9Hi6H2XKgouvCx3kUtjkedCcE3S8PGXJrHCnyzQS7gZqC0OYjooaKBbagtKH14mG7XtmAPNvgC1r7bKfe4NMNeFNA4ObKeU3DGa9vfs3SYK81FDk9M5z6SjuaCMWcuxdf-n7qiPYlbvG2Lt3wa9NE"/>
+</div>
+<p class="mt-3 text-right text-[11px] text-brand-light tracking-wide">
+            Unit Ref: M-ORIG-50C-8824
+          </p>
+</div>
+</div>
+</section>
+<!-- Section 3: Visual Signal Path Architecture -->
+<section class="space-y-6">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+<h2 class="text-xs uppercase tracking-widest font-semibold text-brand-subtle">
+          Signal Path &amp; Audio Flow
+        </h2>
+<span class="text-xs text-brand-light font-normal">
+          Analog Serial Pass • 1MΩ Input / 16Ω Load
+        </span>
+</div>
+<!-- Horizontal Visual Cards Sequence with Minimal Connectors -->
+<div class="overflow-x-auto pb-4 pt-1 -mx-4 px-4 sm:mx-0 sm:px-0">
+<div class="flex items-center min-w-[1020px] lg:w-full justify-between gap-2.5">
+<!-- Station 1: SOURCE -->
+<div class="flex-1 bg-white border border-neutral-200/80 rounded-xl p-3.5 shadow-sm transition hover:shadow-md">
+<div class="aspect-square w-full rounded-lg bg-neutral-100 overflow-hidden mb-3">
+<img alt="Guitar" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsNNC4e8E0dReGE4YHyixUE2yXtXvqG0mivZ3j_QUhBEogirYUgmvsPTQOaZK0y8Lqx-vxQkxaNXEbXReiTCr3J8jlj98Dx4O4zq-Zb1IdpurzKLGymknQHwDybFlLSjeuhs_YYb-bSMpqyZzO4LtwwxPHd7mWz8qA1OrDuIFubZj2ytS8p9EQd1-OCPlPgNS1l-xLTcb1_f2YbiME42aHN34Yc0dK7gNjbjACaISPhXcOJzTqcNfMvy1O5uBQ7YemDcYYDC-PrkQ"/>
+</div>
+<div class="space-y-1">
+<span class="text-[10px] tracking-wider uppercase font-semibold text-brand-light block">01 / Source</span>
+<h3 class="text-sm font-semibold text-brand-black leading-snug">Guitar</h3>
+<p class="text-[11px] text-brand-subtle leading-tight">Passive Hi-Z / Single Coil</p>
+</div>
+</div>
+<!-- Arrow 1 -->
+<div class="flex-shrink-0 text-neutral-300 px-1">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24">
+<path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<!-- Station 2: FRONT-END -->
+<div class="flex-1 bg-white border border-neutral-200/80 rounded-xl p-3.5 shadow-sm transition hover:shadow-md">
+<div class="aspect-square w-full rounded-lg bg-neutral-100 overflow-hidden mb-3">
+<img alt="Pedals Rig" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfSKCApr8vmY1k97DJg8QLgFTHX_P3DEVyhkPt7432htqEfKI6FDYTOXPEx4K7wn-50ZfT51u8ObqxAW8tMDclp_dpuKDm7k5lH3b9P0ORdbQB-gKN5WQFMWQGlqUWEciD6Sv2URBSng0KuRFR13w1XTtLodgeSanSKBvlIreqV59iflF0a0cZZAj5Hey1h21c8T1yL42GWKOg1nf6E1IgJO99OBXYEz7VKWjhj1rq7hjfUBlfLHud9u8L4ck1089eBzOMtID7gjA"/>
+</div>
+<div class="space-y-1">
+<span class="text-[10px] tracking-wider uppercase font-semibold text-brand-light block">02 / Front-End</span>
+<h3 class="text-sm font-semibold text-brand-black leading-snug">Pedals</h3>
+<p class="text-[11px] text-brand-subtle leading-tight">True-Bypass Analog Rig</p>
+</div>
+</div>
+<!-- Arrow 2 -->
+<div class="flex-shrink-0 text-neutral-300 px-1">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24">
+<path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<!-- Station 3: PRE-PROCESS -->
+<div class="flex-1 bg-white border border-neutral-200/80 rounded-xl p-3.5 shadow-sm transition hover:shadow-md">
+<div class="aspect-square w-full rounded-lg bg-neutral-100 overflow-hidden mb-3">
+<img alt="Ampero Modeler" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwba9E_VvPrAkjAJo-10GTLMTQq8IVp4SHYgV-ojQse3Xw5GYxGNtIU8EIsEyXmBfa4tVxh9RHxcQdtDiGIvr-RdPXPsj6fH00XVmdUaSiKwZKGx-o1YGF6DUc_H1591N6_q6usDR4IOOtS0YiHHPdTN2J6ZcroqU4l-yZIzOf7E_hB_ob_Xx0CGzQy8HMr9f5dyqsdqCLsqR9eHlWesMbL0LTshFugzI-ep-CyQxLXSIE2P73mVxZvprsUb341uQdWaB-aka43kw"/>
+</div>
+<div class="space-y-1">
+<span class="text-[10px] tracking-wider uppercase font-semibold text-brand-light block">03 / Pre-Process</span>
+<h3 class="text-sm font-semibold text-brand-black leading-snug">Ampero</h3>
+<p class="text-[11px] text-brand-subtle leading-tight">Line Buffer / Aux Modeler</p>
+</div>
+</div>
+<!-- Arrow 3 -->
+<div class="flex-shrink-0 text-neutral-300 px-1">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24">
+<path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<!-- Station 4: UNDER TEST (Active/Highlighted card) -->
+<div class="flex-1 bg-white border-2 border-brand-black rounded-xl p-3.5 shadow-md relative">
+<div class="absolute -top-2.5 right-3 px-2 py-0.5 rounded-full bg-brand-black text-white text-[9px] font-semibold tracking-wider uppercase flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+        Under Test
+      </div>
+<div class="aspect-square w-full rounded-lg bg-neutral-900 overflow-hidden mb-3 flex items-center justify-center p-2">
+<img alt="Marshall Origin 50C" class="max-h-full max-w-full object-contain filter contrast-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNeWt820Xlaf22S-3628PCNEF8oZWOxqWkEDJe20418DXrjyQ_Bz4_DKa6nLBsFtbMQMJTzJG84YE7hsx7_ugkC42cmR_BF_AXHeEDNZM1e7gZ65x6S2eJPJ9Hi6H2XKgouvCx3kUtjkedCcE3S8PGXJrHCnyzQS7gZqC0OYjooaKBbagtKH14mG7XtmAPNvgC1r7bKfe4NMNeFNA4ObKeU3DGa9vfs3SYK81FDk9M5z6SjuaCMWcuxdf-n7qiPYlbvG2Lt3wa9NE"/>
+</div>
+<div class="space-y-1">
+<span class="text-[10px] tracking-wider uppercase font-semibold text-brand-black block">04 / Device</span>
+<h3 class="text-sm font-bold text-brand-black leading-snug">Marshall Origin 50C</h3>
+<p class="text-[11px] text-brand-muted font-medium leading-tight">50W Valve Section (EL34)</p>
+</div>
+</div>
+<!-- Arrow 4 -->
+<div class="flex-shrink-0 text-neutral-300 px-1">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24">
+<path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<!-- Station 5: TRANSDUCER -->
+<div class="flex-1 bg-white border border-neutral-200/80 rounded-xl p-3.5 shadow-sm transition hover:shadow-md">
+<div class="aspect-square w-full rounded-lg bg-neutral-100 overflow-hidden mb-3">
+<img alt="Speaker Cabinet" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzZGjbalLpFaU1VBY4ItPPNAgfmW2feiX2QLdzQ-ikHJwoktnG-NjVLPtXdzYPYlUACxCy1UIY64q1sGzMKA8OHh0qmBnKNtfH64wOpqT3insFz5m2fUrV9jvzhQa4kMviCCsAW8ZUFrSQBANarLRrnqKi-ZVi1tiyK42b6MrmlaBYa_pVPigAcEhtp6l-H4V3Dhcv51q9HxRKhHn6B3zSE4zTBO8zCBmbdAhuDexxP9H4iygeKcbKFSnxXRu7k89jFy_vEkGzHxc"/>
+</div>
+<div class="space-y-1">
+<span class="text-[10px] tracking-wider uppercase font-semibold text-brand-light block">05 / Transducer</span>
+<h3 class="text-sm font-semibold text-brand-black leading-snug">Cabinet</h3>
+<p class="text-[11px] text-brand-subtle leading-tight">1×12 Celestion G12N-60</p>
+</div>
+</div>
+<!-- Arrow 5 -->
+<div class="flex-shrink-0 text-neutral-300 px-1">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24">
+<path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<!-- Station 6: CAPTURE -->
+<div class="flex-1 bg-white border border-neutral-200/80 rounded-xl p-3.5 shadow-sm transition hover:shadow-md">
+<div class="aspect-square w-full rounded-lg bg-neutral-100 overflow-hidden mb-3">
+<img alt="Mic Array" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq1W88TIzsARwZ-tYIapayBKTggwo3oK0XOpvp3W39f9WhNdEQ-ufDEFOBdOtFbbYcdP54u6vMZ2JMnSW1xu2TA7gHhz3LpiNDv2_4InBMIzw5c1icrPn0j2Ad9wtCX8gz4p05cZAvZWKiTK4dC74WjWVwTJEruwckTCuYYjbQqFFsFlu8lnW_YAN85SlaOxTftCtm2A7L0KUuIX0s3tUui8okBC0nNYxDUhr3XCOPGiyGDdpOuf4SUfx0wL46lEJvnyJ7-0DZYUc"/>
+</div>
+<div class="space-y-1">
+<span class="text-[10px] tracking-wider uppercase font-semibold text-brand-light block">06 / Capture</span>
+<h3 class="text-sm font-semibold text-brand-black leading-snug">Mic Array</h3>
+<p class="text-[11px] text-brand-subtle leading-tight">SM57 + Royer R121 Pair</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Anchored Specifications Surface Container -->
+<section>
+<div class="bg-white border border-[#EAEAEA] rounded-2xl p-8 sm:p-10 shadow-[0_12px_36px_rgba(0,0,0,0.035)] space-y-6">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 pb-2">
+<div class="space-y-1">
+<h2 class="text-xs uppercase tracking-widest font-semibold text-brand-subtle">
+        Technical Specifications &amp; Calibration
+      </h2>
+<p class="text-xs text-brand-light">Analog laboratory verification benchmark profile</p>
+</div>
+<span class="inline-flex items-center gap-1.5 text-xs text-brand-subtle font-medium bg-neutral-50 border border-neutral-200/60 px-3 py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+      Calibrated under 230V 50Hz mains
+    </span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left text-sm">
+<thead>
+<tr class="text-[11px] uppercase tracking-wider text-brand-light border-b border-neutral-100">
+<th class="py-3 pr-8 font-medium w-1/4">Parameter</th>
+<th class="py-3 pr-8 font-medium w-2/5">Specification</th>
+<th class="py-3 pr-8 font-medium w-1/5">Reference Source</th>
+<th class="py-3 font-medium text-right w-auto">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-neutral-100 font-normal">
+<tr class="hover:bg-neutral-50/60 transition-colors">
+<td class="py-4 pr-8 font-medium text-brand-black">Power Output</td>
+<td class="py-4 pr-8 text-brand-charcoal">50W (High) / 10W (Mid) / 5W (Low) Powerstem</td>
+<td class="py-4 pr-8 text-brand-subtle">Marshall Official Spec</td>
+<td class="py-4 text-right">
+<span class="inline-flex items-center gap-1 text-xs text-brand-subtle font-medium">
+<span class="material-symbols-outlined text-[14px] text-emerald-600">check_circle</span>
+              Verified
+            </span>
+</td>
+</tr>
+<tr class="hover:bg-neutral-50/60 transition-colors">
+<td class="py-4 pr-8 font-medium text-brand-black">Speaker Driver</td>
+<td class="py-4 pr-8 text-brand-charcoal">1×12″ Celestion G12N-60 Midnight 60 (16Ω)</td>
+<td class="py-4 pr-8 text-brand-subtle">Marshall Official Spec</td>
+<td class="py-4 text-right">
+<span class="inline-flex items-center gap-1 text-xs text-brand-subtle font-medium">
+<span class="material-symbols-outlined text-[14px] text-emerald-600">check_circle</span>
+              Verified
+            </span>
+</td>
+</tr>
+<tr class="hover:bg-neutral-50/60 transition-colors">
+<td class="py-4 pr-8 font-medium text-brand-black">Preamp Valves</td>
+<td class="py-4 pr-8 text-brand-charcoal">3× ECC83 (12AX7) High Gain Low Noise</td>
+<td class="py-4 pr-8 text-brand-subtle">Bench Inspection</td>
+<td class="py-4 text-right">
+<span class="inline-flex items-center gap-1 text-xs text-brand-subtle font-medium">
+<span class="material-symbols-outlined text-[14px] text-emerald-600">check_circle</span>
+              Verified
+            </span>
+</td>
+</tr>
+<tr class="hover:bg-neutral-50/60 transition-colors">
+<td class="py-4 pr-8 font-medium text-brand-black">Power Amp Valves</td>
+<td class="py-4 pr-8 text-brand-charcoal">2× EL34 Matched Pair Fixed Bias</td>
+<td class="py-4 pr-8 text-brand-subtle">Bench Inspection</td>
+<td class="py-4 text-right">
+<span class="inline-flex items-center gap-1 text-xs text-brand-subtle font-medium">
+<span class="material-symbols-outlined text-[14px] text-emerald-600">check_circle</span>
+              Verified
+            </span>
+</td>
+</tr>
+<tr class="hover:bg-neutral-50/60 transition-colors">
+<td class="py-4 pr-8 font-medium text-brand-black">Tone Controls</td>
+<td class="py-4 pr-8 text-brand-charcoal">Gain, Tilt, Bass, Middle, Treble, Master, Presence</td>
+<td class="py-4 pr-8 text-brand-subtle">Physical Panel</td>
+<td class="py-4 text-right">
+<span class="inline-flex items-center gap-1 text-xs text-brand-subtle font-medium">
+<span class="material-symbols-outlined text-[14px] text-emerald-600">check_circle</span>
+              Verified
+            </span>
+</td>
+</tr>
+<tr class="hover:bg-neutral-50/60 transition-colors">
+<td class="py-4 pr-8 font-medium text-brand-black">Effects Loop</td>
+<td class="py-4 pr-8 text-brand-charcoal">Series, Level Switched (Send / Return)</td>
+<td class="py-4 pr-8 text-brand-subtle">Rear Panel I/O</td>
+<td class="py-4 text-right">
+<span class="inline-flex items-center gap-1 text-xs text-brand-subtle font-medium">
+<span class="material-symbols-outlined text-[14px] text-emerald-600">check_circle</span>
+              Verified
+            </span>
+</td>
+</tr>
+<tr class="hover:bg-neutral-50/60 transition-colors">
+<td class="py-4 pr-8 font-medium text-brand-black">Output Impedance</td>
+<td class="py-4 pr-8 text-brand-charcoal">1× 16Ω, 2× 16Ω (8Ω), 2× 8Ω (4Ω)</td>
+<td class="py-4 pr-8 text-brand-subtle">Official Manual v2</td>
+<td class="py-4 text-right">
+<span class="inline-flex items-center gap-1 text-xs text-brand-subtle font-medium">
+<span class="material-symbols-outlined text-[14px] text-emerald-600">check_circle</span>
+              Verified
+            </span>
+</td>
+</tr>
+<tr class="hover:bg-neutral-50/60 transition-colors">
+<td class="py-4 pr-8 font-medium text-brand-black">Purchase Reference</td>
+<td class="py-4 pr-8 text-brand-muted">$799.00 MSRP Est.</td>
+<td class="py-4 pr-8 text-brand-subtle">Procurement Pending</td>
+<td class="py-4 text-right">
+<span class="inline-flex items-center gap-1 text-xs text-amber-700 font-medium bg-amber-50 px-2 py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+              Pending
+            </span>
+</td>
+</tr>
+<tr class="hover:bg-neutral-50/60 transition-colors">
+<td class="py-4 pr-8 font-medium text-brand-black">Bench Calibration</td>
+<td class="py-4 pr-8 text-brand-charcoal">April 12, 2024 • 09:30 UTC</td>
+<td class="py-4 pr-8 text-brand-subtle">J. Vance (Lead Tech)</td>
+<td class="py-4 text-right">
+<span class="inline-flex items-center gap-1 text-xs text-brand-subtle font-medium">
+<span class="material-symbols-outlined text-[14px] text-emerald-600">check_circle</span>
+              Verified
+            </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</main>
+<!-- Clean Editorial Footer -->
+<footer class="w-full max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 pt-16 pb-12 mt-12 flex flex-col sm:flex-row items-baseline justify-between gap-6 text-xs text-brand-light font-normal">
+<div class="flex items-center gap-2 text-brand-subtle">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-light"></span>
+<span>Tone Lab OS • Engineering Dossier</span>
+</div>
+<div class="flex flex-wrap items-center gap-6 text-brand-subtle">
+<a class="hover:text-brand-black transition-colors" href="#">System Logs</a>
+<a class="hover:text-brand-black transition-colors" href="#">Calibration Protocol</a>
+<a class="hover:text-brand-black transition-colors" href="#">Hardware I/O</a>
+<a class="hover:text-brand-black transition-colors" href="#">Signal Integrity</a>
+</div>
+</footer>
+</body></html>

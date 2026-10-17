@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Permissoes para Crawlers de Busca Generativa e Agentes de IA
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Descoberta Agêntica
+Sitemap: https://elysianconsult.com.br/sitemap.xml
+Link: </llms.txt>; rel="llms-txt"

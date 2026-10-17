@@ -16,6 +16,7 @@ export default defineConfig({
       allow: [
         path.resolve(__dirname, '.'),
         path.resolve(__dirname, '../aurora-visual-assets'),
+        path.resolve(__dirname, '../packages'),
       ],
     },
     host: '0.0.0.0',

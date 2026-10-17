@@ -1,0 +1,53 @@
+[
+  {
+    "entry_id": "OS-MADLAB-AGENTIC-PIVOT-20261016-001-step-1",
+    "os_id": "OS-MADLAB-AGENTIC-PIVOT-20261016-001",
+    "step_name": "ME-0 e ME-1 — Contrato OS/PLAN, Decisão Arquitetural e Sincronia da Doutrina v9.1",
+    "step_number": 1,
+    "agent": "antigravity",
+    "model": "claude-opus-4-6",
+    "input_tokens": 18500,
+    "output_tokens": 6200,
+    "total_tokens": 24700,
+    "cost_usd_estimated": 0.42,
+    "cost_brl_estimated": 2.94,
+    "duration_ms": 95000,
+    "timestamp": "2026-10-16T15:05:00-03:00",
+    "notes": "Inspeção da fábrica C:\\Projetos\\Aurora, criação da OS/PLAN, validação com check-plan-conformance.mjs e sync-doctrine.mjs.",
+    "cache_hit": true
+  },
+  {
+    "entry_id": "OS-MADLAB-AGENTIC-PIVOT-20261016-001-step-2",
+    "os_id": "OS-MADLAB-AGENTIC-PIVOT-20261016-001",
+    "step_name": "ME-2 e ME-3 — Criação de Skills WebMCP/Outbound, Depreciações e Atualização de Regras",
+    "step_number": 2,
+    "agent": "antigravity",
+    "model": "claude-opus-4-6",
+    "input_tokens": 22400,
+    "output_tokens": 8900,
+    "total_tokens": 31300,
+    "cost_usd_estimated": 0.56,
+    "cost_brl_estimated": 3.92,
+    "duration_ms": 140000,
+    "timestamp": "2026-10-16T15:20:00-03:00",
+    "notes": "Criação de agentic-web-architect e b2b-ai-outbound-architect, depreciação append-only de 8 skills estéticas e 2 brand docs, e validação Pydantic via mesh_runtime.py.",
+    "cache_hit": true
+  },
+  {
+    "entry_id": "OS-MADLAB-AGENTIC-PIVOT-20261016-001-step-3",
+    "os_id": "OS-MADLAB-AGENTIC-PIVOT-20261016-001",
+    "step_name": "ME-4 — Gate check-madlab-governance.mjs, Suíte Reprova e Fechamento no Vault",
+    "step_number": 3,
+    "agent": "antigravity",
+    "model": "claude-opus-4-6",
+    "input_tokens": 14200,
+    "output_tokens": 5100,
+    "total_tokens": 19300,
+    "cost_usd_estimated": 0.34,
+    "cost_brl_estimated": 2.38,
+    "duration_ms": 85000,
+    "timestamp": "2026-10-16T15:23:00-03:00",
+    "notes": "Execução do gate de governança e de 6 cenários de sabotagem adversarial com EXIT=1 confirmado.",
+    "cache_hit": true
+  }
+]

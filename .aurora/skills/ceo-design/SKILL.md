@@ -1,9 +1,11 @@
 ---
 name: ceo-design
 version: 1.1.0
-updated: 2026-04-14
+updated: 2026-10-16
 classification: global-agents
-status: production
+status: deprecated
+deprecated: true
+deprecated_by: OS-MADLAB-AGENTIC-PIVOT-20261016-001
 domain: design
 authors_cloned:
   - Aaron Draplin (Engineering only)

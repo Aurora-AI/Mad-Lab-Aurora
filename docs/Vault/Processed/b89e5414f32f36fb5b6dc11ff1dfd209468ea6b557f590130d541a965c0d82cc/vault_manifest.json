@@ -1,0 +1,22 @@
+{
+  "document_id": "b89e5414f32f36fb5b6dc11ff1dfd209468ea6b557f590130d541a965c0d82cc",
+  "title": "Manual Operacional: Pipeline Híbrida 3D (CEO-3D + ARC)",
+  "source": "agent_guide_ceo3d_arc_pipeline.md",
+  "ingested_at": "2026-06-26T16:53:30-03:00",
+  "ingested_by": "bibliotecario",
+  "classification": "Material Cognitivo",
+  "qdrant_chunks": 0,
+  "neo4j_nodes": 0,
+  "neo4j_edges": 0,
+  "skills_enriched": [
+    "ceo-3d",
+    "site-builder",
+    "taste-design",
+    "qa-review",
+    "ceo-effects"
+  ],
+  "new_skill_proposed": null,
+  "sanitized": true,
+  "deprecated": false,
+  "raw_path": "docs/Vault/Raw/b89e5414f32f36fb5b6dc11ff1dfd209468ea6b557f590130d541a965c0d82cc.md"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@aurora/arc-renderer-r3f",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.tsx",
+  "types": "src/index.tsx",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@aurora/arc-schema": "file:../arc-schema",
+    "@react-three/fiber": "^9.4.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "three": "^0.181.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/three": "^0.181.0",
+    "vitest": "^4.1.0"
+  }
+}

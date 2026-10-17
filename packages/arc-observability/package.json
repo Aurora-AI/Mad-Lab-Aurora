@@ -1,0 +1,16 @@
+{
+  "name": "@aurora/arc-observability",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@aurora/arc-schema": "file:../arc-schema"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.0"
+  }
+}

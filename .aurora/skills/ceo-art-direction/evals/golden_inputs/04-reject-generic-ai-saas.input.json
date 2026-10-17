@@ -1,0 +1,16 @@
+{
+  "project": "ElysianCorp",
+  "page": "Home",
+  "section": "Hero",
+  "asset_type": "image",
+  "concept": "inteligência artificial moderna",
+  "narrative_goal": "parecer inovador",
+  "cognitive_goal": "impressionar",
+  "canonical_style": "ambient_intelligence",
+  "approved_references": [
+    "futuristic AI websites"
+  ],
+  "forbidden_patterns": [],
+  "technical_context": "Seção Hero de destaque",
+  "output_intent": "art_production_report"
+}

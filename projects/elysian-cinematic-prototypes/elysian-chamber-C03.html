@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[ STAGE: FACTORY ] — Elysian</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:ital,wght@0,200..800;1,300..600&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+    :root {
+      --parchment:        #F8F7F3;
+      --obsidian:         #000000;
+      --ink:              #1A1A17;
+      --parchment-text:   #F2F2F2;
+      --moss:             #4E5B4B;
+      --moss-bright:      #6B7A66;
+      --silver-glimmer:   #E5E7EB;
+      --silver-technical: #9CA3AF;
+      --gold-sovereign:   #D4AF37;
+      --rust:             #984731;
+      --amber:            #D97706;
+
+      --sp-1:  8px;
+      --sp-2: 13px;
+      --sp-3: 21px;
+      --sp-4: 34px;
+      --sp-5: 55px;
+      --sp-6: 89px;
+
+      --fs-xs:   8px;
+      --fs-sm:  13px;
+      --fs-md:  21px;
+      --fs-lg:  34px;
+      --fs-xl:  55px;
+      --fs-2xl: 89px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+      background: var(--obsidian);
+      color: var(--parchment-text);
+      position: relative;
+    }
+
+    .t-display {
+      font-family: 'Instrument Serif', serif;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+    }
+    .t-editorial {
+      font-family: 'Public Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+    .t-mono {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: var(--fs-sm);
+    }
+    .t-label {
+      font-family: 'Public Sans', sans-serif;
+      font-weight: 400;
+      font-size: var(--fs-sm);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .t-accent {
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      color: var(--moss-bright);
+    }
+
+    /* HUD */
+    .hud-stage {
+      position: fixed;
+      top: var(--sp-4);
+      left: var(--sp-4);
+      z-index: 1000;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--silver-technical);
+    }
+
+    /* Main grid — asymmetric 5fr 3fr */
+    .c03-grid {
+      display: grid;
+      grid-template-columns: 5fr 3fr;
+      grid-template-rows: auto 1fr auto;
+      height: 100vh;
+      padding: var(--sp-6) var(--sp-5) 0 var(--sp-6);
+      gap: var(--sp-4);
+    }
+
+    /* Left column */
+    .c03-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: var(--sp-4);
+    }
+
+    .c03-headline {
+      font-size: var(--fs-xl);
+      color: var(--parchment-text);
+      max-width: 16ch;
+      margin-bottom: var(--sp-4);
+      opacity: 0;
+      transform: translateY(21px);
+      animation: fadeUp 1.2s cubic-bezier(0.76, 0, 0.24, 1) 0.3s forwards;
+    }
+
+    .c03-body {
+      font-size: var(--fs-md);
+      color: var(--silver-technical);
+      max-width: 46ch;
+      opacity: 0;
+      transform: translateY(21px);
+      animation: fadeUp 1.2s cubic-bezier(0.76, 0, 0.24, 1) 0.6s forwards;
+    }
+
+    /* Right column — r3f placeholder (factory corridor, 2D flat) */
+    .c03-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: var(--sp-5);
+      padding-bottom: var(--sp-5);
+      opacity: 0;
+      animation: fadeUp 1.2s cubic-bezier(0.76, 0, 0.24, 1) 0.9s forwards;
+    }
+
+    .factory-corridor {
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-2);
+      width: 100%;
+      max-width: 260px;
+    }
+
+    .factory-stage-box {
+      border: 1px solid var(--gold-sovereign);
+      padding: var(--sp-2) var(--sp-3);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .factory-stage-box .t-mono {
+      color: var(--gold-sovereign);
+      font-size: 11px;
+    }
+
+    .factory-stage-box::after {
+      content: '';
+      position: absolute;
+      bottom: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 13px;
+      background: rgba(212, 175, 55, 0.3);
+    }
+
+    .factory-stage-box:last-child::after {
+      display: none;
+    }
+
+    .stage-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 9999px;
+      background: var(--gold-sovereign);
+      opacity: 0.6;
+    }
+
+    /* Conveyor strip */
+    .c03-conveyor-wrapper {
+      grid-column: 1 / -1;
+      height: 55px;
+      overflow: hidden;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .conveyor-track {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-6);
+      white-space: nowrap;
+      animation: conveyor 28s linear infinite;
+    }
+
+    .conveyor-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--silver-technical);
+      flex-shrink: 0;
+    }
+
+    @keyframes conveyor {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(21px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Grain */
+    .grain {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      pointer-events: none;
+      opacity: 0.02;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-size: 256px 256px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hud-stage t-mono">[ STAGE: FACTORY ]</div>
+
+  <div class="c03-grid">
+
+    <!-- Left: Álvaro narrative -->
+    <div class="c03-left">
+      <h1 class="t-display c03-headline">
+        Álvaro observa, planeja, <span class="t-accent">simula</span> e propõe.
+      </h1>
+      <p class="t-editorial c03-body">
+        A produção só muda com gates determinísticos, QA formal e aprovação humana.
+      </p>
+    </div>
+
+    <!-- Right: r3f-placeholder — factory corridor 2D flat -->
+    <div class="c03-right">
+      <div class="factory-corridor">
+        <div class="factory-stage-box">
+          <span class="t-mono">CAPTURA</span>
+          <span class="stage-dot"></span>
+        </div>
+        <div class="factory-stage-box">
+          <span class="t-mono">ESTRUTURAÇÃO</span>
+          <span class="stage-dot"></span>
+        </div>
+        <div class="factory-stage-box">
+          <span class="t-mono">VALIDAÇÃO</span>
+          <span class="stage-dot"></span>
+        </div>
+        <div class="factory-stage-box">
+          <span class="t-mono">PERSISTÊNCIA</span>
+          <span class="stage-dot"></span>
+        </div>
+        <div class="factory-stage-box">
+          <span class="t-mono">EXECUÇÃO</span>
+          <span class="stage-dot"></span>
+        </div>
+        <div class="factory-stage-box">
+          <span class="t-mono">APRENDIZADO</span>
+          <span class="stage-dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom: conveyor strip -->
+    <div class="c03-conveyor-wrapper">
+      <div class="conveyor-track">
+        <!-- Two repetitions for seamless loop -->
+        <span class="conveyor-label">[ INTAKE ]</span>
+        <span class="conveyor-label">[ VALIDATE ]</span>
+        <span class="conveyor-label">[ EXECUTE ]</span>
+        <span class="conveyor-label">[ AUDIT ]</span>
+        <span class="conveyor-label">[ RETURN ]</span>
+        <span class="conveyor-label">[ INTAKE ]</span>
+        <span class="conveyor-label">[ VALIDATE ]</span>
+        <span class="conveyor-label">[ EXECUTE ]</span>
+        <span class="conveyor-label">[ AUDIT ]</span>
+        <span class="conveyor-label">[ RETURN ]</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="grain"></div>
+
+</body>
+</html>

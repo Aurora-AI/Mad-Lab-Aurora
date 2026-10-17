@@ -12,6 +12,8 @@
     "check": "npm run lint && npm run build"
   },
   "dependencies": {
+    "@aurora/arc-orchestrator": "file:../packages/arc-orchestrator",
+    "@aurora/arc-renderer-r3f": "file:../packages/arc-renderer-r3f",
     "@google/genai": "^1.29.0",
     "@gsap/react": "^2.1.2",
     "@react-three/drei": "^10.7.7",
@@ -38,6 +40,7 @@
     "@types/express": "^4.17.21",
     "@types/node": "^22.14.0",
     "@types/three": "^0.183.1",
+    "@vercel/node": "^5.8.21",
     "autoprefixer": "^10.4.21",
     "jimp": "^1.6.1",
     "tailwindcss": "^4.1.14",

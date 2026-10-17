@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[ STAGE: CATEGORY ] — Elysian</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:ital,wght@0,200..800;1,300..600&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+    :root {
+      --parchment:        #F8F7F3;
+      --obsidian:         #000000;
+      --ink:              #1A1A17;
+      --parchment-text:   #F2F2F2;
+      --moss:             #4E5B4B;
+      --moss-bright:      #6B7A66;
+      --silver-glimmer:   #E5E7EB;
+      --silver-technical: #9CA3AF;
+      --gold-sovereign:   #D4AF37;
+      --rust:             #984731;
+      --amber:            #D97706;
+
+      --sp-1:  8px;
+      --sp-2: 13px;
+      --sp-3: 21px;
+      --sp-4: 34px;
+      --sp-5: 55px;
+      --sp-6: 89px;
+
+      --fs-xs:   8px;
+      --fs-sm:  13px;
+      --fs-md:  21px;
+      --fs-lg:  34px;
+      --fs-xl:  55px;
+      --fs-2xl: 89px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+      background: var(--obsidian);
+      color: var(--parchment-text);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .t-display {
+      font-family: 'Instrument Serif', serif;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+    }
+    .t-editorial {
+      font-family: 'Public Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+    .t-mono {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: var(--fs-sm);
+    }
+    .t-label {
+      font-family: 'Public Sans', sans-serif;
+      font-weight: 400;
+      font-size: var(--fs-sm);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .t-accent {
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      color: var(--moss-bright);
+    }
+
+    /* HUD */
+    .hud-stage {
+      position: fixed;
+      top: var(--sp-4);
+      left: var(--sp-4);
+      z-index: 1000;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--silver-technical);
+    }
+
+    /* Center stage */
+    .c05-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: var(--sp-4);
+      max-width: 900px;
+      padding: 0 var(--sp-5);
+    }
+
+    /* Category label above wordmark */
+    .c05-category {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--silver-technical);
+      opacity: 0;
+      animation: fadeUp 1.2s cubic-bezier(0.76, 0, 0.24, 1) 0.2s forwards;
+    }
+
+    /* Wordmark — monumental */
+    .c05-wordmark {
+      font-family: 'Instrument Serif', serif;
+      font-weight: 400;
+      font-size: clamp(89px, 14vw, 180px);
+      letter-spacing: -0.03em;
+      line-height: 0.95;
+      color: var(--parchment-text);
+      opacity: 0;
+      animation: fadeUp 1.2s cubic-bezier(0.76, 0, 0.24, 1) 0.5s forwards;
+    }
+
+    /* Headline + body below wordmark */
+    .c05-headline {
+      font-family: 'Instrument Serif', serif;
+      font-weight: 400;
+      font-size: var(--fs-lg);
+      letter-spacing: -0.01em;
+      color: var(--parchment-text);
+      opacity: 0;
+      animation: fadeUp 1.2s cubic-bezier(0.76, 0, 0.24, 1) 0.8s forwards;
+    }
+
+    .c05-body {
+      font-family: 'Public Sans', sans-serif;
+      font-weight: 300;
+      font-size: var(--fs-md);
+      line-height: 1.6;
+      color: var(--silver-technical);
+      max-width: 52ch;
+      opacity: 0;
+      animation: fadeUp 1.2s cubic-bezier(0.76, 0, 0.24, 1) 1.0s forwards;
+    }
+
+    /* Hairline rule */
+    .c05-rule {
+      width: 100%;
+      height: 1px;
+      background: rgba(255,255,255,0.08);
+      opacity: 0;
+      animation: fadeUp 1.2s cubic-bezier(0.76, 0, 0.24, 1) 1.2s forwards;
+    }
+
+    /* CTA */
+    .c05-cta {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--parchment-text);
+      background: var(--moss);
+      border: none;
+      border-radius: 2px;
+      padding: var(--sp-2) var(--sp-4);
+      cursor: pointer;
+      transition: background 0.5s ease;
+      opacity: 0;
+      animation: fadeUp 1.2s cubic-bezier(0.76, 0, 0.24, 1) 1.4s forwards;
+    }
+
+    .c05-cta:hover {
+      background: var(--moss-bright);
+    }
+
+    /* Footer artifact */
+    .c05-footer {
+      position: fixed;
+      bottom: var(--sp-4);
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+      font-size: var(--fs-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: rgba(156, 163, 175, 0.4);
+      white-space: nowrap;
+      opacity: 0;
+      animation: fadeUp 1.2s cubic-bezier(0.76, 0, 0.24, 1) 1.7s forwards;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(21px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Grain */
+    .grain {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      pointer-events: none;
+      opacity: 0.02;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-size: 256px 256px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hud-stage t-mono">[ STAGE: CATEGORY ]</div>
+
+  <div class="c05-center">
+
+    <span class="c05-category t-mono">Memória Operacional Validada</span>
+
+    <h1 class="c05-wordmark t-display">ELYSIAN</h1>
+
+    <p class="t-accent" style="font-size:var(--fs-md);opacity:0;animation:fadeUp 1.2s cubic-bezier(0.76,0,0.24,1) 0.65s forwards;">
+      infraestrutura que executa
+    </p>
+
+    <p class="t-editorial c05-body">
+      Não somos CRM, copiloto ou plataforma de IA. Construímos a infraestrutura que transforma conhecimento confiável em execução confiável.
+    </p>
+
+    <div class="c05-rule"></div>
+
+    <button class="c05-cta">[ REQUEST PARTNERSHIP ]</button>
+
+  </div>
+
+  <div class="c05-footer t-mono">
+    ARTIFACT: 2026.Q2.CERT // STRATEGY: MAD LAB AURORA
+  </div>
+
+  <div class="grain"></div>
+
+</body>
+</html>

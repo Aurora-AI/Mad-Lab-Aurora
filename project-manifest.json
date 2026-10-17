@@ -2,22 +2,22 @@
   "project": "MadLabAurora",
   "skills": [
     {
+      "name": "agentic-web-architect",
+      "status": "installed",
+      "installed_at": "2026-10-16T15:00:00Z"
+    },
+    {
+      "name": "b2b-ai-outbound-architect",
+      "status": "installed",
+      "installed_at": "2026-10-16T15:00:00Z"
+    },
+    {
       "name": "ceo-business-partner",
       "status": "installed",
       "installed_at": "2026-04-18T11:46:18Z"
     },
     {
       "name": "ceo-copy",
-      "status": "installed",
-      "installed_at": "2026-04-18T11:46:18Z"
-    },
-    {
-      "name": "ceo-design",
-      "status": "installed",
-      "installed_at": "2026-04-18T11:46:18Z"
-    },
-    {
-      "name": "ceo-effects",
       "status": "installed",
       "installed_at": "2026-04-18T11:46:18Z"
     },
@@ -37,26 +37,76 @@
       "installed_at": "2026-04-18T11:46:18Z"
     },
     {
-      "name": "design-md",
-      "status": "installed",
-      "installed_at": "2026-04-18T11:46:18Z"
-    },
-    {
       "name": "qa-review",
       "status": "installed",
       "installed_at": "2026-04-18T11:46:18Z"
     },
     {
-      "name": "taste-design",
-      "status": "installed",
+      "name": "ceo-design",
+      "status": "deprecated",
+      "deprecated": true,
       "installed_at": "2026-04-18T11:46:18Z"
+    },
+    {
+      "name": "ceo-effects",
+      "status": "deprecated",
+      "deprecated": true,
+      "installed_at": "2026-04-18T11:46:18Z"
+    },
+    {
+      "name": "ceo-3d",
+      "status": "deprecated",
+      "deprecated": true,
+      "installed_at": "2026-04-18T11:46:18Z"
+    },
+    {
+      "name": "ceo-art-direction",
+      "status": "deprecated",
+      "deprecated": true,
+      "installed_at": "2026-04-18T11:46:18Z"
+    },
+    {
+      "name": "cinematic-grammar",
+      "status": "deprecated",
+      "deprecated": true,
+      "installed_at": "2026-04-18T11:46:18Z"
+    },
+    {
+      "name": "design-md",
+      "status": "deprecated",
+      "deprecated": true,
+      "installed_at": "2026-04-18T11:46:18Z"
+    },
+    {
+      "name": "taste-design",
+      "status": "deprecated",
+      "deprecated": true,
+      "installed_at": "2026-04-18T11:46:18Z"
+    },
+    {
+      "name": "ceo-critique-theater",
+      "status": "deprecated",
+      "deprecated": true,
+      "installed_at": "2026-05-06T18:13:31Z"
     }
   ],
-  "last_synced_at": "2026-05-06T18:15:00Z",
-  "status": "CERTIFIED-INDUSTRIAL",
-  "repository_root": "C:\\Aurora\\aurora-agents",
+  "last_synced_at": "2026-10-16T15:20:00Z",
+  "status": "CERTIFIED-AGENTIC-WEB-V9.1",
+  "repository_root": "C:\\Projetos\\Aurora",
   "project_root": "C:\\Projetos\\MadLabAurora",
   "installed_skills": {
+    "agentic-web-architect": {
+      "version": "1.0.0",
+      "status": "production",
+      "installed_at": "2026-10-16T15:00:00+00:00",
+      "installed_path": "C:\\Projetos\\MadLabAurora\\.aurora\\skills\\agentic-web-architect"
+    },
+    "b2b-ai-outbound-architect": {
+      "version": "1.0.0",
+      "status": "production",
+      "installed_at": "2026-10-16T15:00:00+00:00",
+      "installed_path": "C:\\Projetos\\MadLabAurora\\.aurora\\skills\\b2b-ai-outbound-architect"
+    },
     "engenheiro-reverso": {
       "version": "1.0.1-PROD",
       "status": "production",
@@ -73,7 +123,8 @@
     },
     "ceo-critique-theater": {
       "version": "2.1.0-HARDENED",
-      "status": "production",
+      "status": "deprecated",
+      "deprecated": true,
       "installed_at": "2026-05-06T18:13:31+00:00",
       "vault_id": "29422b9b-49e6-4b79-8869-2456c8399a8d",
       "installed_path": "C:\\Projetos\\MadLabAurora\\.aurora\\skills\\ceo-critique-theater"

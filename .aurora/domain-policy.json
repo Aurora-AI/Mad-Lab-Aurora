@@ -1,16 +1,16 @@
 {
   "domain": "madlab",
-  "policy_name": "Mad Lab Domain Sovereignty Policy",
-  "policy_version": "1.1.0",
-  "constitution_ref": "docs/brand/MANUAL_DA_AGENCIA.md",
-  "constitution_version": "3.0.0",
+  "policy_name": "Mad Lab Domain Sovereignty & Agentic Web Policy",
+  "policy_version": "2.0.0",
+  "constitution_ref": "docs/AGENTS/DOCTRINE.md",
+  "constitution_version": "9.1.0",
   "governance": {
-    "boundary": "creative-arm",
+    "boundary": "agentic-web-and-conversion-unit",
     "quality_gates_ref": {
-      "design": "docs/brand/MANUAL_DA_AGENCIA.md#51-o-gate-de-design-ceo-design",
-      "effects": "docs/brand/MANUAL_DA_AGENCIA.md#52-o-gate-de-efeitos-ceo-effects",
-      "web": "docs/brand/MANUAL_DA_AGENCIA.md#53-o-gate-de-arquitetura-espacial-ceo-web",
-      "copy": "docs/brand/MANUAL_DA_AGENCIA.md#54-o-gate-de-escrita-ceo-copy"
+      "architecture_zero_stub": ".aurora/skills/agentic-web-architect/SKILL.md",
+      "agentic_interoperability_webmcp": ".aurora/skills/agentic-web-architect/SKILL.md",
+      "entity_density_and_interface_acceptance": "C:/Projetos/Aurora/docs/CONSTITUICAO/criterio_formal_de_aceite_de_interface.md",
+      "outbound_and_cold_qa": ".aurora/skills/qa-review/SKILL.md"
     },
     "can_consume": [
       "observability.get_trace_summary",
@@ -23,14 +23,16 @@
       "replicate_alvaro_runtime",
       "duplicate_global_qdrant_instance",
       "execute_autonomous_production_self_healing",
-      "bypass_visual_quality_gates",
-      "auto_promote_knowledge_to_global_vault"
+      "bypass_agentic_or_interface_quality_gates",
+      "auto_promote_knowledge_to_global_vault",
+      "use_deprecated_navigator_model_context",
+      "enforce_deprecated_dark_editorial_or_webgl_rules"
     ],
     "local_only": [
-      "madlab.design_system_lint",
-      "madlab.visual_performance_harness",
-      "madlab.hydration_integrity_check",
-      "madlab.motion_regression_check",
+      "madlab.governance_check",
+      "madlab.webmcp_contract_lint",
+      "madlab.markdown_mirror_check",
+      "madlab.jsonld_graph_validation",
       "candidate_knowledge_indicators_local"
     ],
     "global_promotion_path": {

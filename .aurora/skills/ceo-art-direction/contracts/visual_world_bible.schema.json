@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VisualWorldBible",
+  "type": "object",
+  "properties": {
+    "project_name": { "type": "string" },
+    "artistic_premise": { "type": "string" },
+    "visual_world": { "type": "string" },
+    "atmosphere": { "type": "string" },
+    "camera_language": { "type": "string" },
+    "lighting": { "type": "string" },
+    "textures": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "materials": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "atmospheric_palette": {
+      "type": "object",
+      "properties": {
+        "colors": { "type": "array", "items": { "type": "string" } },
+        "contrast_ratio": { "type": "string" }
+      },
+      "required": ["colors", "contrast_ratio"]
+    },
+    "approved_references": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "forbidden_references": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "asset_direction": { "type": "string" },
+    "motion_art_constraints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "prompt_grammar": { "type": "string" },
+    "anti_ai_rejection_checklist": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "production_budget": {
+      "type": "object",
+      "properties": {
+        "max_size_kb": { "type": "integer" },
+        "format": { "type": "string" }
+      },
+      "required": ["max_size_kb", "format"]
+    },
+    "handoff": {
+      "type": "object",
+      "properties": {
+        "design": { "type": "array", "items": { "type": "string" } },
+        "effects": { "type": "array", "items": { "type": "string" } },
+        "web": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["design", "effects", "web"]
+    }
+  },
+  "required": [
+    "project_name",
+    "artistic_premise",
+    "visual_world",
+    "atmosphere",
+    "camera_language",
+    "lighting",
+    "textures",
+    "materials",
+    "atmospheric_palette",
+    "approved_references",
+    "forbidden_references",
+    "asset_direction",
+    "motion_art_constraints",
+    "prompt_grammar",
+    "anti_ai_rejection_checklist",
+    "production_budget",
+    "handoff"
+  ]
+}

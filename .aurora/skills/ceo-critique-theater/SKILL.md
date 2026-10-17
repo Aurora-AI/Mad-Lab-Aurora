@@ -1,7 +1,9 @@
 ---
 name: ceo-critique-theater
 version: 3.0.0
-status: production
+status: deprecated
+deprecated: true
+deprecated_by: OS-MADLAB-AGENTIC-PIVOT-20261016-001
 trigger: on_demand
 description: |
   Orquestrador de auditoria estética multi-dimensional. Submete qualquer interface digital

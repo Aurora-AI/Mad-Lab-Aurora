@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Elysian Turnkey Revenue Systems | Engenharia de Receita Autônoma (B2C & B2G)</title>
+  <meta name="description" content="Implantação de infraestrutura de receita autônoma para operações B2C de médio porte e fornecedores governamentais B2G. Diagnóstico forense de funil, portais WebMCP, detecção de ghosting no WhatsApp e mapeamento determinístico de licitações." />
+
+  <!-- Sinais para Crawlers de IA e Espelhamento Markdown -->
+  <link rel="alternate" type="text/markdown" href="/index.md" title="Versão Markdown para Agentes de IA" />
+  <link rel="llms-txt" href="/llms.txt" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+
+  <!-- Dependências Visuais Fidedignas do Google Stitch (Refined Light Mode with Glassy UI) -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Noto+Serif:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "background": "#f9f9f9",
+            "surface": "#f9f9f9",
+            "surface-container-low": "#f3f3f4",
+            "surface-container": "#eeeeee",
+            "surface-container-high": "#e8e8e8",
+            "outline-variant": "#cfc4c5",
+            "outline": "#7e7576",
+            "primary": "#000000",
+            "secondary": "#5e5e5e",
+            "elysian-emerald": "#059669"
+          },
+          fontFamily: {
+            sans: ["Manrope", "sans-serif"],
+            serif: ["Noto Serif", "serif"],
+            mono: ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .parallax-hero {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    @keyframes liquidFlow {
+      0% { border-radius: 50%; transform: rotate(0deg) scale(1); }
+      50% { border-radius: 50%; transform: rotate(180deg) scale(1.05); }
+      100% { border-radius: 50%; transform: rotate(360deg) scale(1); }
+    }
+    .liquid-orb {
+      width: 24px;
+      height: 24px;
+      position: relative;
+      background: linear-gradient(45deg, #059669, #10b981, #047857, #34d399);
+      background-size: 300% 300%;
+      animation: liquidFlow 6s ease-in-out infinite, gradientShift 8s ease infinite;
+      box-shadow: inset 0 0 8px rgba(255,255,255,0.6);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    form:tool-form-active {
+      outline: 2px solid #059669 !important;
+      box-shadow: 0 0 25px rgba(5, 150, 105, 0.25) !important;
+      transition: all 0.2s ease-in-out;
+    }
+    button:tool-submit-active {
+      background-color: #047857 !important;
+      transform: scale(0.99);
+    }
+  </style>
+
+  <!-- CAMADA 4: Grafo Semântico Determinístico (JSON-LD @graph) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://elysianconsult.com.br/#organization",
+        "name": "Elysian Turnkey Revenue Systems — Engenharia de Receita Autônoma",
+        "url": "https://elysianconsult.com.br",
+        "description": "Unidade de implantação de ecossistemas de aquisição e conversão agêntica (RevOps Agêntico) para operações B2C de médio porte e fornecedores governamentais B2G no Brasil.",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Brasil"
+        },
+        "knowsAbout": [
+          "Engenharia de Receita B2C",
+          "Mapeamento Determinístico B2G e PNCP",
+          "WebMCP (Web Model Context Protocol)",
+          "Automação de CRM e Detecção de Ghosting no WhatsApp",
+          "Signal-Based Outbound"
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://elysianconsult.com.br/#service-b2c",
+        "name": "Motor de Conversão & Resgate de Funil para B2C Médio",
+        "provider": { "@id": "https://elysianconsult.com.br/#organization" },
+        "serviceType": "Implantação de Infraestrutura Comercial B2C",
+        "description": "Elimina a perda de leads no WhatsApp com detecção de ghosting em tempo real, extração automática de perfil BANT, recomendação de Next Best Action e superfície web compatível com agentes de IA."
+      },
+      {
+        "@type": "Service",
+        "@id": "https://elysianconsult.com.br/#service-b2g",
+        "name": "Inteligência Determinística & Pré-Venda Técnica B2G",
+        "provider": { "@id": "https://elysianconsult.com.br/#organization" },
+        "serviceType": "Implantação de Máquina de Vendas Governamentais (B2G)",
+        "description": "Mapeamento municipal determinístico via dados oficiais (IBGE, PNCP), abordagem técnica pré-edital em texto puro imune a spam e geração automatizada de dossiês de licitação."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://elysianconsult.com.br/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qual a diferença entre a Elysian Turnkey Revenue Systems e uma consultoria comercial ou agência web tradicional?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Consultorias tradicionais entregam diagnósticos em PDF sem ferramentas de execução, enquanto agências entregam sites invisíveis para agentes de IA desconectados do processo comercial interno. A Elysian realiza o diagnóstico forense e instala a infraestrutura técnica completa: portal WebMCP, coletores de WhatsApp/E-mail, detector de ghosting e orquestrador de CRM."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como funciona a Auditoria Forense de Vazamento de Receita de 7 dias?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Em 7 dias, processamos a superfície digital atual da empresa e uma amostragem das interações comerciais (WhatsApp/E-mail/Pipeline) através do nosso motor forense para quantificar exatamente quantos reais estão sendo perdidos por tempo de resposta, abandono de follow-up (ghosting) e invisibilidade em buscas generativas."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-background text-primary font-sans antialiased selection:bg-primary selection:text-white">
+
+  <!-- TOP NAV BAR MINIMALISTA (Stitch Refined Layout) -->
+  <header class="w-full bg-background/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30">
+    <div class="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-elysian-emerald"></span>
+        <span class="font-mono text-sm tracking-tight font-bold text-primary uppercase">Elysian Turnkey</span>
+        <span class="hidden sm:inline-block text-[11px] font-mono text-secondary border border-outline-variant/60 bg-surface-container-low px-2 py-0.5 rounded">
+          Ozzmosis Engine v2.6
+        </span>
+      </div>
+      <nav aria-label="Navegação Principal" class="hidden md:flex items-center gap-8 text-sm text-secondary">
+        <a href="#capacidades" class="hover:text-primary transition-colors">Capacidades</a>
+        <a href="#spec-b2c" class="hover:text-primary transition-colors">B2C Médio</a>
+        <a href="#spec-b2g" class="hover:text-primary transition-colors">Governo (B2G)</a>
+        <a href="#simulador" class="hover:text-primary transition-colors">Simulador</a>
+        <a href="/index.md" class="font-mono text-xs text-primary border border-primary/30 px-2 py-0.5 rounded hover:bg-primary/5">
+          [Markdown / LLM]
+        </a>
+      </nav>
+      <a href="#diagnostico" class="bg-primary text-white text-xs font-medium px-5 py-2.5 rounded-full hover:bg-primary/90 transition-all tracking-wide">
+        Auditoria 7 Dias
+      </a>
+    </div>
+  </header>
+
+  <main class="w-full">
+
+    <!-- 1. HERO SECTION (Stitch Refined Light Mode with Glassy UI) -->
+    <section class="relative w-full overflow-hidden flex flex-col items-center justify-center pt-5 pb-14 px-5">
+      <div class="relative w-full max-w-[1200px] mx-auto rounded-[20px] overflow-hidden flex items-center justify-center min-h-[580px] pt-24 pb-16">
+        <div class="absolute top-8 left-0 right-0 flex justify-center z-20">
+          <div class="text-xs font-mono font-semibold tracking-[0.2em] text-secondary uppercase bg-white/80 backdrop-blur-md px-3 py-1 rounded-full border border-outline-variant/40">
+            Protocolo Dual-Surface: Humano + WebMCP
+          </div>
+        </div>
+        <img alt="Serene sunrise in minimalist architectural space" class="absolute inset-0 w-full h-full object-cover" src="https://plus.unsplash.com/premium_photo-1669541884772-49c30fdee42c?q=80&amp;w=1675&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0">
+        
+        <!-- Glassy Overlay Center Card -->
+        <div class="relative z-10 w-full px-8 text-center py-12 mx-6 rounded-[20px] max-w-4xl bg-white/80 backdrop-blur-xl border border-white/60 shadow-xl">
+          <h1 class="text-3xl md:text-5xl font-serif text-primary leading-tight tracking-tight mb-6">
+            Diagnóstico sem ferramenta morre na gaveta.<br>Site bonito com processo quebrado queima caixa.
+          </h1>
+          <p class="text-secondary text-base md:text-lg font-light leading-relaxed max-w-2xl mx-auto mb-8">
+            Implantamos <strong>Ecossistemas de Receita Autônoma</strong> para operações <strong>B2C de Médio Porte</strong> e <strong>Fornecedores B2G</strong>: unimos auditoria forense de processos, portais 100% legíveis por Agentes de IA e copilotos de WhatsApp e CRM que impedem sua equipe de perder vendas.
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-4">
+            <a href="#diagnostico" class="bg-primary text-white text-xs font-medium px-6 py-3 rounded-full hover:bg-primary/90 transition-all tracking-wide shadow-md">
+              Solicitar Raio-X Forense de Funil
+            </a>
+            <a href="#simulador" class="bg-surface-container-low text-primary border border-outline-variant text-xs font-medium px-6 py-3 rounded-full hover:bg-surface-container transition-all tracking-wide">
+              Calcular Vazamento de Receita
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. INTRO STATEMENTS (Stitch Spatial Layout) -->
+    <section class="pt-8 px-5 pb-16">
+      <div class="max-w-[1200px] mx-auto">
+        <div class="flex flex-col lg:flex-row gap-8">
+          <div class="lg:w-2/5 flex items-start pt-2">
+            <span class="text-xs font-semibold text-secondary tracking-[0.2em] uppercase whitespace-nowrap">A Tese Operacional</span>
+          </div>
+          <div class="lg:w-3/5">
+            <p class="text-primary leading-tight font-serif text-2xl md:text-3xl">
+              Eliminamos o desperdício invisível. Substituímos relatórios teóricos em PDF por instrumentação determinística de dados, detecção em tempo real de vácuo no atendimento e portais indexáveis por IA.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SMART INSIGHTS SECTION 1: B2C MÉDIO (Stitch Glassy Card with Analytics Telemetry) -->
+    <section id="spec-b2c" class="pt-16 pb-8 px-5 border-t border-outline-variant/30">
+      <div class="max-w-[1200px] mx-auto">
+        <div class="max-w-full mb-8">
+          <span class="text-xs font-semibold text-secondary tracking-[0.2em] uppercase">Vertical 01 — B2C de Médio Porte</span>
+          <h2 class="font-serif text-primary mt-2 leading-tight text-3xl md:text-4xl">
+            Como estancar a perda de leads e aumentar a conversão no WhatsApp?
+          </h2>
+          <p class="text-secondary text-sm md:text-base font-light mt-3 max-w-3xl leading-relaxed">
+            <strong>Resumo Executivo (TL;DR):</strong> Redes de varejo, clínicas de alto ticket e serviços recorrentes perdem até 68% do tráfego pago por lentidão de resposta e ausência de resgate de ghosting. Nossa arquitetura acopla um motor de supervisão em tempo real sobre a operação existente.
+          </p>
+        </div>
+
+        <div class="border border-outline-variant/40 rounded-[20px] overflow-hidden flex flex-col lg:flex-row w-full min-h-[620px] bg-surface-container-low/40 p-6 gap-8">
+          <!-- Left: Spec Details -->
+          <div class="w-full lg:w-2/5 flex flex-col justify-between py-2">
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <span class="material-symbols-outlined text-primary text-2xl">chat_bubble</span>
+                <h3 class="font-serif text-primary text-2xl">Blindagem de Conversas</h3>
+              </div>
+              <p class="text-secondary text-sm mb-6 leading-relaxed font-light">
+                Monitoramento contínuo em segundo plano que extrai perfil BANT, identifica hesitação do cliente e sugere Next Best Action (NBA) com ancoragem de valor.
+              </p>
+            </div>
+
+            <div class="space-y-4">
+              <div class="border-t border-outline-variant/40 pt-4">
+                <h4 class="text-sm font-semibold text-primary mb-1">Detecção Ativa de Ghosting</h4>
+                <p class="text-xs text-secondary font-light">
+                  Acionamento automático quando o cliente para de responder após o envio do preço, sugerindo contornos calibrados.
+                </p>
+              </div>
+              <div class="border-t border-outline-variant/40 pt-4">
+                <h4 class="text-sm font-semibold text-primary mb-1">Qualificação Nativa via WebMCP</h4>
+                <p class="text-xs text-secondary font-light">
+                  Simuladores integrados ao navegador que entregam o lead ao vendedor já com intenção e orçamento calculados.
+                </p>
+              </div>
+              <div class="border-t border-outline-variant/40 pt-4">
+                <h4 class="text-sm font-semibold text-primary mb-1">Métricas Auditáveis (+24.8%)</h4>
+                <p class="text-xs text-secondary font-light">
+                  Recuperação comprovada de 15% a 28% dos orçamentos abertos sem contratação de novos atendentes.
+                </p>
+              </div>
+            </div>
+
+            <!-- Tabela Nativa de Especificação Operacional (GEO Spec-Sheet) -->
+            <div class="mt-6 border border-outline-variant/40 rounded-[12px] overflow-hidden bg-white/70">
+              <table class="w-full text-left border-collapse text-xs">
+                <thead>
+                  <tr class="bg-surface-container-low border-b border-outline-variant/40 text-primary font-mono uppercase text-[10px]">
+                    <th class="p-2.5">Componente</th>
+                    <th class="p-2.5">Mercado (Vala Comum)</th>
+                    <th class="p-2.5">Implantação Elysian</th>
+                    <th class="p-2.5">KPI</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-outline-variant/30 text-secondary">
+                  <tr>
+                    <td class="p-2.5 font-medium text-primary">Qualificação Web</td>
+                    <td class="p-2.5">Landing page cega para IA</td>
+                    <td class="p-2.5">Portal WebMCP document.modelContext</td>
+                    <td class="p-2.5 font-mono text-emerald-800">-40% tempo perdido</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2.5 font-medium text-primary">Supervisão WhatsApp</td>
+                    <td class="p-2.5">Atendimento sem auditoria</td>
+                    <td class="p-2.5">whatsapp-gateway + BANT extractor</td>
+                    <td class="p-2.5 font-mono text-emerald-800">100% auditado</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2.5 font-medium text-primary">Resgate de Vácuo</td>
+                    <td class="p-2.5">Follow-up esquecido</td>
+                    <td class="p-2.5">ghosting-detection + NBA Ozzmosis</td>
+                    <td class="p-2.5 font-mono text-emerald-800">+24.8% resgate</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Right: Visual Glassy Card (Stitch Exact Architecture) -->
+          <div class="w-full lg:w-3/5 relative flex items-center justify-center overflow-hidden rounded-[16px] group p-6 min-h-[420px]">
+            <img alt="Minimalist architecture background" class="absolute inset-0 w-full h-full object-cover rounded-[16px]" src="https://images.unsplash.com/photo-1564107628966-daff03746bee?q=80&amp;w=987&amp;auto=format&amp;fit=crop">
+            
+            <!-- Glassy Floating Telemetry Card -->
+            <div class="relative z-10 w-full backdrop-blur-xl border border-white/80 rounded-[20px] overflow-hidden shadow-2xl bg-white/75 p-6 space-y-6">
+              <div class="flex items-center justify-between border-b border-primary/10 pb-3">
+                <div class="flex items-center gap-3">
+                  <div class="liquid-orb"></div>
+                  <div class="flex gap-1.5">
+                    <div class="w-2 h-2 rounded-full bg-primary/20"></div>
+                    <div class="w-2 h-2 rounded-full bg-primary/20"></div>
+                  </div>
+                </div>
+                <div class="text-[11px] font-mono tracking-widest text-secondary uppercase font-semibold">ozzmosis://b2c-shield.live</div>
+              </div>
+
+              <div class="grid grid-cols-3 gap-4">
+                <div class="space-y-1">
+                  <div class="text-[10px] text-secondary uppercase tracking-wider font-mono">Taxa de Resgate</div>
+                  <div class="text-xl font-serif text-primary">24.8%</div>
+                  <div class="h-1 w-full bg-primary/5 rounded-full overflow-hidden">
+                    <div class="h-full bg-elysian-emerald w-[24.8%]"></div>
+                  </div>
+                </div>
+                <div class="space-y-1">
+                  <div class="text-[10px] text-secondary uppercase tracking-wider font-mono">BANT Automático</div>
+                  <div class="text-xl font-serif text-primary">100%</div>
+                  <div class="h-1 w-full bg-primary/5 rounded-full overflow-hidden">
+                    <div class="h-full bg-elysian-emerald w-[100%]"></div>
+                  </div>
+                </div>
+                <div class="space-y-1">
+                  <div class="text-[10px] text-secondary uppercase tracking-wider font-mono">Tempo Resposta</div>
+                  <div class="text-xl font-serif text-primary">&lt; 3min</div>
+                  <div class="h-1 w-full bg-primary/5 rounded-full overflow-hidden">
+                    <div class="h-full bg-elysian-emerald w-[90%]"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Telemetry Code Box -->
+              <pre class="p-3.5 rounded bg-surface-container-low font-mono text-xs text-primary/80 overflow-x-auto leading-relaxed"><code>{
+  "event": "GHOSTING_DETECTED",
+  "lead_phone": "+55 41 9****-8812",
+  "silence_duration_hours": 18.5,
+  "action_recommended": "DISPATCH_ASYNC_VALUE_ASSET",
+  "asset_id": "MICRO_CASE_REDE_SUL_ROI_24PCT"
+}</code></pre>
+
+              <div class="flex justify-between items-center text-[10px] font-mono text-secondary pt-2">
+                <span>Supervisor Ozzmosis Conectado</span>
+                <span>STATUS: OPERACIONAL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SMART INSIGHTS SECTION 2: FORNECEDORES B2G (Swapped Layout with Code Insights) -->
+    <section id="spec-b2g" class="pt-16 pb-8 px-5">
+      <div class="max-w-[1200px] mx-auto">
+        <div class="max-w-full mb-8">
+          <span class="text-xs font-semibold text-secondary tracking-[0.2em] uppercase">Vertical 02 — Governo & Licitações (B2G)</span>
+          <h2 class="font-serif text-primary mt-2 leading-tight text-3xl md:text-4xl">
+            Como sair da guerra de preços e atuar na fase pré-edital no mercado B2G?
+          </h2>
+          <p class="text-secondary text-sm md:text-base font-light mt-3 max-w-3xl leading-relaxed">
+            <strong>Resumo Executivo (TL;DR):</strong> Empresas que vendem para órgãos públicos destroem suas margens quando só descobrem a demanda após o pregão aberto. A Elysian instala inteligência determinística cruzando IBGE e PNCP com aproximação técnica pré-edital em texto puro.
+          </p>
+        </div>
+
+        <div class="border border-outline-variant/40 rounded-[20px] overflow-hidden flex flex-col lg:flex-row w-full min-h-[620px] bg-surface-container-low/40 p-6 gap-8">
+          <!-- Left: Code Insight Block (Stitch Glassy Code Box) -->
+          <div class="w-full lg:w-3/5 relative flex items-center justify-center overflow-hidden rounded-[16px] group p-6 min-h-[420px]">
+            <img alt="Atmospheric landscape" class="absolute inset-0 w-full h-full object-cover rounded-[16px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA253wxve8x_LeWpLNW_5Shz_jkDueDSHRtPbI4DmezdUkIUJihrb_pcFsjkmWHN_-PvTCDqIfKCcW2LMktgIFoY4ISG21P7tsTdY05IhnbPOzkK9kLt3ocFTRfxIGx032Ap3zgE173jMsRX9L3mEHRETvYIFSSToHFGyD7w1FEkPPLtX6XkKvF5k-nAE0sEdK0MDbSeZK_xTgsDLf2PKh95SyWaxM7hJjqHtx1e-6xTyDOfPDnXJlsLOpslQrp-m5sD8qUhh9kqFuC">
+            
+            <div class="relative z-10 w-full backdrop-blur-xl border border-white/80 rounded-[20px] overflow-hidden shadow-2xl bg-white/80 p-6 space-y-4">
+              <div class="flex items-center justify-between border-b border-primary/10 pb-3">
+                <div class="flex items-center gap-3">
+                  <div class="liquid-orb"></div>
+                  <div class="flex gap-1.5">
+                    <div class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></div>
+                  </div>
+                </div>
+                <div class="text-[11px] font-mono tracking-widest text-secondary uppercase font-semibold">b2g_deterministic_radar.js</div>
+              </div>
+
+              <div class="font-mono text-xs leading-relaxed text-primary/80 space-y-1 bg-surface-container-low/80 p-4 rounded">
+                <div><span class="text-blue-600">async function</span> <span class="text-emerald-700">radarPreEdital</span>(orgaoPublico) {</div>
+                <div class="pl-4"><span class="text-blue-600">const</span> dadosPNCP = <span class="text-blue-600">await</span> PNCP.query({ uasg: orgaoPublico.uasg });</div>
+                <div class="pl-4"><span class="text-blue-600">const</span> historico = <span class="text-blue-600">await</span> CadSUAS.getFundos(orgaoPublico.ibge);</div>
+                <div class="pl-4"><span class="text-blue-600">return</span> {</div>
+                <div class="pl-8">janela_etp_estimada_dias: 45,</div>
+                <div class="pl-8">formato_abordagem: <span class="text-emerald-700">'ZERO_HTML_PLAIN_TEXT'</span>,</div>
+                <div class="pl-8">micro_asset: <span class="text-emerald-700">'ESTUDO_TECNICO_PRELIMINAR_MODELO'</span></div>
+                <div class="pl-4">};</div>
+                <div>}</div>
+              </div>
+
+              <div class="flex justify-between items-center text-[10px] font-mono text-secondary pt-1">
+                <span>Validação Trustware Ativa</span>
+                <span class="text-elysian-emerald font-semibold">ZERO-ALUCINAÇÃO</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: B2G Capabilities -->
+          <div class="w-full lg:w-2/5 flex flex-col justify-between py-2">
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <span class="material-symbols-outlined text-primary text-2xl">account_balance</span>
+                <h3 class="font-serif text-primary text-2xl">Venda Pública Consultiva</h3>
+              </div>
+              <p class="text-secondary text-sm mb-6 leading-relaxed font-light">
+                Estruturação da venda governamental desde a fase de planejamento interno do órgão (ETP/TR), garantindo especificações técnicas justas e aderência total à Lei 14.133.
+              </p>
+            </div>
+
+            <div class="space-y-4">
+              <div class="border-t border-outline-variant/40 pt-4">
+                <h4 class="text-sm font-semibold text-primary mb-1">Mapeamento Territorial</h4>
+                <p class="text-xs text-secondary font-light">
+                  Priorização de municípios e órgãos com verba alocada e histórico de contratações recorrentes.
+                </p>
+              </div>
+              <div class="border-t border-outline-variant/40 pt-4">
+                <h4 class="text-sm font-semibold text-primary mb-1">Dossiês Automatizados</h4>
+                <p class="text-xs text-secondary font-light">
+                  Redução de 70% no tempo de elaboração de propostas e documentação de habilitação técnica.
+                </p>
+              </div>
+              <div class="border-t border-outline-variant/40 pt-4">
+                <h4 class="text-sm font-semibold text-primary mb-1">Abordagem Anti-Spam</h4>
+                <p class="text-xs text-secondary font-light">
+                  Envio em texto puro com micro-assets de valor que superam os filtros de segurança governamentais.
+                </p>
+              </div>
+            </div>
+
+            <!-- Tabela Nativa de Especificação Operacional B2G (GEO Spec-Sheet) -->
+            <div class="mt-6 border border-outline-variant/40 rounded-[12px] overflow-hidden bg-white/70">
+              <table class="w-full text-left border-collapse text-xs">
+                <thead>
+                  <tr class="bg-surface-container-low border-b border-outline-variant/40 text-primary font-mono uppercase text-[10px]">
+                    <th class="p-2.5">Fase do Ciclo</th>
+                    <th class="p-2.5">Operação Reativa Comum</th>
+                    <th class="p-2.5">Engenharia Elysian</th>
+                    <th class="p-2.5">Entregável</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-outline-variant/30 text-secondary">
+                  <tr>
+                    <td class="p-2.5 font-medium text-primary">1. Mapeamento</td>
+                    <td class="p-2.5">Busca manual pós-edital</td>
+                    <td class="p-2.5">Cruzamento IBGE + CadSUAS + PNCP</td>
+                    <td class="p-2.5 font-mono text-emerald-800">Inventário de Oportunidades</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2.5 font-medium text-primary">2. Pré-Edital</td>
+                    <td class="p-2.5">E-mail HTML barrado no spam</td>
+                    <td class="p-2.5">b2b-ai-outbound em Plain-Text</td>
+                    <td class="p-2.5 font-mono text-emerald-800">Agenda técnica direta</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2.5 font-medium text-primary">3. Habilitação</td>
+                    <td class="p-2.5">Montagem manual em Word</td>
+                    <td class="p-2.5">proposal_generator + trustware</td>
+                    <td class="p-2.5 font-mono text-emerald-800">-70% tempo de dossiê</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FEATURES GRID (Stitch Exact 4-Point Capabilities Grid) -->
+    <section id="capacidades" class="pt-16 pb-20 px-5 border-t border-outline-variant/30">
+      <div class="max-w-[1200px] mx-auto">
+        <div class="mb-12">
+          <span class="text-xs font-semibold text-secondary tracking-[0.2em] uppercase">Infraestrutura Integrada</span>
+          <h2 class="font-serif text-primary mt-2 leading-tight text-3xl md:text-4xl">
+            Pilares da Engenharia de Receita Turnkey
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="flex flex-col border-t border-outline-variant/50 pt-6">
+            <span class="material-symbols-outlined text-primary text-2xl mb-4">search_insights</span>
+            <h3 class="text-lg font-serif font-medium text-primary mb-2">Raio-X Forense</h3>
+            <p class="text-sm text-secondary font-light leading-relaxed">
+              Auditoria de interações reais no WhatsApp e pipeline para identificar onde a receita está vazando.
+            </p>
+          </div>
+
+          <div class="flex flex-col border-t border-outline-variant/50 pt-6">
+            <span class="material-symbols-outlined text-primary text-2xl mb-4">terminal</span>
+            <h3 class="text-lg font-serif font-medium text-primary mb-2">Superfície WebMCP</h3>
+            <p class="text-sm text-secondary font-light leading-relaxed">
+              Páginas de serviços e ferramentas que agentes de IA conseguem ler, auditar e acionar diretamente.
+            </p>
+          </div>
+
+          <div class="flex flex-col border-t border-outline-variant/50 pt-6">
+            <span class="material-symbols-outlined text-primary text-2xl mb-4">send</span>
+            <h3 class="text-lg font-serif font-medium text-primary mb-2">Outbound por Sinal</h3>
+            <p class="text-sm text-secondary font-light leading-relaxed">
+              Prospecção sem template de spam. Sequências em texto puro calibradas para compradores C-Level e governos.
+            </p>
+          </div>
+
+          <div class="flex flex-col border-t border-outline-variant/50 pt-6">
+            <span class="material-symbols-outlined text-primary text-2xl mb-4">sync_saved_locally</span>
+            <h3 class="text-lg font-serif font-medium text-primary mb-2">Copiloto Operacional</h3>
+            <p class="text-sm text-secondary font-light leading-relaxed">
+              Extração BANT invisível, alerta de ghosting e recomendação da melhor ação comercial para o atendente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SIMULADOR INTERATIVO & FORMULÁRIO WEBMCP (Dual Column Glassy UI) -->
+    <section id="simulador" class="py-16 px-5 border-t border-outline-variant/30 bg-surface-container-low/30">
+      <div class="max-w-[1200px] mx-auto grid lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Calculadora Imperative WebMCP -->
+        <div class="lg:col-span-6 bg-white border border-outline-variant/60 p-8 rounded-[20px] shadow-sm space-y-6">
+          <div>
+            <span class="text-xs font-mono text-secondary tracking-widest uppercase">WebMCP Imperative Tool #1</span>
+            <h3 class="text-2xl font-serif text-primary mt-1">Calculadora de Vazamento de Funil</h3>
+            <p class="text-xs text-secondary mt-1 font-light">
+              Descubra quanto sua operação B2C ou B2G deixa na mesa mensalmente por tempo de resposta e falta de follow-up.
+            </p>
+          </div>
+
+          <div class="grid sm:grid-cols-3 gap-4">
+            <div>
+              <label for="calc-leads" class="block text-xs font-mono text-secondary mb-1">Leads/Mês</label>
+              <input type="number" id="calc-leads" value="300" min="1" class="w-full bg-surface-container-low border border-outline-variant/60 rounded px-3 py-2 text-sm text-primary focus:border-primary focus:outline-none" />
+            </div>
+            <div>
+              <label for="calc-ticket" class="block text-xs font-mono text-secondary mb-1">Ticket Médio (R$)</label>
+              <input type="number" id="calc-ticket" value="2500" min="50" class="w-full bg-surface-container-low border border-outline-variant/60 rounded px-3 py-2 text-sm text-primary focus:border-primary focus:outline-none" />
+            </div>
+            <div>
+              <label for="calc-conv" class="block text-xs font-mono text-secondary mb-1">Conversão (%)</label>
+              <input type="number" id="calc-conv" value="6" min="0.5" max="100" step="0.5" class="w-full bg-surface-container-low border border-outline-variant/60 rounded px-3 py-2 text-sm text-primary focus:border-primary focus:outline-none" />
+            </div>
+          </div>
+
+          <button type="button" id="btn-calcular-vazamento" class="w-full bg-primary text-white font-medium py-3 rounded-full text-xs tracking-wide hover:bg-primary/90 transition-all">
+            Calcular Impacto Financeiro da Ineficiência
+          </button>
+
+          <div class="p-5 rounded-[12px] bg-surface-container-low border border-outline-variant/40 font-mono text-xs space-y-2">
+            <div class="flex justify-between text-secondary">
+              <span>Receita Mensal Estimada:</span>
+              <strong id="out-receita-atual" class="text-primary">R$ 45.000,00</strong>
+            </div>
+            <div class="flex justify-between text-emerald-800">
+              <span>Recuperação Mensal (+24% via Ghosting Shield):</span>
+              <strong id="out-recuperacao-mensal">+ R$ 10.800,00 / mês</strong>
+            </div>
+            <div class="flex justify-between text-primary border-t border-outline-variant/40 pt-2 text-sm">
+              <span>Projeção Anual Recuperada:</span>
+              <strong id="out-recuperacao-anual" class="text-emerald-700">R$ 129.600,00 / ano</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário Declarative WebMCP -->
+        <div id="diagnostico" class="lg:col-span-6 bg-white border border-outline-variant/60 p-8 rounded-[20px] shadow-sm space-y-6">
+          <div>
+            <span class="text-xs font-mono text-secondary tracking-widest uppercase">WebMCP Declarative Tool #2</span>
+            <h3 class="text-2xl font-serif text-primary mt-1">Solicitar Auditoria Forense de 7 Dias</h3>
+            <p class="text-xs text-secondary mt-1 font-light">
+              Preencha os dados ou comande seu agente de IA para acionar a ferramenta <code class="font-mono text-xs text-primary">solicitar_auditoria_receita</code>.
+            </p>
+          </div>
+
+          <form
+            id="form-auditoria-elysian"
+            action="/api/v1/ingest-diagnostic"
+            method="POST"
+            toolname="solicitar_auditoria_receita"
+            tooldescription="Envia os dados da empresa B2C ou fornecedor B2G para agendar o Diagnostico Forense de Vazamento de Receita de 7 dias da Elysian Turnkey Revenue Systems."
+            class="space-y-4"
+          >
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="empresa" class="block text-xs font-mono text-secondary mb-1">Nome da Empresa</label>
+                <input
+                  type="text"
+                  id="empresa"
+                  name="empresa"
+                  required
+                  placeholder="Ex: Rede Sul / Actio Tech"
+                  toolparamtitle="company_name"
+                  toolparamdescription="Nome fantasia ou razao social da empresa solicitante."
+                  class="w-full bg-surface-container-low border border-outline-variant/60 rounded px-3 py-2 text-sm text-primary focus:border-primary focus:outline-none"
+                />
+              </div>
+              <div>
+                <label for="vertical" class="block text-xs font-mono text-secondary mb-1">Modelo de Operação</label>
+                <select
+                  id="vertical"
+                  name="vertical"
+                  required
+                  toolparamtitle="business_vertical"
+                  toolparamdescription="Vertical de atuacao: B2C_Medio_Porte ou B2G_Governo_Licitacoes."
+                  class="w-full bg-surface-container-low border border-outline-variant/60 rounded px-3 py-2 text-sm text-primary focus:border-primary focus:outline-none"
+                >
+                  <option value="B2C_Medio_Porte">B2C de Médio Porte (WhatsApp / Alto Volume)</option>
+                  <option value="B2G_Governo_Licitacoes">Fornecedor B2G (Vendas para Governo / Editais)</option>
+                  <option value="Hibrido_B2B_B2G">Operação Híbrida (Privado + Público)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="contato" class="block text-xs font-mono text-secondary mb-1">E-mail ou WhatsApp Corporativo</label>
+                <input
+                  type="text"
+                  id="contato"
+                  name="contato"
+                  required
+                  placeholder="diretoria@empresa.com.br"
+                  toolparamtitle="executive_contact"
+                  toolparamdescription="Contato do decisor para envio do dossie."
+                  class="w-full bg-surface-container-low border border-outline-variant/60 rounded px-3 py-2 text-sm text-primary focus:border-primary focus:outline-none"
+                />
+              </div>
+              <div>
+                <label for="equipe" class="block text-xs font-mono text-secondary mb-1">Time Comercial</label>
+                <input
+                  type="number"
+                  id="equipe"
+                  name="equipe"
+                  required
+                  min="1"
+                  max="500"
+                  value="8"
+                  toolparamtitle="sales_team_size"
+                  toolparamdescription="Quantidade de pessoas atendendo ou prospectando."
+                  class="w-full bg-surface-container-low border border-outline-variant/60 rounded px-3 py-2 text-sm text-primary focus:border-primary focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="gargalo" class="block text-xs font-mono text-secondary mb-1">Principal Gargalo Percebido</label>
+              <textarea
+                id="gargalo"
+                name="gargalo"
+                rows="2"
+                required
+                maxlength="400"
+                placeholder="Ex: Muitos leads no WhatsApp sem resposta ou demora na montagem de propostas para licitações."
+                toolparamtitle="primary_revenue_bottleneck"
+                toolparamdescription="Descricao do gargalo comercial ou operacional."
+                class="w-full bg-surface-container-low border border-outline-variant/60 rounded px-3 py-2 text-sm text-primary focus:border-primary focus:outline-none"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-primary text-white font-medium py-3 rounded-full text-xs tracking-wide hover:bg-primary/90 transition-all shadow-md"
+            >
+              Gerar Protocolo de Diagnóstico Forense
+            </button>
+
+            <div id="status-protocolo-auditoria" class="hidden p-3 rounded bg-emerald-50 border border-emerald-600 text-emerald-800 font-mono text-xs"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER REFINADO (Stitch Refined Layout) -->
+  <footer class="pt-4 pb-12 bg-background w-full px-5 border-t border-outline-variant/30">
+    <div class="max-w-[1200px] mx-auto">
+      <div class="w-full rounded-[20px] flex flex-col justify-between border bg-surface-container-low border-outline-variant/50 p-8 md:p-12 gap-8">
+        <div class="max-w-xl">
+          <h3 class="text-2xl md:text-3xl font-serif text-primary mb-3">Elysian Turnkey Revenue Systems</h3>
+          <p class="text-secondary text-sm leading-relaxed font-light">
+            Arquitetura de receita autônoma acoplada aos módulos executáveis do ecossistema Aurora / Ozzmosis Engine. Curitiba — PR, Brasil.
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end w-full gap-6 border-t border-outline-variant/30 pt-6">
+          <div class="flex flex-wrap gap-6 font-mono text-xs text-secondary">
+            <a href="/llms.txt" class="hover:text-primary">/llms.txt</a>
+            <a href="/.well-known/agent-card.json" class="hover:text-primary">/.well-known/agent-card.json</a>
+            <a href="/index.md" class="hover:text-primary">/index.md</a>
+          </div>
+          <div class="text-xs text-secondary font-light font-mono">
+            © 2026 Elysian Turnkey. 100% AI-Agentic Friendly.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CAMADA 2: Registro Determinístico WebMCP (document.modelContext — Chrome 150+) -->
+  <script>
+    (function initElysianRevenueArchitecture() {
+      const formatBRL = (val) => new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(val);
+
+      function computeFunnelLeakage(leadsMensais, ticketMedioBrl, taxaConversaoPercent) {
+        const leads = Math.max(1, Number(leadsMensais) || 0);
+        const ticket = Math.max(1, Number(ticketMedioBrl) || 0);
+        const taxa = Math.min(100, Math.max(0.1, Number(taxaConversaoPercent) || 1)) / 100;
+
+        const receitaAtualMensal = Math.round(leads * taxa * ticket);
+        const ganhoEficienciaMensal = Math.round(receitaAtualMensal * 0.24);
+        const ganhoEficienciaAnual = ganhoEficienciaMensal * 12;
+
+        return {
+          receita_atual_mensal_brl: receitaAtualMensal,
+          recuperacao_mensal_estimada_brl: ganhoEficienciaMensal,
+          recuperacao_anual_estimada_brl: ganhoEficienciaAnual,
+          metodologia: "Implantacao de Ghosting Detection + BANT Extractor + Next Best Action (Ozzmosis Engine)"
+        };
+      }
+
+      const btnCalc = document.getElementById('btn-calcular-vazamento');
+      btnCalc?.addEventListener('click', () => {
+        const leads = document.getElementById('calc-leads').value;
+        const ticket = document.getElementById('calc-ticket').value;
+        const conv = document.getElementById('calc-conv').value;
+        const res = computeFunnelLeakage(leads, ticket, conv);
+
+        document.getElementById('out-receita-atual').textContent = formatBRL(res.receita_atual_mensal_brl);
+        document.getElementById('out-recuperacao-mensal').textContent = '+ ' + formatBRL(res.recuperacao_mensal_estimada_brl) + ' / mês';
+        document.getElementById('out-recuperacao-anual').textContent = formatBRL(res.recuperacao_anual_estimada_brl) + ' / ano';
+      });
+
+      const formAuditoria = document.getElementById('form-auditoria-elysian');
+      const statusBox = document.getElementById('status-protocolo-auditoria');
+
+      formAuditoria?.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        const formData = Object.fromEntries(new FormData(formAuditoria).entries());
+        const protocolId = 'OS-ELYSIAN-' + new Date().toISOString().slice(0, 10).replace(/-/g, '') + '-' + Math.floor(1000 + Math.random() * 9000);
+
+        const payload = {
+          status: 'PROTOCOL_CREATED',
+          protocol: protocolId,
+          company: formData.empresa,
+          vertical: formData.vertical,
+          next_step: 'Auditoria Forense de 7 dias iniciada. O dossie preliminar sera enviado ao contato informado em ate 24h uteis.'
+        };
+
+        if (statusBox) {
+          statusBox.classList.remove('hidden');
+          statusBox.textContent = `[${payload.protocol}] Solicitação registrada para ${payload.company} (${payload.vertical}).`;
+        }
+
+        if (event.agentInvoked && typeof event.respondWith === 'function') {
+          event.respondWith(payload);
+        }
+      });
+
+      if (typeof document !== 'undefined' && typeof document.modelContext?.registerTool === 'function') {
+        const mc = document.modelContext;
+
+        mc.registerTool({
+          name: 'calcular_vazamento_funil_b2c',
+          description: 'Calcula o vazamento financeiro mensal e anual no funil B2C ou B2G e projeta a receita recuperada com os agentes da Elysian.',
+          inputSchema: {
+            type: 'object',
+            properties: {
+              leads_mensais: {
+                type: 'integer',
+                minimum: 1,
+                description: 'Quantidade de leads no WhatsApp ou editais analisados por mes.'
+              },
+              ticket_medio_brl: {
+                type: 'number',
+                minimum: 50,
+                description: 'Valor do ticket medio ou contrato em Reais (BRL).'
+              },
+              taxa_conversao_atual_percent: {
+                type: 'number',
+                minimum: 0.1,
+                maximum: 100,
+                description: 'Taxa de conversao atual da equipe comercial em percentual (ex: 6).'
+              }
+            },
+            required: ['leads_mensais', 'ticket_medio_brl', 'taxa_conversao_atual_percent'],
+            additionalProperties: false
+          },
+          annotations: {
+            readOnlyHint: true,
+            consequentialHint: false,
+            untrustedContentHint: false
+          },
+          execute: async (params) => {
+            return computeFunnelLeakage(
+              params.leads_mensais,
+              params.ticket_medio_brl,
+              params.taxa_conversao_atual_percent
+            );
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

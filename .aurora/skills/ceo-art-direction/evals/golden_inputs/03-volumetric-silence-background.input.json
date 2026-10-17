@@ -1,0 +1,21 @@
+{
+  "project": "ElysianCorp",
+  "page": "Home",
+  "section": "General background texture",
+  "asset_type": "texture",
+  "concept": "Textura de silêncio volumétrico para fundos escuros do portal",
+  "narrative_goal": "Dar profundidade física e afastar aparência de preto puro digital",
+  "cognitive_goal": "Melhorar contraste de leitura tipográfica e presença de profundidade",
+  "canonical_style": "volumetric_silence",
+  "approved_references": [
+    "Aino layouts limpos",
+    "Exo Ape noise grain"
+  ],
+  "forbidden_patterns": [
+    "preto puro",
+    "gradientes roxos",
+    "background chapado"
+  ],
+  "technical_context": "CSS backdrop-filter de noise e imagem WebP comprimida de fundo",
+  "output_intent": "art_production_report"
+}

@@ -1,0 +1,17 @@
+{
+  "cache_hit": null,
+  "timestamp": "2026-10-05T17:57:14.5658239-03:00",
+  "model": "native-session",
+  "input_tokens": null,
+  "cost_usd_estimated": null,
+  "duration_ms": null,
+  "cost_brl_estimated": null,
+  "agent": "codex",
+  "step_name": "Private Sites migration and QA",
+  "notes": "Usage and billing unavailable in session; no fabricated estimates. Build, API integration and hosted UI workflows verified; see OS evidence.",
+  "step_number": 4,
+  "output_tokens": null,
+  "entry_id": "OS-MADLAB-TONELAB-SITES-20261005-001-summary",
+  "os_id": "OS-MADLAB-TONELAB-SITES-20261005-001",
+  "total_tokens": null
+}

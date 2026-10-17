@@ -24,6 +24,7 @@ out/
 checkouts/
 scratch/
 ElysianCorp/
+tone-lab-site/
 
 # IDE / Editor folders
 .vscode/
@@ -37,6 +38,7 @@ ElysianCorp/
 # Agent / Temp caches
 .fallow/
 .claude/
+.playwright-mcp/
 *.log
 
 # System files

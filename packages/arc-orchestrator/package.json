@@ -1,0 +1,19 @@
+{
+  "name": "@aurora/arc-orchestrator",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@aurora/arc-artifact-generator": "file:../arc-artifact-generator",
+    "@aurora/arc-observability": "file:../arc-observability",
+    "@aurora/arc-schema": "file:../arc-schema",
+    "@aurora/arc-semantic-state": "file:../arc-semantic-state"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.0"
+  }
+}

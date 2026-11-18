@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Fixture de Tipografia e Seções Estruturais</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap">
+    <style>
+        @font-face {
+            font-family: 'faracohand';
+            src: url('data:font/woff2;base64,d09GMgABAAAAAAA=') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'JetBrains Mono';
+            src: url('data:font/woff2;base64,d09GMgABAAAAAAA=') format('woff2');
+            font-weight: 400;
+        }
+
+        :root {
+            --bg-dark: #0b0b0b;
+            --text-dark: #f3f1ec;
+            --accent-blue: #7fa8f0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-dark);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        /* Seção 1: Hero */
+        header.hero-section {
+            background-color: #0b0b0b;
+            color: #f3f1ec;
+            padding: 80px 40px;
+            min-height: 400px;
+        }
+        .hero-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.04em;
+            line-height: 1.05;
+        }
+        .hero-hand-note {
+            font-family: 'faracohand', cursive;
+            font-size: 20px;
+            color: var(--accent-blue);
+            transform: rotate(-3deg);
+            display: inline-block;
+        }
+
+        /* Seção 2: Grid de Cards */
+        section.features-section {
+            background-color: #121214;
+            color: #e4e4e7;
+            padding: 60px 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            min-height: 350px;
+        }
+        .feature-card {
+            background: #18181b;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 24px;
+        }
+        .feature-card p {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Seção 3: Console Técnico */
+        section.console-section {
+            background-color: #050505;
+            color: #10b981;
+            padding: 60px 40px;
+            border-top: 1px solid #27272a;
+            min-height: 300px;
+        }
+        .code-block {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            background: #000;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        /* Regra vinculada a filtro SVG */
+        .ink-bleed-applied {
+            filter: url(#test-turb-filter);
+        }
+    </style>
+</head>
+<body>
+    <svg style="display:none;">
+        <defs>
+            <filter id="test-turb-filter">
+                <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G" />
+            </filter>
+        </defs>
+    </svg>
+
+    <header class="hero-section">
+        <span class="hero-hand-note">Anotação com faracohand</span>
+        <h1 class="hero-title">Arquitetura de Alta Densidade e Performance Estética</h1>
+        <p>Texto introdutório com grande densidade de caracteres em fonte padrão Plus Jakarta Sans para garantir a fração do body acima de dez por cento com segurança absoluta.</p>
+        <div class="ink-bleed-applied" style="width: 120px; height: 30px; background: #7fa8f0;">Filtro Ativo</div>
+    </header>
+
+    <section class="features-section">
+        <article class="feature-card">
+            <h2>Card Número Um</h2>
+            <p>Parágrafo explicativo detalhado dentro de um card que usa a fonte primária Plus Jakarta Sans para texto corrido e valida a extração.</p>
+        </article>
+        <article class="feature-card">
+            <h2>Card Número Dois</h2>
+            <p>Segundo parágrafo técnico sobre o sistema de design agêntico para aumentar a contagem de caracteres e reforçar a distribuição.</p>
+        </article>
+        <article class="feature-card">
+            <h2>Card Número Três</h2>
+            <p>Terceiro parágrafo analítico consolidando o grid e a estrutura do componente com tipografia estrita.</p>
+        </article>
+    </section>
+
+    <section class="console-section">
+        <h2>Terminal Agêntico</h2>
+        <pre class="code-block"><code>const agent = new AutonomousAgent({ model: 'gemini-3.8-flash' });</code></pre>
+    </section>
+</body>
+</html>

@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elysian Consult — Gestão, Dados e Rotina para Óticas Independentes</title>
+    <meta name="description" content="Consultoria presencial de gestão e estancamento de sangramentos de receita para óticas independentes. Descubra onde o dinheiro da sua loja está sumindo em 7 dias.">
+    <link rel="canonical" href="https://elysianconsult.com.br/">
+    <link rel="alternate" type="text/markdown" href="/index.md">
+    <link rel="llms-txt" href="/llms.txt">
+    <meta http-equiv="Content-Signal" content="ai-train=yes, search=yes, ai-input=yes">
+
+    <!-- Grafo Semântico Unificado (JSON-LD @graph) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://elysianconsult.com.br/#organization",
+          "name": "Elysian Consult",
+          "url": "https://elysianconsult.com.br",
+          "logo": "https://elysianconsult.com.br/assets/logo.png",
+          "description": "Consultoria especializada em intervenção de gestão, auditoria de notas fiscais e treinamento de rotina para óticas independentes.",
+          "knowsAbout": [
+            "Gestão de Óticas",
+            "Auditoria de Margem Real",
+            "Recuperação de Clientes de Grau",
+            "Giro de Estoque Óptico",
+            "Método 360 Óticas"
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://elysianconsult.com.br/#service",
+          "name": "Diagnóstico de Choque e Intervenção de Gestão Óptica (D1 a D90)",
+          "provider": { "@id": "https://elysianconsult.com.br/#organization" },
+          "serviceType": "Consultoria em Gestão de Varejo Óptico",
+          "areaServed": "Brasil",
+          "description": "Diagnóstico presencial de 7 dias com entrega de Laudo Executivo dos 3 Sangramentos (Lucro Fantasma, Clientes Evaporando e Caixa Preso) e acompanhamento até D90."
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://elysianconsult.com.br/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Preciso trocar de sistema para fazer a consultoria?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. Operamos com o sistema que a sua ótica já utiliza hoje (Optidados, Vixen, Linx, Excel ou outro). Extraímos as informações de compras e vendas sem interromper o trabalho do caixa."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quanto tempo a equipe precisará se afastar do balcão?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Zero horas. O método 360 Óticas é instalado na rotina diária da loja, diretamente no balcão e no atendimento a clientes reais."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O que é garantido na entrega da Fase 1 (D7)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Você recebe o Laudo Executivo em mãos provando linha por linha de nota fiscal onde o dinheiro vazou nos últimos 12 meses e o plano imediato de estancamento."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* =========================================================================
+           LIVING DESIGN SYSTEM TOKENS (Mad Lab Aurora // Calibrado de Aori Creative)
+           ========================================================================= */
+        :root {
+            --ds-bg-canvas: #f8fafc;
+            --ds-bg-surface: #ffffff;
+            --ds-bg-card-subtle: #f1f5f9;
+            --ds-text-primary: #0f172a;
+            --ds-text-secondary: #475569;
+            --ds-text-muted: #64748b;
+            --ds-border-subtle: #e2e8f0;
+            --ds-border-highlight: #cbd5e1;
+            
+            /* Identidade Óptica Cirúrgica */
+            --ds-accent-primary: #1f3f86;
+            --ds-accent-hover: #162d60;
+            --ds-accent-subtle: #e8eefb;
+            --ds-accent-agentic: #2563eb;
+            --ds-danger-subtle: #fee2e2;
+            --ds-danger-text: #991b1b;
+            --ds-success-subtle: #dcfce7;
+            --ds-success-text: #166534;
+
+            /* Tipografia & Escala Fluida */
+            --ds-font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --ds-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            
+            /* Física de Movimento Computada (Aori CDP Telemetry) */
+            --ds-ease-primary: cubic-bezier(0.16, 1, 0.3, 1);
+            --ds-duration-normal: 350ms;
+            --ds-duration-fast: 180ms;
+
+            /* Elevações e Superfícies */
+            --ds-shadow-card: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+            --ds-shadow-hover: 0 12px 32px -4px rgba(15, 23, 42, 0.1);
+            --ds-radius-card: 16px;
+            --ds-radius-pill: 9999px;
+            --ds-radius-input: 8px;
+        }
+
+        /* Reset Funcional */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            background-color: var(--ds-bg-canvas);
+            color: var(--ds-text-primary);
+            font-family: var(--ds-font-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            padding: 0 1.25rem 4rem 1.25rem;
+        }
+
+        /* Container Principal */
+        .page-shell {
+            max-width: 1080px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        /* Top Bar de Status */
+        .top-nav {
+            padding: 1.5rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--ds-border-subtle);
+        }
+
+        .brand-logo {
+            font-size: 1.15rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--ds-accent-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .brand-badge {
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            background: var(--ds-accent-subtle);
+            color: var(--ds-accent-primary);
+            padding: 0.2rem 0.6rem;
+            border-radius: var(--ds-radius-pill);
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        /* Botões */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 0.75rem 1.4rem;
+            border-radius: var(--ds-radius-input);
+            text-decoration: none;
+            transition: all var(--ds-duration-normal) var(--ds-ease-primary);
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+
+        .btn-primary {
+            background: var(--ds-accent-primary);
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background: var(--ds-accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px -4px rgba(31, 63, 134, 0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--ds-text-primary);
+            border-color: var(--ds-border-highlight);
+        }
+
+        .btn-outline:hover {
+            background: var(--ds-bg-card-subtle);
+            border-color: var(--ds-text-muted);
+        }
+
+        /* Cards Principais */
+        .card {
+            background: var(--ds-bg-surface);
+            border: 1px solid var(--ds-border-subtle);
+            border-radius: var(--ds-radius-card);
+            padding: 2.25rem;
+            box-shadow: var(--ds-shadow-card);
+            transition: border-color var(--ds-duration-normal) var(--ds-ease-primary),
+                        transform var(--ds-duration-normal) var(--ds-ease-primary);
+        }
+
+        .card:hover {
+            border-color: var(--ds-border-highlight);
+        }
+
+        /* Bloco 1: Hero (Orientação em <= 3s) */
+        .hero {
+            padding: 3rem 2.25rem;
+            border-left: 4px solid var(--ds-accent-primary);
+        }
+
+        .hero-eyebrow {
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--ds-accent-primary);
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .hero-title {
+            font-size: clamp(2rem, 3.8vw, 3rem);
+            font-weight: 800;
+            line-height: 1.18;
+            letter-spacing: -0.03em;
+            color: var(--ds-text-primary);
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-lead {
+            font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+            color: var(--ds-text-secondary);
+            max-width: 780px;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .hero-note {
+            font-size: 0.82rem;
+            color: var(--ds-text-muted);
+            display: block;
+            margin-top: 1rem;
+        }
+
+        /* Bloco 2: Matriz Comparativa (Tabela Nativa) */
+        .table-wrap {
+            overflow-x: auto;
+            margin-top: 1.5rem;
+        }
+
+        table.comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+            text-align: left;
+        }
+
+        table.comparison-table th, 
+        table.comparison-table td {
+            padding: 1.1rem 1.25rem;
+            border-bottom: 1px solid var(--ds-border-subtle);
+            vertical-align: top;
+        }
+
+        table.comparison-table th {
+            background: var(--ds-bg-card-subtle);
+            color: var(--ds-text-primary);
+            font-weight: 700;
+        }
+
+        table.comparison-table tr:hover td {
+            background: rgba(248, 250, 252, 0.7);
+        }
+
+        .col-vala {
+            color: var(--ds-text-muted);
+        }
+
+        .col-elysian {
+            color: var(--ds-accent-primary);
+            font-weight: 600;
+        }
+
+        /* Bloco 3: Grid dos 3 Sangramentos */
+        .section-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            font-size: 1.65rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            font-size: 0.98rem;
+            color: var(--ds-text-secondary);
+        }
+
+        .leakage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .leakage-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .leakage-badge {
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.25rem 0.65rem;
+            border-radius: var(--ds-radius-pill);
+            display: inline-block;
+            margin-bottom: 1rem;
+            width: fit-content;
+            background: var(--ds-danger-subtle);
+            color: var(--ds-danger-text);
+        }
+
+        .leakage-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.01em;
+        }
+
+        .leakage-desc {
+            font-size: 0.92rem;
+            color: var(--ds-text-secondary);
+            margin-bottom: 1.25rem;
+            flex-grow: 1;
+        }
+
+        .leakage-proof {
+            font-size: 0.85rem;
+            background: var(--ds-bg-card-subtle);
+            padding: 0.85rem;
+            border-radius: 6px;
+            border-left: 3px solid var(--ds-accent-primary);
+        }
+
+        /* Bloco 4: Protocolo D1 a D90 */
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        .timeline-step {
+            padding: 1.5rem;
+            background: var(--ds-bg-canvas);
+            border: 1px solid var(--ds-border-subtle);
+            border-radius: 12px;
+            position: relative;
+        }
+
+        .step-phase {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--ds-accent-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.35rem;
+        }
+
+        .step-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 0.65rem;
+        }
+
+        .step-desc {
+            font-size: 0.86rem;
+            color: var(--ds-text-secondary);
+        }
+
+        /* Bloco 5: A Absolvição */
+        .absolvicao-card {
+            background: #ffffff;
+            border: 1px solid var(--ds-border-highlight);
+            border-left: 4px solid #16a34a;
+        }
+
+        .absolvicao-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+            margin-top: 1.25rem;
+        }
+
+        .absolvicao-list li {
+            font-size: 0.9rem;
+            color: var(--ds-text-secondary);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .absolvicao-list li::before {
+            content: "✓";
+            color: #16a34a;
+            font-weight: 700;
+        }
+
+        /* Bloco WebMCP: Simulador de Sangramento (API Chrome 150+) */
+        .webmcp-box {
+            border: 2px dashed var(--ds-border-highlight);
+            background: #fdfefe;
+            padding: 2.25rem;
+        }
+
+        /* Atributo WebMCP: Estado Ativo de Agente de IA */
+        form[toolname]:tool-form-active {
+            outline: 2px solid var(--ds-accent-agentic);
+            box-shadow: 0 0 24px rgba(37, 99, 235, 0.2);
+            transition: box-shadow var(--ds-duration-normal) var(--ds-ease-primary);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+            margin: 1.5rem 0;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .form-group label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--ds-text-primary);
+        }
+
+        .form-group input, 
+        .form-group select {
+            padding: 0.75rem;
+            border: 1px solid var(--ds-border-highlight);
+            border-radius: var(--ds-radius-input);
+            font-size: 0.92rem;
+            font-family: inherit;
+            background: #ffffff;
+            color: var(--ds-text-primary);
+            transition: border-color var(--ds-duration-fast);
+        }
+
+        .form-group input:focus, 
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--ds-accent-primary);
+            box-shadow: 0 0 0 3px rgba(31, 63, 134, 0.12);
+        }
+
+        .simulation-result {
+            margin-top: 1.5rem;
+            padding: 1.25rem;
+            border-radius: 8px;
+            background: var(--ds-bg-card-subtle);
+            font-size: 0.92rem;
+            display: none;
+        }
+
+        .simulation-result.visible {
+            display: block;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid var(--ds-border-subtle);
+            padding: 1.25rem 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .faq-question {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--ds-text-primary);
+            margin-bottom: 0.4rem;
+        }
+
+        .faq-answer {
+            font-size: 0.92rem;
+            color: var(--ds-text-secondary);
+            line-height: 1.55;
+        }
+
+        /* Footer */
+        footer.site-footer {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--ds-border-subtle);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--ds-text-muted);
+            gap: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.25rem;
+        }
+
+        .footer-links a {
+            color: var(--ds-text-secondary);
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: var(--ds-accent-primary);
+            text-decoration: underline;
+        }
+
+        /* Acessibilidade de Movimento */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Filtro SVG sutil de dispersão (Aori Creative Signature adaptada) -->
+    <svg style="display: none;" aria-hidden="true">
+        <defs>
+            <filter id="elysian-ink-subtle">
+                <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" result="noise"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+        </defs>
+    </svg>
+
+    <div class="page-shell">
+        
+        <!-- Top Navigation -->
+        <header class="top-nav">
+            <a href="/" class="brand-logo">
+                ELYSIAN CONSULT
+                <span class="brand-badge">Setor Óptico</span>
+            </a>
+            <div class="nav-actions">
+                <a href="/index.md" class="btn btn-outline" style="font-size: 0.82rem; padding: 0.4rem 0.8rem;">
+                    Versão LLM (.md)
+                </a>
+                <a href="#simulador" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+                    Simular Sangramento
+                </a>
+            </div>
+        </header>
+
+        <!-- BLOCO 1: HERO (Orientação em <= 3s) -->
+        <main>
+            <section class="card hero">
+                <span class="hero-eyebrow">Diagnóstico Presencial de Receita e Rotina</span>
+                <h1 class="hero-title">
+                    A sua ótica não está vendendo pouco.<br>
+                    O lucro é que está vazando entre o balcão e o estoque.
+                </h1>
+                <p class="hero-lead">
+                    Consultoria de gestão e dados focada exclusivamente em óticas independentes. Encontramos o dinheiro que já está dentro da sua loja e sumindo, provamos linha por linha na nota fiscal, e instalamos o método que impede o vazamento de voltar.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#contato" class="btn btn-primary" style="padding: 0.95rem 1.8rem; font-size: 1.05rem;">
+                        Agendar Diagnóstico de Choque (7 Dias)
+                    </a>
+                    <a href="#tres-sangramentos" class="btn btn-outline" style="padding: 0.95rem 1.4rem;">
+                        Conhecer os 3 Sangramentos
+                    </a>
+                </div>
+                <span class="hero-note">
+                    Intervenção presencial conduzida pelos sócios Rodrigo (Dados & Auditoria de Notas) e Marcos (Método 360 Óticas).
+                </span>
+            </section>
+        </main>
+
+        <!-- BLOCO 2: MATRIZ COMPARATIVA TABULAR -->
+        <section class="card">
+            <div class="section-header">
+                <h2 class="section-title">Vala Comum vs. Metodologia Elysian</h2>
+                <p class="section-subtitle">Por que planilhas teóricas e cursos em vídeo não estancam o sangramento no balcão.</p>
+            </div>
+            <div class="table-wrap">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Dimensão de Atuação</th>
+                            <th class="col-vala">Vala Comum do Mercado</th>
+                            <th class="col-elysian">Metodologia Elysian Consult</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Ponto de Partida</strong></td>
+                            <td class="col-vala">Relatórios do seu próprio sistema (que muitas vezes mascaram margens reais).</td>
+                            <td class="col-elysian">Auditoria física de Notas Fiscais de Entrada de Lentes/Armações × Vendas no Caixa.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Formato da Intervenção</strong></td>
+                            <td class="col-vala">Painéis de BI à distância para você interpretar sozinho.</td>
+                            <td class="col-elysian">Intervenção presencial na loja, atuando no balcão ao lado da sua equipe.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Velocidade do Resultado</strong></td>
+                            <td class="col-vala">Meses de reuniões sem dizer exatamente onde está o erro.</td>
+                            <td class="col-elysian">7 dias úteis com o Laudo Executivo e os 3 Sangramentos precificados em mãos.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Rotina da Equipe</strong></td>
+                            <td class="col-vala">Treinamentos motivacionais genéricos esquecidos em uma semana.</td>
+                            <td class="col-elysian">Treinamento prático 360 Óticas: técnica de prescrição, valor da lente e blindagem de desconto.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- BLOCO 3: OS TRÊS SANGRAMENTOS DA ÓTICA -->
+        <section id="tres-sangramentos" class="card">
+            <div class="section-header">
+                <h2 class="section-title">Os Três Sangramentos Críticos da Ótica</h2>
+                <p class="section-subtitle">Onde 94% dos donos de óticas independentes deixam de 8% a 15% da margem líquida escapar todo mês.</p>
+            </div>
+            <div class="leakage-grid">
+                <!-- Sangramento 1 -->
+                <article class="card leakage-card">
+                    <div>
+                        <span class="leakage-badge">Vazamento Financeiro</span>
+                        <h3 class="leakage-name">1. Lucro Fantasma</h3>
+                        <p class="leakage-desc">
+                            O sistema da loja registra margem de 50%, mas no fechamento do banco o dinheiro sumiu. Ocorre por descontos descontrolados no balcão, custos desatualizados de lentes de laboratório e comissões pagas sobre o preço bruto.
+                        </p>
+                    </div>
+                    <div class="leakage-proof">
+                        <strong>Como provamos:</strong> Cruzamento das notas fiscais de entrada de lentes/tratamentos contra os comprovantes de venda.
+                    </div>
+                </article>
+
+                <!-- Sangramento 2 -->
+                <article class="card leakage-card">
+                    <div>
+                        <span class="leakage-badge">Vazamento Comercial</span>
+                        <h3 class="leakage-name">2. Clientes Evaporando</h3>
+                        <p class="leakage-desc">
+                            O cliente de grau comprou há 14 meses e a receita médica venceu. Ninguém na sua equipe ligou para ele no momento certo. Ele passa na frente de uma franquia vizinha e compra lá.
+                        </p>
+                    </div>
+                    <div class="leakage-proof">
+                        <strong>Como provamos:</strong> Mapeamento do ciclo de retorno por produto e ativação da Fila de Recompra no balcão.
+                    </div>
+                </article>
+
+                <!-- Sangramento 3 -->
+                <article class="card leakage-card">
+                    <div>
+                        <span class="leakage-badge">Capital Parado</span>
+                        <h3 class="leakage-name">3. Caixa Preso</h3>
+                        <p class="leakage-desc">
+                            Dezenas de armações e solares empacados em gavetas há mais de 180 dias. O capital de giro da ótica fica congelado em mostruários enquanto o fornecedor cobra o boleto do mês.
+                        </p>
+                    </div>
+                    <div class="leakage-proof">
+                        <strong>Como provamos:</strong> Curva ABC real de compras contra giro físico, gerando campanha cirúrgica de desova.
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- BLOCO 4: PROTOCOLO D1 A D90 -->
+        <section class="card">
+            <div class="section-header">
+                <h2 class="section-title">O Protocolo de Intervenção (D1 a D90)</h2>
+                <p class="section-subtitle">Um caminho numerado, auditável e com data para começar e terminar.</p>
+            </div>
+            <div class="timeline-grid">
+                <div class="timeline-step">
+                    <span class="step-phase">D1 a D7</span>
+                    <h3 class="step-title">Fase 1: Diagnóstico de Choque</h3>
+                    <p class="step-desc">Coleta de dados do PDV e notas de fornecedores. Entrega presencial do Laudo Executivo dos 3 Sangramentos com o valor exato que vazou.</p>
+                </div>
+                <div class="timeline-step">
+                    <span class="step-phase">D8 a D15</span>
+                    <h3 class="step-title">Fase 2: Captura no Balcão</h3>
+                    <p class="step-desc">Instalação da Fila de Retorno ativa e travamento de regras de desconto para proteger a margem da lente.</p>
+                </div>
+                <div class="timeline-step">
+                    <span class="step-phase">D16 a D30</span>
+                    <h3 class="step-title">Fase 3: Rotina 360 Óticas</h3>
+                    <p class="step-desc">Treinamento prático da equipe de loja com Marcos: prescrição técnica, apresentação de valor e abordagem ativa de receitas vencidas.</p>
+                </div>
+                <div class="timeline-step">
+                    <span class="step-phase">D31 a D90</span>
+                    <h3 class="step-title">Fase 4: Sustentação</h3>
+                    <p class="step-desc">Acompanhamento semanal de margem real na conta bancária até o dono reassumir a governança com total autonomia.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOCO 5: A ABSOLVIÇÃO -->
+        <section class="card absolvicao-card">
+            <div class="section-header">
+                <h2 class="section-title" style="color: #166534;">A Absolvição — O que NÃO vamos mexer</h2>
+                <p class="section-subtitle">Um diagnóstico sério começa reconhecendo o que a sua ótica já faz certo.</p>
+            </div>
+            <ul class="absolvicao-list">
+                <li>Não exigimos troca de sistema (trabalhamos com o seu software atual).</li>
+                <li>Não forçamos demissões (treinamos a equipe que você já confia).</li>
+                <li>Não inventamos preços fora da realidade econômica da sua cidade.</li>
+                <li>Não vendemos softwares adicionais nem cobramos mensalidades eternas de TI.</li>
+            </ul>
+        </section>
+
+        <!-- BLOCO WEBMCP: SIMULADOR DE SANGRAMENTO (Chrome 150+ Declarative API) -->
+        <section id="simulador" class="card webmcp-box">
+            <div class="section-header">
+                <span class="brand-badge" style="background: #e0e7ff; color: #3730a3;">WebMCP Instrumentado</span>
+                <h2 class="section-title" style="margin-top: 0.5rem;">Simulador Preliminar de Sangramento Óptico</h2>
+                <p class="section-subtitle">
+                    Ferramenta declarativa com suporte a agentes de IA (<code style="font-family: var(--ds-font-mono);">document.modelContext</code>) e uso manual.
+                </p>
+            </div>
+
+            <form id="leakage-form" 
+                  toolname="simulate_optical_leak" 
+                  tooldescription="Calcula estimativa conservadora de sangramento mensal em óticas independentes com base em faturamento, número de lojas e tíquete médio."
+                  action="javascript:void(0);">
+                
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="monthly_revenue">Faturamento Médio Mensal (R$):</label>
+                        <input type="number" id="monthly_revenue" name="monthly_revenue" 
+                               toolparamtitle="Faturamento Mensal" 
+                               toolparamdescription="Faturamento bruto total mensal da ótica em reais."
+                               placeholder="Ex: 120000" value="120000" min="20000" step="5000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="store_count">Número de Lojas Físicas:</label>
+                        <input type="number" id="store_count" name="store_count" 
+                               toolparamtitle="Quantidade de Lojas" 
+                               toolparamdescription="Número de pontos de venda físicos em operação."
+                               value="1" min="1" max="10" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="avg_ticket">Tíquete Médio de Venda Completa (R$):</label>
+                        <input type="number" id="avg_ticket" name="avg_ticket" 
+                               toolparamtitle="Tíquete Médio" 
+                               toolparamdescription="Valor médio da venda de armação com lentes em reais."
+                               placeholder="Ex: 650" value="650" min="100" step="50" required>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                    <button type="submit" class="btn btn-primary">
+                        Calcular Sangramento Estimado
+                    </button>
+                    <span id="webmcp-indicator" style="font-size: 0.82rem; color: var(--ds-text-muted);">
+                        Status: Verificando suporte à API de Agentes WebMCP...
+                    </span>
+                </div>
+
+                <div id="simulation-output" class="simulation-result">
+                    <!-- Preenchido via JavaScript funcional -->
+                </div>
+            </form>
+        </section>
+
+        <!-- BLOCO 6: FAQ TÉCNICO -->
+        <section class="card">
+            <div class="section-header">
+                <h2 class="section-title">Perguntas Frequentes do Decisor</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3 class="faq-question">Preciso trocar de sistema para fazer a consultoria?</h3>
+                    <p class="faq-answer">Não. Operamos com o sistema que a sua ótica já utiliza hoje (Optidados, Vixen, Linx, Excel ou outro). Extraímos as informações de compras e vendas sem interromper o trabalho do caixa.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Quanto tempo a equipe precisará se afastar do balcão?</h3>
+                    <p class="faq-answer">Zero horas. O método 360 Óticas é instalado na rotina diária da loja, diretamente no balcão e no atendimento a clientes reais.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Por que o diagnóstico presencial leva apenas 7 dias?</h3>
+                    <p class="faq-answer">Porque não fazemos diagnósticos teóricos de meses. Focamos exclusivamente nas notas fiscais e nos três pontos onde 94% das óticas independentes perdem dinheiro.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">O que é garantido na entrega da Fase 1 (D7)?</h3>
+                    <p class="faq-answer">Você recebe o Laudo Executivo em mãos provando linha por linha de nota fiscal onde o dinheiro vazou nos últimos 12 meses e o plano imediato de estancamento.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOCO DE CONTATO & AGENDAMENTO -->
+        <section id="contato" class="card" style="background: var(--ds-bg-card-subtle); text-align: center; padding: 3rem 2rem;">
+            <h2 class="section-title" style="font-size: 1.85rem;">Agende o Diagnóstico de Choque na sua Ótica</h2>
+            <p class="section-subtitle" style="max-width: 650px; margin: 0 auto 1.75rem auto;">
+                Atendimento presencial limitado por praça geográfica para garantir imersão dos sócios em cada loja.
+            </p>
+            <div style="display: inline-flex; flex-direction: column; gap: 0.75rem; align-items: center;">
+                <a href="mailto:contato@elysianconsult.com.br?subject=Solicitacao%20de%20Diagnostico%20de%20Choque%20-%20Elysian" 
+                   class="btn btn-primary" style="padding: 1rem 2.25rem; font-size: 1.05rem;">
+                    Solicitar Contato dos Sócios
+                </a>
+                <span style="font-size: 0.82rem; color: var(--ds-text-muted);">
+                    Sem compromisso inicial. Primeira conversa de alinhamento com Rodrigo e Marcos.
+                </span>
+            </div>
+        </section>
+
+        <!-- Footer Semântico -->
+        <footer class="site-footer">
+            <div>
+                © 2026 Elysian Consult — Todos os direitos reservados. Parte do ecossistema Aurora.
+            </div>
+            <div class="footer-links">
+                <a href="/index.md">Formato Markdown (.md)</a>
+                <a href="/llms.txt">llms.txt</a>
+                <a href="/.well-known/agent-card.json">A2A Agent Card</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Script de Interoperabilidade WebMCP e Cálculo Local -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('leakage-form');
+            const output = document.getElementById('simulation-output');
+            const indicator = document.getElementById('webmcp-indicator');
+
+            // 1. Verificação segura de WebMCP no motor Blink (Chrome 150+)
+            const hasWebMCP = typeof document !== 'undefined' && 'modelContext' in document;
+            if (hasWebMCP) {
+                indicator.textContent = 'API WebMCP (document.modelContext) ativa: Agentes de IA podem simular diretamente.';
+                indicator.style.color = '#166534';
+            } else {
+                indicator.textContent = 'Modo padrão: Formulário funcional ativo (degradação graciosa).';
+                indicator.style.color = '#475569';
+            }
+
+            // 2. Função de cálculo conservador de sangramento
+            function calculateLeakage(revenue, stores, ticket) {
+                // Estimativas conservadoras baseadas no Manual do Método Elysian:
+                // - Lucro Fantasma: ~4.5% do faturamento (descontos sem trava + margens corroídas)
+                // - Clientes Evaporando: ~3.5% do faturamento (recibos vencidos há >12m sem contato)
+                // - Caixa Preso: ~2.0% do faturamento imobilizado em armações sem giro >180d
+                const phantomProfit = Math.round(revenue * 0.045);
+                const lostClients = Math.round(revenue * 0.035);
+                const stuckStock = Math.round(revenue * 0.020);
+                const totalMonthly = phantomProfit + lostClients + stuckStock;
+                const totalYearly = totalMonthly * 12;
+
+                return {
+                    phantom_profit_monthly_brl: phantomProfit,
+                    lost_clients_monthly_brl: lostClients,
+                    stuck_stock_monthly_brl: stuckStock,
+                    total_monthly_leakage_brl: totalMonthly,
+                    total_annual_leakage_brl: totalYearly,
+                    formatted_monthly: totalMonthly.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }),
+                    formatted_yearly: totalYearly.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }),
+                    estimated_lost_clients_count: Math.round(lostClients / (ticket || 650))
+                };
+            }
+
+            // 3. Renderização visual do resultado
+            function renderResult(data) {
+                output.className = 'simulation-result visible';
+                output.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.75rem; border-bottom: 1px solid var(--ds-border-highlight); padding-bottom: 0.5rem;">
+                        <span style="font-weight: 700; color: var(--ds-danger-text); font-size: 1.05rem;">
+                            Sangramento Total Estimado: ${data.formatted_monthly}/mês
+                        </span>
+                        <span style="font-size: 0.82rem; color: var(--ds-text-muted);">
+                            (${data.formatted_yearly} ao ano)
+                        </span>
+                    </div>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.88rem; color: var(--ds-text-secondary);">
+                        <li>• <strong>Lucro Fantasma:</strong> ~R$ ${data.phantom_profit_monthly_brl.toLocaleString('pt-BR')} (margens corroídas por desconto sem trava).</li>
+                        <li>• <strong>Clientes Evaporando:</strong> ~R$ ${data.lost_clients_monthly_brl.toLocaleString('pt-BR')} (~${data.estimated_lost_clients_count} clientes de grau com receita vencida não contatados).</li>
+                        <li>• <strong>Caixa Preso:</strong> ~R$ ${data.stuck_stock_monthly_brl.toLocaleString('pt-BR')} em armações paradas há mais de 180 dias.</li>
+                    </ul>
+                    <div style="margin-top: 1rem; font-size: 0.82rem; color: var(--ds-accent-primary); font-weight: 600;">
+                        O Diagnóstico de Choque presencial em 7 dias prova esses números linha por linha da nota fiscal.
+                    </div>
+                `;
+            }
+
+            // 4. Interceptação de submissão manual
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const rev = parseFloat(document.getElementById('monthly_revenue').value) || 120000;
+                const stores = parseInt(document.getElementById('store_count').value, 10) || 1;
+                const ticket = parseFloat(document.getElementById('avg_ticket').value) || 650;
+                
+                const result = calculateLeakage(rev, stores, ticket);
+                renderResult(result);
+
+                // Suporte declarativo a WebMCP se acionado por agente de IA
+                if (e.agentInvoked && typeof e.respondWith === 'function') {
+                    e.respondWith(result);
+                }
+            });
+
+            // 5. Registro imperativo de ferramenta WebMCP (caso o agente execute via document.modelContext)
+            if (hasWebMCP && typeof document.modelContext.registerTool === 'function') {
+                try {
+                    document.modelContext.registerTool({
+                        name: "simulate_optical_leak",
+                        description: "Calcula a estimativa conservadora de sangramento mensal em óticas independentes a partir do faturamento mensal, quantidade de lojas e tíquete médio.",
+                        inputSchema: {
+                            type: "object",
+                            properties: {
+                                monthly_revenue: { type: "number", description: "Faturamento mensal total em R$" },
+                                store_count: { type: "integer", description: "Número de lojas físicas" },
+                                avg_ticket: { type: "number", description: "Tíquete médio em R$" }
+                            },
+                            required: ["monthly_revenue"]
+                        },
+                        annotations: {
+                            readOnlyHint: true,
+                            consequentialHint: false
+                        },
+                        handler: async (args) => {
+                            const rev = Number(args.monthly_revenue) || 120000;
+                            const stores = Number(args.store_count) || 1;
+                            const ticket = Number(args.avg_ticket) || 650;
+                            const res = calculateLeakage(rev, stores, ticket);
+                            renderResult(res);
+                            return res;
+                        }
+                    });
+                } catch (err) {
+                    console.warn("WebMCP registration handled with fallback:", err);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "schema_version": "0.3.0",
+  "name": "Elysian Consult Agent",
+  "description": "Agente autônomo de descoberta e simulação de diagnóstico de gestão para óticas independentes.",
+  "provider": {
+    "name": "Elysian Consult",
+    "url": "https://elysianconsult.com.br"
+  },
+  "capabilities": {
+    "interactive_tools": [
+      {
+        "name": "simulate_optical_leak",
+        "description": "Calcula a estimativa de vazamento de margem em óticas independentes com base em faturamento, número de lojas e tíquete médio.",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "monthly_revenue": { "type": "number", "description": "Faturamento mensal em R$" },
+            "store_count": { "type": "integer", "description": "Número de lojas" },
+            "avg_ticket": { "type": "number", "description": "Tíquete médio em R$" }
+          },
+          "required": ["monthly_revenue"]
+        }
+      }
+    ],
+    "content_surfaces": [
+      { "type": "html", "path": "/" },
+      { "type": "markdown", "path": "/index.md" }
+    ]
+  }
+}

@@ -126,6 +126,7 @@ Todo site ou landing page construído neste repositório segue obrigatoriamente 
 | Skill | Status | Papel na Produção |
 |---|---|---|
 | `agentic-web-architect` | **active** | Arquitetura Web Dual-Surface, WebMCP (`document.modelContext`), GEO, JSON-LD `@graph`, `llms.txt`, `agent-card.json` |
+| `cdp-design-system-extractor` | **active** | Engenharia reversa visual via CDP/Playwright, física de movimento, shaders WebGL e Living Design System em HTML |
 | `b2b-ai-outbound-architect` | **active** | Outbound Pós-IA, Signal-Based Selling, Micro-Assets e sequências Zero-HTML Plain-Text |
 | `ceo-web` | **active** | Arquitetura de conversão, clareza em 3s, estrutura de rotas e jornada do decisor |
 | `ceo-copy` | **active** | Escrita técnica de alta densidade de entidade (Spec-Sheets, Citation-Magnets, FAQs, teses executivas) |

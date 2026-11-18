@@ -1,0 +1,5 @@
+# Elysian Consult — LLM Documentation Directory
+> Guia de descoberta para agentes de IA e modelos de linguagem sobre a Elysian Consult.
+
+- [/index.md](/index.md): Especificação completa da consultoria, tese de mercado óptico, os 3 sangramentos, matriz comparativa e protocolo D1 a D90.
+- [/.well-known/agent-card.json](/.well-known/agent-card.json): Ficha de capacidade do agente (Protocolo A2A v0.3).

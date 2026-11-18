@@ -122,7 +122,8 @@ export function runGovernanceCheck(rootDir) {
     '.aurora/skills/b2b-ai-outbound-architect/SKILL.md',
     '.aurora/skills/qa-review/SKILL.md',
     '.aurora/skills/ceo-web/SKILL.md',
-    '.aurora/skills/ceo-copy/SKILL.md'
+    '.aurora/skills/ceo-copy/SKILL.md',
+    '.aurora/skills/cdp-design-system-extractor/SKILL.md'
   ];
 
   for (const skillRel of activeSkills) {

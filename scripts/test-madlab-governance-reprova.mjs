@@ -26,6 +26,8 @@ const filesToCopy = [
   '.aurora/skills/qa-review/SKILL.md',
   '.aurora/skills/ceo-web/SKILL.md',
   '.aurora/skills/ceo-copy/SKILL.md',
+  '.aurora/skills/cdp-design-system-extractor/SKILL.md',
+  '.agents/rules/cdp-design-system.md',
   '.aurora/skills/ceo-design/SKILL.md',
   '.aurora/skills/ceo-effects/SKILL.md',
   '.aurora/skills/ceo-3d/SKILL.md',
@@ -122,6 +124,20 @@ if (cleanRes.status !== 0) {
   process.exit(1);
 }
 console.log('[reprova] PASS: Baseline clean repository exited with EXIT=0');
+
+// Step 0b: Verify an unsabotaged sandbox passes (EXIT=0) to guarantee fixture fidelity
+const cleanSandbox = createSandbox();
+try {
+  const cleanSandboxRes = runGate(cleanSandbox);
+  if (cleanSandboxRes.status !== 0) {
+    console.error('[reprova] FAIL: Clean sandbox fixture did not pass governance gate!');
+    console.error(cleanSandboxRes.stderr || cleanSandboxRes.stdout);
+    process.exit(1);
+  }
+  console.log('[reprova] PASS: Baseline unsabotaged sandbox fixture exited with EXIT=0');
+} finally {
+  fs.rmSync(cleanSandbox, { recursive: true, force: true });
+}
 
 // Step 1..N: Verify every adversarial sabotage scenario forces EXIT=1 with the expected error code
 for (const scenario of scenarios) {
